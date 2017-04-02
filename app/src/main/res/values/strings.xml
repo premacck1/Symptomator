@@ -1,0 +1,114 @@
+<resources>
+    <string name="app_name">Symptomator</string>
+    <string name="symptom">Symptom</string>
+    <string name="hospital">Hospital</string>
+    <string name="common_diseases">Common Diseases</string>
+    <string name="icon_author">Icons made by Roundicons (http://www.flaticon.com/authors/roundicons) from Flaticon (www.flaticon.com)</string>
+    <string name="ambulance">Ambulance</string>
+    <string name="about">About</string>
+    <string name="your_age">Your age</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="concerned_body_part">Concerned body part</string>
+    <string name="symptom_header">Check yourself\nBefore you wreck yourself</string>
+    <string name="submit">Submit</string>
+
+    <string-array name="ages">
+        <item>Select your age</item>
+        <item>0 – 18</item>
+        <item>19 – 30</item>
+        <item>31 – 45</item>
+        <item>46 – 60</item>
+        <item>60+</item>
+    </string-array>
+    <string-array name="body_parts">
+        <item>Concerned body area</item>
+        <item>Head area</item>
+        <item>Chest area</item>
+        <item>Abdomen</item>
+        <item>Back area</item>
+        <item>Pelvic area</item>
+        <item>Arm</item>
+        <item>Legs</item>
+    </string-array>
+    <string-array name="head_area">
+        <item>Select body part from head area</item>
+        <item>Head</item>
+        <item>Eyes</item>
+        <item>Nose</item>
+        <item>Face</item>
+        <item>Ears</item>
+        <item>Mouth</item>
+        <item>Jaw</item>
+        <item>Neck</item>
+    </string-array>
+    <string-array name="chest_area">
+        <item>Select body part from chest area</item>
+        <item>Chest</item>
+        <item>Side of chest</item>
+        <item>Sternum</item>
+    </string-array>
+    <string-array name="abdomen">
+        <item>Select body part from abdomen</item>
+        <item>Upper abdomen</item>
+        <item>Lower abdomen</item>
+    </string-array>
+    <string-array name="back_area">
+        <item>Select body part from back area</item>
+        <item>Back</item>
+        <item>Upper spine</item>
+        <item>Lower spine</item>
+    </string-array>
+    <string-array name="pelvic">
+        <item>Select body part from pelvic area</item>
+        <item>Pelvis</item>
+        <item>Genitals</item>
+        <item>Buttock</item>
+        <item>Hip</item>
+        <item>Inguinal</item>
+    </string-array>
+    <string-array name="arm">
+        <item>Select body part from arm</item>
+        <item>Shoulder</item>
+        <item>Armpit</item>
+        <item>Upper arm</item>
+        <item>Elbow</item>
+        <item>Fore arm</item>
+        <item>Wrist</item>
+        <item>Hand</item>
+        <item>Fingers</item>
+    </string-array>
+    <string-array name="legs">
+        <item>Select body part from legs</item>
+        <item>Thigh</item>
+        <item>Hamstring</item>
+        <item>Knee</item>
+        <item>Back of knee</item>
+        <item>Shin</item>
+        <item>Calf</item>
+        <item>Ankle</item>
+        <item>Foot</item>
+        <item>Toes</item>
+        <item>Sole</item>
+    </string-array>
+    <string-array name="default_selection">
+        <item> </item>
+    </string-array>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="list_of_hospitals">List of hospitals</string>
+    <string name="find_nearby_hospitals">Find nearby hospitals</string>
+    <string name="hospital_services">Hospital services</string>
+    <string name="find_hospitals_by_state">Find hospitals by state</string>
+    <string name="find_hospitals_by_specialisation">Find hospitals by specialisation</string>
+    <string name="get_to_the_nearest_hospital">Get to the nearest hospital</string>
+    <string name="ambulance_services">Ambulance services</string>
+    <string name="request_a_private_ambulance">Request a private ambulance</string>
+    <string name="check_ambulance_availability">Check ambulance availability</string>
+    <string name="call_108">Call 108</string>
+    <string name="doctor">Doctor</string>
+    <string name="doctor_services">Doctor services</string>
+    <string name="find_doctors_by_specialisation">Find doctors by specialisation</string>
+    <string name="request_urgent_doctor">Request urgent doctor</string>
+    <string name="find_doctors_nearby">Find doctors nearby</string>
+</resources>

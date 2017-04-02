@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_by_symptom"
+        android:icon="@drawable/ic_lungs"
+        android:title="@string/symptom" />
+
+    <item
+        android:id="@+id/navigation_by_hospital"
+        android:icon="@drawable/ic_hospital"
+        android:title="@string/hospital" />
+
+    <item
+        android:id="@+id/navigation_by_doctor"
+        android:icon="@drawable/ic_doctor"
+        android:title="@string/doctor" />
+
+    <item
+        android:id="@+id/navigation_ambulance_services"
+        android:icon="@drawable/ic_ambulance"
+        android:title="@string/ambulance"/>
+</menu>

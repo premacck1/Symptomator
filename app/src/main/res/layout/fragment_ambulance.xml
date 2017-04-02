@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ambulance_content"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:layout_margin="20dp"
+        android:text="@string/ambulance_services" />
+
+    <TextView
+        android:id="@+id/hospital_by_specialisation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_margin="8dp"
+        android:textSize="16sp"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:background="@drawable/checked_button"
+        android:text="@string/call_108"/>
+
+    <TextView
+        android:id="@+id/hospital_find_nearby"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_margin="8dp"
+        android:textSize="16sp"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:background="@drawable/checked_button"
+        android:text="@string/request_a_private_ambulance"/>
+
+    <TextView
+        android:id="@+id/hospital_by_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_margin="8dp"
+        android:textSize="16sp"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:background="@drawable/checked_button"
+        android:text="@string/check_ambulance_availability"/>
+
+<!--    <TextView
+        android:id="@+id/hospital_nearest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_margin="8dp"
+        android:textSize="18sp"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:background="@drawable/button_theme"
+        android:text="@string/get_to_the_nearest_hospital"/>-->
+
+</LinearLayout>
