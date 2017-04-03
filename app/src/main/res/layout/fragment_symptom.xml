@@ -26,7 +26,7 @@
         app:mrl_rippleColor="#ffffff"
         app:mrl_rippleOverlay="true"
         app:mrl_rippleHover="true"
-        app:mrl_rippleDelayClick="true"
+        app:mrl_rippleDelayClick="false"
         app:mrl_rippleRoundedCorners="2dp">
 
         <Spinner
@@ -135,7 +135,7 @@
         android:layout_margin="8dp"
         app:mrl_rippleColor="#ffffff"
         app:mrl_rippleOverlay="true"
-        app:mrl_rippleHover="true"
+        app:mrl_rippleHover="false"
         app:mrl_rippleDelayClick="true"
         app:mrl_rippleRoundedCorners="2dp">
 
