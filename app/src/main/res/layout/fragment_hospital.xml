@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -18,48 +19,92 @@
         android:layout_margin="20dp"
         android:text="@string/hospital_services" />
 
-    <TextView
-        android:id="@+id/hospital_find_nearby"
+    <com.balysv.materialripple.MaterialRippleLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
         android:layout_margin="8dp"
-        android:textSize="16sp"
-        android:padding="@dimen/activity_horizontal_margin"
-        android:background="@drawable/checked_button"
-        android:text="@string/find_nearby_hospitals"/>
+        app:mrl_rippleColor="#ffffff"
+        app:mrl_rippleOverlay="true"
+        app:mrl_rippleHover="true"
+        app:mrl_rippleDelayClick="true"
+        app:mrl_rippleRoundedCorners="2dp">
 
-    <TextView
-        android:id="@+id/hospital_by_state"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:layout_margin="8dp"
-        android:textSize="16sp"
-        android:padding="@dimen/activity_horizontal_margin"
-        android:background="@drawable/checked_button"
-        android:text="@string/find_hospitals_by_state"/>
+        <TextView
+            android:id="@+id/hospital_find_nearby"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="16sp"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:background="@drawable/checked_button"
+            android:text="@string/find_nearby_hospitals"/>
 
-    <TextView
-        android:id="@+id/hospital_by_specialisation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:layout_margin="8dp"
-        android:textSize="16sp"
-        android:padding="@dimen/activity_horizontal_margin"
-        android:background="@drawable/checked_button"
-        android:text="@string/find_hospitals_by_specialisation"/>
+    </com.balysv.materialripple.MaterialRippleLayout>
 
-    <TextView
-        android:id="@+id/hospital_nearest"
+    <com.balysv.materialripple.MaterialRippleLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
         android:layout_margin="8dp"
-        android:textSize="18sp"
-        android:padding="@dimen/activity_horizontal_margin"
-        android:background="@drawable/button_theme"
-        android:text="@string/get_to_the_nearest_hospital"/>
+        app:mrl_rippleColor="#ffffff"
+        app:mrl_rippleOverlay="true"
+        app:mrl_rippleHover="true"
+        app:mrl_rippleDelayClick="true"
+        app:mrl_rippleRoundedCorners="2dp">
+
+        <TextView
+            android:id="@+id/hospital_by_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="16sp"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:background="@drawable/checked_button"
+            android:text="@string/find_hospitals_by_state"/>
+
+    </com.balysv.materialripple.MaterialRippleLayout>
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:mrl_rippleColor="#ffffff"
+        app:mrl_rippleOverlay="true"
+        app:mrl_rippleHover="true"
+        app:mrl_rippleDelayClick="true"
+        app:mrl_rippleRoundedCorners="2dp">
+
+        <TextView
+            android:id="@+id/hospital_by_specialisation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="16sp"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:background="@drawable/checked_button"
+            android:text="@string/find_hospitals_by_specialisation"/>
+
+    </com.balysv.materialripple.MaterialRippleLayout>
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:mrl_rippleColor="#ffffff"
+        app:mrl_rippleOverlay="true"
+        app:mrl_rippleHover="true"
+        app:mrl_rippleDelayClick="true"
+        app:mrl_rippleRoundedCorners="2dp">
+
+        <TextView
+            android:id="@+id/hospital_nearest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="18sp"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:background="@drawable/button_theme"
+            android:text="@string/get_to_the_nearest_hospital"/>
+
+    </com.balysv.materialripple.MaterialRippleLayout>
 
 </LinearLayout>

@@ -2,6 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:id="@+id/doctor_content"
     android:padding="@dimen/activity_horizontal_margin"
@@ -17,37 +18,70 @@
         android:layout_margin="20dp"
         android:text="@string/doctor_services" />
 
-    <TextView
-        android:id="@+id/hospital_by_specialisation"
+    <com.balysv.materialripple.MaterialRippleLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
         android:layout_margin="8dp"
-        android:textSize="16sp"
-        android:padding="@dimen/activity_horizontal_margin"
-        android:background="@drawable/checked_button"
-        android:text="@string/find_doctors_by_specialisation"/>
+        app:mrl_rippleColor="#ffffff"
+        app:mrl_rippleOverlay="true"
+        app:mrl_rippleHover="true"
+        app:mrl_rippleDelayClick="true"
+        app:mrl_rippleRoundedCorners="2dp">
 
-    <TextView
-        android:id="@+id/hospital_find_nearby"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:layout_margin="8dp"
-        android:textSize="16sp"
-        android:padding="@dimen/activity_horizontal_margin"
-        android:background="@drawable/checked_button"
-        android:text="@string/request_urgent_doctor"/>
+        <TextView
+            android:id="@+id/hospital_by_specialisation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="16sp"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:background="@drawable/checked_button"
+            android:text="@string/find_doctors_by_specialisation"/>
 
-    <TextView
-        android:id="@+id/hospital_by_state"
+    </com.balysv.materialripple.MaterialRippleLayout>
+
+    <com.balysv.materialripple.MaterialRippleLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
         android:layout_margin="8dp"
-        android:textSize="16sp"
-        android:padding="@dimen/activity_horizontal_margin"
-        android:background="@drawable/checked_button"
-        android:text="@string/find_doctors_nearby"/>
+        app:mrl_rippleColor="#ffffff"
+        app:mrl_rippleOverlay="true"
+        app:mrl_rippleHover="true"
+        app:mrl_rippleDelayClick="true"
+        app:mrl_rippleRoundedCorners="2dp">
+
+        <TextView
+            android:id="@+id/hospital_find_nearby"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="16sp"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:background="@drawable/checked_button"
+            android:text="@string/request_urgent_doctor"/>
+
+    </com.balysv.materialripple.MaterialRippleLayout>
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:mrl_rippleColor="#ffffff"
+        app:mrl_rippleOverlay="true"
+        app:mrl_rippleHover="true"
+        app:mrl_rippleDelayClick="true"
+        app:mrl_rippleRoundedCorners="2dp">
+
+        <TextView
+            android:id="@+id/hospital_by_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="16sp"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:background="@drawable/checked_button"
+            android:text="@string/find_doctors_nearby"/>
+
+    </com.balysv.materialripple.MaterialRippleLayout>
 
 </LinearLayout>
