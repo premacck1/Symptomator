@@ -2,7 +2,5 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:state_pressed="true" android:drawable="@drawable/checked_button_pressed" />
     <item android:state_checked="true" android:drawable="@drawable/checked_button_checked" />
-    <item android:state_selected="true" android:drawable="@drawable/checked_button_checked"/>
-    <item android:state_active="false" android:drawable="@drawable/checked_button_disabled"/>
-    <item android:drawable="@drawable/button_theme" />
+    <item android:drawable="@drawable/button_white_default" />
 </selector>

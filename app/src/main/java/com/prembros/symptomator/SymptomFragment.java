@@ -1,16 +1,17 @@
 package com.prembros.symptomator;
 
 import android.content.Context;
+import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.AppCompatButton;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.AnimationUtils;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.CheckedTextView;
 import android.widget.Spinner;
 import android.widget.Toast;
@@ -66,7 +67,8 @@ public class SymptomFragment extends Fragment {
         CheckedTextView male = (CheckedTextView) rootView.findViewById(R.id.radio_male);
         CheckedTextView female = (CheckedTextView) rootView.findViewById(R.id.radio_female);
         allCheckedTextViews = new CheckedTextView[] {male, female};
-        Button submitButton = (Button) rootView.findViewById(R.id.submit_button);
+        AppCompatButton submitButton = (AppCompatButton) rootView.findViewById(R.id.submit_button);
+        submitButton.setSupportBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#E64A19")));
 
 //        selectAge.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
 //            @Override

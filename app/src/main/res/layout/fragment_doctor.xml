@@ -22,7 +22,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        app:mrl_rippleColor="#ffffff"
+        app:mrl_rippleColor="@color/colorDisabled"
         app:mrl_rippleOverlay="true"
         app:mrl_rippleHover="true"
         app:mrl_rippleDelayClick="true"
@@ -34,8 +34,9 @@
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
             android:textSize="16sp"
+            android:textColor="@color/white_text_icons"
             android:padding="@dimen/activity_horizontal_margin"
-            android:background="@drawable/checked_button"
+            android:background="@drawable/button_style"
             android:text="@string/find_doctors_by_specialisation"/>
 
     </com.balysv.materialripple.MaterialRippleLayout>
@@ -44,7 +45,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        app:mrl_rippleColor="#ffffff"
+        app:mrl_rippleColor="@color/colorDisabled"
         app:mrl_rippleOverlay="true"
         app:mrl_rippleHover="true"
         app:mrl_rippleDelayClick="true"
@@ -56,8 +57,9 @@
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
             android:textSize="16sp"
+            android:textColor="@color/white_text_icons"
             android:padding="@dimen/activity_horizontal_margin"
-            android:background="@drawable/checked_button"
+            android:background="@drawable/button_style"
             android:text="@string/request_urgent_doctor"/>
 
     </com.balysv.materialripple.MaterialRippleLayout>
@@ -66,7 +68,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        app:mrl_rippleColor="#ffffff"
+        app:mrl_rippleColor="@color/colorDisabled"
         app:mrl_rippleOverlay="true"
         app:mrl_rippleHover="true"
         app:mrl_rippleDelayClick="true"
@@ -78,8 +80,9 @@
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
             android:textSize="16sp"
+            android:textColor="@color/white_text_icons"
             android:padding="@dimen/activity_horizontal_margin"
-            android:background="@drawable/checked_button"
+            android:background="@drawable/button_style"
             android:text="@string/find_doctors_nearby"/>
 
     </com.balysv.materialripple.MaterialRippleLayout>

@@ -23,7 +23,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        app:mrl_rippleColor="#ffffff"
+        app:mrl_rippleColor="@color/colorDisabled"
         app:mrl_rippleOverlay="true"
         app:mrl_rippleHover="true"
         app:mrl_rippleDelayClick="true"
@@ -35,8 +35,9 @@
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
             android:textSize="16sp"
+            android:textColor="@color/white_text_icons"
             android:padding="@dimen/activity_horizontal_margin"
-            android:background="@drawable/checked_button"
+            android:background="@drawable/button_style"
             android:text="@string/call_108"/>
 
     </com.balysv.materialripple.MaterialRippleLayout>
@@ -45,7 +46,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        app:mrl_rippleColor="#ffffff"
+        app:mrl_rippleColor="@color/colorDisabled"
         app:mrl_rippleOverlay="true"
         app:mrl_rippleHover="true"
         app:mrl_rippleDelayClick="true"
@@ -57,8 +58,9 @@
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
             android:textSize="16sp"
+            android:textColor="@color/white_text_icons"
             android:padding="@dimen/activity_horizontal_margin"
-            android:background="@drawable/checked_button"
+            android:background="@drawable/button_style"
             android:text="@string/request_a_private_ambulance"/>
 
     </com.balysv.materialripple.MaterialRippleLayout>
@@ -67,7 +69,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        app:mrl_rippleColor="#ffffff"
+        app:mrl_rippleColor="@color/colorDisabled"
         app:mrl_rippleOverlay="true"
         app:mrl_rippleHover="true"
         app:mrl_rippleDelayClick="true"
@@ -79,8 +81,9 @@
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
             android:textSize="16sp"
+            android:textColor="@color/white_text_icons"
             android:padding="@dimen/activity_horizontal_margin"
-            android:background="@drawable/checked_button"
+            android:background="@drawable/button_style"
             android:text="@string/check_ambulance_availability"/>
 
     </com.balysv.materialripple.MaterialRippleLayout>
