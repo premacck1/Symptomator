@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:padding="@dimen/activity_horizontal_margin"
+    android:padding="10dp"
     android:gravity="center_horizontal"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -19,6 +20,20 @@
         android:layout_height="1dp"
         android:background="@color/dividerColor"/>
 
-    <include layout="@layout/fragment_first_aid_list"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/fragment_first_aid_list"/>
+
+        <xyz.danoz.recyclerviewfastscroller.vertical.VerticalRecyclerViewFastScroller
+            android:id="@+id/first_aid_scroller"
+            android:layout_width="20dp"
+            app:rfs_handleColor="@color/colorSecondaryText"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
 
 </LinearLayout>

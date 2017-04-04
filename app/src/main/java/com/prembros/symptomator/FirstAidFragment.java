@@ -13,6 +13,8 @@ import android.view.ViewGroup;
 import java.util.Arrays;
 import java.util.List;
 
+import xyz.danoz.recyclerviewfastscroller.vertical.VerticalRecyclerViewFastScroller;
+
 /**
  * A fragment representing a list of Items.
  * <p/>
@@ -51,24 +53,23 @@ public class FirstAidFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_first_aid, container, false);
-        View list = view.findViewById(R.id.first_aid_list);
+        RecyclerView list = (RecyclerView) view.findViewById(R.id.first_aid_list);
+        VerticalRecyclerViewFastScroller scroller = (VerticalRecyclerViewFastScroller) view.findViewById(R.id.first_aid_scroller);
+        scroller.setRecyclerView(list);
+        list.addOnScrollListener(scroller.getOnScrollListener());
 
         // Set the list
         List<String> firstAidList = Arrays.asList(getResources().getStringArray(R.array.first_aid));
         // Set the adapter
-        if (list instanceof RecyclerView) {
-            Context context = list.getContext();
-            RecyclerView recyclerView = (RecyclerView) list;
-            if (mColumnCount <= 1) {
-                recyclerView.setLayoutManager(new LinearLayoutManager(context));
-            } else {
-                recyclerView.setLayoutManager(new GridLayoutManager(context, mColumnCount));
-            }
-            recyclerView.setAdapter(new MyFirstAidRecyclerViewAdapter(firstAidList, mListener));
+        Context context = list.getContext();
+        if (mColumnCount <= 1) {
+            list.setLayoutManager(new LinearLayoutManager(context));
+        } else {
+            list.setLayoutManager(new GridLayoutManager(context, mColumnCount));
         }
+        list.setAdapter(new MyFirstAidRecyclerViewAdapter(firstAidList, mListener));
         return view;
     }
-
 
     @Override
     public void onAttach(Context context) {
