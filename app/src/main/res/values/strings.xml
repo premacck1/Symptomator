@@ -95,6 +95,211 @@
         <item> </item>
     </string-array>
 
+    <string-array name="first_aid">
+        <item>Abdominal pain in adults</item>
+        <item>Abdominal pain in children</item>
+        <item>Acetaminophen (Tylenol) poisoning</item>
+        <item>Alcohol intoxication</item>
+        <item>Allergic reaction</item>
+        <item>Amputation (Accidental)</item>
+        <item>Angina Pectoris</item>
+        <item>Animal bites</item>
+        <item>Ankle fracture</item>
+        <item>Ankle sprain</item>
+        <item>Anthrax</item>
+        <item>Aspirin poisoning</item>
+        <item>Asthma attack in adults</item>
+        <item>Asthma attack in children</item>
+        <item>Asthma in pregnancy</item>
+        <item>Asthma, exercise-induced</item>
+        <item>Battery ingestion</item>
+        <item>Black eye</item>
+        <item>Black widow spider bite</item>
+        <item>Bleeding - cuts or wounds</item>
+        <item>Bleeding during pregnancy</item>
+        <item>Bleeding under a nail</item>
+        <item>Bleeding in the eye</item>
+        <item>Blisters</item>
+        <item>Blood in urine</item>
+        <item>Bloody stools in children</item>
+        <item>Blue lips n children</item>
+        <item>Breathing problems in children</item>
+        <item>Broken arm in adults</item>
+        <item>Broken arm in children</item>
+        <item>Broken collarbone</item>
+        <item>Broken elbow</item>
+        <item>Broken finger in adults</item>
+        <item>Broken finger in children</item>
+        <item>Broken foot</item>
+        <item>Broken hand</item>
+        <item>Broken hip</item>
+        <item>Broken jaw</item>
+        <item>Broken leg</item>
+        <item>Broken nose</item>
+        <item>Broken shoulder blade</item>
+        <item>Broken toe</item>
+        <item>Broken or knocked out teeth</item>
+        <item>Broken recluse bite</item>
+        <item>Bruises in adults</item>
+        <item>Bruises in children</item>
+        <item>Burns in adults</item>
+        <item>Burns and scalds in children</item>
+        <item>CPR for adults</item>
+        <item>CPR for children</item>
+        <item>Carbon monoxide poisoning</item>
+        <item>Catfish sting</item>
+        <item>Chemical burn</item>
+        <item>Chemical eye burn</item>
+        <item>Chest injury</item>
+        <item>Chest pain</item>
+        <item>Choking in adults</item>
+        <item>Choking in children</item>
+        <item>Colds in children</item>
+        <item>Concussion</item>
+        <item>Congestion or stuffy nose in children</item>
+        <item>Constipation in children</item>
+        <item>Convulsions in children</item>
+        <item>Corneal abrasion</item>
+        <item>Corneal ulcer</item>
+        <item>Coughs in children</item>
+        <item>Crabs</item>
+        <item>Cradle cap in children</item>
+        <item>Crying and colic in babies</item>
+        <item>Cuts and bleeding in children</item>
+        <item>Cuts or lacerations</item>
+        <item>Cyanide poisoning</item>
+        <item>Dehydration in adults</item>
+        <item>Dehydration in children</item>
+        <item>Diaper rush</item>
+        <item>Diarrhea</item>
+        <item>Diarrhea in children</item>
+        <item>Dizziness</item>
+        <item>Drowning</item>
+        <item>Drowning in children</item>
+        <item>Drug allergy</item>
+        <item>Drug overdose</item>
+        <item>Ear - foreign body</item>
+        <item>Ear infections in children</item>
+        <item>Ear pain - diving</item>
+        <item>Eczema in infants</item>
+        <item>Elbow dislocation</item>
+        <item>Electric shock</item>
+        <item>Electric shock in children</item>
+        <item>Eye burns/Corneal burns</item>
+        <item>Eye - foreign object</item>
+        <item>Eye injuries</item>
+        <item>Eye injuries in children</item>
+        <item>Eyelid inflammation</item>
+        <item>Facial fracture</item>
+        <item>Fainting</item>
+        <item>Fever in adults</item>
+        <item>Fever in children</item>
+        <item>Finger dislocation</item>
+        <item>Finger injuries</item>
+        <item>First aid kits</item>
+        <item>Fishhook injuries</item>
+        <item>Flu (influenza) in children</item>
+        <item>Food poisoning</item>
+        <item>Fractures or dislocation</item>
+        <item>Frostbite</item>
+        <item>Gas pain in children</item>
+        <item>Gastroenteritis</item>
+        <item>Hand injury</item>
+        <item>Head injuries in children</item>
+        <item>Head injury</item>
+        <item>Headache</item>
+        <item>Heart attack</item>
+        <item>Heat Exhaustion</item>
+        <item>Heat rash in children</item>
+        <item>Heat stroke</item>
+        <item>Hiccups</item>
+        <item>Hives and angioedema</item>
+        <item>Hives in children</item>
+        <item>Human bites</item>
+        <item>Hyperventilation</item>
+        <item>Hypothermia</item>
+        <item>Inability to urinate</item>
+        <item>Insect bites/stings in children</item>
+        <item>Insect sting allergy</item>
+        <item>Insulin reaction</item>
+        <item>Iron poisoning</item>
+        <item>Jaundice in newborns</item>
+        <item>Jellyfish stings</item>
+        <item>Knee dislocation</item>
+        <item>Knee injury</item>
+        <item>Labor signs</item>
+        <item>Lice</item>
+        <item>Lightning strike</item>
+        <item>Low blood sugar</item>
+        <item>Migraine headache</item>
+        <item>Migraine headache in children</item>
+        <item>Mini stroke (Transient Ischemic Attack)</item>
+        <item>Miscarriage</item>
+        <item>Mountain sickness</item>
+        <item>Muscle strain</item>
+        <item>Nail infection (paronychia)</item>
+        <item>Nail injuries</item>
+        <item>Neck Strain</item>
+        <item>Nose foreign</item>
+        <item>Nosebleeds</item>
+        <item>Nursemaid elbow</item>
+        <item>Orchitis</item>
+        <item>Palpitations</item>
+        <item>Panic attacks</item>
+        <item>Plant allergy</item>
+        <item>Poisoning</item>
+        <item>Poisoning in children</item>
+        <item>Puncture wound</item>
+        <item>Rabies</item>
+        <item>Rape/Sexual assault</item>
+        <item>Rashes in children</item>
+        <item>Rectal bleeding</item>
+        <item>Rectal - foreign object</item>
+        <item>Rectal pain</item>
+        <item>Reflux in children</item>
+        <item>Ricin poisoning</item>
+        <item>Ruptured tendon</item>
+        <item>Seizures emergencies</item>
+        <item>Seizures in children</item>
+        <item>Severe allergic reaction</item>
+        <item>Shark bite</item>
+        <item>Shock</item>
+        <item>Shoulder dislocation</item>
+        <item>Shoulder separation</item>
+        <item>Shoulder and neck pain</item>
+        <item>Skier\'s thumb</item>
+        <item>Slipped disk</item>
+        <item>Smoke inhalation</item>
+        <item>Snakebite</item>
+        <item>Splinters</item>
+        <item>Sprains and strains</item>
+        <item>Stringray injury</item>
+        <item>Stomachache and nausea in children</item>
+        <item>Stroke</item>
+        <item>Sty</item>
+        <item>Suicidal thoughts</item>
+        <item>Sunburn</item>
+        <item>Swallowed object</item>
+        <item>Tailbone injury</item>
+        <item>Teething pain</item>
+        <item>Testicular pain</item>
+        <item>Tetanus</item>
+        <item>The bends</item>
+        <item>Ticks</item>
+        <item>Toothache</item>
+        <item>Toxic shock syndrome</item>
+        <item>Traveler\'s diarrhea</item>
+        <item>Using an Automated External Defibrillator</item>
+        <item>Vaginal bleeding</item>
+        <item>Vaginal - foreign body</item>
+        <item>Vertigo</item>
+        <item>Vomiting during pregnancy</item>
+        <item>Vomiting and nausea</item>
+        <item>Vomiting or spitting up in children</item>
+        <item>Whiplash</item>
+        <item>Wrist injury</item>
+    </string-array>
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="list_of_hospitals">List of hospitals</string>
     <string name="find_nearby_hospitals">Find nearby hospitals</string>
@@ -111,4 +316,5 @@
     <string name="find_doctors_by_specialisation">Find doctors by specialisation</string>
     <string name="request_urgent_doctor">Request urgent doctor</string>
     <string name="find_doctors_nearby">Find doctors nearby</string>
+    <string name="first_aid">First Aid</string>
 </resources>

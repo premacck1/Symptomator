@@ -15,6 +15,7 @@ import android.widget.AdapterView;
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener,
         SymptomFragment.OnSymptomFragmentInteractionListener,
         HospitalFragment.OnHospitalFragmentInteractionListener,
+        FirstAidFragment.OnFirstAidListFragmentInteractionListener,
         DoctorFragment.OnFragmentInteractionListener,
         AmbulanceFragment.OnAmbulanceFragmentInteractionListener {
 
@@ -38,6 +39,13 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                             R.anim.fragment_anim_in, android.R.anim.fade_out,
                             android.R.anim.fade_in, android.R.anim.fade_out)
                             .replace(R.id.main_fragment_container, new HospitalFragment(), "hospitalFragment")
+                            .commit();
+                    return true;
+                case R.id.navigation_by_first_aid:
+                    fragmentManager.beginTransaction().setCustomAnimations(
+                            R.anim.fragment_anim_in, android.R.anim.fade_out,
+                            android.R.anim.fade_in, android.R.anim.fade_out)
+                            .replace(R.id.main_fragment_container, new FirstAidFragment(), "firstAidFragment")
                             .commit();
                     return true;
                 case R.id.navigation_by_doctor:
@@ -118,6 +126,11 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     @Override
     public void onFragmentInteraction(Uri uri) {
+
+    }
+
+    @Override
+    public void onFirstAidListFragmentInteraction(String item) {
 
     }
 }

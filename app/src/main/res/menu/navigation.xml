@@ -1,23 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
         android:id="@+id/navigation_by_symptom"
         android:icon="@drawable/ic_lungs"
-        android:title="@string/symptom" />
+        android:title="@string/symptom"
+        app:showAsAction="always"/>
 
     <item
         android:id="@+id/navigation_by_hospital"
         android:icon="@drawable/ic_hospital"
-        android:title="@string/hospital" />
+        android:title="@string/hospital"
+        app:showAsAction="always"
+        tools:ignore="AlwaysShowAction" />
+
+    <item
+        android:id="@+id/navigation_by_first_aid"
+        android:icon="@drawable/ic_first_aid"
+        android:title="@string/first_aid"
+        app:showAsAction="always" />
 
     <item
         android:id="@+id/navigation_by_doctor"
         android:icon="@drawable/ic_doctor"
-        android:title="@string/doctor" />
+        android:title="@string/doctor"
+        app:showAsAction="always" />
 
     <item
         android:id="@+id/navigation_ambulance_services"
         android:icon="@drawable/ic_ambulance"
-        android:title="@string/ambulance"/>
+        android:title="@string/ambulance"
+        app:showAsAction="always" />
 </menu>
