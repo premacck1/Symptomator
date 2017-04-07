@@ -10,27 +10,16 @@
         app:showAsAction="always"/>
 
     <item
-        android:id="@+id/navigation_by_hospital"
-        android:icon="@drawable/ic_hospital"
-        android:title="@string/hospital"
-        app:showAsAction="always"
-        tools:ignore="AlwaysShowAction" />
-
-    <item
         android:id="@+id/navigation_by_first_aid"
         android:icon="@drawable/ic_first_aid"
         android:title="@string/first_aid_info"
         app:showAsAction="always" />
 
     <item
-        android:id="@+id/navigation_by_doctor"
-        android:icon="@drawable/ic_doctor"
-        android:title="@string/doctor"
-        app:showAsAction="always" />
+        android:id="@+id/navigation_by_services"
+        android:icon="@drawable/ic_hospital"
+        android:title="@string/services"
+        app:showAsAction="always"
+        tools:ignore="AlwaysShowAction" />
 
-    <item
-        android:id="@+id/navigation_ambulance_services"
-        android:icon="@drawable/ic_ambulance"
-        android:title="@string/ambulance"
-        app:showAsAction="always" />
 </menu>

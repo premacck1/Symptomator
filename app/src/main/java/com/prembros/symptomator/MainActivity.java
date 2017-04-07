@@ -14,10 +14,8 @@ import android.widget.AdapterView;
 
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener,
         SymptomFragment.OnSymptomFragmentInteractionListener,
-        HospitalFragment.OnHospitalFragmentInteractionListener,
-        FirstAidFragment.OnFirstAidListFragmentInteractionListener,
-        DoctorFragment.OnFragmentInteractionListener,
-        AmbulanceFragment.OnAmbulanceFragmentInteractionListener {
+        ServicesFragment.OnServicesFragmentInteractionListener,
+        FirstAidFragment.OnFirstAidListFragmentInteractionListener {
 
     private FragmentManager fragmentManager;
 
@@ -34,13 +32,6 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                             .replace(R.id.main_fragment_container, new SymptomFragment(), "symptomFragment")
                             .commit();
                     return true;
-                case R.id.navigation_by_hospital:
-                    fragmentManager.beginTransaction().setCustomAnimations(
-                            R.anim.fragment_anim_in, android.R.anim.fade_out,
-                            android.R.anim.fade_in, android.R.anim.fade_out)
-                            .replace(R.id.main_fragment_container, new HospitalFragment(), "hospitalFragment")
-                            .commit();
-                    return true;
                 case R.id.navigation_by_first_aid:
                     fragmentManager.beginTransaction().setCustomAnimations(
                             R.anim.fragment_anim_in, android.R.anim.fade_out,
@@ -48,18 +39,11 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                             .replace(R.id.main_fragment_container, new FirstAidFragment(), "firstAidFragment")
                             .commit();
                     return true;
-                case R.id.navigation_by_doctor:
+                case R.id.navigation_by_services:
                     fragmentManager.beginTransaction().setCustomAnimations(
                             R.anim.fragment_anim_in, android.R.anim.fade_out,
                             android.R.anim.fade_in, android.R.anim.fade_out)
-                            .replace(R.id.main_fragment_container, new DoctorFragment(), "doctorFragment")
-                            .commit();
-                    return true;
-                case R.id.navigation_ambulance_services:
-                    fragmentManager.beginTransaction().setCustomAnimations(
-                            R.anim.fragment_anim_in, android.R.anim.fade_out,
-                            android.R.anim.fade_in, android.R.anim.fade_out)
-                            .replace(R.id.main_fragment_container, new AmbulanceFragment(), "ambulanceFragment")
+                            .replace(R.id.main_fragment_container, new ServicesFragment(), "hospitalFragment")
                             .commit();
                     return true;
                 default:
@@ -115,17 +99,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     }
 
     @Override
-    public void onHospitalFragmentInteraction(Uri uri) {
-
-    }
-
-    @Override
-    public void onAmbulanceFragmentInteraction(Uri uri) {
-
-    }
-
-    @Override
-    public void onFragmentInteraction(Uri uri) {
+    public void onServicesFragmentInteraction(Uri uri) {
 
     }
 
