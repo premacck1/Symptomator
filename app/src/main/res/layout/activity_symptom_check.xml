@@ -1,18 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="@dimen/activity_horizontal_margin"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorDisabled"
     tools:context="com.prembros.symptomator.SymptomCheck">
+
+    <io.codetail.widget.RevealFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin">
+
+        <FrameLayout
+            android:visibility="gone"
+            android:id="@+id/reveal_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/header_underline"
+            android:layout_alignParentTop="true">
+
+            <AutoCompleteTextView
+                android:id="@+id/first_aid_search_bar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="5dp"
+                android:hint="@string/search"
+                android:gravity="center_horizontal"/>
+
+            <android.support.v7.widget.AppCompatImageButton
+                android:id="@+id/reveal_view_close_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|top"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:background="@color/transparent"
+                app:srcCompat="@drawable/ic_close"/>
+
+        </FrameLayout>
+
+    </io.codetail.widget.RevealFrameLayout>
 
     <TextView
         android:id="@+id/symptom_check_activity_header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:textSize="18sp"
         android:layout_marginTop="@dimen/activity_horizontal_margin"
-        android:padding="@dimen/activity_horizontal_margin"/>
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_toLeftOf="@id/search_button"
+        android:layout_toStartOf="@id/search_button"
+        android:layout_alignParentTop="true"
+        android:textSize="18sp"
+        android:paddingTop="@dimen/activity_horizontal_margin"/>
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/header_underline"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_below="@id/symptom_check_activity_header"
+        android:background="@color/dividerColor"/>
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/search_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:background="@color/transparent"
+        android:padding="@dimen/activity_horizontal_margin"
+        app:srcCompat="@drawable/ic_search"/>
+
+    <FrameLayout
+        android:layout_below="@+id/header_underline"
+        android:paddingBottom="@dimen/activity_horizontal_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/recycler_view_list"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/symptom_check_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

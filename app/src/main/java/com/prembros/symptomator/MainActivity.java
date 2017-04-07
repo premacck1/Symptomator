@@ -130,7 +130,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     }
 
     @Override
-    public void onFirstAidListFragmentInteraction(String item) {
+    public void onListFragmentInteraction(String item) {
 
     }
 }

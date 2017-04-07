@@ -316,5 +316,6 @@
     <string name="find_doctors_by_specialisation">Find doctors by specialisation</string>
     <string name="request_urgent_doctor">Request urgent doctor</string>
     <string name="find_doctors_nearby">Find doctors nearby</string>
-    <string name="first_aid">First Aid</string>
+    <string name="first_aid_info">First aid information</string>
+    <string name="search">Search…</string>
 </resources>

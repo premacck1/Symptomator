@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.simplecityapps.recyclerview_fastscroll.views.FastScrollRecyclerView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/first_aid_list"
+    android:name="com.prembros.symptomator.FirstAidFragment"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:fastScrollAutoHide="false"
+    app:fastScrollPopupBgColor="@color/colorSecondary"
+    app:fastScrollPopupTextColor="@color/colorSecondaryText"
+    app:fastScrollThumbColor="@color/colorPrimaryLight"
+    app:fastScrollTrackColor="@color/transparent"
+    android:background="@drawable/checked_button_disabled"
+    app:layoutManager="LinearLayoutManager"
+    tools:context="com.prembros.symptomator.FirstAidFragment"
+    tools:listitem="@layout/recycler_view_list_item" />

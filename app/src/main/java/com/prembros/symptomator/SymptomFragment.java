@@ -159,6 +159,8 @@ public class SymptomFragment extends Fragment {
                         selectBodyPart.setVisibility(View.VISIBLE);
                         break;
                     default:
+                        selectBodyPart.setSelection(0);
+                        selectBodyPart.setVisibility(View.GONE);
                         break;
                 }
             }
@@ -257,7 +259,7 @@ public class SymptomFragment extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
-        resetViews();
+//        resetViews();
     }
 
     @Override

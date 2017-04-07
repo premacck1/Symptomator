@@ -19,7 +19,7 @@
     <item
         android:id="@+id/navigation_by_first_aid"
         android:icon="@drawable/ic_first_aid"
-        android:title="@string/first_aid"
+        android:title="@string/first_aid_info"
         app:showAsAction="always" />
 
     <item
