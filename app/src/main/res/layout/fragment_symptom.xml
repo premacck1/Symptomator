@@ -30,7 +30,7 @@
             app:mrl_rippleColor="@color/colorDisabled"
             app:mrl_rippleOverlay="true"
             app:mrl_rippleHover="true"
-            app:mrl_rippleDelayClick="true"
+            app:mrl_rippleDelayClick="false"
             app:mrl_rippleRoundedCorners="2dp">
 
             <Spinner
@@ -122,7 +122,7 @@
             app:mrl_rippleColor="@color/colorDisabled"
             app:mrl_rippleOverlay="true"
             app:mrl_rippleHover="true"
-            app:mrl_rippleDelayClick="true"
+            app:mrl_rippleDelayClick="false"
             app:mrl_rippleRoundedCorners="2dp">
 
             <Spinner
@@ -144,7 +144,7 @@
             app:mrl_rippleColor="@color/colorDisabled"
             app:mrl_rippleOverlay="true"
             app:mrl_rippleHover="true"
-            app:mrl_rippleDelayClick="true"
+            app:mrl_rippleDelayClick="false"
             app:mrl_rippleRoundedCorners="2dp">
 
             <Spinner
@@ -152,7 +152,6 @@
                 android:id="@+id/selected_body_part"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/symptom"
                 android:background="@drawable/button_theme"
                 android:textAlignment="center"
                 android:gravity="center_horizontal" />

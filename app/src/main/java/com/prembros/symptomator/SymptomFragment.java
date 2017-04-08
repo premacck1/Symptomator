@@ -5,6 +5,8 @@ import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.AppCompatButton;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -17,8 +19,6 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 public class SymptomFragment extends Fragment {
-//    private static final String ARG_PARAM1 = "param1";
-//    private static final String ARG_PARAM2 = "param2";
 
 //    private String selectedAge = null;
 //    private String selectedBodyArea = null;
@@ -28,8 +28,6 @@ public class SymptomFragment extends Fragment {
     private Spinner selectBodyArea;
     private Spinner selectBodyPart;
     private CheckedTextView[] allCheckedTextViews;
-//    private String mParam1;
-//    private String mParam2;
 
     private OnSymptomFragmentInteractionListener mListener;
 
@@ -37,29 +35,18 @@ public class SymptomFragment extends Fragment {
         // Required empty public constructor
     }
 
-//    public static SymptomFragment newInstance(String param1, String param2) {
-//        SymptomFragment fragment = new SymptomFragment();
-//        Bundle args = new Bundle();
-//        args.putString(ARG_PARAM1, param1);
-//        args.putString(ARG_PARAM2, param2);
-//        fragment.setArguments(args);
-//        return fragment;
-//    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-//        if (getArguments() != null) {
-//            mParam1 = getArguments().getString(ARG_PARAM1);
-//            mParam2 = getArguments().getString(ARG_PARAM2);
-//        }
-    }
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_symptom, container, false);
+
+//        SET ACTION BAR
+        ActionBar actionBar = ((AppCompatActivity)getActivity()).getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.setTitle(R.string.app_name);
+            actionBar.setSubtitle(getString(R.string.symptom_subtitle));
+        }
 
         selectAge = (Spinner) rootView.findViewById(R.id.selected_age);
         selectBodyArea = (Spinner) rootView.findViewById(R.id.selected_body_area);
@@ -207,7 +194,7 @@ public class SymptomFragment extends Fragment {
                             selectBodyArea.getSelectedItem().toString(),
                             selectBodyPart.getSelectedItem().toString());
                 } else
-                    Toast.makeText(getContext(), "Select proper options and try again.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), "Select proper options and try again", Toast.LENGTH_SHORT).show();
             }
         });
 

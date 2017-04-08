@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Symptomator</string>
-    <string name="symptom">Symptom</string>
+    <string name="symptom">Symptoms</string>
     <string name="hospital">Hospital</string>
     <string name="common_diseases">Common Diseases</string>
     <string name="icon_author">Icons made by Roundicons (http://www.flaticon.com/authors/roundicons) from Flaticon (www.flaticon.com)</string>
@@ -316,7 +316,14 @@
     <string name="find_doctors_by_specialisation">Find doctors by specialisation</string>
     <string name="request_urgent_doctor">Request urgent doctor</string>
     <string name="find_doctors_nearby">Find doctors nearby</string>
-    <string name="first_aid_info">First aid information</string>
+    <string name="first_aid_info">First aid info</string>
     <string name="search">Search…</string>
     <string name="services">Services</string>
+    <string name="services_subtitle">Ambulance|Hospital|Doctor</string>
+    <string name="symptom_subtitle">Prevention, better than cure</string>
+    <string name="first_aid_subtitle">You can save a life</string>
+
+    <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>

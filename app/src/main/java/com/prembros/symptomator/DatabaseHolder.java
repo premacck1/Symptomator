@@ -30,13 +30,14 @@ class DatabaseHolder {
     private static final String patient_hospitalID = "hospitalID";
     private static final String patient_address = "address";
 
+    private final String symptomList_tableName = "SymptomList";
     private static final String doctor_tableName = "Doctor";
     private static final String nurse_tableName = "Nurse";
     private static final String hospital_tableName = "Hospital";
     private static final String ambulance_tableName = "Ambulance";
     private static final String patient_tableName = "Patient";
 
-    private static final String create_table_symptom_list = "create table if not exists SymptomList (Symptom text not null, BodyPart text not null, PRIMARY KEY (Symptom,BodyPart);";
+    private static final String create_table_symptom_list = "create table if not exists SymptomList (Symptom text not null, BodyPart text not null, Sex text not null);";
 
     private static final String create_table_doctor = "create table if not exists Doctor (id text not null primary key, Name text not null, SpecialisedField text not null, contact int not null);";
 
@@ -51,17 +52,26 @@ class DatabaseHolder {
     private DatabaseHelper dbHelper;
     private Context context;
     private SQLiteDatabase db;
-    public DatabaseHolder(Context context) {
+    DatabaseHolder(Context context) {
         this.context = context;
         dbHelper = new DatabaseHelper(context);
     }
 
-    public DatabaseHolder open() {
+    DatabaseHolder open() {
         db  = dbHelper.getWritableDatabase();
+//        dbHelper.onCreate(db);
         return this;
     }
-    public void close() {
+    void close() {
         dbHelper.close();
+    }
+
+    long insertInSymptomListTable(String symptom, String bodyPart, String sex){
+        ContentValues content = new ContentValues();
+        content.put("Symptom", symptom);
+        content.put("BodyPart", bodyPart);
+        content.put("Sex", sex);
+        return db.insertOrThrow(symptomList_tableName, null, content);
     }
 
     public long insertPatientData(String aadhar, String name, String contact, String email,
@@ -106,6 +116,42 @@ class DatabaseHolder {
 
     public long deleteAllPatientData(){
         return db.delete(patient_tableName, "1", null);
+    }
+
+    Cursor returnSymptoms(String sex, String bodyPart){
+        Cursor cursor = null;
+        if (sex.equalsIgnoreCase("male")){
+            try{
+                cursor = db.query(true, symptomList_tableName,
+                        new String[]{"Symptom"},
+                        "Sex = '"+ sex +"' OR sex = 'All' AND BodyPart = '" + bodyPart + "'",
+                        null, null, null, null, null);
+            }
+            catch (SQLiteException e){
+                if (e.getMessage().contains("no such table")){
+                    Toast.makeText(context, "ERROR: Table doesn't exist!", Toast.LENGTH_SHORT).show();
+                    // create table
+                    // re-run query, etc.
+                } else e.printStackTrace();
+            }
+        }
+        else if (sex.equalsIgnoreCase("female")){
+            try{
+                cursor = db.query(true, symptomList_tableName,
+                        new String[]{"Symptom"},
+                        "Sex = '"+ sex +"' OR sex = 'All' AND BodyPart = '" + bodyPart + "'",
+                        null, null, null, null, null);
+            }
+            catch (SQLiteException e){
+                if (e.getMessage().contains("no such table")){
+                    Toast.makeText(context, "ERROR: Table doesn't exist!", Toast.LENGTH_SHORT).show();
+                    // create table
+                    // re-run query, etc.
+                } else e.printStackTrace();
+            }
+        } else cursor = null;
+
+        return cursor;
     }
 
     public Cursor returnPatientData() {

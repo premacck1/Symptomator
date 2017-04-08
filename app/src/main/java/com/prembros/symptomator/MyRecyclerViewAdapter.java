@@ -99,7 +99,7 @@ class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAdapter.V
         ViewHolder(View view) {
             super(view);
             mView = view;
-            mIdView = (TextView) view.findViewById(R.id.first_aid_list_item);
+            mIdView = (TextView) view.findViewById(R.id.Recycler_view_list_item);
 //            mContentView = (TextView) view.findViewById(R.id.content);
         }
 

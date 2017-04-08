@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <color android:color="@color/colorDisabled"/>
+    </item>
+
+    <item
+        android:top="240dp" android:bottom="240dp"
+        android:left="100dp" android:right="100dp"
+        android:gravity="center|clip_horizontal|clip_vertical"
+        android:drawable="@drawable/ic_app_logo"/>
+
+</layer-list>

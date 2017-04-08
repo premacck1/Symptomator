@@ -12,7 +12,6 @@
     app:fastScrollPopupTextColor="@color/colorSecondaryText"
     app:fastScrollThumbColor="@color/colorPrimaryLight"
     app:fastScrollTrackColor="@color/transparent"
-    android:background="@drawable/checked_button_disabled"
     app:layoutManager="LinearLayoutManager"
     tools:context="com.prembros.symptomator.FirstAidFragment"
     tools:listitem="@layout/recycler_view_list_item" />

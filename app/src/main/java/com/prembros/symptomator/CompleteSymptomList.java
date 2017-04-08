@@ -51,6 +51,9 @@ public class CompleteSymptomList extends Fragment {
                     if (text.contains(charSequence))
                         filteredList.add(completeSymptomList.get(x));
                 }
+                if (filteredList.isEmpty()){
+                    filteredList.add("Still didn't find it?\nClick here to search online");
+                }
 
                 list.setLayoutManager(new LinearLayoutManager(getContext()));
                 recyclerViewAdapter = new MyRecyclerViewAdapter(getContext(), filteredList, null, mListener);
