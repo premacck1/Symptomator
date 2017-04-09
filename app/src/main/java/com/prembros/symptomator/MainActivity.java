@@ -16,6 +16,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.animation.AnimationUtils;
 import android.widget.AdapterView;
 import android.widget.Toast;
 
@@ -25,6 +26,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         FirstAidFragment.OnFirstAidListFragmentInteractionListener {
 
     private FragmentManager fragmentManager;
+    private BottomNavigationView navigation;
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -70,7 +72,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 .add(R.id.main_fragment_container, new SymptomFragment(), "symptomFragment")
                 .commit();
 
-        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
+        navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
     }
 
@@ -131,7 +133,22 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        return super.onOptionsItemSelected(item);
+        switch (item.getItemId()){
+            case R.id.action_about:
+                navigation.startAnimation(AnimationUtils.loadAnimation(MainActivity.this, R.anim.sink_down));
+                navigation.setVisibility(View.GONE);
+                fragmentManager.beginTransaction().add(R.id.main_menu_fragment_container, new About(), "about").commit();
+//                new Handler().postDelayed(new Runnable() {
+//                    @Override
+//                    public void run() {
+//                        //noinspection ConstantConditions
+//                        getSupportActionBar().hide();
+//                    }
+//                }, 300);
+//                return true;
+            default:
+                return false;
+        }
     }
 
     @Override
@@ -161,5 +178,18 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     @Override
     public void onListFragmentInteraction(String item) {
 
+    }
+
+    @Override
+    public void onBackPressed() {
+        if (getSupportFragmentManager().findFragmentByTag("about") != null && getSupportActionBar() != null){
+            navigation.startAnimation(AnimationUtils.loadAnimation(MainActivity.this, R.anim.float_up));
+            navigation.setVisibility(View.VISIBLE);
+            getSupportActionBar().show();
+            getSupportFragmentManager().beginTransaction()
+                    .setCustomAnimations(R.anim.fragment_anim_in, R.anim.fragment_anim_out)
+                    .remove(getSupportFragmentManager().findFragmentByTag("about"))
+                    .commit();
+        } else super.onBackPressed();
     }
 }

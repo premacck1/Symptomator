@@ -326,4 +326,27 @@
     <string name="title_activity_splash_screen">SplashScreen</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <!--ABOUT PAGE STRINGS-->
+    <string name="about_header">About</string>
+    <string name="about_the_developers">About the developers</string>
+    <string name="about_the_developers_details">
+        Prem Suman
+        \nEmail me at:</string>
+    <string name="about_the_app">About the App</string>
+    <string name="about_the_app_details">
+        Symptomator is a medical app designed for your emergencies and informational needs.
+        \nThis app is currently under construction, but when complete, it will pack these features:
+        \n\nSymptom check\n(check your symptoms by choosing your concerned body part.)
+        \n\nFirst aid information\n(get all the first aid information you need, under one roof.)
+        \n\nAmbulance services\n(call Emergency services, Request a private ambulance or check ambulance availability in nearby hospitals.)
+        \n\nHospital services\n(Immediately find directions to the hospital closest to you, or check nearby hospitals)
+        \n\nDoctor services\n(Request a doctor urgently or find doctors)
+    </string>
+    <string name="special_thanks">Special Thanks</string>
+    <string name="special_thanks_details">My Parents for the support</string>
+    <string name="email">itsprembros@gmail.com</string>
+    <string name="prembros">PremBros</string>
+    <string name="visit_us_at">Visit us at:</string>
+
 </resources>

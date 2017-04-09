@@ -11,6 +11,7 @@
     <color name="dividerColor">#BDBDBD</color>
     <color name="white_text_icons">#FFFFFF</color>
     <color name="colorAccent">#7c4dff</color>
+    <color name="colorLink">#42a5f5</color>
 
     <color name="black_overlay">#66000000</color>
 </resources>
