@@ -92,7 +92,7 @@
         <item>Sole</item>
     </string-array>
     <string-array name="default_selection">
-        <item> </item>
+        <item>Concerned body part</item>
     </string-array>
 
     <string-array name="first_aid">
@@ -310,7 +310,7 @@
     <string name="ambulance_services">Ambulance services</string>
     <string name="request_a_private_ambulance">Request a private ambulance</string>
     <string name="check_ambulance_availability">Check ambulance availability</string>
-    <string name="call_108">Call 108</string>
+    <string name="call_108">Call Medical services</string>
     <string name="doctor">Doctor</string>
     <string name="doctor_services">Doctor services</string>
     <string name="find_doctors_by_specialisation">Find doctors by specialisation</string>

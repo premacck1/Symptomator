@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+@SuppressWarnings("unused")
 public class ServicesFragment extends Fragment {
 
     private OnServicesFragmentInteractionListener mListener;

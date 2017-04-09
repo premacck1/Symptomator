@@ -1,16 +1,23 @@
 package com.prembros.symptomator;
 
+import android.Manifest;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentManager;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener,
         SymptomFragment.OnSymptomFragmentInteractionListener,
@@ -65,6 +72,53 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+    }
+
+    public void onButtonClick(View view){
+        switch (view.getId()){
+            case R.id.call_108:
+                String locale;
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+                    locale = getResources().getConfiguration().getLocales().get(0).getCountry();
+                } else {
+                    //noinspection deprecation
+                    locale = getResources().getConfiguration().locale.getCountry();
+                }
+                if (locale.equalsIgnoreCase("GB") || locale.equalsIgnoreCase("IN")){
+                    call(108);
+                }
+                break;
+            default:
+                Toast.makeText(this, "This feature is coming soon!", Toast.LENGTH_SHORT).show();
+                break;
+        }
+    }
+
+    void call(int number){
+        final Intent callIntent = new Intent(Intent.ACTION_CALL);
+        callIntent.setData(Uri.parse("tel:" + number));
+
+        if (ActivityCompat.checkSelfPermission(this,
+                Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+            return;
+        }
+        final AlertDialog.Builder dialog = new AlertDialog.Builder(MainActivity.this);
+        dialog.setIcon(R.drawable.ic_call)
+                .setTitle("Emergency number")
+                .setMessage("We're going to call \"" + number + "\" for you\nClick OKAY to confirm.")
+                .setPositiveButton("okay", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        startActivity(callIntent);
+                    }
+                })
+                .setNegativeButton("cancel", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        dialogInterface.dismiss();
+                    }
+                })
+                .show();
     }
 
     @Override

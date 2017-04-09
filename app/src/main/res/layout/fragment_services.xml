@@ -47,7 +47,8 @@
                 android:textColor="@color/white_text_icons"
                 android:padding="@dimen/activity_horizontal_margin"
                 android:background="@drawable/button_style"
-                android:text="@string/call_108"/>
+                android:text="@string/call_108"
+                android:onClick="onButtonClick"/>
 
         </com.balysv.materialripple.MaterialRippleLayout>
 
@@ -70,7 +71,8 @@
                 android:textColor="@color/white_text_icons"
                 android:padding="@dimen/activity_horizontal_margin"
                 android:background="@drawable/button_style"
-                android:text="@string/request_a_private_ambulance"/>
+                android:text="@string/request_a_private_ambulance"
+                android:onClick="onButtonClick"/>
 
         </com.balysv.materialripple.MaterialRippleLayout>
 
@@ -93,7 +95,8 @@
                 android:textColor="@color/white_text_icons"
                 android:padding="@dimen/activity_horizontal_margin"
                 android:background="@drawable/button_style"
-                android:text="@string/check_ambulance_availability"/>
+                android:text="@string/check_ambulance_availability"
+                android:onClick="onButtonClick"/>
 
         </com.balysv.materialripple.MaterialRippleLayout>
 
@@ -127,7 +130,8 @@
                 android:textSize="18sp"
                 android:padding="@dimen/activity_horizontal_margin"
                 android:background="@drawable/button_theme"
-                android:text="@string/get_to_the_nearest_hospital"/>
+                android:text="@string/get_to_the_nearest_hospital"
+                android:onClick="onButtonClick"/>
 
         </com.balysv.materialripple.MaterialRippleLayout>
 
@@ -150,7 +154,8 @@
                 android:textColor="@color/white_text_icons"
                 android:padding="@dimen/activity_horizontal_margin"
                 android:background="@drawable/button_style"
-                android:text="@string/find_nearby_hospitals"/>
+                android:text="@string/find_nearby_hospitals"
+                android:onClick="onButtonClick"/>
 
         </com.balysv.materialripple.MaterialRippleLayout>
 
@@ -173,7 +178,8 @@
                 android:textColor="@color/white_text_icons"
                 android:padding="@dimen/activity_horizontal_margin"
                 android:background="@drawable/button_style"
-                android:text="@string/find_hospitals_by_state"/>
+                android:text="@string/find_hospitals_by_state"
+                android:onClick="onButtonClick"/>
 
         </com.balysv.materialripple.MaterialRippleLayout>
 
@@ -196,7 +202,8 @@
                 android:textColor="@color/white_text_icons"
                 android:padding="@dimen/activity_horizontal_margin"
                 android:background="@drawable/button_style"
-                android:text="@string/find_hospitals_by_specialisation"/>
+                android:text="@string/find_hospitals_by_specialisation"
+                android:onClick="onButtonClick"/>
 
         </com.balysv.materialripple.MaterialRippleLayout>
 
@@ -231,7 +238,8 @@
                 android:textColor="@color/white_text_icons"
                 android:padding="@dimen/activity_horizontal_margin"
                 android:background="@drawable/button_style"
-                android:text="@string/find_doctors_by_specialisation"/>
+                android:text="@string/find_doctors_by_specialisation"
+                android:onClick="onButtonClick"/>
 
         </com.balysv.materialripple.MaterialRippleLayout>
 
@@ -254,7 +262,8 @@
                 android:textColor="@color/white_text_icons"
                 android:padding="@dimen/activity_horizontal_margin"
                 android:background="@drawable/button_style"
-                android:text="@string/request_urgent_doctor"/>
+                android:text="@string/request_urgent_doctor"
+                android:onClick="onButtonClick"/>
 
         </com.balysv.materialripple.MaterialRippleLayout>
 
@@ -277,7 +286,8 @@
                 android:textColor="@color/white_text_icons"
                 android:padding="@dimen/activity_horizontal_margin"
                 android:background="@drawable/button_style"
-                android:text="@string/find_doctors_nearby"/>
+                android:text="@string/find_doctors_nearby"
+                android:onClick="onButtonClick"/>
 
         </com.balysv.materialripple.MaterialRippleLayout>
 
