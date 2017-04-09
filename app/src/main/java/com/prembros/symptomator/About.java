@@ -24,6 +24,7 @@ public class About extends Fragment {
     private String previousSubTitle;
     private ActionBar actionBar;
 
+    @SuppressWarnings("ConstantConditions")
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
