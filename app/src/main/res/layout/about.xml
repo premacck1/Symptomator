@@ -69,11 +69,14 @@
                 android:id="@+id/email_link"
                 android:autoLink="web|email"
                 android:textColorLink="@color/colorLink"
+                android:textStyle="bold"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:text="@string/email"
-                android:textSize="18sp" />
+                android:shadowColor="@android:color/black"
+                android:shadowRadius="10"
+                android:textSize="20sp" />
 
             <TextView
                 android:layout_width="match_parent"

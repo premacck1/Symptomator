@@ -134,18 +134,13 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
+            case android.R.id.home:
+                onBackPressed();
+                return true;
             case R.id.action_about:
                 navigation.startAnimation(AnimationUtils.loadAnimation(MainActivity.this, R.anim.sink_down));
                 navigation.setVisibility(View.GONE);
-                fragmentManager.beginTransaction().add(R.id.main_menu_fragment_container, new About(), "about").commit();
-//                new Handler().postDelayed(new Runnable() {
-//                    @Override
-//                    public void run() {
-//                        //noinspection ConstantConditions
-//                        getSupportActionBar().hide();
-//                    }
-//                }, 300);
-//                return true;
+                fragmentManager.beginTransaction().add(R.id.menu_fragment_container, new About(), "about").commit();
             default:
                 return false;
         }

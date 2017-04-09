@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
+import android.support.v4.app.FragmentManager;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
@@ -28,6 +29,7 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
     private List<String> symptomList;
     private RecyclerView recyclerView;
     private FrameLayout layoutContainer;
+    private FragmentManager fragmentManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,13 +44,15 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
         }
 
         DatabaseHolder dbHandler = new DatabaseHolder(this);
+        fragmentManager = getSupportFragmentManager();
 
         Intent intent = getIntent();
         String selectedAge = intent.getExtras().getString("selectedAge");
         String selectedSex = intent.getExtras().getString("selectedSex");
 //        String selectedBodyArea = intent.getExtras().getString("selectedBodyArea");
         String selectedBodyPart = intent.getExtras().getString("selectedBodyPart");
-        String headerText = selectedSex + ", " + selectedAge + ", in " + selectedBodyPart;
+        assert selectedAge != null;
+        String headerText = selectedSex + ", " + selectedAge.replace(" - ", "-") + ", " + selectedBodyPart;
         actionBar.setSubtitle(headerText);
 
         symptomList = new ArrayList<>();
@@ -82,7 +86,7 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
                 if (position == itemCount - 1){
                     actionBar.hide();
                     layoutContainer.setVisibility(View.INVISIBLE);
-                    getSupportFragmentManager().beginTransaction()
+                    fragmentManager.beginTransaction()
                             .setCustomAnimations(R.anim.fragment_anim_in, R.anim.fragment_anim_out)
                             .add(R.id.symptom_check_fragment_container, new CompleteSymptomList(), "completeSymptomList")
                             .commit();
@@ -194,8 +198,10 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
             case android.R.id.home:
-                this.finish();
+                onBackPressed();
                 return true;
+            case R.id.action_about:
+                fragmentManager.beginTransaction().add(R.id.menu_fragment_container, new About(), "about").commit();
             default:
                 return false;
         }
@@ -208,13 +214,20 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
 
     @Override
     public void onBackPressed() {
-        if (getSupportFragmentManager().findFragmentByTag("completeSymptomList") != null){
+        if (fragmentManager.findFragmentByTag("completeSymptomList") != null){
             actionBar.show();
-            getSupportFragmentManager().beginTransaction()
+            fragmentManager.beginTransaction()
                     .setCustomAnimations(R.anim.fragment_anim_in, R.anim.fragment_anim_out)
-                    .remove(getSupportFragmentManager().findFragmentByTag("completeSymptomList"))
+                    .remove(fragmentManager.findFragmentByTag("completeSymptomList"))
                     .commit();
             layoutContainer.setVisibility(View.VISIBLE);
+        }
+        if (getSupportFragmentManager().findFragmentByTag("about") != null) {
+            actionBar.show();
+            fragmentManager.beginTransaction()
+                    .setCustomAnimations(R.anim.fragment_anim_in, R.anim.fragment_anim_out)
+                    .remove(getSupportFragmentManager().findFragmentByTag("about"))
+                    .commit();
         } else super.onBackPressed();
     }
 }

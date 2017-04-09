@@ -8,6 +8,8 @@ import android.support.v4.app.Fragment;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.AnimationUtils;
@@ -23,6 +25,13 @@ public class About extends Fragment {
     private String previousTitle;
     private String previousSubTitle;
     private ActionBar actionBar;
+    private boolean isHomeAsUpShown = false;
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setHasOptionsMenu(true);
+    }
 
     @SuppressWarnings("ConstantConditions")
     @Nullable
@@ -34,28 +43,28 @@ public class About extends Fragment {
 //        SET ACTION BAR
         actionBar = ((AppCompatActivity)getActivity()).getSupportActionBar();
         if (actionBar != null) {
+            isHomeAsUpShown = (actionBar.getDisplayOptions() & ActionBar.DISPLAY_HOME_AS_UP) != 0;
+            actionBar.setDisplayHomeAsUpEnabled(true);
+            actionBar.setHomeAsUpIndicator(R.drawable.ic_chevron_left);
             previousTitle = actionBar.getTitle().toString();
             previousSubTitle = actionBar.getSubtitle().toString();
             actionBar.setTitle(R.string.about);
             actionBar.setSubtitle(R.string.prembros);
         }
-
-//        JUST ADD android:autoLink="web|email" IN CORRESPONDING XML LAYOUT FILE
-//        AND YOU DON'T NEED THE FOLLOWING SNIPPET!
-/*
-          CustomTextViewSemiLight emailLink = (CustomTextViewSemiLight) rootView.findViewById(R.id.email_link);
-        emailLink.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent emailIntent = new Intent(Intent.ACTION_SEND, Uri.fromParts(
-                        "mailto","itsprembros@gmail.com", null));
-                emailIntent.setType("text/email");
-                emailIntent.putExtra(Intent.EXTRA_EMAIL, R.string.email);
-                startActivity(Intent.createChooser(emailIntent, "Send email"));
-            }
-        });
-*/
-
+////        JUST ADD android:autoLink="web|email" IN CORRESPONDING XML LAYOUT FILE
+////        AND YOU DON'T NEED THE FOLLOWING SNIPPET!
+//
+//          CustomTextViewSemiLight emailLink = (CustomTextViewSemiLight) rootView.findViewById(R.id.email_link);
+//        emailLink.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent emailIntent = new Intent(Intent.ACTION_SEND, Uri.fromParts(
+//                        "mailto","itsprembros@gmail.com", null));
+//                emailIntent.setType("text/email");
+//                emailIntent.putExtra(Intent.EXTRA_EMAIL, R.string.email);
+//                startActivity(Intent.createChooser(emailIntent, "Send email"));
+//            }
+//        });
         TextView PremBrosLink = (TextView) rootView.findViewById(R.id.PremBros_link);
         PremBrosLink.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -73,7 +82,16 @@ public class About extends Fragment {
     }
 
     @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        menu.clear();
+        inflater.inflate(R.menu.menu_about, menu);
+    }
+
+    @Override
     public void onDestroy() {
+        if (!isHomeAsUpShown){
+            actionBar.setDisplayHomeAsUpEnabled(false);
+        }
         actionBar.setTitle(previousTitle);
         actionBar.setSubtitle(previousSubTitle);
         super.onDestroy();
