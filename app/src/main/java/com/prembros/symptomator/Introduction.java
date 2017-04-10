@@ -84,7 +84,7 @@ public class Introduction extends AppIntro2 {
         db.insertInSymptomListTable("Bleeding", "Head", "All");
         db.insertInSymptomListTable("Brittle hair", "Head", "All");
         db.insertInSymptomListTable("Broken bone (single fracture)", "Head", "All");
-        db.insertInSymptomListTable("Broken bone (multiple fractures)", "Head", "All");
+        db.insertInSymptomListTable("Broken bones (multiple fractures)", "Head", "All");
         db.insertInSymptomListTable("Bruising or discoloration", "Head", "All");
         db.insertInSymptomListTable("Coma", "Head", "All");
         db.insertInSymptomListTable("Compulsive behavior", "Head", "All");
@@ -126,7 +126,7 @@ public class Introduction extends AppIntro2 {
         db.insertInSymptomListTable("Food cravings", "Head", "All");
         db.insertInSymptomListTable("Forgetfulness", "Head", "All");
         db.insertInSymptomListTable("Frightening dreams", "Head", "All");
-        db.insertInSymptomListTable("frightening thoughts", "Head", "All");
+        db.insertInSymptomListTable("Frightening thoughts", "Head", "All");
         db.insertInSymptomListTable("Hair loss", "Head", "All");
         db.insertInSymptomListTable("Hallucinations", "Head", "All");
         db.insertInSymptomListTable("Headache", "Head", "All");
@@ -165,7 +165,7 @@ public class Introduction extends AppIntro2 {
         db.insertInSymptomListTable("Spinning sensation", "Head", "All");
         db.insertInSymptomListTable("Swelling", "Head", "All");
         db.insertInSymptomListTable("Tenderness to touch", "Head", "All");
-        db.insertInSymptomListTable("unusual behavior", "Head", "All");
+        db.insertInSymptomListTable("Unusual behavior", "Head", "All");
         db.insertInSymptomListTable("Visible bugs or parasites", "Head", "All");
         db.insertInSymptomListTable("Visible deformity", "Head", "All");
         db.insertInSymptomListTable("Warm to touch", "Head", "All");
@@ -374,7 +374,7 @@ public class Introduction extends AppIntro2 {
         db.insertInSymptomListTable("Swollen tongue", "Mouth", "All");
         db.insertInSymptomListTable("Swollen tonsils", "Mouth", "All");
         db.insertInSymptomListTable("Taste of acid in mouth", "Mouth", "All");
-        db.insertInSymptomListTable("taste words when they are heard", "Mouth", "All");
+        db.insertInSymptomListTable("Taste words when they are heard", "Mouth", "All");
         db.insertInSymptomListTable("Teeth do not fit like they used to", "Mouth", "All");
         db.insertInSymptomListTable("Tenderness to touch", "Mouth", "All");
         db.insertInSymptomListTable("Thick saliva or mucus", "Mouth", "All");
@@ -393,7 +393,7 @@ public class Introduction extends AppIntro2 {
         db.insertInSymptomListTable("Difficulty moving joint", "Jaw", "All");
         db.insertInSymptomListTable("Difficulty opening mouth", "Jaw", "All");
         db.insertInSymptomListTable("Drainage or pus", "Jaw", "All");
-        db.insertInSymptomListTable("Enlarged or swollen glands", "Jaw", "All");
+        db.insertInSymptomListTable("Enlarged/swollen glands", "Jaw", "All");
         db.insertInSymptomListTable("Jaw locking", "Jaw", "All");
         db.insertInSymptomListTable("Lump or bulge", "Jaw", "All");
         db.insertInSymptomListTable("Multiple bruises of different ages", "Jaw", "All");
@@ -413,7 +413,7 @@ public class Introduction extends AppIntro2 {
         db.insertInSymptomListTable("Broken bones (multiple fractures)", "Neck", "All");
         db.insertInSymptomListTable("Bruising or discoloration", "Neck", "All");
         db.insertInSymptomListTable("Drainage or pus", "Neck", "All");
-        db.insertInSymptomListTable("Enlarged or swollen glands", "Neck", "All");
+        db.insertInSymptomListTable("Enlarged/swollen glands", "Neck", "All");
         db.insertInSymptomListTable("Joint aches", "Neck", "All");
         db.insertInSymptomListTable("Joint pain", "Neck", "All");
         db.insertInSymptomListTable("Lump or bulge", "Neck", "All");
@@ -797,7 +797,7 @@ public class Introduction extends AppIntro2 {
         db.insertInSymptomListTable("Bleeding", "Armpit", "All");
         db.insertInSymptomListTable("Bruising or discoloration", "Armpit", "All");
         db.insertInSymptomListTable("Drainage or pus", "Armpit", "All");
-        db.insertInSymptomListTable("Enlarged or swollen glands", "Armpit", "All");
+        db.insertInSymptomListTable("Enlarged/swollen glands", "Armpit", "All");
         db.insertInSymptomListTable("Excessive sweating", "Armpit", "All");
         db.insertInSymptomListTable("Lump or bulge", "Armpit", "All");
         db.insertInSymptomListTable("Multiple bruises of different ages", "Armpit", "All");
@@ -830,7 +830,7 @@ public class Introduction extends AppIntro2 {
         db.insertInSymptomListTable("Bruising or discoloration", "Elbow", "All");
         db.insertInSymptomListTable("Difficulty moving joint", "Elbow", "All");
         db.insertInSymptomListTable("Drainage or pus", "Elbow", "All");
-        db.insertInSymptomListTable("Enlarged or swollen glands", "Elbow", "All");
+        db.insertInSymptomListTable("Enlarged/swollen glands", "Elbow", "All");
         db.insertInSymptomListTable("Guarding or favoring joint", "Elbow", "All");
         db.insertInSymptomListTable("Inability to move", "Elbow", "All");
         db.insertInSymptomListTable("Joint aches", "Elbow", "All");
