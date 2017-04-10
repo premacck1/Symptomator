@@ -31,13 +31,16 @@ class DatabaseHolder {
     private static final String patient_address = "address";
 
     private final String symptomList_tableName = "SymptomList";
-    private static final String doctor_tableName = "Doctor";
-    private static final String nurse_tableName = "Nurse";
-    private static final String hospital_tableName = "Hospital";
-    private static final String ambulance_tableName = "Ambulance";
-    private static final String patient_tableName = "Patient";
+    private final String emergencyNumbers_tableName = "emergencyNumbers";
+//    private  final String doctor_tableName = "Doctor";
+//    private  final String nurse_tableName = "Nurse";
+    private final String hospital_tableName = "Hospital";
+    private final String ambulance_tableName = "Ambulance";
+    private final String patient_tableName = "Patient";
 
     private static final String create_table_symptom_list = "create table if not exists SymptomList (Symptom text not null, BodyPart text not null, Sex text not null);";
+
+    private static final String create_table_emergency_numbers = "create table if not exists emergencyNumbers(Country text not null, Code text not null, Number text not null)";
 
     private static final String create_table_doctor = "create table if not exists Doctor (id text not null primary key, Name text not null, SpecialisedField text not null, contact int not null);";
 
@@ -72,6 +75,14 @@ class DatabaseHolder {
         content.put("BodyPart", bodyPart);
         content.put("Sex", sex);
         return db.insertOrThrow(symptomList_tableName, null, content);
+    }
+
+    long insertInEmergencyNumbers(String country, String code, String number){
+        ContentValues content = new ContentValues();
+        content.put("Country", country);
+        content.put("Code", code);
+        content.put("Number", number);
+        return db.insertOrThrow(emergencyNumbers_tableName, null, content);
     }
 
     public long insertPatientData(String aadhar, String name, String contact, String email,
@@ -166,6 +177,24 @@ class DatabaseHolder {
         return cursor;
     }
 
+    Cursor returnEmergencyNumber(String countryCode){
+        Cursor cursor = null;
+        try{
+            cursor = db.query(emergencyNumbers_tableName,
+                    new String[]{"Number"},
+                    "Code = '" + countryCode.toUpperCase() + "'",
+                    null, null, null, null, null);
+        }
+        catch (SQLiteException e){
+            if (e.getMessage().contains("no such table")){
+                Toast.makeText(context, "ERROR: Table doesn't exist!", Toast.LENGTH_SHORT).show();
+                // create table
+                // re-run query, etc.
+            } else e.printStackTrace();
+        }
+        return cursor;
+    }
+
     public Cursor returnPatientData() {
         Cursor cursor = null;
         try{
@@ -188,7 +217,7 @@ class DatabaseHolder {
     public Cursor returnDoctorData(){
         Cursor cursor = null;
         try{
-            cursor = db.query(doctor_tableName, new String[]{"Name", "SpecialisedField", "contact"}, null, null, null, null, null);
+            cursor = db.query("Doctor", new String[]{"Name", "SpecialisedField", "contact"}, null, null, null, null, null);
         }
         catch (SQLiteException e){
             if (e.getMessage().contains("no such table")){
@@ -203,7 +232,7 @@ class DatabaseHolder {
     public Cursor returnNurseData() {
         Cursor cursor = null;
         try{
-            cursor = db.query(nurse_tableName, new String[]{"Name", "available", "contact"}, null, null, null, null, null);
+            cursor = db.query("Nurse", new String[]{"Name", "available", "contact"}, null, null, null, null, null);
         }
         catch (SQLiteException e){
             if (e.getMessage().contains("no such table")){
@@ -268,6 +297,7 @@ class DatabaseHolder {
 //        db.execSQL("DROP TABLE IF EXISTS Ambulance");
         try{
             db.execSQL(create_table_symptom_list);
+            db.execSQL(create_table_emergency_numbers);
 //            db.execSQL(create_table_hospital);
 //            db.execSQL(create_table_ambulance);
 //            db.execSQL(create_table_nurse);
@@ -287,6 +317,7 @@ class DatabaseHolder {
         public void onCreate(SQLiteDatabase db) {
             try{
                 db.execSQL(create_table_symptom_list);
+                db.execSQL(create_table_emergency_numbers);
 //                db.execSQL(create_table_hospital);
 //                db.execSQL(create_table_ambulance);
 //                db.execSQL(create_table_nurse);

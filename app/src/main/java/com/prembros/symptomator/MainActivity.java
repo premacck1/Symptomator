@@ -1,11 +1,12 @@
 package com.prembros.symptomator;
 
 import android.Manifest;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.database.Cursor;
 import android.net.Uri;
-import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -13,12 +14,15 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.telephony.TelephonyManager;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.animation.AnimationUtils;
 import android.widget.AdapterView;
 import android.widget.Toast;
+
+import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener,
         SymptomFragment.OnSymptomFragmentInteractionListener,
@@ -77,18 +81,15 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     }
 
     public void onButtonClick(View view){
+        DatabaseHolder db = new DatabaseHolder(this);
         switch (view.getId()){
             case R.id.call_108:
-                String locale;
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
-                    locale = getResources().getConfiguration().getLocales().get(0).getCountry();
-                } else {
-                    //noinspection deprecation
-                    locale = getResources().getConfiguration().locale.getCountry();
-                }
-                if (locale.equalsIgnoreCase("GB") || locale.equalsIgnoreCase("IN")){
-                    call(108);
-                }
+                db.open();
+                Cursor cursor = db.returnEmergencyNumber(getUserCountry(this));
+                cursor.moveToFirst();
+                call(Integer.parseInt(cursor.getString(cursor.getColumnIndex("Number"))));
+                cursor.close();
+                db.close();
                 break;
             case R.id.find_hospitals_nearby:
                 startActivity(new Intent(this, MapsActivity.class));
@@ -97,6 +98,26 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 Toast.makeText(this, "This feature is coming soon!", Toast.LENGTH_SHORT).show();
                 break;
         }
+    }
+
+    public static String getUserCountry(Context context) {
+        try {
+            final TelephonyManager tm = (TelephonyManager) context.getSystemService(Context.TELEPHONY_SERVICE);
+            final String simCountry = tm.getSimCountryIso();
+            if (simCountry != null && simCountry.length() == 2) { // SIM country code is available
+                return simCountry.toLowerCase(Locale.US);
+            }
+            else if (tm.getPhoneType() != TelephonyManager.PHONE_TYPE_CDMA) { // device is not 3G (would be unreliable)
+                String networkCountry = tm.getNetworkCountryIso();
+                if (networkCountry != null && networkCountry.length() == 2) { // network country code is available
+                    return networkCountry.toLowerCase(Locale.US);
+                }
+            }
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     void call(int number){
