@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
+import android.os.StrictMode;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
@@ -33,6 +34,10 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        StrictMode.setThreadPolicy(new StrictMode.ThreadPolicy.Builder().detectAll().penaltyLog().build());
+        StrictMode.setVmPolicy(new StrictMode.VmPolicy.Builder().detectLeakedSqlLiteObjects().detectLeakedClosableObjects().penaltyLog().build());
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_symptom_check);
 
@@ -43,14 +48,14 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
             actionBar.setTitle(R.string.symptom);
         }
 
-        DatabaseHolder dbHandler = new DatabaseHolder(this);
+        final DatabaseHolder dbHandler = new DatabaseHolder(this);
         fragmentManager = getSupportFragmentManager();
 
         Intent intent = getIntent();
         String selectedAge = intent.getExtras().getString("selectedAge");
-        String selectedSex = intent.getExtras().getString("selectedSex");
+        final String selectedSex = intent.getExtras().getString("selectedSex");
 //        String selectedBodyArea = intent.getExtras().getString("selectedBodyArea");
-        String selectedBodyPart = intent.getExtras().getString("selectedBodyPart");
+        final String selectedBodyPart = intent.getExtras().getString("selectedBodyPart");
         assert selectedAge != null;
         String headerText = selectedSex + ", " + selectedAge.replace(" - ", "-") + ", " + selectedBodyPart;
         actionBar.setSubtitle(headerText);
@@ -59,29 +64,39 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
         recyclerView = (RecyclerView) this.findViewById(R.id.first_aid_list);
         layoutContainer = (FrameLayout) this.findViewById(R.id.symptom_check_layout);
 
-        dbHandler.open();
-        Cursor cursor = dbHandler.returnSymptoms(selectedSex, selectedBodyPart);
-        cursor.moveToFirst();
-        while (!cursor.isAfterLast()){
-            try {
-                symptomList.add(cursor.getString(cursor.getColumnIndex("Symptom")));
-            } catch (Exception e){
-                e.printStackTrace();
-            } finally {
-                cursor.moveToNext();
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                dbHandler.open();
+                Cursor cursor = dbHandler.returnSymptoms(selectedSex, selectedBodyPart);
+                if (cursor != null) {
+                    cursor.moveToFirst();
+                    while (!cursor.isAfterLast()) {
+                        try {
+                            symptomList.add(cursor.getString(cursor.getColumnIndex("Symptom")));
+                            cursor.moveToNext();
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                        }
+                    }
+                }
+                symptomList.add("Didn't find what you were looking for?\nLook in the whole Symptom directory");
+                if (cursor != null) {
+                    cursor.close();
+                }
+                dbHandler.close();
             }
         }
-        dbHandler.close();
+        ).start();
 
-        symptomList.add("Didn't find what you were looking for?\nLook in the whole Symptom directory");
         recyclerViewAdapter = new MyRecyclerViewAdapter(this, symptomList, null, null);
-        itemCount = recyclerViewAdapter.getItemCount();
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(recyclerViewAdapter);
 
         recyclerView.addOnItemTouchListener(new RecyclerViewOnItemClickListener(this, new RecyclerViewOnItemClickListener.OnItemClickListener() {
             @Override
             public void onItemClick(View view, int position) {
+                itemCount = recyclerViewAdapter.getItemCount();
 //                Toast.makeText(SymptomCheck.this, "Clicked: " + position + " : " + itemCount, Toast.LENGTH_SHORT).show();
                 if (position == itemCount - 1){
                     actionBar.hide();
@@ -222,12 +237,14 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
                     .commit();
             layoutContainer.setVisibility(View.VISIBLE);
         }
-        if (getSupportFragmentManager().findFragmentByTag("about") != null) {
+        else if (getSupportFragmentManager().findFragmentByTag("about") != null) {
             actionBar.show();
             fragmentManager.beginTransaction()
                     .setCustomAnimations(R.anim.fragment_anim_in, R.anim.fragment_anim_out)
                     .remove(getSupportFragmentManager().findFragmentByTag("about"))
                     .commit();
-        } else super.onBackPressed();
+        }
+        else
+            super.onBackPressed();
     }
 }
