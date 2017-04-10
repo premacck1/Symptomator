@@ -85,7 +85,7 @@ class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAdapter.V
 
     private void setAnimation(View viewToAnimate, int position){
         if (position > lastPosition){
-            viewToAnimate.startAnimation(AnimationUtils.loadAnimation(context, R.anim.fragment_anim_in));
+            viewToAnimate.startAnimation(AnimationUtils.loadAnimation(context, android.R.anim.fade_in));
             lastPosition = position;
         }
     }
