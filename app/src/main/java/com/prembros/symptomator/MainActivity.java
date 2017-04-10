@@ -90,6 +90,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                     call(108);
                 }
                 break;
+            case R.id.find_hospitals_nearby:
+                startActivity(new Intent(this, MapsActivity.class));
+                break;
             default:
                 Toast.makeText(this, "This feature is coming soon!", Toast.LENGTH_SHORT).show();
                 break;
