@@ -2,8 +2,10 @@
 <ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/symptom_fragment_container"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -11,8 +13,7 @@
         android:orientation="vertical"
         android:id="@+id/symptom_content"
         android:padding="@dimen/activity_horizontal_margin"
-        android:gravity="center_horizontal"
-        tools:context=".MainActivity">
+        android:gravity="center_horizontal">
 
         <TextView
             android:gravity="center_horizontal"
@@ -22,7 +23,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginBottom="20dp"
             android:text="@string/symptom_header" />
-
+<!--
         <com.balysv.materialripple.MaterialRippleLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -45,7 +46,7 @@
                 android:entries="@array/ages"/>
 
         </com.balysv.materialripple.MaterialRippleLayout>
-
+-->
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -148,25 +149,28 @@
             app:mrl_rippleRoundedCorners="2dp">
 
             <Spinner
-                android:visibility="invisible"
+                android:visibility="gone"
                 android:id="@+id/selected_body_part"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/button_theme"
                 android:textAlignment="center"
+                android:padding="8dp"
                 android:gravity="center_horizontal" />
 
         </com.balysv.materialripple.MaterialRippleLayout>
+<!--
 
         <android.support.v7.widget.AppCompatButton
             android:id="@+id/submit_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="@dimen/activity_horizontal_margin"
-            android:tint="#E64A19"
+            android:theme="@style/AppTheme.Button"
             android:textColor="@color/white_text_icons"
             android:layout_margin="8dp"
             android:text="@string/submit"/>
+-->
 
     </LinearLayout>
 

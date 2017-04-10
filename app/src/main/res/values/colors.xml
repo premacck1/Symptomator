@@ -5,10 +5,13 @@
     <color name="colorPrimaryLight">#FFAB91</color>
     <color name="colorPrimaryLighter">#FFE0B2</color>
     <color name="colorSecondary">#00BCD4</color>
+    <color name="colorSecondaryTranslucent">#d700bcd4</color>
     <color name="colorPrimaryText">#212121</color>
     <color name="colorSecondaryText">#757575</color>
     <color name="colorDisabled">#E0E0E0</color>
-    <color name="dividerColor">#BDBDBD</color>
+    <color name="colorDisabledLight">#EEEEEE</color>
+    <color name="colorDivider">#BDBDBD</color>
+    <color name="colorDividerLight">#CFD8DC</color>
     <color name="white_text_icons">#FFFFFF</color>
     <color name="colorAccent">#7c4dff</color>
     <color name="colorLink">#42a5f5</color>

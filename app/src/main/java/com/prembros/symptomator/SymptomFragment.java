@@ -1,13 +1,12 @@
 package com.prembros.symptomator;
 
 import android.content.Context;
-import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.AppCompatButton;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,11 +19,7 @@ import android.widget.Toast;
 
 public class SymptomFragment extends Fragment {
 
-//    private String selectedAge = null;
-//    private String selectedBodyArea = null;
-//    private String selectedBodyPart = null;
     private String selectedSex = null;
-    private Spinner selectAge;
     private Spinner selectBodyArea;
     private Spinner selectBodyPart;
     private CheckedTextView[] allCheckedTextViews;
@@ -48,25 +43,12 @@ public class SymptomFragment extends Fragment {
             actionBar.setSubtitle(getString(R.string.symptom_subtitle));
         }
 
-        selectAge = (Spinner) rootView.findViewById(R.id.selected_age);
         selectBodyArea = (Spinner) rootView.findViewById(R.id.selected_body_area);
         selectBodyPart = (Spinner) rootView.findViewById(R.id.selected_body_part);
         CheckedTextView male = (CheckedTextView) rootView.findViewById(R.id.radio_male);
         CheckedTextView female = (CheckedTextView) rootView.findViewById(R.id.radio_female);
         allCheckedTextViews = new CheckedTextView[] {male, female};
-        AppCompatButton submitButton = (AppCompatButton) rootView.findViewById(R.id.submit_button);
-        submitButton.setSupportBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#E64A19")));
-
-//        selectAge.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-//            @Override
-//            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-////                selectedAge = selectAge.getSelectedItem().toString();
-//            }
-//
-//            @Override
-//            public void onNothingSelected(AdapterView<?> adapterView) {
-//            }
-//        });
+//        submitButton.setSupportBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#E64A19")));
 
         selectBodyArea.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
@@ -76,6 +58,12 @@ public class SymptomFragment extends Fragment {
                 String[] bodyPartList;
                 ArrayAdapter<String> bodyPartListAdapter;
                 switch (position){
+                    case 0:
+                        if (selectBodyPart.getVisibility() == View.VISIBLE) {
+                            selectBodyPart.startAnimation(AnimationUtils.loadAnimation(getContext(), R.anim.sink_up));
+                            selectBodyPart.setVisibility(View.INVISIBLE);
+                        }
+                        break;
                     case 1:
                         bodyPartList = getResources().getStringArray(R.array.head_area);
                         bodyPartListAdapter = new ArrayAdapter<>(
@@ -84,6 +72,7 @@ public class SymptomFragment extends Fragment {
                         bodyPartListAdapter.setDropDownViewResource(R.layout.spinner_item);
                         bodyPartListAdapter.notifyDataSetChanged();
                         selectBodyPart.setAdapter(bodyPartListAdapter);
+                        selectBodyPart.startAnimation(AnimationUtils.loadAnimation(getContext(), R.anim.float_down));
                         selectBodyPart.setVisibility(View.VISIBLE);
                         break;
                     case 2:
@@ -94,6 +83,7 @@ public class SymptomFragment extends Fragment {
                         bodyPartListAdapter.setDropDownViewResource(R.layout.spinner_item);
                         bodyPartListAdapter.notifyDataSetChanged();
                         selectBodyPart.setAdapter(bodyPartListAdapter);
+                        selectBodyPart.startAnimation(AnimationUtils.loadAnimation(getContext(), R.anim.float_down));
                         selectBodyPart.setVisibility(View.VISIBLE);
                         break;
                     case 3:
@@ -104,6 +94,7 @@ public class SymptomFragment extends Fragment {
                         bodyPartListAdapter.setDropDownViewResource(R.layout.spinner_item);
                         bodyPartListAdapter.notifyDataSetChanged();
                         selectBodyPart.setAdapter(bodyPartListAdapter);
+                        selectBodyPart.startAnimation(AnimationUtils.loadAnimation(getContext(), R.anim.float_down));
                         selectBodyPart.setVisibility(View.VISIBLE);
                         break;
                     case 4:
@@ -114,6 +105,7 @@ public class SymptomFragment extends Fragment {
                         bodyPartListAdapter.setDropDownViewResource(R.layout.spinner_item);
                         bodyPartListAdapter.notifyDataSetChanged();
                         selectBodyPart.setAdapter(bodyPartListAdapter);
+                        selectBodyPart.startAnimation(AnimationUtils.loadAnimation(getContext(), R.anim.float_down));
                         selectBodyPart.setVisibility(View.VISIBLE);
                         break;
                     case 5:
@@ -124,6 +116,7 @@ public class SymptomFragment extends Fragment {
                         bodyPartListAdapter.setDropDownViewResource(R.layout.spinner_item);
                         bodyPartListAdapter.notifyDataSetChanged();
                         selectBodyPart.setAdapter(bodyPartListAdapter);
+                        selectBodyPart.startAnimation(AnimationUtils.loadAnimation(getContext(), R.anim.float_down));
                         selectBodyPart.setVisibility(View.VISIBLE);
                         break;
                     case 6:
@@ -134,6 +127,7 @@ public class SymptomFragment extends Fragment {
                         bodyPartListAdapter.setDropDownViewResource(R.layout.spinner_item);
                         bodyPartListAdapter.notifyDataSetChanged();
                         selectBodyPart.setAdapter(bodyPartListAdapter);
+                        selectBodyPart.startAnimation(AnimationUtils.loadAnimation(getContext(), R.anim.float_down));
                         selectBodyPart.setVisibility(View.VISIBLE);
                         break;
                     case 7:
@@ -143,6 +137,7 @@ public class SymptomFragment extends Fragment {
                         bodyPartListAdapter.setDropDownViewResource(R.layout.spinner_item);
                         bodyPartListAdapter.notifyDataSetChanged();
                         selectBodyPart.setAdapter(bodyPartListAdapter);
+                        selectBodyPart.startAnimation(AnimationUtils.loadAnimation(getContext(), R.anim.float_down));
                         selectBodyPart.setVisibility(View.VISIBLE);
                         break;
                     default:
@@ -158,17 +153,19 @@ public class SymptomFragment extends Fragment {
             }
         });
 
-//        selectBodyPart.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-//            @Override
-//            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-////                selectedBodyPart = selectBodyPart.getSelectedItem().toString();
-//            }
-//
-//            @Override
-//            public void onNothingSelected(AdapterView<?> adapterView) {
-//
-//            }
-//        });
+        selectBodyPart.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                if (i > 0) {
+                    startActivityIfFormComplete();
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
+            }
+        });
 
         male.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -183,22 +180,24 @@ public class SymptomFragment extends Fragment {
             }
         });
 
-        submitButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (selectAge.getSelectedItemPosition()>0 && selectedSex != null
-                        && selectBodyArea.getSelectedItemPosition()>0 && selectBodyPart.getSelectedItemPosition()>0) {
+        return rootView;
+    }
+
+    void startActivityIfFormComplete(){
+        if (selectedSex != null && selectBodyArea.getSelectedItemPosition() > 0 && selectBodyPart.getSelectedItemPosition() > 0) {
+            new Handler().postDelayed(new Runnable() {
+                @Override
+                public void run() {
                     mListener.onSymptomFragmentInteraction(
-                            selectAge.getSelectedItem().toString(),
                             selectedSex,
                             selectBodyArea.getSelectedItem().toString(),
                             selectBodyPart.getSelectedItem().toString());
-                } else
-                    Toast.makeText(getContext(), "Select proper options and try again", Toast.LENGTH_SHORT).show();
-            }
-        });
-
-        return rootView;
+                }
+            }, 200);
+        }
+        if (selectedSex == null){
+            Toast.makeText(getContext(), "Select gender to proceed.", Toast.LENGTH_SHORT).show();
+        }
     }
 
     public void clickAction(View v) {
@@ -213,23 +212,20 @@ public class SymptomFragment extends Fragment {
                 temp.setTextColor(Color.parseColor("#FFFFFF"));
                 selectedSex = temp.getText().toString();
                 temp.startAnimation(AnimationUtils.loadAnimation(getContext(), R.anim.anim_selected));
+                startActivityIfFormComplete();
             } else {
-                temp.setChecked(false);
-                temp.setTextColor(Color.parseColor("#000000"));
-                selectedSex = null;
                 temp.startAnimation(AnimationUtils.loadAnimation(getContext(), R.anim.anim_deselected));
             }
         }
     }
 
     public void resetViews(){
-        selectAge.setSelection(0);
-        selectBodyPart.setSelection(0);
         selectBodyArea.setSelection(0);
-        for (CheckedTextView item : allCheckedTextViews) {
-            item.setChecked(false);
-            item.setTextColor(Color.parseColor("#000000"));
-        }
+//        selectBodyPart.startAnimation(AnimationUtils.loadAnimation(getContext(), android.R.anim.fade_out));
+//        for (CheckedTextView item : allCheckedTextViews) {
+//            item.setChecked(false);
+//            item.setTextColor(Color.parseColor("#000000"));
+//        }
     }
 
     @Override
@@ -246,7 +242,7 @@ public class SymptomFragment extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
-//        resetViews();
+        resetViews();
     }
 
     @Override
@@ -256,6 +252,6 @@ public class SymptomFragment extends Fragment {
     }
 
     interface OnSymptomFragmentInteractionListener {
-        void onSymptomFragmentInteraction(String selectedAge, String selectedSex, String selectedBodyArea, String selectedBodyPart);
+        void onSymptomFragmentInteraction(String selectedSex, String selectedBodyArea, String selectedBodyPart);
     }
 }

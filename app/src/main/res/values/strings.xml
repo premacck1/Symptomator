@@ -310,12 +310,12 @@
     <string name="ambulance_services">Ambulance services</string>
     <string name="request_a_private_ambulance">Request a private ambulance</string>
     <string name="check_ambulance_availability">Check ambulance availability</string>
-    <string name="call_108">Call Medical services</string>
+    <string name="call_108">Call Emergency services</string>
     <string name="doctor">Doctor</string>
     <string name="doctor_services">Doctor services</string>
     <string name="find_doctors_by_specialisation">Find doctors by specialisation</string>
     <string name="request_urgent_doctor">Request urgent doctor</string>
-    <string name="find_doctors_nearby">Find doctors nearby</string>
+    <string name="find_doctors_nearby">Find nearby doctors</string>
     <string name="first_aid_info">First aid info</string>
     <string name="search">Search…</string>
     <string name="services">Services</string>
@@ -353,7 +353,7 @@
     <string name="permission_denied">I won\'t be able to assist you if you dont\'t let me.</string>
     <string name="google_play_services_not_available_error">Sorry, but we couldn\'t find Google Play Services on your device, make sure you have the latest one from play store and try again.</string>
     <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
-        AIzaSyAbDD6LoODWCIQj3ZS3mJUpUVtQ6wzVJ40
+        AIzaSyD8GHXtKntCRgbrTjN4YtT94epzA-cJpWY
     </string>
     <string name="google_places_key" templateMergeStrategy="preserve" translatable="false">
         AIzaSyCwmLEnjoalKDciZxizLlWTFLmg0vd7Csc

@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
+import android.os.Handler;
 import android.os.StrictMode;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.ActionBar;
@@ -14,11 +15,17 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.SearchView;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.MotionEvent;
 import android.view.View;
+import android.view.animation.AccelerateDecelerateInterpolator;
 import android.widget.FrameLayout;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import io.codetail.animation.SupportAnimator;
+
+import static io.codetail.animation.ViewAnimationUtils.createCircularReveal;
 
 public class SymptomCheck extends AppCompatActivity implements CompleteSymptomList.OnFragmentInteractionListener {
 
@@ -31,6 +38,18 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
     private RecyclerView recyclerView;
     private FrameLayout layoutContainer;
     private FragmentManager fragmentManager;
+    private FrameLayout revealView;
+//    private boolean hidden = true;
+    boolean somethingIsActive = false;
+    private SupportAnimator animator;
+    private int[] touchCoordinate = new int[2];
+
+    @Override
+    public boolean dispatchTouchEvent(MotionEvent ev) {
+        touchCoordinate[0] = (int) ev.getX();
+        touchCoordinate[1] = (int) ev.getY();
+        return super.dispatchTouchEvent(ev);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +59,8 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_symptom_check);
+
+        revealView = (FrameLayout) this.findViewById(R.id.menu_fragment_container);
 
         actionBar = getSupportActionBar();
         if (actionBar != null) {
@@ -52,12 +73,10 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
         fragmentManager = getSupportFragmentManager();
 
         Intent intent = getIntent();
-        String selectedAge = intent.getExtras().getString("selectedAge");
         final String selectedSex = intent.getExtras().getString("selectedSex");
 //        String selectedBodyArea = intent.getExtras().getString("selectedBodyArea");
         final String selectedBodyPart = intent.getExtras().getString("selectedBodyPart");
-        assert selectedAge != null;
-        String headerText = selectedSex + ", " + selectedAge.replace(" - ", "-") + ", " + selectedBodyPart;
+        String headerText = selectedSex + ", " + selectedBodyPart;
         actionBar.setSubtitle(headerText);
 
         symptomList = new ArrayList<>();
@@ -105,6 +124,7 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
                             .setCustomAnimations(R.anim.fragment_anim_in, R.anim.fragment_anim_out)
                             .add(R.id.symptom_check_fragment_container, new CompleteSymptomList(), "completeSymptomList")
                             .commit();
+                    somethingIsActive = true;
                 }
             }
         }));
@@ -216,7 +236,9 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
                 onBackPressed();
                 return true;
             case R.id.action_about:
+                animationForward(revealView, touchCoordinate[0], touchCoordinate[1]);
                 fragmentManager.beginTransaction().add(R.id.menu_fragment_container, new About(), "about").commit();
+                somethingIsActive = true;
             default:
                 return false;
         }
@@ -227,22 +249,89 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
 
     }
 
+    public void animationForward(View mRevealView, int centerX, int centerY){
+        int startRadius = 0;
+        int endRadius = (int) (Math.hypot(mRevealView.getWidth() * 2, mRevealView.getHeight() * 2));
+        animator = createCircularReveal(mRevealView, centerX, centerY, startRadius, endRadius);
+        animator.setInterpolator(new AccelerateDecelerateInterpolator());
+        animator.setDuration(400);
+
+        animator.start();
+        mRevealView.setVisibility(View.VISIBLE);
+    }
+
+    public void animationReversed(final View mRevealView){
+//        if (actionBar != null) {
+//            actionBar.setTitle(previousTitles[0]);
+//            actionBar.setSubtitle(previousTitles[1]);
+//        }
+        if (animator != null && !animator.isRunning()){
+
+//            fab.setBackgroundColor(Color.rgb(0, 188, 212));
+//            fab.setImageResource(R.drawable.ic_add_shopping_cart);
+
+            animator = animator.reverse();
+            animator.addListener(new SupportAnimator.AnimatorListener() {
+                @Override
+                public void onAnimationStart() {
+
+                }
+
+                @Override
+                public void onAnimationEnd() {
+                    mRevealView.setVisibility(View.INVISIBLE);
+//                    hidden = true;
+                }
+
+                @Override
+                public void onAnimationCancel() {
+
+                }
+
+                @Override
+                public void onAnimationRepeat() {
+
+                }
+            });
+            animator.start();
+        }
+    }
+
+    void removeFragmentIfAttached(final String tag){
+        if (fragmentManager.findFragmentByTag(tag) != null){
+            switch (tag){
+                case "completeSymptomList":
+                    actionBar.show();
+                    fragmentManager.beginTransaction()
+                            .setCustomAnimations(R.anim.fragment_anim_in, R.anim.fragment_anim_out)
+                            .remove(fragmentManager.findFragmentByTag(tag))
+                            .commit();
+                    layoutContainer.setVisibility(View.VISIBLE);
+                    somethingIsActive = false;
+                    break;
+                case "about":
+                    animationReversed(this.findViewById(R.id.menu_fragment_container));
+                    new Handler().postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            fragmentManager.beginTransaction()
+                                    .remove(getSupportFragmentManager().findFragmentByTag(tag))
+                                    .commit();
+                        }
+                    }, 200);
+                    somethingIsActive = false;
+                    break;
+                default:
+                    break;
+            }
+        }
+    }
+
     @Override
     public void onBackPressed() {
-        if (fragmentManager.findFragmentByTag("completeSymptomList") != null){
-            actionBar.show();
-            fragmentManager.beginTransaction()
-                    .setCustomAnimations(R.anim.fragment_anim_in, R.anim.fragment_anim_out)
-                    .remove(fragmentManager.findFragmentByTag("completeSymptomList"))
-                    .commit();
-            layoutContainer.setVisibility(View.VISIBLE);
-        }
-        else if (getSupportFragmentManager().findFragmentByTag("about") != null) {
-            actionBar.show();
-            fragmentManager.beginTransaction()
-                    .setCustomAnimations(R.anim.fragment_anim_in, R.anim.fragment_anim_out)
-                    .remove(getSupportFragmentManager().findFragmentByTag("about"))
-                    .commit();
+        if (somethingIsActive) {
+            removeFragmentIfAttached("completeSymptomList");
+            removeFragmentIfAttached("about");
         }
         else
             super.onBackPressed();

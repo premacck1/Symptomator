@@ -8,6 +8,7 @@ import android.location.Location;
 import android.location.LocationManager;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.StrictMode;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.ActivityCompat;
@@ -41,10 +42,15 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     Location lastLocation;
     LocationRequest locationRequest;
     Marker currentLocationMarker;
+    boolean flag = false;
     public static final int MY_PERMISSIONS_REQUEST_LOCATION = 99;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        StrictMode.setThreadPolicy(new StrictMode.ThreadPolicy.Builder().detectAll().penaltyLog().build());
+        StrictMode.setVmPolicy(new StrictMode.VmPolicy.Builder().detectLeakedSqlLiteObjects().detectLeakedClosableObjects().penaltyLog().build());
+
         super.onCreate(savedInstanceState);
         if (!isGooglePlayServicesAvailable()){
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
@@ -155,9 +161,13 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         markerOptions.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_MAGENTA));
         currentLocationMarker = mMap.addMarker(markerOptions);
 
+        mMap.setBuildingsEnabled(true);
         //move map camera
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng));
-        mMap.animateCamera(CameraUpdateFactory.zoomTo(11));
+        if (!flag) {
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng));
+            mMap.animateCamera(CameraUpdateFactory.zoomTo(17));
+            flag = true;
+        }
 
         //stop location updates
         if (googleApiClient != null && googleApiClient.isConnected()) {

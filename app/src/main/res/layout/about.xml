@@ -1,105 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryLight">
+    android:background="@color/colorDividerLight">
 
-    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/colorPrimaryLight">
+        android:layout_height="wrap_content">
 
-        <LinearLayout
-            android:orientation="vertical"
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:text="@string/about_the_app"
+            android:textColor="@android:color/black" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:textSize="20sp"
-                android:layout_marginTop="10dp"
-                android:text="@string/about_the_app"
-                android:textColor="@android:color/black" />
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="1dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/black" />
 
-            <TextView
-                android:layout_width="130dp"
-                android:layout_height="1dp"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:layout_gravity="center_horizontal"
-                android:background="@android:color/black" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="@string/about_the_app_details"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:layout_marginTop="10dp"
-                android:text="@string/about_the_app_details"
-                android:textColor="@android:color/black"
-                android:textSize="18sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:text="@string/about_the_developers"
+            android:textColor="@android:color/black" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:textSize="20sp"
-                android:layout_marginTop="20dp"
-                android:text="@string/about_the_developers"
-                android:textColor="@android:color/black" />
+        <TextView
+            android:layout_width="190dp"
+            android:layout_height="1dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/black" />
 
-            <TextView
-                android:layout_width="190dp"
-                android:layout_height="1dp"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:layout_gravity="center_horizontal"
-                android:background="@android:color/black" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="@string/about_the_developers_details"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:layout_marginTop="10dp"
-                android:text="@string/about_the_developers_details"
-                android:textColor="@android:color/black"
-                android:textSize="18sp" />
+        <TextView
+            android:id="@+id/email_link"
+            android:autoLink="web|email"
+            android:textColorLink="@color/colorLink"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/email"
+            android:shadowColor="@android:color/black"
+            android:shadowRadius="10"
+            android:textSize="20sp" />
 
-            <TextView
-                android:id="@+id/email_link"
-                android:autoLink="web|email"
-                android:textColorLink="@color/colorLink"
-                android:textStyle="bold"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:text="@string/email"
-                android:shadowColor="@android:color/black"
-                android:shadowRadius="10"
-                android:textSize="20sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="@string/visit_us_at"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:layout_marginTop="10dp"
-                android:text="@string/visit_us_at"
-                android:textColor="@android:color/black"
-                android:textSize="18sp" />
+        <TextView
+            android:id="@+id/PremBros_link"
+            android:textStyle="bold"
+            android:autoLink="web"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="40sp"
+            android:textColor="@color/colorLink"
+            android:text="@string/prembros"
+            android:shadowColor="@android:color/black"
+            android:shadowRadius="20" />
 
-            <TextView
-                android:id="@+id/PremBros_link"
-                android:textStyle="bold"
-                android:autoLink="web"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:textSize="40sp"
-                android:textColor="@color/colorLink"
-                android:text="@string/prembros"
-                android:shadowColor="@android:color/black"
-                android:shadowRadius="20" />
-
-        </LinearLayout>
-    </ScrollView>
-</LinearLayout>
+    </LinearLayout>
+</ScrollView>

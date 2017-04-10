@@ -181,7 +181,7 @@ class DatabaseHolder {
         Cursor cursor = null;
         try{
             cursor = db.query(emergencyNumbers_tableName,
-                    new String[]{"Number"},
+                    new String[]{"Country", "Number"},
                     "Code = '" + countryCode.toUpperCase() + "'",
                     null, null, null, null, null);
         }

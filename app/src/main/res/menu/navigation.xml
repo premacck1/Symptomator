@@ -17,7 +17,8 @@
 
     <item
         android:id="@+id/navigation_by_services"
-        android:icon="@drawable/ic_doctor"
+        android:icon="@drawable/ic_stethoscope"
+        android:actionViewClass="android.widget.ImageButton"
         android:title="@string/services"
         app:showAsAction="always"
         tools:ignore="AlwaysShowAction" />

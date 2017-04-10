@@ -6,58 +6,89 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
+import android.graphics.Rect;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentManager;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.telephony.TelephonyManager;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.MotionEvent;
 import android.view.View;
+import android.view.animation.AccelerateDecelerateInterpolator;
 import android.view.animation.AnimationUtils;
 import android.widget.AdapterView;
-import android.widget.Toast;
+import android.widget.LinearLayout;
 
 import java.util.Locale;
 
+import io.codetail.animation.SupportAnimator;
+import io.codetail.widget.RevealFrameLayout;
+
+import static io.codetail.animation.ViewAnimationUtils.createCircularReveal;
+
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener,
         SymptomFragment.OnSymptomFragmentInteractionListener,
-        ServicesFragment.OnServicesFragmentInteractionListener,
         FirstAidFragment.OnFirstAidListFragmentInteractionListener {
 
     private FragmentManager fragmentManager;
     private BottomNavigationView navigation;
+    private LinearLayout revealView;
+    private boolean hidden = true;
+    boolean somethingIsActive = false;
+    private SupportAnimator animator;
+    private RevealFrameLayout revealViewContainer;
+    private Rect rect = null;
+    private ActionBar actionBar;
+    private String[] previousTitles = new String[2];
+    private int[] touchCoordinate = new int[2];
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
 
+        @SuppressWarnings("ConstantConditions")
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
                 case R.id.navigation_by_symptom:
-                    fragmentManager.beginTransaction().setCustomAnimations(
-                            R.anim.fragment_anim_in, android.R.anim.fade_out,
-                            android.R.anim.fade_in, android.R.anim.fade_out)
-                            .replace(R.id.main_fragment_container, new SymptomFragment(), "symptomFragment")
-                            .commit();
+                    if (fragmentManager.findFragmentByTag("symptomFragment") == null) {
+                        fragmentManager.beginTransaction().setCustomAnimations(
+                                R.anim.fragment_anim_in, android.R.anim.fade_out,
+                                android.R.anim.fade_in, android.R.anim.fade_out)
+                                .replace(R.id.main_fragment_container, new SymptomFragment(), "symptomFragment")
+                                .commit();
+                    }
                     return true;
                 case R.id.navigation_by_first_aid:
-                    fragmentManager.beginTransaction().setCustomAnimations(
-                            R.anim.fragment_anim_in, android.R.anim.fade_out,
-                            android.R.anim.fade_in, android.R.anim.fade_out)
-                            .replace(R.id.main_fragment_container, new FirstAidFragment(), "firstAidFragment")
-                            .commit();
+                    if (fragmentManager.findFragmentByTag("firstAidFragment") == null) {
+                        fragmentManager.beginTransaction().setCustomAnimations(
+                                R.anim.fragment_anim_in, android.R.anim.fade_out,
+                                android.R.anim.fade_in, android.R.anim.fade_out)
+                                .replace(R.id.main_fragment_container, new FirstAidFragment(), "firstAidFragment")
+                                .commit();
+                    }
                     return true;
                 case R.id.navigation_by_services:
-                    fragmentManager.beginTransaction().setCustomAnimations(
-                            R.anim.fragment_anim_in, android.R.anim.fade_out,
-                            android.R.anim.fade_in, android.R.anim.fade_out)
-                            .replace(R.id.main_fragment_container, new ServicesFragment(), "hospitalFragment")
-                            .commit();
+                    if (hidden) {
+                        if (actionBar != null) {
+                            previousTitles[0] = actionBar.getTitle().toString();
+                            previousTitles[1] = actionBar.getSubtitle().toString();
+                            actionBar.setTitle(R.string.services);
+                            actionBar.setSubtitle(R.string.services_subtitle);
+                        }
+                        animationForward(revealView, touchCoordinate[0], touchCoordinate[1]);
+                        hidden = false;
+                    } else {
+                        animationReversed(revealView);
+                    }
                     return true;
                 default:
                     return false;
@@ -69,6 +100,10 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        actionBar = getSupportActionBar();
+
+        revealViewContainer = (RevealFrameLayout) this.findViewById(R.id.reveal_view_container);
+        revealView = (LinearLayout) this.findViewById(R.id.services_revealView);
         fragmentManager = getSupportFragmentManager();
         fragmentManager.beginTransaction().setCustomAnimations(
                 R.anim.fragment_anim_in, android.R.anim.fade_out,
@@ -87,7 +122,10 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 db.open();
                 Cursor cursor = db.returnEmergencyNumber(getUserCountry(this));
                 cursor.moveToFirst();
-                call(Integer.parseInt(cursor.getString(cursor.getColumnIndex("Number"))));
+                call(
+                        cursor.getString(cursor.getColumnIndex("Country")),                         //Country name
+                        Integer.parseInt(cursor.getString(cursor.getColumnIndex("Number")))         //Emergency number
+                );
                 cursor.close();
                 db.close();
                 break;
@@ -95,10 +133,39 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 startActivity(new Intent(this, MapsActivity.class));
                 break;
             default:
-                Toast.makeText(this, "This feature is coming soon!", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(this, "This feature is coming soon!", Toast.LENGTH_SHORT).show();
                 break;
         }
     }
+
+    @Override
+    public boolean dispatchTouchEvent(MotionEvent ev) {
+        touchCoordinate[0] = (int) ev.getX();
+        touchCoordinate[1] = (int) ev.getY();
+        if (rect != null) {
+            int height = findViewById(R.id.call_108).getHeight();
+            height = height + (height / 2);
+            revealViewContainer.getHitRect(rect);
+            rect.bottom += height;
+            rect.top += height;
+            if (!hidden && !rect.contains((int) ev.getX(), (int) ev.getY())) {
+                animationReversed(revealView);
+                return true;
+            }
+        }
+        return super.dispatchTouchEvent(ev);
+    }
+
+//    private boolean isPointInsideView(float x, float y, View view) {
+//        int location[] = new int[2];
+//        view.getLocationOnScreen(location);
+//        int viewX = location[0];
+//        int viewY = location[1];
+//
+//        // point is inside view bounds
+//        return ((x > viewX && x < (viewX + view.getWidth())) &&
+//                (y > viewY && y < (viewY + view.getHeight())));
+//    }
 
     public static String getUserCountry(Context context) {
         try {
@@ -120,7 +187,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         return null;
     }
 
-    void call(int number){
+    void call(String country, int number){
         final Intent callIntent = new Intent(Intent.ACTION_CALL);
         callIntent.setData(Uri.parse("tel:" + number));
 
@@ -131,7 +198,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         final AlertDialog.Builder dialog = new AlertDialog.Builder(MainActivity.this);
         dialog.setIcon(R.drawable.ic_call)
                 .setTitle("Emergency number")
-                .setMessage("We're going to call \"" + number + "\" for you\nClick OKAY to confirm.")
+                .setMessage("*__ " + country + " __*\n\nWe're going to call \"" + number + "\" for you\nClick OKAY to confirm.")
                 .setPositiveButton("okay", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
@@ -145,6 +212,58 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                     }
                 })
                 .show();
+    }
+
+    public void animationForward(View mRevealView, int centerX, int centerY){
+        int startRadius = 0;
+        int endRadius = (int) (Math.hypot(mRevealView.getWidth() * 2, mRevealView.getHeight() * 2));
+        animator = createCircularReveal(mRevealView, centerX, centerY, startRadius, endRadius);
+        animator.setInterpolator(new AccelerateDecelerateInterpolator());
+        animator.setDuration(400);
+
+        animator.start();
+        mRevealView.setVisibility(View.VISIBLE);
+        rect = new Rect(revealViewContainer.getLeft(), revealViewContainer.getTop(),
+                revealViewContainer.getRight(), revealViewContainer.getBottom());
+    }
+
+    public void animationReversed(@Nullable final View mRevealView){
+        if (actionBar != null) {
+            actionBar.setTitle(previousTitles[0]);
+            actionBar.setSubtitle(previousTitles[1]);
+        }
+        if (animator != null && !animator.isRunning()){
+
+//            fab.setBackgroundColor(Color.rgb(0, 188, 212));
+//            fab.setImageResource(R.drawable.ic_add_shopping_cart);
+
+            animator = animator.reverse();
+            animator.addListener(new SupportAnimator.AnimatorListener() {
+                @Override
+                public void onAnimationStart() {
+
+                }
+
+                @Override
+                public void onAnimationEnd() {
+                    if (mRevealView != null) {
+                        mRevealView.setVisibility(View.INVISIBLE);
+                    }
+                    hidden = true;
+                }
+
+                @Override
+                public void onAnimationCancel() {
+
+                }
+
+                @Override
+                public void onAnimationRepeat() {
+
+                }
+            });
+            animator.start();
+        }
     }
 
     @Override
@@ -162,9 +281,10 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 onBackPressed();
                 return true;
             case R.id.action_about:
-                navigation.startAnimation(AnimationUtils.loadAnimation(MainActivity.this, R.anim.sink_down));
+                animationForward(this.findViewById(R.id.menu_fragment_container), touchCoordinate[0], touchCoordinate[1]);
                 navigation.setVisibility(View.GONE);
                 fragmentManager.beginTransaction().add(R.id.menu_fragment_container, new About(), "about").commit();
+                somethingIsActive = true;
             default:
                 return false;
         }
@@ -180,9 +300,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     }
 
     @Override
-    public void onSymptomFragmentInteraction(String selectedAge, String selectedSex, String selectedBodyArea, String selectedBodyPart) {
+    public void onSymptomFragmentInteraction(String selectedSex, String selectedBodyArea, String selectedBodyPart) {
         Intent intent = new Intent(this, SymptomCheck.class);
-        intent.putExtra("selectedAge" , selectedAge);
         intent.putExtra("selectedSex", selectedSex);
         intent.putExtra("selectedBodyArea", selectedBodyArea);
         intent.putExtra("selectedBodyPart", selectedBodyPart);
@@ -190,25 +309,33 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     }
 
     @Override
-    public void onServicesFragmentInteraction(Uri uri) {
-
-    }
-
-    @Override
     public void onListFragmentInteraction(String item) {
 
     }
 
+    void removeFragmentIfAttached(final String tag){
+        if (fragmentManager.findFragmentByTag(tag) != null) {
+            animationReversed(this.findViewById(R.id.menu_fragment_container));
+            new Handler().postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    navigation.startAnimation(AnimationUtils.loadAnimation(MainActivity.this, R.anim.float_up));
+                    navigation.setVisibility(View.VISIBLE);
+                    fragmentManager.beginTransaction()
+                            .remove(getSupportFragmentManager().findFragmentByTag(tag))
+                            .commit();
+                }
+            }, 200);
+        }
+    }
+
     @Override
     public void onBackPressed() {
-        if (getSupportFragmentManager().findFragmentByTag("about") != null && getSupportActionBar() != null){
-            navigation.startAnimation(AnimationUtils.loadAnimation(MainActivity.this, R.anim.float_up));
-            navigation.setVisibility(View.VISIBLE);
-            getSupportActionBar().show();
-            getSupportFragmentManager().beginTransaction()
-                    .setCustomAnimations(R.anim.fragment_anim_in, R.anim.fragment_anim_out)
-                    .remove(getSupportFragmentManager().findFragmentByTag("about"))
-                    .commit();
-        } else super.onBackPressed();
+        if (somethingIsActive){
+            removeFragmentIfAttached("about");
+            somethingIsActive = false;
+        }
+        else
+            super.onBackPressed();
     }
 }
