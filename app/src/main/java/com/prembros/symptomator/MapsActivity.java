@@ -2,6 +2,7 @@ package com.prembros.symptomator;
 
 import android.Manifest;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Criteria;
 import android.location.Location;
@@ -15,6 +16,9 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
+import android.text.TextUtils;
+import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.common.ConnectionResult;
@@ -23,7 +27,9 @@ import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.LocationListener;
 import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationServices;
+import com.google.android.gms.location.places.Place;
 import com.google.android.gms.location.places.Places;
+import com.google.android.gms.location.places.ui.PlacePicker;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -37,12 +43,14 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener,
         LocationListener, android.location.LocationListener {
 
+//    private static final int PLACE_PICKER_REQUEST = 99;
     private GoogleMap mMap;
     private GoogleApiClient googleApiClient;
     Location lastLocation;
     LocationRequest locationRequest;
     Marker currentLocationMarker;
     boolean flag = false;
+    private TextView textView;
     public static final int MY_PERMISSIONS_REQUEST_LOCATION = 99;
 
     @Override
@@ -73,6 +81,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
         buildGoogleApiClient();
+        textView = (TextView) this.findViewById(R.id.place_details);
+
     }
 
     protected synchronized void buildGoogleApiClient() {
@@ -81,7 +91,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 .addOnConnectionFailedListener(this)
                 .addApi(Places.GEO_DATA_API)
                 .addApi(Places.PLACE_DETECTION_API)
-                .enableAutoManage(this, this)
+                .enableAutoManage(this, 0, this)
                 .addApi(LocationServices.API)
                 .build();
         googleApiClient.connect();
@@ -97,7 +107,59 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         }
     }
 
+//    private void displayPlacePicker() {
+//        if( googleApiClient == null || !googleApiClient.isConnected() )
+//            return;
+//
+//        PlacePicker.IntentBuilder builder = new PlacePicker.IntentBuilder();
+//
+//        try {
+//            startActivityForResult( builder.build(getParent()), PLACE_PICKER_REQUEST );
+//        } catch ( GooglePlayServicesRepairableException e ) {
+//            Log.d( "PlacesAPI Demo", "GooglePlayServicesRepairableException thrown" );
+//        } catch ( GooglePlayServicesNotAvailableException e ) {
+//            Log.d( "PlacesAPI Demo", "GooglePlayServicesNotAvailableException thrown" );
+//        }
+//    }
 
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+
+        boolean isAnHospital = false;
+        Place selectedplace = PlacePicker.getPlace(this, data);
+        for (int i : selectedplace.getPlaceTypes()) {
+            if (i == Place.TYPE_DOCTOR || i == Place.TYPE_HEALTH || i == Place.TYPE_HOSPITAL) {
+                isAnHospital = true;
+                break;
+            }
+        }
+
+        //noinspection StatementWithEmptyBody
+        if (isAnHospital) {
+            displayPlace(selectedplace);
+        } else {
+            //Tell to the user to select an appropriate place
+        }
+    }
+
+    private void displayPlace( Place place ) {
+        if( place == null )
+            return;
+
+        String content = "";
+        if( !TextUtils.isEmpty( place.getName() ) ) {
+            content += "Name: " + place.getName() + "\n";
+        }
+        if( !TextUtils.isEmpty( place.getAddress() ) ) {
+            content += "Address: " + place.getAddress() + "\n";
+        }
+        if( !TextUtils.isEmpty( place.getPhoneNumber() ) ) {
+            content += "Phone: " + place.getPhoneNumber();
+        }
+
+        textView.setVisibility(View.VISIBLE);
+        textView.setText( content );
+    }
     /**
      * Manipulates the map once available.
      * This callback is triggered when the map is ready to be used.
@@ -111,7 +173,19 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
         mMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
+        mMap.setOnMapClickListener(new GoogleMap.OnMapClickListener() {
+            @Override
+            public void onMapClick(LatLng latLng) {
+                mMap.addMarker(new MarkerOptions().position(latLng));
+            }
+        });
+        mMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
+            @Override
+            public boolean onMarkerClick(Marker marker) {
 
+                return true;
+            }
+        });
         if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             if (ContextCompat.checkSelfPermission(this,
                     Manifest.permission.ACCESS_FINE_LOCATION)
@@ -144,6 +218,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         toPass[0] = mMap;
         toPass[1] = googlePlacesUrl;
         googlePlacesReadTask.execute(toPass);
+
     }
 
     @Override
