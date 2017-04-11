@@ -207,9 +207,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         }
         locationManager.requestLocationUpdates(bestProvider, 2000, 0, this);
 
+
         String googlePlacesUrl = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?" + "location=" + lastLocation.getLatitude() + "," + lastLocation.getLongitude() +
                 "&radius=" + 5000 +
-                "&types=hospital" +
+                "&type=hospital" +
                 "&sensor=true" +
                 "&key=" + R.string.google_places_key;
 
