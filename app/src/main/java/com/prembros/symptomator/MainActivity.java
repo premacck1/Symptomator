@@ -331,7 +331,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     @Override
     public void onBackPressed() {
-        if (somethingIsActive){
+        if (!hidden) animationReversed(revealView);
+        else if (somethingIsActive){
             removeFragmentIfAttached("about");
             somethingIsActive = false;
         }
