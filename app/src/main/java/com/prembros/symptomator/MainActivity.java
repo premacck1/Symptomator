@@ -334,7 +334,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                     navigation.startAnimation(AnimationUtils.loadAnimation(MainActivity.this, R.anim.float_up));
                     navigation.setVisibility(View.VISIBLE);
                     fragmentManager.beginTransaction()
-                            .remove(getSupportFragmentManager().findFragmentByTag(tag))
+                            .remove(fragmentManager.findFragmentByTag(tag))
                             .commit();
                 }
             }, 200);
