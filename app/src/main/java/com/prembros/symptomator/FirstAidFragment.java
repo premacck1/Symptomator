@@ -7,6 +7,7 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.AppCompatTextView;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.SearchView;
@@ -17,6 +18,9 @@ import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
+
+import com.balysv.materialripple.MaterialRippleLayout;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -70,6 +74,14 @@ public class FirstAidFragment extends Fragment implements RecyclerView.OnItemTou
         myFirstAidRecyclerViewAdapter = new MyRecyclerViewAdapter(getContext(), firstAidList, mListener, null);
         list.setLayoutManager(new LinearLayoutManager(context));
         list.setAdapter(myFirstAidRecyclerViewAdapter);
+
+        list.addOnItemTouchListener(new RecyclerViewOnItemClickListener(getContext(), new RecyclerViewOnItemClickListener.OnItemClickListener() {
+            @Override
+            public void onItemClick(View view, int position) {
+                AppCompatTextView textView = ((MaterialRippleLayout)((LinearLayout) list.findViewHolderForAdapterPosition(position).itemView).getChildAt(0)).getChildView();
+                mListener.onListFragmentInteraction(textView.getText().toString());
+            }
+        }));
 
         return view;
     }

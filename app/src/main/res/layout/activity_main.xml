@@ -8,11 +8,17 @@
     android:layout_height="match_parent"
     tools:context="com.prembros.symptomator.MainActivity">
 
+    <io.codetail.widget.RevealFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
     <FrameLayout
         android:id="@+id/main_fragment_container"
         android:layout_above="@+id/navigation"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
+
+    </io.codetail.widget.RevealFrameLayout>
 
     <io.codetail.widget.RevealFrameLayout
         android:id="@+id/reveal_view_container"
@@ -159,7 +165,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         android:layout_alignParentBottom="true"
-        android:background="@color/colorDisabled"
+        android:background="@color/colorDividerLight"
         app:menu="@menu/navigation" />
 
     <io.codetail.widget.RevealFrameLayout

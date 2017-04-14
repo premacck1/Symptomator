@@ -1,0 +1,310 @@
+{
+  "First_aid": [
+    {
+      "Abdominal_pain_in_adults": [
+        {
+          "heading": "Call",
+          "content": "•\tIf you have pain and tenderness to the touch in the lower right abdomen with fever and/or vomiting. These may be signs of appendicitis.\n•\tIf you are pregnant and have abdominal pain or vaginal bleeding. This may be a sign of an ectopic pregnancy or miscarriage.\n•\tVomits blood\n•\tHas severe difficulty breathing"
+        },
+        {
+          "heading": "Treat symptoms",
+          "content": "•\tFor heartburn from gastroesophageal reflux disease (GERD), take an over-the-counter antacid or acid reducer.\n•\tFor constipation, take a mild stool softener or laxative.\n•\tFor pain, take acetaminophen (Aspirin Free Anacin, Liquiprin, Panadol, and Tylenol). Avoid NSAIDs such as aspirin, ibuprofen (Advil, Midol, Motrin), or naproxen (Naprosyn, Aleve, Anaprox, Naprelan), because they can cause stomach irritation or bleeding."
+        },
+        {
+          "heading": "Seek medical help if the person:",
+          "content": "•\tHas severe abdominal pain or pain that lasts several days\n•\tHas nausea, fever, or inability to keep food down for several days\n•\tHas bloody stools\n•\tHas painful urination\n•\tHas blood in the urine\n•\tCannot pass stools, especially if also vomiting\n•\tHas difficulty breathing\n•\tHad an injury to the abdomen in the days before the pain started\n•\tHas heartburn that isn't relieved by over-the-counter drugs or last longer than two weeks"
+        }
+      ],
+      "Abdominal_pain_in_children": [
+        {
+          "heading": "Call",
+          "content": "•\tIf the child is not moving or is too weak to stand."
+        },
+        {
+          "heading": "Have Your Child Rest",
+          "content": "•\tAvoid activity, especially after eating."
+        },
+        {
+          "heading": "Treat Symptoms",
+          "content": "•\tProvide clear fluids to sip, such as water, broth, or fruit juice diluted with water.\n\t\t•\tServe bland foods, such as saltine crackers, plain bread, dry toast, rice, gelatin, or applesauce.\n\t\t•\tAvoid spicy or greasy foods and caffeinated or carbonated drinks until 48 hours after all symptoms have gone away.\n\t\t•\tEncourage the child to have a bowel movement.\n\t\t•\tAsk your child’s doctor before giving any medicine for abdominal pain. Drugs can mask or worsen the pain."
+        },
+        {
+          "heading": "When to Call a Doctor",
+          "content": "Call your child’s doctor immediately if your child has any of the following:\n\t\t\t•\tPersistent pain on the right side of the abdomen, which could be an appendicitis\n\t\t\t•\tPain confined to one part of the abdomen\n\t\t\t•\tSevere or rapidly worsening abdominal pain or pain that doesn’t go away within 24 hours\n\t\t\t•\tPain or tenderness when you press on the belly\n\t\t\t•\tA swollen abdomen or an abdomen that is rigid to the touch\n\t\t\t•\tPain in the groin, or pain or swelling in a testicle\n\t\t\t•\tUnexplained fever\n\t\t\t•\tLots of vomiting or diarrhea\n\t\t\t•\tBleeding from the rectum\n\t\t\t•\tBlood in the stool or vomit\n\t\t\t•\tA recent abdominal injury"
+        }
+      ],
+      "Acetaminophen_(Tylenol)_poisoning": [
+        {
+          "heading": "Call",
+          "content": "If the person is:\n\t\t\t•\tUnconscious\n\t\t\t•\tNot breathing"
+        },
+        {
+          "heading": "Get Help Immediately",
+          "content": "•\tCall Poison Control at 800-222-1222 for instructions, even if there are no symptoms of poisoning.\n\t\t\t•\tIf possible, provide this information: all medications the person may have taken, how much he or she may have taken, and when.\n\t\t\t•\tIf you are told to seek emergency care, collect and bring any pills or pill bottles with you."
+        },
+        {
+          "heading": "Follow Up",
+          "content": "•\tFor small amounts, you may be told to watch the person carefully at home.\n\t\t\t•\tFor a larger amount, you may need to take the person to the hospital emergency room.\n\t\t\t•\tIn high doses, acetaminophen can cause damage to the liver. At the hospital, doctors will check the level of acetaminophen in the blood and may give activated charcoal or antidote medication to prevent the toxic effect on the body."
+        }
+      ],
+      "Alcohol_intoxication": [
+        {
+          "heading": "Call emergency services if the person has these symptoms of alcohol poisoning:",
+          "content": "•\tMental confusion or unconsciousness\n\t\t\t•\tRepeated vomiting\n\t\t\t•\tSeizures\n\t\t\t•\tSlow or irregular breathing\n\t\t\t•\tLow body temperature\n\t\t\t•\tPale, clammy, or bluish skin"
+        },
+        {
+          "heading": "Stop Further Drinking",
+          "content": "•\tLeave the place where the alcohol is, or put the alcohol away.\n\t\t\t•\tCoffee, cold showers, and other traditional remedies don't work."
+        },
+        {
+          "heading": "Keep the Person Safe",
+          "content": "•\tNever allow someone to drive when they are drunk.\n\t\t\t•\tKeep the person away from machinery, bicycles, skateboards, swimming pools, and other hazards.\n\t\t\t•\tWatch for signs of alcohol poisoning."
+        }
+      ],
+      "Allergic_reaction": [
+        {
+          "heading": "Call emergency services now if the person has had severe reactions in the past or has any of these symptoms:",
+          "content": "•\tDifficulty breathing or wheezing\n•\tTightness in the throat or a feeling that the airways are closing\n•\tHoarseness or trouble speaking\n•\tSwollen lips, tongue, or throat\n•\tNausea, abdominal pain, or vomiting\n•\tFast heartbeat or pulse\n•\tAnxiety or dizziness\n•\tLoss of consciousness\n•\tOther symptoms of a severe allergic reaction (anaphylaxis)\n\nIf you have severe allergies, you should keep two epinephrine injection kits with you at all times and readily available. If you experience any sign of anaphylaxis, do not hesitate to use the auto injector even if those symptoms do not appear to be allergy related. Using the auto injector as a precaution will not harm you. Call emergency services even if you administer the injection."
+        },
+        {
+          "heading": "Treat Symptoms",
+          "content": "•\tFor mild allergy symptoms, such as hay fever or hives, give an over-the-counter (OTC) antihistamine.\n•\tFor stuffy nose, give an OTC decongestant.\n•\tFor itchy, watery eyes, use OTC allergy eye drops.\n•\tFor itchy allergic rash, apply cold compresses and an OTC hydrocortisone cream."
+        },
+        {
+          "heading": "Follow Up",
+          "content": "•\tWatch for worsening symptoms, including signs of anaphylaxis.\n\n\t\t\tSee Severe Allergic Reaction Treatment."
+        }
+      ],
+      "Amputation_(Accidental)": [
+        {
+          "heading": "Emergency care",
+          "content": "•\tAmputation is the removal of a body part. This can be done by a doctor in a hospital setting, such as when a foot must be amputated because of diabetes complications. But amputation may also happen during an accident.\n\t\t\tInAn amputation may be complete (the body part is completely removed or cut off) or partial (much of the body part is cut off, but it remains attached to the rest of the body).\n\t\t\tIn some cases amputated parts can be successfully reattached. The success of the reattachment depends on:\n\n\t\t\t\tWhat body part was amputated.\n\t\t\t\tThe condition of the amputated part.\n\t\t\t\tThe time since the amputation and receiving medical care.\n\t\t\t\tThe general health of the injured person."
+        },
+        {
+          "heading": "What to do",
+          "content": "If you witness an amputation:\n\n\t\t\t\t•\tCall emergency services.\n\t\t\t\t•\tStop the bleeding. A complete amputation may not bleed very much. The cut blood vessels may spasm, pull back into the injured part, and shrink. This slows or stops the bleeding. If there is bleeding, do the following:\n\t\t\t\t\t•\tIf available, wash your hands with soap and water and put on latex gloves. If gloves are not available, use many layers of clean cloth, plastic bags, or the cleanest material available between your hands and the wound.\n\t\t\t\t\t•\tHave the injured person lie down and elevate the site that is bleeding.\n\t\t\t\t\t•\tRemove any visible objects in the wound that are easy to remove, and remove or cut clothing from around the wound.\n\t\t\t\t\t•\tApply steady direct pressure for a full 15 minutes. If blood soaks through the cloth, apply another one without lifting the first. If there is an object in the wound, apply pressure around the object, not directly over it.\n\t\t\t\t\t•\tIf moderate to severe bleeding has not slowed or stopped, continue direct pressure while getting help. Do all you can to keep the wound clean and avoid further injury to the area.\n\t\t\t\t\t•\tMild bleeding usually stops on its own or slows to an ooze or trickle after 15 minutes of pressure. It may ooze or trickle for up to 45 minutes. Use the Check Your Symptoms section to determine your next steps.\n\t\t\t\t•\tCheck and treat for shock. The trauma of the accident or severe blood loss can cause the person to go into physiologic shock. Signs of physiologic shock include:\n\t\t\t\t\t•\tPassing out (losing consciousness).\n\t\t\t\t\t•\tFeeling very dizzy or lightheaded, like the person may pass out.\n\t\t\t\t\t•\tFeeling very weak or having trouble standing up.\n\t\t\t\t\t•\tBeing less alert. The person may suddenly be unable to respond to questions, or he or she may be confused, restless, or fearful.\n\t\t\t\t•\tEmotional stress from the event may cause symptoms such as lightheadedness or fainting. This is sometimes called \"emotional shock.\" Lightheadedness and fainting from emotional stress may be confused with physiologic shock."
+        },
+        {
+          "heading": "Care for the completely amputated body part",
+          "content": "•\tRecover the amputated body part, if possible, and transport it to the hospital with the injured person. If the part can't be found right away, transport the injured person to the hospital and bring the amputated part to the hospital when it is found.\n\t\t\t•\tGently rinse off dirt and debris with clean water, if possible. Do not scrub.\n\t\t\t•\tWrap the amputated part in a dry, sterile gauze or clean cloth.\n\t\t\t•\tPut the wrapped part in a plastic bag or waterproof container.\n\t\t\t•\tPlace the plastic bag or waterproof container on ice. The goal is to keep the amputated part cool but not to cause more damage from the cold ice. Do not cover the part with ice or put it directly into ice water."
+        },
+        {
+          "heading": "Care for the part of the body where the amputation happened",
+          "content": "•\tStop the bleeding.\n\t\t\t•\tElevate the injured area.\n\t\t\t•\tWrap or cover the injured area with a sterile dressing or clean cloth until medical treatment is received."
+        },
+        {
+          "heading": "Care for a partially amputated body part",
+          "content": "•\tElevate the injured area.\n\t\t\t•\tWrap or cover the injured area with a sterile dressing or clean cloth. Apply pressure if the injured area is bleeding. This will slow the bleeding until the person receives medical care. You don't want to cut off the blood flow to the partially amputated part, so pressure needs to be light-just enough to slow blood loss.\n\t\t\t•\tGently splint the injured area to prevent movement or further damage."
+        }
+      ],
+      "Angina_Pectoris": [
+        {
+          "heading": "Call",
+          "content": "•\tAngina -- or chest pain -- occurs because the heart is not receiving enough oxygen. The pain is usually in the chest and may also be felt in the shoulder, arm, or jaw. Not all chest pain is angina and it may be difficult to determine the cause of chest pain.\n\t\t\t•\tThe treatment for angina depends on the severity of the symptoms and the results of tests that are done to find the underlying cause."
+        },
+        {
+          "heading": "Chest Pain Treatment at Home",
+          "content": "Stop doing whatever it is that causes your symptoms, remain calm, and call emergency services. Immediate help and intervention is your best chance for survival if you are having a heart attack or other serious problem.\n\n\t\t\t\t•\tLie down in a comfortable position with your head up.\n\t\t\t\t•\tIf you have regular adult aspirin or its equivalent, chew one (as long as you are not allergic to aspirin). Chewing more than one will not do any good and may cause unwanted side effects.\n\n\t\t\tIf you have had angina before and been evaluated by your health care provider, follow his or her recommendations.\n\t\t\t\t•\tThis may mean rest, and the immediate use of sublingual nitroglycerin.\n\t\t\t\t•\tIt may include a visit to the hospital emergency room."
+        }
+      ],
+      "Animal_bites": [
+        {
+          "heading": "Call emergency services if:",
+          "content": "•\tThe person has been seriously wounded.\n\t\t\t•\tBleeding can't be stopped after 10 minutes of firm and steady pressure.\n\t\t\t•\tBleeding is severe.\n\t\t\t•\tBlood spurts from the wound."
+        },
+        {
+          "heading": "Stop Bleeding",
+          "content": "•\tApply direct pressure until bleeding stops."
+        },
+        {
+          "heading": "Clean and Protect",
+          "content": "For a wound or superficial scratch from an animal bite:\n\t\t\t\t•\tGently clean with soap and warm water. Rinse for several minutes after cleaning.\n\t\t\t\t•\tApply antibiotic cream to reduce risk of infection, and cover with a sterile bandage."
+        },
+        {
+          "heading": "Get Help",
+          "content": "•\tGet medical help immediately for any animal bite that is more than a superficial scratch or if the animal was a wild animal or stray, regardless of the severity of the injury.\n\t\t\t•\tIf the animal's owner is available, find out if the animal's rabies shots are up-to-date. Give this information to your health care provider.\n\t\t\t•\tIf the animal was a stray or wild animal, call the local health department or animal control immediately."
+        },
+        {
+          "heading": "Follow Up",
+          "content": "•\tThe health care provider will make sure the wound is thoroughly clean and may prescribe antibiotics.\n\t\t\t•\tThe health care provider may numb the wound and look for any deeper damage.\n\t\t\t•\tIf there is any risk of rabies infection, the health care provider will recommend anti-rabies treatment.\n\t\t\t•\tThe person may require stitches, depending on how big the wound is and where it is located.\n\t\t\t•\tThe person may also require a tetanus shot or booster.\n\t\t\t•\tThe health care provider may recommend ibuprofen or acetaminophen for pain."
+        }
+      ],
+      "Ankle_fracture": [
+        {
+          "heading": "Call emergency services if the person:",
+          "content": "•\tIs bleeding uncontrollably\n\t\t\t•\tHas a numb, cold, pale, or blue ankle/foot\n\t\t\t•\tIs unable to move the foot\n\t\t\t•\tIs in shock (faint, pale, with rapid shallow breathing)"
+        },
+        {
+          "heading": "Leave Protruding Bone Alone",
+          "content": "•\tIf a bone has broken through the skin, don't push it back into place. Cover the area with a clean bandage and seek immediate medical attention."
+        },
+        {
+          "heading": "Stop Bleeding",
+          "content": "•\tApply steady, direct pressure with a cloth for 15 minutes and elevate the wound. If blood soaks through, apply another cloth over the first and seek immediate medical attention."
+        },
+        {
+          "heading": "Control Swelling",
+          "content": "•\tRemove ankle bracelets or toe rings.\n\nIf medical attention is not immediately available, apply RICE therapy:\n\t\t\t•\tRest ankle by having the person stay off of it. Use crutches if necessary.\n\t\t\t•\tIce area. Use an ice pack or wrap the ice in a clean cloth. Do not place ice directly against the skin.\n\t\t\t•\tCompress by wrapping ankle lightly (not tightly) with an \"ace\" bandage or elastic ankle brace. Do not try to align the bones.\n\t\t\t•\tElevate ankle above heart level."
+        },
+        {
+          "heading": "Manage Pain and Inflammation",
+          "content": "•\tGive an over-the-counter pain medication such as ibuprofen or aspirin. Avoid ibuprofen and other NSAIDs if the person has heart failure or kidney failure. Do NOT give aspirin to anyone ages 18 or younger."
+        },
+        {
+          "heading": "See a Doctor as soon as possible",
+          "content": "•\tSee a Doctor and tell him/her about your situation, as soon as Possible"
+        },
+        {
+          "heading": "Follow Up",
+          "content": "•\tThe doctor will examine and X-ray the ankle, leg, and foot. The doctor also may do a CT or CAT scan, or an MRI to determine if surgery is needed.\n\t\t\t•\tIf needed, the doctor will set the broken bone back in place and immobilize the ankle with a splint, cast, or other device. Surgery may be necessary to repair the break."
+        }
+      ],
+      "Ankle_sprain": [
+        {
+          "heading": "Refer to a doctor",
+          "content": "•\tTo help your sprained ankle recover, you’ll want to ease the pain and bring down the swelling. Make an appointment right away for any ankle sprain, mild or severe. A doctor or other health care professional can tell you if there are any other problems and what treatments you can do at home."
+        },
+        {
+          "heading": "Go to the emergency room for any of these reasons:",
+          "content": "•\tPain, bruising, or swelling is severe\n\t\t\t•\tThe ankle looks deformed or seems dislocated\n\t\t\t•\tYou can't put any weight on the ankle."
+        },
+        {
+          "heading": "Control Swelling",
+          "content": "•\tRemove ankle bracelets or toe rings right away.\n\n\t\t\t\tDo “RICE” therapy:\n\n\t\t\t\t\t•\tRest the ankle. Use crutches if needed.\n\n\t\t\t\t\t•\tIce the ankle for 20 to 30 minutes every 2-3 hours for the first 2 days.\n\n\t\t\t\t\t•\tCompress by wrapping the ankle lightly, not tightly, with an elastic bandage or ankle brace.\n\n\t\t\t\t\t•\tFor the first 48 hours, elevate (raise) the ankle higher than your heart whenever you're lying down."
+        },
+        {
+          "heading": "Manage Pain and Inflammation",
+          "content": "•\tCheck with your doctor first if you have any medical conditions or take any other medicines.\n\t\t\t•\tDon’t give aspirin to anyone younger than age 19 unless a doctor tells you to do so."
+        }
+      ],
+      "Anthrax": [
+        {
+          "heading": "What to do",
+          "content": "•\tIf you think you’ve been exposed to anthrax, seek medical help right away. Do this whether or not you have symptoms, which may not show up right away.\n\t\t\t•\tYou’ll get a blood test to see if you have toxin made by the anthrax bacteria in your blood. You may also get swabs of your skin or samples of your spinal fluid or mucus that you cough up.\n\t\t\t•\tTell your doctor what happened. If he thinks you may have breathed in the spores that yield anthrax bacteria, you may get a chest X-ray or CT scan.\n\t\t\t•\tThe treatment you need will depend on what happened and how you were exposed. You’ll get antibiotics, which you may get through an IV.\n\t\t\t•\tYou may also need an antitoxin, which is a type of medicine that counters the poisons that anthrax bacteria make. Anthrax antitoxins include obiltoxaximab (Anthim) to help treat inhaled anthrax, along with antibacterial medicines.\n\t\t\t•\tIf your case is serious, you’ll get the treatment in a hospital."
+        },
+        {
+          "heading": "Anthrax Vaccine",
+          "content": "•\tThere is an anthrax vaccine, but it’s only for people who are at risk because they might become exposed to anthrax. This group includes people who work in a lab with anthrax, some people who work with animals or animal products, and some members of the U.S. military.\n\t\t\t•\tThe anthrax vaccine isn’t approved for use after exposure, but that might change in an emergency situation, such as if anthrax were used in terrorism. In that case, people who are exposed would need three shots of the vaccine over 4 weeks, and also take antibiotics of 60 days.\n\t\t\t•\tResearchers are working on a new anthrax vaccine that might only need two doses, but it’s not ready yet.\n\t\t\t•\tRemember, you can’t get anthrax unless the spores get into your body, either through a cut or because you breathe them in or drink or eat something that’s contaminated with spores that contain the bacteria. You cannot catch anthrax from someone else."
+        }
+      ],
+      "Aspirin_poisoning": [
+        {
+          "heading": "Call emergency services if the person is:",
+          "content": "•\tVomiting severely\n\t\t\t•\tAgitated or lethargic\n\t\t\t•\tUnconscious\n\t\t\t•\tHaving convulsions\n\t\t\t•\tNot breathing"
+        },
+        {
+          "heading": "Get Help Immediately",
+          "content": "For an overdose of aspirin:\n\t\t\t\t•\tCall Emergency services for instructions, even if there are no signs of poisoning.\n\t\t\t\t•\tIf possible, provide this information: all medications the person may have taken, how much the person may have taken, and when."
+        },
+        {
+          "heading": "Follow Up",
+          "content": "•\tFor small amounts, you may need to watch the person carefully at home.\n\t\t\t•\tFor a larger amount, you may need to take the person to a hospital emergency department.\n\t\t\t•\tTake the aspirin bottle to show the health care provider.\n\t\t\t•\tAt the hospital, health care providers will check the level of aspirin in the blood and will do testing to determine the aspirin's toxic effect on the body. They may give activated charcoal or other medication to slow or prevent toxicity.\n\t\t\t•\tThe providers may also give IV fluids."
+        }
+      ],
+      "Asthma_attack_in_adults": [
+        {
+          "heading": "Call emergency services",
+          "content": "•\tSymptoms of acute attack include difficulty talking or walking because of shortness of breath or lips or fingernails turning blue."
+        },
+        {
+          "heading": "Follow the Person’s Asthma Plan, if Possible",
+          "content": "•\tFind out if the person has an individualized asthma action plan from a health care provider.\n\t\t\t•\tIf so, follow its directions for giving asthma medication and seeking medical help for acute asthma attack."
+        },
+        {
+          "heading": "Give Asthma First Aid",
+          "content": "•\tIf the person doesn't have an asthma plan:\n\t\t\t\t•\tSit the person upright comfortably and loosen tight clothing.\n\t\t\t\t•\tIf the person has asthma medication, such as an inhaler, assist in using it.\n\t\t\t\t•\tIf the person doesn’t have an inhaler, use one from a first aid kit or borrow someone else’s."
+        },
+        {
+          "heading": "Use Inhaler With a Spacer, if Possible",
+          "content": "•\tRemove cap and shake inhaler well.\n\t\t\t\t•\tInsert inhaler into spacer.\n\t\t\t\t•\tHave the person breathe out completely and put mouth tightly around spacer mouthpiece.\n\t\t\t\t•\tPress inhaler once to deliver a puff.\n\t\t\t\t•\tHave the person breathe in slowly through the mouth and then hold breath for 10 seconds.\n\t\t\t\t•\tGive a total of four puffs, waiting about a minute between each puff."
+        },
+        {
+          "heading": "Use Inhaler Without a Spacer, if Necessary",
+          "content": "•\tRemove the inhaler cap and shake well.\n\t\t\t\t•\tHave the person breathe out all the way and seal lips tightly around inhaler mouthpiece.\n\t\t\t\t•\tAs the person starts to breathe in slowly, press down on inhaler one time.\n\t\t\t\t•\tThe person should keep breathing in as slowly and deeply as possible (about five to seven seconds) and then hold breath for 10 seconds.\n\t\t\t\t•\tGive a total of four puffs, waiting about one minute between each puff."
+        },
+        {
+          "heading": "Continue Using Inhaler if Breathing Is Still a Problem",
+          "content": "•\tAfter four puffs, wait four minutes. If the person still has trouble breathing, give another set of four puffs.\n\t\t\t\t•\tIf there’s still little or no improvement, give four puffs every four minutes until ambulance arrives. If the person is having a severe attack, give up to six to eight puffs every five minutes."
+        },
+        {
+          "heading": "Monitor the Person Until Help Arrives",
+          "content": "•\tDo not mistake drowsiness as a sign of improvement; it could mean asthma is worsening.\n\t\t\t\t•\tDo not assume the person’s asthma is improving if you no longer hear wheezing."
+        },
+        {
+          "heading": "Follow Up",
+          "content": "•\tAn emergency room doctor will check the severity of the attack and provide treatment, including medications.\n\t\t\t\t•\tThe person may be discharged home or hospitalized for further care, depending on response to treatment."
+        }
+      ],
+      "Asthma_attack_in_children": [
+        {
+          "heading": "Asthma therapy",
+          "content": "•\tThe goals of asthma therapy are to prevent your child from having chronic and troublesome symptoms, to maintain your child's lung function as close to normal as possible, to allow your child to maintain normal physical activity levels (including exercise), to prevent recurrent asthma attacks and to reduce the need for emergency department visits or hospitalizations, and to provide medicines to your child that give the best results with the fewest side effects."
+        },
+        {
+          "heading": "Medications",
+          "content": "•\tMedicines that are available fall into two general categories. One category includes medications that are meant to control asthma in the long term and are used daily to prevent asthma attacks (controller medications). These can include inhaled corticosteroids, inhaled cromolyn or nedocromil, long-acting bronchodilators, theophylline, and leukotriene antagonists. The other category is medications that provide instant relief from symptoms (rescue medications). These include short-acting bronchodilators like albuterol. Systemic corticosteroids, like prednisone or methylprednisolone (Medrol), are used for severe persistent symptoms for a short course of treatment, but these medications can take hours, or even days, to become effective. Inhaled ipratropium may be used in addition to inhaled albuterol following asthma attacks or when asthma worsens. It's important to understand the difference between controller and rescue medications and to use them appropriately.\n\n\t\t\t•\tIn general, doctors start with a high level of therapy following an asthma attack and then decrease treatment to the lowest possible level that still prevents asthma attacks and allows your child to have a normal life. Every child needs to follow a customized asthma management plan to control asthma symptoms. The severity of a child's asthma can both worsen and improve over time, so the type (category) of your child's asthma can change, which means different treatment can be required over time. Treatment should be reviewed every 1-6 months, and the choices for long- and short-term therapy are based on how severe the asthma is.\n\n\t\t\t•\tTalk to your doctor about the various medications available to treat asthma."
+        },
+        {
+          "heading": "Web references",
+          "content": "•\tFor more details about asthma in children and its treatment, visit emedicinehealth.com/asthma_in_children/article_em.htm"
+        }
+      ],
+      "Asthma_in_pregnancy": [
+        {
+          "heading": "Call emergency services",
+          "content": "•\tSymptoms of an acute asthma attack in pregnancy include:\n\t\t\t\t•\tDifficulty talking, walking, or thinking because of shortness of breath\n\t\t\t\t•\tNeck and ribs moving in during breathing\n\t\t\t\t•\tBlue- or gray-looking skin\n\t\t\t\t•\tPeak flow reading below 60% of personal best\n\t\t\t\t•\tDecrease in fetal kick count if the baby is in distress"
+        },
+        {
+          "heading": "Follow the Woman’s Asthma Plan, if Possible",
+          "content": "•\tFind out if the woman has an individualized treatment plan for asthma attack in pregnancy from a health care provider.\n\t\t\t•\tFollow the plan. It may say to call the woman's health care provider about when to give quick-relief medicine and whether additional medicines are needed."
+        },
+        {
+          "heading": "Give Asthma First Aid",
+          "content": "•\tIf the woman doesn't have an asthma action plan:\n\n\t\t\t\t•\tSit the woman upright comfortably and loosen tight clothing.\n\n\t\t\t\t•\tIf woman has asthma medication, such as an inhaler, help her use it.\n\n\t\t\t\t•\tIf woman doesn't have an inhaler, use one from a first aid kit or borrow someone else’s."
+        },
+        {
+          "heading": "Use Inhaler With a Spacer, if Possible",
+          "content": "•\tRemove cap and shake inhaler well.\n\t\t\t•\tInsert inhaler into spacer.\n\t\t\t•\tHave her breathe out completely and put mouth tightly around spacer mouthpiece.\n\t\t\t•\tPress inhaler once to deliver a puff.\n\t\t\t•\tHave her breathe in slowly through the mouth and then hold breath for 10 seconds.\n\t\t\t•\tGive a total of four puffs, waiting about a minute between each puff."
+        },
+        {
+          "heading": "Use Inhaler Without a Spacer, if Necessary",
+          "content": "•\tRemove cap and shake inhaler well.\n\t\t\t•\tHave woman breathe out all the way and seal lips tightly around inhaler mouthpiece.\n\t\t\t•\tAs woman starts to breathe in slowly, press down on the inhaler one time.\n\t\t\t•\tHave her keep breathing in as slowly and deeply as possible (about five to seven seconds) and then hold breath for 10 seconds.\n\t\t\t•\tGive a total of four puffs, waiting about one minute between each puff."
+        },
+        {
+          "heading": "Continue Using Inhaler if Breathing Is Still a Problem",
+          "content": "•\tAfter four puffs, wait four minutes. If the woman still has trouble breathing, give another set of four puffs.\n\t\t\t•\tIf there’s still little or no improvement, continue giving four puffs every four minutes until ambulance arrives.\n\t\t\t•\tIf the woman is having a severe attack, give up to six to eight puffs every five minutes."
+        },
+        {
+          "heading": "Monitor the Woman Until Help Arrives",
+          "content": "•\tDo not mistake drowsiness as a sign of improvement; it could mean asthma is worsening.\n\t\t\t•\tDo not assume her asthma is improving if you no longer hear wheezing."
+        },
+        {
+          "heading": "Follow Up",
+          "content": "•\tAn emergency room doctor may give the woman oxygen, inhaled medications, and intravenous steroids. All can be given without risk to the baby.\n\t\t\t•\tThe woman may be hospitalized so that she can be carefully monitored."
+        }
+      ],
+      "Asthma,_exercise-induced": [
+        {
+          "heading": "Call emergency services now if the person:",
+          "content": "•\tIs struggling to breathe\n\t\t\t•\tHas blue lips\n\t\t\t•\tIs unable to walk or talk\n\t\t\t•\tShows other signs of a severe attack"
+        },
+        {
+          "heading": "Stop Activity",
+          "content": "•\tHave the person sit down and rest."
+        },
+        {
+          "heading": "Follow the Person’s Asthma Plan, if Possible",
+          "content": "•\tFind out if the person has an individualized asthma action plan from a doctor.\n\t\t\t•\tIf so, follow its directions."
+        },
+        {
+          "heading": "Give Asthma First Aid",
+          "content": "•\tIf the person doesn't have an asthma plan:\n\n\t\t\t\t•\tFor an adult, follow directions for first aid and using an inhaler in Acute Asthma Attack Treatment for Adults.\n\t\t\t\t•\tFor a child, follow directions for first aid and using an inhaler in Acute Asthma Attack Treatment for Children."
+        },
+        {
+          "heading": "Resume Activity When Safe",
+          "content": "•\tWait until the person can breathe easily and is symptom-free before resuming exercise.\n\t\t\t•\tIf symptoms return when person starts exercise again, repeat treatment and stop exercise for rest of day."
+        }
+      ]
+    }
+  ]
+}

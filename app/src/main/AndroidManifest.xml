@@ -7,15 +7,18 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
     <uses-feature
         android:glEsVersion="0x00020000"
-        android:required="true"/>
+        android:required="true" />
+
     <permission
         android:name="com.prembros.symptomator.permission.MAPS_RECEIVE"
-        android:protectionLevel="signature"/>
-    <uses-permission android:name="com.prembros.symptomator.permission.MAPS_RECEIVE"/>
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.prembros.symptomator.permission.MAPS_RECEIVE" />
 
     <application
         android:allowBackup="true"
@@ -26,8 +29,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup,GoogleAppIndexingWarning">
-        <!--<uses-library android:name="com.google.android.maps" />-->
-        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+
+        <!-- <uses-library android:name="com.google.android.maps" /> -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
@@ -77,12 +84,16 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_places_key" />
-        <!--<meta-data
+        <!--
+            <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="@string/google_maps_key" />-->
-        <!--<meta-data
+            android:value="@string/google_maps_key" />
+        -->
+        <!--
+            <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyCwmLEnjoalKDciZxizLlWTFLmg0vd7Csc"/>-->
+            android:value="AIzaSyCwmLEnjoalKDciZxizLlWTFLmg0vd7Csc"/>
+        -->
         <activity
             android:name=".MapsActivity"
             android:label="@string/title_activity_maps">
@@ -90,6 +101,10 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.prembros.symptomator.MainActivity" />
         </activity>
+        <activity android:name=".FirstAidCheck">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.prembros.symptomator.MainActivity" /></activity>
     </application>
 
 </manifest>

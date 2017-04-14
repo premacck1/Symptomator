@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_call_108"
+        android:title="@string/call_108"
+        android:icon="@drawable/ic_call_medical_services"
+        android:orderInCategory="1"
+        app:showAsAction="always"/>
+
+</menu>

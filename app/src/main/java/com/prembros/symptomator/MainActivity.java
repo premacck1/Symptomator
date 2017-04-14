@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                             actionBar.setTitle(R.string.services);
                             actionBar.setSubtitle(R.string.services_subtitle);
                         }
-                        animationForward(revealView, touchCoordinate[0], touchCoordinate[1]);
+                        animationForward(revealView, touchCoordinate);
                         hidden = false;
                     } else {
                         animationReversed(revealView);
@@ -116,18 +116,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     }
 
     public void onButtonClick(View view){
-        DatabaseHolder db = new DatabaseHolder(this);
         switch (view.getId()){
             case R.id.call_108:
-                db.open();
-                Cursor cursor = db.returnEmergencyNumber(getUserCountry(this));
-                cursor.moveToFirst();
-                call(
-                        cursor.getString(cursor.getColumnIndex("Country")),                         //Country name
-                        Integer.parseInt(cursor.getString(cursor.getColumnIndex("Number")))         //Emergency number
-                );
-                cursor.close();
-                db.close();
+                callEmergencyServices(MainActivity.this);
                 break;
             case R.id.find_hospitals_nearby:
                 startActivity(new Intent(this, MapsActivity.class));
@@ -136,6 +127,20 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 //                Toast.makeText(this, "This feature is coming soon!", Toast.LENGTH_SHORT).show();
                 break;
         }
+    }
+
+    public static void callEmergencyServices(final Context context){
+        DatabaseHolder db = new DatabaseHolder(context);
+        db.open();
+        Cursor cursor = db.returnEmergencyNumber(getUserCountry(context));
+        cursor.moveToFirst();
+        call(
+                cursor.getString(cursor.getColumnIndex("Country")),                         //Country name
+                Integer.parseInt(cursor.getString(cursor.getColumnIndex("Number"))),        //Emergency number
+                context
+        );
+        cursor.close();
+        db.close();
     }
 
     @Override
@@ -167,7 +172,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 //                (y > viewY && y < (viewY + view.getHeight())));
 //    }
 
-    public static String getUserCountry(Context context) {
+    static String getUserCountry(Context context) {
         try {
             final TelephonyManager tm = (TelephonyManager) context.getSystemService(Context.TELEPHONY_SERVICE);
             final String simCountry = tm.getSimCountryIso();
@@ -187,22 +192,22 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         return null;
     }
 
-    void call(String country, int number){
+    static void call(String country, int number, final Context context){
         final Intent callIntent = new Intent(Intent.ACTION_CALL);
         callIntent.setData(Uri.parse("tel:" + number));
 
-        if (ActivityCompat.checkSelfPermission(this,
+        if (ActivityCompat.checkSelfPermission(context,
                 Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
             return;
         }
-        final AlertDialog.Builder dialog = new AlertDialog.Builder(MainActivity.this);
+        final AlertDialog.Builder dialog = new AlertDialog.Builder(context);
         dialog.setIcon(R.drawable.ic_call)
                 .setTitle("Emergency number")
                 .setMessage("*__ " + country + " __*\n\nWe're going to call \"" + number + "\" for you\nClick OKAY to confirm.")
                 .setPositiveButton("okay", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        startActivity(callIntent);
+                        context.startActivity(callIntent);
                     }
                 })
                 .setNegativeButton("cancel", new DialogInterface.OnClickListener() {
@@ -214,7 +219,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 .show();
     }
 
-    public void animationForward(View mRevealView, int centerX, int centerY){
+    public void animationForward(View mRevealView, int[] center){
+        int centerX = center[0];
+        int centerY = center[1];
         int startRadius = 0;
         int endRadius = (int) (Math.hypot(mRevealView.getWidth() * 2, mRevealView.getHeight() * 2));
         animator = createCircularReveal(mRevealView, centerX, centerY, startRadius, endRadius);
@@ -281,7 +288,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 onBackPressed();
                 return true;
             case R.id.action_about:
-                animationForward(this.findViewById(R.id.menu_fragment_container), touchCoordinate[0], touchCoordinate[1]);
+                animationForward(this.findViewById(R.id.menu_fragment_container), touchCoordinate);
                 navigation.setVisibility(View.GONE);
                 fragmentManager.beginTransaction().add(R.id.menu_fragment_container, new About(), "about").commit();
                 somethingIsActive = true;
@@ -309,8 +316,13 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     }
 
     @Override
-    public void onListFragmentInteraction(String item) {
-
+    public void onListFragmentInteraction(final String item) {
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                startActivity(new Intent(MainActivity.this, FirstAidCheck.class).putExtra("topic", item));
+            }
+        }, 200);
     }
 
     void removeFragmentIfAttached(final String tag){
