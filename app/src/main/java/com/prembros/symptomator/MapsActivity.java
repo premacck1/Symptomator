@@ -212,7 +212,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 "&radius=" + 5000 +
                 "&type=hospital" +
                 "&sensor=true" +
-                "&key=" + R.string.google_places_key;
+                "&key=" + R.string.google_maps_key;
 
         GooglePlacesReadTask googlePlacesReadTask = new GooglePlacesReadTask();
         Object[] toPass = new Object[2];

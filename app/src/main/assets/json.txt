@@ -304,6 +304,1230 @@
           "heading": "Resume Activity When Safe",
           "content": "•\tWait until the person can breathe easily and is symptom-free before resuming exercise.\n\t\t\t•\tIf symptoms return when person starts exercise again, repeat treatment and stop exercise for rest of day."
         }
+      ],
+      "Battery_ingestion": [
+        {
+          "heading": "Call emergency services if the person is",
+          "content": "\n\t•\tHaving trouble breathing"
+        },
+        {
+          "heading": "Get Help Immediately",
+          "content": "\n\t•\tCall the National Battery Ingestion Hotline at 202-625-3333 (collect, if necessary) or Poison Control at 1-800-222-1222, or go to your local emergency department.\n\t•\tIf possible, bring the battery package or a matching battery.\n•\tIn most cases, you will be advised to get an X-ray immediately."
+        },
+        {
+          "heading": "Keep the Person Safe",
+          "content": "\n\t•\tDo not induce vomiting.\n\t•\tDo not let the person eat or drink until an X-ray has been done."
+        },
+        {
+          "heading": "Follow Up",
+          "content": "\n\tThe next steps depend on the X-ray results.\n\n\t•\tIf the X-ray shows the battery is in the esophagus, it will be removed immediately with an endoscopy.\n\t•\tIf it shows the battery is in the stomach, the person may not need medical treatment. Call your doctor if the person develops fever, abdominal pain, vomiting, or blood in the stools.\n\t•\tAn X-ray may be needed after 48 hours or more if there was no immediate treatment."
+        }
+      ],
+      "Black_eye": [
+        {
+          "heading": "Treat Symptoms",
+          "content": "\n\t•\tApply ice to the area. Don't press on the eye.\n\t•\tFor pain, give acetaminophen (Tylenol). Don't give aspirin or ibuprofen (Advil, Motrin), because they can increase bleeding."
+        },
+        {
+          "heading": "Get Medical Help",
+          "content": "\n\tSee a health care provider to make sure there is no further damage to the eye.\n\n\t•\tCall a health care provider immediately if:\n\t•\tThe person's vision is blurred, double, or lost in either eye.\n\t•\tThe person is in severe pain.\n\t•\tYou suspect a serious eye injury.\n\t•\tThere is drainage or bleeding on the white part of the eye or drainage from the eye.\n\t•\tThe eyeball or pupil looks abnormal.\n\t•\tSkin around the eye is split or there is a cut on the eyelid."
+        },
+        {
+          "heading": "Follow Up",
+          "content": "\n\t•\tContinue icing the area several times a day for 1 or 2 days.\n\t•\tAfter 1 or 2 days, apply warm compresses to the bruised area instead.\n\t•\tDepending on the injury, the provider may prescribe eye drops and recommend follow up with an eye doctor."
+        }
+      ],
+      "Black_widow_spider_bite": [
+        {
+          "heading": "Call emergency services if the person",
+          "content": "\n\t•\tHas trouble breathing\n\t•\tShows signs of shock"
+        },
+        {
+          "heading": "Get Help Immediately",
+          "content": "\n\t•\tCall your health care provider or go to a hospital emergency room.\n\t•\tIf possible, kill the spider and take it to the doctor with you.\n\t•\tSymptoms include target-like marking and slight swelling at wound site, muscle pains and cramps within 2 hours of the bite, weakness, headache, nausea, vomiting, sweating, dizziness, itching, anxiety, and increased blood pressure."
+        },
+        {
+          "heading": "Treat Symptoms",
+          "content": "\n\t•\tApply ice on the way to the health care provider's office or emergency room to relieve pain and swelling."
+        },
+        {
+          "heading": "Follow Up",
+          "content": "\n\t•\tThe health care provider will examine and clean the wound.\n\t•\tThe person may require a tetanus shot or booster, depending on the date of the last injection.\n\t•\tA person with severe symptoms -- such as intense pain and cramping or high blood pressure -- may be admitted to the hospital. Antivenin may be needed."
+        }
+      ],
+      "Bleeding_-_cuts_or_wounds": [
+        {
+          "heading": "Call emergency services if",
+          "content": "\n\t•\tBleeding is severe\n\t•\tYou suspect internal bleeding\n\t•\tThere is an abdominal or chest wound\n\t•\tBleeding can't be stopped after 10 minutes of firm and steady pressure\n\t•\tBlood spurts out of wound"
+        },
+        {
+          "heading": "Stop Bleeding",
+          "content": "\n\t•\tApply direct pressure on the cut or wound with a clean cloth, tissue, or piece of gauze until bleeding stops.\n\t•\tIf blood soaks through the material, don’t remove it. Put more cloth or gauze on top of it and continue to apply pressure.\n\t•\tIf the wound is on the arm or leg, raise limb above the heart, if possible, to help slow bleeding.\n\t•\tWash your hands again after giving first aid and before cleaning and dressing the wound.\n\t•\tDo not apply a tourniquet unless the bleeding is severe and not stopped with direct pressure."
+        },
+        {
+          "heading": "Clean Cut or Wound",
+          "content": "\n\t•\tGently clean with soap and warm water. Try to rinse soap out of wound to prevent irritation.\n\t•\tDon’t use hydrogen peroxide or iodine, which can damage tissue."
+        },
+        {
+          "heading": "Protect the Wound",
+          "content": "\n\t•\tApply antibiotic cream to reduce risk of infection and cover with a sterile bandage.\n\t•\tChange the bandage daily to keep the wound clean and dry."
+        },
+        {
+          "heading": "When to Call a Doctor",
+          "content": "\n\t•\tThe wound is deep or the edges are jagged or gaping open.\n\t•\tThe wound is on the person’s face.\n\t•\tThe wound has dirt or debris that won’t come out.\n\t•\tThe wound shows signs of infection, such as redness, tenderness, or a thick discharge, or if the person runs a fever.\n\t•\tThe area around the wound feels numb.\n\t•\tRed streaks form around the wound.\n\t•\tThe person has a puncture wound or deep cut and hasn’t had a tetanus shot in the past five years, or anyone who hasn’t had a tetanus shot in the past 10 years."
+        }
+      ],
+      "Bleeding_during_pregnancy": [
+        {
+          "heading": "Call emergency services if you have",
+          "content": "\n\t•\tHeavy vaginal bleeding\n\t•\tSevere pain\n\t•\tFrequent contractions"
+        },
+        {
+          "heading": "Monitor Bleeding",
+          "content": "\n\t•\tPut on a sanitary pad or panty liner to keep track of the amount of bleeding."
+        },
+        {
+          "heading": "Prevent Further Bleeding",
+          "content": "\n\t•\tDon’t insert anything into the vagina. Avoid sex, tampons, or douching while you’re bleeding."
+        },
+        {
+          "heading": "Get Help",
+          "content": "\n\t•\tCall your health care provider immediately to find out if you should go the hospital or doctor’s office.\n\t•\tTell the doctor or hospital staff if you have heavy bleeding, abdominal pain, cramping, fever, chills, or contractions, or if you feel lightheaded or faint.\n\t•\tPut any tissue passed from the vagina into a clean container. Give it to your doctor for examination.\n\t•\tA health care provider will examine you for signs of dangerous blood loss and may do tests to confirm the health of your pregnancy."
+        }
+      ],
+      "Bleeding_under_a_nail": [
+        {
+          "heading": "When to See a Health Care Provider",
+          "content": "\n\tGo to an emergency room or call a health care provider immediately if:\n\n\t•\tThe finger or toe is deformed. It may be broken.\n\t•\tA nearby joint was also injured.\n\t•\tMore than a quarter of the nail is discolored or there is continuing, intense pain.\n\t•\tSigns of infection develop, such as pus, redness, or heat around the nail, or a red streak extends from the wound."
+        },
+        {
+          "heading": "Reduce Swelling and Pain",
+          "content": "\n\tIf less than a quarter of the nail is discolored and pain is manageable, home treatment may be enough.\n\n\t•\tFor swelling, ice and elevate the area.\n\t•\tFor pain, give over-the-counter pain medication."
+        },
+        {
+          "heading": "Follow Up",
+          "content": "\n\t•\tIf you seek medical help, the doctor may make a small hole in the nail to drain blood and reduce pressure. In some cases, the nail may need to be removed to treat injury."
+        }
+      ],
+      "Bleeding_in_the_eye": [
+        {
+          "heading": "Get Medical Help Immediately",
+          "content": "\n\t•\tCall emergency services or take the person to a hospital emergency room."
+        },
+        {
+          "heading": "Protect the Eye",
+          "content": "\n\t•\tDo not put rub the eye or put pressure on the eyeball.\n\t•\tAvoid giving aspirin or ibuprofen (Advil, Motrin). They can make bleeding worse."
+        },
+        {
+          "heading": "Follow Up",
+          "content": "\n\t•\tA health care provider will examine the eye and prescribe treatment based on what's causing the bleeding and how severe it is. The person may need to use eye drops or wear a patch.\n\t•\tRarely, surgery is needed to relieve pressure in the eye."
+        }
+      ],
+      "Blisters": [
+        {
+          "heading": "For a Blister That Has Not Popped",
+          "content": "\n\t•\tTry not to pop or drain it.\n\t•\tLeave it uncovered or cover loosely with a bandage.\n\t•\tTry not to put pressure on the area. If the blister is in a pressure area such as the bottom of the foot, put a donut-shaped moleskin on it."
+        },
+        {
+          "heading": "For a Blister That Has Popped",
+          "content": "\n\t•\tWash the area with warm water and gentle soap. Do not use alcohol, hydrogen peroxide, or iodine.\n\t•\tSmooth down the the skin flap that remains.\n\t•\tApply antibiotic ointment to the area.\n\t•\tCover the area loosely with a sterile bandage or gauze."
+        },
+        {
+          "heading": "When to Drain a Blister",
+          "content": "\n\tTo drain a blister that is large, painful, or in an awkward spot:\n\n\t•\tWash the area.\n\t•\tSterilize a needle with rubbing alcohol and water.\n\t•\tMake a small hole at the edge of the blister. Gently squeeze out the fluid.\n\t•\tWash the blister again and pat dry. Don’t remove the skin over the blister.\n\t•\tSmooth down the skin flap.\n\t•\tApply antibiotic ointment.\n\t•\tCover the area loosely with a sterile bandage or gauze."
+        },
+        {
+          "heading": "Follow Up",
+          "content": "\n\t•\tChange the bandage daily and whenever it gets dirty or wet.\n\t•\tAvoid wearing shoes or doing the activity that caused the blister until it heals.\n\t•\tWear thick socks or work gloves for blisters on the feet or hands.\n\t•\tSee a doctor for signs of infection, including pus, fever, red or warm skin around the blister, red streaks leading away from blister, swollen lymph glands, or increased pain or swelling, or if your last tetanus shot was more than 10 years ago."
+        }
+      ],
+      "Blood_in_urine": [
+        {
+          "heading": "Get Help",
+          "content": "\n\t•\tCall your health care provider to set up a prompt appointment, even if you only see blood once in the urine. Inform the staff about the blood when you call.\n\t•\tSymptoms may include blood clots or red, pink, orange, or brown color in urine."
+        },
+        {
+          "heading": "Monitor Symptoms",
+          "content": "\n\tBe ready to answer these questions for the health care provider:\n\n\t•\tWhat color was the blood in the urine?\n\t•\tWere there blood clots? If so, what size and shape?\n\t•\tWas there blood at the beginning or end of the urine stream or during the entire stream?\n\t•\tWas it painful for to urinate? Where was the pain located (for example, back, side, groin, or genital area)?\n\t•\tAre there other symptoms, such as frequent or urgent urination? Burning during urination? Fever or chills?"
+        },
+        {
+          "heading": "Follow Up",
+          "content": "\n\tMost causes of blood in the urine are not serious, but some are. The health care provider may order one or more of these tests:\n\t•\tUrinalysis to check for urinary tract infection or kidney disease\n\t•\tBlood test to check for kidney disease\n\t•\tKidney imaging studies to check for a tumor, kidney or bladder stone, enlarged prostate, or blockage to urine flow\n\t•\tCystoscopic examination (looking at the inside of the bladder with a very thin scope) to check for a tumor or bladder stone"
+        }
+      ],
+      "Bloody_stools_in_children": [
+        {
+          "heading": "Call emergency services if",
+          "content": "\n\t•\tBleeding is severe or there are clots.\n\t•\tYour child seems weak, faint, or very sick.\n\t•\tYour child is in pain.\n\tBlood in the stool is usually not a serious problem in young children, but you should always call a pediatrician to make sure."
+        },
+        {
+          "heading": "Call Doctor If:",
+          "content": "\n\t•\tYour baby has blood in the stool."
+        },
+        {
+          "heading": "Get Details",
+          "content": "\n\t•\tIs the blood bright red or dark?\n\t•\tHas your baby eaten anything unusual or started any new medications? Foods such as tomatoes, beets, and artificial flavorings can cause reddish stools. Some antibiotics may also discolor stool."
+        },
+        {
+          "heading": "Look for Other Symptoms",
+          "content": "\n\t•\tIs the blood associated with diarrhea, vomiting, fever, or pain?"
+        },
+        {
+          "heading": "Call Your Pediatrician",
+          "content": "\n\t•\tIf there was very little blood and your baby seems otherwise healthy, call the pediatrician during normal office hours.\n\t•\tIf your baby is under 12 weeks old; has black or tarry stools, bloody diarrhea, or blood mixed with mucus that looks like jelly; or if your baby seems sick, upset, or lethargic, call a pediatrician right away or go to the nearest emergency room."
+        }
+      ],
+      "Blue_lips_in_children": [
+        {
+          "heading": "Call emergency services if",
+          "content": "\n\t•\tYou notice severe difficulty in breathing.\n\t•\tYour pediatrician is not available.\n\tIn a newborn, it's common for the area around a baby's mouth and even the palms and soles of the feet to turn blue once in awhile. But when a baby's lips, mouth, head, or torso are blue, it's a sign of a more serious problem and you should see a doctor right away."
+        },
+        {
+          "heading": "Call Doctor If:",
+          "content": "\n\t•\tYour baby has blue lips or skin.\n\t•That’s a sign that the baby is not getting enough oxygen. Your doctor will run tests to find out what’s causing the problem."
+        }
+      ],
+      "Breathing_problems_in_children": [
+        {
+          "heading": "Call emergency services if your child",
+          "content": "\n\t•\tIs gasping for breath\n\t•\tCan't cry or talk because of breathing trouble\n\t•\tGrunts when breathing\n\t•\tHas blue lips\n\t•\tMay have a small object caught in her throat\n\t•\tIs breathing very fast (this is also a symptom of fever)\n\t•\tLooks very sick\n\tBreathing problems are common in young children, but in some cases they can be serious."
+        },
+        {
+          "heading": "Call the Doctor If Your Child:",
+          "content": "\n\t•\tIs younger than 1 year old and still has trouble breathing after you cleaned out her nose\n\t•\tHas bronchiolitis (a common lung infection in children) or a reactive airways disease (such as asthma or a condition like asthma) episode\n\t•\tHas trouble breathing or is breathing very fast when not coughing\n\t•\tHas severe coughing attacks or continuous coughing\n\t•\tIs wheezing or making a high-pitched whistle sound when breathing out or in\n\t•\tCan't take a deep breath because of chest pain or coughed-up blood\n\t•\tHas a fever that persists\n\t•\tFlares her nostrils or draws in her chest muscles to breathe\n\t•\tIs sluggish\n\t•\tIs vomiting and can't keep fluids down\n\t•\tHas a cold that gets worse quickl"
+        },
+        {
+          "heading": "Prevent Dehydration",
+          "content": "\n\t•\tGive babies plenty of breast milk or formula.\n\t•\tGive older children water or juice mixed with water.\n\t•\tChildren may eat more slowly because of breathing problems, so give them plenty of time."
+        },
+        {
+          "heading": "Relieve Congestion",
+          "content": "\n\t•\tThin mucus in a stuffy nose with saline nose drops.\n\t•\tRemove mucus from a baby's nose with a suction bulb."
+        },
+        {
+          "heading": "Ease Breathing",
+          "content": "\n\t•\tUse a cool-mist humidifier near the child to add moisture to the air.\n\t•\tSit in the bathroom with a hot shower running and have your child breathe in the steam."
+        },
+        {
+          "heading": "Make the Child Comfortable",
+          "content": "\n\t•\tLet the child rest.\n\t•\tGive children's-formula acetaminophen (Tylenol) to bring down a fever.\n\t•\tKeep the child away from cigarette smoke."
+        }
+      ],
+      "Broken_arm_in_adults": [
+        {
+          "heading": "Call emergency services if",
+          "content": "\n\t•\tThe person is seriously injured\n\t•\tYou suspect an injury to the person’s head, neck, or back\n\t•\tBone is sticking out of the skin\n\t•\tBleeding doesn't stop after several minutes of firm pressure\n\t•\tBlood spurts from the wound"
+        },
+        {
+          "heading": "Stop the Bleeding if Necessary",
+          "content": "\n\t•\tApply firm pressure to the wound area with a clean cloth until bleeding stops.\n\t•\tIf bone is pushing through skin, do not touch it or try to put it back in place."
+        },
+        {
+          "heading": "Reduce Swelling",
+          "content": "\n\t•\tApply ice.\n\t•\tElevate the arm above the heart, if possible."
+        },
+        {
+          "heading": "Immobilize Arm",
+          "content": "\n\tFor less serious injuries:\n\t•\tCut away the sleeve if it cannot be removed without moving the injured arm.\n\t•\tIf you can without moving the arm, carefully tape it to rolled-up newspaper or a ruler with first aid tape."
+        },
+        {
+          "heading": "See a Health Care Provider Immediately",
+          "content": "\n\t•\tRefer to a Health Care Provider as soon as possible"
+        },
+        {
+          "heading": "Follow Up",
+          "content": "\n\t•\tThe health care provider will likely take X-rays and may apply a cast or splint.\n\t•\tSurgery may be needed to reset the bone or realign broken pieces.\n\t•\tA bone that has broken through the skin will require cleaning and possibly surgery."
+        }
+      ],
+      "Broken_arm_in_children": [
+        {
+          "heading": "Call emergency services if",
+          "content": "\n\t•\tThe bone has broken through the skin.\n\t•\tThe arm is bleeding heavily.\n\t•\tThe arm is numb, white, or blue.\n\t•\tThere is deformity to the arm.\n\n\tAs long as you get medical treatment right away, a broken arm usually heals well."
+        },
+        {
+          "heading": "Call Doctor If:",
+          "content": "\n\t•\tYou think your child has a broken arm. Symptoms include pain, redness, swelling, and refusal to move the arm."
+        },
+        {
+          "heading": "Examine the Injury",
+          "content": "\n\t•\tDo not try to straighten the arm.\n\t•\tIf the bone has broken through the skin, do not touch it. Drape gauze or a clean diaper over the injury, apply pressure to control the bleeding, and get emergency help."
+        },
+        {
+          "heading": "Make a Splint",
+          "content": "\n\t•\tDon't try to straighten the arm. Try to keep it still and don't move it.\n\t•\tPut some soft padding around the arm, like a soft cloth.\n\t•\tSplint the wrapped arm with a ruler, newspaper, or magazine to keep it from moving too much.\n\t•\tGently wrap cloth or tape around the splint and wrapping to hold them together.\n\t•\tMake sure the splint and wrapping aren't cutting off circulation."
+        },
+        {
+          "heading": "Get Help",
+          "content": "\n\t•\tIf your child may have a broken arm, go to the pediatrician's office or the emergency room."
+        },
+        {
+          "heading": "Reduce Swelling and Pain",
+          "content": "\n\t•\tWhile waiting to see a doctor, put a wrapped ice pack or ice in a towel on the arm for a few minutes at a time.\n\t•\tIf possible, keep your child's arm elevated.\n\t•\tCheck with a doctor before using any pain reliever."
+        }
+      ],
+      "Broken_collarbone": [
+        {
+          "heading": "Call emergency services if",
+          "content": "\n\t•\tThe person is experiencing tingling.\n\t•\tThere is numbness or weakness in the hand or arm.\n\t•\tThe injury is near the sternum and the person is having shortness of breath or difficulty swallowing."
+        },
+        {
+          "heading": "Get Medical Help Immediately",
+          "content": "\n\t•\tGet the person to a hospital emergency room or to a health care provider."
+        },
+        {
+          "heading": "Immobilize the Arm",
+          "content": "\n\t•\tAvoid moving the affected arm.\n\t•\tHold the arm close to the body with the other arm or a sling with the hand raised higher than the elbow."
+        },
+        {
+          "heading": "Reduce Pain and Swelling",
+          "content": "\n\t•\tApply ice for pain and swelling.\n\t•\tGive over-the-counter acetaminophen (Tylenol) or ibuprofen (Advil, Motrin) for pain unless there is a break in the skin over the fracture, which may require surgery."
+        },
+        {
+          "heading": "Follow Up",
+          "content": "\n\t•\tThe health care provider will examine the shoulder and may X-ray the shoulder and chest.\n\t•\tThe health care provider may put the arm in a sling to immobilize it and apply a figure eight strap to help maintain shoulder position. Surgery is rarely required."
+        }
+      ],
+      "Broken_elbow": [
+        {
+          "heading": "Reduce Swelling",
+          "content": "\n\t•\tApply ice.\n\t•\tIf bone is pushing through skin, do not touch it or try to put it back in place."
+        },
+        {
+          "heading": "Immobilize the Elbow",
+          "content": "\n\tFor less serious injuries:\n\n\t•\tCut away the sleeve if it cannot be removed without moving the injured elbow.\n\t•\tIf you can without moving the elbow, tie splints on with fabric or elastic bandages above and below the elbow.\n\t•\tCardboard, rolled-up newspaper, or other stiff material can be used as splints.\n\t•\tPut padding between the splints and the bony parts of the arm.\n\t•\tMake a sling and place the person's arm in it. Tie the sling around the person's neck."
+        },
+        {
+          "heading": "See a Health Care Provider Immediately",
+          "content": "\n\t•\tRefer to a health care provider as soon as possible."
+        },
+        {
+          "heading": "Follow Up",
+          "content": "\n\t•\tThe health care provider will likely take X-rays and check for feeling and range of motion to determine whether there has been nerve or tendon damage.\n\t•\tThe health care provider may apply a splint or cast.\n\t•\tSurgery may be needed for more complicated fractures."
+        }
+      ],
+      "Broken_finger_in_adults": [
+        {
+          "heading": "Immobilize the Finger",
+          "content": "\n\t•\tTape the broken finger to an adjacent non-broken finger."
+        },
+        {
+          "heading": "Control Swelling",
+          "content": "\n\t•\tCool the finger by applying ice that is wrapped in a towel -- don't apply ice directly to the skin; it can cause a burn."
+        },
+        {
+          "heading": "Get Help",
+          "content": "\n\t•\tCall a health care provider or go to a hospital emergency room immediately so the broken finger can be X-rayed and properly set. Without treatment, it may not heal properly and could lead to a permanent deformity."
+        },
+        {
+          "heading": "Treat Symptoms",
+          "content": "\n\t•\tUse an over-the-counter pain medicine such as acetaminophen (Tylenol) or ibuprofen (Advil, Motrin)."
+        }
+      ],
+      "Broken_finger_in_children": [
+        {
+          "heading": "Call emergency services if",
+          "content": "\n\t•\tThe bone has broken through the skin.\n\t•\tThe finger is bleeding heavily.\n\t•\tThe finger is numb, white, or blue.\n\t•\tThe finger has been amputated or the nail bed is affected.\n\n\tWith the right treatment, broken fingers usually heal well. So it's important to see a doctor right away."
+        },
+        {
+          "heading": "Call Doctor If:",
+          "content": "\n\t•\tYou think your child has broken a finger."
+        },
+        {
+          "heading": "Examine the Injury",
+          "content": "\n\t•\tDo not try to straighten the finger.\n\t•\tIf the bone has broken through the skin, do not touch it. Drape gauze or a clean diaper over the injury, control the bleeding, and get emergency help."
+        },
+        {
+          "heading": "Make a Splint",
+          "content": "\n\t•\tWrap the finger with a soft cloth.\n\t•\tSplint the wrapped finger by taping it to an adjacent non-broken finger.\n\t•\tMake sure the splint and wrapping aren't cutting off circulation. Watch for signs such as numbness, warmth, or changes in skin color."
+        },
+        {
+          "heading": "Reduce Swelling",
+          "content": "\n\t•\tIce the finger for a few minutes at a time. Wrap ice in a towel or cloth to avoid injuring the skin.\n\t•\tIf possible, keep your child's hand elevated."
+        },
+        {
+          "heading": "Get Help",
+          "content": "\n\t•\tGo to the pediatrician's office or the emergency room."
+        }
+      ],
+      "Broken_foot": [
+        {
+          "heading": "Call emergency services if",
+          "content": "\n\t•\tThe person is seriously injured.\n\t•\tBone is sticking out of skin.\n\t•\tBleeding doesn't stop after several minutes of firm pressure.\n\t•\tBlood spurts from the wound."
+        },
+        {
+          "heading": "Stop Bleeding if Necessary",
+          "content": "\n\t•\tApply pressure to wound area with a clean cloth until bleeding stops.\n\t•\tIf the bone is pushing through the skin, do not touch it or try to put it back in place."
+        },
+        {
+          "heading": "Control Swelling",
+          "content": "\n\t•\tApply ice.\n\t•\tElevate the foot and have the person stay off it as much as possible."
+        },
+        {
+          "heading": "Get Medical Help Immediately",
+          "content": "\n\t•\tSee a health care provider. Foot injuries can develop into long-lasting problems if they go untreated."
+        },
+        {
+          "heading": "Follow Up",
+          "content": "\n\t•\tThe health care provider will X-ray the foot and may order a CT scan or MRI.\n\t•\tThe health care provider may recommend special shoes or apply a cast or cast boot to stabilize and protect the foot.\n\t•\tSurgery may be needed for more complicated fractures."
+        }
+      ],
+      "Broken_hand": [
+        {
+          "heading": "Call emergency services if",
+          "content": "\n\t•\tThe person is seriously injured or unconscious.\n\t•\tThe hand is numb or cold.\n\t•\tThe skin under the fingernail is blue.\n\t•\tA bone is sticking out of the skin.\n\t•\tThe bleeding doesn't stop after several minutes of firm pressure.\n\t•\tBlood spurts from the wound."
+        },
+        {
+          "heading": "Stop Bleeding if Necessary",
+          "content": "\n\t•\tApply firm pressure with a clean cloth until bleeding stops.\n\t•\tIf the bone is pushing through the skin, do not touch it or try to put it back in place."
+        },
+        {
+          "heading": "Control Swelling",
+          "content": "\n\t•\tApply an ice pack (do not put ice directly against the skin).\n\t•\tIf possible, remove any jewelry immediately."
+        },
+        {
+          "heading": "Immobilize the Hand",
+          "content": "\n\tIf the person's hand is numb or cold or the skin under the fingernails is blue, do not move the hand or arm. Otherwise:\n\n\t•\tHave the person bend the arm at the elbow.\n\t•\tDo not try to straighten the hand if it bent or deformed.\n\t•\tTie a splint on the lower arm with fabric or elastic bandages. Cardboard, rolled-up newspaper, or other stiff material can be used as a splint.\n\t•\tMake a sling and place the person's arm in it. Tie the sling around his or her neck."
+        },
+        {
+          "heading": "Follow Up",
+          "content": "\n\t•\tThe health care provider will likely take X-rays and check for feeling and range of motion in the hand to determine whether there has been nerve or tendon damage.\n\t•\tThe health care provider may apply a splint or cast.\n\t•\tSurgery may be needed for more complicated fractures."
+        }
+      ],
+      "Broken_hip": [
+        {
+          "heading": "Call emergency services",
+          "content": "\n\t•\tImmediately call emergency services."
+        },
+        {
+          "heading": "Do CPR, if Necessary",
+          "content": "\n\t•\tIf the person is not breathing or you can't find a pulse, start CPR."
+        },
+        {
+          "heading": "Protect From Further Injury",
+          "content": "\n\t•\tKeep the person lying on his or her back.\n\t•\tTie legs together at ankle and knee. Legs may be straight or bent."
+        },
+        {
+          "heading": "Immobilize Leg",
+          "content": "\n\t•\tIf you have been trained in how to apply a splint, do it.\n\t•\tSecure leg with stiff padding, such as wadded-up blankets or towels, held in place with heavy objects. Padding should extend above the hip and below the knee.\n\t•\tIf no materials are available, place one hand behind the person’s knee and your other arm along the top of the thigh, so your hand is just below the pelvic area."
+        },
+        {
+          "heading": "Look for Signs of Shock",
+          "content": "\n\tTreat for shock if the person has:\n\n\t•\tPale, clammy skin\n\t•\tGlazed eyes\n\t•\tSweating\n\t•\tRapid and shallow breathing\n\t•\tDizziness\n\t•\tVomiting"
+        },
+        {
+          "heading": "Follow Up",
+          "content": "\n\t•\tThe doctor will do an X-ray and may do an MRI, CT scan, or bone scan.\n\t•\tIf the person is healthy, surgery will be necessary.\n\t•\tA person who is not healthy will be put into traction until the hip heals."
+        }
+      ],
+      "Broken_jaw": [
+        {
+          "heading": "Call emergency services",
+          "content": "\n\tIf the person has:\n\n\t•\tUncontrolled bleeding\n\t•\tDifficulty breathing\n\t•\tA possible spine injury (do not move the person)\n\n\tOr if the person is:\n\n\t•\tIn shock (faint, pale, rapid shallow breathing)"
+        },
+        {
+          "heading": "Get Medical Help Immediately",
+          "content": "\n\t•\tGo to a hospital emergency room."
+        },
+        {
+          "heading": "Prevent Choking",
+          "content": "\n\t•\tAllow any blood in the mouth to dribble out or have the person spit it into a handkerchief.\n\t•\tWithout touching the roots, gently remove any broken or lost teeth from the mouth and place them in cold milk, salt water, or saliva. Take the broken teeth in their solution to the health care provider or emergency room with you."
+        },
+        {
+          "heading": "Immobilize Jaw",
+          "content": "\n\t•\tDo not attempt to align the jaws.\n\t•\tMake a bandage out of a handkerchief, scarf, or necktie, and tie it around the jaw and over the top of the head to keep the jaw from moving. The bandage should be easily removable in case the person starts to vomit."
+        },
+        {
+          "heading": "Control Swelling",
+          "content": "\n\t•\tApply cold compresses."
+        },
+        {
+          "heading": "Follow Up",
+          "content": "\n\tMedical treatment depends on the location and severity of the break.\n\n\t•\tA surgeon may be able to set the bone without surgery, although wires may need to be placed to stabilize the jaw.\n\t•\tSurgery may be needed to repair the break. The surgeon will place plates or screws to hold the broken pieces of bone together while they heal."
+        }
+      ],
+      "Broken_leg": [
+        {
+          "heading": "Call emergency services if:",
+          "content": "\n\t•\tYou think a thighbone is broken.\n\t•\tA bone has punctured the skin."
+        },
+        {
+          "heading": "For other breaks:",
+          "content": "\n\t•\tFor other breaks, follow the following steps"
+        },
+        {
+          "heading": "Reduce Swelling and Avoid Further Injury",
+          "content": "\n\t•\tKeep the injured leg as still as possible. Do not let the person bear any weight on the leg.\n\t•\tApply ice.\n\t•\tKeep the leg raised with pillows or cushions."
+        },
+        {
+          "heading": "Seek Medical Care Immediately",
+          "content": "\n\t•\tTake the person to see a health care provider. If you think a thighbone is broken or you are unable to move the person, call emergency services and have the person taken to the hospital."
+        },
+        {
+          "heading": "Follow Up",
+          "content": "\n\tTreatment will depend on the nature of the injury.\n\n\t•\tA health care provider will examine the person's leg and likely do an X-ray.\n\t•\tThe bone may be realigned and a splint, cast, or brace put on.\n\t•\tSurgery may be needed."
+        }
+      ],
+      "Broken_nose": [
+        {
+          "heading": "When to See a Health Care Provider",
+          "content": "\n\tGo to a hospital emergency room or see a health care provider immediately if:\n\n\t•\tYou cannot stop the nose from bleeding.\n\t•\tThe nostril or nasal septum is crooked or out of place.\n\t•\tThe person has clear drainage from one or both nostrils or a grapelike swelling inside the nose on the septum."
+        },
+        {
+          "heading": "Treat Symptoms",
+          "content": "\n\t•\tApply ice for pain and swelling.\n\t•\tHave the person rest and keep the head elevated even when sleeping.\n\t•\tThe person should avoid blowing his or her nose.\n\t•\tGive acetaminophen for pain. Do not give NSAIDs such as ibuprofen or aspirin."
+        },
+        {
+          "heading": "Follow Up",
+          "content": "\n\t•\tIf the nose is not out of position, rest and home treatment may be all that's needed.\n\t•\tIf the nose is crooked or it is difficult for the person to breathe through the nose, see a health care provider.\n\n\tIf you see a health care provider, the next steps depend on the particular case:\n\n\t•\tTo stop bleeding, the health care provider may pack the nostrils with gauze.\n\t•\tFor a simple fracture, the health care provider may straighten the nose.\n\t•\tSurgery may be needed to move bone or cartilage back in place for a more complicated fracture."
+        }
+      ],
+      "Broken_shoulder_blade": [
+        {
+          "heading": "Get Medical Help Immediately",
+          "content": "\n\t•\tGet the person to a health care provider or hospital emergency department."
+        },
+        {
+          "heading": "Control Bleeding",
+          "content": "\n\t•\tIf there is bleeding, apply steady, direct pressure with a clean cloth or bandage for 15 minutes. If blood soaks through, apply another cloth over the first."
+        },
+        {
+          "heading": "Make a Sling",
+          "content": "\n\t•\tSupporting the injured arm, place a triangular bandage or cloth under it and over the uninjured shoulder.\n\t•\tTie the sling at the side of the neck."
+        },
+        null,
+        {
+          "heading": "Follow Up",
+          "content": "\n\t•\tThe health care provider will examine the shoulder and may do an X-ray or other tests. In most cases, surgery is not needed.\n\t•\tThe health care provider may put the arm in a sling."
+        }
+      ],
+      "Broken": [
+        [],
+        null,
+        null,
+        {
+          "heading": "Treat Symptoms",
+          "content": "\n\t•\tApply ice for pain and swelling.\n\t•\tGive over-the-counter acetaminophen (Tylenol) for pain."
+        }
+      ],
+      "Broken_toe": [
+        {
+          "heading": "Symptoms",
+          "content": "\n\t•\tSymptoms of a broken toe include: pain, swelling, bruising, and difficulty walking."
+        },
+        {
+          "heading": "Prevent Swelling and Further Injury",
+          "content": "\n\t•\tStay off the foot as much as possible.\n\t•\tAvoid movement or pressure that causes pain.\n\t•\tApply ice up to 20 minutes at a time. Wrap it in a towel; do not apply directly to skin.\n\t•\tKeep the foot elevated as often as possible, especially the first 2 days after injury, to help control pain and swelling.\n\t•\tFor pain, take acetaminophen (Tylenol) or ibuprofen (Advil, Motrin)."
+        },
+        {
+          "heading": "Get Help",
+          "content": "\n\t•\tIf you have severe pain, can’t walk, the toe looks bent or deformed, or the pain lasts for a long time, see a doctor."
+        },
+        {
+          "heading": "Follow Up",
+          "content": "\n\t•\tStay off your foot and avoid activity that causes pain for 3-4 weeks.\n\t•\tWear a shoe with a stiff sole to protect the injured toe and keep it stable. Avoid shoes that put pressure on the toe."
+        }
+      ],
+      "Broken_or_knocked_out_teeth": [
+        {
+          "heading": "Call emergency services if:",
+          "content": "\n\t•\tThe person has a serious injury or is unconscious.\n\n\tA knocked-out permanent tooth is a dental emergency. Knocked-out teeth can be re-implanted in many cases. A permanent tooth that is re-implanted within 30 minutes has the highest chance of success."
+        },
+        {
+          "heading": "Collect Teeth or Teeth Fragments",
+          "content": "\n\t•\tHandle teeth carefully because damage may prevent re-implantation.\n\t•\tTouch only the crown, the top part of the tooth. Do not touch the root of the tooth.\n\t•\tRinse the tooth gently in a bowl of lukewarm water for no more than 10 seconds only if there is dirt or foreign matter on it. Do not scrub, scrape, or use alcohol to remove dirt."
+        },
+        {
+          "heading": "Re-Insert or Store Teeth",
+          "content": "\n\t•\tRinse mouth with warm water.\n\t•\tIf possible, reinsert permanent teeth into the correct sockets and have the person bite on a gauze pad to hold teeth in place.\n\t•\tIf you can't reinsert permanent teeth, or for baby teeth or teeth fragments, store them in whole milk or between your cheek and gum to prevent drying."
+        },
+        {
+          "heading": "Treat Symptoms",
+          "content": "\n\t•\tControl bleeding with sterile gauze or cloth.\n\t•\tFor pain and swelling, apply a cool compress. Encourage a child to suck on a frozen pop.\n\t•\tFor pain, take ibuprofen or acetaminophen."
+        },
+        {
+          "heading": "Get Help",
+          "content": "\n\t•\tFor teeth that have been knocked out, see a dentist or go to an emergency room immediately. Take the teeth or teeth fragments with you. Even if the teeth have been successfully reinserted, you should see a dentist.\n\t•\tFor chipped or broken teeth, call a dentist."
+        }
+      ],
+      "Brown_recluse_spider_bite": [
+        {
+          "heading": "Brown recluse spiders",
+          "content": "\n\t•\tIt’s rare for someone to stumble upon a brown recluse spider, because these eight-legged creatures are true to their name: They prefer to be left alone. They tend to live in indoor and outdoor spaces where people don’t go most of the time. If you do find yourself in the same place as one, though, it won’t want to attack you -- it’ll want to get out of your way. But if it feels trapped, it may bite you.\n\n\t•\tBrown recluse spiders are one of two spiders found in the United States that can cause real trouble if they bite you. They produce harmful venom that may cause a painful sore at the site of the bite. It may cause even more severe symptoms in some people. If you have a run-in with a brown recluse, it’s wise to have a doctor check you out, just in case."
+        },
+        {
+          "heading": "What Does It Look Like?",
+          "content": "\n\t•\tA brown recluse might not be brown, but tan. It has a violin-shaped area on the front half of its body, with the neck of the violin pointing toward the spider’s abdomen.\n\n\t•\tIt may be bigger than other spiders that you’re used to seeing. Its body can range in size from a quarter-inch to three-quarters of an inch, and its long legs make it appear even larger.\n\n\t•\tMost spiders have eight eyes, but a brown recluse spider has six. Two are in the front, and there are two more on each side of its head.\n\n\t•\tBrown recluses are found mostly in the Midwest or the South. The spider favors indoor spaces, like attics, garages or dark closets. Outdoors, it hides in out-of-the-way places -- under logs, beneath porches, or within piles of rocks."
+        },
+        {
+          "heading": "Symptoms of a Brown Recluse Bite",
+          "content": "\n\t•\tA bite might not hurt at first or even leave a mark. For some people, it feels like a pinch or a bee sting.\n\n\tWithin the first day or two after you’ve been bitten, you may notice:\n\n\t•\tPain or redness at the site of the bite\n\t•\tA deep sore (ulcer) that forms where you were bitten, with the skin at the center turning purple\n\t•\tFever\n\t•\tChills\n\t•\tNausea\n\t•\tJoint pain\n\t•\tFeeling weak\n\t•\tSeizures or coma (very rare)"
+        },
+        {
+          "heading": "Diagnosis",
+          "content": "\n\tYour doctor will want to be as certain as he can that you were, in fact, bitten by a spider. It’ll help if you can describe what the spider looked like. Some people try to catch the bug to show the doctor. That’s fine, as long as you can do it safely. You might just try to take a photo of it."
+        },
+        {
+          "heading": "Treatment",
+          "content": "\n\t•\tIf you suspect your small child was bitten by a brown recluse, see your doctor right away. Their bodies can’t ward off the dangerous effects of the spider’s venom.\n\n\t•\tFor adults, most brown recluse spider bites can be treated at home with good results. But about 10% of them cause ulcers or blisters that damage your skin so badly that you need a doctor’s care."
+        },
+        {
+          "heading": "For mild symptoms, try these simple home remedies:",
+          "content": "\n\t•\tClean it with soap and water.\n\t•\tApply antibiotic cream.\n\t•\tIf you were bitten on an arm or leg, keep it raised while you’re resting. This can reduce swelling.\n\t•\tPut ice on it.\n\t•\tTake over-the-counter pain medicine.\n\t•\tWatch for more severe symptoms."
+        },
+        {
+          "heading": "See a doctor right away",
+          "content": "\n\t•\tSee a doctor right away if you notice any of these symptoms:\n\t•\tThe bite has formed an ulcer or blister with a dark (blue, purple or black) center.\n\t•\tYou’re in extreme pain.\n\t•\tYou have an infection at the site of the bite.\n\t•\tYou’re having trouble breathing.\n\n\tSome spider bites can have tetanus spores, so you might need a tetanus shot after you’ve been bitten. If you have an infection, you may need antibiotics."
+        }
+      ],
+      "Bruises_in_adults": [
+        {
+          "heading": "Reduce Bruising and Swelling",
+          "content": "\n\t•\tIce the area on and off for the first 24-48 hours.\n\t•\tApply ice for about 15 minutes at a time, and always put something like a towel or wash cloth between the ice and your skin.\n\t•\tRest the affected area.\n\t•\tIf possible, elevate the affected area."
+        },
+        {
+          "heading": "Treat Symptoms",
+          "content": "\n\t•\tFor pain, take acetaminophen (Tylenol), or ibuprofen (Advil, Motrin), or naproxen (Alleve)."
+        },
+        {
+          "heading": "When to Call a Doctor",
+          "content": "\n\t•\tIf bruise is accompanied by extreme pain, swelling or redness\n\t•\tIf the person is taking a blood-thinning medication\n\t•\tIf bruises appear on skin for no apparent reason\n\t•\tThe bruise in on the face or head\n\t•\tYou can’t move a joint\n\t•\tYou may have a broken bone"
+        },
+        {
+          "heading": "Follow Up",
+          "content": "\n\t•\tTwo days after a bruise develops, apply a heat pack or wash cloth soaked in warm water to the area several times a day to promote healing.\n\t•\tPain and tenderness should get better within a few days and the bruise should go away within a couple of weeks."
+        }
+      ],
+      "Bruises_in_children": [
+        {
+          "heading": "Bruises in children",
+          "content": "\n\t•\tBruises are not very common in infants. They're more common on the lower legs and foreheads of toddlers just learning to walk."
+        },
+        {
+          "heading": "Call Doctor If:",
+          "content": "\n\t•\tThe bruised area seems very painful, swollen, or infected.\n\t•\tYour child has a bruise after a serious accident or head or abdominal injury.\n\t•\tYour child has a large number of bruises or unexplained bruises.\n\t•\tYour child has a fever."
+        },
+        {
+          "heading": "Apply Ice",
+          "content": "\n\t•\tWrap a cold pack in a towel or washcloth and hold it against the bruise for 10 to 15 minutes.\n\t•\tRepeat, but no more than once an hour.\n\t•\tDo not hold ice or anything frozen directly against a child's skin."
+        },
+        {
+          "heading": "Elevate the Area",
+          "content": "\n\t•\tIf possible, raise the bruised area above the heart to reduce swelling."
+        },
+        {
+          "heading": "Reduce Pain",
+          "content": "\n\t•\tUse infant or child-formula acetaminophen (Tylenol). Don't use ibuprofen (Advil, Motrin) because it may prolong bleeding.\n\t•\tFollow the dosing instructions on the label.\n\t•\tIf your child has never taken this medication before, call your pediatrician first.\n\t•\tDon't give aspirin to a child under 16."
+        }
+      ],
+      "Burns_in_adults": [
+        {
+          "heading": "Preface",
+          "content": "\n\t•\tMost minor burns will heal on their own, and home treatment is usually all that is needed to relieve your symptoms and promote healing. But if you suspect you may have a more severe injury, use first-aid measures while you arrange for an evaluation by your doctor."
+        },
+        {
+          "heading": "Immediate first aid for burns",
+          "content": "\n\t•\tFirst, stop the burning to prevent a more severe burn.\n\t\t\t•\tHeat burns (thermal burns): Smother any flames by covering them with a blanket or water. If your clothing catches fire, do not run: stop, drop, and roll on the ground to smother the flames.\n\t\t\t•\tCold temperature burns: Try first aid measures to warm the areas. Small areas of your body (ears, face, nose, fingers, toes) that are really cold or frozen can be warmed by blowing warm air on them, tucking them inside your clothing or putting them in warm water.\n\t\t\t•\tLiquid scald burns (thermal burns): Run cool tap water over the burn for 10 to 20 minutes. Do not use ice.\n\t\t\t•\tElectrical burns: After the person has been separated from the electrical source, check for breathing and a heartbeat. If the person is not breathing or does not have a heartbeat, call .\n\t\t\t•\tChemical burns: Natural foods such as chili peppers, which contain a substance irritating to the skin, can cause a burning sensation. When a chemical burn occurs, find out what chemical caused the burn. Call your local Poison Control Center or the National Poison Control Hotline (1-800-222-1222) for more information about how to treat the burn.\n\t\t\t•\tTar or hot plastic burns: Immediately run cold water over the hot tar or hot plastic to cool the tar or plastic.\n\t•\tNext, look for other injuries. The burn may not be the only injury.\n\t•\tRemove any jewelry or clothing at the site of the burn. If clothing is stuck to the burn, do not remove it. Carefully cut around the stuck fabric to remove loose fabric. Remove all jewelry, because it may be hard to remove it later if swelling occurs."
+        },
+        {
+          "heading": "Prepare for an evaluation by a doctor",
+          "content": "\n\tIf you are going to see your doctor soon:\n\t•\tCover the burn with a clean, dry cloth to reduce the risk of infection.\n\t•\tDo not put any salve or medicine on the burned area, so your doctor can properly assess your burn.\n\t•\tDo not put ice or butter on the burned area, because these measures do not help and can damage the skin tissue."
+        },
+        {
+          "heading": "Home treatment for minor burns",
+          "content": "\n\t•\tFor home treatment of first-degree burns and sunburns:\n\t\t\t•\tUse cool cloths on burned areas.\n\t\t\t•\tTake frequent cool showers or baths.\n\t\t\t•\tApply soothing lotions that contain aloe vera to burned areas to relieve pain and swelling. Applying 0.5% hydrocortisone cream to the burned area also may help. Note: Do not use the cream on children younger than age 2 unless your doctor tells you to. Do not use in the rectal or vaginal area of children younger than age 12 unless your doctor tells you to.\n\t•\tThere isn't much you can do to stop skin from peeling after a sunburn-it is part of the healing process. Lotion may help relieve the itching.\n\t•\tOther home treatment measures, such as chamomile, may help relieve your sunburn symptoms."
+        },
+        {
+          "heading": "Home treatments for Second degree burns",
+          "content": "\n\tRinse the burn\n\t•\tRinse burned skin with cool water until the pain stops. Rinsing will usually stop the pain in 15 to 30 minutes. The cool water lowers the skin temperature and stops the burn from becoming more serious. You may:\n\n\t\t\t•\tPlace arms, hands, fingers, legs, feet, or toes in a basin of cool water.\n\n\t\t\t•\tApply cool compresses to burns on the face or body.\n\t•\tDo not use ice or ice water, which can cause tissue damage.\n\t•\tTake off any jewelry, rings, or clothing that could be in the way or that would become too tight if the skin swells.\n\n\tClean the burn\n\n\t•\tWash your hands before cleaning a burn. Do not touch the burn with your hands or anything dirty, because open blisters can easily be infected.\n\t•\tDo not break the blisters. .\n\t•\tGently wash the burn area with clean water. Some of the burned skin might come off with washing. Pat the area dry with a clean cloth or gauze.\n\t•\tDo not put sprays or butter on burns, because this traps the heat inside the burn.\n\n\tBandaging the burn\n\n\t•\tIf the burned skin or blisters have not broken open, a bandage may not be needed. If the burned skin or unbroken blisters are likely to become dirty or be irritated by clothing, apply a bandage.\n\t•\tIf the burned skin or blisters have broken open, a bandage is needed. To further help prevent infection, apply a clean bandage whenever your bandage gets wet or soiled. If a bandage is stuck to a burn, soak it in warm water to make the bandage easier to remove. If available, use a nonstick dressing. There are many bandage products available. Be sure to read the product label for correct use.\n\t•\tWrap the burn loosely to avoid putting pressure on the burned skin.\n\t•\tDo not tape a bandage so that it circles a hand, arm, or leg. This can cause swelling.\n\n\tThere are many nonprescription burn dressings available. Be sure to follow the instructions included in the package.\n\n\tIf the burn is on a leg or an arm, keep the limb raised as much as possible for the first 24 to 48 hours to decrease swelling. Move a burned leg or arm normally to keep the burned skin from healing too tightly, which can limit movement."
+        },
+        {
+          "heading": "Lotions",
+          "content": "\n\t•\tSome doctors suggest using skin lotions, such as Vaseline Intensive Care or Lubriderm, on first-degree burns or second-degree burns that have unbroken healing skin. These skin lotions can be used to relieve itching but should not be used if the burns have fluid weeping from them or have fresh scabs. An antihistamine, such as Benadryl or Chlor-Trimeton, can also help stop the itching. Read and follow any warning on the label.\n\n\t•\tWhen a first-degree burn or minor second-degree burn is 2 to 3 days old, using the juice from an aloe leaf can help the burn heal and feel better. Applying the aloe juice may sting at first contact."
+        },
+        {
+          "heading": "While the burn is healing",
+          "content": "\n\t•\tIt is important to protect a burn while it is healing.\n\t•\tNewly healed burns can be sensitive to temperature. Healing burns need to be protected from the cold, because the burned area is more likely to develop frostbite.\n\t•\tA newly burned area can sunburn easily. Sunscreen with a high sun protective factor (SPF at least 30) should be used for the first year after a burn to protect the new skin.\n\t•\tDo not smoke. Smoking slows healing because it decreases blood supply and delays tissue repair. For more information, see the topic Quitting Smoking."
+        },
+        {
+          "heading": "Symptoms to watch for during home treatment",
+          "content": "\n\tCall your doctor if any of the following occur during home treatment:\n\n\t•\tPain increases.\n\t•\tDifficulty breathing develops.\n\t•\tSigns of infection develop.\n\t•\tSymptoms become more severe or frequent."
+        }
+      ],
+      "Burns_and_scalds_in_children": [
+        {
+          "heading": "Call emergency services if",
+          "content": "\n\t•\tThe burned area is charred or white.\n\t•\tElectric shock or chemicals caused the burn.\n\t•\tThe burn is on the face, hands, feet, genitals, or a joint.\n\t•\tThe burn covers 10% or more of the body.\n\n\tYou can treat mild 1st degree burns -- those that look like sunburns -- at home. Second- or 3rd degree burns need immediate medical attention."
+        },
+        {
+          "heading": "Call Doctor If:",
+          "content": "\n\t•\tThe burn is oozing or seems infected (red, swollen, tender)."
+        },
+        {
+          "heading": "Soak the Burn",
+          "content": "\n\t•\tImmediately put the burned area in cool -- not cold -- water or under a faucet.\n\t•\tKeep the injury in water for at least five to 15 minutes.\n\t•\tDo not use ice."
+        },
+        {
+          "heading": "Remove Burned Clothing",
+          "content": "\n\t•\tIf the clothing is stuck to the skin, do not peel it away. Leave it in place and cut away the clothing around it."
+        },
+        {
+          "heading": "Cover the Burn",
+          "content": "\n\t•\tUse nonstick gauze or a clean cloth.\n\t•\tIf the burn is mild, you may put on antibiotic ointment.\n\t•\tDon't put butter, grease, or anything else on the burn, and do not pop any blisters."
+        },
+        {
+          "heading": "Reduce Pain",
+          "content": "\n\t•\tUse an infant or child-strength over-the-counter pain reliever such as acetaminophen (Tylenol) or ibuprofen (Advil, Motrin).\n\t•\tFollow the dosing instructions on the bottle.\n\t•\tCall a pediatrician first if your child has never taken this medication before."
+        }
+      ],
+      "CPR_for_adults": [
+        {
+          "heading": "Call emergency services if a person",
+          "content": "\n\t•\tCollapses\n\t•\tBecomes unresponsive"
+        },
+        {
+          "heading": "Check Responsiveness",
+          "content": "\n\t•\tTap the person's shoulder and shout, \"Are you OK?\"\n\t•\tLook for normal breathing. Call emergency services if there is no response.\n\t•\tStart Hands-Only CPR.\n\t•\tHands-Only CPR should not be used for adults whose cardiac arrest is due to drug overdose, near-drowning, or an unwitnessed cardiac arrest. In these cases, do a conventional CPR combination of chest compressions and rescue breathing.\n\n\tNote: For hands-only CPR instructions, watch this video from the American Heart Association."
+        },
+        {
+          "heading": "Do Chest Compressions",
+          "content": "\n\t•\tPlace the heel of your hand on the center of the person's chest.\n\t•\tPlace the heel of your other hand on top of your first hand, lacing fingers together.\n\t•\tKeep arms straight and your shoulders directly over your hands.\n\t•\tPush hard and fast, compressing chest at least 2 inches.\n\t•\tLet chest rise completely before pushing down again.\n\t•\tCompress at least 100 times per minute."
+        },
+        {
+          "heading": "Stop Only if:",
+          "content": "\n\t•\tThe person starts breathing normally.\n\t•\tA trained responder or emergency help takes over.\n\t•\tYou are too exhausted to continue.\n\t•\tThere is an automated external defibrillator (AED) to use."
+        },
+        {
+          "heading": "Use an AED as Soon as One Is Available",
+          "content": "\n\t•\tTurn on the AED. It will give you step-by-step instructions.\n\t•\tWipe chest dry.\n\t•\tAttach the pads.\n\t•\tPlug in connector, if needed.\n\t•\tMake sure no one is touching the person. Say \"Clear\" so that people know to stay back and not touch the person.\n\t•\tPush the \"Analyze\" button if necessary.\n\t•\tIf a shock is advised, push the \"Shock\" button.\n\t•\tResume compressions and follow AED prompts."
+        }
+      ],
+      "CPR_for_children": [
+        {
+          "heading": "Call emergency services",
+          "content": "\n\t•\tIf you’re alone with a child or baby who is unresponsive and not breathing (or only gasping), call emergency services after you’ve done 2 minutes of cardiopulmonary resuscitation (CPR).\n\t•\tIf someone else is present, shout for the person to call emergency services and then have him locate an AED (a defibrillator) right away while you begin CPR.\n\t•\tIf a child or baby is unconscious but you see regular breathing, call emergency services and wait for help. A breathing child or baby does not need CPR, but one that is not breathing or gasping does."
+        },
+        {
+          "heading": "Refer Web for further details of CPR",
+          "content": "\n\t•\tThis article is a guideline. It is important to learn CPR to know how to do it correctly. For more information about a CPR course, go to redcross.org or heart.org."
+        },
+        {
+          "heading": "Check to see if the child is conscious",
+          "content": "\n\t•\tMake sure you and the child are in safe surroundings.\n\t•\tTap the child gently.\n\t•\tShout, “Are you OK?\"\n\t•\tLook quickly to see if the child has any injuries, bleeding, or medical problems."
+        },
+        {
+          "heading": "Check breathing",
+          "content": "\n\t•\tPlace your ear near the child’s mouth and nose. Is there breath on your cheek? Is the child’s chest moving?"
+        },
+        {
+          "heading": "Begin chest compressions",
+          "content": "\n\tIf the child doesn’t respond and isn’t breathing:\n\n\t•\tCarefully place the child on his/her back. For a baby, be careful not to tilt the head back too far. If you suspect a neck or head injury, roll the baby over, moving his/her entire body at once.\n\t•\tFor a baby, place two fingers on breastbone. For a child, place heel of one hand on center of chest at nipple line. You also can push with one hand on top of the other.\n\t•\tFor a child, press down about 2 inches. Make sure not to press on ribs, as they are fragile and prone to fracture.\n\t•\tFor a baby, press down about 1 1/2 inches, about 1/3 to 1/2 the depth of chest. Make sure not to press on the end of the breastbone.\n\t•\tDo 30 chest compressions, at the rate of 100 per minute. Let the chest rise completely between pushes.\n\t•\tCheck to see if the child has started breathing.\n\t•\tContinue CPR until emergency help arrives."
+        },
+        {
+          "heading": "Do rescue breathing",
+          "content": "\n\t•\tTo open the airway, lift the child’s chin up with one hand. At the same time, tilt the head back by pushing down on the forehead with the other hand. Do not tilt the head back if the child is suspected of having a neck or head injury.\n\t•\tFor a child, cover his mouth tightly with yours. Pinch the nose closed and give breaths.\n\t•\tFor a baby, cover the mouth and nose with your mouth and give breaths.\n\t•\tGive the child two breaths, watching for the chest to rise each time. Each breath should take one second."
+        },
+        {
+          "heading": "Repeat compressions and rescue breathing if the child is still not breathing",
+          "content": "\n\t•\tTwo breaths can be given after every 30 chest compressions. If someone else is helping you, you should give 15 compressions, then 2 breaths.\n\t•\tContinue this cycle of 30 compressions and 2 breaths until the child starts breathing or emergency help arrives.\n\t•\tIf you are alone with the child and have done 2 minutes of CPR (about 5 cycles of compressions and breathing), call emergency services and find an AED."
+        },
+        {
+          "heading": "Use an AED as soon as one is available",
+          "content": "\n\tFor children age 9 and under, use a pediatric automated external defibrillator (AED), if available. If a pediatric AED is not available, or for children age 1 and older, use a standard AED.\n\n\t•\tTurn on the AED.\n\t•\tWipe the chest dry and attach the pads.\n\t•\tThe AED will give you step-by-step instructions.\n\t•\tContinue compressions and follow AED prompts until emergency help arrives or the child starts breathing."
+        }
+      ],
+      "Carbon_monoxide_poisoning": [
+        {
+          "heading": "Call emergency services",
+          "content": "\n\t•\tCall Emergency services immediately"
+        },
+        {
+          "heading": "Get the Person to Fresh Air",
+          "content": "\n\t•\tMove the person away from carbon monoxide area.\n\t•\tIf the person is unconscious, check for injuries before moving.\n\t•\tTurn off carbon monoxide source if you can do so safely."
+        },
+        {
+          "heading": "Begin CPR, if Necessary",
+          "content": "\n\tIf the person is not breathing normally:\n\n\t•\tPerform CPR for one minute before calling emergency services if you are alone. Otherwise, have someone else call and begin CPR.\n\t•\tFor a child, start CPR for children.\n\t•\tContinue CPR until the person begins breathing or emergency help arrives."
+        },
+        {
+          "heading": "Follow Up",
+          "content": "\n\tOnce at the hospital, treatment depends on the severity of the carbon monoxide exposure.\n\n\t•\tMild exposure is treated with oxygen and monitoring of carbon monoxide levels.\n\t•\tSevere carbon monoxide poisoning may require high doses of oxygen therapy."
+        }
+      ],
+      "Catfish_sting": [
+        {
+          "heading": "Call emergency services if",
+          "content": "\n\t•\tThe person is having trouble breathing."
+        },
+        {
+          "heading": "If the person is still in water",
+          "content": "\n\t•\tGet the Person Out of the Water"
+        },
+        {
+          "heading": "Do CPR if the Person Is Not Breathing",
+          "content": "\n\t•\tFor an adult, start adult CPR.\n\t•\tFor a child, start CPR for children."
+        },
+        {
+          "heading": "Clean Wound",
+          "content": "\n\t•\tUse tweezers to remove all catfish spines.\n\t•\tScrub wound with soap and water.\n\t•\tRinse extensively with fresh or salt water."
+        },
+        {
+          "heading": "Submerge Wound in Hot Water",
+          "content": "\n\t•\tSoak for at least 30 minutes in water as hot as the person can tolerate."
+        },
+        {
+          "heading": "Do Not Cover",
+          "content": "\n\t•\tDon't cover the wound"
+        },
+        {
+          "heading": "Treat Pain",
+          "content": "\n\t•\tGive over-the-counter medication such as acetaminophen (Tylenol) or ibuprofen (Advil, Motrin)."
+        },
+        {
+          "heading": "See a Doctor",
+          "content": "\n\t•\tSee a doctor as soon as possible"
+        },
+        {
+          "heading": "Follow Up",
+          "content": "\n\t•\tThe doctor will clean and treat the wound and may give a tetanus shot, if needed.\n\t•\tThe person may receive pain medication and antibiotics to prevent infection."
+        }
+      ],
+      "Chemical_burn": [
+        {
+          "heading": "Call emergency services",
+          "content": "\n\t•\tDial emergency services or local poison control"
+        },
+        {
+          "heading": "Protect Yourself",
+          "content": "\n\t•\tPut on gloves or apron, if possible.\n\t•\tAvoid exposing yourself to chemicals."
+        },
+        {
+          "heading": "Rinse and Clear Burn Area",
+          "content": "\n\t•\tFlood area with cool water for at least 20 minutes or until help arrives.\n\t•\tMake sure water doesn't flow onto another part of the person's body or onto you.\n\t•\tDon't use a strong stream of water, if possible.\n\t•\tAs you flush the burn (not before), remove jewelry or articles of clothing with chemical on them, unless they're stuck to the person's body.\n\t•\tAfter flushing the burn, follow instructions on the label of the chemical product, if available.\n\t•\tDon't try to neutralize the burn with acid or alkali. This could cause a chemical reaction that worsens the burn.\n\t•\tDon't put antibiotic ointment on the burn.\n\n\tAmong the few chemical toxins that should NOT be irrigated immediately with water are dry lime, phenols, and elemental metals (eg, sodium, potassium, calcium oxide, magnesium, phosphorous). Dry lime should be brushed off the skin prior to irrigation. It contains calcium oxide, which reacts with water to form calcium hydroxide, a strong alkali. Elemental metals and certain reactive metal compoundscombust or release hazardous byproducts when exposed to water. Examples include: sodium, potassium, magnesium, phosphorous, lithium, cesium, and titanium tetrachloride. \n\n\tAll fragments of such materials should be carefully removed with dry forceps and placed in a solution that is non water related (eg, mineral oil). Once this is done, the affected area should be covered with mineral oil (or a comparable solution) to prevent further exposure to air and moisture. Removal of phenol requires that it be wiped off the skin by sponges soaked in 50 percent polyethylene glycol (PEG)."
+        },
+        {
+          "heading": "Cover a Small Burn Area",
+          "content": "\n\t•\tYou can wrap a small burn with dry, sterile gauze or clean cloth."
+        }
+      ],
+      "Chemical_eye_burn": [
+        {
+          "heading": "Flush the Eye",
+          "content": "\n\t•\tHave the person immediately rinse the eye or eyes under a faucet, in a gentle shower, or with a clean container of water. Position the person’s face so that the injured eye is down and to the side. Avoid spraying a high-pressure water stream into the eye or eyes.\n\t•\tFlush with lukewarm water for 15 to 30 minutes. For severe burns, continue flushing until you see a doctor or you arrive in an emergency room. The person should keep the eye open as wide as possible. Wash the person's hands thoroughly to make sure no chemical is still on them.\n\t•\tFlush the eye to remove contact lenses. If they do not come out, try to gently remove them AFTER flushing.\n\t•\tDo not rub the eye or place a bandage over the eye.\n\t•\tWhile waiting for medical care, have the person wear sunglasses to decrease light sensitivity."
+        },
+        {
+          "heading": "Get Help Immediately",
+          "content": "\n\t•\tCall emergency services for severe burns, otherwise see a doctor or go to an emergency room as soon as possible. Be aware that alkali chemicals (such as ammonia and oven cleaner) might not be painful but they can cause the most serious injuries.\n\t•\tMake sure you know what chemical got into the eye so the medical team can give the right treatment.\n\t•\tWhile waiting for medical care, call Poison Control at 1-800-222-1222 or the emergency number on the container if you have it for further advice."
+        },
+        {
+          "heading": "Follow Up",
+          "content": "\n\t•\tThe health care provider may continue flushing the eye with saline solution, checking periodically until pH is normal.\n\t•\tThe health care provider may place anesthetic drugs in the eye to decrease discomfort with flushing."
+        }
+      ],
+      "Chest_injury": {
+        "6": {
+          "heading": "Follow Up",
+          "content": "\n\t•\tThe medical team will assess the injury and stabilize the person.\n\t•\tA blood transfusion may be necessary if there is significant blood loss.\n\t•\tSurgery is likely for a serious chest injury."
+        },
+        "heading": "Monitor Breathing",
+        "content": "\n\t•\tIf breathing becomes weak, apply CPR as instructed above."
+      },
+      "Chest_pain": [
+        {
+          "heading": "Call emergency services",
+          "content": "\n\t•\tFor possible heart attack symptoms and treatment, see Heart Attack Treatment."
+        },
+        {
+          "heading": "For Angina\n\tTreat With Nitroglycerin",
+          "content": "\n\tIf the person gets angina and has been prescribed nitroglycerin:\n\t\t•\tDissolve 1 nitroglycerin tablet under the tongue (or use nitroglycerin spray under the tongue).\n\t\t•\tWait 5 minutes.\n\t\t•\tIf the person still has angina, call emergency services.\n\tIf the person has been diagnosed with chronic stable angina:\n\t\t•\tDissolve 1 nitroglycerin tablet under the tongue (or use nitroglycerin spray under the tongue).\n\t\t•\tRepeat every 5 minutes until the person has taken 3 tablets in 15 minutes.\n\t\t•\tIf the person still has angina after 3 doses, call emergency services."
+        },
+        {
+          "heading": "Follow Up",
+          "content": "\n\tIf the person goes to the hospital:\n\t\t•\tAn emergency department doctor will examine the person and run tests to see if the chest pain stems from a heart attack or another cause. Tests may include an electrocardiogram (ECG), chest X-ray, and blood tests.\n\t\t•\tInform the person’s doctor about the chest pain and ER visit."
+        },
+        {
+          "heading": "For GERD (Acid Reflux)",
+          "content": "\n\t•\tCall emergency services if:\n\nThe person has possible heart attack symptoms, such as shortness of breath, flushed sweating, nausea or vomiting, or arm or jaw pain. Heart attacks can be mistaken for GERD."
+        },
+        {
+          "heading": "Treat With Over-the-Counter Antacids",
+          "content": "\n\t•\t Treat With Over-the-Counter Antacids"
+        },
+        {
+          "heading": "Follow Up",
+          "content": "\n\t•\tIf the person goes to the hospital, an emergency department doctor will examine the person and run tests to see if the chest pain stems from a heart attack or another cause. Tests may include an electrocardiogram (ECG), chest X-ray, and blood tests.\n\t\t•\tInform the person’s doctor about the chest pain and ER visit."
+        }
+      ],
+      "Choking_in_adults": [
+        {
+          "heading": "Call emergency services if",
+          "content": "\n\t•\tThe person is choking.\n\t•\tThe person is having trouble breathing or has noisy breathing.\n\t•\tThe person is unconscious.\n\n\tFor infants 12 months of age and younger, see Choking in Children."
+        },
+        {
+          "heading": "While Waiting for emergency services",
+          "content": "\n\t•\tIf the Person Is Conscious but Not Able to Breathe or Talk, follow the following steps:"
+        },
+        {
+          "heading": "Give Back Blows",
+          "content": "\n\tGive up to 5 blows between the shoulder blades with the heel of your hand.\n\t\t•\tStand behind the person and wrap your arms around the waist.\n\t\t•\tPlace your clenched fist just above the person’s navel. Grab your fist with your other hand.\n\t\t•\tQuickly pull inward and upward as if trying to lift the person up.\n\t\t•\tPerform a total of 5 abdominal thrusts.\n\t\t•\tIf the blockage is still not dislodged, continue cycles of 5 back blows and 5 abdominal thrusts until the object is coughed up or the person starts to breathe or cough.\n\t\t•\tTake the object out of his mouth only if you can see it. Never do a finger sweep unless you can see the object in the person's mouth."
+        },
+        {
+          "heading": "If Person Is Still Choking, Do Thrusts",
+          "content": "\n\t•\tIf the person is not pregnant or too obese, do abdominal thrusts:"
+        },
+        {
+          "heading": "If the person is obese or pregnant, do high abdominal thrusts:",
+          "content": "\n\t•\tStand behind the person, wrap your arms them, and position your hands at the base of the breast bone.\n\t•\tQuickly pull inward and upward.\n\t•\tRepeat until the object is dislodged."
+        },
+        {
+          "heading": "Give CPR, if Necessary",
+          "content": "\n\t•\tIf the obstruction comes out, but the person is not breathing or if the person becomes unconscious:\n\t\t•\tFor a child, start CPR for children.\n\t\t•\tFor an adult, start CPR for adults."
+        },
+        {
+          "heading": "Follow Up",
+          "content": "\n\t•\tWhen emergency medical personnel arrive, they will take over and may do CPR or take the person to the hospital, if needed."
+        }
+      ],
+      "Choking_in_children": [
+        {
+          "heading": "Call emergency services if the child is:",
+          "content": "\n\t•\tUnconscious\n\t•\tNot able to breathe because something is blocking the airway or has caused it to close off\n\t•\tWheezing or gasping\n\t•\tNot able to cry, talk, or make noise\n\t•\tTurning blue in the face\n\t•\tGrabbing at the throat\n\t•\tLooking panicked\n\n\tYoung children are prone to choking. If the child is coughing and gagging but can breathe and talk, don't do anything. But if he can't breathe, you must act quickly to stop a life-threatening situation."
+        },
+        {
+          "heading": "While Waiting for emergency services",
+          "content": "\n\t•\tIf the Child Is Unconscious, follow the following steps:"
+        },
+        {
+          "heading": "Start CPR",
+          "content": "\n\t•\tMove the child to the floor and start CPR. Take the object out of his mouth only if you can see it."
+        },
+        {
+          "heading": "For a Child Younger Than 1 Year Who Is Conscious but Not Breathing:",
+          "content": "\n\t•\t1. Get the Child Into Position\n\t\t\t•\tHold the child face down on your forearm, supported by your thigh.\n\t\t\t•\tKeep the child's torso higher than the head.\n\n\t•\t2. Give Forceful Blows\n\t\t\t•\tUse the heel of your free hand to thump the child in between the shoulder blades up to five times.\n\n\t•\t3. Turn the Child Over\n\t\t\t•\tTurn the child face up, and keep supporting the head and neck. If the object is not out yet, go to step 4.\n\n\t•\t4. Press the Chest\n\t\t\t•\tPlace the child on a firm surface, which may still be your forearm.\n\t\t\t•\tPut two or three fingers in the center of the child's breastbone and push quickly up to five times.\n\t\t\t•\tRepeat the back thumping and chest pushes until the object comes out or the child loses consciousness.\n\t\t\t•\tIf the child is still not breathing, open the airway by putting your thumb in the child's mouth and grasping the lower incisors or gums. The jaw should lift up so you can look for the object.\n\t\t\t•\tDo not try to pull the object out unless you see it clearly. You could accidentally push the object deeper in the child's throat.\n\n\t•\t5. Start CPR, If Needed\n\n\tIf the child loses consciousness, perform CPR and take the object out of his mouth only if you can see it. Never do a finger sweep unless you can see the object in the child's mouth."
+        },
+        {
+          "heading": "For a Child Older Than 1 Year Who Is Conscious:",
+          "content": "\n\t•\t1. Get the Child Into Position\n\t\t\t•\tStand behind the child and wrap your arms around his waist.\n\t\t\t•\tPlace a fist just above the child's belly button.\n\n\t•\t2. Try to Dislodge the Object\n\t\t\t•\tHold the fist with your free hand and quickly push in and up.\n\t\t\t•\tRepeat until the object comes out or the child loses consciousness.\n\n\t•\t3. Start CPR, If Needed\n\t\t\t•\tIf the child loses consciousness, move the child to the floor and start CPR. Take the object out of his mouth only if you can see it. Never do a finger sweep unless you can see the object in the child's mouth."
+        }
+      ],
+      "Cold_in_children": [
+        {
+          "heading": "Call emergency services if:",
+          "content": "\n\t•\tYour child has difficulty breathing.\n\n\tThere's no way to cure your child's cold, but you can help relieve the symptoms that make your baby or toddler uncomfortable."
+        },
+        {
+          "heading": "Call Doctor If:",
+          "content": "\n\t•\tYour child has a cold and is 3 months or younger.\n\t•\tYour child has a severe cough.\n\t•\tYour child has ear pain.\n\t•\tSymptoms don't get better after 10 to 14 days."
+        },
+        {
+          "heading": "Clear Out Mucus",
+          "content": "\n\t•\tUse an infant nasal bulb, or aspirator, to suck mucus from your baby's nose.\n\t•\tIf your child is able, have her blow her nose regularly."
+        },
+        {
+          "heading": "Add Moisture",
+          "content": "\n\t•\tUse a saline spray to moisten the nasal passages.\n\t•\tUse a cool-mist humidifier if the air is dry.\n\t•\tSit in the bathroom with the hot shower running and have your child breathe in the steam."
+        },
+        {
+          "heading": "Give Fluids",
+          "content": "\n\t•\tIf your child is over 3 months, offer apple juice or water. Hydration helps to loosen mucus.\n\t•\tOlder children can have warm soups and other drinks."
+        },
+        {
+          "heading": "Treat Fever and Pain",
+          "content": "\n\t•\tYou don't need to treat a fever unless it is making your child uncomfortable.\n\t•\tIf your child is older than 6 months, you can give children's-formula acetaminophen (Tylenol) or ibuprofen (Advil, Motrin) for fever. Don't give aspirin to children younger than 16 years old.\n\t•\tFollow the dosing instructions on the medication. Use a formula that's made for children, not adults.\n\t•\tNever use a cold or cough medicine in kids under age 6 unless the doctor suggests it."
+        },
+        {
+          "heading": "Treat Other Symptoms",
+          "content": "\n\t•\tIf your child is over age 1, try 1/2 to 1 teaspoon of honey for cough.\n\t•\tRaising the head of your child's bed may help relieve congestion.\n\t•\tRub petroleum jelly under the nose to prevent chapping.\n\t•\tAvoid irritants, such as cigarette smoke.\n\t•\tBe patient. Colds usually last one to two weeks and clear on their own."
+        }
+      ],
+      "Concussion": [
+        {
+          "heading": "Preface",
+          "content": "\n\tThe most common and least serious type of traumatic brain injury is called a concussion. The word comes from the Latin concutere, which means \"to shake violently.\"\n\n\tAccording to the CDC, between 2001 and 2009, an estimated 173,285 people under age 19 were treated in hospital emergency rooms for concussions related to sports and recreation activities. Other causes include car and bicycle accidents, work-related injuries, falls, and fighting.\n\n\tHow can you tell if you have had a concussion? Is it always serious? And what should you do if you have a concussion? Here are answers to some important questions about concussions."
+        },
+        {
+          "heading": "What Is a Concussion?",
+          "content": "\n\tAs seen in countless cartoons, a concussion is most often caused by a sudden direct blow or bump to the head.\n\n\tThe brain is made of soft tissue. It's cushioned by spinal fluid and encased in the protective shell of the skull. When you sustain a concussion, the impact can jolt your brain. Sometimes, it literally causes it to move around in your head. Traumatic brain injuries can cause bruising, damage to the blood vessels, and injury to the nerves.\n\n\tThe result? Your brain doesn't function normally. If you've suffered a concussion, vision may be disturbed, you may lose equilibrium, or you may fall unconscious. In short, the brain is confused. That's why Bugs Bunny often saw stars."
+        },
+        {
+          "heading": "Can Children Have Concussions?",
+          "content": "\n\tBecause their heads are disproportionately large compared to the rest of their body, concussions often occur in young children. As kids enter adolescence, they experience rapid height and weight gain. Both are factors that make them more prone to accidents than adults.\n\n\tIf a child has a concussion, an adult should monitor him or her for the first 24 hours. It's important to watch for behavioral changes. Young children, especially, may not be able to fully communicate what they are feeling, so it is critical to watch them closely. Do not give medications, including aspirin, which may cause bleeding, to a child without consulting a doctor."
+        },
+        {
+          "heading": "What Are the Signs of a Concussion?",
+          "content": "\n\tConcussions can be tricky to diagnose. Though you may have a visible cut or bruise on your head, you can't actually see a concussion. Signs may not appear for days or weeks after the injury. Some symptoms last for just seconds; others may linger.\n\n\tConcussions are fairly common. Some estimates say a mild brain trauma is sustained every 21 seconds in the U.S. But it's important to recognize the signs of a concussion so you can take the proper steps to treat the injury.\n\n\tThere are some common physical, mental, and emotional symptoms a person may display following a concussion. Any of these could be a sign of traumatic brain injury:\n\n\t\t•\tconfusion or feeling dazed\n\t\t•\tclumsiness\n\t\t•\tslurred speech\n\t\t•\tnausea or vomiting\n\t\t•\theadache\n\t\t•\tbalance problems or dizziness\n\t\t•\tblurred vision\n\t\t•\tsensitivity to light\n\t\t•\tsensitivity to noise\n\t\t•\tsluggishness\n\t\t•\tringing in ears\n\t\t•\tbehavior or personality changes\n\t\t•\tconcentration difficulties\n\t\t•\tmemory loss"
+        },
+        {
+          "heading": "Are There Different Types of Concussions?",
+          "content": "\n\tConcussions are graded as mild (grade 1), moderate (grade 2), or severe (grade 3), depending on such factors as loss of consciousness, amnesia, and loss of equilibrium.\n\n\tIn a grade 1 concussion, symptoms last for less than 15 minutes. There is no loss of consciousness.\n\n\tWith a grade 2 concussion, there is no loss of consciousness but symptoms last longer than 15 minutes.\n\n\tIn a grade 3 concussion, the person loses consciousness, sometimes just for a few seconds."
+        },
+        {
+          "heading": "What Should I Do if I Have a Concussion?",
+          "content": "\n\tThe seriousness of a concussion dictates what kind of treatment you should seek. Most people with concussions fully recover with appropriate treatment. But because a concussion can be serious, safeguarding yourself is important. Here are a few steps to take:"
+        },
+        {
+          "heading": "Seek medical attention",
+          "content": "\n\tA health care professional can decide how serious the concussion is and whether you require treatment. If you have suffered a grade 1 or grade 2 concussion, wait until symptoms are gone before returning to normal activities. That could take several minutes, hours, days, or even a week."
+        },
+        {
+          "heading": "If you have sustained a grade 3 concussion",
+          "content": "\n\tSee a doctor immediately for observation and treatment. A doctor will ask how the head injury happened and discuss the symptoms. The doctor may also ask you simple questions such as \"Where do you live?,\" \"What is your name?\" or \"Who is the president?\" The doctor asks these questions to evaluate memory and concentration skills.\n\n\tThe doctor may test coordination and reflexes, which are both functions of the central nervous system. The doctor may also order a CT scan or an MRI to rule out bleeding or other serious brain injury.\n\n\tIf hospitalization is not required, the doctor will provide instructions for recovery. Aspirin-free medications may be prescribed and you will be advised to take it easy. Experts recommend follow-up medical attention within 24 to 72 hours if symptoms worsen."
+        },
+        {
+          "heading": "Take a break",
+          "content": "\n\tIf your concussion was sustained during athletic activity, stop play and sit it out. Your brain needs time to properly heal, so rest is key. Definitely do not resume play the same day. Athletes and children should be closely monitored by coaches upon resuming play. If you resume play too soon, you risk a greater chance of having a second concussion, which can compound the damage. The American Academy of Neurology has issued guidelines about resuming activities after a concussion."
+        },
+        {
+          "heading": "Guard against repeat concussions",
+          "content": "\n\tRepeat concussions cause cumulative effects on the brain. Successive concussions can have devastating consequences, including brain swelling, permanent brain damage, long-term disabilities, or even death. Don't return to normal activities if you still have symptoms. Get a doctor's clearance so you can return to work or play with confidence."
+        },
+        {
+          "heading": "Can I Prevent a Concussion?",
+          "content": "\n\t•\tBy its very nature, a concussion is unexpected, so it is tough to prevent. But there are several common-sense precautions you can take to lessen the possibility of traumatic brain injury.\n\n\t•\tWear protective equipment.\nParticipation in high-contact, high-risk sports such as football, hockey, boxing, and soccer can increase the likelihood of a concussion. Skateboarding, snowboarding, horseback riding, and roller blading are also a threat to your brain's health. Wearing headgear, padding, and mouth and eye guards can help safeguard against traumatic head injuries. Wearing a bike helmet can lower the risk of traumatic head injury by 85%. Ensure that the equipment is properly fitted, well maintained, and worn consistently.\n\t•\tDrive and ride smart.\nAlways wear a seatbelt, obey posted speed limits, and don't use drugs or alcohol, because they can impair reaction time.\n\t•\tDon't fight.\nConcussions are often sustained during an assault, and more males than females report traumatic head injuries."
+        }
+      ],
+      "Congestion_or_stuffy_nose_in_children": [
+        {
+          "heading": "Call emergency services if your child",
+          "content": "\n\t•\tHas difficulty breathing or is unable to breathe\n\t•\tSuddenly starts coughing or choking after being fed\n\t•\tHas a cough associated with any skin color change such as turning blue\n\t•\tSeems out of breath\n\t•\tIs unable to talk or eat\n\n\tColds, flu, and allergies cause congestion in babies and toddlers. Colds and flu are most commonly caused by viruses, so antibiotics won't help. Supportive treatments can help with symptoms, however there is no cure and the body needs to fight off the virus."
+        },
+        {
+          "heading": "Call Doctor If:",
+          "content": "\n\t•\tSymptoms last longer than two weeks\n\t•\tYour child is congested and is three months or younger.\n\t•\tYour child has a severe cough or a cough that sounds like a bark.\n\t•\tYour child is breathing fast and has a fever with a cough.\n\t•\tYour child has ear pain."
+        },
+        {
+          "heading": "Clear Out Mucus",
+          "content": "\n\t•\tUse an infant nasal bulb, or aspirator, to suck mucus from your baby's nose. It's OK to use nasal saline to loosen the mucus.\n\t•\tIf your child is able, have her blow her nose regularly.\n\t•\tNever use a cold or cough medicine in kids under age 4 unless a pediatrician suggests it."
+        },
+        {
+          "heading": "Give Fluids",
+          "content": "\n\t•\tIf your child is over 3 months, offer apple juice, or water.\n\t•\tOlder children can have warm soups and other drinks."
+        },
+        {
+          "heading": "Add Moisture",
+          "content": "\n\t•\tUse a cool-mist humidifier if the air is dry.\n\t•\tUse saline nose drops to moisten the nasal passages.\n\t•\tSit in the bathroom with the hot shower running and have your child breathe in the steam."
+        },
+        {
+          "heading": "Treat Other Symptoms",
+          "content": "\n\t•\tIf your child is older than age 1, try 1/2 to 1 teaspoon of honey for cough.\n\t•\tAvoid irritants, such as cigarette smoke.\n\t•\tRub petroleum jelly under the nose to prevent chapping.\n\t•\tIf your child has allergies, talk to your pediatrician about treatment."
+        }
+      ],
+      "Constipation_in_children": [
+        {
+          "heading": "Preface",
+          "content": "\n\t•\tHas your child ever come out of the bathroom in tears, saying, “Mommy, it hurts when I poop?” The likely cause is constipation, a very common problem in children.\n\t•\tHow can you tell if your child is constipated? Besides the obvious painful bowel movements, look for these typical signs:"
+        },
+        {
+          "heading": "Constipation Symptoms",
+          "content": "\n\t•\tStomach pain and bloating\n\t•\tBleeding with bowel movements\n\t•\tSoiling accidents\n\n\tSometimes a constipated child might actually appear to have diarrhea, which can be confusing. What’s happening here is that a large formed stool has gotten stuck in your child’s rectum, and somewhat liquid stool gets passed around it.\n\n\tWhen a child is constipated, he has less frequent bowel movements, and when he does “go,” his stool is dry, hard, and painful to pass. There are many possible causes for constipation, including:\n\t\t\t•\tWithholding stool. This means that your child is trying to hold his bowel movements in -- maybe because he’s stressed about potty training, maybe because he doesn’t want to use the toilet in certain places (like school), or maybe because he’s afraid of a painful bathroom experience. (Constipation can become a vicious cycle -- if it hurts to “poop” once, the child may be more fearful of going the next time.)\n\t\t\t•\tA diet that’s low in fiber or doesn’t include enough liquids (or both)\n\t\t\t•\tSide effects of certain medications"
+        },
+        {
+          "heading": "Constipation Treatments",
+          "content": "\n\tThere are three primary treatments for most cases of constipation, and they usually work hand-in-hand:\n\t\t\t•\tA stool softener to clear the bowels. These are safe in children, but should be used under the supervision of your pediatrician.\n\n\tTwo common mistakes that parents make when giving their child a stool softener for constipation is not using a large enough dose, or stopping it too soon. For example, you might think that you can stop giving a stool softener after your child’s first normal-looking bowel movement, but stopping too soon may just set your child up for another bout of constipation. Some children may need to stay on a stool softener for a few weeks. Your doctor can advise you on the right dosing schedule for your child.\n\t\t\t•\tA high-fiber diet with plenty of fluids. This means loading your child’s plate with plenty of fresh fruits and vegetables, high-fiber cereals, whole grain breads (look for at least 3-5 grams of fiber per serving), and a variety of beans and other legumes, like chickpeas and lentils. Two good sources of fiber that kids are often happy to eat are trail mix (let them make their own) and popcorn with minimal salt or butter. Foods containing probiotics, like yogurt, can also promote good digestive health.\n\n\tWhile focusing on fiber, don’t forget fluids. If your child is eating plenty of high-fiber food but not getting enough fluid to help flush it through his system, you can make matters worse. Your child should be drinking plenty of water throughout the day, along with some milk. Limit sugary drinks to 4 ounces a day in younger children and 6-8 ounces in school-aged kids.\n\t\t\t•\tRegular toilet time. Encourage your child to use the toilet first thing in the morning and after every meal or snack. Particularly for a younger child, you may get better results by telling, not asking. Instead of suggesting, “Do you need to go to the bathroom?” simply say, “Time to go to the bathroom now.”\n\n\tYou’ll get the best results if you combine all three of these approaches. A high-fiber diet isn’t likely to clear up a serious case of constipation on its own without the help of a stool softener; on the other hand, once your child stops taking a stool softener, if he stays on a low-fiber diet and doesn’t get enough healthy fluids, the problem is likely to happen again."
+        }
+      ],
+      "Convulsions_in_children": [
+        {
+          "heading": "Call emergency services if the child",
+          "content": "\n\t•\tAppears to have a seizure with uncontrolled, rapid shaking\n\t•\tHas trouble breathing\n\t•\tTurns blue\n\t•\tHits his head before or during a convulsion\n\t•\tIs unconscious for several minutes\n\t•\tMight have ingested something poisonous\n\n\tConvulsions, also known as seizures, in babies and young children can be terrifying for parents, and to be safe you should seek emergency help. However, convulsions often don't cause serious health problems. In toddlers,though rare, fevers can sometimes trigger convulsions."
+        },
+        {
+          "heading": "Call Doctor If:",
+          "content": "\n\t•\tEven if your child has had a convulsion before and your pediatrician has told you what to do, you should still call your pediatrician."
+        },
+        {
+          "heading": "While You're Waiting for Medical Help",
+          "content": "\n\tIf your child is breathing normally, keep your child safe:\n\n\t•\tPlace your child on the floor on his or her side and clear away objects that are in close proximity.\n\t•\tLoosen tight clothing surrounding the head or neck.\n\t•\tDon't put anything in your child's mouth or try to stop the convulsion unless your pediatrician has told you what to do.\n\t•\tIf your child vomits, move him onto his side and clear out his mouth.\n\t•\tDon't try to hold your child down or restrain his movements."
+        }
+      ],
+      "Corneal_abrasion": [
+        {
+          "heading": "Seek emergency care if:",
+          "content": "\n\t•\tThere is pain, change in vision, or increased sensitivity to light after a scratch or trauma to the eyeball.\n\t•\tThere is a foreign object lodged in the eye or eyelid or under the eyelid.\n\t•\tThere is loss of vision.\n\t•\tSomething hit the eye at high speed or with high force."
+        },
+        {
+          "heading": "Clean and Protect the Eye",
+          "content": "\n\t•\tInspect the eye for small particles that may be stuck under the eyelid and causing symptoms.\n\t•\tFlush the eye with clean water or saline solution once or twice to remove any particles or to soothe the eye surface. Do not rinse the eye more than a few times. Doing so can make the situation worse.\n\t•\tAvoid rubbing or pressing on the eye."
+        },
+        {
+          "heading": "When to See a Health Care Provide",
+          "content": "\n\tGet medical help if:\n\t•\tThe person has blurred vision or eye pain, tearing, redness, or irritation even if there does not appear to be something in the eye. There may be a scratch on the surface of the eye called a corneal abrasion."
+        },
+        {
+          "heading": "Follow Up",
+          "content": "\n\tIf you see a health care provider:\n\t•\tThe health care provider will examine the eye for damage, remove any particles, and check the vision.\n\t•\tAntibiotic ointment or pain relievers may be prescribed.\n\t•\tSmall, surface corneal abrasions heal in a couple of days. Pain medications such as acetaminophen (Tylenol) or ibuprofen (Advil, Motrin) can be taken for pain. Avoid ibuprofen and other NSAIDs if the person has heart failure or kidney failure.\n\t•\tFor larger abrasions, care from an ophthalmologist (eye specialist) may be needed and a bandage contact lens may be placed to aid with comfort and healing."
+        }
+      ],
+      "Corneal_ulcer": [
+        {
+          "heading": "Seek emergency care if:",
+          "content": "\n\t•\tThere is loss or change in vision.\n\t•\tThe pain follows an injury to the eye."
+        },
+        {
+          "heading": "Protect the Eye",
+          "content": "\n\t•\tIf the person wears contact lenses, take them out.\n\t•\tDark glasses may provide comfort.\n\t•\tDo not flush, patch, rub, dab at, or place compresses on the eye."
+        },
+        {
+          "heading": "Get Medical Help as Soon as Possible",
+          "content": "\n\t•\tSee a health care provider for persistent pain, eye redness, change in vision, drainage from the eye, rashes around the eye, swelling of the eyelids, or fever."
+        },
+        {
+          "heading": "Follow Up",
+          "content": "\n\t•\tThe health care provider will examine the eye and test vision. Depending on the age of the person, the health care provider may also check the pressure within the eye.\n\t•\tDepending on the cause, the health care provider may prescribe eye drops or oral medicines and may recommend consultation from an ophthalmologist (eye specialist).\n\t•\tFollow up depends on the cause of pain but may require a visit to an ophthalmologist."
+        }
+      ],
+      "Coughs_in_children": [
+        {
+          "heading": "Call emergency services if your child",
+          "content": "\n\t•\tIs unconscious or not breathing\n\t•\tIs gasping for breath\n\t•\tHas trouble breathing or is breathing very fast when not coughing\n\t•\tHas severe coughing attacks or continuous coughing\n\t•\tCan't cry or talk because of breathing trouble\n\t•\tGrunts when breathing\n\t•\tHas blue lips\n\t•\tMay have a small object caught in her throat\n\t•\tIs breathing very fast (this is also a symptom of fever)\n\t•\tLooks very sick\n\tCoughs in young children can be due to a number of illnesses. Most often, a cough gets better on its own and doesn't need to be a cause for concern."
+        },
+        {
+          "heading": "Call Doctor If Your Child:",
+          "content": "\n\t•\tIs younger than 1 year old and still has trouble breathing after you cleaned out her nose\n\t•\tMay have a lung infection or a reactive airways disease episode\n\t•\tIs wheezing or making a high-pitched whistle sound when breathing out or in\n\t•\tCan't take a deep breath because of chest pain or coughed-up blood\n\t•\tHas a fever that lasts longer than 72 hours"
+        },
+        {
+          "heading": "Prevent Dehydration",
+          "content": "\n\t•\tGive babies plenty of breast milk or formula.\n\t•\tGive older children water or juice mixed with water."
+        },
+        {
+          "heading": "Relieve Congestion",
+          "content": "\n\t•\tThin mucus in a stuffy nose with saline nose drops.\n\t•\tRemove mucus from a baby's nose with a suction bulb.\n\t•\tUse a humidifier in your child's room or take your child into the bathroom with a steamy shower running."
+        },
+        {
+          "heading": "Ease Breathing",
+          "content": "\n\t•\tUse a cool-mist humidifier to add moisture to the air.\n\t•\tSit in the bathroom with a hot shower running and have your child breathe in the steam."
+        },
+        {
+          "heading": "Make the Child Comfortable",
+          "content": "\n\t•\tLet the child rest.\n\t•\tAvoid irritants, such as cigarette smoke.\n\t•\tDon't give cough medicine to a child under age 4 unless your pediatrician suggests it."
+        }
+      ],
+      "Crabs": [
+        {
+          "heading": "Remove Pubic Lice and Eggs",
+          "content": "\n\t•\tUse an over-the-counter lotion or anti-lice shampoo. Follow instructions on the label.\n\t•\tThe shampoo will kill the lice, but eggs - nits - may remain on hair shafts. After treatment, remove nits with fingernails, tweezers, or a fine-toothed comb. A mirror, magnifying glass, and a bright light may help."
+        },
+        {
+          "heading": "Stop the Spread",
+          "content": "\n\t•\tCheck other family members for crabs. Anyone who sleeps in the same bed as the person should be treated, even if no pubic lice are found.\n\t•\tWash clothes, bedding, or towels used by the person in the two days before treatment. Use hot water.\n\t•\tDry-clean or store Items that can't be washed in a plastic bag for 2 weeks."
+        },
+        {
+          "heading": "Follow Up",
+          "content": "\n\t•\tTreatment may need to be repeated 9 to 10 days later.\n\t•\tAvoid sexual contact until the person and sexual partners have been treated and re-evaluated."
+        },
+        {
+          "heading": "See a Health Care Provider",
+          "content": "\n\t•\tTo be checked for other sexually transmitted diseases\n\t•\tIf a second round of over-the-counter treatment isn't effective\n\t•\tIf the person develops an infection from scratching the affected area\n\t•\tIf fingers or combs aren't enough to remove lice or nits in eyebrows and eyelashes. A health care provider can prescribe ophthalmic grade petroleum jelly."
+        }
+      ],
+      "Cradle_cap_in_children": [
+        {
+          "heading": "Preface",
+          "content": "\n\tBabies are known for their soft, smooth skin. But many newborns can get rough, scaly patches on their scalp that seem to come out of nowhere.\n\n\tWhen you see these rough patches on your baby’s head, you might worry that it’s something serious. But, cradle cap is common and harmless. It’s the baby form of dandruff.\n\n\tThis skin condition got its name because the most common place for the scaly patches to show up is on the head, where a baby would wear a cap.\n\n\tYou can usually get rid of it in a few simple steps. Even if you don’t do anything, it should go away on its own with time."
+        }
+      ],
+      "Crying_and_colic_in_babies": [
+        {
+          "heading": "Preface",
+          "content": "\n\t•\tCoping with a colicky baby can be terribly difficult for parents. Remember that colic is common and it won't last forever. It starts at approximately 3 weeks of age and is usually gone by the time a baby is 3 months old."
+        },
+        {
+          "heading": "Call Doctor If:",
+          "content": "\n\t•\tYour baby has other symptoms as well, such as fever, a rash, vomiting, or diarrhea."
+        },
+        {
+          "heading": "Start With the Basics",
+          "content": "\n\t•\tChange your baby's diaper.\n\t•\tOffer your baby the chance to nurse or a bottle.\n\t•\tUse a pacifier.\n\t•\tBurp your baby.\n\t•\tHold and rock your baby, or use a swing or bouncer if your baby is old enough.\n\t•\tMake sure your baby is not too hot or cold.\n\t•\tIf breastfeeding, can try to cut down on milk, spicy foods, citrus, and caffeine in your diet. However, colic is usually not related to anything mom has eaten."
+        },
+        {
+          "heading": "Shift Positions",
+          "content": "\n\t•\tHold your baby facing down with your hand under her belly and her head on your forearm.\n\t•\tPut your baby in a wearable carrier.\n\t•\tSwaddle your baby in a blanket or swaddling wrap."
+        },
+        {
+          "heading": "Move",
+          "content": "\n\t•\tPut your baby in a baby swing or take her for a walk in a stroller.\n\t•\tPut your baby's chair next to (but not on) a vibrating washer or dryer.\n\t•\tPut your baby in a car seat and drive, as long as you are awake enough to drive safely."
+        },
+        {
+          "heading": "Use Soothing Noises",
+          "content": "\n\t•\tUse a white noise machine -- or a vacuum or fan -- in your baby's room.\n\t•\tSing or make a shushing sound directly into your baby's ear."
+        },
+        {
+          "heading": "Take Breaks",
+          "content": "\n\t•\tWhen possible, ask your partner or another family member to take a turn with your baby.\n\t•\tDon’t get burned out. When you need to, put your crying baby down and take a break in another room for a few minutes to recharge."
+        }
+      ],
+      "Cuts_and_bleeding_in_children": [
+        {
+          "heading": "Call emergency services if",
+          "content": "\n\t•\tYour child is bleeding heavily.\n\t•\tThe wound is deep.\n\t•\tThe edges of the wound are gaping.\n\t•\tThe wound is spurting blood.\n\t•\tYou can't stop the bleeding after 10 minutes of direct pressure.\n\t•\tAn object has punctured the skin and is still in the body.\n\t•\tThe cut involves the eye or the cartilage of the nose or ear.\n\n\tCuts and scrapes are common in young children. Usually, parents can treat them at home."
+        },
+        {
+          "heading": "Call Doctor If:",
+          "content": "\n\t•\tThe cut is on your child's face.\n\t•\tThe cut is larger than a half inch, jagged, has dirt in it, isn't healing well, or seems infected."
+        },
+        {
+          "heading": "Examine the Injury",
+          "content": "\n\t•\tDo not remove an object that has penetrated the body. Put pressure on the wound and call emergency services."
+        },
+        {
+          "heading": "Clean the Wound",
+          "content": "\n\t•\tWash your hands.\n\t•\tClean the wound with lots of cool water. Make sure all dirt and debris are removed.\n\t•\tClean the area around the wound with mild soap and water."
+        },
+        {
+          "heading": "Stop the Bleeding",
+          "content": "\n\t•\tCover the wound with gauze or a clean towel and press down with your palm.\n\t•\tIf the gauze soaks through, don't remove it. Put another layer of gauze on top.\n\t•\tKeep up the pressure for a few minutes after the bleeding stops."
+        },
+        {
+          "heading": "Treat the Wound",
+          "content": "\n\t•\tApply an antibacterial ointment to the area.\n\t•\tIf the wound is minor and unlikely to get dirty, let it heal in the open air.\n\t•\tIf the wound is likely to get dirty because it's on the hands or feet, put on a bandage."
+        }
+      ],
+      "Cuts_or_lacerations": [
+        {
+          "heading": "Call emergency services if",
+          "content": "\n\t•\tA cut is bleeding severely\n\t•\tBlood is spurting out\n\t•\tBleeding can't be stopped after 10 minutes of firm and steady pressure\n\n\tIn general, a cut that needs stitches should be repaired within 6 hours of the injury. The exception is cuts to the face and scalp, which generally can be repaired up to 24 hours after the injury."
+        },
+        {
+          "heading": "For minor cuts",
+          "content": "\n\t•\tTake the following steps:"
+        },
+        {
+          "heading": "Stop the Bleeding",
+          "content": "\n\t•\tApply direct pressure on the area."
+        },
+        {
+          "heading": "Clean and Protect",
+          "content": "\n\t•\tClean the area with warm water and gentle soap.\n\t•\tApply an antibiotic ointment to reduce chance of infection.\n\t•\tPut a sterile bandage on the area. In some people, antibiotic ointments may cause a rash. If this happens, stop using the ointment."
+        },
+        {
+          "heading": "Call a Health Care Provider if:",
+          "content": "\n\t•\tThe cut is deep or over a joint\n\t•\tYou cannot get the cut or laceration clean\n\t•\tThe injury is a deep puncture wound or the person has not had a recent (within the last 5 to 10 years) tetanus shot or booster\n\t•\tThe cut is from a human or animal bite"
+        },
+        {
+          "heading": "Follow Up",
+          "content": "\n\t•\tFor a minor cut or laceration, remove bandage after a couple of days to promote healing.\n\t•\tSee a health care provider if the cut doesn't heal or shows signs of infection, including redness, swelling, pus, or excessive pain."
+        }
+      ],
+      "Cyanide_poisoning": [
+        {
+          "heading": "Call emergency services if",
+          "content": "\n\t•\tYou are sure the person was exposed to cyanide.\n\n\tIf you are not sure it is cyanide, call Poison Control.\n\n\tTreat the person as follows, depending on whether cyanide was inhaled, ingested, or absorbed through the skin:"
+        },
+        {
+          "heading": "Treat Inhalation or Ingestion",
+          "content": "\n\t•\tGet the person to fresh air immediately.\n\t•\tIf you can't get away from the area where cyanide gas is, stay low to the ground.\n\t•\tIf the person has difficulty breathing or has stopped breathing, do hands-only CPR:\n\t•\tFor a child, start CPR for children.\n\t•\tFor an adult, start adult CPR.\n\t•\tDo not do mouth-to-mouth resuscitation."
+        },
+        {
+          "heading": "Treat Skin Exposure",
+          "content": "\n\t•\tAvoid touching a person whose skin has been exposed to cyanide; only emergency personnel with special protective clothing should have direct contact with the victim, as secondary contamination is possible."
+        },
+        {
+          "heading": "Treat Eye Exposure",
+          "content": "\n\t•\tRemove the person's contact lenses or glasses.\n\t•\tImmediately irrigate eyes with plain water for at least 10 minutes.\n\t•\tPut contact lenses in a plastic bag for emergency personnel to dispose of.\n\t•\tGlasses may be used after washing with soap and water."
+        },
+        {
+          "heading": "Follow Up",
+          "content": "\n\t•\tAt the hospital, the person will be treated with antidotes and oxygen."
+        }
       ]
     }
   ]

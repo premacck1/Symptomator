@@ -122,7 +122,7 @@
         <item>Blisters</item>
         <item>Blood in urine</item>
         <item>Bloody stools in children</item>
-        <item>Blue lips n children</item>
+        <item>Blue lips in children</item>
         <item>Breathing problems in children</item>
         <item>Broken arm in adults</item>
         <item>Broken arm in children</item>
@@ -139,7 +139,7 @@
         <item>Broken shoulder blade</item>
         <item>Broken toe</item>
         <item>Broken or knocked out teeth</item>
-        <item>Broken recluse bite</item>
+        <item>Brown recluse spider bite</item>
         <item>Bruises in adults</item>
         <item>Bruises in children</item>
         <item>Burns in adults</item>
@@ -154,7 +154,7 @@
         <item>Chest pain</item>
         <item>Choking in adults</item>
         <item>Choking in children</item>
-        <item>Colds in children</item>
+        <item>Cold in children</item>
         <item>Concussion</item>
         <item>Congestion or stuffy nose in children</item>
         <item>Constipation in children</item>
@@ -300,6 +300,140 @@
         <item>Whiplash</item>
         <item>Wrist injury</item>
     </string-array>
+
+<!--
+    <item>Dehydration_in_adults</item>
+    <item>Dehydration_in_children</item>
+    <item>Diaper_rush</item>
+    <item>Diarrhea</item>
+    <item>Diarrhea_in_children</item>
+    <item>Dizziness</item>
+    <item>Drowning</item>
+    <item>Drowning_in_children</item>
+    <item>Drug_allergy</item>
+    <item>Drug_overdose</item>
+    <item>Ear_-_foreign_body</item>
+    <item>Ear_infections_in_children</item>
+    <item>Ear_pain_-_diving</item>
+    <item>Eczema_in_infants</item>
+    <item>Elbow_dislocation</item>
+    <item>Electric_shock</item>
+    <item>Electric_shock_in_children</item>
+    <item>Eye_burns/Corneal_burns</item>
+    <item>Eye_-_foreign_object</item>
+    <item>Eye_injuries</item>
+    <item>Eye_injuries_in_children</item>
+    <item>Eyelid_inflammation</item>
+    <item>Facial_fracture</item>
+    <item>Fainting</item>
+    <item>Fever_in_adults</item>
+    <item>Fever_in_children</item>
+    <item>Finger_dislocation</item>
+    <item>Finger_injuries</item>
+    <item>First_aid_kits</item>
+    <item>Fishhook_injuries</item>
+    <item>Flu_(influenza)_in_children</item>
+    <item>Food_poisoning</item>
+    <item>Fractures_or_dislocation</item>
+    <item>Frostbite</item>
+    <item>Gas_pain_in_children</item>
+    <item>Gastroenteritis</item>
+    <item>Hand_injury</item>
+    <item>Head_injuries_in_children</item>
+    <item>Head_injury</item>
+    <item>Headache</item>
+    <item>Heart_attack</item>
+    <item>Heat_Exhaustion</item>
+    <item>Heat_rash_in_children</item>
+    <item>Heat_stroke</item>
+    <item>Hiccups</item>
+    <item>Hives_and_angioedema</item>
+    <item>Hives_in_children</item>
+    <item>Human_bites</item>
+    <item>Hyperventilation</item>
+    <item>Hypothermia</item>
+    <item>Inability_to_urinate</item>
+    <item>Insect_bites/stings_in_children</item>
+    <item>Insect_sting_allergy</item>
+    <item>Insulin_reaction</item>
+    <item>Iron_poisoning</item>
+    <item>Jaundice_in_newborns</item>
+    <item>Jellyfish_stings</item>
+    <item>Knee_dislocation</item>
+    <item>Knee_injury</item>
+    <item>Labor_signs</item>
+    <item>Lice</item>
+    <item>Lightning_strike</item>
+    <item>Low_blood_sugar</item>
+    <item>Migraine_headache</item>
+    <item>Migraine_headache_in_children</item>
+    <item>Mini_stroke_(Transient_Ischemic_Attack)</item>
+    <item>Miscarriage</item>
+    <item>Mountain_sickness</item>
+    <item>Muscle_strain</item>
+    <item>Nail_infection_(paronychia)</item>
+    <item>Nail_injuries</item>
+    <item>Neck_Strain</item>
+    <item>Nose_foreign</item>
+    <item>Nosebleeds</item>
+    <item>Nursemaid_elbow</item>
+    <item>Orchitis</item>
+    <item>Palpitations</item>
+    <item>Panic_attacks</item>
+    <item>Plant_allergy</item>
+    <item>Poisoning</item>
+    <item>Poisoning_in_children</item>
+    <item>Puncture_wound</item>
+    <item>Rabies</item>
+    <item>Rape/Sexual_assault</item>
+    <item>Rashes_in_children</item>
+    <item>Rectal_bleeding</item>
+    <item>Rectal_-_foreign_object</item>
+    <item>Rectal_pain</item>
+    <item>Reflux_in_children</item>
+    <item>Ricin_poisoning</item>
+    <item>Ruptured_tendon</item>
+    <item>Seizures_emergencies</item>
+    <item>Seizures_in_children</item>
+    <item>Severe_allergic_reaction</item>
+    <item>Shark_bite</item>
+    <item>Shock</item>
+    <item>Shoulder_dislocation</item>
+    <item>Shoulder_separation</item>
+    <item>Shoulder_and_neck_pain</item>
+    <item>Skier\'s_thumb</item>
+    <item>Slipped_disk</item>
+    <item>Smoke_inhalation</item>
+    <item>Snakebite</item>
+    <item>Splinters</item>
+    <item>Sprains_and_strains</item>
+    <item>Stringray_injury</item>
+    <item>Stomachache_and_nausea_in_children</item>
+    <item>Stroke</item>
+    <item>Sty</item>
+    <item>Suicidal_thoughts</item>
+    <item>Sunburn</item>
+    <item>Swallowed_object</item>
+    <item>Tailbone_injury</item>
+    <item>Teething_pain</item>
+    <item>Testicular_pain</item>
+    <item>Tetanus</item>
+    <item>The_bends</item>
+    <item>Thermal_burns</item>
+    <item>Ticks</item>
+    <item>Toothache</item>
+    <item>Toxic_shock_syndrome</item>
+    <item>Traveler\'s_diarrhea</item>
+    <item>Using_an_Automated_External_Defibrillator</item>
+    <item>Vaginal_bleeding</item>
+    <item>Vaginal_-_foreign_body</item>
+    <item>Vertigo</item>
+    <item>Vomiting_during_pregnancy</item>
+    <item>Vomiting_and_nausea</item>
+    <item>Vomiting_or_spitting_up_in_children</item>
+    <item>Whiplash</item>
+    <item>Wrist_injury</item>
+-->
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="list_of_hospitals">List of hospitals</string>
