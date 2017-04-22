@@ -10,6 +10,7 @@ import android.graphics.Rect;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.StrictMode;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.design.widget.BottomNavigationView;
@@ -25,7 +26,6 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.animation.AccelerateDecelerateInterpolator;
 import android.view.animation.AnimationUtils;
-import android.widget.AdapterView;
 import android.widget.LinearLayout;
 
 import java.util.Locale;
@@ -35,7 +35,7 @@ import io.codetail.widget.RevealFrameLayout;
 
 import static io.codetail.animation.ViewAnimationUtils.createCircularReveal;
 
-public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener,
+public class MainActivity extends AppCompatActivity implements
         SymptomFragment.OnSymptomFragmentInteractionListener,
         FirstAidFragment.OnFirstAidListFragmentInteractionListener {
 
@@ -50,6 +50,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     private ActionBar actionBar;
     private String[] previousTitles = new String[2];
     private int[] touchCoordinate = new int[2];
+//    private GoogleApiClient googleApiClient;
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -97,7 +98,18 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     };
 
     @Override
+    protected void onStart() {
+        super.onStart();
+//        if( googleApiClient != null )
+//            googleApiClient.connect();
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        StrictMode.setThreadPolicy(new StrictMode.ThreadPolicy.Builder().detectAll().penaltyLog().build());
+        StrictMode.setVmPolicy(new StrictMode.VmPolicy.Builder().detectLeakedSqlLiteObjects().detectLeakedClosableObjects().penaltyLog().build());
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         actionBar = getSupportActionBar();
@@ -113,9 +125,25 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
         navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+
+//        googleApiClient = new GoogleApiClient
+//                .Builder(this)
+//                .enableAutoManage(this, 0, this)
+//                .addApi(Places.GEO_DATA_API)
+//                .addApi(Places.PLACE_DETECTION_API)
+//                .addConnectionCallbacks(this)
+//                .addOnConnectionFailedListener(this)
+//                .addApi(LocationServices.API)
+//                .build();
     }
 
     public void onButtonClick(View view){
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                animationReversed(revealView);
+            }
+        }, 250);
         switch (view.getId()){
             case R.id.call_108:
                 callEmergencyServices(MainActivity.this);
@@ -160,17 +188,6 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         }
         return super.dispatchTouchEvent(ev);
     }
-
-//    private boolean isPointInsideView(float x, float y, View view) {
-//        int location[] = new int[2];
-//        view.getLocationOnScreen(location);
-//        int viewX = location[0];
-//        int viewY = location[1];
-//
-//        // point is inside view bounds
-//        return ((x > viewX && x < (viewX + view.getWidth())) &&
-//                (y > viewY && y < (viewY + view.getHeight())));
-//    }
 
     static String getUserCountry(Context context) {
         try {
@@ -223,7 +240,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         int centerX = center[0];
         int centerY = center[1];
         int startRadius = 0;
-        int endRadius = (int) (Math.hypot(mRevealView.getWidth() * 2, mRevealView.getHeight() * 2));
+        int endRadius = (int) (Math.hypot(mRevealView.getWidth() * 1.6, mRevealView.getHeight() * 1.6));
         animator = createCircularReveal(mRevealView, centerX, centerY, startRadius, endRadius);
         animator.setInterpolator(new AccelerateDecelerateInterpolator());
         animator.setDuration(400);
@@ -298,15 +315,6 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     }
 
     @Override
-    public void onItemSelected(AdapterView<?> adapterView, View view, int position, long l) {
-
-    }
-
-    @Override
-    public void onNothingSelected(AdapterView<?> adapterView) {
-    }
-
-    @Override
     public void onSymptomFragmentInteraction(String selectedSex, String selectedBodyArea, String selectedBodyPart) {
         Intent intent = new Intent(this, SymptomCheck.class);
         intent.putExtra("selectedSex", selectedSex);
@@ -323,6 +331,15 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 startActivity(new Intent(MainActivity.this, FirstAidCheck.class).putExtra("topic", item));
             }
         }, 200);
+    }
+
+    @Override
+    protected void onStop() {
+//        if( googleApiClient != null && googleApiClient.isConnected() ) {
+//            mAdapter.setGoogleApiClient( null );
+//            googleApiClient.disconnect();
+//        }
+        super.onStop();
     }
 
     void removeFragmentIfAttached(final String tag){

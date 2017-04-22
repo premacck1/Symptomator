@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/action_place_picker"
+        android:title="Place Picker"
+        android:orderInCategory="100"
+        android:icon="@android:drawable/ic_menu_myplaces"
+        app:showAsAction="always"
+        tools:ignore="AlwaysShowAction,HardcodedText" />
+
+    <item android:id="@+id/action_guess_current_place"
+        android:title="Guess Current Place"
+        android:orderInCategory="200"
+        android:icon="@android:drawable/ic_menu_mylocation"
+        app:showAsAction="always"
+        tools:ignore="HardcodedText" />
+
+</menu>

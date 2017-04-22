@@ -52,19 +52,23 @@ class DatabaseHolder {
 
     private static final String create_table_patient = "create table if not exists Patient (aadharNumber bigint not null primary key, Name text not null, contact bigint not null, email text not null, gender text not null, age int not null, disease text not null, doctorID text not null, nextAppointment blob not null, hospitalID text not null, address blob not null, FOREIGN KEY (doctorID) REFERENCES Doctor(id), FOREIGN KEY (hospitalID) REFERENCES Hospital(id));";
 
-    private DatabaseHelper dbHelper;
+    private static DatabaseHelper dbHelper;
     private Context context;
     private SQLiteDatabase db;
+
+
     DatabaseHolder(Context context) {
         this.context = context;
-        dbHelper = new DatabaseHelper(context);
+        if (dbHelper == null) {
+            dbHelper = new DatabaseHelper(context);
+        }
     }
 
     DatabaseHolder open() {
         db  = dbHelper.getWritableDatabase();
-//        dbHelper.onCreate(db);
         return this;
     }
+
     void close() {
         dbHelper.close();
     }
@@ -308,6 +312,8 @@ class DatabaseHolder {
     }
 
     private static class DatabaseHelper extends SQLiteOpenHelper {
+
+        private static DatabaseHelper mInstance = null;
 
         DatabaseHelper(Context context) {
             super(context, database_name, null, database_version);

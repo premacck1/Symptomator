@@ -16,7 +16,7 @@
         app:mrl_rippleAlpha="0.2">
 
         <TextView
-            android:id="@+id/Recycler_view_list_item"
+            android:id="@+id/recycler_view_list_item"
             android:layout_width="match_parent"
             android:padding="@dimen/activity_horizontal_margin"
             android:layout_height="wrap_content"

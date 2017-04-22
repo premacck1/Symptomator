@@ -8,17 +8,11 @@
     android:layout_height="match_parent"
     tools:context="com.prembros.symptomator.MainActivity">
 
-    <io.codetail.widget.RevealFrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
     <FrameLayout
         android:id="@+id/main_fragment_container"
         android:layout_above="@+id/navigation"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
-
-    </io.codetail.widget.RevealFrameLayout>
 
     <io.codetail.widget.RevealFrameLayout
         android:id="@+id/reveal_view_container"
@@ -29,7 +23,7 @@
         android:layout_above="@+id/navigation">
 
         <LinearLayout
-            android:visibility="invisible"
+            android:visibility="gone"
             android:id="@+id/services_revealView"
             android:orientation="vertical"
             android:layout_width="match_parent"

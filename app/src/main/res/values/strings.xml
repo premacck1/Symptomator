@@ -1,4 +1,4 @@
-<resources>
+﻿<resources>
     <string name="app_name">Symptomator</string>
     <string name="symptom">Symptoms</string>
     <string name="hospital">Hospital</string>
@@ -170,7 +170,7 @@
         <item>Cyanide poisoning</item>
         <item>Dehydration in adults</item>
         <item>Dehydration in children</item>
-        <item>Diaper rush</item>
+        <item>Diaper rash</item>
         <item>Diarrhea</item>
         <item>Diarrhea in children</item>
         <item>Dizziness</item>
@@ -301,7 +301,7 @@
         <item>Wrist injury</item>
     </string-array>
 
-<!--
+    <!--
     <item>Dehydration_in_adults</item>
     <item>Dehydration_in_children</item>
     <item>Diaper_rush</item>
@@ -493,4 +493,6 @@
     <string name="google_places_key" templateMergeStrategy="preserve" translatable="false">
         AIzaSyCwmLEnjoalKDciZxizLlWTFLmg0vd7Csc
     </string>
+    <string name="find">Find</string>
+    <string name="powered_by_google">Powered by google</string>
 </resources>

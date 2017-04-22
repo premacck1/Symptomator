@@ -24,7 +24,7 @@
 
     <style name="SplashScreenTheme" parent="AppTheme.NoActionBar">
         <item name="android:windowBackground">@drawable/splash_screen</item>
-        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:scaleType">centerCrop</item>
     </style>
 
     <style name="FullscreenTheme" parent="AppTheme.NoActionBar">

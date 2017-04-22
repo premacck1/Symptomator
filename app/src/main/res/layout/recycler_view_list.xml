@@ -14,4 +14,4 @@
     app:fastScrollTrackColor="@color/transparent"
     app:layoutManager="LinearLayoutManager"
     tools:context="com.prembros.symptomator.FirstAidFragment"
-    tools:listitem="@layout/recycler_view_list_item" />
+    tools:listitem="@layout/list_item" />
