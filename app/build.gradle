@@ -7,7 +7,7 @@ android {
         applicationId "com.prembros.symptomator"
         minSdkVersion 19
         targetSdkVersion 25
-        versionCode 3
+        versionCode 4
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
@@ -29,11 +29,11 @@ dependencies {
             {
                 transitive = true;
             }
-    compile 'com.android.support:cardview-v7:25.3.0'
-    compile 'com.android.support:appcompat-v7:25.3.0'
-    compile 'com.android.support:design:25.3.0'
-    compile 'com.android.support:support-vector-drawable:25.3.0'
-    compile 'com.android.support:support-v4:25.3.0'
+    compile 'com.android.support:cardview-v7:25.3.1'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.android.support:support-vector-drawable:25.3.1'
+    compile 'com.android.support:support-v4:25.3.1'
     compile 'com.balysv:material-ripple:1.0.2'
     compile 'com.simplecityapps:recyclerview-fastscroll:1.0.14'
     compile 'com.squareup.picasso:picasso:2.3.2'
