@@ -23,7 +23,7 @@
         android:layout_above="@+id/navigation">
 
         <LinearLayout
-            android:visibility="gone"
+            android:visibility="invisible"
             android:id="@+id/services_revealView"
             android:orientation="vertical"
             android:layout_width="match_parent"
