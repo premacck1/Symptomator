@@ -2,10 +2,16 @@ package com.prembros.symptomator;
 
 import android.app.SearchManager;
 import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.annotation.Nullable;
+import android.support.design.widget.TextInputEditText;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.ActionBar;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.AppCompatTextView;
 import android.support.v7.widget.LinearLayoutManager;
@@ -18,11 +24,14 @@ import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.AbsListView;
 import android.widget.LinearLayout;
 
 import com.balysv.materialripple.MaterialRippleLayout;
 
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -31,6 +40,7 @@ public class FirstAidFragment extends Fragment implements RecyclerView.OnItemTou
 
     private OnFirstAidListFragmentInteractionListener mListener;
     private MyRecyclerViewAdapter myFirstAidRecyclerViewAdapter;
+    private SearchView searchView;
 //    private boolean hidden = true;
 //    SupportAnimator animator;
 //    private boolean scrolling = false;
@@ -54,7 +64,7 @@ public class FirstAidFragment extends Fragment implements RecyclerView.OnItemTou
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(final LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         final View view = inflater.inflate(R.layout.fragment_first_aid, container, false);
 
@@ -78,8 +88,55 @@ public class FirstAidFragment extends Fragment implements RecyclerView.OnItemTou
         list.addOnItemTouchListener(new RecyclerViewOnItemClickListener(getContext(), new RecyclerViewOnItemClickListener.OnItemClickListener() {
             @Override
             public void onItemClick(View view, int position) {
-                AppCompatTextView textView = ((MaterialRippleLayout)((LinearLayout) list.findViewHolderForAdapterPosition(position).itemView).getChildAt(0)).getChildView();
-                mListener.onListFragmentInteraction(true, textView.getText().toString());
+                int itemCount = myFirstAidRecyclerViewAdapter.getItemCount();
+                if (position != itemCount - 1) {
+                    AppCompatTextView textView = ((MaterialRippleLayout)((LinearLayout) list.findViewHolderForAdapterPosition(position).itemView).getChildAt(0)).getChildView();
+                    mListener.onListFragmentInteraction(true, textView.getText().toString());
+                } else {
+//                    SEARCH ONLINE
+                    View v = inflater.inflate(R.layout.web_search_dialog, new ViewGroup(getContext()) {
+                        @Override
+                        protected void onLayout(boolean b, int i, int i1, int i2, int i3) {
+                        }
+                    }, false);
+                    final TextInputEditText editText = (TextInputEditText) v.findViewById(R.id.web_search_dialog_search_bar);
+                    if (searchView != null)
+                        if (searchView.getQuery() != null)
+                            editText.append(searchView.getQuery());
+                    AlertDialog.Builder dialog = new AlertDialog.Builder(getContext());
+                    dialog.setView(v)
+                            .setTitle("Search online")
+                            .setPositiveButton("search", new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialogInterface, int i) {
+                                    String query = null;
+                                    try {
+                                        query = URLEncoder.encode(editText.getText().toString(), "utf-8");
+                                    } catch (UnsupportedEncodingException e) {
+                                        e.printStackTrace();
+                                    }
+                                    String url = "http://www.google.com/search?q=" + query;
+                                    Intent intent = new Intent(Intent.ACTION_VIEW);
+                                    intent.setData(Uri.parse(url));
+                                    startActivity(intent);
+                                }
+                            })
+                            .setNegativeButton("cancel", new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialogInterface, int i) {
+                                    dialogInterface.dismiss();
+                                }
+                            })
+                            .show();
+                    final InputMethodManager imm = (InputMethodManager) getActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
+                    new Handler().postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            editText.requestFocus();
+                            imm.showSoftInput(editText, InputMethodManager.SHOW_IMPLICIT);
+                        }
+                    }, 500);
+                }
             }
         }));
 
@@ -89,13 +146,16 @@ public class FirstAidFragment extends Fragment implements RecyclerView.OnItemTou
             public void onScrollStateChanged(RecyclerView recyclerView, int newState) {
                 super.onScrollStateChanged(recyclerView, newState);
                 if (newState == RecyclerView.SCROLL_STATE_IDLE) {
-                    scrolling = false;
+                    if (scrolling)
+                        scrolling = false;
                 }
                 else if (newState == RecyclerView.SCROLL_STATE_DRAGGING) {
-                    scrolling = true;
+                    if (!scrolling)
+                        scrolling = true;
                 }
                 else if (newState == AbsListView.OnScrollListener.SCROLL_STATE_FLING) {
-                    scrolling = true;
+                    if (!scrolling)
+                        scrolling = true;
                 }
             }
 
@@ -103,10 +163,10 @@ public class FirstAidFragment extends Fragment implements RecyclerView.OnItemTou
             public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
                 super.onScrolled(recyclerView, dx, dy);
                 if (scrolling) {
-                    if (dy > 0) {
+                    if (dy > 5) {
 //                    SCROLLING UP
                         mListener.onListFragmentInteraction(false, "up");
-                    } else {
+                    } else if (dy < -5){
 //                    SCROLLING DOWN
                         mListener.onListFragmentInteraction(false, "down");
                     }
@@ -183,7 +243,7 @@ public class FirstAidFragment extends Fragment implements RecyclerView.OnItemTou
         SearchManager searchManager = (SearchManager) getActivity().getSystemService(Context.SEARCH_SERVICE);
         MenuItem menuItem = menu.findItem(R.id.action_search);
         menuItem.setActionView(new SearchView(getContext()));
-        SearchView searchView = (SearchView) menuItem.getActionView();
+        searchView = (SearchView) menuItem.getActionView();
 
         searchView.setSearchableInfo(searchManager.getSearchableInfo(getActivity().getComponentName()));
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {

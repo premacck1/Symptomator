@@ -87,14 +87,6 @@ public class CompleteSymptomList extends Fragment {
                 }, false);
                 final TextInputEditText editText = (TextInputEditText) v.findViewById(R.id.web_search_dialog_search_bar);
                 editText.append(searchBar.getText());
-//                LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(
-//                        LinearLayout.LayoutParams.MATCH_PARENT,
-//                        LinearLayout.LayoutParams.WRAP_CONTENT);
-//                lp.setMargins(0, 16, 0, 16);
-//                editText.setLayoutParams(lp);
-//                editText.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
-//                editText.setSelectAllOnFocus(true);
-//                editText.setHint("Tell us what you'd like to search for");
                 int itemCount = recyclerViewAdapter.getItemCount();
                 if (position == itemCount - 1){
 //                    SEARCH ONLINE
