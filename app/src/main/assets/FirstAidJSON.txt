@@ -926,7 +926,7 @@
         },
         {
           "heading": "Immediate first aid for burns",
-          "content": "\t•\tFirst, stop the burning to prevent a more severe burn.\n\t\t\t•\tHeat burns (thermal burns): Smother any flames by covering them with a blanket or water. If your clothing catches fire, do not run: stop, drop, and roll on the ground to smother the flames.\n\t\t\t•\tCold temperature burns: Try first aid measures to warm the areas. Small areas of your body (ears, face, nose, fingers, toes) that are really cold or frozen can be warmed by blowing warm air on them, tucking them inside your clothing or putting them in warm water.\n\t\t\t•\tLiquid scald burns (thermal burns): Run cool tap water over the burn for 10 to 20 minutes. Do not use ice.\n\t\t\t•\tElectrical burns: After the person has been separated from the electrical source, check for breathing and a heartbeat. If the person is not breathing or does not have a heartbeat, call .\n\t\t\t•\tChemical burns: Natural foods such as chili peppers, which contain a substance irritating to the skin, can cause a burning sensation. When a chemical burn occurs, find out what chemical caused the burn. Call your local Poison Control Center or the National Poison Control Hotline (1-800-222-1222) for more information about how to treat the burn.\n\t\t\t•\tTar or hot plastic burns: Immediately run cold water over the hot tar or hot plastic to cool the tar or plastic.\n\t•\tNext, look for other injuries. The burn may not be the only injury.\n\t•\tRemove any jewelry or clothing at the site of the burn. If clothing is stuck to the burn, do not remove it. Carefully cut around the stuck fabric to remove loose fabric. Remove all jewelry, because it may be hard to remove it later if swelling occurs."
+          "content": "\t•\tFirst, stop the burning to prevent a more severe burn.\n\t\t\t•\tHeat burns (thermal burns): Smother any flames by covering them with a blanket or water. If your clothing catches fire, do not run: stop, drop, and roll on the ground to smother the flames.\n\t\t\t•\tCold temperature burns: Try first aid measures to warm the areas. Small areas of your body (ears, face, nose, fingers, toes) that are really cold or frozen can be warmed by blowing warm air on them, tucking them inside your clothing or putting them in warm water.\n\t\t\t•\tLiquid scald burns (thermal burns): Run cool tap water over the burn for 10 to 20 minutes. Do not use ice.\n\t\t\t•\tElectrical burns: After the person has been separated from the electrical source, check for breathing and a heartbeat. If the person is not breathing or does not have a heartbeat, call .\n\t\t\t•\tChemical burns: Natural foods such as chili peppers, which contain a substance irritating to the skin, can cause a burning sensation. When a chemical burn occurs, find out what chemical caused the burn. Call your local Poison Control Center or the National Poison Control Center for more information about how to treat the burn.\n\t\t\t•\tTar or hot plastic burns: Immediately run cold water over the hot tar or hot plastic to cool the tar or plastic.\n\t•\tNext, look for other injuries. The burn may not be the only injury.\n\t•\tRemove any jewelry or clothing at the site of the burn. If clothing is stuck to the burn, do not remove it. Carefully cut around the stuck fabric to remove loose fabric. Remove all jewelry, because it may be hard to remove it later if swelling occurs."
         },
         {
           "heading": "Prepare for an evaluation by a doctor",
@@ -2682,7 +2682,7 @@
         },
         {
           "heading": "Get Help",
-          "content": "\t•\tCall the National Poison Control Hotline and follow their recommendations: 1-800-222-1222.\n\t•\tGo to the emergency room.\n\t•\tBring the bottle of iron supplements with you for the doctor to see."
+          "content": "\t•\tCall the National Poison Control Hotline and follow their recommendations.\n\t•\tGo to the emergency room.\n\t•\tBring the bottle of iron supplements with you for the doctor to see."
         },
         {
           "heading": "Follow-Up",
@@ -3108,7 +3108,7 @@
         },
         {
           "heading": "Call Poison Control if:",
-          "content": "\tCall the poison control center at 1-800-222-1222 if the person has done any of these things and is alert:\n\t•\tSwallowed too much medicine or the wrong kind\n\t•\tInhaled poison\n\t•\tGotten poison on the skin or in the eye\n\t•\tSwallowed a household product or other chemical"
+          "content": "\tCall the poison control center if the person has done any of these things and is alert:\n\t•\tSwallowed too much medicine or the wrong kind\n\t•\tInhaled poison\n\t•\tGotten poison on the skin or in the eye\n\t•\tSwallowed a household product or other chemical"
         },
         {
           "heading": "Treat Symptoms as Directed",
@@ -3761,10 +3761,6 @@
         }
       ],
       "Suicidal_thoughts": [
-        {
-          "heading": "",
-          "content": "\t•"
-        },
         {
           "heading": "Call emergency services",
           "content": "\tIf you think that a friend or loved one might be suicidal, you need to take action. Always take suicidal threats seriously.\n\n\tSigns that a person is at risk of committing suicide include:\n\t•\tExtreme hopelessness\n\t•\tWithdrawal from friends and family\n\t•\tTalking a lot about death or suicide\n\t•\tTrying to get access to pills, firearms, or other possible means of suicide\n\t•\tReckless behavior\n\t•\tGiving away belongings or saying goodbye\n\t•\tIf you think your friend is at risk, here's what you can do."
