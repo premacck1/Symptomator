@@ -56,7 +56,7 @@ class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAdapter.V
                 if (mListener != null) {
                     // Notify the active callbacks interface (the activity, if the
                     // fragment is attached to one) that an item has been selected.
-                    mListener.onListFragmentInteraction(holder.mItem);
+                    mListener.onListFragmentInteraction(true, holder.mItem);
                 }
                 if (mListener2 != null) {
                     // Notify the active callbacks interface (the activity, if the

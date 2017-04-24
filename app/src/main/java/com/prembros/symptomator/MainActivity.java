@@ -324,13 +324,30 @@ public class MainActivity extends AppCompatActivity implements
     }
 
     @Override
-    public void onListFragmentInteraction(final String item) {
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                startActivity(new Intent(MainActivity.this, FirstAidCheck.class).putExtra("topic", item));
+    public void onListFragmentInteraction(boolean flag, final String item) {
+        if (flag) {
+//            FOR LAUNCHING THE FIRST AID DETAILS
+            new Handler().postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    startActivity(new Intent(MainActivity.this, FirstAidCheck.class).putExtra("topic", item));
+                }
+            }, 200);
+        } else {
+//            FOR SCROLLING OF RECYCLERVIEW
+            if (item.equals("up")) {
+                if (navigation.getVisibility() == View.VISIBLE) {
+                    navigation.startAnimation(AnimationUtils.loadAnimation(MainActivity.this, R.anim.sink_down));
+                    navigation.setVisibility(View.INVISIBLE);
+                }
             }
-        }, 200);
+            else if (item.equals("down")) {
+                if (navigation.getVisibility() == View.INVISIBLE) {
+                    navigation.startAnimation(AnimationUtils.loadAnimation(MainActivity.this, R.anim.float_up));
+                    navigation.setVisibility(View.VISIBLE);
+                }
+            }
+        }
     }
 
     @Override

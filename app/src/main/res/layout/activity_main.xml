@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/container"
@@ -8,18 +8,22 @@
     android:layout_height="match_parent"
     tools:context="com.prembros.symptomator.MainActivity">
 
+    <!--MAIN FRAGMENT CONTAINER-->
     <FrameLayout
         android:id="@+id/main_fragment_container"
         android:layout_above="@+id/navigation"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 
+    <!--SERVICES-->
     <io.codetail.widget.RevealFrameLayout
         android:id="@+id/reveal_view_container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_marginLeft="50dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="?attr/actionBarSize"
         android:layout_above="@+id/navigation">
 
         <LinearLayout
@@ -153,15 +157,17 @@
 
     </io.codetail.widget.RevealFrameLayout>
 
+    <!--BOTTOM NAVIGATION VIEW-->
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/navigation"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="?attr/actionBarSize"
         android:layout_gravity="bottom"
         android:layout_alignParentBottom="true"
         android:background="@color/colorDividerLight"
         app:menu="@menu/navigation" />
 
+    <!--MENU FRAGMENT CONTAINER-->
     <io.codetail.widget.RevealFrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -173,4 +179,4 @@
 
     </io.codetail.widget.RevealFrameLayout>
 
-</RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

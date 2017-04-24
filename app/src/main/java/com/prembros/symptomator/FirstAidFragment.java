@@ -18,6 +18,7 @@ import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AbsListView;
 import android.widget.LinearLayout;
 
 import com.balysv.materialripple.MaterialRippleLayout;
@@ -26,14 +27,13 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import io.codetail.animation.SupportAnimator;
-
 public class FirstAidFragment extends Fragment implements RecyclerView.OnItemTouchListener{
 
     private OnFirstAidListFragmentInteractionListener mListener;
     private MyRecyclerViewAdapter myFirstAidRecyclerViewAdapter;
-    private boolean hidden = true;
-    SupportAnimator animator;
+//    private boolean hidden = true;
+//    SupportAnimator animator;
+//    private boolean scrolling = false;
     private RecyclerView list;
     private Context context;
     private List<String> firstAidList;
@@ -79,9 +79,40 @@ public class FirstAidFragment extends Fragment implements RecyclerView.OnItemTou
             @Override
             public void onItemClick(View view, int position) {
                 AppCompatTextView textView = ((MaterialRippleLayout)((LinearLayout) list.findViewHolderForAdapterPosition(position).itemView).getChildAt(0)).getChildView();
-                mListener.onListFragmentInteraction(textView.getText().toString());
+                mListener.onListFragmentInteraction(true, textView.getText().toString());
             }
         }));
+
+        list.addOnScrollListener(new RecyclerView.OnScrollListener() {
+            private boolean scrolling = false;
+            @Override
+            public void onScrollStateChanged(RecyclerView recyclerView, int newState) {
+                super.onScrollStateChanged(recyclerView, newState);
+                if (newState == RecyclerView.SCROLL_STATE_IDLE) {
+                    scrolling = false;
+                }
+                else if (newState == RecyclerView.SCROLL_STATE_DRAGGING) {
+                    scrolling = true;
+                }
+                else if (newState == AbsListView.OnScrollListener.SCROLL_STATE_FLING) {
+                    scrolling = true;
+                }
+            }
+
+            @Override
+            public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
+                super.onScrolled(recyclerView, dx, dy);
+                if (scrolling) {
+                    if (dy > 0) {
+//                    SCROLLING UP
+                        mListener.onListFragmentInteraction(false, "up");
+                    } else {
+//                    SCROLLING DOWN
+                        mListener.onListFragmentInteraction(false, "down");
+                    }
+                }
+            }
+        });
 
         return view;
     }
@@ -211,7 +242,7 @@ public class FirstAidFragment extends Fragment implements RecyclerView.OnItemTou
     }
 
     interface OnFirstAidListFragmentInteractionListener {
-        void onListFragmentInteraction(String item);
+        void onListFragmentInteraction(boolean flag, String item);
     }
 
     @Override
