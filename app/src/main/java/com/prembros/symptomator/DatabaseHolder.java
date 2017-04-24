@@ -38,7 +38,7 @@ class DatabaseHolder {
     private final String ambulance_tableName = "Ambulance";
     private final String patient_tableName = "Patient";
 
-    private static final String create_table_symptom_list = "create table if not exists SymptomList (Symptom text not null, BodyPart text not null, Sex text not null);";
+    private static final String create_table_symptom_list = "create table if not exists SymptomList (Symptom text not null, BodyPart text not null, Sex text not null, Condition text not null);";
 
     private static final String create_table_emergency_numbers = "create table if not exists emergencyNumbers(Country text not null, Code text not null, Number text not null)";
 
@@ -73,11 +73,12 @@ class DatabaseHolder {
         dbHelper.close();
     }
 
-    long insertInSymptomListTable(String symptom, String bodyPart, String sex){
+    long insertInSymptomListTable(String symptom, String bodyPart, String sex, String condition){
         ContentValues content = new ContentValues();
         content.put("Symptom", symptom);
         content.put("BodyPart", bodyPart);
         content.put("Sex", sex);
+        content.put("Condition", condition);
         return db.insertOrThrow(symptomList_tableName, null, content);
     }
 

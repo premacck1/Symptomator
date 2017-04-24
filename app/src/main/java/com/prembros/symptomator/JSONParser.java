@@ -14,7 +14,7 @@ import java.util.ArrayList;
 
 class JSONParser extends ArrayList<Beans> {
 
-    ArrayList<Beans> parse(JSONObject jsonObject, String field, String topic){
+    ArrayList<Beans> parseFirstAidJSON(JSONObject jsonObject, String field, String topic){
 
 //        String t = topic.substring(0, 4) + "the personf NOW if";
         JSONArray jFieldArray;
@@ -87,4 +87,8 @@ class JSONParser extends ArrayList<Beans> {
         }
         return beans;
     }
+
+//    ArrayList<Beans> parseSymptomJSON(JSONObject jsonObject, String field, String topic){
+//
+//    }
 }

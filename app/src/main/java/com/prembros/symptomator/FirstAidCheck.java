@@ -57,7 +57,7 @@ public class FirstAidCheck extends AppCompatActivity {
     public String readJSONFromFile() throws IOException {
         BufferedReader bufferedReader = new BufferedReader(
                 new InputStreamReader(
-                        getAssets().open("json.txt")
+                        getAssets().open("FirstAidJSON.txt")
                 )
         );
         String read;
@@ -108,7 +108,7 @@ public class FirstAidCheck extends AppCompatActivity {
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
-                result = new JSONParser().parse(jsonObject, "First_aid", strings[0]);
+                result = new JSONParser().parseFirstAidJSON(jsonObject, "First_aid", strings[0]);
             } else {
             Log.d("ERROR in firstAidCheck:", "Class - FirstAidCheck, method - parseInBackground, JSONString was null");
             result = null;
