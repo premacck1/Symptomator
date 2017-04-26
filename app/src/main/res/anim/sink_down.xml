@@ -5,14 +5,13 @@
         android:fromXDelta="0"
         android:toXDelta="0"
         android:fromYDelta="0"
-        android:toYDelta="50"
-        android:duration="300"
-        android:interpolator="@android:anim/decelerate_interpolator"
-        android:startOffset="400" />
+        android:toYDelta="100"
+        android:duration="500"
+        android:interpolator="@android:anim/decelerate_interpolator" />
 
     <alpha
         android:fromAlpha="1"
         android:toAlpha="0"
         android:interpolator="@android:anim/decelerate_interpolator"
-        android:duration="300" />
+        android:duration="400" />
 </set>
