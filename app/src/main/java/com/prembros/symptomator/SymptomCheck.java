@@ -21,6 +21,7 @@ import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.animation.AccelerateDecelerateInterpolator;
+import android.view.animation.AnimationUtils;
 import android.widget.FrameLayout;
 import android.widget.Toast;
 
@@ -126,7 +127,7 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
                         }
                     }
                 }
-                symptomList.add("Didn't find what you were looking for?\nLook in the whole Symptom directory");
+                symptomList.add("Could not find what you were looking for?\nLook in the whole Symptom directory");
                 if (cursor != null) {
                     cursor.close();
                 }
@@ -157,6 +158,34 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
 //                floatingActionMenu.close(true);
             }
         }));
+
+        recyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
+            @Override
+            public void onScrollStateChanged(RecyclerView recyclerView, int newState) {
+                super.onScrollStateChanged(recyclerView, newState);
+            }
+
+            @Override
+            public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
+                super.onScrolled(recyclerView, dx, dy);
+                if (dy > 25) {
+                    hideOrShow(floatingActionMenu, false);
+                }
+                else if (dy < -25) {
+                    hideOrShow(floatingActionMenu, true);
+                }
+            }
+        });
+    }
+
+    void hideOrShow(FloatingActionMenu floatingActionMenu, boolean shown) {
+        if (floatingActionMenu.getVisibility() == View.INVISIBLE && shown) {
+            floatingActionMenu.startAnimation(AnimationUtils.loadAnimation(SymptomCheck.this, R.anim.float_up));
+            floatingActionMenu.setVisibility(View.VISIBLE);
+        } else if (floatingActionMenu.getVisibility() == View.VISIBLE && !shown) {
+            floatingActionMenu.startAnimation(AnimationUtils.loadAnimation(SymptomCheck.this, R.anim.sink_down));
+            floatingActionMenu.setVisibility(View.INVISIBLE);
+        }
     }
 
     @Override
@@ -184,8 +213,8 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
                     if (text.contains(newText))
                         filteredList.add(symptomList.get(x));
                 }
-                if (!filteredList.contains("Didn't find")) {
-                    filteredList.add("Didn't find what you were looking for?\nLook in the whole Symptom directory");
+                if (!filteredList.contains("Could not find")) {
+                    filteredList.add("Could not find what you were looking for?\nLook in the whole Symptom directory");
                 }
 
                 recyclerView.setLayoutManager(new LinearLayoutManager(SymptomCheck.this));

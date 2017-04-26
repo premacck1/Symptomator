@@ -109,6 +109,7 @@ class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAdapter.V
                                 try {
                                     db.open();
                                     db.insertInSelectedSymptomsTable(viewText);
+                                    db.insertInSelectedSymptomsTable(viewText);
                                     db.close();
                                 } catch (SQLException e) {
                                     Log.d("SQLException ERROR!", e.getMessage());

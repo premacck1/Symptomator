@@ -163,10 +163,10 @@ public class FirstAidFragment extends Fragment implements RecyclerView.OnItemTou
             public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
                 super.onScrolled(recyclerView, dx, dy);
                 if (scrolling) {
-                    if (dy > 5) {
+                    if (dy > 25) {
 //                    SCROLLING UP
                         mListener.onListFragmentInteraction(false, "up");
-                    } else if (dy < -5){
+                    } else if (dy < -25){
 //                    SCROLLING DOWN
                         mListener.onListFragmentInteraction(false, "down");
                     }
@@ -261,7 +261,7 @@ public class FirstAidFragment extends Fragment implements RecyclerView.OnItemTou
                     if (text.contains(newText))
                         filteredList.add(firstAidList.get(x));
                 }
-                filteredList.add("Didn't find what you were looking for?\nClick here to search online");
+                filteredList.add("Could not find what you were looking for?\nClick here to search online");
 //                if (!newText.equals("")) {
 //                }
 

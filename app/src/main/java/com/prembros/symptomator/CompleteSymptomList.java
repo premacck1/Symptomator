@@ -62,7 +62,7 @@ public class CompleteSymptomList extends Fragment {
                         }
                     }
                 }
-                completeSymptomList.add("Still didn't find it?\nClick here to search online");
+                completeSymptomList.add("Still could not find it?\nClick here to search online");
                 if (cursor != null) {
                     cursor.close();
                 }
@@ -140,7 +140,7 @@ public class CompleteSymptomList extends Fragment {
                         filteredList.add(completeSymptomList.get(x));
                 }
                 if (filteredList.size() != completeSymptomList.size())
-                    filteredList.add("Still didn't find it?\nClick here to search online");
+                    filteredList.add("Still could not find it?\nClick here to search online");
 
                 list.setLayoutManager(new LinearLayoutManager(getContext()));
                 recyclerViewAdapter = new MyRecyclerViewAdapter(false, getContext(), filteredList, null, mListener, null);
