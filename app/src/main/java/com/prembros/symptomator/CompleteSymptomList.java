@@ -41,7 +41,7 @@ public class CompleteSymptomList extends Fragment {
         // Inflate the layout for this fragment
         final View rootView = inflater.inflate(R.layout.fragment_complete_symptom_list, container, false);
         final TextInputEditText searchBar = (TextInputEditText) rootView.findViewById(R.id.complete_symptom_search_bar);
-        final RecyclerView list = (RecyclerView) rootView.findViewById(R.id.first_aid_list);
+        final RecyclerView list = (RecyclerView) rootView.findViewById(R.id.recyclerview_list);
 
         completeSymptomList = new ArrayList<>();
         db = new DatabaseHolder(getContext());
@@ -70,7 +70,7 @@ public class CompleteSymptomList extends Fragment {
             }
         }).start();
 
-        recyclerViewAdapter = new MyRecyclerViewAdapter(
+        recyclerViewAdapter = new MyRecyclerViewAdapter( true,
                 getContext(), completeSymptomList, null, mListener
         );
         list.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL, false));
@@ -143,7 +143,7 @@ public class CompleteSymptomList extends Fragment {
                     filteredList.add("Still didn't find it?\nClick here to search online");
 
                 list.setLayoutManager(new LinearLayoutManager(getContext()));
-                recyclerViewAdapter = new MyRecyclerViewAdapter(getContext(), filteredList, null, mListener);
+                recyclerViewAdapter = new MyRecyclerViewAdapter(true, getContext(), filteredList, null, mListener);
                 list.setAdapter(recyclerViewAdapter);
                 recyclerViewAdapter.notifyDataSetChanged();
             }

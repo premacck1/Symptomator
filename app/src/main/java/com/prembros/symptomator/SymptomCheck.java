@@ -2,23 +2,30 @@ package com.prembros.symptomator;
 
 import android.app.SearchManager;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.StrictMode;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.ActionBar;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.SearchView;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.animation.AccelerateDecelerateInterpolator;
+import android.widget.AdapterView;
 import android.widget.FrameLayout;
+import android.widget.ListView;
+import android.widget.Toast;
+
+import com.github.clans.fab.FloatingActionButton;
+import com.github.clans.fab.FloatingActionMenu;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,20 +36,16 @@ import static io.codetail.animation.ViewAnimationUtils.createCircularReveal;
 
 public class SymptomCheck extends AppCompatActivity implements CompleteSymptomList.OnFragmentInteractionListener {
 
-//    private boolean hidden = true;
-//    SupportAnimator animator;
-    int itemCount;
     private ActionBar actionBar;
-    private MyRecyclerViewAdapter recyclerViewAdapter;
+    private SymptomListViewAdapter listViewAdapter;
     private List<String> symptomList;
-    private RecyclerView recyclerView;
-    private FrameLayout layoutContainer;
+    private ListView listView;
     private FragmentManager fragmentManager;
     private FrameLayout revealView;
-//    private boolean hidden = true;
     boolean somethingIsActive = false;
     private SupportAnimator animator;
     private int[] touchCoordinate = new int[2];
+    private DatabaseHolder db;
 
     @Override
     public boolean dispatchTouchEvent(MotionEvent ev) {
@@ -61,6 +64,7 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
         setContentView(R.layout.activity_symptom_check);
 
         revealView = (FrameLayout) this.findViewById(R.id.menu_fragment_container);
+        db = new DatabaseHolder(this);
 
         actionBar = getSupportActionBar();
         if (actionBar != null) {
@@ -69,7 +73,25 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
             actionBar.setTitle(R.string.symptom);
         }
 
-        final DatabaseHolder dbHandler = new DatabaseHolder(this);
+        final FloatingActionMenu floatingActionMenu = (FloatingActionMenu) this.findViewById(R.id.fab_menu);
+        FloatingActionButton fabShowSelectedSymptoms = (FloatingActionButton) this.findViewById(R.id.fab_1_show_selected_symptoms);
+        FloatingActionButton fabClearSymptomSelection = (FloatingActionButton) this.findViewById(R.id.fab_2_delete_all_symptoms);
+
+        fabShowSelectedSymptoms.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                new ShowSelectedSymptoms().execute("showSelectedSymptoms");
+                floatingActionMenu.close(true);
+            }
+        });
+        fabClearSymptomSelection.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                new ShowSelectedSymptoms().execute("delete");
+                floatingActionMenu.close(true);
+            }
+        });
+
         fragmentManager = getSupportFragmentManager();
 
         Intent intent = getIntent();
@@ -80,14 +102,13 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
         actionBar.setSubtitle(headerText);
 
         symptomList = new ArrayList<>();
-        recyclerView = (RecyclerView) this.findViewById(R.id.first_aid_list);
-        layoutContainer = (FrameLayout) this.findViewById(R.id.symptom_check_layout);
+        listView = (ListView) this.findViewById(R.id.symptoms_listview);
 
         new Thread(new Runnable() {
             @Override
             public void run() {
-                dbHandler.open();
-                Cursor cursor = dbHandler.returnSymptoms(selectedSex, selectedBodyPart);
+                db.open();
+                Cursor cursor = db.returnSymptoms(selectedSex, selectedBodyPart);
                 if (cursor != null) {
                     cursor.moveToFirst();
                     while (!cursor.isAfterLast()) {
@@ -103,91 +124,21 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
                 if (cursor != null) {
                     cursor.close();
                 }
-                dbHandler.close();
+                db.close();
             }
         }
         ).start();
 
-        recyclerViewAdapter = new MyRecyclerViewAdapter(this, symptomList, null, null);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        recyclerView.setAdapter(recyclerViewAdapter);
-
-        recyclerView.addOnItemTouchListener(new RecyclerViewOnItemClickListener(this, new RecyclerViewOnItemClickListener.OnItemClickListener() {
+        listViewAdapter = new SymptomListViewAdapter(this, symptomList);
+        symptomList.clear();
+        listView.setAdapter(listViewAdapter);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(View view, int position) {
-                itemCount = recyclerViewAdapter.getItemCount();
-//                Toast.makeText(SymptomCheck.this, "Clicked: " + position + " : " + itemCount, Toast.LENGTH_SHORT).show();
-                if (position == itemCount - 1){
-                    actionBar.hide();
-                    layoutContainer.setVisibility(View.INVISIBLE);
-                    fragmentManager.beginTransaction()
-                            .setCustomAnimations(R.anim.fragment_anim_in, R.anim.fragment_anim_out)
-                            .add(R.id.symptom_check_fragment_container, new CompleteSymptomList(), "completeSymptomList")
-                            .commit();
-                    somethingIsActive = true;
-                }
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                floatingActionMenu.close(true);
             }
-        }));
+        });
     }
-
-//    public void animationForward(View v, FrameLayout mRevealView, AppCompatImageButton searchButton,
-//                                 TextView header, AutoCompleteTextView searchBar){
-////        float pixelDensity = getResources().getDisplayMetrics().density;
-//        int centerX = (v.getLeft() + v.getRight()) / 2;
-//        int centerY = (v.getTop() + v.getBottom()) / 2;
-//        int startRadius = 0;
-//        int endRadius = (int) Math.hypot(mRevealView.getWidth(), mRevealView.getHeight());
-//        animator = ViewAnimationUtils.createCircularReveal(mRevealView, centerX, centerY, startRadius, endRadius);
-//        animator.setInterpolator(new AccelerateDecelerateInterpolator());
-//        animator.setDuration(400);
-//        if (hidden){
-//            animator.start();
-//            mRevealView.setVisibility(View.VISIBLE);
-//            searchButton.setVisibility(View.INVISIBLE);
-//            header.setVisibility(View.INVISIBLE);
-//            if(searchBar.requestFocus()) {
-//                InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
-//                imm.showSoftInput(searchBar, InputMethodManager.SHOW_IMPLICIT);
-//            }
-//            hidden = false;
-//        }
-//    }
-//
-//    public void animationReversed(final FrameLayout mRevealView, final AppCompatImageButton searchButton,
-//                                  final TextView header, final AutoCompleteTextView searchBar){
-//        if (animator != null && !animator.isRunning()){
-//            InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
-//            imm.hideSoftInputFromWindow(searchBar.getWindowToken(), 0);
-//            animator = animator.reverse();
-//            animator.addListener(new SupportAnimator.AnimatorListener() {
-//                @Override
-//                public void onAnimationStart() {
-//
-//                }
-//
-//                @Override
-//                public void onAnimationEnd() {
-//                    searchBar.setText("");
-//                    searchBar.clearFocus();
-//                    mRevealView.setVisibility(View.GONE);
-//                    searchButton.setVisibility(View.VISIBLE);
-//                    header.setVisibility(View.VISIBLE);
-//                    hidden = true;
-//                }
-//
-//                @Override
-//                public void onAnimationCancel() {
-//
-//                }
-//
-//                @Override
-//                public void onAnimationRepeat() {
-//
-//                }
-//            });
-//            animator.start();
-//        }
-//    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -214,15 +165,13 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
                     if (text.contains(newText))
                         filteredList.add(symptomList.get(x));
                 }
-                if (!filteredList.contains("Didn't find what you were looking for?\nLook in the whole Symptom directory")) {
+                if (!filteredList.contains("Didn't find")) {
                     filteredList.add("Didn't find what you were looking for?\nLook in the whole Symptom directory");
                 }
 
-                recyclerView.setLayoutManager(new LinearLayoutManager(SymptomCheck.this));
-                recyclerViewAdapter = new MyRecyclerViewAdapter(SymptomCheck.this, filteredList, null, null);
-                itemCount = recyclerViewAdapter.getItemCount();
-                recyclerView.setAdapter(recyclerViewAdapter);
-                recyclerViewAdapter.notifyDataSetChanged();
+                listViewAdapter = new SymptomListViewAdapter(SymptomCheck.this, filteredList);
+                listView.setAdapter(listViewAdapter);
+                listViewAdapter.notifyDataSetChanged();
                 return true;
             }
         });
@@ -266,10 +215,6 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
 //            actionBar.setSubtitle(previousTitles[1]);
 //        }
         if (animator != null && !animator.isRunning()){
-
-//            fab.setBackgroundColor(Color.rgb(0, 188, 212));
-//            fab.setImageResource(R.drawable.ic_add_shopping_cart);
-
             animator = animator.reverse();
             animator.addListener(new SupportAnimator.AnimatorListener() {
                 @Override
@@ -306,7 +251,7 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
                             .setCustomAnimations(R.anim.fragment_anim_in, R.anim.fragment_anim_out)
                             .remove(fragmentManager.findFragmentByTag(tag))
                             .commit();
-                    layoutContainer.setVisibility(View.VISIBLE);
+                    listView.setVisibility(View.VISIBLE);
                     somethingIsActive = false;
                     break;
                 case "about":
@@ -324,6 +269,65 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
                 default:
                     break;
             }
+        }
+    }
+
+    /*ASYNCTASK FOR SHOWING OR DELETING SELECTED SYMPTOMS*/
+    private class ShowSelectedSymptoms extends AsyncTask<String, Void, Void> {
+
+        private boolean showSelectedSymptoms = false;
+        StringBuilder builder;
+
+        @Override
+        protected Void doInBackground(String... strings) {
+            ArrayList<String> selectedSymptoms = new ArrayList<>();
+            if (strings[0].equals("showSelectedSymptoms")) {                                        /*SHOW SELECTED SYMPTOMS*/
+                showSelectedSymptoms = true;
+                builder = new StringBuilder();
+                db.open();
+                Cursor cursor = db.returnSelectedSymptoms();
+                if (cursor != null) {
+                    cursor.moveToFirst();
+                    while (!cursor.isAfterLast()) {
+                        try {
+                            selectedSymptoms.add(cursor.getString(cursor.getColumnIndex("Symptom")));
+                            cursor.moveToNext();
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                        }
+                    }
+                    cursor.close();
+                }
+                db.close();
+
+                for (String string : selectedSymptoms) {
+                    builder.append(string).append("\n");
+                }
+            } else {                                                                                /*CLEAR SYMPTOM SELECTION*/
+                db.open();
+                db.resetSelectedSymptomsTable();
+                db.close();
+                Toast.makeText(SymptomCheck.this, "Selection cleared!", Toast.LENGTH_SHORT).show();
+                showSelectedSymptoms = false;
+            }
+            return null;
+        }
+
+        @Override
+        protected void onPostExecute(Void aVoid) {
+            if (showSelectedSymptoms) {
+                new AlertDialog.Builder(SymptomCheck.this)
+                        .setTitle("Your selected symptoms")
+                        .setMessage(builder.toString())
+                        .setPositiveButton("okay", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                dialogInterface.dismiss();
+                            }
+                        })
+                        .show();
+            }
+            super.onPostExecute(aVoid);
         }
     }
 

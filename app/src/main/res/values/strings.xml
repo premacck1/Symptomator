@@ -360,4 +360,5 @@
     </string>
     <string name="find">Find</string>
     <string name="powered_by_google">Powered by google</string>
+    <string name="selected_symptoms">Selected Symptoms</string>
 </resources>

@@ -21,11 +21,13 @@ class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAdapter.V
     private OnFirstAidListFragmentInteractionListener mListener;
     private CompleteSymptomList.OnFragmentInteractionListener mListener2;
     private Context context;
+    private boolean isViewChecked;
     private int lastPosition = -1;
 
-    MyRecyclerViewAdapter(Context context, List<String> items,
+    MyRecyclerViewAdapter(boolean isViewChecked, Context context, List<String> items,
                           FirstAidFragment.OnFirstAidListFragmentInteractionListener listener,
                           CompleteSymptomList.OnFragmentInteractionListener listener2) {
+        this.isViewChecked = isViewChecked;
         mValues = items;
         if (listener != null)
             mListener = listener;
@@ -36,9 +38,14 @@ class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAdapter.V
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.recycler_view_list_item, parent, false);
-
+        View view;
+        if (isViewChecked){
+            view = LayoutInflater.from(parent.getContext())
+                    .inflate(R.layout.recycler_view_list_item_check, parent, false);
+        } else {
+            view = LayoutInflater.from(parent.getContext())
+                    .inflate(R.layout.recycler_view_list_item, parent, false);
+        }
         return new ViewHolder(view);
     }
 
@@ -93,14 +100,12 @@ class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAdapter.V
     class ViewHolder extends RecyclerView.ViewHolder {
         final View mView;
         final TextView mIdView;
-//        final TextView mContentView;
         String mItem;
 
         ViewHolder(View view) {
             super(view);
             mView = view;
             mIdView = (TextView) view.findViewById(R.id.recycler_view_list_item);
-//            mContentView = (TextView) view.findViewById(R.id.content);
         }
 
         @Override

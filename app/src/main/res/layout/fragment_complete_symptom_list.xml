@@ -4,7 +4,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:paddingTop="@dimen/activity_horizontal_margin"
-    android:paddingBottom="@dimen/activity_horizontal_margin"
     tools:context="com.prembros.symptomator.CompleteSymptomList">
 
     <android.support.design.widget.TextInputLayout
@@ -22,13 +21,6 @@
 
     </android.support.design.widget.TextInputLayout>
 
-    <FrameLayout
-        android:background="@drawable/checked_button_disabled"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <include layout="@layout/recycler_view_list"/>
-
-    </FrameLayout>
+    <include layout="@layout/recycler_view_list"/>
 
 </LinearLayout>
