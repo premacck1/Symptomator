@@ -19,12 +19,15 @@ import java.util.List;
  */
 
 class SymptomListViewAdapter extends BaseAdapter {
+
+    private DatabaseHolder db;
     private List<String> symptoms;
-    Context context;
+    private Context context;
     private LayoutInflater inflter;
 //    private String value;
 
     SymptomListViewAdapter(Context context, List<String> symptoms) {
+        db = new DatabaseHolder(context);
         this.context = context;
         this.symptoms = symptoms;
         inflter = (LayoutInflater.from(context));
@@ -56,7 +59,6 @@ class SymptomListViewAdapter extends BaseAdapter {
             simpleCheckedTextView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    final DatabaseHolder db = new DatabaseHolder(context);
                     final String viewText = simpleCheckedTextView.getText().toString();
                     if (simpleCheckedTextView.isChecked()) {
 //                        value = "un-Checked";
