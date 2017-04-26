@@ -70,8 +70,8 @@ public class CompleteSymptomList extends Fragment {
             }
         }).start();
 
-        recyclerViewAdapter = new MyRecyclerViewAdapter( true,
-                getContext(), completeSymptomList, null, mListener
+        recyclerViewAdapter = new MyRecyclerViewAdapter( false,
+                getContext(), completeSymptomList, null, mListener, null
         );
         list.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL, false));
         list.setAdapter(recyclerViewAdapter);
@@ -143,7 +143,7 @@ public class CompleteSymptomList extends Fragment {
                     filteredList.add("Still didn't find it?\nClick here to search online");
 
                 list.setLayoutManager(new LinearLayoutManager(getContext()));
-                recyclerViewAdapter = new MyRecyclerViewAdapter(true, getContext(), filteredList, null, mListener);
+                recyclerViewAdapter = new MyRecyclerViewAdapter(false, getContext(), filteredList, null, mListener, null);
                 list.setAdapter(recyclerViewAdapter);
                 recyclerViewAdapter.notifyDataSetChanged();
             }
