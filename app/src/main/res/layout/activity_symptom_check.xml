@@ -15,17 +15,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 
-    <io.codetail.widget.RevealFrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <FrameLayout
-            android:id="@+id/menu_fragment_container"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
-    </io.codetail.widget.RevealFrameLayout>
-
     <LinearLayout
         android:orientation="horizontal"
         android:id="@+id/fab_menu"
@@ -65,5 +54,41 @@
             tools:ignore="VectorDrawableCompat" />
 
     </LinearLayout>
+
+    <io.codetail.widget.RevealFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/menu_fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </io.codetail.widget.RevealFrameLayout>
+
+    <io.codetail.widget.RevealFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:visibility="invisible"
+            android:id="@+id/clear_animation_revealView"
+            android:background="@color/colorSecondary"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="28sp"
+                android:textColor="@color/white_text_icons"
+                android:text="@string/selection_cleared"/>
+
+        </FrameLayout>
+
+    </io.codetail.widget.RevealFrameLayout>
 
 </android.support.design.widget.CoordinatorLayout>

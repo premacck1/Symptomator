@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity implements
                             actionBar.setTitle(R.string.services);
                             actionBar.setSubtitle(R.string.services_subtitle);
                         }
-                        animationForward(revealView, touchCoordinate);
+                        animationForward(revealView, touchCoordinate, 600);
                         hidden = false;
                     } else {
                         animationReversed(revealView);
@@ -236,14 +236,14 @@ public class MainActivity extends AppCompatActivity implements
                 .show();
     }
 
-    public void animationForward(View mRevealView, int[] center){
+    public void animationForward(View mRevealView, int[] center, int duration){
         int centerX = center[0];
         int centerY = center[1];
         int startRadius = 0;
         int endRadius = (int) (Math.hypot(mRevealView.getWidth() * 1.6, mRevealView.getHeight() * 1.6));
         animator = createCircularReveal(mRevealView, centerX, centerY, startRadius, endRadius);
         animator.setInterpolator(new AccelerateDecelerateInterpolator());
-        animator.setDuration(400);
+        animator.setDuration(duration);
 
         animator.start();
         mRevealView.setVisibility(View.VISIBLE);
@@ -305,7 +305,7 @@ public class MainActivity extends AppCompatActivity implements
                 onBackPressed();
                 return true;
             case R.id.action_about:
-                animationForward(this.findViewById(R.id.menu_fragment_container), touchCoordinate);
+                animationForward(this.findViewById(R.id.menu_fragment_container), touchCoordinate, 800);
                 navigation.setVisibility(View.GONE);
                 fragmentManager.beginTransaction().add(R.id.menu_fragment_container, new About(), "about").commit();
                 somethingIsActive = true;

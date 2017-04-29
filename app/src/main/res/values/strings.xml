@@ -363,4 +363,5 @@
     <string name="selected_symptoms">Selected Symptoms</string>
     <string name="show_selected_symptoms">Show selected symptoms</string>
     <string name="clear_all_selected_symptoms">Clear all selected symptoms</string>
+    <string name="selection_cleared">Selection cleared!</string>
 </resources>

@@ -158,19 +158,16 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
         fabClearSymptomSelection.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast toast;
                 if (clearFlag) {
                     new ShowSelectedSymptoms().execute("delete");
-                    toast = Toast.makeText(SymptomCheck.this, "Selection cleared!", Toast.LENGTH_SHORT);
-                    toast.setGravity(Gravity.CENTER, 0, 0);
-                    toast.show();
+//                    toast = Toast.makeText(SymptomCheck.this, "Selection cleared!", Toast.LENGTH_SHORT);
+//                    toast.setGravity(Gravity.CENTER, 0, 0);
+//                    toast.show();
                     uncheckAllViews(recyclerView, symptomList);
                     return;
                 }
                 clearFlag = true;
-                toast = Toast.makeText(SymptomCheck.this, "Click again to confirm.", Toast.LENGTH_SHORT);
-                toast.setGravity(Gravity.CENTER, 0, 0);
-                toast.show();
+                makeToast(view, "Click again to confirm.");
 
                 new Handler().postDelayed(new Runnable() {
                     @Override
@@ -205,6 +202,7 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
     }
 
     public void uncheckAllViews(final RecyclerView recyclerView, final List<String> items) {
+        final View revealView = this.findViewById(R.id.clear_animation_revealView);
 //        final CheckedTextView[] checkedTextView = new CheckedTextView[1];
 //        for (int i = 0; i < recyclerView.getChildCount(); i++) {
 ////            MyRecyclerViewAdapter.mCheckedItems.put(i, false);
@@ -212,13 +210,15 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
 //            checkedTextView[0].setChecked(false);
 //        }
 //        adapter.notifyDataSetChanged();
+        animationForward(revealView, touchCoordinate[0], touchCoordinate[1], 600);
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
                 recyclerView.setAdapter(new MyRecyclerViewAdapter(true, SymptomCheck.this, items, null));
+                animationReversed(revealView);
             }
-        }, 600);
-        recyclerView.smoothScrollToPosition(0);
+        }, 1000);
+//        recyclerView.smoothScrollToPosition(0);
     }
 
     public void onRecyclerViewItemClick(CheckedTextView checkedTextView, int position, int lastPosition) {
@@ -330,7 +330,7 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
                 onBackPressed();
                 return true;
             case R.id.action_about:
-                animationForward(revealView, touchCoordinate[0], touchCoordinate[1]);
+                animationForward(revealView, touchCoordinate[0], touchCoordinate[1], 600);
                 fragmentManager.beginTransaction().add(R.id.menu_fragment_container, new About(), "about").commit();
                 somethingIsActive = true;
             default:
@@ -343,12 +343,12 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
 
     }
 
-    public void animationForward(View mRevealView, int centerX, int centerY){
+    public void animationForward(View mRevealView, int centerX, int centerY, int duration){
         int startRadius = 0;
         int endRadius = (int) (Math.hypot(mRevealView.getWidth() * 2, mRevealView.getHeight() * 2));
         animator = createCircularReveal(mRevealView, centerX, centerY, startRadius, endRadius);
         animator.setInterpolator(new AccelerateDecelerateInterpolator());
-        animator.setDuration(400);
+        animator.setDuration(duration);
 
         animator.start();
         mRevealView.setVisibility(View.VISIBLE);
