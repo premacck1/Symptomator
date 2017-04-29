@@ -278,7 +278,7 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
                     fab1.startAnimation(AnimationUtils.loadAnimation(SymptomCheck.this, R.anim.float_up));
                     fab1.setVisibility(View.VISIBLE);
                 }
-            }, 200);
+            }, 100);
         } else if (fab1.getVisibility() == View.VISIBLE && !shown) {
             fab2.startAnimation(AnimationUtils.loadAnimation(SymptomCheck.this, R.anim.sink_down));
             fab2.setVisibility(View.INVISIBLE);
@@ -288,7 +288,7 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
                     fab1.startAnimation(AnimationUtils.loadAnimation(SymptomCheck.this, R.anim.sink_down));
                     fab1.setVisibility(View.INVISIBLE);
                 }
-            }, 200);
+            }, 100);
         }
     }
 
