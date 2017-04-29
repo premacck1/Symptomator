@@ -28,7 +28,6 @@ import android.view.animation.AccelerateDecelerateInterpolator;
 import android.view.animation.AnimationUtils;
 import android.widget.CheckedTextView;
 import android.widget.FrameLayout;
-import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import java.sql.SQLException;
@@ -52,7 +51,6 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
     private int[] touchCoordinate = new int[2];
     private DatabaseHolder db;
     private List<String> selectedSymptoms;
-    private LinearLayout floatingActionMenu;
     private boolean clearFlag = false;
 
     @Override
@@ -121,7 +119,8 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(recyclerViewAdapter);
 
-//        recyclerView.addOnItemTouchListener(new RecyclerViewOnItemClickListener(this, this));
+        final FloatingActionButton fabShowSelectedSymptoms = (FloatingActionButton) this.findViewById(R.id.fab_1_show_selected_symptoms);
+        final FloatingActionButton fabClearSymptomSelection = (FloatingActionButton) this.findViewById(R.id.fab_2_delete_all_symptoms);
 
         recyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
             @Override
@@ -132,21 +131,16 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
             @Override
             public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
                 super.onScrolled(recyclerView, dx, dy);
-                if (dy > 10) {
-                    hideOrShow(floatingActionMenu, false);
+                if (dy > 5) {
+                    hideOrShow(fabClearSymptomSelection, fabShowSelectedSymptoms, false);
                 }
-                else if (dy < -10) {
-                    hideOrShow(floatingActionMenu, true);
+                else if (dy < -5) {
+                    hideOrShow(fabClearSymptomSelection, fabShowSelectedSymptoms, true);
                 }
             }
         });
 
         fragmentManager = getSupportFragmentManager();
-
-        floatingActionMenu = (LinearLayout) this.findViewById(R.id.fab_menu);
-        FloatingActionButton fabShowSelectedSymptoms = (FloatingActionButton) this.findViewById(R.id.fab_1_show_selected_symptoms);
-        FloatingActionButton fabClearSymptomSelection = (FloatingActionButton) this.findViewById(R.id.fab_2_delete_all_symptoms);
-
 
         /*FLOATING ACTION BUTTON ON CLICK LISTENERS*/
         fabShowSelectedSymptoms.setOnClickListener(new View.OnClickListener() {
@@ -274,13 +268,27 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
         }
     }
 
-    void hideOrShow(LinearLayout floatingActionMenu, boolean shown) {
-        if (floatingActionMenu.getVisibility() == View.INVISIBLE && shown) {
-            floatingActionMenu.startAnimation(AnimationUtils.loadAnimation(SymptomCheck.this, R.anim.float_up));
-            floatingActionMenu.setVisibility(View.VISIBLE);
-        } else if (floatingActionMenu.getVisibility() == View.VISIBLE && !shown) {
-            floatingActionMenu.startAnimation(AnimationUtils.loadAnimation(SymptomCheck.this, R.anim.sink_down));
-            floatingActionMenu.setVisibility(View.INVISIBLE);
+    void hideOrShow(final FloatingActionButton fab1, final FloatingActionButton fab2, boolean shown) {
+        if (fab2.getVisibility() == View.INVISIBLE && shown) {
+            fab2.startAnimation(AnimationUtils.loadAnimation(SymptomCheck.this, R.anim.float_up));
+            fab2.setVisibility(View.VISIBLE);
+            new Handler().postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    fab1.startAnimation(AnimationUtils.loadAnimation(SymptomCheck.this, R.anim.float_up));
+                    fab1.setVisibility(View.VISIBLE);
+                }
+            }, 200);
+        } else if (fab1.getVisibility() == View.VISIBLE && !shown) {
+            fab2.startAnimation(AnimationUtils.loadAnimation(SymptomCheck.this, R.anim.sink_down));
+            fab2.setVisibility(View.INVISIBLE);
+            new Handler().postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    fab1.startAnimation(AnimationUtils.loadAnimation(SymptomCheck.this, R.anim.sink_down));
+                    fab1.setVisibility(View.INVISIBLE);
+                }
+            }, 200);
         }
     }
 
