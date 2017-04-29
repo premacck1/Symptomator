@@ -41,7 +41,7 @@ public class CompleteSymptomList extends Fragment {
         // Inflate the layout for this fragment
         final View rootView = inflater.inflate(R.layout.fragment_complete_symptom_list, container, false);
         final TextInputEditText searchBar = (TextInputEditText) rootView.findViewById(R.id.complete_symptom_search_bar);
-        final RecyclerView list = (RecyclerView) rootView.findViewById(R.id.recyclerview_list);
+        final RecyclerView list = (RecyclerView) rootView.findViewById(R.id.recyclerview);
 
         completeSymptomList = new ArrayList<>();
         db = new DatabaseHolder(getContext());
@@ -70,9 +70,7 @@ public class CompleteSymptomList extends Fragment {
             }
         }).start();
 
-        recyclerViewAdapter = new MyRecyclerViewAdapter( false,
-                getContext(), completeSymptomList, mListener
-        );
+        recyclerViewAdapter = new MyRecyclerViewAdapter(false, getContext(), completeSymptomList, mListener);
         list.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL, false));
         list.setAdapter(recyclerViewAdapter);
 

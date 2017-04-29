@@ -8,7 +8,7 @@
     android:background="@color/colorDisabled"
     tools:context="com.prembros.symptomator.SymptomCheck">
 
-    <include layout="@layout/recycler_view_list"/>
+    <include layout="@layout/recycler_view"/>
 
     <FrameLayout
         android:id="@+id/symptom_check_fragment_container"

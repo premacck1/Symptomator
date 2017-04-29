@@ -29,10 +29,7 @@ import android.view.animation.AnimationUtils;
 import android.widget.CheckedTextView;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
 import android.widget.Toast;
-
-import com.balysv.materialripple.MaterialRippleLayout;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -75,6 +72,7 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
         setContentView(R.layout.activity_symptom_check);
 
         revealView = (FrameLayout) this.findViewById(R.id.menu_fragment_container);
+        recyclerView = (RecyclerView) this.findViewById(R.id.recyclerview);
         db = new DatabaseHolder(this);
         selectedSymptoms = new ArrayList<>();
 
@@ -85,65 +83,6 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
             actionBar.setTitle(R.string.symptom);
         }
 
-        floatingActionMenu = (LinearLayout) this.findViewById(R.id.fab_menu);
-        FloatingActionButton fabShowSelectedSymptoms = (FloatingActionButton) this.findViewById(R.id.fab_1_show_selected_symptoms);
-        FloatingActionButton fabClearSymptomSelection = (FloatingActionButton) this.findViewById(R.id.fab_2_delete_all_symptoms);
-
-
-        /*FLOATING ACTION BUTTON ON CLICK LISTENERS*/
-        fabShowSelectedSymptoms.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                new ShowSelectedSymptoms().execute("showSelectedSymptoms");
-            }
-        });
-        fabClearSymptomSelection.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast toast;
-                if (clearFlag) {
-                    new ShowSelectedSymptoms().execute("delete");
-                    toast = Toast.makeText(SymptomCheck.this, "Selection cleared!", Toast.LENGTH_SHORT);
-                    toast.setGravity(Gravity.CENTER, 0, 0);
-                    toast.show();
-                    uncheckAllViews(recyclerView, recyclerViewAdapter);
-                    return;
-                }
-                clearFlag = true;
-                toast = Toast.makeText(SymptomCheck.this, "Click again to confirm.", Toast.LENGTH_SHORT);
-                toast.setGravity(Gravity.CENTER, 0, 0);
-                toast.show();
-
-                new Handler().postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        clearFlag = false;
-                    }
-                }, 2000);
-
-//                recyclerView.smoothScrollToPosition(0);
-//                recyclerView.removeAllViews();
-            }
-        });
-
-        /*HELPER TOASTS FOR FLOATING ACTION BUTTONS*/
-        fabShowSelectedSymptoms.setOnLongClickListener(new View.OnLongClickListener() {
-            @Override
-            public boolean onLongClick(View view) {
-                makeToast(view, getString(R.string.show_selected_symptoms));
-                return true;
-            }
-        });
-        fabClearSymptomSelection.setOnLongClickListener(new View.OnLongClickListener() {
-            @Override
-            public boolean onLongClick(View view) {
-                makeToast(view, getString(R.string.clear_all_selected_symptoms));
-                return true;
-            }
-        });
-
-        fragmentManager = getSupportFragmentManager();
-
         Intent intent = getIntent();
         final String selectedSex = intent.getExtras().getString("selectedSex");
 //        String selectedBodyArea = intent.getExtras().getString("selectedBodyArea");
@@ -152,7 +91,6 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
         actionBar.setSubtitle(headerText);
 
         symptomList = new ArrayList<>();
-        recyclerView = (RecyclerView) this.findViewById(R.id.recyclerview_list);
 
         new Thread(new Runnable() {
             @Override
@@ -202,6 +140,62 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
                 }
             }
         });
+
+        fragmentManager = getSupportFragmentManager();
+
+        floatingActionMenu = (LinearLayout) this.findViewById(R.id.fab_menu);
+        FloatingActionButton fabShowSelectedSymptoms = (FloatingActionButton) this.findViewById(R.id.fab_1_show_selected_symptoms);
+        FloatingActionButton fabClearSymptomSelection = (FloatingActionButton) this.findViewById(R.id.fab_2_delete_all_symptoms);
+
+
+        /*FLOATING ACTION BUTTON ON CLICK LISTENERS*/
+        fabShowSelectedSymptoms.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                new ShowSelectedSymptoms().execute("showSelectedSymptoms");
+            }
+        });
+        fabClearSymptomSelection.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast toast;
+                if (clearFlag) {
+                    new ShowSelectedSymptoms().execute("delete");
+                    toast = Toast.makeText(SymptomCheck.this, "Selection cleared!", Toast.LENGTH_SHORT);
+                    toast.setGravity(Gravity.CENTER, 0, 0);
+                    toast.show();
+                    uncheckAllViews(recyclerView, symptomList);
+                    return;
+                }
+                clearFlag = true;
+                toast = Toast.makeText(SymptomCheck.this, "Click again to confirm.", Toast.LENGTH_SHORT);
+                toast.setGravity(Gravity.CENTER, 0, 0);
+                toast.show();
+
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        clearFlag = false;
+                    }
+                }, 2000);
+            }
+        });
+
+        /*HELPER TOASTS FOR FLOATING ACTION BUTTONS*/
+        fabShowSelectedSymptoms.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View view) {
+                makeToast(view, getString(R.string.show_selected_symptoms));
+                return true;
+            }
+        });
+        fabClearSymptomSelection.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View view) {
+                makeToast(view, getString(R.string.clear_all_selected_symptoms));
+                return true;
+            }
+        });
     }
 
     public void makeToast(View view, String text) {
@@ -210,14 +204,20 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
         toast.show();
     }
 
-    public void uncheckAllViews(final RecyclerView recyclerView, final MyRecyclerViewAdapter adapter) {
-        final CheckedTextView[] checkedTextView = new CheckedTextView[1];
-        for (int i = 0; i < recyclerView.getChildCount(); i++) {
-//            MyRecyclerViewAdapter.mCheckedItems.put(i, false);
-            checkedTextView[0] = (CheckedTextView) ((MaterialRippleLayout)((RelativeLayout) recyclerView.getChildAt(0)).getChildAt(0)).getChildAt(0);
-            checkedTextView[0].setChecked(false);
-        }
-        adapter.notifyDataSetChanged();
+    public void uncheckAllViews(final RecyclerView recyclerView, final List<String> items) {
+//        final CheckedTextView[] checkedTextView = new CheckedTextView[1];
+//        for (int i = 0; i < recyclerView.getChildCount(); i++) {
+////            MyRecyclerViewAdapter.mCheckedItems.put(i, false);
+//            checkedTextView[0] = (CheckedTextView) ((MaterialRippleLayout)((RelativeLayout) recyclerView.getChildAt(0)).getChildAt(0)).getChildAt(0);
+//            checkedTextView[0].setChecked(false);
+//        }
+//        adapter.notifyDataSetChanged();
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                recyclerView.setAdapter(new MyRecyclerViewAdapter(true, SymptomCheck.this, items, null));
+            }
+        }, 600);
         recyclerView.smoothScrollToPosition(0);
     }
 

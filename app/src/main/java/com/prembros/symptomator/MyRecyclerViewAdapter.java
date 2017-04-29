@@ -12,9 +12,7 @@ import android.view.ViewGroup;
 import android.view.animation.AnimationUtils;
 import android.widget.CheckedTextView;
 import android.widget.TextView;
-
 import com.simplecityapps.recyclerview_fastscroll.views.FastScrollRecyclerView;
-
 import java.util.List;
 
 class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAdapter.ViewHolder>
@@ -41,10 +39,10 @@ class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAdapter.V
         View view;
         if (isViewChecked){
             view = LayoutInflater.from(parent.getContext())
-                    .inflate(R.layout.recycler_view_list_item_check, parent, false);
+                    .inflate(R.layout.recycler_view_item_check, parent, false);
         } else {
             view = LayoutInflater.from(parent.getContext())
-                    .inflate(R.layout.recycler_view_list_item, parent, false);
+                    .inflate(R.layout.recycler_view_item, parent, false);
         }
         return new ViewHolder(view);
     }
@@ -82,13 +80,8 @@ class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAdapter.V
     @NonNull
     @Override
     public String getSectionName(int position) {
-        return String.valueOf(mValues.get(position).charAt(0));
+        return String.valueOf(mValues.get(position).trim().charAt(0));
     }
-
-//    public void updateList(List<String> list){
-//        mValues = list;
-//        notifyDataSetChanged();
-//    }
 
     private void setAnimation(View viewToAnimate, int position){
         if (position > lastPosition){

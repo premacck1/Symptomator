@@ -21,6 +21,6 @@
 
     </android.support.design.widget.TextInputLayout>
 
-    <include layout="@layout/recycler_view_list"/>
+    <include layout="@layout/recycler_view"/>
 
 </LinearLayout>

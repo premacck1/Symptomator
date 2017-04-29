@@ -36,7 +36,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class FirstAidFragment extends Fragment implements RecyclerView.OnItemTouchListener{
+public class FirstAidFragment extends Fragment implements RecyclerView.OnItemTouchListener {
 
     private OnFirstAidListFragmentInteractionListener mListener;
     private MyRecyclerViewAdapter myFirstAidRecyclerViewAdapter;
@@ -75,7 +75,7 @@ public class FirstAidFragment extends Fragment implements RecyclerView.OnItemTou
             actionBar.setSubtitle(getString(R.string.first_aid_subtitle));
         }
 
-        list = (RecyclerView) view.findViewById(R.id.recyclerview_list);
+        list = (RecyclerView) view.findViewById(R.id.recyclerview);
         // Set the list
         firstAidList = Arrays.asList(getResources().getStringArray(R.array.first_aid));
 //        firstAidList.add("Find more tips online");

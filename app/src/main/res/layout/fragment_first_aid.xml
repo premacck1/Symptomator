@@ -7,6 +7,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-        <include layout="@layout/recycler_view_list"/>
+        <include layout="@layout/recycler_view"/>
 
 </RelativeLayout>
