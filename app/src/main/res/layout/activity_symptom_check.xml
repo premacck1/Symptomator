@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:fab="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:background="@color/colorDisabled"
     tools:context="com.prembros.symptomator.SymptomCheck">
-
-    <ListView
-        android:id="@+id/symptoms_listview"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
 
     <include layout="@layout/recycler_view_list"/>
 
@@ -31,57 +26,44 @@
 
     </io.codetail.widget.RevealFrameLayout>
 
-    <com.github.clans.fab.FloatingActionMenu
+    <LinearLayout
+        android:orientation="horizontal"
         android:id="@+id/fab_menu"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="10dp"
-        android:layout_marginLeft="10dp"
-        fab:layout_behavior="@string/appbar_scrolling_view_behavior"
-        fab:menu_fab_size="normal"
-        fab:menu_showShadow="true"
-        fab:menu_shadowColor="#66000000"
-        fab:menu_shadowRadius="3dp"
-        fab:menu_shadowYOffset="2dp"
-        fab:menu_colorNormal="#e53935"
-        fab:menu_colorPressed="#ef5350"
-        fab:menu_colorRipple="#99FFFFFF"
-        fab:menu_animationDelayPerItem="40"
-        fab:menu_icon="@drawable/fab_add"
-        fab:menu_buttonSpacing="0dp"
-        fab:menu_labels_margin="0dp"
-        fab:menu_labels_showAnimation="@anim/fab_scale_up"
-        fab:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
-        fab:menu_labels_padding="8dp"
-        fab:menu_labels_cornerRadius="4dp"
-        fab:menu_labels_colorNormal="#263238"
-        fab:menu_labels_colorPressed="#424242"
-        fab:menu_labels_colorRipple="#66FFFFFF"
-        fab:menu_fab_show_animation="@anim/fab_slide_in_from_right"
-        fab:menu_fab_hide_animation="@anim/fab_slide_out_to_right">
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center_horizontal">
 
-        <com.github.clans.fab.FloatingActionButton
-            android:id="@+id/fab_1_show_selected_symptoms"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_format_list_bulleted"
-            fab:fab_size="mini"
-            fab:fab_label="Show Selected symptoms"
-            tools:ignore="VectorDrawableCompat" />
-
-        <com.github.clans.fab.FloatingActionButton
+        <android.support.design.widget.FloatingActionButton
             android:id="@+id/fab_2_delete_all_symptoms"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:clickable="true"
+            android:longClickable="true"
+            app:backgroundTint="@color/colorFabNormal"
+            app:rippleColor="@color/colorRipple"
             android:src="@drawable/ic_delete_sweep"
-            fab:fab_size="mini"
-            fab:fab_label="Clear Symptom Selection"
             tools:ignore="VectorDrawableCompat" />
 
-    </com.github.clans.fab.FloatingActionMenu>
+        <Space
+            android:id="@+id/fab_space"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_1_show_selected_symptoms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:clickable="true"
+            android:longClickable="true"
+            app:backgroundTint="@color/colorFabNormal"
+            app:rippleColor="@color/colorRipple"
+            android:src="@drawable/ic_format_list_bulleted"
+            tools:ignore="VectorDrawableCompat" />
+
+    </LinearLayout>
 
 </android.support.design.widget.CoordinatorLayout>

@@ -113,7 +113,7 @@ class DatabaseHolder {
     }
 
     void resetSelectedSymptomsTable(){
-        db.execSQL("DROP TABLE IF EXISTS SelectedSymptoms");
+        db.execSQL("DROP TABLE IF EXISTS " + selectedSymptoms_tableName);
         db.execSQL(create_table_selected_symptoms);
     }
 

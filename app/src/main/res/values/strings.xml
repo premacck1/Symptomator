@@ -361,4 +361,6 @@
     <string name="find">Find</string>
     <string name="powered_by_google">Powered by google</string>
     <string name="selected_symptoms">Selected Symptoms</string>
+    <string name="show_selected_symptoms">Show selected symptoms</string>
+    <string name="clear_all_selected_symptoms">Clear all selected symptoms</string>
 </resources>

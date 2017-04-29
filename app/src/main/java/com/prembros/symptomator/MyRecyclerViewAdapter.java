@@ -5,7 +5,7 @@ import android.graphics.Color;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
+import android.util.SparseBooleanArray;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,15 +16,13 @@ import android.widget.TextView;
 import com.prembros.symptomator.FirstAidFragment.OnFirstAidListFragmentInteractionListener;
 import com.simplecityapps.recyclerview_fastscroll.views.FastScrollRecyclerView;
 
-import java.sql.SQLException;
 import java.util.List;
 
 class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAdapter.ViewHolder>
         implements FastScrollRecyclerView.SectionedAdapter {
 
-    private DatabaseHolder db;
+    private SparseBooleanArray mCheckedItems = new SparseBooleanArray();
     private List<String> mValues;
-    private List<String> selectedSymptomList;
     private OnFirstAidListFragmentInteractionListener mListener;
     private CompleteSymptomList.OnFragmentInteractionListener mListener2;
     private Context context;
@@ -33,17 +31,13 @@ class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAdapter.V
 
     MyRecyclerViewAdapter(boolean isViewChecked, Context context, List<String> items,
                           @Nullable FirstAidFragment.OnFirstAidListFragmentInteractionListener listener,
-                          @Nullable CompleteSymptomList.OnFragmentInteractionListener listener2,
-                          @Nullable List<String> selectedSymptomList) {
-        db = new DatabaseHolder(context);
+                          @Nullable CompleteSymptomList.OnFragmentInteractionListener listener2) {
         this.isViewChecked = isViewChecked;
         mValues = items;
         if (listener != null)
             mListener = listener;
         if (listener2 != null)
             mListener2 = listener2;
-        if (selectedSymptomList != null)
-            this.selectedSymptomList = selectedSymptomList;
         this.context = context;
     }
 
@@ -66,80 +60,23 @@ class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAdapter.V
         holder.mItem = mValues.get(position);
         if (isViewChecked) {
             holder.mIdCheckedTextView.setText(valueForPosition);
-            if (selectedSymptomList != null) {
-                if (selectedSymptomList.contains(valueForPosition)) {
-                    holder.mIdCheckedTextView.setChecked(true);
-                } else {
-                    holder.mIdCheckedTextView.setChecked(false);
-                }
-            }
+//            if (selectedSymptomList != null) {
+//                if (selectedSymptomList.contains(valueForPosition)) {
+//                    holder.mIdCheckedTextView.setChecked(true);
+//                } else {
+//                    holder.mIdCheckedTextView.setChecked(false);
+//                }
+//            }
+            holder.mIdCheckedTextView.setChecked(mCheckedItems.get(position));
+            holder.mIdCheckedTextView.setSelected(mCheckedItems.get(position));
+            if (holder.mIdCheckedTextView.isChecked()) {
+                holder.mIdCheckedTextView.setTextColor(Color.parseColor("#FFFFFF"));
+            } else holder.mIdCheckedTextView.setTextColor(Color.parseColor("#000000"));
             setAnimation(holder.mIdCheckedTextView, position);
-
-            holder.mIdCheckedTextView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    final String viewText = holder.mIdCheckedTextView.getText().toString();
-                    if (holder.mIdCheckedTextView.isChecked()) {
-//                        value = "un-Checked";
-//                        holder.mIdCheckedTextView.setCheckMarkDrawable(0);
-                        holder.mIdCheckedTextView.setChecked(false);
-                        holder.mIdCheckedTextView.setTextColor(Color.parseColor("#000000"));
-                        holder.mIdCheckedTextView.setBackgroundResource(R.color.colorDisabled);
-                        holder.mIdCheckedTextView.startAnimation(AnimationUtils.loadAnimation(context, R.anim.anim_deselected));
-
-                        new Thread(new Runnable() {
-                            @Override
-                            public void run() {
-                                db.open();
-                                db.removeFromSelectedSymptomsTable(viewText);
-                                db.close();
-                            }
-                        }).start();
-                    } else {
-//                        value = "Checked";
-//                        holder.mIdCheckedTextView.setCheckMarkDrawable(R.drawable.checked);
-                        holder.mIdCheckedTextView.setChecked(true);
-                        holder.mIdCheckedTextView.setTextColor(Color.parseColor("#FFFFFF"));
-                        holder.mIdCheckedTextView.setBackgroundResource(R.color.colorSecondaryText);
-                        holder.mIdCheckedTextView.startAnimation(AnimationUtils.loadAnimation(context, R.anim.anim_selected));
-
-                        new Thread(new Runnable() {
-                            @Override
-                            public void run() {
-                                try {
-                                    db.open();
-                                    db.insertInSelectedSymptomsTable(viewText);
-                                    db.insertInSelectedSymptomsTable(viewText);
-                                    db.close();
-                                } catch (SQLException e) {
-                                    Log.d("SQLException ERROR!", e.getMessage());
-                                }
-                            }
-                        }).start();
-                    }
-//                    Toast.makeText(context, value + position, Toast.LENGTH_SHORT).show();
-                }
-            });
         } else {
             holder.mIdTextView.setText(valueForPosition);
             setAnimation(holder.mIdTextView, position);
-            holder.mView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    if (mListener != null) {
-                        // Notify the active callbacks interface (the activity, if the
-                        // fragment is attached to one) that an item has been selected.
-                        mListener.onListFragmentInteraction(true, holder.mItem);
-                    }
-                    if (mListener2 != null) {
-                        // Notify the active callbacks interface (the activity, if the
-                        // fragment is attached to one) that an item has been selected.
-                        mListener2.onFragmentInteraction(holder.mItem);
-                    }
-                }
-            });
         }
-
     }
 
     @Override
@@ -165,7 +102,7 @@ class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAdapter.V
         }
     }
 
-    class ViewHolder extends RecyclerView.ViewHolder {
+    class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         final View mView;
         TextView mIdTextView;
         CheckedTextView mIdCheckedTextView;
@@ -178,11 +115,35 @@ class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAdapter.V
             mView = view;
             if (isViewChecked) {
                 mIdCheckedTextView = (CheckedTextView) view.findViewById(R.id.list_item_checked_textview);
+                mIdCheckedTextView.setOnClickListener(this);
             } else {
                 mIdTextView = (TextView) view.findViewById(R.id.recycler_view_list_item);
+                mIdTextView.setOnClickListener(this);
             }
+//            this.setIsRecyclable(false);
         }
 
+        @Override
+        public void onClick(View view) {
+            switch (view.getId()) {
+                case R.id.list_item_checked_textview:
+                    int position = this.getAdapterPosition();
+                    mCheckedItems.put(position, !mIdCheckedTextView.isChecked());
+                    ((SymptomCheck)context).onRecyclerViewItemClick(mIdCheckedTextView, position + 1, getItemCount());
+                case R.id.recycler_view_list_item:
+                    if (mListener != null) {
+                        // Notify the active callbacks interface (the activity, if the
+                        // fragment is attached to one) that an item has been selected.
+                        mListener.onListFragmentInteraction(true, mItem);
+                    }
+                    if (mListener2 != null) {
+                        // Notify the active callbacks interface (the activity, if the
+                        // fragment is attached to one) that an item has been selected.
+                        mListener2.onFragmentInteraction(mItem);
+                    }
+                    break;
+            }
+        }
         @Override
         public String toString() {
             if (isViewChecked){
@@ -191,5 +152,5 @@ class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAdapter.V
                 return super.toString() + " '" + mIdTextView.getText() + "'";
             }
         }
-    }
+}
 }

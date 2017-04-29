@@ -81,7 +81,7 @@ public class FirstAidFragment extends Fragment implements RecyclerView.OnItemTou
 //        firstAidList.add("Find more tips online");
         // Set the adapter
         context = list.getContext();
-        myFirstAidRecyclerViewAdapter = new MyRecyclerViewAdapter(false, getContext(), firstAidList, mListener, null, null);
+        myFirstAidRecyclerViewAdapter = new MyRecyclerViewAdapter(false, getContext(), firstAidList, mListener, null);
         list.setLayoutManager(new LinearLayoutManager(context));
         list.setAdapter(myFirstAidRecyclerViewAdapter);
 
@@ -266,7 +266,7 @@ public class FirstAidFragment extends Fragment implements RecyclerView.OnItemTou
 //                }
 
                 list.setLayoutManager(new LinearLayoutManager(context));
-                myFirstAidRecyclerViewAdapter = new MyRecyclerViewAdapter(false, getContext(), filteredList, mListener, null, null);
+                myFirstAidRecyclerViewAdapter = new MyRecyclerViewAdapter(false, getContext(), filteredList, mListener, null);
                 list.setAdapter(myFirstAidRecyclerViewAdapter);
                 myFirstAidRecyclerViewAdapter.notifyDataSetChanged();
                 return true;

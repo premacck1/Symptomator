@@ -5,10 +5,12 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
+import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.StrictMode;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AlertDialog;
@@ -16,18 +18,23 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.SearchView;
+import android.util.Log;
+import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.animation.AccelerateDecelerateInterpolator;
 import android.view.animation.AnimationUtils;
+import android.widget.CheckedTextView;
 import android.widget.FrameLayout;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
-import com.github.clans.fab.FloatingActionButton;
-import com.github.clans.fab.FloatingActionMenu;
+import com.balysv.materialripple.MaterialRippleLayout;
 
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -41,7 +48,6 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
     private MyRecyclerViewAdapter recyclerViewAdapter;
     private List<String> symptomList;
     private RecyclerView recyclerView;
-    private int itemCount;
     private FragmentManager fragmentManager;
     private FrameLayout revealView;
     boolean somethingIsActive = false;
@@ -49,6 +55,8 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
     private int[] touchCoordinate = new int[2];
     private DatabaseHolder db;
     private List<String> selectedSymptoms;
+    private LinearLayout floatingActionMenu;
+    private boolean clearFlag = false;
 
     @Override
     public boolean dispatchTouchEvent(MotionEvent ev) {
@@ -77,25 +85,60 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
             actionBar.setTitle(R.string.symptom);
         }
 
-        final FloatingActionMenu floatingActionMenu = (FloatingActionMenu) this.findViewById(R.id.fab_menu);
+        floatingActionMenu = (LinearLayout) this.findViewById(R.id.fab_menu);
         FloatingActionButton fabShowSelectedSymptoms = (FloatingActionButton) this.findViewById(R.id.fab_1_show_selected_symptoms);
         FloatingActionButton fabClearSymptomSelection = (FloatingActionButton) this.findViewById(R.id.fab_2_delete_all_symptoms);
 
+
+        /*FLOATING ACTION BUTTON ON CLICK LISTENERS*/
         fabShowSelectedSymptoms.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 new ShowSelectedSymptoms().execute("showSelectedSymptoms");
-                floatingActionMenu.close(true);
             }
         });
         fabClearSymptomSelection.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                new ShowSelectedSymptoms().execute("delete");
-                Toast.makeText(SymptomCheck.this, "Selection cleared!", Toast.LENGTH_SHORT).show();
-                floatingActionMenu.close(true);
+                Toast toast;
+                if (clearFlag) {
+                    new ShowSelectedSymptoms().execute("delete");
+                    toast = Toast.makeText(SymptomCheck.this, "Selection cleared!", Toast.LENGTH_SHORT);
+                    toast.setGravity(Gravity.CENTER, 0, 0);
+                    toast.show();
+                    uncheckAllViews(recyclerView, recyclerViewAdapter);
+                    return;
+                }
+                clearFlag = true;
+                toast = Toast.makeText(SymptomCheck.this, "Click again to confirm.", Toast.LENGTH_SHORT);
+                toast.setGravity(Gravity.CENTER, 0, 0);
+                toast.show();
+
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        clearFlag = false;
+                    }
+                }, 2000);
+
 //                recyclerView.smoothScrollToPosition(0);
 //                recyclerView.removeAllViews();
+            }
+        });
+
+        /*HELPER TOASTS FOR FLOATING ACTION BUTTONS*/
+        fabShowSelectedSymptoms.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View view) {
+                makeToast(view, getString(R.string.show_selected_symptoms));
+                return true;
+            }
+        });
+        fabClearSymptomSelection.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View view) {
+                makeToast(view, getString(R.string.clear_all_selected_symptoms));
+                return true;
             }
         });
 
@@ -136,28 +179,11 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
         }
         ).start();
 
-        recyclerViewAdapter = new MyRecyclerViewAdapter(true, this, symptomList, null, null, selectedSymptoms);
+        recyclerViewAdapter = new MyRecyclerViewAdapter(true, this, symptomList, null, null);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(recyclerViewAdapter);
 
-        recyclerView.addOnItemTouchListener(new RecyclerViewOnItemClickListener(this, new RecyclerViewOnItemClickListener.OnItemClickListener() {
-            @Override
-            public void onItemClick(View view, int position) {
-                floatingActionMenu.close(true);
-                itemCount = recyclerViewAdapter.getItemCount();
-//                Toast.makeText(SymptomCheck.this, "Clicked: " + position + " : " + itemCount, Toast.LENGTH_SHORT).show();
-                if (position == itemCount - 1){
-                    actionBar.hide();
-                    recyclerView.setVisibility(View.INVISIBLE);
-                    fragmentManager.beginTransaction()
-                            .setCustomAnimations(R.anim.fragment_anim_in, R.anim.fragment_anim_out)
-                            .add(R.id.symptom_check_fragment_container, new CompleteSymptomList(), "completeSymptomList")
-                            .commit();
-                    somethingIsActive = true;
-                }
-//                floatingActionMenu.close(true);
-            }
-        }));
+//        recyclerView.addOnItemTouchListener(new RecyclerViewOnItemClickListener(this, this));
 
         recyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
             @Override
@@ -168,17 +194,87 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
             @Override
             public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
                 super.onScrolled(recyclerView, dx, dy);
-                if (dy > 25) {
+                if (dy > 10) {
                     hideOrShow(floatingActionMenu, false);
                 }
-                else if (dy < -25) {
+                else if (dy < -10) {
                     hideOrShow(floatingActionMenu, true);
                 }
             }
         });
     }
 
-    void hideOrShow(FloatingActionMenu floatingActionMenu, boolean shown) {
+    public void makeToast(View view, String text) {
+        Toast toast = Toast.makeText(this, text, Toast.LENGTH_SHORT);
+        toast.setGravity(Gravity.LEFT, view.getLeft(), view.getTop() + view.getHeight() * 3);
+        toast.show();
+    }
+
+    public void uncheckAllViews(final RecyclerView recyclerView, final MyRecyclerViewAdapter adapter) {
+        final CheckedTextView[] checkedTextView = new CheckedTextView[1];
+        for (int i = 0; i < recyclerView.getChildCount(); i++) {
+//            MyRecyclerViewAdapter.mCheckedItems.put(i, false);
+            checkedTextView[0] = (CheckedTextView) ((MaterialRippleLayout)((RelativeLayout) recyclerView.getChildAt(0)).getChildAt(0)).getChildAt(0);
+            checkedTextView[0].setChecked(false);
+        }
+        adapter.notifyDataSetChanged();
+        recyclerView.smoothScrollToPosition(0);
+    }
+
+    public void onRecyclerViewItemClick(CheckedTextView checkedTextView, int position, int lastPosition) {
+        if (position == lastPosition) {
+            checkedTextView.setChecked(false);
+            actionBar.hide();
+            recyclerView.setVisibility(View.INVISIBLE);
+            fragmentManager.beginTransaction()
+                    .setCustomAnimations(R.anim.fragment_anim_in, R.anim.fragment_anim_out)
+                    .add(R.id.symptom_check_fragment_container, new CompleteSymptomList(), "completeSymptomList")
+                    .commit();
+            somethingIsActive = true;
+        } else {
+            final String viewText = checkedTextView.getText().toString();
+
+//                        checkedArray[pos] = !checkedArray[pos];
+//                        notifyItemChanged(pos);
+
+            if (checkedTextView.isChecked()) {
+                checkedTextView.setChecked(false);
+                checkedTextView.setTextColor(Color.parseColor("#000000"));
+                checkedTextView.startAnimation(AnimationUtils.loadAnimation(this, R.anim.anim_deselected));
+
+                new Thread(new Runnable() {
+                    @Override
+                    public void run() {
+                        db.open();
+                        db.removeFromSelectedSymptomsTable(viewText);
+                        db.close();
+                    }
+                }).start();
+            } else {
+                checkedTextView.setChecked(true);
+                checkedTextView.setTextColor(Color.parseColor("#FFFFFF"));
+                checkedTextView.startAnimation(AnimationUtils.loadAnimation(this, R.anim.anim_selected));
+
+                new Thread(new Runnable() {
+                    @Override
+                    public void run() {
+                        try {
+                            db.open();
+                            db.insertInSelectedSymptomsTable(viewText);
+                            db.insertInSelectedSymptomsTable(viewText);
+                            db.close();
+                            new SymptomCheck.ShowSelectedSymptoms().execute("addSelectedSymptoms");
+                        } catch (SQLException | IllegalStateException e) {
+                            Log.d("SQLException ERROR!", e.getMessage());
+                        }
+                    }
+                }).start();
+            }
+//                    Toast.makeText(context, value + position, Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    void hideOrShow(LinearLayout floatingActionMenu, boolean shown) {
         if (floatingActionMenu.getVisibility() == View.INVISIBLE && shown) {
             floatingActionMenu.startAnimation(AnimationUtils.loadAnimation(SymptomCheck.this, R.anim.float_up));
             floatingActionMenu.setVisibility(View.VISIBLE);
@@ -218,7 +314,7 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
                 }
 
                 recyclerView.setLayoutManager(new LinearLayoutManager(SymptomCheck.this));
-                recyclerViewAdapter = new MyRecyclerViewAdapter(true, SymptomCheck.this, filteredList, null, null, selectedSymptoms);
+                recyclerViewAdapter = new MyRecyclerViewAdapter(true, SymptomCheck.this, filteredList, null, null);
                 recyclerView.setAdapter(recyclerViewAdapter);
                 recyclerViewAdapter.notifyDataSetChanged();
                 return true;
@@ -329,35 +425,49 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
 
         @Override
         protected Void doInBackground(String... strings) {
-            if (strings[0].equals("showSelectedSymptoms")) {                                        /*SHOW SELECTED SYMPTOMS*/
-                showSelectedSymptoms = true;
-                builder = new StringBuilder();
-                db.open();
-                Cursor cursor = db.returnSelectedSymptoms();
-                if (cursor != null) {
-                    cursor.moveToFirst();
-                    while (!cursor.isAfterLast()) {
-                        try {
-                            selectedSymptoms.add(cursor.getString(cursor.getColumnIndex("Symptom")));
-                            cursor.moveToNext();
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                        }
-                    }
-                    cursor.close();
-                }
-                db.close();
+            switch (strings[0]) {
+                case "showSelectedSymptoms":                                                        /*SHOW SELECTED SYMPTOMS*/
+                    showSelectedSymptoms = true;
+                    prepareSelectedSymptoms(true);
+                    break;
+                case "addSelectedSymptoms":                                                         /*ADD SELECTED SYMPTOMS*/
+                    showSelectedSymptoms = false;
+                    prepareSelectedSymptoms(false);
+                    break;
+                default:                                                                            /*CLEAR SYMPTOM SELECTION*/
+                    showSelectedSymptoms = false;
+                    db.open();
+                    db.resetSelectedSymptomsTable();
+                    db.close();
+                    break;
+            }
+            return null;
+        }
 
+        void prepareSelectedSymptoms(boolean show) {
+            selectedSymptoms.clear();
+            db.open();
+            Cursor cursor = db.returnSelectedSymptoms();
+            if (cursor != null) {
+                cursor.moveToFirst();
+                while (!cursor.isAfterLast()) {
+                    try {
+                        selectedSymptoms.add(cursor.getString(cursor.getColumnIndex("Symptom")));
+                        cursor.moveToNext();
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                }
+                cursor.close();
+            }
+            db.close();
+
+            if (show) {
+                builder = new StringBuilder();
                 for (String string : selectedSymptoms) {
                     builder.append(string).append("\n");
                 }
-            } else {                                                                                /*CLEAR SYMPTOM SELECTION*/
-                db.open();
-                db.resetSelectedSymptomsTable();
-                db.close();
-                showSelectedSymptoms = false;
             }
-            return null;
         }
 
         @Override
