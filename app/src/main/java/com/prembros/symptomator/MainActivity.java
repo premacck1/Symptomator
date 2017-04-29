@@ -240,7 +240,7 @@ public class MainActivity extends AppCompatActivity implements
         int centerX = center[0];
         int centerY = center[1];
         int startRadius = 0;
-        int endRadius = (int) (Math.hypot(mRevealView.getWidth() * 1.6, mRevealView.getHeight() * 1.6));
+        int endRadius = (int) (Math.hypot(mRevealView.getWidth() * 2, mRevealView.getHeight() * 2));
         animator = createCircularReveal(mRevealView, centerX, centerY, startRadius, endRadius);
         animator.setInterpolator(new AccelerateDecelerateInterpolator());
         animator.setDuration(duration);
