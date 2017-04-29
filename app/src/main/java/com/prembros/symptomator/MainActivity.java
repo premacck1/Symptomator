@@ -257,10 +257,6 @@ public class MainActivity extends AppCompatActivity implements
             actionBar.setSubtitle(previousTitles[1]);
         }
         if (animator != null && !animator.isRunning()){
-
-//            fab.setBackgroundColor(Color.rgb(0, 188, 212));
-//            fab.setImageResource(R.drawable.ic_add_shopping_cart);
-
             animator = animator.reverse();
             animator.addListener(new SupportAnimator.AnimatorListener() {
                 @Override
