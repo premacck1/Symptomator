@@ -179,7 +179,7 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
         }
         ).start();
 
-        recyclerViewAdapter = new MyRecyclerViewAdapter(true, this, symptomList, null, null);
+        recyclerViewAdapter = new MyRecyclerViewAdapter(true, this, symptomList, null);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(recyclerViewAdapter);
 
@@ -314,7 +314,7 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
                 }
 
                 recyclerView.setLayoutManager(new LinearLayoutManager(SymptomCheck.this));
-                recyclerViewAdapter = new MyRecyclerViewAdapter(true, SymptomCheck.this, filteredList, null, null);
+                recyclerViewAdapter = new MyRecyclerViewAdapter(true, SymptomCheck.this, filteredList, null);
                 recyclerView.setAdapter(recyclerViewAdapter);
                 recyclerViewAdapter.notifyDataSetChanged();
                 return true;

@@ -13,7 +13,6 @@ import android.view.animation.AnimationUtils;
 import android.widget.CheckedTextView;
 import android.widget.TextView;
 
-import com.prembros.symptomator.FirstAidFragment.OnFirstAidListFragmentInteractionListener;
 import com.simplecityapps.recyclerview_fastscroll.views.FastScrollRecyclerView;
 
 import java.util.List;
@@ -23,19 +22,15 @@ class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAdapter.V
 
     private SparseBooleanArray mCheckedItems = new SparseBooleanArray();
     private List<String> mValues;
-    private OnFirstAidListFragmentInteractionListener mListener;
     private CompleteSymptomList.OnFragmentInteractionListener mListener2;
     private Context context;
     private boolean isViewChecked;
     private int lastPosition = -1;
 
     MyRecyclerViewAdapter(boolean isViewChecked, Context context, List<String> items,
-                          @Nullable FirstAidFragment.OnFirstAidListFragmentInteractionListener listener,
                           @Nullable CompleteSymptomList.OnFragmentInteractionListener listener2) {
         this.isViewChecked = isViewChecked;
         mValues = items;
-        if (listener != null)
-            mListener = listener;
         if (listener2 != null)
             mListener2 = listener2;
         this.context = context;
@@ -131,11 +126,11 @@ class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAdapter.V
                     mCheckedItems.put(position, !mIdCheckedTextView.isChecked());
                     ((SymptomCheck)context).onRecyclerViewItemClick(mIdCheckedTextView, position + 1, getItemCount());
                 case R.id.recycler_view_list_item:
-                    if (mListener != null) {
-                        // Notify the active callbacks interface (the activity, if the
-                        // fragment is attached to one) that an item has been selected.
-                        mListener.onListFragmentInteraction(true, mItem);
-                    }
+//                    if (mListener != null) {
+//                        // Notify the active callbacks interface (the activity, if the
+//                        // fragment is attached to one) that an item has been selected.
+//                        mListener.onListFragmentInteraction(true, mItem);
+//                    }
                     if (mListener2 != null) {
                         // Notify the active callbacks interface (the activity, if the
                         // fragment is attached to one) that an item has been selected.
