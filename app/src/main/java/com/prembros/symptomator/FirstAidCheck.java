@@ -22,7 +22,7 @@ import java.util.ArrayList;
 public class FirstAidCheck extends AppCompatActivity {
 
     private String [] JSONString = new String[2];
-//    ArrayList<Beans> firstAidTopic;
+//    ArrayList<FirstAidBeans> firstAidTopic;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -87,9 +87,9 @@ public class FirstAidCheck extends AppCompatActivity {
         }
     }
 
-    private class ParseInBackground extends android.os.AsyncTask<String, Void, ArrayList<Beans>>{
+    private class ParseInBackground extends android.os.AsyncTask<String, Void, ArrayList<FirstAidBeans>>{
 
-        private ArrayList<Beans> result;
+        private ArrayList<FirstAidBeans> result;
         private ProgressBar progressBar;
 
         @Override
@@ -100,7 +100,7 @@ public class FirstAidCheck extends AppCompatActivity {
         }
 
         @Override
-        protected ArrayList<Beans> doInBackground(String... strings) {
+        protected ArrayList<FirstAidBeans> doInBackground(String... strings) {
             if (strings[1] != null){
                 JSONObject jsonObject = null;
                 try {
@@ -108,7 +108,7 @@ public class FirstAidCheck extends AppCompatActivity {
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
-                result = new JSONParser().parseFirstAidJSON(jsonObject, "First_aid", strings[0]);
+                result = new FirstAidJSONParser().parseFirstAidJSON(jsonObject, "First_aid", strings[0]);
             } else {
             Log.d("ERROR in firstAidCheck:", "Class - FirstAidCheck, method - parseInBackground, JSONString was null");
             result = null;
@@ -117,13 +117,13 @@ public class FirstAidCheck extends AppCompatActivity {
         }
 
         @Override
-        protected void onPostExecute(ArrayList<Beans> beansArrayList) {
-            if (beansArrayList != null) {
+        protected void onPostExecute(ArrayList<FirstAidBeans> firstAidBeansArrayList) {
+            if (firstAidBeansArrayList != null) {
                 ListView listView = (ListView) FirstAidCheck.this.findViewById(R.id.first_aid_check_list_view);
-                FirstAidDetailsAdapter adapter = new FirstAidDetailsAdapter(FirstAidCheck.this, beansArrayList);
+                FirstAidDetailsAdapter adapter = new FirstAidDetailsAdapter(FirstAidCheck.this, firstAidBeansArrayList);
                 listView.setAdapter(adapter);
                 progressBar.setVisibility(View.GONE);
-                super.onPostExecute(beansArrayList);
+                super.onPostExecute(firstAidBeansArrayList);
             } else {
                 Toast.makeText(FirstAidCheck.this, "First aid info for this topic coming soon!", Toast.LENGTH_SHORT).show();
                 FirstAidCheck.this.finish();

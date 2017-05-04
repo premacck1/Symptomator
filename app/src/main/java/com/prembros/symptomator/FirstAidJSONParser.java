@@ -12,9 +12,9 @@ import java.util.ArrayList;
  * Created by Prem $ on 4/13/2017.
  */
 
-class JSONParser extends ArrayList<Beans> {
+class FirstAidJSONParser extends ArrayList<FirstAidBeans> {
 
-    ArrayList<Beans> parseFirstAidJSON(JSONObject jsonObject, String field, String topic){
+    ArrayList<FirstAidBeans> parseFirstAidJSON(JSONObject jsonObject, String field, String topic){
 
 //        String t = topic.substring(0, 4) + "the personf NOW if";
         JSONArray jFieldArray;
@@ -46,7 +46,7 @@ class JSONParser extends ArrayList<Beans> {
         }
     }
 
-    private ArrayList<Beans> getAllParagraphs(JSONArray jsonArray, String topic){
+    private ArrayList<FirstAidBeans> getAllParagraphs(JSONArray jsonArray, String topic){
         int paraCount;
         try {
             paraCount = jsonArray.length();
@@ -54,13 +54,13 @@ class JSONParser extends ArrayList<Beans> {
             e.printStackTrace();
             return null;
         }
-        ArrayList<Beans> topicList = new ArrayList<>();
-        Beans beans;
+        ArrayList<FirstAidBeans> topicList = new ArrayList<>();
+        FirstAidBeans firstAidBeans;
 
         for (int i = 0; i < paraCount; i++){
             try {
-                beans = getParagraph((JSONObject) jsonArray.get(i), topic);
-                topicList.add(beans);
+                firstAidBeans = getParagraph((JSONObject) jsonArray.get(i), topic);
+                topicList.add(firstAidBeans);
             } catch (JSONException e) {
                 e.printStackTrace();
             }
@@ -68,8 +68,8 @@ class JSONParser extends ArrayList<Beans> {
         return topicList;
     }
 
-    private Beans getParagraph(JSONObject jsonObject, String topic){
-        Beans beans = new Beans();
+    private FirstAidBeans getParagraph(JSONObject jsonObject, String topic){
+        FirstAidBeans firstAidBeans = new FirstAidBeans();
 //        String para;
         String heading;
         String content;
@@ -78,17 +78,17 @@ class JSONParser extends ArrayList<Beans> {
             heading = jsonObject.getString("heading");
             content = jsonObject.getString("content");
 
-            beans.setTopic(topic);
-//            beans.setPara(para);
-            beans.setHeading(heading);
-            beans.setContent(content);
+            firstAidBeans.setTopic(topic);
+//            firstAidBeans.setPara(para);
+            firstAidBeans.setHeading(heading);
+            firstAidBeans.setContent(content);
         } catch (JSONException e) {
             e.printStackTrace();
         }
-        return beans;
+        return firstAidBeans;
     }
 
-//    ArrayList<Beans> parseSymptomJSON(JSONObject jsonObject, String field, String topic){
+//    ArrayList<FirstAidBeans> parseSymptomJSON(JSONObject jsonObject, String field, String topic){
 //
 //    }
 }

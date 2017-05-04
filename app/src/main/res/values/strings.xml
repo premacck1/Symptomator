@@ -364,4 +364,12 @@
     <string name="show_selected_symptoms">Show selected symptoms</string>
     <string name="clear_all_selected_symptoms">Clear all selected symptoms</string>
     <string name="selection_cleared">Selection cleared!</string>
+    <string name="disclaimer_conditions">
+        Based on the symptoms you entered, we have calculated matches for possible conditions.
+        The conditions are listed in order of how closely your symptoms match those conditions.
+        This information is meant to be informational, and is not intended as medical advice or a diagnosis.
+        Information you read here should not replace the advice of your healthcare provider.
+        You should always seek the advice of a qualified healthcare provider about any questions you may have about a medical condition.
+        As always, if you think you have a medical emergency you should call your doctor or the emergency services immediately.
+    </string>
 </resources>

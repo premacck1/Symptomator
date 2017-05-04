@@ -1,0 +1,4196 @@
+{
+  "Head": {
+    "Agitation": {
+      "warning": "",
+      "question": "",
+      "options": "Generalized anxiety disorder,Medication reaction or side-effect,Alcohol withdrawal (delirium tremens),Alcohol intoxication,Dementia in head injury,Drug withdrawal,Epilepsy (temporal lobe),Hypocalcemia,Hypoparathyroidism,Intoxication,Methamphetamine use",
+      "conditions": ""
+    },
+    "Anxiety": {
+      "warning": "",
+      "conditions": "Generalized anxiety disorder,Depression (Adult)Excessive caffeine use,Panic attack,Mitral valve prolapse,Agoraphobia,Cocaine abuse,Depression (Postpartum),Epilepsy (complex partial seizures),Epilepsy (simple partial seizures),Epilepsy (temporal lobe),Hyperthyroidism,Hyperventilation,Insulin reaction (hypoglycemia)Low blood sugar (hypoglycemia),Social anxiety disorder,Thyroid storm,Hypopituitarism,Mad cow disease,Fibromyalgia"
+    },
+    "Apathy": {
+      "warning": "",
+      "conditions": "Depression (Adult),Medication reaction or side-effect,Dementia in head injury,Depression (Postpartum),Hyperthyroidism,Pellagra"
+    },
+    "Bald_spots": {
+      "warning": "",
+      "conditions": "Alopecia,Telogen effluvium,Trichotillomania"
+    },
+    "Blackouts_(memory_time_loss)": {
+      "warning": "",
+      "conditions": "Medication reaction or side-effect,Short-acting sedative use,Epilepsy (absence or petit mal seizures),Epilepsy (complex partial seizures),Intoxication,Transient global amnesia"
+    },
+    "Bleeding": {
+      "warning": "",
+      "conditions": "Trauma or injury"
+    },
+    "Brittle_hair": {
+      "warning": "",
+      "conditions": "Alopecia"
+    },
+    "Broken_bone_(single_fracture)": {
+      "warning": "",
+      "conditions": "Physical abuse,Trauma or injury"
+    },
+    "Broken_bones_(multiple_fractures)": {
+      "warning": "",
+      "conditions": "Physical abuse,Trauma or injury,Osteogenesis imperfecta"
+    },
+    "Bruising_or_discoloration": {
+      "warning": "",
+      "conditions": "Bruise or contusion,Hematoma,Muscle strain,Trauma or injury,Thrombocytopenia"
+    },
+    "Coma": {
+      "warning": "",
+      "conditions": "Brain injury,Carbon monoxide poisoning,Diabetic ketoacidosis,Drug overdose,Electrocution,Head injury,Hypothermia,Myxedema coma,Narcotic abuse,Brain infection,Brain tumor,Japanese encephalitis,Toxic shock syndrome,West nile virus,Shock"
+    },
+    "Compulsive_behavior": {
+      "warning": "",
+      "conditions": "Attention deficit hyperactivity disorder (ADHD),Bipolar disorder,Anorexia nervosa,Asperger syndrome,Autism,Bulimia,Methamphetamine use,Obsessive compulsive personality disorder,Schizophrenia"
+    },
+    "Confusion": {
+      "warning": "",
+      "conditions": "Medication reaction or side-effect,Encephalitis,Low blood sugar (hypoglycemia),Aspirin poisoning,Atrial fibrillation,Barbiturate abuse,Benzodiazepine abuse,Chronic kidney disease,Dehydration (Adult),Dementia in head injury,Diabetic ketoacidosis,Drug overdose,Epilepsy (complex partial seizures),Epilepsy (simple partial seizures),Epilepsy (temporal lobe),Head injury,Hypothyroidism (adult),Insulin reaction (hypoglycemia),Intracranial hematoma,Multiple sclerosis,Narcotic abuse,Schizophrenia,Thyroid storm,Transient global amnesia,Vitamin B12 deficiency,Acute kidney failure,Chagas disease,Cyanide poisoning,Lead poisoning,Methanol poisoning,Toxic shock syndrome,Typhoid fever,West nile virus,Endocarditis"
+    },
+    "Craving_alcohol": {
+      "warning": "",
+      "conditions": "Cocaine abuse"
+    },
+    "Craving_to_eat_ice,_dirt_or_paper": {
+      "warning": "",
+      "conditions": "Pica,Anemia (iron deficiency)"
+    },
+    "Crawling_sensation": {
+      "warning": "",
+      "conditions": "Head lice"
+    },
+    "Delusions": {
+      "warning": "",
+      "conditions": "Alcohol withdrawal (delirium tremens),Schizophrenia,Bipolar disorder,Cocaine abuse,Methamphetamine use,Porphyria,Syphilis (female),Pellagra"
+    },
+    "Depressed_mood": {
+      "warning": "",
+      "conditions": "Depression (Adult),Fibromyalgia,Bipolar disorder,Hypothyroidism (adult),Lupus (systemic lupus erythematosus),Porphyria,Post-traumatic stress disorder (PTSD),Premenstrual dysphoric disorder (PMDD),Premenstrual syndrome (PMS),Schizophrenia,Seasonal depression (SAD),Substance-induced mood disorder,Hypopituitarism,Mad cow disease,Depression (Postpartum)"
+    },
+    "Difficult_to_wake_from_sleep": {
+      "warning": "",
+      "conditions": "Sleep apnea,Sleep deprivation,Diabetic ketoacidosis,Hypersomnia disorder"
+    },
+    "Difficulty_concentrating": {
+      "warning": "",
+      "conditions": "Depression (Adult),Generalized anxiety disorder,Postconcussive syndrome,Sleep deprivation,Anemia,Anemia (chronic disease),Anemia (iron deficiency),Aspirin poisoning,Bipolar disorder,Depression (Postpartum),Grief reaction,Head injury,Hypothyroidism (adult),Insomnia,Intoxication,Low blood sugar (hypoglycemia),Lyme disease,Nicotine withdrawal/cessation of smoking,Post-traumatic stress disorder (PTSD),Anemia (hemolytic),Brain infection,Brain tumor,Nitrogen narcosis"
+    },
+    "Difficulty_falling_asleep": {
+      "warning": "",
+      "conditions": "Acute stress reaction,Depression (Adult),Excessive caffeine use,Fibromyalgia,Depression (Postpartum),Grief reaction,Insomnia,Methamphetamine use,Restless legs syndrome,Lead poisoning"
+    },
+    "Difficulty_finding_words": {
+      "warning": "",
+      "conditions": "Brain aneurysm"
+    },
+    "Difficulty_learning_new_things": {
+      "warning": "",
+      "conditions": "Asperger syndrome,Attention deficit hyperactivity disorder (ADHD),Epilepsy (absence or petit mal seizures),Lead poisoning"
+    },
+    "Difficulty_sleeping": {
+      "warning": "",
+      "conditions": "Depression (Adult),Excessive caffeine use,Asthma (teen and adult),Anemia (chronic disease),Anemia (iron deficiency),Chronic kidney disease,Cocaine abuse,Dementia in head injury,Depression (Postpartum),Emphysema,Hyperthyroidism,Insomnia,Lyme disease,Nightmares,Periodic limb movement disorder,Pinworms,Pregnancy,Premenstrual syndrome (PMS),Restless legs syndrome,Schizophrenia,Thyroid storm,Anemia (hemolytic),Mad cow disease"
+    },
+    "Difficulty_solving_problems": {
+      "warning": "",
+      "conditions": "Sleep deprivation,Asperger syndrome,Attention deficit hyperactivity disorder (ADHD),Epilepsy (absence or petit mal seizures),Lead poisoning"
+    },
+    "Difficulty_staying_asleep": {
+      "warning": "",
+      "conditions": "Sleep apnea,Depression (Adult),Generalized anxiety disorder,Heartburn/GERD,Medication reaction or side-effect,Peripheral neuropathy,Depression (Postpartum),Emphysema,Insomnia,Night eating syndrome,Restless legs syndrome,Asthma (teen and adult)"
+    },
+    "Difficulty_staying_awake_during_day": {
+      "warning": "",
+      "conditions": "Sleep apnea,Caffeine withdrawal,Medication reaction or side-effect,Narcolepsy,Sleep deprivation,Amphetamine withdrawal,Cocaine withdrawal,Insomnia,Restless legs syndrome"
+    },
+    "Disorientation": {
+      "warning": "If you are experiencing disorientation please seek prompt medical attention.",
+      "conditions": "Alcohol withdrawal (delirium tremens),Medication reaction or side-effect,Sleep apnea,Heat stroke (hyperthermia),Aspirin poisoning,Cocaine abuse,Concussion,Diabetic ketoacidosis,Drug overdose,Epilepsy (complex partial seizures),Hyperthyroidism,Inhalant intoxication,Insulin reaction (hypoglycemia),Local anesthetic toxicity,Low blood sugar (hypoglycemia),Narcotic abuse,Brain infection,Cat-scratch disease,Mad cow disease,Toxic shock syndrome,Typhoid fever,Shock,West nile virus"
+    },
+    "Dizziness": {
+      "warning": "",
+      "conditions": "Middle ear infection,Labyrinthitis,Medication reaction or side-effect,Benign paroxysmal positional vertigo (BPPV),Diabetes (type 2),Fainting (vasovagal syncope),Generalized anxiety disorder,Heart rhythm disorder,Panic attack,Anemia,Anemia (chronic disease),Anemia (iron deficiency),Aortic regurgitation,Aortic stenosis,Aspirin poisoning,Atrial fibrillation,Benzodiazepine abuse,Carbon monoxide poisoning,Cryptococcosis,Dehydration (Adult),Diabetes (type 1),Heat exhaustion,High blood pressure (hypertension),Hyperventilation,Insulin reaction (hypoglycemia),Meniere's disease,Pulmonary hypertension,Supraventricular tachycardia,Chemical burns,Anemia (hemolytic),Cyanide poisoning,Small intestine cancer"
+    },
+    "Drainage_or_pus": {
+      "warning": "",
+      "conditions": "Allergic reaction,Abscess"
+    },
+    "Drowsiness": {
+      "warning": "",
+      "conditions": "Sleep apnea,Caffeine withdrawal,Sleep deprivation,Acute kidney failure,Alcohol intoxication,Aspirin poisoning,Barbiturate abuse,Benzodiazepine abuse,Chronic kidney disease,Dementia in head injury,Diabetic ketoacidosis,Drug overdose,Low blood sugar (hypoglycemia),Narcotic abuse,Schizophrenia,Cyanide poisoning"
+    },
+    "Early_morning_waking": {
+      "warning": "",
+      "conditions": "Depression (Adult),Short-acting sedative use,Depression (Postpartum),Grief reaction"
+    },
+    "Easily_distracted": {
+      "warning": "",
+      "conditions": "Attention deficit hyperactivity disorder (ADHD)"
+    },
+    "Emotional_detachment": {
+      "warning": "",
+      "conditions": "Obsessive compulsive personality disorder,Post-traumatic stress disorder (PTSD)"
+    },
+    "Fainting": {
+      "warning": "If you experienced fainting (loss of consciousness) please seek prompt medical attention.",
+      "conditions": "Fainting (vasovagal syncope),Heart rhythm disorder,Medication reaction or side-effect,Atrial flutter,Heat exhaustion,Low blood pressure (hypotension),Anemia,Aortic regurgitation,Aortic stenosis,Atrial fibrillation,Attention deficit hyperactivity disorder (ADHD),Dehydration (Adult),Drug overdose,Ectopic pregnancy,Hyperventilation,Low blood sugar (hypoglycemia),Lyme disease,Pulmonary embolism,Pulmonary hypertension,Supraventricular tachycardia,Ventricular septal defect,Brain aneurysm"
+    },
+    "Fatigue": {
+      "warning": "",
+      "conditions": "no conditions"
+    },
+    "Fear_of_air": {
+      "warning": "",
+      "conditions": "Rabies"
+    },
+    "Fear_of_gaining_weight": {
+      "warning": "",
+      "conditions": "Anorexia nervosa,Bulimia"
+    },
+    "Fear_of_water": {
+      "warning": "",
+      "conditions": "Rabies"
+    },
+    "Feeling_of_being_detached_from_reality": {
+      "warning": "",
+      "conditions": "Generalized anxiety disorder,Intoxication"
+    },
+    "Feeling_smothered": {
+      "warning": "",
+      "conditions": "Generalized anxiety disorder"
+    },
+    "Feeling_something_moving_on_scalp": {
+      "warning": "",
+      "conditions": "Head lice"
+    },
+    "Fever": {
+      "warning": "",
+      "conditions": "Viral pharyngitis,Acute sinusitis,Influenza (flu) adults,Bacterial pneumonia,Gastroenteritis,Medication reaction or side-effect,Middle ear infection,Sunburn,Urinary tract infection (UTI),Meningitis,Coxsackie virus infection,Abscess,Aspirin poisoning,Bronchial adenoma,Crohn's disease,Cryptococcosis,Drug overdose,Drug withdrawal,Epiglottitis,Hepatitis A,Hepatitis B,Inflammatory bowel disease,Kidney infection (pyelonephritis),Lupus (systemic lupus erythematosus),Lyme disease,Mononucleosis,Mumps,Osteomyelitis (bone infection),Pericarditis,Phlebitis,Rheumatic fever,Rheumatoid arthritis,Sarcoidosis,Scarlet fever,Syphilis (female),Thalassemia,Thyroid storm,Tuberculosis,Valley fever (coccidioidomycosis),Viral pneumonia,Histoplasmosis,Sickle cell disease,Tick bite,Brain infection,Chagas disease,Dengue fever,Legionella (Legionnaires disease),Malaria,Toxic shock syndrome,Typhoid fever,Whooping cough,Aortic aneurysm (abdomen),Pilonidal cyst,Measles,Mesenteric lymphadenitis,Plague,Shingles (herpes zoster),West nile virus,Anthrax (inhaled),Endocarditis,Cat-scratch disease"
+    },
+    "Fits_of_rage": {
+      "warning": "",
+      "conditions": "Premenstrual dysphoric disorder (PMDD),Premenstrual syndrome (PMS),Intoxication,Post-traumatic stress disorder (PTSD)"
+    },
+    "Flashbacks": {
+      "warning": "",
+      "conditions": "Post-traumatic stress disorder (PTSD)"
+    },
+    "Food_cravings": {
+      "warning": "",
+      "conditions": "Bulimia,Eating disorder,Malnutrition,Pica,Premenstrual syndrome (PMS)"
+    },
+    "Forgetfulness": {
+      "warning": "",
+      "conditions": "Intoxication"
+    },
+    "Frightening_dreams": {
+      "warning": "",
+      "conditions": "Nightmares"
+    },
+    "Frightening_thoughts": {
+      "warning": "",
+      "conditions": "Depression (Adult),Depression (Postpartum),Bipolar disorder,Epilepsy (temporal lobe),Schizophrenia"
+    },
+    "Hair_loss": {
+      "warning": "",
+      "conditions": "Alopecia,Hair loss (female),Hypopituitarism"
+    },
+    "Hallucinations": {
+      "warning": "",
+      "conditions": "Schizophrenia,Barbiturate abuse,Epilepsy (temporal lobe),Narcotic abuse,Vitamin B12 deficiency"
+    },
+    "Headache": {
+      "warning": "",
+      "conditions": "Tension headache,Acute sinusitis,Acute stress reaction,Caffeine withdrawal,Diabetes (type 2),Excessive caffeine use,Malocclusion (bite out of alignment),Migraine headache (adult),Nearsightedness,Postconcussive syndrome,Sleep apnea,Sunburn,Chronic sinusitis,Meningitis,Allergic reaction,Fibromyalgia,Anemia (chronic disease),Anemia (iron deficiency),Astigmatism,Botulinum toxin (Botox) injection,Carbon monoxide poisoning,Cervical (neck) spondylosis,Chronic kidney disease,Cluster headache,Coxsackie virus infection,Cryptococcosis,Dementia in head injury,Diabetes (type 1),Head injury,Heat exhaustion,High blood pressure (hypertension),Hypocalcemia,Hypoparathyroidism,Insulin reaction (hypoglycemia),Intracranial hematoma,Lupus (systemic lupus erythematosus),Lyme disease,Mononucleosis,Multiple sclerosis,Mumps,Nasal polyps,Nonallergic rhinitis,Noroviruses (Norwalk-like viruses),Ocular migraine,Premenstrual syndrome (PMS),Sporotrichosis,Thalassemia,Constipation (adult),Chemical burns,Tick bite,Anemia (hemolytic),Brain aneurysm,Brain infection,Cyanide poisoning,Endocarditis,Lead poisoning,Plague,Pseudohypoparathyroidism,Radiation sickness,Typhoid fever,Osteomyelitis (bone infection),Bird (avian) flu,Brain tumor,Shingles (herpes zoster),West nile virus"
+    },
+    "Headache_(worst_ever)": {
+      "warning": "If you are experiencing a severe headache considered to be the worst ever, please seek emergency medical attention.",
+      "conditions": "Brain aneurysm,Meningitis"
+    },
+    "Hearing_voices": {
+      "warning": "",
+      "conditions": "Schizophrenia,Epilepsy (temporal lobe)"
+    },
+    "Impaired_color_vision": {
+      "warning": "",
+      "conditions": "no conditions"
+    },
+    "Impaired_judgement": {
+      "warning": "",
+      "conditions": "Depression (Adult),Alcohol intoxication,Bipolar disorder,Depression (Postpartum),Intoxication"
+    },
+    "Impaired_social_skills": {
+      "warning": "",
+      "conditions": "Autism,Schizophrenia"
+    },
+    "Impulsive_behavior": {
+      "warning": "",
+      "conditions": "Attention deficit hyperactivity disorder (ADHD),Bipolar disorder,Dementia in head injury"
+    },
+    "Inappropriate_behavior": {
+      "warning": "",
+      "conditions": "Attention deficit hyperactivity disorder (ADHD),Autism,Bipolar disorder,Dementia in head injury,Epilepsy (temporal lobe),Intoxication,Schizophrenia"
+    },
+    "Itching_or_burning": {
+      "warning": "",
+      "conditions": "Seborrheic dermatitis,Allergic reaction,Contact dermatitis,Alopecia,Bee or wasp stings,Dermatitis,Poison ivy/oak and sumac"
+    },
+    "Lack_of_emotion": {
+      "warning": "",
+      "conditions": "Autism,Schizophrenia"
+    },
+    "Lack_of_motivation": {
+      "warning": "",
+      "conditions": "Depression (Adult),Schizophrenia"
+    },
+    "Lack_of_pleasure": {
+      "warning": "",
+      "conditions": "Depression (Adult),Depression (Postpartum),Schizophrenia"
+    },
+    "Lightheadedness": {
+      "warning": "",
+      "conditions": "Medication reaction or side-effect,Fainting (vasovagal syncope),Generalized anxiety disorder,Heart rhythm disorder,Hyperventilation,Supraventricular tachycardia,Fibromyalgia,Acute kidney failure,Anemia,Anemia (chronic disease),Anemia (iron deficiency),Aortic regurgitation,Aspirin poisoning,Atrial fibrillation,Atrial flutter,Ectopic pregnancy,High blood pressure (hypertension),Labyrinthitis,Low blood pressure (hypotension),Thalassemia,Anemia (hemolytic),Toxic shock syndrome"
+    },
+    "Loss_of_consciousness": {
+      "warning": "",
+      "conditions": "Fainting (vasovagal syncope),Drug overdose,Epilepsy (tonic clonic or grand mal seizures),Insulin reaction (hypoglycemia),Anemia,Aortic stenosis,Aspirin poisoning,Barbiturate abuse,Benzodiazepine abuse,Brain injury,Carbon monoxide poisoning,Concussion,Diabetic ketoacidosis,Epilepsy (complex partial seizures),Intoxication,Intracranial hematoma,Narcotic abuse,Brain aneurysm,Brain infection,Japanese encephalitis,Toxic shock syndrome,Shock,West nile virus"
+    },
+    "Lump_or_bulge": {
+      "warning": "",
+      "conditions": "Trauma or injury,Abscess,Epidermal (sebaceous) cyst,Benign lipoma"
+    },
+    "Memory_problems": {
+      "warning": "",
+      "conditions": "Alcohol withdrawal (delirium tremens),Depression (Adult),Medication reaction or side-effect,Postconcussive syndrome,Short-acting sedative use,Sleep apnea,Alcohol intoxication,Attention deficit hyperactivity disorder (ADHD),Carbon monoxide poisoning,Dementia in head injury,Depression (Postpartum),Head injury,Intoxication,Lyme disease,Marijuana (cannibis) use,Multiple sclerosis,Schizophrenia,Transient global amnesia,Vitamin B12 deficiency,Brain infection,Brain tumor,Mad cow disease"
+    },
+    "Mood_swings": {
+      "warning": "",
+      "conditions": "Acute stress reaction,Depression (Adult),Premenstrual syndrome (PMS),Bipolar disorder,Dementia in head injury,Depression (Postpartum),Epilepsy (temporal lobe),Hyperthyroidism,Hypothyroidism (adult),Brain tumor"
+    },
+    "Multiple_bruises_of_different_ages": {
+      "warning": "",
+      "conditions": "Physical abuse,Falls or injury"
+    },
+    "Numbness_or_tingling": {
+      "warning": "",
+      "conditions": "Burn (heat or fire),Chemical burnsHyperventilation,Burn (heat or fire),Chemical burns"
+    },
+    "Paranoid_behavior": {
+      "warning": "",
+      "conditions": "Schizophrenia,Bipolar disorder,Epilepsy (temporal lobe),Vitamin B12 deficiency"
+    },
+    "Personality_changes": {
+      "warning": "",
+      "conditions": "Depression (Adult),Bipolar disorder,Depression (Postpartum),Epilepsy (temporal lobe),Porphyria,Schizophrenia,Vitamin B12 deficiency,West nile virus"
+    },
+    "Poor_concentration": {
+      "warning": "",
+      "conditions": "Depression (Adult),Attention deficit hyperactivity disorder (ADHD),Bipolar disorder,Dementia in head injury,Depression (Postpartum),Head injury,Insulin reaction (hypoglycemia)"
+    },
+    "Pulling_out_hair": {
+      "warning": "",
+      "conditions": "Trichotillomania"
+    },
+    "Punching_or_kicking_in_sleep": {
+      "warning": "",
+      "conditions": "REM sleep behavior disorder"
+    },
+    "Repeats_phrases": {
+      "warning": "",
+      "conditions": "Autism"
+    },
+    "Repetitive_behaviors": {
+      "warning": "",
+      "conditions": "Autism, Tourette syndrome"
+    },
+    "Restless_(tossing_and_turning)_sleep": {
+      "warning": "",
+      "conditions": "Acute stress reaction,Sleep apnea,Periodic limb movement disorder"
+    },
+    "Sadness": {
+      "warning": "",
+      "conditions": "Depression (Adult),Depression (Postpartum),Grief reaction"
+    },
+    "Scratching": {
+      "warning": "",
+      "conditions": "Head lice"
+    },
+    "Seizures_(uncontrollable_jerking_of_limbs)": {
+      "warning": "",
+      "conditions": "Epilepsy (tonic clonic or grand mal seizures),Alcohol withdrawal (delirium tremens),Medication reaction or side-effect,Cocaine abuse,Insulin reaction (hypoglycemia),Barbiturate abuse,Brain aneurysm,Brain infection,Brain tumor,Chagas disease,Tetanus,West nile virus"
+    },
+    "Sense_of_impending_doom": {
+      "warning": "",
+      "conditions": "Generalized anxiety disorder,Panic attack,Allergic reaction,Anaphylactic shock,Epilepsy (temporal lobe),Pulmonary embolism,Severe allergic reaction (anaphylactic shock)"
+    },
+    "Skin_irritation": {
+      "warning": "",
+      "conditions": "Head lice"
+    },
+    "Sleep_walking": {
+      "warning": "",
+      "conditions": "no conditions"
+    },
+    "Slow_thinking": {
+      "warning": "",
+      "conditions": "Sleep deprivation,Dementia in head injury"
+    },
+    "Spinning_sensation": {
+      "warning": "",
+      "conditions": "Middle ear infection,Labyrinthitis,Meniere's disease,Intoxication"
+    },
+    "Swelling": {
+      "warning": "",
+      "conditions": "Bee or wasp stings,Insect bites,Insect sting,Poison ivy/oak and sumac,Burn (heat or fire),Chemical burns,Osteomyelitis (bone infection)"
+    },
+    "Tenderness_to_touch": {
+      "warning": "",
+      "conditions": "Hematoma,Abscess,Bruise or contusion,Epidermal (sebaceous) cyst"
+    },
+    "Unusual_behavior": {
+      "warning": "",
+      "conditions": "Depression (Adult),Epilepsy (temporal lobe),Aspirin poisoning,Bipolar disorder,Depression (Postpartum),Intoxication,Narcotic abuse,Schizophrenia,Cyanide poisoning"
+    },
+    "Visible_bugs_or_parasites": {
+      "warning": "",
+      "conditions": "Head lice"
+    },
+    "Visible_deformity": {
+      "warning": "",
+      "conditions": "Benign lipoma"
+    },
+    "Warm_to_touch": {
+      "warning": "",
+      "conditions": "Abscess"
+    },
+    "White_specks_on_scalps_or_hair": {
+      "warning": "",
+      "conditions": "Head lice,Seborrheic dermatitis"
+    }
+  },
+  "Eyes": {
+    "Blank_stare": {
+      "warning": "",
+      "conditions": "Botulinum toxin (Botox) injection,Epilepsy (absence or petit mal seizures),Epilepsy (complex partial seizures),Phencyclidine use"
+    },
+    "Bleeding": {
+      "warning": "",
+      "conditions": "Trauma or injury"
+    },
+    "Bleeding_in_eye": {
+      "warning": "",
+      "conditions": "Subconjunctival hemorrhage (bleeding in eye),Eye injury,Trauma or injury"
+    },
+    "Blind_spot_in_vision": {
+      "warning": "",
+      "conditions": "Diabetic eye disease,Glaucoma,Optic neuritis,Retinal detachment"
+    },
+    "Blindness": {
+      "warning": "If you are experiencing blindness please seek emergency medical attention.",
+      "conditions": "Multiple sclerosis,Ocular migraine,Optic neuritis,Retinal detachment,Sickle cell disease,Brain infection,Brain tumor,Methanol poisoning,Normal-tension glaucoma"
+    },
+    "Blinking_eyes": {
+      "warning": "",
+      "conditions": "Eye injury,Epilepsy (complex partial seizures),Epilepsy (simple partial seizures),Tourette syndrome"
+    },
+    "Blurred_vision": {
+      "warning": "",
+      "conditions": "Diabetes (type 2),Eye injury,Nearsightedness,Pink eye (conjunctivitis),Diabetes (type 1),Acute angle-closure glaucoma,Astigmatism,Benzodiazepine abuse,Cryptococcosis,Diabetic ketoacidosis,Epilepsy (complex partial seizures),Epilepsy (simple partial seizures),Foreign object in the eye,Glaucoma,Low blood pressure (hypotension),Ocular migraine,Retinal detachment,Diabetic eye disease,Pseudohypoparathyroidism,Medication reaction or side-effect"
+    },
+    "Broken_eye_socket": {
+      "warning": "",
+      "conditions": "Broken (fractured) eye socket"
+    },
+    "Brownish-yellow_ring_around_the_color_of_eye": {
+      "warning": "",
+      "conditions": "Keratoconus"
+    },
+    "Bruising_or_discoloration": {
+      "warning": "",
+      "conditions": "Bruise or contusion,Hematoma,Muscle strain,Trauma or injury,ThrombocytopeniaHematoma,Black eye,Botulinum toxin (Botox) injection,Trauma or injury,Thrombocytopenia"
+    },
+    "Bulging_eyes": {
+      "warning": "",
+      "conditions": "Hyperthyroidism"
+    },
+    "Change_in_vision": {
+      "warning": "",
+      "conditions": "Cataracts,Nearsightedness,Astigmatism,Foreign object in the eye,Glaucoma,High blood pressure (hypertension),Intracranial hematoma,Ocular migraine,Retinal detachment,Sarcoidosis,Normal-tension glaucoma,Brain infection,Brain tumor"
+    },
+    "Cloudy_vision": {
+      "warning": "",
+      "conditions": "Cataracts,Mucopolysaccharidosis I (MPS1)"
+    },
+    "Decreased_night_vision": {
+      "warning": "",
+      "conditions": "Nearsightedness,Cataracts"
+    },
+    "Discharge_or_mucus_in_eyes": {
+      "warning": "",
+      "conditions": "Pink eye (conjunctivitis)"
+    },
+    "Distortion_of_part_of_visual_field": {
+      "warning": "",
+      "conditions": "Astigmatism"
+    },
+    "Double_vision_(with_one_eye_covered)": {
+      "warning": "",
+      "conditions": "Cataracts"
+    },
+    "Double_vision_(without_one_eye_covered)": {
+      "warning": "",
+      "conditions": "Diabetes (type 2),Alcohol intoxication,Aspirin poisoning,Diabetes (type 1),Botulinum poisoning,Cavernous sinus thrombosis"
+    },
+    "Drainage_or_pus": {
+      "warning": "",
+      "conditions": "Pink eye (conjunctivitis),Abscess"
+    },
+    "Drooping_eyelid": {
+      "warning": "",
+      "conditions": "no conditions"
+    },
+    "Dry_eyes": {
+      "warning": "",
+      "conditions": "Wind exposure,Dry eye syndrome,Sjogren's syndrome,Fibromyalgia,Sarcoidosis"
+    },
+    "Enlarged_(dilated_pupils)": {
+      "warning": "",
+      "conditions": "Medication reaction or side-effect,Cocaine abuse,Methamphetamine use,Adie's pupil,Brain tumor"
+    },
+    "Eye_crusting_with_sleep": {
+      "warning": "",
+      "conditions": "Pink eye (conjunctivitis)"
+    },
+    "Eye_irritation": {
+      "warning": "",
+      "conditions": "Contact lens use,Hay fever,Pink eye (conjunctivitis),Dry eyes,Lyme disease"
+    },
+    "Eyelashes_falling_out": {
+      "warning": "",
+      "conditions": "Eyelash curler use,Eyelid inflammation (blepharitis)"
+    },
+    "Eyelid_redness": {
+      "warning": "",
+      "conditions": "Allergic reaction,Rubbing eyelids,Eyelid inflammation (blepharitis),Eye allergies"
+    },
+    "Eyes_do_not_track_together": {
+      "warning": "If your eyes just started not tracking together please seek prompt medical attention.",
+      "conditions": "Lazy eye,Wernicke syndrome,Diabetic neuropathy,Myasthenia gravis,Brain tumor"
+    },
+    "Eyes_rolling_back": {
+      "warning": "",
+      "conditions": "Fainting (vasovagal syncope),Epilepsy (complex partial seizures)"
+    },
+    "Flickering_lights_in_vision": {
+      "warning": "",
+      "conditions": "Migraine headache (adult),Ocular migraine"
+    },
+    "Flickering_uncolored_zig-zag_line_in_vision": {
+      "warning": "",
+      "conditions": "Migraine headache (adult)"
+    },
+    "Floating_spots_or_strings_in_vision": {
+      "warning": "",
+      "conditions": "Benign eye floaters,Diabetic eye disease,Retinal detachment"
+    },
+    "Frequent_changes_in_eye_glass_prescription": {
+      "warning": "",
+      "conditions": "Cataracts"
+    },
+    "Frequent_squinting": {
+      "warning": "",
+      "conditions": "Nearsightedness,Astigmatism,Lazy eye"
+    },
+    "Gritty_or_scratchy_eyes": {
+      "warning": "",
+      "conditions": "Dust exposure,Hay fever,Pink eye (conjunctivitis),Wind exposure,Dry eyes,Foreign object in the eye,Sarcoidosis,Sjogren's syndrome,Bird (avian) flu"
+    },
+    "Holding_objects_closer_to_read_(Short-sightedness/Nearsightedness/Myopia": {
+      "warning": "",
+      "conditions": "Nearsightedness"
+    },
+    "Holding_objects_further_away_to_read_(Farsightedness/Hyperopia/Hypermetropia)": {
+      "warning": "",
+      "conditions": "Farsightedness"
+    },
+    "Itching_or_burning": {
+      "warning": "",
+      "conditions": "Allergic reaction,Indoor allergens,Hay fever,Rosacea,Eye allergies,Chagas disease"
+    },
+    "Jerking_eye_movements": {
+      "warning": "",
+      "conditions": "Alcohol intoxication,Labyrinthitis"
+    },
+    "Loss_of_outside_1/3_of_eyebrow_(unintentional)": {
+      "warning": "",
+      "conditions": "Hypothyroidism (adult)"
+    },
+    "Loss_of_side_vision": {
+      "warning": "",
+      "conditions": "Glaucoma"
+    },
+    "Lump_or_bulge": {
+      "warning": "",
+      "conditions": "Abscess,Chalazion"
+    },
+    "Multiple_bruises_of_different_ages": {
+      "warning": "",
+      "conditions": "Physical abuse,Falls or injury"
+    },
+    "Nasal_symptoms_and_one_red_eye": {
+      "warning": "",
+      "conditions": "Pink eye (conjunctivitis)"
+    },
+    "Need_brighter_light_to_read": {
+      "warning": "",
+      "conditions": "Nearsightedness"
+    },
+    "Numbness_or_tingling": {
+      "warning": "",
+      "conditions": "Burn (heat or fire),Chemical burnsBurn (heat or fire),Chemical burns"
+    },
+    "Pain_or_discomfort": {
+      "warning": "",
+      "conditions": "Eye injury,Acute sinusitis,Corneal abrasion (scratch),Nearsightedness,Chronic sinusitis,Acute angle-closure glaucoma,Astigmatism,Broken (fractured) eye socket,Corneal flash burns,Corneal ulcer,Diabetic eye disease,Dry eyes,Foreign object in the eye,Glaucoma,Iritis,Multiple sclerosis,Shingles (herpes zoster)"
+    },
+    "Pain_when_moving_eyes": {
+      "warning": "",
+      "conditions": "Acute sinusitis,Corneal abrasion (scratch),Optic neuritis,Foreign object in the eye"
+    },
+    "Painful_red_lump_on_eyelids": {
+      "warning": "",
+      "conditions": "Sty (hordeolum)"
+    },
+    "Partial_vision_loss": {
+      "warning": "If you are experiencing partial vision loss please seek emergency medical attention.",
+      "conditions": "Glaucoma,Multiple sclerosis,Ocular migraine,Optic neuritis,Retinal detachment,Sickle cell disease,Brain infection,Brain tumor"
+    },
+    "Puffy_eyelids": {
+      "warning": "",
+      "conditions": "Allergic reaction,Hay fever,Sleep deprivation,Dermatomyositis,Eye allergies,Chagas disease"
+    },
+    "Pulling_out_eyelashes": {
+      "warning": "",
+      "conditions": "Trichotillomania"
+    },
+    "Red_(bloodshot)_eyes": {
+      "warning": "",
+      "conditions": "Allergic reaction,Indoor allergens,Sleep deprivation,Blepharitis,Corneal flash burns,Eye allergies,Glaucoma,Intoxication,Narcotic abuse,Chagas disease,Toxic shock syndrome,Measles,West nile virus"
+    },
+    "Red_eye_(single)": {
+      "warning": "",
+      "conditions": "Eye injury,Pink eye (conjunctivitis)"
+    },
+    "Red_spots_inside_lower_eyelid": {
+      "warning": "",
+      "conditions": "Endocarditis"
+    },
+    "Scaly_skin_on_eyelids": {
+      "warning": "",
+      "conditions": "Atopic dermatitis,Eyelid inflammation (blepharitis)"
+    },
+    "See_letters,_numbers_or_musical_notes_as_colors": {
+      "warning": "",
+      "conditions": "Synaesthesia"
+    },
+    "Sensation_of_something_in_eye": {
+      "warning": "",
+      "conditions": "Corneal abrasion (scratch),Eye injury,Stuck eyelash,Foreign object in the eye"
+    },
+    "Sensitive_to_light": {
+      "warning": "",
+      "conditions": "Migraine headache (adult),Pink eye (conjunctivitis),Cataracts,Corneal ulcer,Iritis,Brain aneurysm,Pseudohypoparathyroidism,West nile virus"
+    },
+    "Shadow_over_part_of_vision": {
+      "warning": "If you are experiencing a shadow over part of your vision please seek emergency medical attention.",
+      "conditions": "Retinal detachment"
+    },
+    "Slow_eye_movements": {
+      "warning": "",
+      "conditions": "no conditions"
+    },
+    "Small_(constricted)_pupils": {
+      "warning": "",
+      "conditions": "Medication reaction or side-effect,Narcotic abuse,Horner's syndrome"
+    },
+    "Sore_or_burning_eyes": {
+      "warning": "",
+      "conditions": "Hay fever,Allergic reaction,Dust exposure,Smoke exposure,Eye allergies"
+    },
+    "Squinting_eyes": {
+      "warning": "",
+      "conditions": "Nearsightedness"
+    },
+    "Sudden_flash_of_lights": {
+      "warning": "If you are experiencing sudden flashing lights in your vision please seek emergency medical attention.",
+      "conditions": "Retinal detachment"
+    },
+    "Sunken_eyes": {
+      "warning": "",
+      "conditions": "Dehydration (Adult)"
+    },
+    "Swelling": {
+      "warning": "",
+      "conditions": "Acute sinusitis,Allergic reaction,Hay fever,Pink eye (conjunctivitis),Bee or wasp stings,Eye allergies,Foreign object in the eye,Insect bites,Insect sting,Poison ivy/oak and sumac,Burn (heat or fire),Chemical burns"
+    },
+    "Tears_in_one_eye": {
+      "warning": "",
+      "conditions": "Blocked tear (nasolacrimal) duct"
+    },
+    "Tenderness_to_touch": {
+      "warning": "",
+      "conditions": "Hematoma,Abscess,Bruise or contusion"
+    },
+    "Tilts_head_to_look_at_something": {
+      "warning": "",
+      "conditions": "Lazy eye,Torticollis,Brain tumor"
+    },
+    "Trouble_distinguishing_color_shades": {
+      "warning": "",
+      "conditions": "Color blindness,Optic neuritis,Hyperthyroidism,Multiple sclerosis"
+    },
+    "Unable_to_blink_or_close_eyelid": {
+      "warning": "",
+      "conditions": "Botulinum toxin (Botox) injection,Broken (fractured) facial bone,Carbon monoxide poisoning,Lyme disease,Multiple sclerosis,Myasthenia gravis,Sarcoidosis,Mononucleosis,Mumps,Syphilis (female),Tetanus,Coxsackie virus infection,Shingles (herpes zoster),Cat-scratch disease"
+    },
+    "Unequal_pupils_(size)": {
+      "warning": "",
+      "conditions": "Eye injury,Normal variation,Horner's syndrome,Brain injury,Adie's pupil,Brain tumor"
+    },
+    "Visible_deformity": {
+      "warning": "",
+      "conditions": "Broken (fractured) eye socket"
+    },
+    "Vision_fading_of_colors": {
+      "warning": "",
+      "conditions": "Cataracts,Optic neuritis,Hyperthyroidism"
+    },
+    "Visual_halos_around_lights": {
+      "warning": "",
+      "conditions": "Cataracts,Cataract surgery (lens implant),Glaucoma,Radial keratotomy (Lasik) surgery"
+    },
+    "Warm_to_touch": {
+      "warning": "",
+      "conditions": "Abscess"
+    },
+    "Watery_eyes": {
+      "warning": "",
+      "conditions": "Dust exposure,Hay fever,Indoor allergens,Pink eye (conjunctivitis),Foreign object in the eye,Whooping cough,West nile virus"
+    },
+    "Yellow_eyes": {
+      "warning": "",
+      "conditions": "Amyloidosis,Cirrhosis (liver),Gallstones,Hepatitis A,Hepatitis B,Hepatitis C,Hypothyroidism (adult),Mononucleosis,Pancreatic cancer,Primary biliary cirrhosis,Sarcoidosis,Syphilis (female),Thalassemia,Ulcerative colitis,Tuberculosis,Anemia (hemolytic)"
+    }
+  },
+  "Nose": {
+    "Bruising_or_discoloration": {
+      "warning": "",
+      "conditions": "Bruise or contusion,Hematoma,Muscle strain,Trauma or injury,ThrombocytopeniaBruise or contusion,HematomaTrauma or injury,Thrombocytopenia"
+    },
+    "Decreased_smell": {
+      "warning": "",
+      "conditions": "Acute sinusitis,Nasal congestion,Chronic sinusitis,Anosmia,Nasal polyps"
+    },
+    "Difficulty_breathing": {
+      "warning": "",
+      "conditions": ""
+    },
+    "Difficulty_breathing_through_nose": {
+      "warning": "",
+      "conditions": "Acute sinusitis,Allergic reaction,Dust exposure,Hay fever,Indoor allergens,Chronic sinusitis,Foreign object in the nose,Nasal polyps,Nonallergic rhinitis"
+    },
+    "Drainage_or_pus": {
+      "warning": "",
+      "conditions": "Acute sinusitis,Allergic reaction,Chronic sinusitis,Abscess,Foreign object in the nose"
+    },
+    "Episodes_of_not_breathing_during_sleep": {
+      "warning": "",
+      "conditions": "Mucopolysaccharidosis I (MPS1)"
+    },
+    "Frequent_infections": {
+      "warning": "",
+      "conditions": ""
+    },
+    "Itching_or_burning": {
+      "warning": "",
+      "conditions": "Hay fever,Indoor allergens,Nasal dryness"
+    },
+    "Lump_or_bulge": {
+      "warning": "",
+      "conditions": "Abscess"
+    },
+    "Multiple_bruises_of_different_ages": {
+      "warning": "",
+      "conditions": "Physical abuse,Falls or injury"
+    },
+    "Nasal_congestion": {
+      "warning": "",
+      "conditions": "Nasal congestion,Hay fever,Acute sinusitis,Indoor allergens,Nasal polyps,Foreign object in the nose,Nonallergic rhinitis,Whooping cough,Ricin poisoning"
+    },
+    "Nasal_symptoms": {
+      "warning": "",
+      "conditions": "Pink eye (conjunctivitis)"
+    },
+    "Noisy_breathing": {
+      "warning": "",
+      "conditions": "Nasal congestion"
+    },
+    "Nosebleed": {
+      "warning": "",
+      "conditions": "Nasal irritation,Nasal dryness,Aspirin use,Medication reaction or side-effect,Nasal polyps,Blood clotting disorder,Cocaine abuse,Foreign object in the nose,Pre-leukemia (myelodysplastic syndrome),Thrombocytopenia,Trauma or injury,Hemophilia,Anemia, aplastic"
+    },
+    "Numbness_or_tingling": {
+      "warning": "",
+      "conditions": "Burn (heat or fire),Chemical burnsBurn (heat or fire),Chemical burns"
+    },
+    "Pain_or_discomfort": {
+      "warning": "",
+      "conditions": "Acute sinusitis,Nasal irritation,Chronic sinusitis,Broken (fractured) nose,Foreign object in the nose,Shingles (herpes zoster)"
+    },
+    "Runny_nose": {
+      "warning": "",
+      "conditions": "Common cold,Allergic reaction,Indoor allergens,Hay fever,Acute sinusitis,Dust exposure,Nasal congestion,Drug allergy,Foreign object in the nose,Narcotic abuse,Nasal polyps,Nonallergic rhinitis,Whooping cough,West nile virus,Mesenteric lymphadenitis Sneezing"
+    },
+    "Snoring": {
+      "warning": "",
+      "conditions": "Mucopolysaccharidosis I (MPS1)"
+    },
+    "Strange_smell_or_taste": {
+      "warning": "",
+      "conditions": "Epilepsy (simple partial seizures),Epilepsy (complex partial seizures),Epilepsy (temporal lobe)"
+    },
+    "Swelling": {
+      "warning": "",
+      "conditions": "Acute sinusitis,Bee or wasp stings,Insect bites,Insect sting,Poison ivy, oak, and sumac,Burn (heat or fire),Chemical burns"
+    },
+    "Tenderness_to_touch": {
+      "warning": "",
+      "conditions": "Hematoma,Abscess,Bruise or contusion"
+    },
+    "Visible_deformity": {
+      "warning": "",
+      "conditions": "Broken (fractured) nose"
+    },
+    "Warm_to_touch": {
+      "warning": "",
+      "conditions": "Abscess"
+    }
+  },
+  "Face": {
+    "Abnormally_round_face": {
+      "warning": "",
+      "conditions": "Cushing's syndrome,Pseudohypoparathyroidism"
+    },
+    "Blank_stare": {
+      "warning": "",
+      "conditions": "Botulinum toxin (Botox) injection,Epilepsy (absence or petit mal seizures),Epilepsy (complex partial seizures),Phencyclidine use"
+    },
+    "Bleeding": {
+      "warning": "",
+      "conditions": "Trauma or injury"
+    },
+    "Broken_bone_(single_fracture)": {
+      "warning": "",
+      "conditions": "Broken (fractured) eye socket,Physical abuse,Broken (fractured) facial bone,Trauma or injury"
+    },
+    "Broken_bones_(multiple_fractures)": {
+      "warning": "",
+      "conditions": "Physical abuse,Trauma or injury,Osteogenesis imperfectaPhysical abuse,Trauma or injury,Osteogenesis imperfect"
+    },
+    "Bruising_or_discoloration": {
+      "warning": "",
+      "conditions": "Bruise or contusion,Hematoma,Muscle strain,Trauma or injury,Thrombocytopenia"
+    },
+    "Drainage_or_pus": {
+      "warning": "",
+      "conditions": "Allergic reaction,Abscess"
+    },
+    "Drooping_of_one_side_of_face": {
+      "warning": "If you are experiencing drooping of one side of your face please seek emergency medical attention.",
+      "conditions": "Bells palsy,Lyme disease"
+    },
+    "Enlarged/swollen_glands": {
+      "warning": "",
+      "conditions": "Mumps"
+    },
+    "Lump_or_bulge": {
+      "warning": "",
+      "conditions": "Abscess,Trauma or injury,Benign lipoma,Epidermal (sebaceous) cyst"
+    },
+    "Multiple_bruises_of_different_ages": {
+      "warning": "",
+      "conditions": "Physical abuse,Falls or injury"
+    },
+    "Muscle_cramps_or_spasms_(painful)": {
+      "warning": "",
+      "conditions": "Tetany"
+    },
+    "Muscle_twitching_(painless)": {
+      "warning": "",
+      "conditions": "Facial tic,Epilepsy (simple partial seizures),Tourette syndrome,Epilepsy (complex partial seizures),Rheumatic fever"
+    },
+    "Numbness_or_tingling": {
+      "warning": "",
+      "conditions": "Burn (heat or fire),Chemical burnsCold exposure,Burn (heat or fire),Chemical burns"
+    },
+    "Pain_or_discomfort": {
+      "warning": "",
+      "conditions": "Dental abscess,Acute sinusitis,Nasal congestion,Toothache,Trigeminal neuralgia (facial nerve pain),Chronic sinusitis,Broken (fractured) eye socket,Broken (fractured) facial bone,Osteomyelitis (bone infection),Salivary duct obstruction (sialolithiasis),Shingles (herpes zoster)"
+    },
+    "Pulling_out_beard": {
+      "warning": "",
+      "conditions": "Trichotillomania"
+    },
+    "Swelling": {
+      "warning": "",
+      "conditions": "Acute sinusitis,Allergic reaction,Chronic sinusitis,Mumps,Angioedema,Bee or wasp stings,Glomerulonephritis,Insect bites,Insect sting,Poison ivy/oak and sumac,Salivary duct obstruction (sialolithiasis),Sarcoidosis,Anorexia nervosa,Bulimia,Burn (heat or fire),Chemical burns,Osteomyelitis (bone infection),Chagas disease"
+    },
+    "Tenderness_to_touch": {
+      "warning": "",
+      "conditions": "Acute sinusitis,Hematoma,Chronic sinusitis,Abscess,Bruise or contusion"
+    },
+    "Unusual_facial_expression": {
+      "warning": "",
+      "conditions": "Asperger syndrome,Autism,Myasthenia gravis"
+    },
+    "Visible_deformity": {
+      "warning": "",
+      "conditions": "Benign lipoma,Broken (fractured) eye socket,Broken (fractured) facial bone"
+    },
+    "Warm_to_touch": {
+      "warning": "",
+      "conditions": "Abscess"
+    }
+  },
+  "Ears": {
+    "Bleeding": {
+      "warning": "",
+      "conditions": "Trauma or injury"
+    },
+    "Bruising_or_discoloration": {
+      "warning": "",
+      "conditions": "Bruise or contusion,Hematoma,Muscle strain,Trauma or injury,ThrombocytopeniaBruise or contusion,Hematoma,Auricular hematoma,Cauliflower ear,Perichondritis,Trauma or injury,Thrombocytopenia"
+    },
+    "Drainage_or_pus": {
+      "warning": "",
+      "conditions": "Allergic reaction,Abscess,Ruptured eardrum"
+    },
+    "Ear_ache": {
+      "warning": "",
+      "conditions": "Ear canal infection,Earwax blockage,Middle ear infection,Chronic sinusitis,Foreign object in the ear canal,Ruptured eardrum,Swimmer's ear,Thyroid cancer"
+    },
+    "Hearing_loss": {
+      "warning": "",
+      "conditions": "Hearing loss,Earwax blockage,Exposure to loud noise,Middle ear infection,Meniere's disease,Acoustic neuroma,Aspirin poisoning,Foreign object in the ear canal,Labyrinthitis,Ruptured eardrum,Mucopolysaccharidosis I (MPS1)"
+    },
+    "Itching_or_burning": {
+      "warning": "",
+      "conditions": "Earwax blockage,Foreign object in the ear canal"
+    },
+    "Lump_or_bulge": {
+      "warning": "",
+      "conditions": "Cauliflower ear.Auricular hematoma.Abscess.Epidermal (sebaceous) cyst"
+    },
+    "Multiple_bruises_of_different_ages": {
+      "warning": "",
+      "conditions": "Physical abuse,Falls or injury"
+    },
+    "Numbness_or_tingling": {
+      "warning": "",
+      "conditions": "Burn (heat or fire),Chemical burnsBurn (heat or fire),Chemical burns"
+    },
+    "Pain_or_discomfort": {
+      "warning": "",
+      "conditions": "Ear canal infection,Earwax blockage,Middle ear infection,Chronic sinusitis,Auricular hematoma,Foreign object in the ear canal,Perichondritis,Swimmer's ear,Temporomandibular joint syndrome (TMJ),Thyroid cancer,Shingles (herpes zoster)"
+    },
+    "Ringing_in_ears": {
+      "warning": "",
+      "conditions": "Exposure to loud noise,Aspirin poisoning,Tinnitus,Meniere's disease,Labyrinthitis"
+    },
+    "Sensitive_to_noise": {
+      "warning": "",
+      "conditions": "Migraine headache (adult),Asperger syndrome,Autism,Hyperacusis,West nile virus"
+    },
+    "Swelling": {
+      "warning": "",
+      "conditions": "Auricular hematoma,Bee or wasp stings,Cauliflower ear,Insect bites,Insect sting,Poison ivy, oak, and sumac,Burn (heat or fire),Chemical burns"
+    },
+    "Taste_words_when_they_are_heard": {
+      "warning": "",
+      "conditions": "Synaesthesia"
+    },
+    "Tenderness_to_touch": {
+      "warning": "",
+      "conditions": "Ear canal infection,Hematoma,Abscess,Bruise or contusion,Epidermal (sebaceous) cyst"
+    },
+    "Warm_to_touch": {
+      "warning": "",
+      "conditions": "Abscess"
+    }
+  },
+  "Mouth": {
+    "Bad_breath": {
+      "warning": "",
+      "conditions": "Acute sinusitis,Chronic sinusitis,Gingivitis,Dry mouth,Dental caries (cavities),Eating certain foods,Constipation (adult)"
+    },
+    "Bad_taste_in_mouth": {
+      "warning": "",
+      "conditions": "Medication reaction or side-effect,Dry mouth,Constipation (adult)"
+    },
+    "Belching": {
+      "warning": "",
+      "conditions": "Heartburn/GERD,Indigestion,Overeating,Eating certain foods,Hernia"
+    },
+    "Bitter_almond_odor_in_breath": {
+      "warning": "If you have a bitter almond breath odor please seek emergency medical attention.",
+      "conditions": "Cyanide poisoning"
+    },
+    "Bleeding": {
+      "warning": "",
+      "conditions": "Trauma or injuryBroken (fractured) jaw,Trauma or injury"
+    },
+    "Bleeding_gums": {
+      "warning": "",
+      "conditions": "Hemophilia,Aspirin use,Medication reaction or side-effect,Toothbrush irritation,Periodontal (gum) disease,Blood clotting disorder,Gingivitis,Lupus (systemic lupus erythematosus),Pre-leukemia (myelodysplastic syndrome),Scurvy (vitamin C deficiency),Sickle cell disease,Thrombocytopenia"
+    },
+    "Bruising_or_discoloration": {
+      "warning": "",
+      "conditions": "Bruise or contusion,Hematoma,Muscle strain,Trauma or injury,ThrombocytopeniaBruise or contusion,Hematoma,Trauma or injury,Thrombocytopenia"
+    },
+    "Choking": {
+      "warning": "",
+      "conditions": ""
+    },
+    "Coated_or_furry_tongue": {
+      "warning": "",
+      "conditions": "Constipation (adult)"
+    },
+    "Colored_sputum": {
+      "warning": "",
+      "conditions": ""
+    },
+    "Cough": {
+      "warning": "",
+      "conditions": "Bronchitis,Dust exposure,Smoke exposure,Viral pharyngitis,Emphysema,Goiter,Medication reaction or side-effect"
+    },
+    "Cracks_at_corner_of_the_mouth": {
+      "warning": "",
+      "conditions": "Angular cheilitis,Anemia (iron deficiency)"
+    },
+    "Damaged_teeth_enamel": {
+      "warning": "",
+      "conditions": "Heartburn/GERD,Bulimia,Methamphetamine use"
+    },
+    "Decreased_appetite": {
+      "warning": "",
+      "conditions": "Anosmia"
+    },
+    "Decreased_taste": {
+      "warning": "",
+      "conditions": "Acute sinusitis,Chronic sinusitis,Nasal polyps"
+    },
+    "Difficulty_opening_mouth": {
+      "warning": "",
+      "conditions": "Medication reaction or side-effect,Broken (fractured) jaw,Temporomandibular joint syndrome (TMJ),Trismus,Cocaine abuse,Tetanus"
+    },
+    "Difficulty_swallowing": {
+      "warning": "",
+      "conditions": "Tonsillitis"
+    },
+    "Difficulty_talking": {
+      "warning": "",
+      "conditions": "Myasthenia gravis,Brain aneurysm,Brain infection,Brain tumor"
+    },
+    "Drainage_or_pus": {
+      "warning": "",
+      "conditions": "Allergic reaction,Abscess"
+    },
+    "Drinking_excessive_fluids": {
+      "warning": "",
+      "conditions": "Diabetes (type 2),Diabetes (type 1),Medication reaction or side-effect,Dehydration (Adult),Diabetic ketoacidosis"
+    },
+    "Drooling": {
+      "warning": "If you are drooling because you are unable to swallow please seek emergency medical attention.",
+      "conditions": "Epiglottitis,Swallowed object"
+    },
+    "Dry_mouth": {
+      "warning": "",
+      "conditions": "Dehydration (Adult),Dry mouth syndrome (xerostomia),Sjogren's syndrome,Acute kidney failure,Aspirin poisoning,GastroenteritisIron poisoning,Sarcoidosis,Sickle cell disease"
+    },
+    "Episodes_of_not_breathing_during_sleep": {
+      "warning": "",
+      "conditions": "Mucopolysaccharidosis I (MPS1)"
+    },
+    "Excessive_mouth_watering": {
+      "warning": "",
+      "conditions": "Acute stress reaction,Heartburn/GERD"
+    },
+    "Frequent_chewing": {
+      "warning": "",
+      "conditions": ""
+    },
+    "Fruity_odor_in_breath": {
+      "warning": "If you are experiencing a fruity odor on your breath please seek emergency medical attention.",
+      "conditions": "Diabetic ketoacidosis,Diabetes, type 1"
+    },
+    "Gagging": {
+      "warning": "",
+      "conditions": ""
+    },
+    "Grinding_teeth": {
+      "warning": "",
+      "conditions": "Acute stress reaction,Temporomandibular joint syndrome (TMJ)"
+    },
+    "Grooved_tongue": {
+      "warning": "",
+      "conditions": "Fissured tongue"
+    },
+    "Gum_sores": {
+      "warning": "",
+      "conditions": "Toothbrush irritation,Canker sores,Coxsackie virus infection"
+    },
+    "Hoarse_voice": {
+      "warning": "",
+      "conditions": "Laryngitis,Heartburn/GERD,Goiter,Esophageal cancer,Sjogren's syndrome,Thyroid cancer,Vocal cord polyp,Throat cancer"
+    },
+    "Increased_speech_volume": {
+      "warning": "",
+      "conditions": "Earwax blockage,Bipolar disorder,Intoxication,Ruptured eardrum"
+    },
+    "Increased_talkativeness": {
+      "warning": "",
+      "conditions": "Excessive caffeine use,Bipolar disorder,Cocaine abuse,Intoxication,Methamphetamine use"
+    },
+    "Increased_thirst": {
+      "warning": "",
+      "conditions": "Diabetes, type 2,Gastroenteritis,Dehydration (Adult),Diabetes, type 1,Acute kidney failure,Aspirin poisoning,Diabetic ketoacidosis,Exercise or physical activity,Heat exposure,Iron poisoning,Sickle cell disease"
+    },
+    "Involuntary_movements_(picking,_lip_smacking_etc)": {
+      "warning": "",
+      "conditions": "Epilepsy (tonic clonic or grand mal seizures),Epilepsy (temporal lobe)"
+    },
+    "Itching_or_burning": {
+      "warning": "",
+      "conditions": "Hay fever"
+    },
+    "Jaw_locking": {
+      "warning": "",
+      "conditions": "Trismus,Tetanus"
+    },
+    "Loss_of_voice": {
+      "warning": "",
+      "conditions": "Laryngitis,Strained voice (vocal cords),Viral pharyngitis"
+    },
+    "Lump_or_bulge": {
+      "warning": "",
+      "conditions": "Abscess,Mouth (oral) cancer,Salivary duct obstruction (sialolithiasis)"
+    },
+    "Metallic_taste_in_mouth": {
+      "warning": "",
+      "conditions": "Medication reaction or side-effect,Antibiotic use,Poisoning"
+    },
+    "Mouth_sores": {
+      "warning": "",
+      "conditions": "Coxsackie virus infection,Canker sores,Esophagitis,Mouth (oral) cancer,Pemphigus,Thermal burn of mouth or tongue,Ulcerative colitis,Crohn's disease"
+    },
+    "Muffled_voice": {
+      "warning": "",
+      "conditions": "Laryngitis,Strained voice (vocal cords),Viral pharyngitis,Epiglottitis"
+    },
+    "Multiple_bruises_of_different_ages": {
+      "warning": "",
+      "conditions": "Physical abuse,Falls or injury"
+    },
+    "Noisy_breathing": {
+      "warning": "",
+      "conditions": "Nasal congestion,Epiglottitis"
+    },
+    "Numbness_or_tingling": {
+      "warning": "",
+      "conditions": "Burn (heat or fire),Chemical burnsGeneralized anxiety disorder,Migraine headache (adult),Panic attack,Hyperventilation,Low blood sugar (hypoglycemia),Tetany,Burn (heat or fire),Chemical burns"
+    },
+    "Pain_or_discomfort": {
+      "warning": "",
+      "conditions": "Dental abscess,Acute sinusitis,Oral (mouth) herpes,Toothache,Canker sores,Dental caries (cavities),Erythema multiforme,Salivary duct obstruction (sialolithiasis),Thermal burn of mouth or tongue"
+    },
+    "Rapid_speech": {
+      "warning": "",
+      "conditions": "Cocaine abuse,Methamphetamine use"
+    },
+    "Red_(strawberry)_tongue": {
+      "warning": "",
+      "conditions": "Scarlet fever"
+    },
+    "Red_gums": {
+      "warning": "",
+      "conditions": "Toothbrush irritation,Gingivitis"
+    },
+    "Red_spots": {
+      "warning": "",
+      "conditions": "Scarlet fever"
+    },
+    "Regurgitation_of_food_or_liquid": {
+      "warning": "",
+      "conditions": "Heartburn/GERD,Esophageal stricture"
+    },
+    "Shortness_of_breath": {
+      "warning": "",
+      "conditions": "Glycogen Storage Disease Type II"
+    },
+    "Slurred_speech": {
+      "warning": "",
+      "conditions": "Medication reaction or side-effect,Alcohol intoxication,Barbiturate abuse,Benzodiazepine abuse,Insulin reaction (hypoglycemia),Intoxication,Intracranial hematoma,Brain aneurysm,Brain infection,Brain tumor"
+    },
+    "Smooth_tongue": {
+      "warning": "",
+      "conditions": "Thalassemia"
+    },
+    "Snoring": {
+      "warning": "",
+      "conditions": "Nasal congestion,Sleep apnea,Alcohol intoxication,Nasal polyps,Upper airway obstruction,Mucopolysaccharidosis I (MPS1)"
+    },
+    "Sore_tongue": {
+      "warning": "",
+      "conditions": "Allergic reaction,Medication reaction or side-effect,Thalassemia,Thermal burn of mouth or tongue"
+    },
+    "Soreness_or_burning_inside_mouth": {
+      "warning": "",
+      "conditions": "Allergic reaction,Medication reaction or side-effect,Anemia, iron deficiency,Canker sores"
+    },
+    "Spots_on_throat": {
+      "warning": "",
+      "conditions": "Scarlet fever"
+    },
+    "Spots_in_tonsils": {
+      "warning": "",
+      "conditions": "Tonsillitis,Viral pharyngitis,Scarlet fever"
+    },
+    "Strange_smell_or_taste": {
+      "warning": "",
+      "conditions": "Epilepsy (simple partial seizures),Epilepsy (complex partial seizures),Epilepsy (temporal lobe)"
+    },
+    "Swelling": {
+      "warning": "",
+      "conditions": "Allergic reaction,Angioedema,Drug allergy,Erythema multiforme,Insect bites,Insect sting,Poison ivy, oak, and sumac,Salivary duct obstruction (sialolithiasis),Burn (heat or fire),Chemical burns"
+    },
+    "Swollen_gums": {
+      "warning": "",
+      "conditions": "Toothbrush irritation,Gingivitis"
+    },
+    "Swollen_lips": {
+      "warning": "",
+      "conditions": ""
+    },
+    "Swollen_tongue": {
+      "warning": "",
+      "conditions": "Drug allergy,Dehydration (Adult),Thermal burn of mouth or tongue"
+    },
+    "Swollen_tonsils": {
+      "warning": "",
+      "conditions": "Tonsillitis,Viral pharyngitis,Mononucleosis"
+    },
+    "Taste_of_acid_in_mouth": {
+      "warning": "",
+      "conditions": "Heartburn/GERD,Esophageal spasm,Hernia"
+    },
+    "Taste_words_when_they_are_heard": {
+      "warning": "",
+      "conditions": "Synaesthesia"
+    },
+    "Teeth_do_not_fit_like_they_used_to": {
+      "warning": "",
+      "conditions": "Malocclusion (bite out of alignment)"
+    },
+    "Tenderness_to_touch": {
+      "warning": "",
+      "conditions": "Hematoma,Abscess,Bruise or contusion"
+    },
+    "Thick_saliva_or_mucus": {
+      "warning": "",
+      "conditions": "Cystic fibrosis,Dehydration (Adult)"
+    },
+    "Unable_to_open_mouth/jaw": {
+      "warning": "",
+      "conditions": "Tetany,Tetanus,Trismus"
+    },
+    "Uncontrollable_verbal_outbursts": {
+      "warning": "",
+      "conditions": "Tourette syndrome"
+    },
+    "Unusual_taste_in_mouth": {
+      "warning": "",
+      "conditions": "Medication reaction or side-effect"
+    },
+    "Upset_stomach": {
+      "warning": "",
+      "conditions": "Medication reaction or side-effect"
+    },
+    "Warm_to_touch": {
+      "warning": "",
+      "conditions": "Abscess"
+    },
+    "White_patches_inside_mouth": {
+      "warning": "",
+      "conditions": "Thrush (adults)"
+    },
+    "White_patches_on_tongue": {
+      "warning": "",
+      "conditions": "Thrush (adults)"
+    }
+  },
+  "Jaw": {
+    "Bleeding": {
+      "warning": "",
+      "conditions": "Trauma or injury"
+    },
+    "Broken_bone_(single_fracture)": {
+      "warning": "",
+      "conditions": "Physical abuse,Broken (fractured) jaw,Trauma or injury"
+    },
+    "Broken_bones_(multiple_fractures)": {
+      "warning": "",
+      "conditions": "Physical abuse,Trauma or injury,Osteogenesis imperfecta"
+    },
+    "Bruising_or_discoloration": {
+      "warning": "",
+      "conditions": "Bruise or contusion,Hematoma,Muscle strain,Trauma or injury,ThrombocytopeniaBruise or contusion,Hematoma,Trauma or injury,Thrombocytopenia"
+    },
+    "Clicking_or_popping_sound_from_jaw": {
+      "warning": "",
+      "conditions": "Temporomandibular joint syndrome (TMJ)"
+    },
+    "Difficulty_moving_joint": {
+      "warning": "",
+      "conditions": ""
+    },
+    "Difficulty_opening_mouth": {
+      "warning": "",
+      "conditions": "Medication reaction or side-effect,Broken (fractured) jaw,Trismus,Cocaine abuse,Tetanus"
+    },
+    "Drainage_or_pus": {
+      "warning": "",
+      "conditions": "Allergic reaction,Abscess"
+    },
+    "Enlarged/swollen_glands": {
+      "warning": "",
+      "conditions": "Viral pharyngitis,Mumps,Swollen glands"
+    },
+    "Jaw_locking": {
+      "warning": "",
+      "conditions": "Medication reaction or side-effect,Temporomandibular joint syndrome (TMJ),Trismus,Broken (fractured) jaw,Cocaine abuse"
+    },
+    "Lump_or_bulge": {
+      "warning": "",
+      "conditions": "Abscess,Salivary duct obstruction (sialolithiasis),Trauma or injury"
+    },
+    "Multiple_bruises_of_different_ages": {
+      "warning": "",
+      "conditions": "Physical abuse,Falls or injury"
+    },
+    "Muscle_cramps/spasms_(painful)": {
+      "warning": "",
+      "conditions": "Medication reaction or side-effect,Cocaine abuse,Tetanus"
+    },
+    "Numbness_or_tingling": {
+      "warning": "",
+      "conditions": "Burn (heat or fire),Chemical burnsBurn (heat or fire),Chemical burns"
+    },
+    "Pain_or_discomfort": {
+      "warning": "If you are experiencing pain in your jaw please seek prompt medical attention.",
+      "conditions": "Dental abscess,Malocclusion (bite out of alignment),Toothache,Broken (fractured) jaw,Dental caries (cavities,)Osteomyelitis (bone infection),Temporomandibular joint syndrome (TMJ),Trigeminal neuralgia (facial nerve pain),Shingles (herpes zoster)"
+    },
+    "Pulling_out_beard": {
+      "warning": "",
+      "conditions": "Trichotillomania"
+    },
+    "Stiffness_or_decreased_movement": {
+      "warning": "",
+      "conditions": "Medication reaction or side-effect,Trismus,Cocaine abuse,Tetanus"
+    },
+    "Swelling": {
+      "warning": "",
+      "conditions": "Bee or wasp stings,Insect bites,Insect sting,Mumps,Poison ivy, oak, and sumac,Swollen glands,Anorexia nervosa,Bulimia,Burn (heat or fire),Chemical burns,Osteomyelitis (bone infection)"
+    },
+    "Tender_glands": {
+      "warning": "",
+      "conditions": "Swollen glands"
+    },
+    "Tenderness_to_touch": {
+      "warning": "",
+      "conditions": "Hematoma,Abscess,Bruise or contusion,Temporomandibular joint syndrome (TMJ)"
+    },
+    "Unable_to_open_mouth_(jaw)": {
+      "warning": "",
+      "conditions": "Tetany,Tetanus,Temporomandibular joint syndrome (TMJ),Trismus"
+    },
+    "Visible_deformity": {
+      "warning": "",
+      "conditions": "Broken (fractured) jaw"
+    },
+    "Warm_to_touch": {
+      "warning": "",
+      "conditions": "Abscess"
+    }
+  },
+  "Neck": {
+    "Bleeding": {
+      "warning": "",
+      "conditions": "Trauma or injury"
+    },
+    "Broken_bone_(single_fracture)": {
+      "warning": "",
+      "conditions": "Physical abuse,Broken (fractured) neck vertebra,Trauma or injury"
+    },
+    "Broken_bones_(multiple_fractures)": {
+      "warning": "",
+      "conditions": "Physical abuse,Trauma or injury,Osteogenesis imperfecta"
+    },
+    "Bruising_or_discoloration": {
+      "warning": "",
+      "conditions": "Bruise or contusion,Hematoma,Muscle strain,Trauma or injury,ThrombocytopeniaBruise or contusion,Hematoma,Muscle strain,Trauma or injury,Thrombocytopenia"
+    },
+    "Drainage_or_pus": {
+      "warning": "",
+      "conditions": "Allergic reaction,Abscess"
+    },
+    "Enlarged/swollen_glands": {
+      "warning": "",
+      "conditions": "Mononucleosis,Abscess,Lyme disease,Swollen glands,Anthrax (skin),Lymphoma,Cat-scratch disease"
+    },
+    "Joint_aches": {
+      "warning": "",
+      "conditions": "Mucopolysaccharidosis I (MPS1)"
+    },
+    "Joint_pain": {
+      "warning": "If you are experiencing pain in your neck please seek prompt medical attention.",
+      "conditions": "Psoriatic arthritis, Rheumatoid arthritis"
+    },
+    "Lump_or_bulge": {
+      "warning": "",
+      "conditions": "Abscess,Benign lipoma,Epidermal (sebaceous) cyst,Swollen glands,Trauma or injury"
+    },
+    "Morning_joint_stiffness": {
+      "warning": "",
+      "conditions": "Rheumatoid arthritis,Psoriatic arthritis"
+    },
+    "Multiple_bruises_of_different_ages": {
+      "warning": "",
+      "conditions": "Physical abuse,Falls or injury"
+    },
+    "Muscle_cramps/spasms_(painful)": {
+      "warning": "",
+      "conditions": "Muscle strain,Tetanus"
+    },
+    "Muscle_twitching_(painless)": {
+      "warning": "",
+      "conditions": "Tourette syndrome"
+    },
+    "Numbness_or_tingling": {
+      "warning": "",
+      "conditions": "Burn (heat or fire),Chemical burnsBurn (heat or fire),Chemical burns"
+    },
+    "Pain_or_discomfort": {
+      "warning": "If you are experiencing pain in your neck please seek emergency medical attention.",
+      "conditions": "Fibromyalgia,Muscle strain,Neck strain,Cervical (neck) herniated disk,Cervical (neck) spondylosis,Bone spurs,Broken (fractured) neck vertebra,Cervical (neck) spinal stenosis,Rheumatoid arthritis,Torticollis,Whiplash,Ulcerative colitis,Brain aneurysm,Osteomyelitis (bone infection),Tick bite,Shingles (herpes zoster),Cat-scratch disease"
+    },
+    "Short,_wide_neck": {
+      "warning": "",
+      "conditions": "Down syndrome"
+    },
+    "Stiff_neck": {
+      "warning": "",
+      "conditions": "Spinal meningitis,Meningitis,Muscle strain,Bone spurs,Cervical (neck) spinal stenosis,Cervical (neck) spondylosis,Cryptococcosis,Lyme disease,Torticollis,West nile virus"
+    },
+    "Stiffness_or_decreased_movement": {
+      "warning": "",
+      "conditions": "Fibromyalgia"
+    },
+    "Swelling": {
+      "warning": "",
+      "conditions": "Muscle strain,Bee or wasp stings,Insect bites,Insect sting,Poison ivy, oak, and sumac,Swollen glands,Burn (heat or fire),Chemical burns,Crohn's disease,Osteomyelitis (bone infection)"
+    },
+    "Tender_glands": {
+      "warning": "",
+      "conditions": "Lyme disease,Swollen glands,Cat-scratch disease"
+    },
+    "Tenderness_to_touch": {
+      "warning": "",
+      "conditions": "Fibromyalgia,Hematoma,Muscle strain,Mononucleosis,Abscess,Bruise or contusion,Epidermal (sebaceous) cyst"
+    },
+    "Tilts_head_to_look_at_something": {
+      "warning": "",
+      "conditions": "Lazy eye"
+    },
+    "Visible_deformity": {
+      "warning": "",
+      "conditions": "Benign lipoma"
+    },
+    "Warm_to_touch": {
+      "warning": "",
+      "conditions": "Abscess"
+    }
+  },
+  "Chest": {
+    "Bleeding": {
+      "warning": "",
+      "conditions": "Trauma or injury"
+    },
+    "Bleeding_from_nipple": {
+      "warning": "",
+      "conditions": "Breast cancer (female),Lactation (breastfeeding) mastitis,Mastitis (infectious),Nipple irritation"
+    },
+    "Broken_bone_(single_fracture)": {
+      "warning": "",
+      "conditions": "Broken (fractured) rib(s),Physical abuse,Broken (fractured) collarbone,Trauma or injury"
+    },
+    "Broken_bones_(multiple_fractures)": {
+      "warning": "",
+      "conditions": "Physical abuse,Trauma or injury,Osteogenesis imperfecta"
+    },
+    "Bruising_or_discoloration": {
+      "warning": "",
+      "conditions": "Bruise or contusion,Hematoma,Muscle strain,Trauma or injury,ThrombocytopeniaBruise or contusion,Hematoma,Muscle strain,Trauma or injury,Thrombocytopenia"
+    },
+    "Cough": {
+      "warning": "",
+      "conditions": "Common cold,Bronchitis,Acute sinusitis,Allergic reaction,Asthma (teen and adult),Chronic obstructive pulmonary disease (COPD),Hay fever,Heartburn/GERD,Indoor allergens,Laryngitis,Pneumonia,Smoke exposure,Viral pharyngitis,Chronic sinusitis,Dust exposure,Asbestosis,Bronchial adenoma,Chemical pneumonia,Cryptococcosis,Cystic fibrosis,Drug allergy,Emphysema,Esophageal cancer,Exercise-induced asthma,Histoplasmosis,Pleural effusion,Pneumonitis,Pulmonary embolism,Pulmonary fibrosis,Radon exposure,Sarcoidosis,Scleroderma,Sjogren's syndrome,Tuberculosis,Valley fever (coccidioidomycosis),Viral pneumonia,Endocarditis,Legionella (Legionnaires disease),Plague,Radiation sickness,Ricin poisoning,West nile virus,Whooping cough,Sickle cell disease,Swallowed object,Mesenteric lymphadenitisMedication reaction or side-effect"
+    },
+    "Difficulty_breathing": {
+      "warning": "",
+      "conditions": ""
+    },
+    "Difficulty_talking": {
+      "warning": "",
+      "conditions": "Asthma (teen and adult),Chronic obstructive pulmonary disease (COPD),Emphysema"
+    },
+    "Discharge_from_nipple": {
+      "warning": "",
+      "conditions": "Nipple stimulation,Nipple irritation,Breast cancer (female),Lactation (breastfeeding) mastitis,Mastitis (infectious)"
+    },
+    "Drainage_or_pus": {
+      "warning": "",
+      "conditions": "Allergic reaction,Abscess"
+    },
+    "Episodes_of_not_breathing_during_sleep": {
+      "warning": "",
+      "conditions": "Sleep apnea,Mucopolysaccharidosis I (MPS1)"
+    },
+    "Feeling_of_not_being_able_to_get_enough_air": {
+      "warning": "",
+      "conditions": "Asthma (teen and adult),Generalized anxiety disorder,Anaphylactic shock,Pulmonary embolism,Upper airway obstruction,Pleural effusion,Severe allergic reaction (anaphylactic shock)"
+    },
+    "Food_getting_stuck_(swallowing)": {
+      "warning": "",
+      "conditions": "Esophageal stricture,Heartburn/GERD,Not chewing food well,Esophageal spasm,Esophageal cancer,Achalasia,Chagas disease"
+    },
+    "Frequent_infections": {
+      "warning": "",
+      "conditions": ""
+    },
+    "Heartburn": {
+      "warning": "",
+      "conditions": "Heartburn/GERD,Overeating,Esophagitis,Hernia,Barrett esophagus"
+    },
+    "Hyperventilating_(rapid/deep/heavy_breathing)": {
+      "warning": "",
+      "conditions": "Panic attack,Acute stress reaction,Diabetic ketoacidosis"
+    },
+    "Irregular_heartbeat": {
+      "warning": "If you are experiencing an irregular heart beat associated with dizziness, lightheadedness, fainting, shortness of breath or chest discomfort please seek emergency medical attention.",
+      "conditions": "Excessive caffeine use,Heart rhythm disorder,Low potassium (hypokalemia),Panic attack,Premature ventricular contractions (PVCs),Atrial fibrillation,Generalized anxiety disorder,Aortic regurgitation,Aortic stenosis,Cocaine abuse,Hyperthyroidism,Pulmonary hypertension"
+    },
+    "Labored_breathing": {
+      "warning": "",
+      "conditions": "Asthma (teen and adult),Exercise or physical activity,Pulmonary embolism,Upper airway obstruction"
+    },
+    "Lump_or_bulge": {
+      "warning": "",
+      "conditions": "Breast cancer (female),Abscess,Benign lipoma,Breast cyst,Fibroadenoma,Fibrocystic breasts,Trauma or injury,Epidermal (sebaceous) cyst"
+    },
+    "Multiple_bruises_of_different_ages": {
+      "warning": "",
+      "conditions": "Physical abuse,Falls or injury"
+    },
+    "Muscle_cramps_or_spasms_(painful)": {
+      "warning": "",
+      "conditions": "Muscle strain"
+    },
+    "New_onset_asthma": {
+      "warning": "If you are experiencing new onset asthma please seek prompt medical attention.",
+      "conditions": "Asthma (teen and adult),Heartburn/GERD"
+    },
+    "Nighttime_wheezing": {
+      "warning": "",
+      "conditions": "Asthma (teen and adult),Heartburn/GERD"
+    },
+    "Noisy_breathing": {
+      "warning": "",
+      "conditions": "Asthma (teen and adult),Epiglottitis,Upper airway obstruction"
+    },
+    "Numbness_or_tingling": {
+      "warning": "",
+      "conditions": "Burn (heat or fire),Chemical burnsThoracic spinal stenosis,Burn (heat or fire),Chemical burns"
+    },
+    "Pain_or_discomfort": {
+      "warning": "",
+      "conditions": "Asthma (teen and adult),Costochondritis,Fibromyalgia,Generalized anxiety disorder,Heart rhythm disorder,Muscle strain,Panic attack,Peptic ulcer,Pleurisy,Breast infection,Broken (fractured) rib(s),Rheumatic fever,Anemia,Aortic regurgitation,Aortic stenosis,Atrial fibrillation,Atrial flutter,Bronchial adenoma,Cryptococcosis,Dermatomyositis,Drug overdose,Esophagitis,Fibrocystic breasts,Hernia,Histoplasmosis,Lactation (breastfeeding) mastitis,Lupus (systemic lupus erythematosus),Mastitis (infectious),Mitral valve prolapse,Osteomyelitis (bone infection),Pericarditis,Pleural effusion,Porphyria,Pulmonary embolism,Pulmonary fibrosis,Pulmonary hypertension,Supraventricular tachycardia,Thalassemia,Thyroid storm,Tuberculosis,Vertebral compression fracture (thoracic),Barrett esophagus,Radiation sickness,Shingles (herpes zoster),Breast cancer (female)"
+    },
+    "Palpitations_(fluttering_in_chest)": {
+      "warning": "If you are experiencing palpitations (fluttering in chest) associated with dizziness, lightheadedness, fainting, shortness of breath or chest discomfort please seek emergency medical attention.",
+      "conditions": "Atrial fibrillation,Panic attack,Generalized anxiety disorder,Acute stress reaction,Excessive caffeine use,Heart rhythm disorder,Low potassium (hypokalemia),Premature ventricular contractions (PVCs),Mitral valve prolapse,Fibromyalgia,Aortic regurgitation,Atrial flutter,Hyperthyroidism,Supraventricular tachycardia,Thyroid storm,Vitamin B12 deficiency,Pseudohypoparathyroidism,Pompe disease (late-onset)"
+    },
+    "Pounding_heart_(pulse)": {
+      "warning": "",
+      "conditions": "Panic attack,Acute stress reaction,Supraventricular tachycardia,Dehydration (Adult),Exercise or physical activity,Insulin reaction (hypoglycemia)"
+    },
+    "Pressure_or_heaviness": {
+      "warning": "If you are experiencing chest pressure or heaviness please seek emergency medical attention.",
+      "conditions": "Asthma (teen and adult),Heart rhythm disorder,Heartburn/GERD,Atrial fibrillation"
+    },
+    "Prolonged_breathing_pauses": {
+      "warning": "",
+      "conditions": "Sleep apnea"
+    },
+    "Rapid_breathing": {
+      "warning": "",
+      "conditions": "Acute stress reaction,Asthma (teen and adult),Generalized anxiety disorder,Hyperventilation,Aspirin poisoning,Anaphylactic shock,Exercise or physical activity,Nightmares,Ventricular septal defect,Cyanide poisoning,Anthrax (inhaled),Severe allergic reaction (anaphylactic shock)"
+    },
+    "Rapid_heart_rate_(pulse)": {
+      "warning": "If you are experiencing a rapid heart rate associated with dizziness, lightheadedness, fainting, shortness of breath or chest discomfort please seek emergency medical attention.",
+      "conditions": "Panic attack,Acute stress reaction,Excessive caffeine use,Generalized anxiety disorder,Heart rhythm disorder,Supraventricular tachycardia,Atrial flutter,Hyperthyroidism,Low blood sugar (hypoglycemia),Acute kidney failure,Anaphylactic shock,Anemia, chronic disease,Anemia, iron deficiency,Aortic stenosis,Cocaine abuse,Dehydration (Adult),Drug overdose,Exercise or physical activity,Insulin reaction (hypoglycemia),Lyme disease,Narcotic abuse,Nightmares,Thalassemia,Thyroid storm,Ventricular septal defect,Anemia, hemolytic,Cyanide poisoning,Toxic shock syndrome,Severe allergic reaction (anaphylactic shock)"
+    },
+    "Shortness_of_breath": {
+      "warning": "If you are experiencing shortness of breath please seek prompt medical attention.",
+      "conditions": "Generalized anxiety disorder,Allergic reaction,Asthma (teen and adult),Chronic obstructive pulmonary disease (COPD),Heart rhythm disorder,Panic attack,Atrial flutter,Drug allergy,Severe acute respiratory syndrome (SARS),Anemia,Fibromyalgia,Anaphylactic shock,Anemia, chronic disease,Anemia, iron deficiency,Aortic regurgitation,Aortic stenosis,Asbestosis,Atrial fibrillation,Benzodiazepine abuse,Bronchial adenoma,Chemical pneumonia,Cystic fibrosis,Drug overdose,Emphysema,Epiglottitis,Exercise or physical activity,Gastrointestinal bleeding,Goiter,Hernia,Interstitial lung disease,Low blood pressure (hypotension),Mitral valve prolapse,Myasthenia gravis,Narcotic abuse,Obesity,Pleural effusion,Pre-leukemia (myelodysplastic syndrome),Pulmonary embolism,Pulmonary fibrosis,Radon exposure,Sarcoidosis,Scleroderma,Sickle cell disease,Supraventricular tachycardia,Swallowed object,Thyroid cancer,Thyroid nodules,Thyroid storm,Tuberculosis,Upper airway obstruction,Ventricular septal defect,Vitamin B12 deficiency,Chemical burns,Pneumothorax (spontaneous),Pulmonary hypertension,Anemia, hemolytic,Cyanide poisoning,Plague,Radiation sickness,Ricin poisoning,Tetanus,Whooping cough,Glycogen Storage Disease Type II,Severe allergic reaction (anaphylactic shock)"
+    },
+    "Slow_heart_rate_(pulse)": {
+      "warning": "If you are experiencing a slow heart rate (pulse) that is associated with lightheadedness, dizziness or fainting please seek emergency medical attention.",
+      "conditions": "Heart rhythm disorder,Medication reaction or side-effect,Drug overdose,Narcotic abuse,Cyanide poisoning"
+    },
+    "Slow_or_irregular_breathing": {
+      "warning": "If you are experiencing episodes of slow or irregular breathing please seek prompt medical attention.",
+      "conditions": "Drug overdose,Narcotic abuse"
+    },
+    "Stiffness_or_decreased_movement": {
+      "warning": "",
+      "conditions": "Fibromyalgia"
+    },
+    "Swelling": {
+      "warning": "",
+      "conditions": "Muscle strain,Bee or wasp stings,Breast cancer (female),Breast infection,Insect bites,Insect sting,Poison ivy, oak, and sumac,Pregnancy,Premenstrual syndrome (PMS),Burn (heat or fire),Chemical burns,Osteomyelitis (bone infection)"
+    },
+    "Tenderness_to_touch": {
+      "warning": "",
+      "conditions": "Breast cancer (female),Fibromyalgia,Hematoma,Muscle strain,Pregnancy,Abscess,Bruise or contusion,Fibrocystic breasts,Premenstrual syndrome (PMS),Epidermal (sebaceous) cyst"
+    },
+    "Tightness": {
+      "warning": "If you are experiencing chest tightness, please seek emergency medical attention.",
+      "conditions": "Asthma (teen and adult)"
+    },
+    "Visible_deformity": {
+      "warning": "If you are experiencing a new physical chest deformity please seek prompt medical attention.",
+      "conditions": "Benign lipoma,Breast cancer (female),Broken (fractured) collarbone,Broken (fractured) rib(s)"
+    },
+    "Warm_to_touch": {
+      "warning": "",
+      "conditions": "Abscess,Breast cancer (female)"
+    },
+    "Wheezing": {
+      "warning": "",
+      "conditions": "Asthma (teen and adult),Allergic reaction,Aspirin use,Chronic obstructive pulmonary disease (COPD),Heartburn/GERD,Indoor allergens,Medication reaction or side-effect,Anaphylactic shock,Asbestosis,Bronchial adenoma,Cystic fibrosis,Drug allergy,Emphysema,Interstitial lung disease,Thyroid cancer,Severe allergic reaction (anaphylactic shock)"
+    }
+  },
+  "Side_of_chest": {
+    "Bleeding": {
+      "warning": "",
+      "conditions": "Trauma or injury"
+    },
+    "Broken_bone_(single_fracture)": {
+      "warning": "",
+      "conditions": "Broken (fractured) rib(s),Physical abuse,Trauma or injury"
+    },
+    "Broken_bones_(multiple_fractures)": {
+      "warning": "",
+      "conditions": "Physical abuse,Trauma or injury,Osteogenesis imperfecta"
+    },
+    "Bruising_or_discoloration": {
+      "warning": "",
+      "conditions": "Bruise or contusion,Hematoma,Muscle strain,Trauma or injury,ThrombocytopeniaBruise or contusionHematomaMuscle strainTrauma or injuryThrombocytopenia"
+    },
+    "Drainage_or_pus": {
+      "warning": "",
+      "conditions": "Allergic reaction,Abscess"
+    },
+    "Irregular_heartbeat": {
+      "warning": "",
+      "conditions": ""
+    },
+    "Lump_or_bulge": {
+      "warning": "",
+      "conditions": "Abscess,Benign lipoma,Epidermal (sebaceous) cyst,Trauma or injury"
+    },
+    "Multiple_bruises_of_different_ages": {
+      "warning": "",
+      "conditions": "Physical abuse,Falls or injury"
+    },
+    "Muscle_cramps_or_spasms_(painful)": {
+      "warning": "",
+      "conditions": "Muscle strain"
+    },
+    "Numbness_or_tingling": {
+      "warning": "",
+      "conditions": "Burn (heat or fire),Chemical burnsThoracic spinal stenosis,Burn (heat or fire),Chemical burns"
+    },
+    "Pain_or_discomfort": {
+      "warning": "",
+      "conditions": "Thoracic spinal stenosis,Fibromyalgia,Muscle strain,Broken (fractured) rib(s),Pulmonary embolism,Osteomyelitis (bone infection),Shingles (herpes zoster)"
+    },
+    "Swelling": {
+      "warning": "",
+      "conditions": "Muscle strain,Bee or wasp stings,Insect bites,Insect sting,Poison ivy, oak, and sumac,Burn (heat or fire),Chemical burns,Osteomyelitis (bone infection)"
+    },
+    "Tenderness_to_touch": {
+      "warning": "",
+      "conditions": "Hematoma,Muscle strain,Abscess,Bruise or contusion,Epidermal (sebaceous) cyst"
+    },
+    "Visible_deformity": {
+      "warning": "",
+      "conditions": "Benign lipoma,Broken (fractured) rib(s)"
+    },
+    "Warm_to_touch": {
+      "warning": "",
+      "conditions": "Abscess"
+    }
+  },
+  "Sternum": {
+    "Bleeding": {
+      "warning": "",
+      "conditions": "Trauma or injury"
+    },
+    "Broken_bone_(single_fracture)": {
+      "warning": "",
+      "conditions": "Physical abuse,Trauma or injury"
+    },
+    "Broken_bones_(multiple_fractures)": {
+      "warning": "",
+      "conditions": "Physical abuse,Trauma or injury,Osteogenesis imperfecta"
+    },
+    "Bruising_or_discoloration": {
+      "warning": "",
+      "question": "",
+      "options": "Bruise or contusion,Hematoma,Trauma or injury,Thrombocytopenia",
+      "conditions": "Cough"
+    },
+    "Difficulty_swallowing": {
+      "warning": "",
+      "conditions": "Heartburn/GERD,Esophagitis,Bleeding esophageal varices,Esophageal spasm,Esophageal stricture,Swallowed object,Barrett esophagus,Scleroderma,CREST syndrome,Esophageal cancer"
+    },
+    "Drainage_or_pus": {
+      "warning": "",
+      "conditions": "Allergic reaction,Abscess"
+    },
+    "Food_getting_stuck_(swallowing)": {
+      "warning": "",
+      "conditions": "Esophageal stricture,Heartburn/GERD,Not chewing food well,Esophageal spasm,Esophageal cancer,Achalasia,Chagas disease"
+    },
+    "Heartburn": {
+      "warning": "",
+      "conditions": "Heartburn/GERD,Esophagitis,Esophageal spasm,Hernia,Obesity,Barrett esophagus,Hyperparathyroidism,CREST syndrome"
+    },
+    "Irregular_heartbeat": {
+      "warning": "",
+      "conditions": "Heart rhythm disorder,Premature ventricular contractions (PVCs),Aortic stenosis"
+    },
+    "Lump_or_bulge": {
+      "warning": "",
+      "conditions": "Abscess,Benign lipoma,Epidermal (sebaceous) cyst,Trauma or injury"
+    },
+    "Multiple_bruises_of_different_ages": {
+      "warning": "",
+      "conditions": "Physical abuse,Falls or injury"
+    },
+    "Numbness_or_tingling": {
+      "warning": "",
+      "conditions": "Burn (heat or fire),Chemical burns"
+    },
+    "Pain_or_discomfort": {
+      "warning": "",
+      "conditions": "Costochondritis,Fibromyalgia,Heartburn/GERD,Bleeding esophageal varices,Broken (fractured) breastbone,Esophageal cancer,Esophageal spasm,Esophageal stricture,Esophagitis,Hernia,Barrett esophagus,Osteomyelitis (bone infection),Shingles (herpes zoster)"
+    },
+    "Pain_while_swallowing": {
+      "warning": "",
+      "conditions": "Esophageal strictur"
+    },
+    "Palpitations_(fluttering_in_chest)": {
+      "warning": "",
+      "conditions": "Atrial fibrillation,Panic attack,Generalized anxiety disorder,Acute stress reaction,Heart rhythm disorder,Low potassium (hypokalemia),Premature ventricular contractions (PVCs),Aortic regurgitation,Hyperthyroidism,Mitral valve prolapse,Supraventricular tachycardia,Thyroid storm,Vitamin B12 deficiency,Pompe disease (late-onset)"
+    },
+    "Pressure_or_heaviness": {
+      "warning": "",
+      "conditions": "Heartburn/GERD,Hernia"
+    },
+    "Swelling": {
+      "warning": "",
+      "conditions": "Bee or wasp stings,Insect bites,Insect sting,Poison ivy, oak, and sumac,Burn (heat or fire),Chemical burns,Osteomyelitis (bone infection)"
+    },
+    "Tenderness_to_touch": {
+      "warning": "",
+      "conditions": "Fibromyalgia,Hematoma,Abscess,Bruise or contusion,Epidermal (sebaceous) cyst"
+    },
+    "Visible_deformity": {
+      "warning": "",
+      "conditions": "Pectus excavatum,Benign lipoma,Broken (fractured) breastbone"
+    },
+    "Warm_to_touch": {
+      "warning": "",
+      "conditions": "Abscess"
+    }
+  },
+  "Upper_abdomen": {
+    "Bleeding": {
+      "warning": "",
+      "conditions": "Trauma or injury"
+    },
+    "Bloating_or_fullness": {
+      "warning": "",
+      "conditions": "Irritable bowel syndrome,Gas pains,Gastritis,Gastroenteritis,Indigestion,Premenstrual syndrome (PMS),Gallstones,Giardiasis,Helicobacter pylori infection,Uterine fibroids,Small intestine cancer,Budd-Chiari syndrome,Colon cancer"
+    },
+    "Bloody_or_red_colored_vomit": {
+      "warning": "If you are experiencing bloody or red colored vomit please seek emergency medical attention.",
+      "conditions": "Gastrointestinal bleeding,Peptic ulcer,Bleeding esophageal varices,Gastroenteritis,Mallory-Weiss syndrome,Helicobacter pylori infection,Bulimia,Esophageal cancer,Esophageal varices,Esophagitis,Iron poisoning,Primary biliary cirrhosis,Swallowed object,Barrett esophagus,Stomach cancer"
+    },
+    "Bruising_or_discoloration": {
+      "warning": "",
+      "conditions": "Bruise or contusion,Hematoma,Muscle strain,Trauma or injury,ThrombocytopeniaBruise or contusion,Hematoma,Muscle strain,Trauma or injury,Thrombocytopenia"
+    },
+    "Bulging_veins": {
+      "warning": "",
+      "conditions": "Cirrhosis (liver),Budd-Chiari syndrome"
+    },
+    "Change_in_bowel_habits": {
+      "warning": "",
+      "conditions": "Irritable bowel syndrome,Dietary changes,Gastroenteritis,Colon cancer,Colon polyps"
+    },
+    "Coffee_grounds_colored_vomit": {
+      "warning": "If you are vomiting blood or coffee ground colored material please seek prompt medical attention.",
+      "conditions": "Gastrointestinal bleeding,Peptic ulcer,Mallory-Weiss syndrome,Helicobacter pylori infection,Bulimia,Esophageal cancer,Iron poisoning,Stomach cancer"
+    },
+    "Constipation": {
+      "warning": "",
+      "conditions": "Constipation (adult),Irritable bowel syndrome,Medication reaction or side-effect,Hypothyroidism (adult),Depression (Adult),Anal fissure,Colon cancer,Cystic fibrosis,Dehydration (Adult),Diverticulosis,Foreign object in the rectum,Intestinal Ileus,Kidney infection (pyelonephritis),Low fiber diet,Narcotic abuse,Porphyria,Scleroderma,Taking iron supplements,Uterine fibroids,Hyperparathyroidism,Chagas disease,CREST syndrome,Hypopituitarism,Lead poisoning"
+    },
+    "Distended_stomach": {
+      "warning": "",
+      "conditions": "Constipation (adult),Gas pains,Indigestion,Polycystic kidney disease,Chagas disease,Budd-Chiari syndrome,Gaucher disease (late-onset),Mucopolysaccharidosis I (MPS1)"
+    },
+    "Drainage_or_pus": {
+      "warning": "",
+      "conditions": "Allergic reaction,Abscess"
+    },
+    "Intentional_vomiting_(purging)": {
+      "warning": "",
+      "conditions": "Bulimia,Eating disorder"
+    },
+    "Lump_or_bulge": {
+      "warning": "",
+      "conditions": "Abscess,Benign lipoma"
+    },
+    "Multiple_bruises_of_different_ages": {
+      "warning": "",
+      "conditions": "Physical abuse,Falls or injury"
+    },
+    "Muscle_cramps_or_spasms_(painful)": {
+      "warning": "",
+      "conditions": "Muscle strain"
+    },
+    "Nausea_or_vomiting": {
+      "warning": "If you are experiencing nausea or vomiting that lasts more than 48-72 hours please seek prompt medical attention.",
+      "conditions": "Food poisoning,Constipation (adult),Gastritis,Gastroenteritis,Generalized anxiety disorder,Panic attack,Peptic ulcer,Diabetic ketoacidosis,Ectopic pregnancy,Allergic reaction,Acute kidney failure,Botulinum toxin (Botox) injection,Carbon monoxide poisoning,Chronic kidney disease,Drug allergy,Drug dependence and abuse,Drug overdose,Esophagitis,Gallstones,Giardiasis,Glaucoma,Heat exhaustion,Helicobacter pylori infection,Hepatitis A,Hepatitis B,Intestinal Ileus,Intestinal obstruction,Intracranial hematoma,Iron poisoning,Labyrinthitis,Lactose intolerance,Low blood sugar (hypoglycemia),Morning sickness,Motion sickness,Mumps,Narcotic abuse,Noroviruses (Norwalk-like viruses),Pancreatic cancer,Polycystic kidney disease,Porphyria,Sickle cell disease,Swallowed object,Hyperparathyroidism,Brain aneurysm,Henoch-schonlein purpura,Hypopituitarism,Lead poisoning,Mesenteric lymphadenitis,Ricin poisoning,Small intestine cancer,Toxic shock syndrome,Tick bite,Brain infection,Brain tumor,Budd-Chiari syndrome,Stomach cancer"
+    },
+    "Numbness_or_tingling": {
+      "warning": "",
+      "conditions": "Burn (heat or fire),Chemical burns"
+    },
+    "Pain_or_discomfort": {
+      "warning": "",
+      "conditions": "Constipation (adult),Food poisoning,Gas pains,Gastritis,Gastroenteritis,Irritable bowel syndrome,Muscle strain,Panic attack,Peptic ulcer,Diverticulitis,Intestinal ischemia,Lactose intolerance,Anemia,Ascaris worms,Celiac disease,Colon cancer,Colon polyps,Crohn's disease,Cystic fibrosis,Dermatomyositis,Diabetic ketoacidosis,Diverticulosis,Drug allergy,Drug overdose,Endometriosis,Gallstones,Gastrointestinal bleeding,Giardiasis,Helicobacter pylori infection,Hepatitis A,Hepatitis B,Hepatitis C,Hydronephrosis,Inflammatory bowel disease,Intestinal Ileus,Intestinal obstruction,Iron poisoning,Lupus (systemic lupus erythematosus),Narcotic abuse,Pancreatic cancer,Pancreatitis,Polycystic kidney disease,Porphyria,Primary biliary cirrhosis,Proctitis,Thalassemia,Ulcerative colitis,Uterine fibroids,Allergic reaction,Aortic aneurysm (abdomen),Chagas disease,Henoch-schonlein purpura,Lead poisoning,Pseudohypoparathyroidism,Radiation sickness,Ricin poisoning,Small intestine cancer,Toxic shock syndrome,Typhoid fever,Tick bite,Shingles (herpes zoster),Abdominal migraine,Appendicitis,Budd-Chiari syndrome"
+    },
+    "Painful_bowel_movements": {
+      "warning": "",
+      "conditions": "Anal fissure,Constipation (adult),Hemorrhoids,Colon cancer"
+    },
+    "Pressure_or_fullness": {
+      "warning": "",
+      "conditions": "Irritable bowel syndrome,Constipation (adult),Gastroenteritis"
+    },
+    "Pulsating_sensation": {
+      "warning": "",
+      "conditions": "Aortic aneurysm (abdomen"
+    },
+    "Stomach_cramps": {
+      "warning": "",
+      "conditions": "Irritable bowel syndrome,Gastroenteritis,Panic attack,Diverticulosis,Intestinal Ileus,Lactose intolerance,Giardiasis,Drug allergy,Inflammatory bowel disease,Intestinal obstruction,Ulcerative colitis,Chagas disease,Lead poisoning,Henoch-schonlein purpura"
+    },
+    "Swelling": {
+      "warning": "",
+      "conditions": "Constipation (adult),Primary biliary cirrhosis,Muscle strain,Ascites,Bee or wasp stings,Cirrhosis (liver),Hydronephrosis,Insect bites,Insect sting,Poison ivy, oak, and sumac,Polycystic kidney disease,Burn (heat or fire),Chemical burns,Gas pains"
+    },
+    "Tenderness_to_touch": {
+      "warning": "",
+      "conditions": "Constipation (adult),Gastritis,Hematoma,Muscle strain,Peptic ulcer,Abscess,Bruise or contusion,Gallstones,Giardiasis,Hepatitis A,Hepatitis B,Hepatitis C,Hydronephrosis"
+    },
+    "Upset_stomach": {
+      "warning": "",
+      "conditions": "Indigestion,Gastritis,Gastroenteritis,Irritable bowel syndrome,Peptic ulcer,Generalized anxiety disorder,Giardiasis"
+    },
+    "Visible_deformity": {
+      "warning": "",
+      "conditions": "Benign lipoma"
+    },
+    "Warm_to_touch": {
+      "warning": "",
+      "conditions": "Abscess"
+    }
+  },
+  "Lower_abdomen": {
+    "Bleeding": {
+      "warning": "",
+      "conditions": "Trauma or injury"
+    },
+    "Bloating_or_fullness": {
+      "warning": "",
+      "conditions": "Irritable bowel syndrome,Gas pains,Gastroenteritis,Dysmenorrhea (menstrual cramps),Gallstones,Giardiasis,Helicobacter pylori infection,Ovarian cancer,Premenstrual syndrome (PMS),Uterine fibroids,Small intestine cancer,Budd-Chiari syndrome,Colon cancer"
+    },
+    "Bruising_or_discoloration": {
+      "warning": "",
+      "conditions": "Bruise or contusion,Hematoma,Muscle strain,Trauma or injury,Thrombocytopenia"
+    },
+    "Bulging_veins": {
+      "warning": "",
+      "conditions": "Cirrhosis (liver),Budd-Chiari syndrome"
+    },
+    "Change_in_bowel_habits": {
+      "warning": "",
+      "conditions": "Irritable bowel syndrome,Dietary changes,Gastroenteritis,Colon polyps,Colon cancer"
+    },
+    "Constipation": {
+      "warning": "",
+      "conditions": "Constipation (adult),Irritable bowel syndrome,Medication reaction or side-effect,Depression (Adult),Anal fissure,Colon cancer,Cystic fibrosis,Dehydration (Adult),Diverticulosis,Foreign object in the rectum,Hypothyroidism (adult),Intestinal Ileus,Kidney infection (pyelonephritis),Low fiber diet,Narcotic abuse,Porphyria,Scleroderma,Taking iron supplements,Uterine fibroids,Hyperparathyroidism,Chagas disease,CREST syndrome,Hypopituitarism,Lead poisoning"
+    },
+    "Diarrhea": {
+      "warning": "If you are experiencing diarrhea for more than a week, call your doctor.",
+      "conditions": "Food poisoning,Gastroenteritis,Irritable bowel syndrome,Traveler's diarrhea,Medication reaction or side-effect,Viral gastroenteritis,Antibiotic use,Campylobacter,Lactose intolerance,Drug overdose,Inflammatory bowel disease,Amebiasis,Antibiotic-associated diarrhea,Celiac disease,Colon cancer,Crohn's disease,Cystic fibrosis,Diverticulosis,Giardiasis,Hyperthyroidism,Iron poisoning,Salmonella,Shigellosis,Sickle cell disease,Ulcerative colitis,Mesenteric lymphadenitis,Radiation sickness,Ricin poisoning,Toxic shock syndrome,Typhoid fever,Cholera"
+    },
+    "Distended_stomach": {
+      "warning": "",
+      "conditions": "Constipation (adult),Gas pains,Indigestion,Budd-Chiari syndrome,Gaucher disease (late-onset),Mucopolysaccharidosis I (MPS1)"
+    },
+    "Drainage_or_pus": {
+      "warning": "",
+      "conditions": "Allergic reaction,Abscess"
+    },
+    "Foul_smelling_stools": {
+      "warning": "",
+      "conditions": "Gastroenteritis,Lactose intolerance,Celiac disease,Crohn's disease,Cystic fibrosis,Ulcerative colitis"
+    },
+    "Frequent_bowel_movements": {
+      "warning": "",
+      "conditions": "Irritable bowel syndrome,Gastroenteritis,Lactose intolerance"
+    },
+    "Frequent_urges_to_have_bowel_movement": {
+      "warning": "",
+      "conditions": "Irritable bowel syndrome,Gastroenteritis,Amebiasis,Inflammatory bowel disease,Proctitis,Ulcerative colitis"
+    },
+    "Increased_passing_gas": {
+      "warning": "",
+      "conditions": "Constipation (adult),Gas pains,Irritable bowel syndrome,Lactose intolerance,Giardiasis"
+    },
+    "Lump_or_bulge": {
+      "warning": "",
+      "conditions": "Abscess,Benign lipoma,Hernia"
+    },
+    "Multiple_bruises_of_different_ages": {
+      "warning": "",
+      "conditions": "Physical abuse,Falls or injury"
+    },
+    "Muscle_cramps_or_spasms_(painful)": {
+      "warning": "",
+      "conditions": "Muscle strain,Dysmenorrhea (menstrual cramps)"
+    },
+    "Numbness_or_tingling": {
+      "warning": "",
+      "conditions": "Burn (heat or fire),Chemical burns"
+    },
+    "Pain_or_discomfort": {
+      "warning": "",
+      "conditions": "Constipation (adult),Food poisoning,Gas pains,Gastroenteritis,Irritable bowel syndrome,Muscle strain,Panic attack,Urinary tract infection (UTI),Endometriosis,Intestinal ischemia,Kidney stones,Anemia,Appendicitis,Ascaris worms,Bladder stones,Celiac disease,Cervicitis,Colon cancer,Colon polyps,Crohn's disease,Cystic fibrosis,Dermatomyositis,Diabetic ketoacidosis,Diverticulitis,Diverticulosis,Drug allergy,Drug overdose,Dysmenorrhea (menstrual cramps),Ectopic pregnancy,Gastrointestinal bleeding,Giardiasis,Hydronephrosis,Inflammatory bowel disease,Interstitial cystitis,Intestinal Ileus,Intestinal obstruction,Iron poisoning,Kidney infection (pyelonephritis),Lactose intolerance,Lupus (systemic lupus erythematosus),Miscarriage,Narcotic abuse,Ovarian cancer,Polycystic kidney disease,Porphyria,Premature labor,Proctitis,Thalassemia,Ulcerative colitis,Uterine fibroids,Allergic reaction,Aortic aneurysm (abdomen),Chagas disease,Henoch-schonlein purpura,Lead poisoning,Mesenteric lymphadenitis,Pseudohypoparathyroidism,Radiation sickness,Ricin poisoning,Small intestine cancer,Toxic shock syndrome,Typhoid fever,Pregnancy, round ligament pain,Tick bite,Shingles (herpes zoster),Abdominal migraine"
+    },
+    "Painful_bowel_movements": {
+      "warning": "",
+      "conditions": "Anal fissure,Constipation (adult),Hemorrhoids,Colon cancer"
+    },
+    "Pressure_or_fullness": {
+      "warning": "",
+      "conditions": "Irritable bowel syndrome,Constipation (adult),Gastroenteritis,Urinary tract infection (UTI),Bladder stones,Interstitial cystitis,Ovarian cancer"
+    },
+    "Pulsating_sensation": {
+      "warning": "",
+      "conditions": "Aortic aneurysm (abdomen)"
+    },
+    "Stomach_cramps": {
+      "warning": "",
+      "conditions": "Irritable bowel syndrome,Gastroenteritis,Panic attack,Diverticulosis,Intestinal Ileus,Lactose intolerance,Giardiasis,Drug allergy,Dysmenorrhea (menstrual cramps),Inflammatory bowel disease,Intestinal obstruction,Ulcerative colitis,Chagas disease,Lead poisoning,Henoch-schonlein purpura"
+    },
+    "Straining_with_bowel_movements": {
+      "warning": "",
+      "conditions": "Constipation (adult)"
+    },
+    "Swelling": {
+      "warning": "",
+      "conditions": "Constipation (adult),Muscle strain,Bee or wasp stings,Cirrhosis (liver),Hydronephrosis,Insect bites,Insect sting,Poison ivy, oak, and sumac,Polycystic kidney disease,Burn (heat or fire),Chemical burns,Budd-Chiari syndrome,Gas pains"
+    },
+    "Tenderness_to_touch": {
+      "warning": "",
+      "conditions": "Constipation (adult),Hematoma,Muscle strain,Appendicitis,Diverticulitis,Abscess,Bruise or contusion,Ectopic pregnancy,Giardiasis,Hydronephrosis"
+    },
+    "Upset_stomach": {
+      "warning": "",
+      "conditions": "Giardiasis"
+    },
+    "Visible_deformity": {
+      "warning": "",
+      "conditions": "Benign lipoma,Hernia"
+    },
+    "Warm_to_touch": {
+      "warning": "",
+      "conditions": "Absces"
+    },
+    "Worms_in_stool": {
+      "warning": "",
+      "conditions": "Ascaris worms,Pinworms"
+    }
+  },
+  "Back": {
+    "Bleeding": {
+      "warning": "",
+      "conditions": "Trauma or injury"
+    },
+    "Broken_bone_(single_fracture)": {
+      "warning": "",
+      "conditions": "Physical abuse,Broken (fractured) shoulder blade,Trauma or injury"
+    },
+    "Broken_bones_(multiple_fractures)": {
+      "warning": "",
+      "conditions": "Physical abuse,Trauma or injury,Osteogenesis imperfecta"
+    },
+    "Bruising_or_discoloration": {
+      "warning": "",
+      "conditions": "Bruise or contusion,Hematoma,Muscle strain,Trauma or injury,Thrombocytopenia"
+    },
+    "Curved_spine": {
+      "warning": "",
+      "conditions": "Scoliosis"
+    },
+    "Difficulty_walking": {
+      "warning": "",
+      "conditions": "Broken (fractured) low back vertebra"
+    },
+    "Drainage_or_pus": {
+      "warning": "",
+      "conditions": "Allergic reaction,Abscess"
+    },
+    "Lump_or_bulge": {
+      "warning": "",
+      "conditions": "Abscess,Benign lipoma,Epidermal (sebaceous) cyst,Trauma or injury"
+    },
+    "Multiple_bruises_of_different_ages": {
+      "warning": "",
+      "conditions": "Physical abuse,Falls or injury"
+    },
+    "Muscle_cramps_or_spasms_(painful)": {
+      "warning": "",
+      "conditions": "Muscle strain,Tetanus"
+    },
+    "Numbness_or_tingling": {
+      "warning": "",
+      "conditions": "Thoracic spinal stenosis,Lyme disease,Burn (heat or fire),Chemical burns"
+    },
+    "Pain_or_discomfort": {
+      "warning": "",
+      "conditions": "Acute kidney failure,Muscle strain,Kidney stones,Broken (fractured) shoulder blade,Dermatomyositis,Helicobacter pylori infection,Hydronephrosis,Kidney infection (pyelonephritis),Miscarriage,Osteomyelitis (bone infection),Pulmonary embolism,Vertebral compression fracture (lumbar),Vertebral compression fracture (thoracic),Tick bite,Endocarditis,Shingles (herpes zoster)"
+    },
+    "Stiffness_or_decreased_movement": {
+      "warning": "",
+      "conditions": "Muscle strain,Fibromyalgia"
+    },
+    "Swelling": {
+      "warning": "",
+      "conditions": ",Muscle strain,Bee or wasp stings,Hydronephrosis,Insect bites,Insect sting,Poison ivy, oak, and sumac,Burn (heat or fire),Chemical burns,Osteomyelitis (bone infection)"
+    },
+    "Tenderness_to_touch": {
+      "warning": "",
+      "conditions": "Hematoma,Muscle strain,Abscess,Bruise or contusion,Epidermal (sebaceous) cyst,Hydronephrosis"
+    },
+    "Visible_deformity": {
+      "warning": "",
+      "conditions": "Benign lipoma,Broken (fractured) shoulder blade"
+    },
+    "Warm_to_touch": {
+      "warning": "",
+      "conditions": "Abscess"
+    }
+  },
+  "Upper_spine": {
+    "Bleeding": {
+      "warning": "",
+      "conditions": "Trauma or injury"
+    },
+    "Broken_bone_(single_fracture)": {
+      "warning": "",
+      "conditions": "Physical abuse,Broken (fractured) upper back vertebra,Trauma or injury"
+    },
+    "Broken_bones_(multiple_fractures)": {
+      "warning": "",
+      "conditions": "Physical abuse,Trauma or injury,Osteogenesis imperfecta"
+    },
+    "Bruising_or_discoloration": {
+      "warning": "",
+      "conditions": "Bruise or contusion,Hematoma,Muscle strain,Trauma or injury,Thrombocytopenia"
+    },
+    "Curved_spine": {
+      "warning": "",
+      "conditions": "Scoliosis"
+    },
+    "Drainage_or_pus": {
+      "warning": "",
+      "conditions": "Allergic reaction,Abscess"
+    },
+    "Lump_or_bulge": {
+      "warning": "",
+      "conditions": "Abscess,Trauma or injury"
+    },
+    "Multiple_bruises_of_different_ages": {
+      "warning": "",
+      "conditions": "Physical abuse,Falls or injury"
+    },
+    "Muscle_cramps_or_spasms_(painful)": {
+      "warning": "",
+      "conditions": "Muscle strai"
+    },
+    "Numbness_or_tingling": {
+      "warning": "",
+      "conditions": "Burn (heat or fire),Chemical burns"
+    },
+    "Pain_or_discomfort": {
+      "warning": "",
+      "conditions": "Fibromyalgia,Muscle strain,Thoracic (upper back) strain,Ankylosing spondylitis,Bone spurs,Broken (fractured) upper back vertebra,Osteomyelitis (bone infection),Thoracic spinal stenosis,Vertebral compression fracture (thoracic),Ulcerative colitis,Spinal tumor,Shingles (herpes zoster)"
+    },
+    "Stiffness_or_decreased_movement": {
+      "warning": "",
+      "conditions": "Muscle strain,Ankylosing spondylitis,Thoracic spinal stenosis,Fibromyalgia"
+    },
+    "Swelling": {
+      "warning": "",
+      "conditions": ",Muscle strain,Insect bites,Insect sting,Poison ivy, oak, and sumac,Burn (heat or fire),Chemical burns,Crohn's disease,Osteomyelitis (bone infection)"
+    },
+    "Tenderness_to_touch": {
+      "warning": "",
+      "conditions": "Fibromyalgia,Hematoma,Muscle strain,Abscess,Bruise or contusion"
+    },
+    "Visible_deformity": {
+      "warning": "",
+      "conditions": "Broken (fractured) upper back vertebr"
+    },
+    "Warm_to_touch": {
+      "warning": "",
+      "conditions": "Absces"
+    }
+  },
+  "Lower_spine": {
+    "Bleeding": {
+      "warning": "",
+      "conditions": "Trauma or injury"
+    },
+    "Broken_bone_(single_fracture)": {
+      "warning": "",
+      "conditions": "Physical abuse,Broken (fractured) low back vertebra,Trauma or injury"
+    },
+    "Broken_bones_(multiple_fractures)": {
+      "warning": "",
+      "conditions": "Physical abuse,Trauma or injury,Osteogenesis imperfecta"
+    },
+    "Bruising_or_discoloration": {
+      "warning": "",
+      "conditions": "Bruise or contusion,Hematoma,Muscle strain,Trauma or injury,Thrombocytopenia"
+    },
+    "Curved_spine": {
+      "warning": "",
+      "conditions": "Scoliosis"
+    },
+    "Difficulty_walking": {
+      "warning": "",
+      "conditions": "Broken (fractured) low back vertebra"
+    },
+    "Drainage_or_pus": {
+      "warning": "",
+      "conditions": "Allergic reaction,Abscess"
+    },
+    "Joint_pain": {
+      "warning": "",
+      "conditions": "Crohn's disease"
+    },
+    "Lump_or_bulge": {
+      "warning": "",
+      "conditions": "Abscess,Trauma or injury"
+    },
+    "Morning_joint_stiffness": {
+      "warning": "",
+      "conditions": "Ankylosing spondylitis"
+    },
+    "Multiple_bruises_of_different_ages": {
+      "warning": "",
+      "conditions": "Physical abuse,Falls or injury"
+    },
+    "Muscle_cramps_or_spasms_(painful)": {
+      "warning": "",
+      "conditions": "Lumbar (low back) strain,Muscle strain"
+    },
+    "Numbness_or_tingling": {
+      "warning": "",
+      "conditions": "Burn (heat or fire),Chemical burns"
+    },
+    "Pain_or_discomfort": {
+      "warning": "",
+      "conditions": "Cauda equina syndrome,Lumbar (low back) strain,Fibromyalgia,Muscle strain,Ankylosing spondylitis,Bone spurs,Broken (fractured) low back vertebra,Cervicitis,Endometriosis,Lumbar (low back) herniated disk,Lumbar spinal stenosis,Osteomyelitis (bone infection),Ovarian cysts,Pelvic inflammatory disease (PID),Premenstrual syndrome (PMS),Ulcerative colitis,Uterine fibroids,Vertebral compression fracture (lumbar),Aortic aneurysm (abdomen),Spinal tumor,Shingles (herpes zoster)"
+    },
+    "Stiffness_or_decreased_movement": {
+      "warning": "",
+      "conditions": "Lumbar (low back) strain,Muscle strain,Ankylosing spondylitis,Broken (fractured) low back vertebra,Lumbar spinal stenosis"
+    },
+    "Swelling": {
+      "warning": "",
+      "conditions": "Muscle strain,Insect bites,Insect sting,Poison ivy, oak, and sumac,Burn (heat or fire),Chemical burns,Crohn's disease,Osteomyelitis (bone infection)"
+    },
+    "Tenderness_to_touch": {
+      "warning": "",
+      "conditions": "Lumbar (low back) strain,Fibromyalgia,Hematoma,Muscle strain,Abscess,Broken (fractured) low back vertebra,Bruise or contusion"
+    },
+    "Visible_deformity": {
+      "warning": "",
+      "conditions": "Broken (fractured) low back vertebra"
+    },
+    "Warm_to_touch": {
+      "warning": "",
+      "conditions": "Abscess"
+    },
+    "Weakness": {
+      "warning": "",
+      "conditions": "Muscle strain"
+    }
+  },
+  "Pelvis": {
+    "Bleeding": {
+      "warning": "",
+      "conditions": "Trauma or injury,Dysfunctional uterine bleeding"
+    },
+    "Bloating_or_fullness": {
+      "warning": "",
+      "conditions": "Gas pains,Premenstrual syndrome (PMS) (female),Dysmenorrhea (menstrual cramps) (female),Uterine fibroids (female)"
+    },
+    "Broken_bone_(single_fracture)": {
+      "warning": "",
+      "conditions": "Physical abuse,Trauma or injury"
+    },
+    "Broken_bones_(multiple_fractures)": {
+      "warning": "",
+      "conditions": "Physical abuse,Trauma or injury,Osteogenesis imperfecta"
+    },
+    "Bruising_or_discoloration": {
+      "warning": "",
+      "conditions": "Bruise or contusion,Hematoma,Trauma or injury,Thrombocytopenia"
+    },
+    "Cloudy_urine_with_strong_odor": {
+      "warning": "",
+      "conditions": "Urinary tract infection (UTI),Eating certain foods,Kidney infection (pyelonephritis),Urethritis (female)"
+    },
+    "Dark_colored_(brown)_urine": {
+      "warning": "",
+      "conditions": "Hepatitis A,Hepatitis B,Hepatitis C,Taking vitamin supplements,Thalassemia,Porphyria,Anemia, hemolytic"
+    },
+    "Difficulty_climbing_stairs": {
+      "warning": "",
+      "conditions": "Pompe disease (late-onset)"
+    },
+    "Difficulty_urinating": {
+      "warning": "",
+      "conditions": "Medication reaction or side-effect,Hydronephrosis"
+    },
+    "Difficulty_walking": {
+      "warning": "",
+      "conditions": "Pompe disease (late-onset)"
+    },
+    "Drainage_or_pus": {
+      "warning": "",
+      "conditions": "Allergic reaction,Abscess"
+    },
+    "Frequent_nighttime_urination": {
+      "warning": "",
+      "conditions": "Drinking fluids before bed,Sleep apnea,Overactive bladder syndrome"
+    },
+    "Frequent_urge_to_urinate": {
+      "warning": "",
+      "conditions": "Urinary tract infection (UTI),Bladder cancer,Bladder stones,Excessive fluid intake,Gonorrhea (female),Interstitial cystitis,Kidney infection (pyelonephritis),Overactive bladder syndrome"
+    },
+    "Itching_or_burning": {
+      "warning": "",
+      "conditions": "Crabs"
+    },
+    "Lump_or_bulge": {
+      "warning": "",
+      "conditions": "Abscess,Trauma or injury"
+    },
+    "Multiple_bruises_of_different_ages": {
+      "warning": "",
+      "conditions": "Physical abuse,Falls or injury"
+    },
+    "Muscle_cramps_or_spasms_(painful)": {
+      "warning": "",
+      "conditions": "Gas pains,Dysfunctional uterine bleeding,Dysmenorrhea (menstrual cramps) (female)"
+    },
+    "Numbness_or_tingling": {
+      "warning": "",
+      "conditions": "Burn (heat or fire),Chemical burns"
+    },
+    "Pain_or_discomfort": {
+      "warning": "",
+      "conditions": "Urinary tract infection (UTI),Bladder cancer,Bladder stones,Cervicitis,Chlamydia (female),Chronic pelvic pain,Dysfunctional uterine bleeding,Dysmenorrhea (menstrual cramps),Ectopic pregnancy,Endometrial cancer,Endometriosis,Genital herpes (female),Interstitial cystitis,Ovarian cysts,Pelvic inflammatory disease (PID),Polycystic ovary syndrome (PCOS),Premature labor,Premenstrual syndrome (PMS),Uterine fibroids,Vaginitis,Vulvodynia,Small intestine cancer,Osteomyelitis (bone infection),Pregnancy, round ligament pain,Shingles (herpes zoster)"
+    },
+    "Pressure_or_fullness": {
+      "warning": "",
+      "conditions": "Urinary tract infection (UTI),Bladder stones,Chronic pelvic pain,Interstitial cystitis,Sudden_urge_to_urinate"
+    },
+    "Swelling": {
+      "warning": "",
+      "conditions": "Cirrhosis (liver),Burn (heat or fire),Chemical burns,Osteomyelitis (bone infection)"
+    },
+    "Tenderness_to_touch": {
+      "warning": "",
+      "conditions": "Hematoma,Abscess,Bruise or contusion"
+    },
+    "Urine_leaking_(incontinence)": {
+      "warning": "",
+      "conditions": "Urinary tract infection (UTI),Alcohol intoxication,Cauda equina syndrome,Urinary incontinence (stress) female,Spinal tumor,Overactive bladder syndrome"
+    },
+    "Visible_bugs_or_parasites": {
+      "warning": "",
+      "conditions": "Crabs"
+    },
+    "Warm_to_touch": {
+      "warning": "",
+      "conditions": "Abscess"
+    }
+  },
+  "Genitals": {
+    "Bleeding": {
+      "warning": "",
+      "conditions": "Trauma or injury,Dysfunctional uterine bleeding"
+    },
+    "Blood_or_red_colored_urine": {
+      "warning": "",
+      "conditions": "Hemophilia,Aspirin use,Medication reaction or side-effect,Urinary tract infection (UTI),Bladder cancer,Blood clotting disorder,Glomerulonephritis,Hydronephrosis,Kidney infection (pyelonephritis),Polycystic kidney disease,Pre-leukemia (myelodysplastic syndrome),Taking pyridium,Thrombocytopenia,Endocarditis,Paroxysmal nocturnal hemoglobinuria (PNH)"
+    },
+    "Bruising_or_discoloration": {
+      "warning": "",
+      "conditions": "Bruise or contusion,Hematoma,Trauma or injury,Thrombocytopenia"
+    },
+    "Cloudy_urine_with_string_odor": {
+      "warning": "",
+      "conditions": "Urinary tract infection (UTI),Kidney infection (pyelonephritis)"
+    },
+    "Dark_colored_(brown)_urine": {
+      "warning": "",
+      "conditions": "Hepatitis A,Hepatitis B,Hepatitis C"
+    },
+    "Decreased_urination": {
+      "warning": "",
+      "conditions": "Acute kidney failure,Aspirin poisoning,Chronic kidney disease,Dehydration (Adult),Glomerulonephritis,Hydronephrosis,Sickle cell disease,Hemolytic uremic syndrome,Iron poisoning"
+    },
+    "Difficulty_starting_urine_stream": {
+      "warning": "",
+      "conditions": "Medication reaction or side-effect,Urinary tract infection (UTI)"
+    },
+    "Difficulty_urinating": {
+      "warning": "",
+      "conditions": "Medication reaction or side-effec"
+    },
+    "Discharge_from_penis": {
+      "warning": "",
+      "conditions": "Chlamydia (male),Gonorrhea (male)"
+    },
+    "Drainage_or_pus": {
+      "warning": "",
+      "conditions": "Allergic reaction,Abscess,Foreign object in the vagina,Cervicitis"
+    },
+    "Frequent_nighttime_urination": {
+      "warning": "",
+      "conditions": "Overactive bladder syndrome"
+    },
+    "Frequent_urge_to_urinate": {
+      "warning": "",
+      "conditions": "Overactive bladder syndrome"
+    },
+    "Frequent_urination": {
+      "warning": "",
+      "conditions": "Urinary tract infection (UTI),Diabetes, type 2,Bladder cancer,Bladder stones,Diabetes insipidus,Diabetes, type 1,Diabetic ketoacidosis,Excessive fluid intake,Gonorrhea (female),Hydronephrosis,Interstitial cystitis,Polycystic kidney disease,Supraventricular tachycardia,Urethritis (female),Uterine fibroids,Hypopituitarism,Overactive bladder syndrome"
+    },
+    "Itching_or_burning": {
+      "warning": "",
+      "conditions": "Body lice,Cervicitis,Crabs,Foreign object in the vagina,Vaginal dryness,Vaginitis,Vulvodynia,Vaginal yeast infection"
+    },
+    "Lump_or_bulge": {
+      "warning": "",
+      "conditions": "Bartholin cyst,Abscess"
+    },
+    "Multiple_bruises_of_different_ages": {
+      "warning": "",
+      "conditions": "Physical abuse,Falls or injury"
+    },
+    "Numbness_or_tingling": {
+      "warning": "",
+      "conditions": "Burn (heat or fire),Chemical burns"
+    },
+    "Pain_during_erection": {
+      "warning": "",
+      "conditions": "Erectile dysfunctio"
+    },
+    "Pain_or_discomfort": {
+      "warning": "",
+      "conditions": "Urinary tract infection (UTI),Bartholin cyst,Candidiasis,Chlamydia (female),Dysfunctional uterine bleeding (female),Foreign object in the vagina (female),Genital herpes (female),Gonorrhea (female),Urethritis (female),Vaginal dryness (female),Vulvodynia (female) ,Vaginal yeast infection (female),Urinary tract infection (UTI),Chlamydia (male),Epididymitis (male),Erectile dysfunction (male),Genital herpes (male),Orchitis (male),Syphilis (male),Testicular torsion (male),Urethritis (male),Shingles (herpes zoster)"
+    },
+    "Pressure_or_fullness": {
+      "warning": "",
+      "conditions": ""
+    },
+    "Slow_or_weak_urine_stream": {
+      "warning": "",
+      "conditions": ""
+    },
+    "Sudden_urge_to_urinate": {
+      "warning": "",
+      "conditions": "Overactive bladder syndrom"
+    },
+    "Swelling": {
+      "warning": "",
+      "conditions": "Bartholin cyst,Hernia,Burn (heat or fire),Chemical burns"
+    },
+    "Tenderness_to_touch": {
+      "warning": "",
+      "conditions": "Hematoma,Abscess,Bruise or contusion"
+    },
+    "Unable_to_obtain_or_maintain_erection": {
+      "warning": "",
+      "conditions": "Erectile dysfunctio"
+    },
+    "Visible_bugs_or_parasites": {
+      "warning": "",
+      "conditions": "Body lice,Crabs"
+    },
+    "Warm_to_touch": {
+      "warning": "",
+      "conditions": "Abscess"
+    },
+    "Heavy_menstrual_Bleeding": {
+      "warning": "",
+      "conditions": "Dysfunctional uterine bleeding,Menorrhagia,Aspirin use,Blood clotting disorder,Endometrial cancer,Hemophilia,Hypothyroidism (adult),Thrombocytopenia,Uterine fibroids,Dysmenorrhea (menstrual cramps),Uterine cancer"
+    },
+    "Irregular_menstrual_periods": {
+      "warning": "",
+      "conditions": "Anorexia nervosa,Hypopituitarism"
+    },
+    "Missed/late_menstrual_period": {
+      "warning": "",
+      "conditions": "Ectopic pregnancy,Anorexia nervosa,Pregnancy,Underweight,Hypopituitarism"
+    },
+    "Pain_with_sexual_intercourse_(female)": {
+      "warning": "",
+      "conditions": "Vaginal yeast infection,Pelvic inflammatory disease (PID),Candidiasis,Cervicitis,Dyspareunia,Ectopic pregnancy,Endometriosis,Interstitial cystitis,Urethritis (female),Vaginal dryness,Vaginitis,Vulvodynia"
+    },
+    "Vaginal_Bleeding": {
+      "warning": "",
+      "conditions": "Aspirin use,Ectopic pregnancy,Premature labor,Vaginal yeast infection"
+    },
+    "Vaginal_bleeding_between_periods": {
+      "warning": "",
+      "conditions": "Endometrial cancer,Cervical cancer,Cervicitis,Foreign object in the vagina,Uterine cancer,Vaginitis"
+    },
+    "Vaginal_discharge": {
+      "warning": "",
+      "conditions": "Vaginal yeast infection,Candidiasis,Cervicitis,Chlamydia (female),Endometrial cancer,Foreign object in the vagina,Gonorrhea (female),Pelvic inflammatory disease (PID),Premature labor,Trichomoniasis (female),Uterine cancer,Vaginitis,Cervical cancer"
+    },
+    "Vaginal_bleeding_after_menopause": {
+      "warning": "",
+      "conditions": ""
+    },
+    "Vaginal_dryness": {
+      "warning": "",
+      "conditions": ""
+    },
+    "Vaginal_odor": {
+      "warning": "",
+      "conditions": "Vaginal yeast infection,Candidiasis,Cervicitis"
+    },
+    "Curved_or_bent_penis_during_erection": {
+      "warning": "",
+      "conditions": "Peyronie's disease,Erectile dysfunction"
+    },
+    "Erectile_dysfunction": {
+      "warning": "",
+      "conditions": "Medication reaction or side-effect,Chronic obstructive pulmonary disease (COPD),Depression (Adult),Diabetes, type 2,Sleep apnea,Diabetes, type 1,High blood pressure (hypertension),Priapism,Sickle cell disease,Testosterone deficiency,Emphysema,Hypothyroidism (adult),Cirrhosis (liver),Hyperthyroidism,Scleroderma,Hypopituitarism"
+    },
+    "Pain_with_sexual_intercourse_(male)": {
+      "warning": "",
+      "conditions": "Urethritis (male)"
+    },
+    "Painful_ejaculation": {
+      "warning": "",
+      "conditions": "Erectile dysfunction"
+    },
+    "Premature_ejaculation": {
+      "warning": "",
+      "conditions": "Erectile dysfunction"
+    },
+    "Testicles_shrinkage": {
+      "warning": "",
+      "conditions": "Mumps,Testosterone deficiency"
+    },
+    "Testicular_pain": {
+      "warning": "",
+      "conditions": "Chlamydia (male),Mumps"
+    }
+  },
+  "Buttock": {
+    "Black_(tar)_colored_stools": {
+      "warning": "",
+      "conditions": "Gastrointestinal bleeding,Aspirin use,Medication reaction or side-effect,Peptic ulcer,Esophageal cancer,Helicobacter pylori infection,Blood clotting disorder,Colon cancer,Colon polyps,Esophageal varices,Iron poisoning,Pre-leukemia (myelodysplastic syndrome),Taking iron supplements,Taking Pepto-bismol (bismuth),Thrombocytopenia,Small intestine cancer"
+    },
+    "Bleeding": {
+      "warning": "",
+      "conditions": "Hemorrhoids,Trauma or injury"
+    },
+    "Blood_in_toilet": {
+      "warning": "",
+      "conditions": "Hemorrhoids,Campylobacter,Crohn's disease,Proctitis,Ulcerative colitis"
+    },
+    "Blood_on_stool_surface": {
+      "warning": "",
+      "conditions": "Hemorrhoids,Anal fissure"
+    },
+    "Blood_in_toilet_tissue": {
+      "warning": "",
+      "conditions": "Hemorrhoids,Anal fissure,Colon polyps,Proctitis"
+    },
+    "Blood_or_red_colored_stool": {
+      "warning": "",
+      "conditions": "Gastrointestinal bleeding,Hemophilia,Hemorrhoids,Aspirin use,Medication reaction or side-effect,Peptic ulcer,Colon polyps,Helicobacter pylori infection,Allergic reaction,Amebiasis,Anal fissure,Blood clotting disorder,Colon cancer,Crohn's disease,Eating certain foods,Foreign object in the rectum,Inflammatory bowel disease,Iron poisoning,Pre-leukemia (myelodysplastic syndrome),Proctitis,Thrombocytopenia,Ulcerative colitis,Small intestine cancer"
+    },
+    "Broken_bone_(single_fracture)": {
+      "warning": "",
+      "conditions": "Physical abuse,Broken (fractured) tailbone,Trauma or injury"
+    },
+    "Broken_bones_(multiple_fractures)": {
+      "warning": "",
+      "conditions": "Physical abuse,Trauma or injury,Osteogenesis imperfecta"
+    },
+    "Bruising_or_discoloration": {
+      "warning": "",
+      "conditions": "Bruise or contusion,Hematoma,Muscle strain,Trauma or injury,Thrombocytopenia"
+    },
+    "Bulging_veins": {
+      "warning": "",
+      "conditions": "Hemorrhoids"
+    },
+    "Change_in_stools": {
+      "warning": "",
+      "conditions": "Dietary changes,Gastroenteritis,Irritable bowel syndrome,Colon polyps,Crohn's disease,Ulcerative colitis,Colon cancer"
+    },
+    "Drainage_or_pus": {
+      "warning": "",
+      "conditions": "Allergic reaction,Abscess"
+    },
+    "Lump_or_bulge": {
+      "warning": "",
+      "conditions": "Hemorrhoids,Abscess,Anal abscess,Pilonidal cyst,Trauma or injury"
+    },
+    "Multiple_bruises_of_different_ages": {
+      "warning": "",
+      "conditions": "Physical abuse,Falls or injury"
+    },
+    "Muscle_cramps_or_spasms_(painful)": {
+      "warning": "",
+      "conditions": "Muscle strain,Proctalgia fugax"
+    },
+    "Numbness_or_tingling": {
+      "warning": "",
+      "conditions": "Cauda equina syndrome,Lumbar spinal stenosis,Burn (heat or fire),Chemical burns,Thoracic spinal stenosis"
+    },
+    "Pain_or_discomfort": {
+      "warning": "",
+      "conditions": "Sciatica,Hemorrhoids,Cauda equina syndrome,Muscle strain,Anal fissure,Broken (fractured) tailbone,Bursitis (ischiogluteal),Foreign object in the rectum,Gonorrhea (female),Inflammatory bowel disease,Lumbar spinal stenosis,Pilonidal cyst,Proctitis,Thoracic spinal stenosis,Ulcerative colitis,Vertebral compression fracture (lumbar),Osteomyelitis (bone infection),Tick bite,Shingles (herpes zoster)"
+    },
+    "Painful_bowel_movements": {
+      "warning": "",
+      "conditions": "Hemorrhoids,Anal fissure,Constipation (adult),Colon cancer,Uterine fibroids"
+    },
+    "Protruding_rectal_material": {
+      "warning": "",
+      "conditions": "Hemorrhoids,Rectal prolapse"
+    },
+    "Stool_leaking_(incontinence)": {
+      "warning": "",
+      "conditions": "Medication reaction or side-effect,Alcohol intoxication,Cauda equina syndrome,Cervical (neck) spondylosis,Spinal tumor"
+    },
+    "Swelling": {
+      "warning": "",
+      "conditions": "Pilonidal cyst,Muscle strain,Anal abscess,Burn (heat or fire),Chemical burns,Osteomyelitis (bone infection)"
+    },
+    "Tenderness_to_touch": {
+      "warning": "",
+      "conditions": "Hematoma,Muscle strain,Pilonidal cyst,Abscess,Bruise or contusion"
+    },
+    "Warm_to_touch": {
+      "warning": "",
+      "conditions": "Bursitis (ischiogluteal),Abscess"
+    },
+    "Worms_in_stool": {
+      "warning": "",
+      "conditions": "Ascaris worms,Pinworms"
+    }
+  },
+  "Hip": {
+    "Bleeding": {
+      "warning": "",
+      "conditions": "Trauma or injury"
+    },
+    "Broken_bone_(single_fracture)": {
+      "warning": "",
+      "conditions": "Physical abuse,Broken (fractured) hip,Trauma or injury"
+    },
+    "Broken_bones_(multiple_fractures)": {
+      "warning": "",
+      "conditions": "Trauma or injury,Osteogenesis imperfecta"
+    },
+    "Bruising_or_discoloration": {
+      "warning": "",
+      "conditions": "Bruise or contusion,Hematoma,Trauma or injury"
+    },
+    "Difficulty_climbing_stairs": {
+      "warning": "",
+      "conditions": "Pompe disease (late-onset),Rheumatoid arthritis"
+    },
+    "Difficulty_getting_up_from_a_chair": {
+      "warning": "",
+      "conditions": "Pompe disease (late-onset),Rheumatoid arthritis"
+    },
+    "Difficulty_moving_joints": {
+      "warning": "",
+      "conditions": ""
+    },
+    "Difficulty_walking": {
+      "warning": "",
+      "conditions": "Hip (acetabular) labral tear,Pompe disease (late-onset),Rheumatoid arthritis"
+    },
+    "Drainage_or_pus": {
+      "warning": "",
+      "conditions": "Allergic reaction,Abscess"
+    },
+    "Joint_aches": {
+      "warning": "",
+      "conditions": "Mucopolysaccharidosis I (MPS1)"
+    },
+    "Joint_instability": {
+      "warning": "",
+      "conditions": "Broken (fractured) hip"
+    },
+    "Joint_locking_or_catching": {
+      "warning": "",
+      "conditions": "Hip (acetabular) labral tea"
+    },
+    "Joint_pain": {
+      "warning": "",
+      "conditions": "Fibromyalgia,Repetitive motion injuries,Tendinitis,Avascular necrosis,Broken (fractured) hip,Bursitis (iliopsoas),Bursitis (trochanteric),Dermatomyositis,Gout,Hip (acetabular) labral tear,Lumbar spinal stenosis,Lupus (systemic lupus erythematosus),Pseudogout,Psoriatic arthritis,Rheumatoid arthritis,Septic arthritis,Stress fractures,Thoracic spinal stenosis,Ulcerative colitis,Crohn's disease,Henoch-schonlein purpura,Shingles (herpes zoster)"
+    },
+    "Lump_or_bulge": {
+      "warning": "",
+      "conditions": "Abscess,Trauma or injury"
+    },
+    "Multiple_bruises_of_different_ages": {
+      "warning": "",
+      "conditions": "Physical abuse,Falls or injury"
+    },
+    "Numbness_or_tingling": {
+      "warning": "",
+      "conditions": "Lumbar spinal stenosis,Burn (heat or fire),Chemical burns,Thoracic spinal stenosis,Spinal tumor"
+    },
+    "Stiffness_or_decreased_movement": {
+      "warning": "",
+      "conditions": "Muscle strain,Bursitis (ischiogluteal),Dermatomyositis,Hip (acetabular) labral tear,Pseudogout,Fibromyalgia"
+    },
+    "Swelling": {
+      "warning": "",
+      "conditions": "Insect bites,Insect sting,Lupus (systemic lupus erythematosus),Poison ivy, oak, and sumac,Pseudogout,Burn (heat or fire),Chemical burns,Crohn's disease"
+    },
+    "Tenderness_to_touch": {
+      "warning": "",
+      "conditions": "Fibromyalgia,Hematoma,Tendinitis,Abscess,Bruise or contusion"
+    },
+    "Unable_to_bear_weight": {
+      "warning": "",
+      "conditions": "Broken (fractured) hip"
+    },
+    "Unable_to_move_joint": {
+      "warning": "",
+      "conditions": "Broken (fractured) hip"
+    },
+    "Visible_deformity": {
+      "warning": "",
+      "conditions": "Broken (fractured) hip"
+    },
+    "Warm_to_touch": {
+      "warning": "",
+      "conditions": "Abscess,Gout"
+    },
+    "Weakness": {
+      "warning": "",
+      "conditions": "Muscle strain,Tendinitis,Dermatomyositis"
+    }
+  },
+  "Groin": {
+    "Bleeding": {
+      "warning": "",
+      "conditions": "Trauma or injury"
+    },
+    "Bruising_or_discoloration": {
+      "warning": "",
+      "conditions": "Bruise or contusion,Hematoma,Muscle strain,Trauma or injury,Thrombocytopenia"
+    },
+    "Drainage_or_pus": {
+      "warning": "",
+      "conditions": "Allergic reaction,Abscess"
+    },
+    "Enlarged_or_swollen_glands": {
+      "warning": "",
+      "conditions": "Abscess,Hidradenitis suppurativa,Lyme disease,Lymphogranuloma venereum,Swollen glands,Syphilis (female),Plague,Lymphoma,Cat-scratch disease"
+    },
+    "Lump_or_bulge": {
+      "warning": "",
+      "conditions": "Hernia,Abscess,Swollen glands,Syphilis (female)"
+    },
+    "Multiple_bruises_of_different_ages": {
+      "warning": "",
+      "conditions": "Physical abuse,Falls or injury"
+    },
+    "Muscle_cramps_or_spasms_(painful)": {
+      "warning": "",
+      "conditions": "Muscle strain"
+    },
+    "Numbness_or_tingling": {
+      "warning": "",
+      "conditions": "Burn (heat or fire),Chemical burns,Thoracic spinal stenosis"
+    },
+    "Pain_or_discomfort": {
+      "warning": "",
+      "conditions": "Muscle strain,Kidney stones,Hidradenitis suppurativa,Hip (acetabular) labral tear,Hydronephrosis,Lumbar spinal stenosis,Aortic aneurysm (abdomen),Pregnancy, round ligament pain,Tick bite,Shingles (herpes zoster),Cat-scratch disease"
+    },
+    "Pressure_or_fullness": {
+      "warning": "",
+      "conditions": "Hernia"
+    },
+    "Stiffness_or_decreased_movement": {
+      "warning": "",
+      "conditions": "Muscle strain,Hip (acetabular) labral tear"
+    },
+    "Swelling": {
+      "warning": "",
+      "conditions": "Muscle strain,Swollen glands,Burn (heat or fire),Chemical burns"
+    },
+    "Tender_glands": {
+      "warning": "",
+      "conditions": "Lyme disease,Lymphogranuloma venereum,Swollen glands,Syphilis (female),Plague,Cat-scratch disease"
+    },
+    "Tenderness_to_touch": {
+      "warning": "",
+      "conditions": "Hematoma,Muscle strain,Abscess,Bruise or contusion"
+    },
+    "Warm_to_touch": {
+      "warning": "",
+      "conditions": "Abscess"
+    }
+  },
+  "Shoulder": {
+    "Bleeding": {
+      "warning": "",
+      "conditions": "Trauma or injury"
+    },
+    "Bruising_or_discoloration": {
+      "warning": "",
+      "conditions": "Bruise or contusion,Hematoma,Muscle strain,Trauma or injury"
+    },
+    "Difficulty_moving_joint": {
+      "warning": "",
+      "conditions": ""
+    },
+    "Drainage_or_pus": {
+      "warning": "",
+      "conditions": "Allergic reaction,Abscess"
+    },
+    "Guarding_or_favoring_joint": {
+      "warning": "",
+      "conditions": "Dislocated shoulder,Impingemenent syndrome,Rotator cuff injury"
+    },
+    "Inability_to_move": {
+      "warning": "",
+      "conditions": "Dislocated shoulder,Brachial plexus nerve injury"
+    },
+    "Joint_aches": {
+      "warning": "",
+      "conditions": "Mucopolysaccharidosis I (MPS1)"
+    },
+    "Joint_pain": {
+      "warning": "",
+      "conditions": "Fibromyalgia,Muscle strain,Repetitive motion injuries,Tendinitis,Aortic stenosis,Bone spurs,Brachial plexus nerve injury,Bursitis (sub-deltoid),Cervical (neck) spinal stenosis,Dislocated shoulder,Ectopic pregnancy,Frozen shoulder,Gout,Impingemenent syndrome,Lupus (systemic lupus erythematosus),Multiple sclerosis,Pseudogout,Psoriatic arthritis,Rheumatoid arthritis,Rotator cuff injury,Ulcerative colitis,Crohn's disease,Separated shoulder,Septic arthritis,Shingles (herpes zoster)"
+    },
+    "Lump_or_bulge": {
+      "warning": "",
+      "conditions": "Abscess,Separated shoulder,Trauma or injury"
+    },
+    "Morning_joint_stiffness": {
+      "warning": "",
+      "conditions": "Rheumatoid arthritis,Exercise or physical activity,Psoriatic arthritis"
+    },
+    "Multiple_bruises_of_different_ages": {
+      "warning": "",
+      "conditions": "Physical abuse,Falls or injury"
+    },
+    "Muscle_cramps_or_spasms_(painful)": {
+      "warning": "",
+      "conditions": "Muscle strain,Heat cramps,Heat exhaustion"
+    },
+    "Numbness_or_tingling": {
+      "warning": "",
+      "conditions": "Cervical (neck) spondylosis,Brachial plexus nerve injury,Multiple sclerosis,Burn (heat or fire),Chemical burns"
+    },
+    "Popping_or_snapping_sound_from_joint": {
+      "warning": "",
+      "conditions": "Impingemenent syndrome,Rotator cuff injury"
+    },
+    "Stiffness_or_decreased_movement": {
+      "warning": "",
+      "conditions": "Muscle strain,Tendinitis,Bone spurs,Frozen shoulder,Pseudogout"
+    },
+    "Swelling": {
+      "warning": "",
+      "conditions": "Muscle strain,Insect bites,Insect sting,Lupus (systemic lupus erythematosus),Poison ivy, oak, and sumac,Pseudogout,Burn (heat or fire),Chemical burns,Crohn's disease"
+    },
+    "Visible_deformity": {
+      "warning": "If you have a new visible deformity in your shoulder please seek prompt medical attention.",
+      "conditions": "Separated shoulder,Dislocated shoulder"
+    },
+    "Warm_to_touch": {
+      "warning": "",
+      "conditions": "Abscess,Gout"
+    },
+    "Weakness": {
+      "warning": "",
+      "conditions": "Muscle strain,Tendinitis"
+    }
+  },
+  "Armpit": {
+    "Bleeding": {
+      "warning": "",
+      "conditions": "Trauma or injury"
+    },
+    "Bruising_or_discoloration": {
+      "warning": "",
+      "conditions": "Bruise or contusion,Trauma or injury,Thrombocytopenia"
+    },
+    "Drainage_or_pus": {
+      "warning": "",
+      "conditions": "Allergic reaction,Abscess"
+    },
+    "Enlarged/swollen_glands": {
+      "warning": "",
+      "conditions": "Abscess,Breast cancer (female),Hidradenitis suppurativa,Lyme disease,Sporotrichosis,Swollen glands,Cat-scratch disease,Plague,Lymphoma"
+    },
+    "Excessive_sweating": {
+      "warning": "",
+      "conditions": "Medication reaction or side-effect,Hyperhidrosis"
+    },
+    "Lump_or_bulge": {
+      "warning": "",
+      "conditions": "Abscess,Swollen glands"
+    },
+    "Multiple_bruises_of_different_ages": {
+      "warning": "",
+      "conditions": "Physical abuse,Falls or injury"
+    },
+    "Numbness_or_tingling": {
+      "warning": "",
+      "conditions": "Brachial plexus nerve injury,Burn (heat or fire),Chemical burns"
+    },
+    "Pain_or_discomfort": {
+      "warning": "",
+      "conditions": "Brachial plexus nerve injury,Hidradenitis suppurativa,Tick bite,Shingles (herpes zoster),Cat-scratch disease"
+    },
+    "Swelling": {
+      "warning": "",
+      "conditions": "Hidradenitis suppurativa,Insect bites,Insect sting,Poison ivy, oak, and sumac,Swollen glands,Burn (heat or fire),Chemical burns"
+    },
+    "Tender_glands": {
+      "warning": "",
+      "conditions": "Lyme disease,Swollen glands,Plague,Cat-scratch disease"
+    },
+    "Tenderness_to_touch": {
+      "warning": "",
+      "conditions": "Abscess,Bruise or contusion"
+    },
+    "Warm_to_touch": {
+      "warning": "",
+      "conditions": "Abscess"
+    }
+  },
+  "Upper_arm": {
+    "Bleeding": {
+      "warning": "",
+      "conditions": "Trauma or injury"
+    },
+    "Broken_bone_(single_fracture)": {
+      "warning": "",
+      "conditions": "Physical abuse,Broken (fractured) upper arm,Trauma or injury"
+    },
+    "Broken_bones_(multiple_fractures)": {
+      "warning": "",
+      "conditions": "Physical abuse,Trauma or injury,Osteogenesis imperfecta"
+    },
+    "Bruising_or_discoloration": {
+      "warning": "",
+      "conditions": "Bruise or contusion,Hematoma,Muscle strain,Phlebitis,Trauma or injury,Thrombocytopenia"
+    },
+    "Bulging_veins": {
+      "warning": "",
+      "conditions": "Phlebitis"
+    },
+    "Drainage_or_pus": {
+      "warning": "",
+      "conditions": "Allergic reaction,Abscess"
+    },
+    "Inability_to_move": {
+      "warning": "",
+      "conditions": "Brachial plexus nerve injury"
+    },
+    "Lump_or_bulge": {
+      "warning": "",
+      "conditions": "Abscess,Benign lipoma,Biceps rupture,Epidermal (sebaceous) cyst,Trauma or injury"
+    },
+    "Multiple_bruises_of_different_ages": {
+      "warning": "",
+      "conditions": "Physical abuse,Falls or injury"
+    },
+    "Muscle_cramps_or_spasms_(painful)": {
+      "warning": "",
+      "conditions": "Muscle strain"
+    },
+    "Numbness_or_tingling": {
+      "warning": "",
+      "conditions": "Brachial plexus nerve injury,Cervical (neck) spinal stenosis,Cervical (neck) spondylosis,Burn (heat or fire),Chemical burns"
+    },
+    "Pain_or_discomfort": {
+      "warning": "",
+      "conditions": "Fibromyalgia,Muscle strain,Tendinitis,Brachial plexus nerve injury,Broken (fractured) upper arm,Dermatomyositis,Osteomyelitis (bone infection),Phlebitis,Shingles (herpes zoster)"
+    },
+    "Stiffness_or_decreased_movement": {
+      "warning": "",
+      "conditions": "Muscle strain,Dermatomyositis"
+    },
+    "Swelling": {
+      "warning": "",
+      "conditions": "Muscle strain,Insect bites,Insect sting,Poison ivy, oak, and sumac,Burn (heat or fire),Chemical burns,Osteomyelitis (bone infection)"
+    },
+    "Tenderness_to_touch": {
+      "warning": "",
+      "conditions": "Hematoma,Muscle strain,Tendinitis,Abscess,Bruise or contusion,Epidermal (sebaceous) cyst,Phlebitis"
+    },
+    "Visible_deformity": {
+      "warning": "If you have a new visible deformity in your arm please seek prompt medical attention.",
+      "conditions": "Benign lipoma,Biceps rupture,Broken (fractured) upper arm"
+    },
+    "Warm_to_touch": {
+      "warning": "",
+      "conditions": "Abscess"
+    },
+    "Weakness": {
+      "warning": "",
+      "conditions": "Muscle strain,Tendinitis,Dermatomyositis"
+    }
+  },
+  "Elbow": {
+    "Bleeding": {
+      "warning": "",
+      "conditions": "Trauma or injury"
+    },
+    "Broken_bone_(single_fracture)": {
+      "warning": "",
+      "conditions": "Broken (fractured) elbow"
+    },
+    "Bruising_or_discoloration": {
+      "warning": "",
+      "conditions": "Bruise or contusion,Hematoma,Trauma or injury"
+    },
+    "Difficulty_moving_joint": {
+      "warning": "",
+      "conditions": ""
+    },
+    "Drainage_or_pus": {
+      "warning": "",
+      "conditions": "Allergic reaction,Abscess"
+    },
+    "Enlarged/swollen_glands": {
+      "warning": "",
+      "conditions": "Lyme disease,Swollen glands"
+    },
+    "Guarding_or_favoring_joint": {
+      "warning": "",
+      "conditions": "Broken (fractured) elbow,Tennis elbow,Golfer's elbow"
+    },
+    "Inability_to_move": {
+      "warning": "",
+      "conditions": "Dislocated elbow"
+    },
+    "Joint_aches": {
+      "warning": "",
+      "conditions": "Mucopolysaccharidosis I (MPS1)"
+    },
+    "Joint_instability": {
+      "warning": "",
+      "conditions": "Broken (fractured) elbow"
+    },
+    "Joint_pain": {
+      "warning": "",
+      "conditions": "Fibromyalgia,Repetitive motion injuries,Tendinitis,Tennis elbow,Broken (fractured) elbow,Dislocated elbow,Golfer's elbow,Gout,Pseudogout,Psoriatic arthritis,Rheumatic fever,Rheumatoid arthritis,Sarcoidosis,Sickle cell crisis,Sickle cell disease,Sporotrichosis,Ulcerative colitis,Crohn's disease,Septic arthritis,CREST syndrome,Henoch-schonlein purpura,Shingles (herpes zoster)"
+    },
+    "Lump_or_bulge": {
+      "warning": "",
+      "conditions": "Bursitis (olecranon),Abscess,Epidermal (sebaceous) cyst,Swollen glands,Trauma or injury"
+    },
+    "Morning_joint_stiffness": {
+      "warning": "",
+      "conditions": "Rheumatoid arthritis,Exercise or physical activity,Psoriatic arthritis"
+    },
+    "Multiple_bruises_of_different_ages": {
+      "warning": "",
+      "conditions": "Physical abuse,Falls or injury"
+    },
+    "Numbness_or_tingling": {
+      "warning": "",
+      "conditions": "Burn (heat or fire),Chemical burns"
+    },
+    "Stiffness_or_decreased_movement": {
+      "warning": "",
+      "conditions": "Tendinitis,Golfer's elbow,Pseudogout,Rheumatoid arthritis,Sarcoidosis,Scleroderma,Tennis elbow,CREST syndrome,Fibromyalgia"
+    },
+    "Swelling": {
+      "warning": "",
+      "conditions": "Bursitis (olecranon),Golfer's elbow,Gout,Insect bites,Insect sting,Poison ivy, oak, and sumac,Pseudogout,Rheumatic fever,Rheumatoid arthritis,Sarcoidosis,Sickle cell disease,Sporotrichosis,Tennis elbow,Burn (heat or fire),Chemical burns,Crohn's disease"
+    },
+    "Tender_glands": {
+      "warning": "",
+      "conditions": "Lyme disease,Swollen glands"
+    },
+    "Tenderness_to_touch": {
+      "warning": "",
+      "conditions": "Fibromyalgia,Hematoma,Tendinitis,Tennis elbow,Abscess,Bruise or contusion,Epidermal (sebaceous) cyst,Golfer's elbow"
+    },
+    "Unable_to_move_joint": {
+      "warning": "",
+      "conditions": "Broken (fractured) elbow"
+    },
+    "Visible_deformity": {
+      "warning": "If you have a new visible deformity in your elbow please seek prompt medical attention.",
+      "conditions": "Dislocated elbow,Bursitis (olecranon),Broken (fractured) elbow"
+    },
+    "Warm_to_touch": {
+      "warning": "",
+      "conditions": "Abscess,Gout"
+    },
+    "Weakness": {
+      "warning": "",
+      "conditions": "Tendinitis"
+    }
+  },
+  "Forearm": {
+    "Bleeding": {
+      "warning": "",
+      "conditions": "Trauma or injury"
+    },
+    "Broken_bone_(single_fracture)": {
+      "warning": "",
+      "conditions": "Physical abuse,Broken (fractured) forearm,Trauma or injury"
+    },
+    "Broken_bones_(multiple_fractures)": {
+      "warning": "",
+      "conditions": "Physical abuse,Trauma or injury,Osteogenesis imperfecta"
+    },
+    "Bruising_or_discoloration": {
+      "warning": "",
+      "conditions": "Bruise or contusion,Hematoma,Phlebitis,Trauma or injury,Thrombocytopenia"
+    },
+    "Bulging_veins": {
+      "warning": "",
+      "conditions": "Phlebitis"
+    },
+    "Drainage_or_pus": {
+      "warning": "",
+      "conditions": "Allergic reaction,Abscess"
+    },
+    "Lump_or_bulge": {
+      "warning": "",
+      "conditions": "Abscess,Epidermal (sebaceous) cyst,Trauma or injury"
+    },
+    "Multiple_bruises_of_different_ages": {
+      "warning": "",
+      "conditions": "Physical abuse,Falls or injury"
+    },
+    "Numbness_or_tingling": {
+      "warning": "",
+      "conditions": "Cervical (neck) spinal stenosis,Cervical (neck) spondylosis,Median nerve injury,Ulnar nerve injury,Burn (heat or fire),Chemical burns"
+    },
+    "Pain_or_discomfort": {
+      "warning": "",
+      "conditions": "Carpal tunnel syndrome,Fibromyalgia,Tendinitis,Broken (Colles fractured) wrist,Broken (fractured) forearm,Broken (Smith fracture) wrist,Golfer's elbow,Median nerve injury,Osteomyelitis (bone infection),Phlebitis,Ulnar nerve injury,Shingles (herpes zoster)"
+    },
+    "Swelling": {
+      "warning": "",
+      "conditions": "Bee or wasp stings,Insect bites,Insect sting,Poison ivy, oak, and sumac,Burn (heat or fire),Chemical burns,Osteomyelitis (bone infection)"
+    },
+    "Tenderness_to_touch": {
+      "warning": "",
+      "conditions": "Hematoma,Tendinitis,Abscess,Bruise or contusion,Epidermal (sebaceous) cyst,Phlebitis"
+    },
+    "Unable_to_move_arm": {
+      "warning": "",
+      "conditions": "Broken (fractured) forearm"
+    },
+    "Visible_deformity": {
+      "warning": "If you have a new visible deformity in your forearm please seek prompt medical attention.",
+      "conditions": "Broken (fractured) forearm"
+    },
+    "Warm_to_touch": {
+      "warning": "",
+      "conditions": "Abscess"
+    },
+    "Weakness": {
+      "warning": "",
+      "conditions": "Tendinitis"
+    }
+  },
+  "Wrist": {
+    "Bleeding": {
+      "warning": "",
+      "conditions": "Trauma or injury"
+    },
+    "Broken_bone_(single_fracture)": {
+      "warning": "",
+      "conditions": "Broken (Colles fractured) wrist,Broken (Smith fracture) wrist"
+    },
+    "Bruising_or_discoloration": {
+      "warning": "",
+      "conditions": "Bruise or contusion,Hematoma,Muscle strain,Trauma or injury,Thrombocytopenia"
+    },
+    "Difficulty_moving_joint": {
+      "warning": "",
+      "conditions": ""
+    },
+    "Drainage_or_pus": {
+      "warning": "",
+      "conditions": "Allergic reaction,Abscess"
+    },
+    "Joint_aches": {
+      "warning": "",
+      "conditions": "Mucopolysaccharidosis I (MPS1)"
+    },
+    "Joint_pain": {
+      "warning": "",
+      "conditions": "Carpal tunnel syndrome,Repetitive motion injuries,Tendinitis,Broken (Colles fractured) wrist,Broken (Smith fracture) wrist,Gout,Lupus (systemic lupus erythematosus),Lyme disease,Pseudogout,Psoriatic arthritis,Rheumatic fever,Rheumatoid arthritis,Sarcoidosis,Sporotrichosis,Ulcerative colitis,Crohn's disease,Septic arthritis,CREST syndrome,Henoch-schonlein purpura,Shingles (herpes zoster)"
+    },
+    "Lump_or_bulge": {
+      "warning": "",
+      "conditions": "Ganglion cyst,Abscess,Trauma or injury"
+    },
+    "Morning_joint_stiffness": {
+      "warning": "",
+      "conditions": "Rheumatoid arthritis,Exercise or physical activity,Psoriatic arthritis"
+    },
+    "Multiple_bruises_of_different_ages": {
+      "warning": "",
+      "conditions": "Physical abuse,Falls or injury"
+    },
+    "Numbness_or_tingling": {
+      "warning": "",
+      "conditions": "Burn (heat or fire),Chemical burns"
+    },
+    "Stiffness_or_decreased_movement": {
+      "warning": "",
+      "conditions": "Carpal tunnel syndrome,Tendinitis,Pseudogout,Rheumatoid arthritis,Sarcoidosis,Scleroderma,CREST syndrome"
+    },
+    "Swelling": {
+      "warning": "",
+      "conditions": "Bee or wasp stings,Gout,Insect bites,Insect sting,Lupus (systemic lupus erythematosus),Lyme disease,Poison ivy, oak, and sumac,Pseudogout,Rheumatic fever,Rheumatoid arthritis,Sarcoidosis,Burn (heat or fire),Chemical burns,Crohn's disease"
+    },
+    "Tenderness_to_touch": {
+      "warning": "",
+      "conditions": "Hematoma,Tendinitis,Abscess,Bruise or contusion"
+    },
+    "Visible_deformity": {
+      "warning": "",
+      "conditions": "Broken (Colles fractured) wrist,Broken (Smith fracture) wrist"
+    },
+    "Warm_to_touch": {
+      "warning": "",
+      "conditions": "Abscess,Gout"
+    },
+    "Weakness": {
+      "warning": "",
+      "conditions": "Brachial plexus nerve injury,Saturday night palsy"
+    }
+  },
+  "Hand": {
+    "Bleeding": {
+      "warning": "",
+      "conditions": "Trauma or injury"
+    },
+    "Blue_colored_skin": {
+      "warning": "",
+      "conditions": "Raynaud phenomenon,Acrocyanosis,Cold exposure,CREST syndrome"
+    },
+    "Broken_bone_(single_fracture)": {
+      "warning": "",
+      "conditions": "Physical abuse,Broken (Boxer's fracture) hand,Broken (fractured) hand,Trauma or injury"
+    },
+    "Broken_bones_(multiple_fractures)": {
+      "warning": "",
+      "conditions": "Physical abuse,Trauma or injury,Osteogenesis imperfecta"
+    },
+    "Bruising_or_discoloration": {
+      "warning": "",
+      "conditions": "Bruise or contusion,Hematoma,Trauma or injury,Thrombocytopenia"
+    },
+    "Cold_hands": {
+      "warning": "",
+      "conditions": "Raynaud phenomenon,Acrocyanosis,Cold exposure"
+    },
+    "Color_change": {
+      "warning": "",
+      "conditions": "Raynaud phenomenon,Cold exposure,CREST syndrome"
+    },
+    "Drainage_or_pus": {
+      "warning": "",
+      "conditions": "Allergic reaction,Abscess"
+    },
+    "Excessive_sweating": {
+      "warning": "",
+      "conditions": "Deshidrotic eczema,Medication reaction or side-effect,Acrocyanosis,Hyperhidrosis"
+    },
+    "Involuntary_movements_(picking,_lip_smacking_etc": {
+      "warning": "",
+      "conditions": "Epilepsy (tonic clonic or grand mal seizures),Epilepsy (temporal lobe)"
+    },
+    "Lump_or_bulge": {
+      "warning": "",
+      "conditions": "Ganglion cyst,Abscess,Trauma or injury"
+    },
+    "Multiple_bruises_of_different_ages": {
+      "warning": "",
+      "conditions": "Physical abuse,Falls or injury"
+    },
+    "Muscle_cramps_or_spasms_(painful)": {
+      "warning": "",
+      "conditions": ""
+    },
+    "Muscle_twitching_(painless)": {
+      "warning": "",
+      "conditions": "Hypocalcemia,Low potassium (hypokalemia),Hyperventilation,Hypoparathyroidism,Tetany"
+    },
+    "Numbness_or_tingling": {
+      "warning": "",
+      "conditions": "Peripheral neuropathy,Generalized anxiety disorder,Panic attack,Vitamin B12 deficiency,Cervical (neck) spinal stenosis,Cervical (neck) spondylosis,Cold exposure,Diabetic neuropathy,Median nerve injury,Multiple sclerosis,Pinched nerve or stinger,Ulnar nerve injury,Wernicke syndrome,Burn (heat or fire),Chemical burns"
+    },
+    "Pain_or_discomfort": {
+      "warning": "",
+      "conditions": "Peripheral neuropathy,Broken (Boxer's fracture) hand,Broken (fractured) hand,Cervical (neck) spinal stenosis,Multiple sclerosis,Osteomyelitis (bone infection),Shingles (herpes zoster)"
+    },
+    "Shaking_hands_or_tremor": {
+      "warning": "",
+      "conditions": "Acute stress reaction,Low blood sugar (hypoglycemia),Insulin reaction (hypoglycemia),Cocaine abuse,Hyperthyroidism,Multiple sclerosis,Single_palm_crease"
+    },
+    "Swelling": {
+      "warning": "",
+      "conditions": "Angioedema,Bee or wasp stings,Glomerulonephritis,Insect bites,Insect sting,Poison ivy, oak, and sumac,Rheumatoid arthritis,Scleroderma,Water retention,Burn (heat or fire),Chemical burns,Osteomyelitis (bone infection),Chagas disease,CREST syndrome"
+    },
+    "Tenderness_to_touch": {
+      "warning": "",
+      "conditions": "Hematoma,Abscess,Bruise or contusion"
+    },
+    "Unable_to_grip_(hands)": {
+      "warning": "",
+      "conditions": "Rheumatoid arthritis,Brachial plexus nerve injury,Broken (fractured) hand,Multiple sclerosis"
+    },
+    "Visible_deformity": {
+      "warning": "",
+      "conditions": "Broken (Boxer's fracture) hand,Broken (fractured) hand"
+    },
+    "Warm_to_touch": {
+      "warning": "",
+      "conditions": "Abscess"
+    },
+    "Weakness": {
+      "warning": "",
+      "conditions": "Carpal tunnel syndrome,Peripheral neuropathy,Cervical (neck) spinal stenosis,Multiple sclerosis"
+    }
+  },
+  "Fingers": {
+    "Black_colored_skin": {
+      "warning": "",
+      "conditions": "Frostbite"
+    },
+    "Bleeding": {
+      "warning": "",
+      "conditions": "Trauma or injury"
+    },
+    "Blue_colored_skin": {
+      "warning": "",
+      "conditions": "Raynaud phenomenon,Acrocyanosis,Cold exposure,CREST syndrome"
+    },
+    "Broken_bone_(single_fracture)": {
+      "warning": "",
+      "conditions": "Physical abuse,Broken (fractured) finger,Trauma or injury"
+    },
+    "Broken_bones_(multiple_fractures)": {
+      "warning": "",
+      "conditions": "Physical abuse,Trauma or injury,Osteogenesis imperfecta"
+    },
+    "Bruising_or_discoloration": {
+      "warning": "",
+      "conditions": "Bruise or contusion,Hematoma,Skier's thumb,Trauma or,injury,Thrombocytopenia"
+    },
+    "Cold_hands": {
+      "warning": "",
+      "conditions": "Cold exposure,Raynaud phenomenon"
+    },
+    "Color_change": {
+      "warning": "",
+      "conditions": "Raynaud phenomenon,Cold exposure,CREST syndrome"
+    },
+    "Curved_fingernails": {
+      "warning": "",
+      "conditions": "Chronic obstructive pulmonary disease (COPD),Emphysema,Interstitial lung disease"
+    },
+    "Difficulty_moving_joint": {
+      "warning": "",
+      "conditions": ""
+    },
+    "Drainage_or_pus": {
+      "warning": "",
+      "conditions": "Allergic reaction,Abscess,Paronychia"
+    },
+    "Enlarged_fingertips": {
+      "warning": "",
+      "conditions": "Chronic obstructive pulmonary disease (COPD),Emphysema,Interstitial lung disease"
+    },
+    "Inability_to_move": {
+      "warning": "",
+      "conditions": "Dislocated finge"
+    },
+    "Involuntary_movements_(picking,_lip_smacking_etc": {
+      "warning": "",
+      "conditions": "Epilepsy (tonic clonic or grand mal seizures),Epilepsy (temporal lobe)"
+    },
+    "Joint_pain": {
+      "warning": "",
+      "conditions": "Dislocated finger,Gout,Lupus (systemic lupus erythematosus),Pseudogout,Psoriatic arthritis,Rheumatoid arthritis,CREST syndrome,Shingles (herpes zoster)"
+    },
+    "Lump_or_bulge": {
+      "warning": "",
+      "conditions": "Dislocated finger,Gout,Lupus (systemic lupus erythematosus),Pseudogout,Psoriatic arthritis,Rheumatoid arthritis,CREST syndrome,Shingles (herpes zoster)"
+    },
+    "Morning_joint_stiffness": {
+      "warning": "",
+      "conditions": "Rheumatoid arthritis,Psoriatic arthritis,Exercise or physical activity"
+    },
+    "Multiple_bruises_of_different_ages": {
+      "warning": "",
+      "conditions": "Physical abuse,Falls or injury"
+    },
+    "Muscle_cramps_or_spasms_(painful)": {
+      "warning": "",
+      "conditions": "Hypocalcemia,Low potassium (hypokalemia),Hypoparathyroidism"
+    },
+    "Muscle_twitching_(painless)": {
+      "warning": "",
+      "conditions": "Hypocalcemia,Exercise or physical activity"
+    },
+    "Numbness_or_tingling": {
+      "warning": "",
+      "conditions": "Peripheral neuropathy,Carpal tunnel syndrome,Generalized anxiety disorder,Panic attack,Vitamin B12 deficiency,Hyperventilation,Median nerve injury,Ulnar nerve injury,Cervical (neck) spinal stenosis,Cervical (neck) spondylosis,Diabetic neuropathy,Low blood sugar (hypoglycemia),Multiple sclerosis,Scleroderma,Tetany,Wernicke syndrome,Burn (heat or fire),Chemical burns,Frostbite,CREST syndrome"
+    },
+    "Pain_or_discomfort": {
+      "warning": "",
+      "conditions": "Finger injury,Carpal tunnel syndrome,Tendinitis,Broken (fractured) finger,Cervical (neck) herniated disk,Finger infection,Multiple sclerosis,Osteomyelitis (bone infection),Paronychia,Scleroderma,CREST syndrome"
+    },
+    "Red_or_black_spots_in_fingernails": {
+      "warning": "If you have red or black spots on fingernails and a persistent fever please seek prompt medical attention.",
+      "conditions": "Fingernail injury,Subungual hematoma (bleeding under nail),Endocarditis,Shaking_hands_or_tremor"
+    },
+    "Stiffness_or_decreased_movement": {
+      "warning": "",
+      "conditions": "Finger injury,Pseudogout,Rheumatoid arthritis,Scleroderma,CREST syndrome"
+    },
+    "Swelling": {
+      "warning": "",
+      "conditions": "Angioedema,Bee or wasp stings,Finger injury,Gout,Insect bites,Insect sting,Lupus (systemic lupus erythematosus),Paronychia,Poison ivy, oak, and sumac,Pseudogout,Rheumatoid arthritis,Scleroderma,Water retention,Burn (heat or fire),Chemical burns,Osteomyelitis (bone infection),CREST syndrome"
+    },
+    "Tenderness_to_touch": {
+      "warning": "",
+      "conditions": "Hematoma,Tendinitis,Abscess,Bruise or contusion,Finger injury,Paronychia"
+    },
+    "Unable_to_grip_(hands)": {
+      "warning": "",
+      "conditions": "Carpal tunnel syndrome,Brachial plexus nerve injury,Multiple sclerosis,Usually_short_fourth_fingers"
+    },
+    "Visible_deformity": {
+      "warning": "If you have a new visible deformity in your fingers please seek prompt medical attention.",
+      "conditions": "Dislocated finger,Mallet finger,Broken (fractured) finger,Finger injury,Rheumatoid arthritis,Scleroderma,CREST syndrome"
+    },
+    "Warm_to_touch": {
+      "warning": "",
+      "conditions": "Abscess,Gout"
+    },
+    "Weakness": {
+      "warning": "",
+      "conditions": "Peripheral neuropathy,Tendinitis,Brachial plexus nerve injury,Cervical (neck) spinal stenosis,Multiple sclerosis"
+    }
+  },
+  "Thigh": {
+    "Bleeding": {
+      "warning": "",
+      "conditions": "Trauma or injury Trauma or injury"
+    },
+    "Broken_bone_(single_fracture)": {
+      "warning": "",
+      "conditions": "Broken (fractured) upper leg,Physical abuse,Trauma or injury"
+    },
+    "Broken_bones_(multiple_fractures)": {
+      "warning": "",
+      "conditions": "Physical abuse,Trauma or injury,Osteogenesis imperfecta Physical abuse,Trauma or injury,Osteogenesis imperfecta"
+    },
+    "Bruising_or_discoloration": {
+      "warning": "",
+      "conditions": "Bruise or contusion,Hematoma,Muscle strain,Trauma or injury,Thrombocytopenia Bruise or contusion,HematomaMuscle strain,PhlebitisTrauma or injury,Thrombocytopenia"
+    },
+    "Bulging_veins": {
+      "warning": "",
+      "conditions": "Blood clot in the legs,Varicose veins,Phlebitis"
+    },
+    "Drainage_or_pus": {
+      "warning": "",
+      "conditions": "Allergic reaction,Abscess"
+    },
+    "Lump_or_bulge": {
+      "warning": "",
+      "conditions": "Abscess,Benign lipoma,Blood clot in the legs,Epidermal (sebaceous) cyst,Trauma or injury"
+    },
+    "Multiple_bruises_of_different_ages": {
+      "warning": "",
+      "conditions": "Physical abuse,Falls or injuryPhysical abuse,Falls or injury"
+    },
+    "Muscle_cramps_or_spasms_(painful)": {
+      "warning": "",
+      "conditions": "Leg cramps,Muscle strain,Heat cramps,Heat exhaustion"
+    },
+    "Numbness_or_tingling": {
+      "warning": "",
+      "conditions": "Burn (heat or fire),Chemical burns"
+    },
+    "Pain_or_discomfort": {
+      "warning": "",
+      "conditions": "Fibromyalgia,Muscle strain,TendinitisBlood clot in the legs,Dermatomyositis,Lumbar spinal stenosis,PhlebitisBroken (fractured) upper leg,Osteomyelitis (bone infection)Shingles (herpes zoster)"
+    },
+    "Stiffness_or_decreased_movement": {
+      "warning": "",
+      "conditions": "Muscle strain,Dermatomyositis"
+    },
+    "Swelling": {
+      "warning": "",
+      "conditions": "Muscle strain,Insect bites,Insect sting,Poison ivy, oak, and sumac,Burn (heat or fire)Chemical burns,Osteomyelitis (bone infection)"
+    },
+    "Tenderness_to_touch": {
+      "warning": "",
+      "conditions": "Hematoma,Muscle strain,Tendinitis,Abscess,Blood clot in the legs,Bruise or contusion,Epidermal (sebaceous) cyst,Phlebitis"
+    },
+    "Unable_to_bear_weight": {
+      "warning": "",
+      "conditions": "Broken (fractured) upper leg"
+    },
+    "Unable_to_move_leg": {
+      "warning": "",
+      "conditions": "Broken (fractured) upper leg"
+    },
+    "Visible_deformity": {
+      "warning": "If you have a new visible deformity in your thigh please seek prompt medical attention.",
+      "conditions": "Benign lipoma,Broken (fractured) upper leg"
+    },
+    "Warm_to_touch": {
+      "warning": "",
+      "conditions": "Abscess,Blood clot in the legs"
+    },
+    "Weakness": {
+      "warning": "",
+      "conditions": "Muscle strain,Tendinitis,Dermatomyositis"
+    }
+  },
+  "Hamstring": {
+    "Bleeding": {
+      "warning": "",
+      "conditions": "Trauma or injury"
+    },
+    "Broken_bone_(single_fracture)": {
+      "warning": "",
+      "conditions": "Broken (fractured) upper leg,Physical abuse,Trauma or injury"
+    },
+    "Broken_bones_(multiple_fractures)": {
+      "warning": "",
+      "conditions": "Physical abuse,Trauma or injury,Osteogenesis imperfectaPhysical abuse,Trauma or injury,Osteogenesis imperfect,"
+    },
+    "Bruising_or_discoloration": {
+      "warning": "",
+      "conditions": "Bruise or contusion,Hematoma,Muscle strain,Trauma or injury,ThrombocytopeniaBruise or contusion,HematomaMuscle strain,PhlebitisTrauma or injury,Thrombocytopenia"
+    },
+    "Bulging_veins": {
+      "warning": "",
+      "conditions": "Varicose veins,Blood clot in the legs,Phlebitis"
+    },
+    "Drainage_or_pus": {
+      "warning": "",
+      "conditions": "Allergic reaction,Abscess"
+    },
+    "Lump_or_bulge": {
+      "warning": "",
+      "conditions": "Abscess,Benign lipoma,Blood clot in the legs,Epidermal (sebaceous) cyst,Trauma or injury"
+    },
+    "Multiple_bruises_of_different_ages": {
+      "warning": "",
+      "conditions": "Physical abuse,Falls or injuryPhysical abuse,Falls or injury"
+    },
+    "Muscle_cramps_or_spasms_(painful)": {
+      "warning": "",
+      "conditions": "Muscle strain"
+    },
+    "Numbness_or_tingling": {
+      "warning": "",
+      "conditions": "Burn (heat or fire),Chemical burns"
+    },
+    "Pain_or_discomfort": {
+      "warning": "",
+      "conditions": "Fibromyalgia,Muscle strain,Tendinitis,Blood clot in the legs,Dermatomyositis,Hamstring injury,Lumbar spinal stenosis,Phlebitis,SciaticaBroken (fractured) upper leg,Osteomyelitis (bone infection)Shingles (herpes zoster)"
+    },
+    "Stiffness_or_decreased_movement": {
+      "warning": "",
+      "conditions": "Muscle strain,Dermatomyositis"
+    },
+    "Swelling": {
+      "warning": "",
+      "conditions": "Muscle strain,Insect bites,Insect sting,Poison ivy, oak, and sumac,Burn (heat or fire)Chemical burns,Osteomyelitis (bone infection)"
+    },
+    "Tenderness_to_touch": {
+      "warning": "",
+      "conditions": "Hematoma,Muscle strain,Tendinitis,Abscess,Blood clot in the legs,Bruise or contusion,Epidermal (sebaceous) cyst,Phlebitis"
+    },
+    "Unable_to_bear_weight": {
+      "warning": "",
+      "conditions": "Broken (fractured) upper leg"
+    },
+    "Unable_to_move_leg": {
+      "warning": "",
+      "conditions": "Broken (fractured) upper leg"
+    },
+    "Visible_deformity": {
+      "warning": "If you have a new visible deformity in your thigh please seek prompt medical attention.",
+      "conditions": "Benign lipoma,Broken (fractured) upper leg"
+    },
+    "Warm_to_touch": {
+      "warning": "",
+      "conditions": "Abscess"
+    },
+    "Weakness": {
+      "warning": "",
+      "conditions": "Muscle strain,Tendinitis,Dermatomyositis"
+    }
+  },
+  "Knee": {
+    "Bleeding": {
+      "warning": "",
+      "conditions": "Trauma or injury"
+    },
+    "Bruising_or_discoloration": {
+      "warning": "",
+      "conditions": "Bruise or contusion,Hematoma,Muscle strain,Trauma or injury,ThrombocytopeniaBruise or contusion,Hematoma,Trauma or injury"
+    },
+    "Difficulty_moving_joint": {
+      "warning": "",
+      "conditions": ""
+    },
+    "Difficulty_walking": {
+      "warning": "",
+      "conditions": "ACL knee injury,Gout,Rheumatoid arthritis"
+    },
+    "Drainage_or_pus": {
+      "warning": "",
+      "conditions": "Allergic reaction,Abscess"
+    },
+    "Guarding_or_favoring_joint": {
+      "warning": "",
+      "conditions": "ACL knee injury,Posterior cruciate ligament (PCL) injury"
+    },
+    "Inability_to_move": {
+      "warning": "",
+      "conditions": ""
+    },
+    "Joint_aches": {
+      "warning": "",
+      "conditions": "Mucopolysaccharidosis I (MPS1)"
+    },
+    "Joint_instability": {
+      "warning": "",
+      "conditions": "ACL knee injury,Posterior cruciate ligament (PCL) injury"
+    },
+    "Joint_pain": {
+      "warning": "",
+      "conditions": "Fibromyalgia,Repetitive motion injuries,Tendinitis,Pseudogout,Septic arthritis,ACL knee injury,Bursitis (pre-patellar)Chondromalacia patella,Gout,Knee meniscus tear,Knee strain,Lupus (systemic lupus erythematosus)Lyme diseaseObesityOsteochondritis dessicans,Patellofemoral pain syndromePsoriatic arthritisRheumatic fever,Rheumatoid arthritis,Sarcoidosis,Sickle cell crisis,Sickle cell disease,Sporotrichosis,Stress fractures,Ulcerative colitis,Crohn's disease,Henoch-schonlein purpura,Posterior cruciate ligament (PCL) injury,Shingles (herpes zoster)"
+    },
+    "Lump_or_bulge": {
+      "warning": "",
+      "conditions": "Abscess,Trauma or injury"
+    },
+    "Morning_joint_stiffness": {
+      "warning": "",
+      "conditions": "Exercise or physical activity,Psoriatic arthritis"
+    },
+    "Multiple_bruises_of_different_ages": {
+      "warning": "",
+      "conditions": "Physical abuse,Falls or injuryPhysical abuse,Falls or injury"
+    },
+    "Numbness_or_tingling": {
+      "warning": "",
+      "conditions": "Burn (heat or fire),Chemical burns"
+    },
+    "Pain_or_discomfort": {
+      "warning": "",
+      "conditions": ""
+    },
+    "Popping_or_snapping_sound_from_joint": {
+      "warning": "",
+      "conditions": "ACL knee injury,Chondromalacia patella,Osteochondritis dessicans,Posterior cruciate ligament (PCL) injury"
+    },
+    "Stiffness_or_decreased_movement": {
+      "warning": "",
+      "conditions": "Bursitis (anserine)ACL knee injury,Chondromalacia patella,Osteochondritis dessicans,Patellofemoral pain syndrome,Pseudogout,Rheumatoid arthritis,Sarcoidosis,Posterior cruciate ligament (PCL) injury,Fibromyalgia"
+    },
+    "Swelling": {
+      "warning": "",
+      "conditions": "Bursitis (anserine)ACL knee injury,Gout,Insect bites,Insect sting,Lupus (systemic lupus erythematosus)Lyme disease,Poison ivy or oak and sumac,Pseudogout,Rheumatic fever,Rheumatoid arthritis,SarcoidosisSickle cell disease,Sporotrichosis,Burn (heat or fire)Chemical burns,Crohn's disease,Posterior cruciate ligament (PCL) injury"
+    },
+    "Tenderness_to_touch": {
+      "warning": "",
+      "conditions": "Bursitis (anserine)Fibromyalgia,Hematoma,Tendinitis,Abscess,Bruise or contusion,Posterior cruciate ligament (PCL) injury"
+    },
+    "Unable_to_bear_weight": {
+      "warning": "",
+      "conditions": "ACL knee injury,Dislocated knee,Posterior cruciate ligament (PCL) injury"
+    },
+    "Visible_deformity": {
+      "warning": "",
+      "conditions": "Dislocated knee"
+    },
+    "Warm_to_touch": {
+      "warning": "",
+      "conditions": "Abscess,Gout"
+    },
+    "Weakness": {
+      "warning": "",
+      "conditions": "Tendinitis,ACL knee injury,Posterior cruciate ligament (PCL) injury"
+    }
+  },
+  "Back_of_knee": {
+    "Bleeding": {
+      "warning": "",
+      "conditions": "Trauma or injury"
+    },
+    "Bruising_or_discoloration": {
+      "warning": "",
+      "conditions": "Bruise or contusion,Hematoma,Muscle strain,Trauma or injury,ThrombocytopeniaBruise or contusion,Hematoma,Trauma or injury"
+    },
+    "Drainage_or_pus": {
+      "warning": "",
+      "conditions": "Allergic reaction,Abscess"
+    },
+    "Guarding_or_favoring_joint": {
+      "warning": "",
+      "conditions": "ACL knee injury,Rheumatoid arthritis,Posterior cruciate ligament (PCL) injury"
+    },
+    "Joint_instability": {
+      "warning": "",
+      "conditions": "ACL knee injury,Posterior cruciate ligament (PCL) injury"
+    },
+    "Joint_pain": {
+      "warning": "",
+      "conditions": "Baker's cyst,Knee strain,Shingles (herpes zoster)"
+    },
+    "Lump_or_bulge": {
+      "warning": "",
+      "conditions": "Baker's cyst,Abscess,Trauma or injury"
+    },
+    "Morning_joint_stiffness": {
+      "warning": "",
+      "conditions": "Exercise or physical activity"
+    },
+    "Multiple_bruises_of_different_ages": {
+      "warning": "",
+      "conditions": "Physical abuse,Falls or injuryPhysical abuse,Falls or injury"
+    },
+    "Numbness_or_tingling": {
+      "warning": "",
+      "conditions": "Burn (heat or fire),Chemical burns"
+    },
+    "Stiffness_or_decreased_movement": {
+      "warning": "",
+      "conditions": "Baker's cyst,Posterior cruciate ligament (PCL) injury"
+    },
+    "Swelling": {
+      "warning": "",
+      "conditions": "Baker's cyst,Insect bites,Insect sting,Poison ivy, oak, and sumac,Burn (heat or fire)Chemical burns"
+    },
+    "Tenderness_to_touch": {
+      "warning": "",
+      "conditions": "Hematoma,Abscess,Baker's cyst,Bruise or contusion"
+    },
+    "Warm_to_touch": {
+      "warning": "",
+      "conditions": "Abscess"
+    }
+  },
+  "Shin": {
+    "Bleeding": {
+      "warning": "",
+      "conditions": "Trauma or injury"
+    },
+    "Broken_bone_(single_fracture)": {
+      "warning": "",
+      "conditions": "Physical abuse,Broken (fractured) lower leg,Trauma or injury"
+    },
+    "Broken_bones_(multiple_fractures)": {
+      "warning": "",
+      "conditions": "Physical abuse,Trauma or injury,Osteogenesis imperfecta"
+    },
+    "Bruising_or_discoloration": {
+      "warning": "",
+      "conditions": "Bruise or contusion,Hematoma,Muscle strain,Trauma or injury,ThrombocytopeniaBruise or contusion,Hematoma,Bruised shin,Phlebitis,Trauma or injury,Thrombocytopenia"
+    },
+    "Bulging_veins": {
+      "warning": "",
+      "conditions": "Varicose veins,Phlebitis"
+    },
+    "Drainage_or_pus": {
+      "warning": "",
+      "conditions": "Allergic reaction,Abscess"
+    },
+    "Lump_or_bulge": {
+      "warning": "",
+      "conditions": "Abscess,Epidermal (sebaceous) cyst,Trauma or injury"
+    },
+    "Multiple_bruises_of_different_ages": {
+      "warning": "",
+      "conditions": "Physical abuse,Falls or injuryPhysical abuse,Falls or injury"
+    },
+    "Muscle_cramps_or_spasms_(painful)": {
+      "warning": "",
+      "conditions": "Leg cramps,Low potassium (hypokalemia)Exercise or physical activity,Hypocalcemia,Dehydration (Adult)Heat cramps,Heat exhaustion,Hypoparathyroidism,Restless legs syndrome"
+    },
+    "Numbness_or_tingling": {
+      "warning": "",
+      "conditions": "Burn (heat or fire),Chemical burnsLumbar spinal stenosis,Burn (heat or fire)Chemical burns,Thoracic spinal stenosis,Spinal tumor"
+    },
+    "Pain_or_discomfort": {
+      "warning": "",
+      "conditions": "Bruised shin,Bursitis (anserine)Fibromyalgia,Osteomyelitis (bone infection)Phlebitis,Shin splints,Stress fractures,Broken (fractured) lower leg,Tick bite,Shingles (herpes zoster)"
+    },
+    "Swelling": {
+      "warning": "",
+      "conditions": "Bruised shin,Bursitis (anserine)Bee or wasp stings,Insect bites,Insect sting,Poison ivy, oak, and sumac,Burn (heat or fire)Chemical burns,Osteomyelitis (bone infection)"
+    },
+    "Tenderness_to_touch": {
+      "warning": "",
+      "conditions": "Bruised shin,Bursitis (anserine)Hematoma,Abscess,Bruise or contusion,Epidermal (sebaceous) cyst,Erythema nodosum,Phlebitis"
+    },
+    "Unable_to_bear_weight": {
+      "warning": "",
+      "conditions": "Broken (fractured) lower leg"
+    },
+    "Visible_deformity": {
+      "warning": "If you have a new visible deformity in your shin please seek prompt medical attention.",
+      "conditions": "Broken (fractured) lower leg"
+    },
+    "Warm_to_touch": {
+      "warning": "",
+      "conditions": "Bursitis (anserine),Abscess"
+    }
+  },
+  "Calf": {
+    "Bleeding": {
+      "warning": "",
+      "conditions": "Trauma or injury"
+    },
+    "Broken_bone_(single_fracture)": {
+      "warning": "",
+      "conditions": "Physical abuse,Broken (fractured) lower leg,Trauma or injury"
+    },
+    "Broken_bones_(multiple_fractures)": {
+      "warning": "",
+      "conditions": "Physical abuse,Trauma or injury,Osteogenesis imperfecta"
+    },
+    "Bruising_or_discoloration": {
+      "warning": "",
+      "conditions": "Bruise or contusion,Hematoma,Muscle strain,Trauma or injury,ThrombocytopeniaBruise or contusion,Hematoma,Muscle strain,Phlebitis,Trauma or injury,Thrombocytopenia"
+    },
+    "Bulging_veins": {
+      "warning": "",
+      "conditions": "Varicose veins,Blood clot in the legs,Phlebitis"
+    },
+    "Drainage_or_pus": {
+      "warning": "",
+      "conditions": "Allergic reaction,Abscess"
+    },
+    "Lump_or_bulge": {
+      "warning": "",
+      "conditions": "Abscess,Blood clot in the legs,Epidermal (sebaceous) cyst,Trauma or injury"
+    },
+    "Multiple_bruises_of_different_ages": {
+      "warning": "",
+      "conditions": "Physical abuse,Falls or injuryPhysical abuse,Falls or injury"
+    },
+    "Muscle_cramps_or_spasms_(painful)": {
+      "warning": "If you are experiencing calf pain associated with chest pain or shortness of breath please seek emergency medical attention.",
+      "conditions": "Leg cramps,Low potassium (hypokalemia)Muscle strain,Exercise or physical activity,Hypocalcemia,Blood clot in the legs,Dehydration (Adult)Heat cramps,Heat exhaustion,Hypoparathyroidism,Restless legs syndrome"
+    },
+    "Numbness_or_tingling": {
+      "warning": "",
+      "conditions": "Burn (heat or fire),Chemical burns"
+    },
+    "Pain_or_discomfort": {
+      "warning": "If you are experiencing calf pain associated with chest pain or shortness of breath please seek emergency medical attention.",
+      "conditions": "Fibromyalgia,Muscle strain,Tendinitis,Blood clot in the legs,Osteomyelitis (bone infection)Peripheral vascular disease,Phlebitis,Broken (fractured) lower leg,Shingles (herpes zoster)"
+    },
+    "Stiffness_or_decreased_movement": {
+      "warning": "",
+      "conditions": "Muscle strain,Tendinitis"
+    },
+    "Swelling": {
+      "warning": "If you experience tenderness or swelling in your calf please seek prompt medical attention.",
+      "conditions": "Blood clot in the legs,Muscle strain,Bee or wasp stings,Insect bites,Insect sting,Poison ivy, oak, and sumac,Burn (heat or fire)Chemical burns,Osteomyelitis (bone infection)"
+    },
+    "Tenderness_to_touch": {
+      "warning": "",
+      "conditions": ""
+    },
+    "Unable_to_bear_weight": {
+      "warning": "",
+      "conditions": "Broken (fractured) lower leg"
+    },
+    "Visible_deformity": {
+      "warning": "If you have a new visible deformity in your calf please seek prompt medical attention.",
+      "conditions": "Broken (fractured) lower leg"
+    },
+    "Warm_to_touch": {
+      "warning": "",
+      "conditions": "Abscess,Blood clot in the legs"
+    }
+  },
+  "Ankle": {
+    "Bleeding": {
+      "warning": "",
+      "conditions": "Trauma or injury"
+    },
+    "Broken_bone_(single_fracture)": {
+      "warning": "",
+      "conditions": "Broken (fractured) ankle"
+    },
+    "Bruising_or_discoloration": {
+      "warning": "",
+      "conditions": "Bruise or contusion,Hematoma,Muscle strain,Trauma or injury,ThrombocytopeniaBruise or contusion,Hematoma,,Sprained ankle,Trauma or injury"
+    },
+    "Bulging_veins": {
+      "warning": "",
+      "conditions": ""
+    },
+    "Difficulty_moving_joint": {
+      "warning": "",
+      "conditions": ""
+    },
+    "Difficulty_walking": {
+      "warning": "",
+      "conditions": "Rheumatoid arthritis"
+    },
+    "Drainage_or_pus": {
+      "warning": "",
+      "conditions": "Allergic reaction,Abscess"
+    },
+    "Guarding_or_favoring_joint": {
+      "warning": "",
+      "conditions": "Sprained ankle,Broken (fractured) ankle,Mucopolysaccharidosis I (MPS1)"
+    },
+    "Joint_aches": {
+      "warning": "",
+      "conditions": "Mucopolysaccharidosis I (MPS1)"
+    },
+    "Joint_pain": {
+      "warning": "",
+      "conditions": "Sprained ankle,Broken (fractured) ankle,Bursitis (ankle)Lupus (systemic lupus erythematosus)Lyme disease,Pseudogout,Psoriatic arthritis,Rheumatic fever,Rheumatoid arthritis,Sarcoidosis,Sporotrichosis,Stress fracturesUlcerative colitis,Crohn's disease,Gout,CREST syndrome,Henoch-schonlein purpura,Shingles (herpes zoster)"
+    },
+    "Lump_or_bulge": {
+      "warning": "",
+      "conditions": "Abscess,Trauma or injury"
+    },
+    "Morning_joint_stiffness": {
+      "warning": "",
+      "conditions": "Rheumatoid arthritis,Exercise or physical activity,Psoriatic arthritis"
+    },
+    "Multiple_bruises_of_different_ages": {
+      "warning": "",
+      "conditions": "Physical abuse,Falls or injuryPhysical abuse,Falls or injury"
+    },
+    "Stiffness_or_decreased_movement": {
+      "warning": "",
+      "conditions": "Sprained ankle,Pseudogout,Sarcoidosis,Scleroderma,CREST syndrome"
+    },
+    "Swelling": {
+      "warning": "",
+      "conditions": "Sprained ankle,Blood clot in the legs,Aortic regurgitation,Chronic kidney disease,Gout,Insect bites,Insect sting,Lupus (systemic lupus erythematosus)Lyme diseasePoison ivy, oak, and sumac,Polycystic kidney disease,Pregnancy,Pseudogout,Pulmonary hypertension,Rheumatic fever,Sarcoidosis,Sporotrichosis,Water retention,Burn (heat or fire)Chemical burns,Crohn's disease"
+    },
+    "Tenderness_to_touch": {
+      "warning": "",
+      "conditions": "Sprained ankle,Hematoma,Abscess,Bruise or contusion,Broken (fractured) ankle"
+    },
+    "Unable_to_bear_weight": {
+      "warning": "",
+      "conditions": "Sprained ankle,Broken (fractured) ankle"
+    },
+    "Unable_to_bend_foot_down": {
+      "warning": "If you are suddenly unable to bend foot down please seek prompt medical attention.",
+      "conditions": "Achilles tendon rupture,Sprained ankle,Broken (fractured) ankle"
+    },
+    "Unable_to_move_joint": {
+      "warning": "",
+      "conditions": "Sprained ankle,Broken (fractured) ankle,Achilles tendon rupture"
+    },
+    "Visible_deformity": {
+      "warning": "If you have a new visible deformity in your ankle please seek prompt medical attention.",
+      "conditions": "Broken (fractured) ankle"
+    },
+    "Warm_to_touch": {
+      "warning": "",
+      "conditions": "Abscess,Gout"
+    },
+    "Weakness": {
+      "warning": "",
+      "conditions": "Peripheral neuropathy,Sprained ankle"
+    }
+  },
+  "Foot": {
+    "Bleeding": {
+      "warning": "",
+      "conditions": "Trauma or injury"
+    },
+    "Blue_colored_skin": {
+      "warning": "",
+      "conditions": "Raynaud phenomenon,Acrocyanosis,Cold exposure,CREST syndrome"
+    },
+    "Broken_bone_(single_fracture)": {
+      "warning": "",
+      "conditions": "Physical abuse,Broken (fractured) foot,Trauma or injury"
+    },
+    "Broken_bones_(multiple_fractures)": {
+      "warning": "",
+      "conditions": "Physical abuse,Trauma or injury,Osteogenesis imperfecta"
+    },
+    "Bruising_or_discoloration": {
+      "warning": "",
+      "conditions": "Bruise or contusion,Hematoma,Muscle strain,Trauma or injury,ThrombocytopeniaBruise or contusion,Hematoma,Sprained ankle,Trauma or injury,Physical abuse,Thrombocytopenia,Osteogenesis imperfecta"
+    },
+    "Cold_feet": {
+      "warning": "",
+      "conditions": "Raynaud phenomenon,Acrocyanosis,Cold exposure,Peripheral vascular disease,Aortic aneurysm (abdomen)"
+    },
+    "Color_change": {
+      "warning": "",
+      "conditions": "Cold exposure,CREST syndrome"
+    },
+    "Difficulty_walking": {
+      "warning": "",
+      "conditions": "Rheumatoid arthritis"
+    },
+    "Drainage_or_pus": {
+      "warning": "",
+      "conditions": "Allergic reaction,Abscess"
+    },
+    "Lump_or_bulge": {
+      "warning": "",
+      "conditions": "Abscess,Trauma or injury"
+    },
+    "Multiple_bruises_of_different_ages": {
+      "warning": "",
+      "conditions": "Physical abuse,Falls or injuryPhysical abuse,Falls or injury"
+    },
+    "Muscle_cramps_or_spasms_(painful)": {
+      "warning": "",
+      "conditions": "Hypocalcemia,Hypoparathyroidism,Tetany"
+    },
+    "Numbness_or_tingling": {
+      "warning": "",
+      "conditions": "Burn (heat or fire),Chemical burns"
+    },
+    "Pain_or_discomfort": {
+      "warning": "",
+      "conditions": "Peripheral neuropathy,Poorly fitting shoes,Broken (fractured) foot,Corns and calluses,Lumbar spinal stenosis,Metatarsalgia,Multiple sclerosis,Osteomyelitis (bone infection)Sciatica,Stress fractures,Thoracic spinal stenosis,Shingles (herpes zoster)"
+    },
+    "Shuffling_gait_(feet)": {
+      "warning": "",
+      "conditions": ""
+    },
+    "Stiffness_or_decreased_movement": {
+      "warning": "",
+      "conditions": "Rheumatoid arthritis"
+    },
+    "Swelling": {
+      "warning": "",
+      "conditions": "Rheumatoid arthritis,Acute kidney failure,Aortic regurgitation,Bee or wasp stings,Bunions,Chronic kidney disease,Corns and calluses,Glomerulonephritis,Insect bites,Insect sting,Poison ivy or oak and sumac,Pulmonary hypertension,Thrombophlebitis,Water retention,Burn (heat or fire)Chemical burns,Osteomyelitis (bone infection)Chagas disease"
+    },
+    "Tenderness_to_touch": {
+      "warning": "",
+      "conditions": "Hematoma,Sprained ankle,Abscess,Broken (fractured) toe,Bruise or contusion,Gout,Broken (fractured) foot"
+    },
+    "Unable_to_bear_weight": {
+      "warning": "",
+      "conditions": "Broken (fractured) foot,Broken (fractured) toe,Gout"
+    },
+    "Visible_deformity": {
+      "warning": "If you have a new visible deformity in your foot please seek prompt medical attention.",
+      "conditions": "Broken (fractured) foot"
+    },
+    "Warm_to_touch": {
+      "warning": "",
+      "conditions": "Abscess"
+    },
+    "Weakness": {
+      "warning": "",
+      "conditions": "Peripheral neuropathy,Abscess,Lumbar spinal stenosis,Thoracic spinal stenosis"
+    }
+  },
+  "Toes": {
+    "Black_colored_skin": {
+      "warning": "If you have new black colored toes (skin color change) please seek propmt medical attention.",
+      "conditions": "Peripheral vascular disease,Diabetes, type 1,Frostbite,Aortic aneurysm (abdomen)"
+    },
+    "Bleeding": {
+      "warning": "",
+      "conditions": "Trauma or injury"
+    },
+    "Blue_colored_skin": {
+      "warning": "",
+      "conditions": "Raynaud phenomenon,Acrocyanosis,Cold exposure,CREST syndrome"
+    },
+    "Broken_bone_(single_fracture)": {
+      "warning": "",
+      "conditions": "Physical abuse,Trauma or injury"
+    },
+    "Broken_bones_(multiple_fractures)": {
+      "warning": "",
+      "conditions": "Physical abuse,Trauma or injury,Osteogenesis imperfecta"
+    },
+    "Bruising_or_discoloration": {
+      "warning": "",
+      "conditions": "Bruise or contusion,Hematoma,Muscle strain,Trauma or injury,ThrombocytopeniaBruise or contusion,Hematoma,Trauma or injury,Thrombocytopenia"
+    },
+    "Cold_feet": {
+      "warning": "",
+      "conditions": "Raynaud phenomenon,Cold exposure"
+    },
+    "Color_change": {
+      "warning": "",
+      "conditions": "Raynaud phenomenon,Cold exposure,CREST syndrome"
+    },
+    "Difficulty_walking": {
+      "warning": "",
+      "conditions": "Gout"
+    },
+    "Drainage_or_pus": {
+      "warning": "",
+      "conditions": "Allergic reaction,Abscess,Paronychia"
+    },
+    "Joint_pain": {
+      "warning": "",
+      "conditions": "Broken (fractured) toe,Gout,Pseudogout,Psoriatic arthritis,Rheumatoid arthritis,Shingles (herpes zoster)"
+    },
+    "Lump_or_bulge": {
+      "warning": "",
+      "conditions": "Abscess,Trauma or injury"
+    },
+    "Morning_joint_stiffness": {
+      "warning": "",
+      "conditions": "Psoriatic arthritis"
+    },
+    "Multiple_bruises_of_different_ages": {
+      "warning": "",
+      "conditions": "Physical abuse,Falls or injuryPhysical abuse,Falls or injury"
+    },
+    "Muscle_cramps_or_spasms_(painful)": {
+      "warning": "",
+      "conditions": "Hypocalcemia,Hyperventilation,Hypoparathyroidism"
+    },
+    "Numbness_or_tingling": {
+      "warning": "",
+      "conditions": "Burn (heat or fire),Chemical burns"
+    },
+    "Pain_or_discomfort": {
+      "warning": "",
+      "conditions": "Broken (fractured) toe,Bunions,Corns and calluses,Gout,Ingrown toenail,Metatarsalgia,Morton's neuroma,Osteomyelitis (bone infection)Paronychia,SclerodermaTurf toe,Aortic aneurysm (abdomen)"
+    },
+    "Stiffness_or_decreased_movement": {
+      "warning": "",
+      "conditions": "Pseudogout,Turf toe"
+    },
+    "Swelling": {
+      "warning": "",
+      "conditions": "Bee or wasp stings,Corns and calluses,Gout,Ingrown toenail,Insect bites,Insect sting,Paronychia,Poison ivy or oak and sumac,Pseudogout,Turf toe,Burn (heat or fire)Chemical burns,Osteomyelitis (bone infection)CREST syndrome"
+    },
+    "Tenderness_to_touch": {
+      "warning": "",
+      "conditions": "Hematoma,Abscess,Bruise or contusion,Paronychia,Turf toe"
+    },
+    "Unable_to_bear_weight": {
+      "warning": "",
+      "conditions": "Broken (fractured) toe,Gout"
+    },
+    "Visible_deformity": {
+      "warning": "If you have a new visible deformity in your foot please seek prompt medical attention.",
+      "conditions": "Broken (fractured) toe,Hammertoe and mallet toe"
+    },
+    "Warm_to_touch": {
+      "warning": "",
+      "conditions": "Abscess,Gout"
+    }
+  },
+  "Sole": {
+    "Bleeding": {
+      "warning": "",
+      "conditions": "Trauma or injury"
+    },
+    "Blue_colored_skin": {
+      "warning": "",
+      "conditions": "Raynaud phenomenon,Acrocyanosis,Cold exposure,CREST syndrome"
+    },
+    "Broken_bone_(single_fracture)": {
+      "warning": "",
+      "conditions": "Physical abuse,Broken (fractured) foot,Trauma or injury"
+    },
+    "Broken_bones_(multiple_fractures)": {
+      "warning": "",
+      "conditions": "Physical abuse,Trauma or injury,Osteogenesis imperfecta"
+    },
+    "Bruising_or_discoloration": {
+      "warning": "",
+      "conditions": "Bruise or contusion,Hematoma,Muscle strain,Trauma or injury,ThrombocytopeniaBruise or contusion,Hematoma,Trauma or injury,Thrombocytopenia"
+    },
+    "Cold_feet": {
+      "warning": "",
+      "conditions": "Raynaud phenomenon,Acrocyanosis,Cold exposure,Peripheral vascular disease,Aortic aneurysm (abdomen)"
+    },
+    "Color_change": {
+      "warning": "",
+      "conditions": "Cold exposure,CREST syndrome"
+    },
+    "Difficulty_walking": {
+      "warning": "",
+      "conditions": "Rheumatoid arthritis"
+    },
+    "Drainage_or_pus": {
+      "warning": "",
+      "conditions": "Allergic reaction,Abscess"
+    },
+    "Excessive_sweating": {
+      "warning": "",
+      "conditions": "Deshidrotic eczema,Medication reaction or side-effect,Acrocyanosis,Hyperhidrosis"
+    },
+    "Lump_or_bulge": {
+      "warning": "",
+      "conditions": "Abscess,Trauma or injury"
+    },
+    "Multiple_bruises_of_different_ages": {
+      "warning": "",
+      "conditions": "Physical abuse,Falls or injuryPhysical abuse,Falls or injury"
+    },
+    "Muscle_cramps_or_spasms_(painful)": {
+      "warning": "",
+      "conditions": "Hypocalcemia,Hypoparathyroidism,Tetany"
+    },
+    "Numbness_or_tingling": {
+      "warning": "",
+      "conditions": "Burn (heat or fire),Chemical burns"
+    },
+    "Pain_or_discomfort": {
+      "warning": "",
+      "conditions": "Peripheral neuropathy,Plantar warts,Poorly fitting shoes,Plantar fasciitis,Bone spurs,Broken (fractured) foot,Corns and calluses,Flatfeet,Metatarsalgia,Morton's neuroma,Multiple sclerosis,Osteomyelitis (bone infection)Sciatica,Stress fractures,Shingles (herpes zoster)"
+    },
+    "Shuffling_gait_(feet)": {
+      "warning": "",
+      "conditions": ""
+    },
+    "Swelling": {
+      "warning": "",
+      "conditions": "Bee or wasp stings,Insect bites,Insect sting,Plantar fasciitis,Poison ivy, oak, and sumac,Burn (heat or fire)Chemical burns,Osteomyelitis (bone infection)"
+    },
+    "Tenderness_to_touch": {
+      "warning": "",
+      "conditions": "Hematoma,Plantar warts,Plantar fasciitis,Abscess,Bruise or contusion"
+    },
+    "Unable_to_bear_weight": {
+      "warning": "",
+      "conditions": "Broken (fractured) foot,Broken (fractured) toe,Gout"
+    },
+    "Visible_deformity": {
+      "warning": "",
+      "conditions": "Broken (fractured) foot"
+    },
+    "Warm_to_touch": {
+      "warning": "",
+      "conditions": "Abscess"
+    },
+    "Weakness": {
+      "warning": "",
+      "conditions": "Peripheral neuropathy"
+    }
+  }
+}

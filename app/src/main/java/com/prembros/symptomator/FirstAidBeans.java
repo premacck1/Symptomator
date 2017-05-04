@@ -7,27 +7,27 @@ import android.os.Parcelable;
  * Created by Prem $ on 4/13/2017.
  */
 
-class Beans implements Parcelable {
+class FirstAidBeans implements Parcelable {
 
     private String field = "";
     private String topic = "";
     private String heading = "";
     private String content = "";
 
-    Beans(){
+    FirstAidBeans(){
         //Empty constructor
     }
 
-    private Beans(Parcel parcel){
+    private FirstAidBeans(Parcel parcel){
         field = parcel.readString();
         topic = parcel.readString();
         heading = parcel.readString();
         content = parcel.readString();
     }
 
-    void setField(String field){
-        this.field = field;
-    }
+//    void setField(String field){
+//        this.field = field;
+//    }
 
     void setTopic(String topic){
         this.topic = topic;
@@ -41,13 +41,13 @@ class Beans implements Parcelable {
         this.content = content;
     }
 
-    String getField(){
-        return field;
-    }
+//    String getField(){
+//        return field;
+//    }
 
-    String getTopic(){
-        return topic;
-    }
+//    String getTopic(){
+//        return topic;
+//    }
 
     String getHeading(){
         return heading;
@@ -70,15 +70,15 @@ class Beans implements Parcelable {
         parcel.writeString(content);
     }
 
-    public static final Creator<Beans> CREATOR = new Creator<Beans>() {
+    public static final Creator<FirstAidBeans> CREATOR = new Creator<FirstAidBeans>() {
         @Override
-        public Beans createFromParcel(Parcel parcel) {
-            return new Beans(parcel);
+        public FirstAidBeans createFromParcel(Parcel parcel) {
+            return new FirstAidBeans(parcel);
         }
 
         @Override
-        public Beans[] newArray(int size) {
-            return new Beans[size];
+        public FirstAidBeans[] newArray(int size) {
+            return new FirstAidBeans[size];
         }
     };
 }

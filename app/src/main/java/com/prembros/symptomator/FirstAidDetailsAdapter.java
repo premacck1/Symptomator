@@ -18,21 +18,21 @@ import java.util.ArrayList;
 class FirstAidDetailsAdapter extends BaseAdapter implements ListAdapter {
 
     private Context context;
-    private ArrayList<Beans> beansArrayList;
+    private ArrayList<FirstAidBeans> firstAidBeansArrayList;
 
-    FirstAidDetailsAdapter(Context context, ArrayList<Beans> beansArrayList){
+    FirstAidDetailsAdapter(Context context, ArrayList<FirstAidBeans> firstAidBeansArrayList){
         this.context = context;
-        this.beansArrayList = beansArrayList;
+        this.firstAidBeansArrayList = firstAidBeansArrayList;
     }
 
     @Override
     public int getCount() {
-        return beansArrayList.size();
+        return firstAidBeansArrayList.size();
     }
 
     @Override
     public Object getItem(int position) {
-        return beansArrayList.get(position);
+        return firstAidBeansArrayList.get(position);
     }
 
     @Override
@@ -53,11 +53,11 @@ class FirstAidDetailsAdapter extends BaseAdapter implements ListAdapter {
 
         headingTextView = (AppCompatTextView) view.findViewById(R.id.heading);
         if (headingTextView != null) {
-            headingTextView.setText(beansArrayList.get(position).getHeading());
+            headingTextView.setText(firstAidBeansArrayList.get(position).getHeading());
         }
         contentTextView = (AppCompatTextView) view.findViewById(R.id.content);
         if (contentTextView != null){
-            contentTextView.setText(beansArrayList.get(position).getContent());
+            contentTextView.setText(firstAidBeansArrayList.get(position).getContent());
         }
         return view;
     }
