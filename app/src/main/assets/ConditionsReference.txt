@@ -2,9 +2,7 @@
   "Head": {
     "Agitation": {
       "warning": "",
-      "question": "",
-      "options": "Generalized anxiety disorder,Medication reaction or side-effect,Alcohol withdrawal (delirium tremens),Alcohol intoxication,Dementia in head injury,Drug withdrawal,Epilepsy (temporal lobe),Hypocalcemia,Hypoparathyroidism,Intoxication,Methamphetamine use",
-      "conditions": ""
+      "conditions": "Generalized anxiety disorder,Medication reaction or side-effect,Alcohol withdrawal (delirium tremens),Alcohol intoxication,Dementia in head injury,Drug withdrawal,Epilepsy (temporal lobe),Hypocalcemia,Hypoparathyroidism,Intoxication,Methamphetamine use"
     },
     "Anxiety": {
       "warning": "",
@@ -1684,9 +1682,7 @@
     },
     "Bruising_or_discoloration": {
       "warning": "",
-      "question": "",
-      "options": "Bruise or contusion,Hematoma,Trauma or injury,Thrombocytopenia",
-      "conditions": "Cough"
+      "conditions": "Bruise or contusion,Hematoma,Trauma or injury,Thrombocytopenia"
     },
     "Difficulty_swallowing": {
       "warning": "",
