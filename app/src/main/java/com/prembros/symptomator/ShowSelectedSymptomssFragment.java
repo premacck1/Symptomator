@@ -49,7 +49,9 @@ public class ShowSelectedSymptomssFragment extends Fragment implements View.OnCl
             new Handler().postDelayed(new Runnable() {
                 @Override
                 public void run() {
-                    mListener.onShowConditionsFragmentInteraction("close");
+                    if (mListener != null) {
+                        mListener.onShowConditionsFragmentInteraction("close");
+                    }
                 }
             }, 2000);
         }

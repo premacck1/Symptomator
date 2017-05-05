@@ -42,7 +42,7 @@ class DatabaseHolder {
 //    private final String ambulance_tableName = "Ambulance";
 //    private final String patient_tableName = "Patient";
 
-    private static final String create_table_symptom_list = "create table if not exists SymptomList (Symptom text not null, BodyPart text not null, Sex text not null, Condition text);";
+    private static final String create_table_symptom_list = "create table if not exists SymptomList (Symptom text not null, BodyPart text not null, Sex text not null);";
 
     private static final String create_table_selected_symptoms = "create table if not exists SelectedSymptoms (Symptom text not null);";
 
@@ -83,12 +83,11 @@ class DatabaseHolder {
     /*
     *INSERTION / REMOVAL METHODS
      */
-    long insertInSymptomListTable(String symptom, String bodyPart, String sex, String condition){
+    long insertInSymptomListTable(String symptom, String bodyPart, String sex){
         ContentValues content = new ContentValues();
         content.put("Symptom", symptom);
         content.put("BodyPart", bodyPart);
         content.put("Sex", sex);
-        content.put("Condition", condition);
         return db.insertOrThrow(symptomList_tableName, null, content);
     }
 
