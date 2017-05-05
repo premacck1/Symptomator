@@ -2,7 +2,6 @@ package com.prembros.symptomator;
 
 import android.app.SearchManager;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.Color;
@@ -13,7 +12,6 @@ import android.os.StrictMode;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.ActionBar;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -38,7 +36,8 @@ import io.codetail.animation.SupportAnimator;
 
 import static io.codetail.animation.ViewAnimationUtils.createCircularReveal;
 
-public class SymptomCheck extends AppCompatActivity implements CompleteSymptomList.OnFragmentInteractionListener {
+public class SymptomCheck extends AppCompatActivity implements CompleteSymptomList.OnFragmentInteractionListener,
+        ShowSelectedSymptomssFragment.OnFragmentInteractionListener {
 
     private ActionBar actionBar;
     private MyRecyclerViewAdapter recyclerViewAdapter;
@@ -46,11 +45,11 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
     private RecyclerView recyclerView;
     private FragmentManager fragmentManager;
     private FrameLayout revealView;
-    boolean somethingIsActive = false;
     private SupportAnimator animator;
+    boolean somethingIsActive = false;
     private int[] touchCoordinate = new int[2];
     private DatabaseHolder db;
-    private List<String> selectedSymptoms;
+    private ArrayList<String> selectedSymptoms;
     private boolean clearFlag = false;
 
     @Override
@@ -196,7 +195,8 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
     }
 
     public void uncheckAllViews(final RecyclerView recyclerView, final List<String> items) {
-        final View revealView = this.findViewById(R.id.clear_animation_revealView);
+        final View revealView = this.findViewById(R.id.fab_revealView);
+        revealView.setBackgroundResource(R.color.colorSecondary);
 //        final CheckedTextView[] checkedTextView = new CheckedTextView[1];
 //        for (int i = 0; i < recyclerView.getChildCount(); i++) {
 ////            MyRecyclerViewAdapter.mCheckedItems.put(i, false);
@@ -209,9 +209,9 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
             @Override
             public void run() {
                 recyclerView.setAdapter(new MyRecyclerViewAdapter(true, SymptomCheck.this, items, null));
-                animationReversed(revealView);
+                animationReversed(revealView, touchCoordinate);
             }
-        }, 1000);
+        }, 800);
 //        recyclerView.smoothScrollToPosition(0);
     }
 
@@ -346,28 +346,23 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
         }
     }
 
-    @Override
-    public void onFragmentInteraction(String item) {
-
-    }
-
     public void animationForward(View mRevealView, int centerX, int centerY, int duration){
         int startRadius = 0;
         int endRadius = (int) (Math.hypot(mRevealView.getWidth() * 2, mRevealView.getHeight() * 2));
         animator = createCircularReveal(mRevealView, centerX, centerY, startRadius, endRadius);
         animator.setInterpolator(new AccelerateDecelerateInterpolator());
         animator.setDuration(duration);
-
         animator.start();
         mRevealView.setVisibility(View.VISIBLE);
     }
 
-    public void animationReversed(final View mRevealView){
-//        if (actionBar != null) {
-//            actionBar.setTitle(previousTitles[0]);
-//            actionBar.setSubtitle(previousTitles[1]);
-//        }
-        if (animator != null && !animator.isRunning()){
+    public void animationReversed(final View mRevealView, int[] centerCoords){
+        int startRadius = 0;
+        int endRadius = (int) (Math.hypot(mRevealView.getWidth() * 2, mRevealView.getHeight() * 2));
+        animator = createCircularReveal(mRevealView, centerCoords[0], centerCoords[1], startRadius, endRadius);
+        animator.setInterpolator(new AccelerateDecelerateInterpolator());
+        animator.setDuration(800);
+        if (!animator.isRunning()){
             animator = animator.reverse();
             animator.addListener(new SupportAnimator.AnimatorListener() {
                 @Override
@@ -378,6 +373,7 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
                 @Override
                 public void onAnimationEnd() {
                     mRevealView.setVisibility(View.INVISIBLE);
+                    mRevealView.setBackgroundResource(android.R.color.transparent);
 //                    hidden = true;
                 }
 
@@ -408,15 +404,27 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
                     somethingIsActive = false;
                     break;
                 case "about":
-                    animationReversed(this.findViewById(R.id.menu_fragment_container));
+                    animationReversed(this.findViewById(R.id.menu_fragment_container), touchCoordinate);
                     new Handler().postDelayed(new Runnable() {
                         @Override
                         public void run() {
                             fragmentManager.beginTransaction()
-                                    .remove(getSupportFragmentManager().findFragmentByTag(tag))
+                                    .remove(fragmentManager.findFragmentByTag(tag))
                                     .commit();
                         }
-                    }, 200);
+                    }, 800);
+                    somethingIsActive = false;
+                    break;
+                case "selectedSymptoms":
+                    animationReversed(this.findViewById(R.id.fab_show_revealView), touchCoordinate);
+                    new Handler().postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            fragmentManager.beginTransaction()
+                                    .remove(fragmentManager.findFragmentByTag(tag))
+                                    .commit();
+                        }
+                    }, 800);
                     somethingIsActive = false;
                     break;
                 default:
@@ -425,22 +433,40 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
         }
     }
 
+    @Override
+    public void onFragmentInteraction(String item) {
+
+    }
+
+    @Override
+    public void onShowConditionsFragmentInteraction(String item) {
+        switch (item) {
+            case "show":
+                break;
+            case "close":
+                removeFragmentIfAttached("selectedSymptoms");
+                break;
+            default:
+                break;
+        }
+    }
+
     /*ASYNCTASK FOR SHOWING OR DELETING SELECTED SYMPTOMS*/
     private class ShowSelectedSymptoms extends AsyncTask<String, Void, Void> {
 
         private boolean showSelectedSymptoms = false;
-        StringBuilder builder;
+//        StringBuilder builder;
 
         @Override
         protected Void doInBackground(String... strings) {
             switch (strings[0]) {
                 case "showSelectedSymptoms":                                                        /*SHOW SELECTED SYMPTOMS*/
                     showSelectedSymptoms = true;
-                    prepareSelectedSymptoms(true);
+                    prepareSelectedSymptoms();
                     break;
                 case "addSelectedSymptoms":                                                         /*ADD SELECTED SYMPTOMS*/
                     showSelectedSymptoms = false;
-                    prepareSelectedSymptoms(false);
+                    prepareSelectedSymptoms();
                     break;
                 default:                                                                            /*CLEAR SYMPTOM SELECTION*/
                     showSelectedSymptoms = false;
@@ -452,7 +478,7 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
             return null;
         }
 
-        void prepareSelectedSymptoms(boolean show) {
+        void prepareSelectedSymptoms() {
             selectedSymptoms.clear();
             db.open();
             Cursor cursor = db.returnSelectedSymptoms();
@@ -470,27 +496,27 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
             }
             db.close();
 
-            if (show) {
-                builder = new StringBuilder();
-                for (String string : selectedSymptoms) {
-                    builder.append(string).append("\n");
-                }
-            }
+//            if (show) {
+//                builder = new StringBuilder();
+//                for (String string : selectedSymptoms) {
+//                    builder.append(string).append("\n");
+//                }
+//            }
         }
 
         @Override
         protected void onPostExecute(Void aVoid) {
             if (showSelectedSymptoms) {
-                new AlertDialog.Builder(SymptomCheck.this)
-                        .setTitle("Your selected symptoms")
-                        .setMessage(builder.toString())
-                        .setPositiveButton("okay", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialogInterface, int i) {
-                                dialogInterface.dismiss();
-                            }
-                        })
-                        .show();
+                animationForward(SymptomCheck.this.findViewById(R.id.fab_show_revealView), touchCoordinate[0], touchCoordinate[1], 600);
+
+                ShowSelectedSymptomssFragment conditionsFragment = new ShowSelectedSymptomssFragment();
+                Bundle args = new Bundle();
+                args.putStringArrayList("selectedSymptoms", selectedSymptoms);
+                conditionsFragment.setArguments(args);
+                fragmentManager.beginTransaction()
+                        .add(R.id.fab_show_revealView, conditionsFragment, "selectedSymptoms")
+                        .commit();
+                somethingIsActive = true;
             }
             super.onPostExecute(aVoid);
         }
@@ -501,6 +527,7 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
         if (somethingIsActive) {
             removeFragmentIfAttached("completeSymptomList");
             removeFragmentIfAttached("about");
+            removeFragmentIfAttached("selectedSymptoms");
         }
         else
             super.onBackPressed();

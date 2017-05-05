@@ -60,9 +60,10 @@
         android:layout_height="match_parent">
 
         <FrameLayout
-            android:id="@+id/menu_fragment_container"
+            android:visibility="invisible"
+            android:id="@+id/fab_show_revealView"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"/>
 
     </io.codetail.widget.RevealFrameLayout>
 
@@ -72,8 +73,7 @@
 
         <FrameLayout
             android:visibility="invisible"
-            android:id="@+id/clear_animation_revealView"
-            android:background="@color/colorSecondary"
+            android:id="@+id/fab_revealView"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
@@ -88,6 +88,17 @@
                 android:text="@string/selection_cleared"/>
 
         </FrameLayout>
+
+    </io.codetail.widget.RevealFrameLayout>
+
+    <io.codetail.widget.RevealFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/menu_fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
 
     </io.codetail.widget.RevealFrameLayout>
 

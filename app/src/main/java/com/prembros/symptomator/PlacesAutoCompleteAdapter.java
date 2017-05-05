@@ -86,7 +86,7 @@ class PlacesAutoCompleteAdapter extends ArrayAdapter<String> implements Filterab
             view = inflater.inflate(R.layout.autocomplete_google_logo, null);
         }
         else {
-            view = inflater.inflate(R.layout.list_item, null);
+            view = inflater.inflate(R.layout.spinner_item, null);
         }
         //}
         //else {

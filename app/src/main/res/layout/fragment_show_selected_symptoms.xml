@@ -1,0 +1,54 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSecondary"
+    tools:context="com.prembros.symptomator.ShowSelectedSymptomssFragment">
+
+    <ListView
+        android:visibility="invisible"
+        android:id="@+id/list_selected_symptoms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:scrollbars="none"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/fab_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center_horizontal">
+
+        <ImageButton
+            android:id="@+id/button_close_selected_symptoms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@color/transparent"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            app:srcCompat="@drawable/ic_close"
+            android:contentDescription="@string/show_selected_conditions" />
+
+        <Space
+            android:id="@+id/fab_space"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+
+        <ImageButton
+            android:id="@+id/button_show_selected_symptoms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@color/transparent"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            app:srcCompat="@drawable/ic_right_arrow"
+            android:contentDescription="@string/show_selected_conditions" />
+
+    </LinearLayout>
+
+</FrameLayout>

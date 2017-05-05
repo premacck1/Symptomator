@@ -57,7 +57,7 @@ public class MapsActivity extends AppCompatActivity implements GoogleApiClient.O
         mTextView = (TextView) findViewById(R.id.textview);
 
         mPredictTextView = (AutoCompleteTextView) this.findViewById(R.id.autocomplete);
-        mPredictTextView.setAdapter(new PlacesAutoCompleteAdapter(this, R.layout.list_item));
+        mPredictTextView.setAdapter(new PlacesAutoCompleteAdapter(this, R.layout.spinner_item));
         Button displayPlacePicker = (Button) this.findViewById(R.id.display_place_picker);
 
         buildGoogleApiClient();
