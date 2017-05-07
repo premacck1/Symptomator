@@ -251,11 +251,9 @@ public class Introduction extends AppIntro2 {
         db.insertInSymptomListTable("Yellow eyes", "Eyes", "All");
         db.insertInSymptomListTable("Bruising or discoloration", "Nose", "All");
         db.insertInSymptomListTable("Decreased smell", "Nose", "All");
-        db.insertInSymptomListTable("Difficulty breathing", "Nose", "All");
         db.insertInSymptomListTable("Difficulty breathing through nose", "Nose", "All");
         db.insertInSymptomListTable("Drainage or pus", "Nose", "All");
         db.insertInSymptomListTable("Episodes of not breathing during sleep", "Nose", "All");
-        db.insertInSymptomListTable("Frequent infections", "Nose", "All");
         db.insertInSymptomListTable("Itching or burning", "Nose", "All");
         db.insertInSymptomListTable("Lump or bulge", "Nose", "All");
         db.insertInSymptomListTable("Multiple bruises of different ages", "Nose", "All");
@@ -317,9 +315,7 @@ public class Introduction extends AppIntro2 {
         db.insertInSymptomListTable("Bleeding", "Mouth", "All");
         db.insertInSymptomListTable("Bleeding gums", "Mouth", "All");
         db.insertInSymptomListTable("Bruising or discoloration", "Mouth", "All");
-        db.insertInSymptomListTable("Choking", "Mouth", "All");
         db.insertInSymptomListTable("Coated or furry tongue", "Mouth", "All");
-        db.insertInSymptomListTable("Colored sputum", "Mouth", "All");
         db.insertInSymptomListTable("Cough", "Mouth", "All");
         db.insertInSymptomListTable("Cracks at corner of the mouth", "Mouth", "All");
         db.insertInSymptomListTable("Damaged teeth enamel", "Mouth", "All");
@@ -334,7 +330,6 @@ public class Introduction extends AppIntro2 {
         db.insertInSymptomListTable("Dry mouth", "Mouth", "All");
         db.insertInSymptomListTable("Episodes of not breathing during sleep", "Mouth", "All");
         db.insertInSymptomListTable("Excessive mouth watering", "Mouth", "All");
-        db.insertInSymptomListTable("Frequent chewing", "Mouth", "All");
         db.insertInSymptomListTable("Fruity odor in breath", "Mouth", "All");
         db.insertInSymptomListTable("Gagging", "Mouth", "All");
         db.insertInSymptomListTable("Grinding teeth", "Mouth", "All");
@@ -372,7 +367,6 @@ public class Introduction extends AppIntro2 {
         db.insertInSymptomListTable("Strange smell or taste", "Mouth", "All");
         db.insertInSymptomListTable("Swelling", "Mouth", "All");
         db.insertInSymptomListTable("Swollen gums", "Mouth", "All");
-        db.insertInSymptomListTable("Swollen lips", "Mouth", "All");
         db.insertInSymptomListTable("Swollen tongue", "Mouth", "All");
         db.insertInSymptomListTable("Swollen tonsils", "Mouth", "All");
         db.insertInSymptomListTable("Taste of acid in mouth", "Mouth", "All");
@@ -392,7 +386,6 @@ public class Introduction extends AppIntro2 {
         db.insertInSymptomListTable("Broken bones (multiple fractures)", "Jaw", "All");
         db.insertInSymptomListTable("Bruising or discoloration", "Jaw", "All");
         db.insertInSymptomListTable("Clicking or popping sound from jaw", "Jaw", "All");
-        db.insertInSymptomListTable("Difficulty moving joint", "Jaw", "All");
         db.insertInSymptomListTable("Difficulty opening mouth", "Jaw", "All");
         db.insertInSymptomListTable("Drainage or pus", "Jaw", "All");
         db.insertInSymptomListTable("Enlarged/swollen glands", "Jaw", "All");
@@ -440,14 +433,12 @@ public class Introduction extends AppIntro2 {
         db.insertInSymptomListTable("Broken bones (multiple fractures)", "Chest", "All");
         db.insertInSymptomListTable("Bruising or discoloration", "Chest", "All");
         db.insertInSymptomListTable("Cough", "Chest", "All");
-        db.insertInSymptomListTable("Difficulty breathing", "Chest", "All");
         db.insertInSymptomListTable("Difficulty talking", "Chest", "All");
         db.insertInSymptomListTable("Discharge from nipple", "Chest", "All");
         db.insertInSymptomListTable("Drainage or pus", "Chest", "All");
         db.insertInSymptomListTable("Episodes of not breathing during sleep", "Chest", "All");
         db.insertInSymptomListTable("Feeling of not being able to get enough air", "Chest", "All");
         db.insertInSymptomListTable("Food getting stuck (swallowing)", "Chest", "All");
-        db.insertInSymptomListTable("Frequent infections", "Chest", "All");
         db.insertInSymptomListTable("Heartburn", "Chest", "All");
         db.insertInSymptomListTable("Hyperventilating (rapid/deep/heavy breathing)", "Chest", "All");
         db.insertInSymptomListTable("Irregular heartbeat", "Chest", "All");
@@ -481,7 +472,6 @@ public class Introduction extends AppIntro2 {
         db.insertInSymptomListTable("Broken bones (multiple fractures)", "Side of chest", "All");
         db.insertInSymptomListTable("Bruising or discoloration", "Side of chest", "All");
         db.insertInSymptomListTable("Drainage or pus", "Side of chest", "All");
-        db.insertInSymptomListTable("Irregular heartbeat", "Side of chest", "All");
         db.insertInSymptomListTable("Lump or bulge", "Side of chest", "All");
         db.insertInSymptomListTable("Multiple bruises of different ages", "Side of chest", "All");
         db.insertInSymptomListTable("Muscle cramps or spasms (painful)", "Side of chest", "All");
@@ -665,8 +655,6 @@ public class Introduction extends AppIntro2 {
         db.insertInSymptomListTable("Numbness or tingling", "Genitals", "All");
         db.insertInSymptomListTable("Pain during erection", "Genitals", "All");
         db.insertInSymptomListTable("Pain or discomfort", "Genitals", "All");
-        db.insertInSymptomListTable("Pressure or fullness", "Genitals", "All");
-        db.insertInSymptomListTable("Slow or weak urine stream", "Genitals", "All");
         db.insertInSymptomListTable("Sudden urge to urinate", "Genitals", "All");
         db.insertInSymptomListTable("Swelling", "Genitals", "All");
         db.insertInSymptomListTable("Tenderness to touch", "Genitals", "All");
@@ -689,10 +677,8 @@ public class Introduction extends AppIntro2 {
         db.insertInSymptomListTable("Heavy menstrual bleeding", "Genitals", "Female");
         db.insertInSymptomListTable("Irregular menstrual periods", "Genitals", "Female");
         db.insertInSymptomListTable("Pain with sexual intercourse (female)", "Genitals", "Female");
-        db.insertInSymptomListTable("Vaginal bleeding after menopause", "Genitals", "Female");
         db.insertInSymptomListTable("Vaginal bleeding between periods", "Genitals", "Female");
         db.insertInSymptomListTable("Vaginal discharge", "Genitals", "Female");
-        db.insertInSymptomListTable("Vaginal dryness", "Genitals", "Female");
         db.insertInSymptomListTable("Vaginal odor", "Genitals", "Female");
     }
 
@@ -740,7 +726,6 @@ public class Introduction extends AppIntro2 {
         db.insertInSymptomListTable("Bruising or discoloration", "Hip", "All");
         db.insertInSymptomListTable("Difficulty climbing stairs", "Hip", "All");
         db.insertInSymptomListTable("Difficulty getting up from a chair", "Hip", "All");
-        db.insertInSymptomListTable("Difficulty moving joints", "Hip", "All");
         db.insertInSymptomListTable("Difficulty walking", "Hip", "All");
         db.insertInSymptomListTable("Drainage or pus", "Hip", "All");
         db.insertInSymptomListTable("Joint aches", "Hip", "All");
@@ -775,7 +760,6 @@ public class Introduction extends AppIntro2 {
         db.insertInSymptomListTable("Warm to touch", "Groin", "All");
         db.insertInSymptomListTable("Bleeding", "Shoulder", "All");
         db.insertInSymptomListTable("Bruising or discoloration", "Shoulder", "All");
-        db.insertInSymptomListTable("Difficulty moving joint", "Shoulder", "All");
         db.insertInSymptomListTable("Drainage or pus", "Shoulder", "All");
         db.insertInSymptomListTable("Guarding or favoring joint", "Shoulder", "All");
         db.insertInSymptomListTable("Inability to move", "Shoulder", "All");
@@ -826,7 +810,6 @@ public class Introduction extends AppIntro2 {
         db.insertInSymptomListTable("Bleeding", "Elbow", "All");
         db.insertInSymptomListTable("Broken bone (single fracture)", "Elbow", "All");
         db.insertInSymptomListTable("Bruising or discoloration", "Elbow", "All");
-        db.insertInSymptomListTable("Difficulty moving joint", "Elbow", "All");
         db.insertInSymptomListTable("Drainage or pus", "Elbow", "All");
         db.insertInSymptomListTable("Enlarged/swollen glands", "Elbow", "All");
         db.insertInSymptomListTable("Guarding or favoring joint", "Elbow", "All");
@@ -865,7 +848,6 @@ public class Introduction extends AppIntro2 {
         db.insertInSymptomListTable("Bleeding", "Wrist", "All");
         db.insertInSymptomListTable("Broken bone (single fracture)", "Wrist", "All");
         db.insertInSymptomListTable("Bruising or discoloration", "Wrist", "All");
-        db.insertInSymptomListTable("Difficulty moving joint", "Wrist", "All");
         db.insertInSymptomListTable("Drainage or pus", "Wrist", "All");
         db.insertInSymptomListTable("Joint aches", "Wrist", "All");
         db.insertInSymptomListTable("Joint pain", "Wrist", "All");
@@ -891,7 +873,6 @@ public class Introduction extends AppIntro2 {
         db.insertInSymptomListTable("Involuntary movements (picking, lip smacking etc.", "Hand", "All");
         db.insertInSymptomListTable("Lump or bulge", "Hand", "All");
         db.insertInSymptomListTable("Multiple bruises of different ages", "Hand", "All");
-        db.insertInSymptomListTable("Muscle cramps or spasms (painful)", "Hand", "All");
         db.insertInSymptomListTable("Muscle twitching (painless)", "Hand", "All");
         db.insertInSymptomListTable("Numbness or tingling", "Hand", "All");
         db.insertInSymptomListTable("Pain or discomfort", "Hand", "All");
@@ -912,7 +893,6 @@ public class Introduction extends AppIntro2 {
         db.insertInSymptomListTable("Cold hands", "Fingers", "All");
         db.insertInSymptomListTable("Color change", "Fingers", "All");
         db.insertInSymptomListTable("Curved fingernails", "Fingers", "All");
-        db.insertInSymptomListTable("Difficulty moving joint", "Fingers", "All");
         db.insertInSymptomListTable("Drainage or pus", "Fingers", "All");
         db.insertInSymptomListTable("Enlarged fingertips", "Fingers", "All");
         db.insertInSymptomListTable("Inability to move", "Fingers", "All");
@@ -979,18 +959,15 @@ public class Introduction extends AppIntro2 {
         db.insertInSymptomListTable("Broken bone (single fracture)", "Knee", "All");
         db.insertInSymptomListTable("Broken bones (multiple fractures)", "Knee", "All");
         db.insertInSymptomListTable("Bruising or discoloration", "Knee", "All");
-        db.insertInSymptomListTable("Difficulty moving joint", "Knee", "All");
         db.insertInSymptomListTable("Difficulty walking", "Knee", "All");
         db.insertInSymptomListTable("Drainage or pus", "Knee", "All");
         db.insertInSymptomListTable("Guarding or favoring joint", "Knee", "All");
-        db.insertInSymptomListTable("Inability to move", "Knee", "All");
         db.insertInSymptomListTable("Joint aches", "Knee", "All");
         db.insertInSymptomListTable("Joint instability", "Knee", "All");
         db.insertInSymptomListTable("Joint pain", "Knee", "All");
         db.insertInSymptomListTable("Lump or bulge", "Knee", "All");
         db.insertInSymptomListTable("Multiple bruises of different ages", "Knee", "All");
         db.insertInSymptomListTable("Numbness or tingling", "Knee", "All");
-        db.insertInSymptomListTable("Pain or discomfort", "Knee", "All");
         db.insertInSymptomListTable("Popping or snapping sound from joint", "Knee", "All");
         db.insertInSymptomListTable("Stiffness or decreased movement", "Knee", "All");
         db.insertInSymptomListTable("Swelling", "Knee", "All");
@@ -1042,15 +1019,12 @@ public class Introduction extends AppIntro2 {
         db.insertInSymptomListTable("Pain or discomfort", "Calf", "All");
         db.insertInSymptomListTable("Stiffness or decreased movement", "Calf", "All");
         db.insertInSymptomListTable("Swelling", "Calf", "All");
-        db.insertInSymptomListTable("Tenderness to touch", "Calf", "All");
         db.insertInSymptomListTable("Unable to bear weight", "Calf", "All");
         db.insertInSymptomListTable("Visible deformity", "Calf", "All");
         db.insertInSymptomListTable("Warm to touch", "Calf", "All");
         db.insertInSymptomListTable("Bleeding", "Ankle", "All");
         db.insertInSymptomListTable("Broken bone (single fracture)", "Ankle", "All");
         db.insertInSymptomListTable("Bruising or discoloration", "Ankle", "All");
-        db.insertInSymptomListTable("Bulging veins", "Ankle", "All");
-        db.insertInSymptomListTable("Difficulty moving joint", "Ankle", "All");
         db.insertInSymptomListTable("Difficulty walking", "Ankle", "All");
         db.insertInSymptomListTable("Drainage or pus", "Ankle", "All");
         db.insertInSymptomListTable("Guarding or favoring joint", "Ankle", "All");
@@ -1082,7 +1056,6 @@ public class Introduction extends AppIntro2 {
         db.insertInSymptomListTable("Muscle cramps or spasms (painful)", "Foot", "All");
         db.insertInSymptomListTable("Numbness or tingling", "Foot", "All");
         db.insertInSymptomListTable("Pain or discomfort", "Foot", "All");
-        db.insertInSymptomListTable("Shuffling gait (feet)", "Foot", "All");
         db.insertInSymptomListTable("Stiffness or decreased movement", "Foot", "All");
         db.insertInSymptomListTable("Swelling", "Foot", "All");
         db.insertInSymptomListTable("Tenderness to touch", "Foot", "All");
@@ -1128,7 +1101,6 @@ public class Introduction extends AppIntro2 {
         db.insertInSymptomListTable("Muscle cramps or spasms (painful)", "Sole", "All");
         db.insertInSymptomListTable("Numbness or tingling", "Sole", "All");
         db.insertInSymptomListTable("Pain or discomfort", "Sole", "All");
-        db.insertInSymptomListTable("Shuffling gait (feet)", "Sole", "All");
         db.insertInSymptomListTable("Swelling", "Sole", "All");
         db.insertInSymptomListTable("Tenderness to touch", "Sole", "All");
         db.insertInSymptomListTable("Unable to bear weight", "Sole", "All");

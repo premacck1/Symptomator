@@ -238,7 +238,7 @@
     },
     "Itching_or_burning": {
       "warning": "",
-      "conditions": "Seborrheic dermatitis,Allergic reaction,Contact dermatitis,Alopecia,Bee or wasp stings,Dermatitis,Poison ivy/oak and sumac"
+      "conditions": "Seborrheic dermatitis,Allergic reaction,Contact dermatitis,Alopecia,Bee or wasp stings,Dermatitis,Poison ivy/oak/sumac"
     },
     "Lack_of_emotion": {
       "warning": "",
@@ -346,7 +346,7 @@
     },
     "Swelling": {
       "warning": "",
-      "conditions": "Bee or wasp stings,Insect bites,Insect sting,Poison ivy/oak and sumac,Burn (heat or fire),Chemical burns,Osteomyelitis (bone infection)"
+      "conditions": "Bee or wasp stings,Insect bites,Insect sting,Poison ivy/oak/sumac,Burn (heat or fire),Chemical burns,Osteomyelitis (bone infection)"
     },
     "Tenderness_to_touch": {
       "warning": "",
@@ -636,7 +636,7 @@
     },
     "Swelling": {
       "warning": "",
-      "conditions": "Acute sinusitis,Allergic reaction,Hay fever,Pink eye (conjunctivitis),Bee or wasp stings,Eye allergies,Foreign object in the eye,Insect bites,Insect sting,Poison ivy/oak and sumac,Burn (heat or fire),Chemical burns"
+      "conditions": "Acute sinusitis,Allergic reaction,Hay fever,Pink eye (conjunctivitis),Bee or wasp stings,Eye allergies,Foreign object in the eye,Insect bites,Insect sting,Poison ivy/oak/sumac,Burn (heat or fire),Chemical burns"
     },
     "Tears_in_one_eye": {
       "warning": "",
@@ -696,10 +696,6 @@
       "warning": "",
       "conditions": "Acute sinusitis,Nasal congestion,Chronic sinusitis,Anosmia,Nasal polyps"
     },
-    "Difficulty_breathing": {
-      "warning": "",
-      "conditions": ""
-    },
     "Difficulty_breathing_through_nose": {
       "warning": "",
       "conditions": "Acute sinusitis,Allergic reaction,Dust exposure,Hay fever,Indoor allergens,Chronic sinusitis,Foreign object in the nose,Nasal polyps,Nonallergic rhinitis"
@@ -711,10 +707,6 @@
     "Episodes_of_not_breathing_during_sleep": {
       "warning": "",
       "conditions": "Mucopolysaccharidosis I (MPS1)"
-    },
-    "Frequent_infections": {
-      "warning": "",
-      "conditions": ""
     },
     "Itching_or_burning": {
       "warning": "",
@@ -742,7 +734,7 @@
     },
     "Nosebleed": {
       "warning": "",
-      "conditions": "Nasal irritation,Nasal dryness,Aspirin use,Medication reaction or side-effect,Nasal polyps,Blood clotting disorder,Cocaine abuse,Foreign object in the nose,Pre-leukemia (myelodysplastic syndrome),Thrombocytopenia,Trauma or injury,Hemophilia,Anemia, aplastic"
+      "conditions": "Nasal irritation,Nasal dryness,Aspirin use,Medication reaction or side-effect,Nasal polyps,Blood clotting disorder,Cocaine abuse,Foreign object in the nose,Pre-leukemia (myelodysplastic syndrome),Thrombocytopenia,Trauma or injury,Hemophilia,Anemia (aplastic)"
     },
     "Numbness_or_tingling": {
       "warning": "",
@@ -766,7 +758,7 @@
     },
     "Swelling": {
       "warning": "",
-      "conditions": "Acute sinusitis,Bee or wasp stings,Insect bites,Insect sting,Poison ivy, oak, and sumac,Burn (heat or fire),Chemical burns"
+      "conditions": "Acute sinusitis,Bee or wasp stings,Insect bites,Insect sting,Poison ivy/oak/sumac,Burn (heat or fire),Chemical burns"
     },
     "Tenderness_to_touch": {
       "warning": "",
@@ -848,7 +840,7 @@
     },
     "Swelling": {
       "warning": "",
-      "conditions": "Acute sinusitis,Allergic reaction,Chronic sinusitis,Mumps,Angioedema,Bee or wasp stings,Glomerulonephritis,Insect bites,Insect sting,Poison ivy/oak and sumac,Salivary duct obstruction (sialolithiasis),Sarcoidosis,Anorexia nervosa,Bulimia,Burn (heat or fire),Chemical burns,Osteomyelitis (bone infection),Chagas disease"
+      "conditions": "Acute sinusitis,Allergic reaction,Chronic sinusitis,Mumps,Angioedema,Bee or wasp stings,Glomerulonephritis,Insect bites,Insect sting,Poison ivy/oak/sumac,Salivary duct obstruction (sialolithiasis),Sarcoidosis,Anorexia nervosa,Bulimia,Burn (heat or fire),Chemical burns,Osteomyelitis (bone infection),Chagas disease"
     },
     "Tenderness_to_touch": {
       "warning": "",
@@ -918,7 +910,7 @@
     },
     "Swelling": {
       "warning": "",
-      "conditions": "Auricular hematoma,Bee or wasp stings,Cauliflower ear,Insect bites,Insect sting,Poison ivy, oak, and sumac,Burn (heat or fire),Chemical burns"
+      "conditions": "Auricular hematoma,Bee or wasp stings,Cauliflower ear,Insect bites,Insect sting,Poison ivy/oak/sumac,Burn (heat or fire),Chemical burns"
     },
     "Taste_words_when_they_are_heard": {
       "warning": "",
@@ -962,17 +954,9 @@
       "warning": "",
       "conditions": "Bruise or contusion,Hematoma,Muscle strain,Trauma or injury,ThrombocytopeniaBruise or contusion,Hematoma,Trauma or injury,Thrombocytopenia"
     },
-    "Choking": {
-      "warning": "",
-      "conditions": ""
-    },
     "Coated_or_furry_tongue": {
       "warning": "",
       "conditions": "Constipation (adult)"
-    },
-    "Colored_sputum": {
-      "warning": "",
-      "conditions": ""
     },
     "Cough": {
       "warning": "",
@@ -1030,17 +1014,9 @@
       "warning": "",
       "conditions": "Acute stress reaction,Heartburn/GERD"
     },
-    "Frequent_chewing": {
-      "warning": "",
-      "conditions": ""
-    },
     "Fruity_odor_in_breath": {
       "warning": "If you are experiencing a fruity odor on your breath please seek emergency medical attention.",
-      "conditions": "Diabetic ketoacidosis,Diabetes, type 1"
-    },
-    "Gagging": {
-      "warning": "",
-      "conditions": ""
+      "conditions": "Diabetic ketoacidosis,Diabetes (type 1)"
     },
     "Grinding_teeth": {
       "warning": "",
@@ -1068,7 +1044,7 @@
     },
     "Increased_thirst": {
       "warning": "",
-      "conditions": "Diabetes, type 2,Gastroenteritis,Dehydration (Adult),Diabetes, type 1,Acute kidney failure,Aspirin poisoning,Diabetic ketoacidosis,Exercise or physical activity,Heat exposure,Iron poisoning,Sickle cell disease"
+      "conditions": "Diabetes (type 2),Gastroenteritis,Dehydration (Adult),Diabetes (type 1),Acute kidney failure,Aspirin poisoning,Diabetic ketoacidosis,Exercise or physical activity,Heat exposure,Iron poisoning,Sickle cell disease"
     },
     "Involuntary_movements_(picking,_lip_smacking_etc)": {
       "warning": "",
@@ -1160,7 +1136,7 @@
     },
     "Soreness_or_burning_inside_mouth": {
       "warning": "",
-      "conditions": "Allergic reaction,Medication reaction or side-effect,Anemia, iron deficiency,Canker sores"
+      "conditions": "Allergic reaction,Medication reaction or side-effect,Anemia (iron deficiency),Canker sores"
     },
     "Spots_on_throat": {
       "warning": "",
@@ -1176,15 +1152,11 @@
     },
     "Swelling": {
       "warning": "",
-      "conditions": "Allergic reaction,Angioedema,Drug allergy,Erythema multiforme,Insect bites,Insect sting,Poison ivy, oak, and sumac,Salivary duct obstruction (sialolithiasis),Burn (heat or fire),Chemical burns"
+      "conditions": "Allergic reaction,Angioedema,Drug allergy,Erythema multiforme,Insect bites,Insect sting,Poison ivy/oak/sumac,Salivary duct obstruction (sialolithiasis),Burn (heat or fire),Chemical burns"
     },
     "Swollen_gums": {
       "warning": "",
       "conditions": "Toothbrush irritation,Gingivitis"
-    },
-    "Swollen_lips": {
-      "warning": "",
-      "conditions": ""
     },
     "Swollen_tongue": {
       "warning": "",
@@ -1264,10 +1236,6 @@
       "warning": "",
       "conditions": "Temporomandibular joint syndrome (TMJ)"
     },
-    "Difficulty_moving_joint": {
-      "warning": "",
-      "conditions": ""
-    },
     "Difficulty_opening_mouth": {
       "warning": "",
       "conditions": "Medication reaction or side-effect,Broken (fractured) jaw,Trismus,Cocaine abuse,Tetanus"
@@ -1314,7 +1282,7 @@
     },
     "Swelling": {
       "warning": "",
-      "conditions": "Bee or wasp stings,Insect bites,Insect sting,Mumps,Poison ivy, oak, and sumac,Swollen glands,Anorexia nervosa,Bulimia,Burn (heat or fire),Chemical burns,Osteomyelitis (bone infection)"
+      "conditions": "Bee or wasp stings,Insect bites,Insect sting,Mumps,Poison ivy/oak/sumac,Swollen glands,Anorexia nervosa,Bulimia,Burn (heat or fire),Chemical burns,Osteomyelitis (bone infection)"
     },
     "Tender_glands": {
       "warning": "",
@@ -1412,7 +1380,7 @@
     },
     "Swelling": {
       "warning": "",
-      "conditions": "Muscle strain,Bee or wasp stings,Insect bites,Insect sting,Poison ivy, oak, and sumac,Swollen glands,Burn (heat or fire),Chemical burns,Crohn's disease,Osteomyelitis (bone infection)"
+      "conditions": "Muscle strain,Bee or wasp stings,Insect bites,Insect sting,Poison ivy/oak/sumac,Swollen glands,Burn (heat or fire),Chemical burns,Crohn's disease,Osteomyelitis (bone infection)"
     },
     "Tender_glands": {
       "warning": "",
@@ -1460,10 +1428,6 @@
       "warning": "",
       "conditions": "Common cold,Bronchitis,Acute sinusitis,Allergic reaction,Asthma (teen and adult),Chronic obstructive pulmonary disease (COPD),Hay fever,Heartburn/GERD,Indoor allergens,Laryngitis,Pneumonia,Smoke exposure,Viral pharyngitis,Chronic sinusitis,Dust exposure,Asbestosis,Bronchial adenoma,Chemical pneumonia,Cryptococcosis,Cystic fibrosis,Drug allergy,Emphysema,Esophageal cancer,Exercise-induced asthma,Histoplasmosis,Pleural effusion,Pneumonitis,Pulmonary embolism,Pulmonary fibrosis,Radon exposure,Sarcoidosis,Scleroderma,Sjogren's syndrome,Tuberculosis,Valley fever (coccidioidomycosis),Viral pneumonia,Endocarditis,Legionella (Legionnaires disease),Plague,Radiation sickness,Ricin poisoning,West nile virus,Whooping cough,Sickle cell disease,Swallowed object,Mesenteric lymphadenitisMedication reaction or side-effect"
     },
-    "Difficulty_breathing": {
-      "warning": "",
-      "conditions": ""
-    },
     "Difficulty_talking": {
       "warning": "",
       "conditions": "Asthma (teen and adult),Chronic obstructive pulmonary disease (COPD),Emphysema"
@@ -1487,10 +1451,6 @@
     "Food_getting_stuck_(swallowing)": {
       "warning": "",
       "conditions": "Esophageal stricture,Heartburn/GERD,Not chewing food well,Esophageal spasm,Esophageal cancer,Achalasia,Chagas disease"
-    },
-    "Frequent_infections": {
-      "warning": "",
-      "conditions": ""
     },
     "Heartburn": {
       "warning": "",
@@ -1562,11 +1522,11 @@
     },
     "Rapid_heart_rate_(pulse)": {
       "warning": "If you are experiencing a rapid heart rate associated with dizziness, lightheadedness, fainting, shortness of breath or chest discomfort please seek emergency medical attention.",
-      "conditions": "Panic attack,Acute stress reaction,Excessive caffeine use,Generalized anxiety disorder,Heart rhythm disorder,Supraventricular tachycardia,Atrial flutter,Hyperthyroidism,Low blood sugar (hypoglycemia),Acute kidney failure,Anaphylactic shock,Anemia, chronic disease,Anemia, iron deficiency,Aortic stenosis,Cocaine abuse,Dehydration (Adult),Drug overdose,Exercise or physical activity,Insulin reaction (hypoglycemia),Lyme disease,Narcotic abuse,Nightmares,Thalassemia,Thyroid storm,Ventricular septal defect,Anemia, hemolytic,Cyanide poisoning,Toxic shock syndrome,Severe allergic reaction (anaphylactic shock)"
+      "conditions": "Panic attack,Acute stress reaction,Excessive caffeine use,Generalized anxiety disorder,Heart rhythm disorder,Supraventricular tachycardia,Atrial flutter,Hyperthyroidism,Low blood sugar (hypoglycemia),Acute kidney failure,Anaphylactic shock,Anemia, chronic disease,Anemia (iron deficiency),Aortic stenosis,Cocaine abuse,Dehydration (Adult),Drug overdose,Exercise or physical activity,Insulin reaction (hypoglycemia),Lyme disease,Narcotic abuse,Nightmares,Thalassemia,Thyroid storm,Ventricular septal defect,Anemia, hemolytic,Cyanide poisoning,Toxic shock syndrome,Severe allergic reaction (anaphylactic shock)"
     },
     "Shortness_of_breath": {
       "warning": "If you are experiencing shortness of breath please seek prompt medical attention.",
-      "conditions": "Generalized anxiety disorder,Allergic reaction,Asthma (teen and adult),Chronic obstructive pulmonary disease (COPD),Heart rhythm disorder,Panic attack,Atrial flutter,Drug allergy,Severe acute respiratory syndrome (SARS),Anemia,Fibromyalgia,Anaphylactic shock,Anemia, chronic disease,Anemia, iron deficiency,Aortic regurgitation,Aortic stenosis,Asbestosis,Atrial fibrillation,Benzodiazepine abuse,Bronchial adenoma,Chemical pneumonia,Cystic fibrosis,Drug overdose,Emphysema,Epiglottitis,Exercise or physical activity,Gastrointestinal bleeding,Goiter,Hernia,Interstitial lung disease,Low blood pressure (hypotension),Mitral valve prolapse,Myasthenia gravis,Narcotic abuse,Obesity,Pleural effusion,Pre-leukemia (myelodysplastic syndrome),Pulmonary embolism,Pulmonary fibrosis,Radon exposure,Sarcoidosis,Scleroderma,Sickle cell disease,Supraventricular tachycardia,Swallowed object,Thyroid cancer,Thyroid nodules,Thyroid storm,Tuberculosis,Upper airway obstruction,Ventricular septal defect,Vitamin B12 deficiency,Chemical burns,Pneumothorax (spontaneous),Pulmonary hypertension,Anemia, hemolytic,Cyanide poisoning,Plague,Radiation sickness,Ricin poisoning,Tetanus,Whooping cough,Glycogen Storage Disease Type II,Severe allergic reaction (anaphylactic shock)"
+      "conditions": "Generalized anxiety disorder,Allergic reaction,Asthma (teen and adult),Chronic obstructive pulmonary disease (COPD),Heart rhythm disorder,Panic attack,Atrial flutter,Drug allergy,Severe acute respiratory syndrome (SARS),Anemia,Fibromyalgia,Anaphylactic shock,Anemia, chronic disease,Anemia (iron deficiency),Aortic regurgitation,Aortic stenosis,Asbestosis,Atrial fibrillation,Benzodiazepine abuse,Bronchial adenoma,Chemical pneumonia,Cystic fibrosis,Drug overdose,Emphysema,Epiglottitis,Exercise or physical activity,Gastrointestinal bleeding,Goiter,Hernia,Interstitial lung disease,Low blood pressure (hypotension),Mitral valve prolapse,Myasthenia gravis,Narcotic abuse,Obesity,Pleural effusion,Pre-leukemia (myelodysplastic syndrome),Pulmonary embolism,Pulmonary fibrosis,Radon exposure,Sarcoidosis,Scleroderma,Sickle cell disease,Supraventricular tachycardia,Swallowed object,Thyroid cancer,Thyroid nodules,Thyroid storm,Tuberculosis,Upper airway obstruction,Ventricular septal defect,Vitamin B12 deficiency,Chemical burns,Pneumothorax (spontaneous),Pulmonary hypertension,Anemia, hemolytic,Cyanide poisoning,Plague,Radiation sickness,Ricin poisoning,Tetanus,Whooping cough,Glycogen Storage Disease Type II,Severe allergic reaction (anaphylactic shock)"
     },
     "Slow_heart_rate_(pulse)": {
       "warning": "If you are experiencing a slow heart rate (pulse) that is associated with lightheadedness, dizziness or fainting please seek emergency medical attention.",
@@ -1582,7 +1542,7 @@
     },
     "Swelling": {
       "warning": "",
-      "conditions": "Muscle strain,Bee or wasp stings,Breast cancer (female),Breast infection,Insect bites,Insect sting,Poison ivy, oak, and sumac,Pregnancy,Premenstrual syndrome (PMS),Burn (heat or fire),Chemical burns,Osteomyelitis (bone infection)"
+      "conditions": "Muscle strain,Bee or wasp stings,Breast cancer (female),Breast infection,Insect bites,Insect sting,Poison ivy/oak/sumac,Pregnancy,Premenstrual syndrome (PMS),Burn (heat or fire),Chemical burns,Osteomyelitis (bone infection)"
     },
     "Tenderness_to_touch": {
       "warning": "",
@@ -1626,10 +1586,6 @@
       "warning": "",
       "conditions": "Allergic reaction,Abscess"
     },
-    "Irregular_heartbeat": {
-      "warning": "",
-      "conditions": ""
-    },
     "Lump_or_bulge": {
       "warning": "",
       "conditions": "Abscess,Benign lipoma,Epidermal (sebaceous) cyst,Trauma or injury"
@@ -1652,7 +1608,7 @@
     },
     "Swelling": {
       "warning": "",
-      "conditions": "Muscle strain,Bee or wasp stings,Insect bites,Insect sting,Poison ivy, oak, and sumac,Burn (heat or fire),Chemical burns,Osteomyelitis (bone infection)"
+      "conditions": "Muscle strain,Bee or wasp stings,Insect bites,Insect sting,Poison ivy/oak/sumac,Burn (heat or fire),Chemical burns,Osteomyelitis (bone infection)"
     },
     "Tenderness_to_touch": {
       "warning": "",
@@ -1682,7 +1638,9 @@
     },
     "Bruising_or_discoloration": {
       "warning": "",
-      "conditions": "Bruise or contusion,Hematoma,Trauma or injury,Thrombocytopenia"
+      "question": "",
+      "options": "Bruise or contusion,Hematoma,Trauma or injury,Thrombocytopenia",
+      "conditions": "Cough"
     },
     "Difficulty_swallowing": {
       "warning": "",
@@ -1734,7 +1692,7 @@
     },
     "Swelling": {
       "warning": "",
-      "conditions": "Bee or wasp stings,Insect bites,Insect sting,Poison ivy, oak, and sumac,Burn (heat or fire),Chemical burns,Osteomyelitis (bone infection)"
+      "conditions": "Bee or wasp stings,Insect bites,Insect sting,Poison ivy/oak/sumac,Burn (heat or fire),Chemical burns,Osteomyelitis (bone infection)"
     },
     "Tenderness_to_touch": {
       "warning": "",
@@ -1836,7 +1794,7 @@
     },
     "Swelling": {
       "warning": "",
-      "conditions": "Constipation (adult),Primary biliary cirrhosis,Muscle strain,Ascites,Bee or wasp stings,Cirrhosis (liver),Hydronephrosis,Insect bites,Insect sting,Poison ivy, oak, and sumac,Polycystic kidney disease,Burn (heat or fire),Chemical burns,Gas pains"
+      "conditions": "Constipation (adult),Primary biliary cirrhosis,Muscle strain,Ascites,Bee or wasp stings,Cirrhosis (liver),Hydronephrosis,Insect bites,Insect sting,Poison ivy/oak/sumac,Polycystic kidney disease,Burn (heat or fire),Chemical burns,Gas pains"
     },
     "Tenderness_to_touch": {
       "warning": "",
@@ -1950,7 +1908,7 @@
     },
     "Swelling": {
       "warning": "",
-      "conditions": "Constipation (adult),Muscle strain,Bee or wasp stings,Cirrhosis (liver),Hydronephrosis,Insect bites,Insect sting,Poison ivy, oak, and sumac,Polycystic kidney disease,Burn (heat or fire),Chemical burns,Budd-Chiari syndrome,Gas pains"
+      "conditions": "Constipation (adult),Muscle strain,Bee or wasp stings,Cirrhosis (liver),Hydronephrosis,Insect bites,Insect sting,Poison ivy/oak/sumac,Polycystic kidney disease,Burn (heat or fire),Chemical burns,Budd-Chiari syndrome,Gas pains"
     },
     "Tenderness_to_touch": {
       "warning": "",
@@ -2028,7 +1986,7 @@
     },
     "Swelling": {
       "warning": "",
-      "conditions": ",Muscle strain,Bee or wasp stings,Hydronephrosis,Insect bites,Insect sting,Poison ivy, oak, and sumac,Burn (heat or fire),Chemical burns,Osteomyelitis (bone infection)"
+      "conditions": ",Muscle strain,Bee or wasp stings,Hydronephrosis,Insect bites,Insect sting,Poison ivy/oak/sumac,Burn (heat or fire),Chemical burns,Osteomyelitis (bone infection)"
     },
     "Tenderness_to_touch": {
       "warning": "",
@@ -2094,7 +2052,7 @@
     },
     "Swelling": {
       "warning": "",
-      "conditions": ",Muscle strain,Insect bites,Insect sting,Poison ivy, oak, and sumac,Burn (heat or fire),Chemical burns,Crohn's disease,Osteomyelitis (bone infection)"
+      "conditions": ",Muscle strain,Insect bites,Insect sting,Poison ivy/oak/sumac,Burn (heat or fire),Chemical burns,Crohn's disease,Osteomyelitis (bone infection)"
     },
     "Tenderness_to_touch": {
       "warning": "",
@@ -2172,7 +2130,7 @@
     },
     "Swelling": {
       "warning": "",
-      "conditions": "Muscle strain,Insect bites,Insect sting,Poison ivy, oak, and sumac,Burn (heat or fire),Chemical burns,Crohn's disease,Osteomyelitis (bone infection)"
+      "conditions": "Muscle strain,Insect bites,Insect sting,Poison ivy/oak/sumac,Burn (heat or fire),Chemical burns,Crohn's disease,Osteomyelitis (bone infection)"
     },
     "Tenderness_to_touch": {
       "warning": "",
@@ -2344,7 +2302,7 @@
     },
     "Frequent_urination": {
       "warning": "",
-      "conditions": "Urinary tract infection (UTI),Diabetes, type 2,Bladder cancer,Bladder stones,Diabetes insipidus,Diabetes, type 1,Diabetic ketoacidosis,Excessive fluid intake,Gonorrhea (female),Hydronephrosis,Interstitial cystitis,Polycystic kidney disease,Supraventricular tachycardia,Urethritis (female),Uterine fibroids,Hypopituitarism,Overactive bladder syndrome"
+      "conditions": "Urinary tract infection (UTI),Diabetes (type 2),Bladder cancer,Bladder stones,Diabetes insipidus,Diabetes (type 1),Diabetic ketoacidosis,Excessive fluid intake,Gonorrhea (female),Hydronephrosis,Interstitial cystitis,Polycystic kidney disease,Supraventricular tachycardia,Urethritis (female),Uterine fibroids,Hypopituitarism,Overactive bladder syndrome"
     },
     "Itching_or_burning": {
       "warning": "",
@@ -2369,14 +2327,6 @@
     "Pain_or_discomfort": {
       "warning": "",
       "conditions": "Urinary tract infection (UTI),Bartholin cyst,Candidiasis,Chlamydia (female),Dysfunctional uterine bleeding (female),Foreign object in the vagina (female),Genital herpes (female),Gonorrhea (female),Urethritis (female),Vaginal dryness (female),Vulvodynia (female) ,Vaginal yeast infection (female),Urinary tract infection (UTI),Chlamydia (male),Epididymitis (male),Erectile dysfunction (male),Genital herpes (male),Orchitis (male),Syphilis (male),Testicular torsion (male),Urethritis (male),Shingles (herpes zoster)"
-    },
-    "Pressure_or_fullness": {
-      "warning": "",
-      "conditions": ""
-    },
-    "Slow_or_weak_urine_stream": {
-      "warning": "",
-      "conditions": ""
     },
     "Sudden_urge_to_urinate": {
       "warning": "",
@@ -2430,14 +2380,6 @@
       "warning": "",
       "conditions": "Vaginal yeast infection,Candidiasis,Cervicitis,Chlamydia (female),Endometrial cancer,Foreign object in the vagina,Gonorrhea (female),Pelvic inflammatory disease (PID),Premature labor,Trichomoniasis (female),Uterine cancer,Vaginitis,Cervical cancer"
     },
-    "Vaginal_bleeding_after_menopause": {
-      "warning": "",
-      "conditions": ""
-    },
-    "Vaginal_dryness": {
-      "warning": "",
-      "conditions": ""
-    },
     "Vaginal_odor": {
       "warning": "",
       "conditions": "Vaginal yeast infection,Candidiasis,Cervicitis"
@@ -2448,7 +2390,7 @@
     },
     "Erectile_dysfunction": {
       "warning": "",
-      "conditions": "Medication reaction or side-effect,Chronic obstructive pulmonary disease (COPD),Depression (Adult),Diabetes, type 2,Sleep apnea,Diabetes, type 1,High blood pressure (hypertension),Priapism,Sickle cell disease,Testosterone deficiency,Emphysema,Hypothyroidism (adult),Cirrhosis (liver),Hyperthyroidism,Scleroderma,Hypopituitarism"
+      "conditions": "Medication reaction or side-effect,Chronic obstructive pulmonary disease (COPD),Depression (Adult),Diabetes (type 2),Sleep apnea,Diabetes (type 1),High blood pressure (hypertension),Priapism,Sickle cell disease,Testosterone deficiency,Emphysema,Hypothyroidism (adult),Cirrhosis (liver),Hyperthyroidism,Scleroderma,Hypopituitarism"
     },
     "Pain_with_sexual_intercourse_(male)": {
       "warning": "",
@@ -2594,10 +2536,6 @@
       "warning": "",
       "conditions": "Pompe disease (late-onset),Rheumatoid arthritis"
     },
-    "Difficulty_moving_joints": {
-      "warning": "",
-      "conditions": ""
-    },
     "Difficulty_walking": {
       "warning": "",
       "conditions": "Hip (acetabular) labral tear,Pompe disease (late-onset),Rheumatoid arthritis"
@@ -2640,7 +2578,7 @@
     },
     "Swelling": {
       "warning": "",
-      "conditions": "Insect bites,Insect sting,Lupus (systemic lupus erythematosus),Poison ivy, oak, and sumac,Pseudogout,Burn (heat or fire),Chemical burns,Crohn's disease"
+      "conditions": "Insect bites,Insect sting,Lupus (systemic lupus erythematosus),Poison ivy/oak/sumac,Pseudogout,Burn (heat or fire),Chemical burns,Crohn's disease"
     },
     "Tenderness_to_touch": {
       "warning": "",
@@ -2738,10 +2676,6 @@
       "warning": "",
       "conditions": "Bruise or contusion,Hematoma,Muscle strain,Trauma or injury"
     },
-    "Difficulty_moving_joint": {
-      "warning": "",
-      "conditions": ""
-    },
     "Drainage_or_pus": {
       "warning": "",
       "conditions": "Allergic reaction,Abscess"
@@ -2792,7 +2726,7 @@
     },
     "Swelling": {
       "warning": "",
-      "conditions": "Muscle strain,Insect bites,Insect sting,Lupus (systemic lupus erythematosus),Poison ivy, oak, and sumac,Pseudogout,Burn (heat or fire),Chemical burns,Crohn's disease"
+      "conditions": "Muscle strain,Insect bites,Insect sting,Lupus (systemic lupus erythematosus),Poison ivy/oak/sumac,Pseudogout,Burn (heat or fire),Chemical burns,Crohn's disease"
     },
     "Visible_deformity": {
       "warning": "If you have a new visible deformity in your shoulder please seek prompt medical attention.",
@@ -2846,7 +2780,7 @@
     },
     "Swelling": {
       "warning": "",
-      "conditions": "Hidradenitis suppurativa,Insect bites,Insect sting,Poison ivy, oak, and sumac,Swollen glands,Burn (heat or fire),Chemical burns"
+      "conditions": "Hidradenitis suppurativa,Insect bites,Insect sting,Poison ivy/oak/sumac,Swollen glands,Burn (heat or fire),Chemical burns"
     },
     "Tender_glands": {
       "warning": "",
@@ -2916,7 +2850,7 @@
     },
     "Swelling": {
       "warning": "",
-      "conditions": "Muscle strain,Insect bites,Insect sting,Poison ivy, oak, and sumac,Burn (heat or fire),Chemical burns,Osteomyelitis (bone infection)"
+      "conditions": "Muscle strain,Insect bites,Insect sting,Poison ivy/oak/sumac,Burn (heat or fire),Chemical burns,Osteomyelitis (bone infection)"
     },
     "Tenderness_to_touch": {
       "warning": "",
@@ -2947,10 +2881,6 @@
     "Bruising_or_discoloration": {
       "warning": "",
       "conditions": "Bruise or contusion,Hematoma,Trauma or injury"
-    },
-    "Difficulty_moving_joint": {
-      "warning": "",
-      "conditions": ""
     },
     "Drainage_or_pus": {
       "warning": "",
@@ -3002,7 +2932,7 @@
     },
     "Swelling": {
       "warning": "",
-      "conditions": "Bursitis (olecranon),Golfer's elbow,Gout,Insect bites,Insect sting,Poison ivy, oak, and sumac,Pseudogout,Rheumatic fever,Rheumatoid arthritis,Sarcoidosis,Sickle cell disease,Sporotrichosis,Tennis elbow,Burn (heat or fire),Chemical burns,Crohn's disease"
+      "conditions": "Bursitis (olecranon),Golfer's elbow,Gout,Insect bites,Insect sting,Poison ivy/oak/sumac,Pseudogout,Rheumatic fever,Rheumatoid arthritis,Sarcoidosis,Sickle cell disease,Sporotrichosis,Tennis elbow,Burn (heat or fire),Chemical burns,Crohn's disease"
     },
     "Tender_glands": {
       "warning": "",
@@ -3072,7 +3002,7 @@
     },
     "Swelling": {
       "warning": "",
-      "conditions": "Bee or wasp stings,Insect bites,Insect sting,Poison ivy, oak, and sumac,Burn (heat or fire),Chemical burns,Osteomyelitis (bone infection)"
+      "conditions": "Bee or wasp stings,Insect bites,Insect sting,Poison ivy/oak/sumac,Burn (heat or fire),Chemical burns,Osteomyelitis (bone infection)"
     },
     "Tenderness_to_touch": {
       "warning": "",
@@ -3108,10 +3038,6 @@
       "warning": "",
       "conditions": "Bruise or contusion,Hematoma,Muscle strain,Trauma or injury,Thrombocytopenia"
     },
-    "Difficulty_moving_joint": {
-      "warning": "",
-      "conditions": ""
-    },
     "Drainage_or_pus": {
       "warning": "",
       "conditions": "Allergic reaction,Abscess"
@@ -3146,7 +3072,7 @@
     },
     "Swelling": {
       "warning": "",
-      "conditions": "Bee or wasp stings,Gout,Insect bites,Insect sting,Lupus (systemic lupus erythematosus),Lyme disease,Poison ivy, oak, and sumac,Pseudogout,Rheumatic fever,Rheumatoid arthritis,Sarcoidosis,Burn (heat or fire),Chemical burns,Crohn's disease"
+      "conditions": "Bee or wasp stings,Gout,Insect bites,Insect sting,Lupus (systemic lupus erythematosus),Lyme disease,Poison ivy/oak/sumac,Pseudogout,Rheumatic fever,Rheumatoid arthritis,Sarcoidosis,Burn (heat or fire),Chemical burns,Crohn's disease"
     },
     "Tenderness_to_touch": {
       "warning": "",
@@ -3214,10 +3140,6 @@
       "warning": "",
       "conditions": "Physical abuse,Falls or injury"
     },
-    "Muscle_cramps_or_spasms_(painful)": {
-      "warning": "",
-      "conditions": ""
-    },
     "Muscle_twitching_(painless)": {
       "warning": "",
       "conditions": "Hypocalcemia,Low potassium (hypokalemia),Hyperventilation,Hypoparathyroidism,Tetany"
@@ -3236,7 +3158,7 @@
     },
     "Swelling": {
       "warning": "",
-      "conditions": "Angioedema,Bee or wasp stings,Glomerulonephritis,Insect bites,Insect sting,Poison ivy, oak, and sumac,Rheumatoid arthritis,Scleroderma,Water retention,Burn (heat or fire),Chemical burns,Osteomyelitis (bone infection),Chagas disease,CREST syndrome"
+      "conditions": "Angioedema,Bee or wasp stings,Glomerulonephritis,Insect bites,Insect sting,Poison ivy/oak/sumac,Rheumatoid arthritis,Scleroderma,Water retention,Burn (heat or fire),Chemical burns,Osteomyelitis (bone infection),Chagas disease,CREST syndrome"
     },
     "Tenderness_to_touch": {
       "warning": "",
@@ -3296,10 +3218,6 @@
       "warning": "",
       "conditions": "Chronic obstructive pulmonary disease (COPD),Emphysema,Interstitial lung disease"
     },
-    "Difficulty_moving_joint": {
-      "warning": "",
-      "conditions": ""
-    },
     "Drainage_or_pus": {
       "warning": "",
       "conditions": "Allergic reaction,Abscess,Paronychia"
@@ -3358,7 +3276,7 @@
     },
     "Swelling": {
       "warning": "",
-      "conditions": "Angioedema,Bee or wasp stings,Finger injury,Gout,Insect bites,Insect sting,Lupus (systemic lupus erythematosus),Paronychia,Poison ivy, oak, and sumac,Pseudogout,Rheumatoid arthritis,Scleroderma,Water retention,Burn (heat or fire),Chemical burns,Osteomyelitis (bone infection),CREST syndrome"
+      "conditions": "Angioedema,Bee or wasp stings,Finger injury,Gout,Insect bites,Insect sting,Lupus (systemic lupus erythematosus),Paronychia,Poison ivy/oak/sumac,Pseudogout,Rheumatoid arthritis,Scleroderma,Water retention,Burn (heat or fire),Chemical burns,Osteomyelitis (bone infection),CREST syndrome"
     },
     "Tenderness_to_touch": {
       "warning": "",
@@ -3432,7 +3350,7 @@
     },
     "Swelling": {
       "warning": "",
-      "conditions": "Muscle strain,Insect bites,Insect sting,Poison ivy, oak, and sumac,Burn (heat or fire)Chemical burns,Osteomyelitis (bone infection)"
+      "conditions": "Muscle strain,Insect bites,Insect sting,Poison ivy/oak/sumac,Burn (heat or fire)Chemical burns,Osteomyelitis (bone infection)"
     },
     "Tenderness_to_touch": {
       "warning": "",
@@ -3510,7 +3428,7 @@
     },
     "Swelling": {
       "warning": "",
-      "conditions": "Muscle strain,Insect bites,Insect sting,Poison ivy, oak, and sumac,Burn (heat or fire)Chemical burns,Osteomyelitis (bone infection)"
+      "conditions": "Muscle strain,Insect bites,Insect sting,Poison ivy/oak/sumac,Burn (heat or fire)Chemical burns,Osteomyelitis (bone infection)"
     },
     "Tenderness_to_touch": {
       "warning": "",
@@ -3546,10 +3464,6 @@
       "warning": "",
       "conditions": "Bruise or contusion,Hematoma,Muscle strain,Trauma or injury,ThrombocytopeniaBruise or contusion,Hematoma,Trauma or injury"
     },
-    "Difficulty_moving_joint": {
-      "warning": "",
-      "conditions": ""
-    },
     "Difficulty_walking": {
       "warning": "",
       "conditions": "ACL knee injury,Gout,Rheumatoid arthritis"
@@ -3561,10 +3475,6 @@
     "Guarding_or_favoring_joint": {
       "warning": "",
       "conditions": "ACL knee injury,Posterior cruciate ligament (PCL) injury"
-    },
-    "Inability_to_move": {
-      "warning": "",
-      "conditions": ""
     },
     "Joint_aches": {
       "warning": "",
@@ -3593,10 +3503,6 @@
     "Numbness_or_tingling": {
       "warning": "",
       "conditions": "Burn (heat or fire),Chemical burns"
-    },
-    "Pain_or_discomfort": {
-      "warning": "",
-      "conditions": ""
     },
     "Popping_or_snapping_sound_from_joint": {
       "warning": "",
@@ -3678,7 +3584,7 @@
     },
     "Swelling": {
       "warning": "",
-      "conditions": "Baker's cyst,Insect bites,Insect sting,Poison ivy, oak, and sumac,Burn (heat or fire)Chemical burns"
+      "conditions": "Baker's cyst,Insect bites,Insect sting,Poison ivy/oak/sumac,Burn (heat or fire)Chemical burns"
     },
     "Tenderness_to_touch": {
       "warning": "",
@@ -3736,7 +3642,7 @@
     },
     "Swelling": {
       "warning": "",
-      "conditions": "Bruised shin,Bursitis (anserine)Bee or wasp stings,Insect bites,Insect sting,Poison ivy, oak, and sumac,Burn (heat or fire)Chemical burns,Osteomyelitis (bone infection)"
+      "conditions": "Bruised shin,Bursitis (anserine)Bee or wasp stings,Insect bites,Insect sting,Poison ivy/oak/sumac,Burn (heat or fire)Chemical burns,Osteomyelitis (bone infection)"
     },
     "Tenderness_to_touch": {
       "warning": "",
@@ -3806,11 +3712,7 @@
     },
     "Swelling": {
       "warning": "If you experience tenderness or swelling in your calf please seek prompt medical attention.",
-      "conditions": "Blood clot in the legs,Muscle strain,Bee or wasp stings,Insect bites,Insect sting,Poison ivy, oak, and sumac,Burn (heat or fire)Chemical burns,Osteomyelitis (bone infection)"
-    },
-    "Tenderness_to_touch": {
-      "warning": "",
-      "conditions": ""
+      "conditions": "Blood clot in the legs,Muscle strain,Bee or wasp stings,Insect bites,Insect sting,Poison ivy/oak/sumac,Burn (heat or fire)Chemical burns,Osteomyelitis (bone infection)"
     },
     "Unable_to_bear_weight": {
       "warning": "",
@@ -3837,14 +3739,6 @@
     "Bruising_or_discoloration": {
       "warning": "",
       "conditions": "Bruise or contusion,Hematoma,Muscle strain,Trauma or injury,ThrombocytopeniaBruise or contusion,Hematoma,,Sprained ankle,Trauma or injury"
-    },
-    "Bulging_veins": {
-      "warning": "",
-      "conditions": ""
-    },
-    "Difficulty_moving_joint": {
-      "warning": "",
-      "conditions": ""
     },
     "Difficulty_walking": {
       "warning": "",
@@ -3884,7 +3778,7 @@
     },
     "Swelling": {
       "warning": "",
-      "conditions": "Sprained ankle,Blood clot in the legs,Aortic regurgitation,Chronic kidney disease,Gout,Insect bites,Insect sting,Lupus (systemic lupus erythematosus)Lyme diseasePoison ivy, oak, and sumac,Polycystic kidney disease,Pregnancy,Pseudogout,Pulmonary hypertension,Rheumatic fever,Sarcoidosis,Sporotrichosis,Water retention,Burn (heat or fire)Chemical burns,Crohn's disease"
+      "conditions": "Sprained ankle,Blood clot in the legs,Aortic regurgitation,Chronic kidney disease,Gout,Insect bites,Insect sting,Lupus (systemic lupus erythematosus)Lyme diseasePoison ivy/oak/sumac,Polycystic kidney disease,Pregnancy,Pseudogout,Pulmonary hypertension,Rheumatic fever,Sarcoidosis,Sporotrichosis,Water retention,Burn (heat or fire)Chemical burns,Crohn's disease"
     },
     "Tenderness_to_touch": {
       "warning": "",
@@ -3972,10 +3866,6 @@
       "warning": "",
       "conditions": "Peripheral neuropathy,Poorly fitting shoes,Broken (fractured) foot,Corns and calluses,Lumbar spinal stenosis,Metatarsalgia,Multiple sclerosis,Osteomyelitis (bone infection)Sciatica,Stress fractures,Thoracic spinal stenosis,Shingles (herpes zoster)"
     },
-    "Shuffling_gait_(feet)": {
-      "warning": "",
-      "conditions": ""
-    },
     "Stiffness_or_decreased_movement": {
       "warning": "",
       "conditions": "Rheumatoid arthritis"
@@ -4008,7 +3898,7 @@
   "Toes": {
     "Black_colored_skin": {
       "warning": "If you have new black colored toes (skin color change) please seek propmt medical attention.",
-      "conditions": "Peripheral vascular disease,Diabetes, type 1,Frostbite,Aortic aneurysm (abdomen)"
+      "conditions": "Peripheral vascular disease,Diabetes (type 1),Frostbite,Aortic aneurysm (abdomen)"
     },
     "Bleeding": {
       "warning": "",
@@ -4160,13 +4050,9 @@
       "warning": "",
       "conditions": "Peripheral neuropathy,Plantar warts,Poorly fitting shoes,Plantar fasciitis,Bone spurs,Broken (fractured) foot,Corns and calluses,Flatfeet,Metatarsalgia,Morton's neuroma,Multiple sclerosis,Osteomyelitis (bone infection)Sciatica,Stress fractures,Shingles (herpes zoster)"
     },
-    "Shuffling_gait_(feet)": {
-      "warning": "",
-      "conditions": ""
-    },
     "Swelling": {
       "warning": "",
-      "conditions": "Bee or wasp stings,Insect bites,Insect sting,Plantar fasciitis,Poison ivy, oak, and sumac,Burn (heat or fire)Chemical burns,Osteomyelitis (bone infection)"
+      "conditions": "Bee or wasp stings,Insect bites,Insect sting,Plantar fasciitis,Poison ivy/oak/sumac,Burn (heat or fire)Chemical burns,Osteomyelitis (bone infection)"
     },
     "Tenderness_to_touch": {
       "warning": "",
