@@ -14,13 +14,13 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-public class ShowSelectedSymptomssFragment extends Fragment implements View.OnClickListener {
+public class ShowSelectedSymptomsFragment extends Fragment implements View.OnClickListener {
 
     private OnFragmentInteractionListener mListener;
     private ArrayList<String> selectedSymptoms = null;
     private ListView listView;
 
-    public ShowSelectedSymptomssFragment() {
+    public ShowSelectedSymptomsFragment() {
         // Required empty public constructor
     }
 
@@ -50,7 +50,7 @@ public class ShowSelectedSymptomssFragment extends Fragment implements View.OnCl
                 @Override
                 public void run() {
                     if (mListener != null) {
-                        mListener.onShowConditionsFragmentInteraction("close");
+                        mListener.onShowSelectedSymptomsFragmentInteraction("close");
                     }
                 }
             }, 2000);
@@ -69,10 +69,10 @@ public class ShowSelectedSymptomssFragment extends Fragment implements View.OnCl
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.button_show_selected_symptoms:
-                mListener.onShowConditionsFragmentInteraction("show");
+                mListener.onShowSelectedSymptomsFragmentInteraction("show");
                 break;
             case R.id.button_close_selected_symptoms:
-                mListener.onShowConditionsFragmentInteraction("close");
+                mListener.onShowSelectedSymptomsFragmentInteraction("close");
                 break;
             default:
                 break;
@@ -99,6 +99,6 @@ public class ShowSelectedSymptomssFragment extends Fragment implements View.OnCl
     }
 
     interface OnFragmentInteractionListener {
-        void onShowConditionsFragmentInteraction(String item);
+        void onShowSelectedSymptomsFragmentInteraction(String item);
     }
 }

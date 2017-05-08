@@ -306,7 +306,7 @@
     },
     "Repetitive_behaviors": {
       "warning": "",
-      "conditions": "Autism, Tourette syndrome"
+      "conditions": "Autism,Tourette syndrome"
     },
     "Restless_(tossing_and_turning)_sleep": {
       "warning": "",
@@ -886,7 +886,7 @@
     },
     "Lump_or_bulge": {
       "warning": "",
-      "conditions": "Cauliflower ear.Auricular hematoma.Abscess.Epidermal (sebaceous) cyst"
+      "conditions": "Cauliflower ear,Auricular hematoma,Abscess,Epidermal (sebaceous) cyst"
     },
     "Multiple_bruises_of_different_ages": {
       "warning": "",
@@ -1270,7 +1270,7 @@
     },
     "Pain_or_discomfort": {
       "warning": "If you are experiencing pain in your jaw please seek prompt medical attention.",
-      "conditions": "Dental abscess,Malocclusion (bite out of alignment),Toothache,Broken (fractured) jaw,Dental caries (cavities,)Osteomyelitis (bone infection),Temporomandibular joint syndrome (TMJ),Trigeminal neuralgia (facial nerve pain),Shingles (herpes zoster)"
+      "conditions": "Dental abscess,Malocclusion (bite out of alignment),Toothache,Broken (fractured) jaw,Dental caries (cavities),Osteomyelitis (bone infection),Temporomandibular joint syndrome (TMJ),Trigeminal neuralgia (facial nerve pain),Shingles (herpes zoster)"
     },
     "Pulling_out_beard": {
       "warning": "",
@@ -1336,7 +1336,7 @@
     },
     "Joint_pain": {
       "warning": "If you are experiencing pain in your neck please seek prompt medical attention.",
-      "conditions": "Psoriatic arthritis, Rheumatoid arthritis"
+      "conditions": "Psoriatic arthritis,Rheumatoid arthritis"
     },
     "Lump_or_bulge": {
       "warning": "",
@@ -1522,11 +1522,11 @@
     },
     "Rapid_heart_rate_(pulse)": {
       "warning": "If you are experiencing a rapid heart rate associated with dizziness, lightheadedness, fainting, shortness of breath or chest discomfort please seek emergency medical attention.",
-      "conditions": "Panic attack,Acute stress reaction,Excessive caffeine use,Generalized anxiety disorder,Heart rhythm disorder,Supraventricular tachycardia,Atrial flutter,Hyperthyroidism,Low blood sugar (hypoglycemia),Acute kidney failure,Anaphylactic shock,Anemia, chronic disease,Anemia (iron deficiency),Aortic stenosis,Cocaine abuse,Dehydration (Adult),Drug overdose,Exercise or physical activity,Insulin reaction (hypoglycemia),Lyme disease,Narcotic abuse,Nightmares,Thalassemia,Thyroid storm,Ventricular septal defect,Anemia, hemolytic,Cyanide poisoning,Toxic shock syndrome,Severe allergic reaction (anaphylactic shock)"
+      "conditions": "Panic attack,Acute stress reaction,Excessive caffeine use,Generalized anxiety disorder,Heart rhythm disorder,Supraventricular tachycardia,Atrial flutter,Hyperthyroidism,Low blood sugar (hypoglycemia),Acute kidney failure,Anaphylactic shock,Anemia,Chronic disease,Anemia (iron deficiency),Aortic stenosis,Cocaine abuse,Dehydration (Adult),Drug overdose,Exercise or physical activity,Insulin reaction (hypoglycemia),Lyme disease,Narcotic abuse,Nightmares,Thalassemia,Thyroid storm,Ventricular septal defect,Anemia, hemolytic,Cyanide poisoning,Toxic shock syndrome,Severe allergic reaction (anaphylactic shock)"
     },
     "Shortness_of_breath": {
       "warning": "If you are experiencing shortness of breath please seek prompt medical attention.",
-      "conditions": "Generalized anxiety disorder,Allergic reaction,Asthma (teen and adult),Chronic obstructive pulmonary disease (COPD),Heart rhythm disorder,Panic attack,Atrial flutter,Drug allergy,Severe acute respiratory syndrome (SARS),Anemia,Fibromyalgia,Anaphylactic shock,Anemia, chronic disease,Anemia (iron deficiency),Aortic regurgitation,Aortic stenosis,Asbestosis,Atrial fibrillation,Benzodiazepine abuse,Bronchial adenoma,Chemical pneumonia,Cystic fibrosis,Drug overdose,Emphysema,Epiglottitis,Exercise or physical activity,Gastrointestinal bleeding,Goiter,Hernia,Interstitial lung disease,Low blood pressure (hypotension),Mitral valve prolapse,Myasthenia gravis,Narcotic abuse,Obesity,Pleural effusion,Pre-leukemia (myelodysplastic syndrome),Pulmonary embolism,Pulmonary fibrosis,Radon exposure,Sarcoidosis,Scleroderma,Sickle cell disease,Supraventricular tachycardia,Swallowed object,Thyroid cancer,Thyroid nodules,Thyroid storm,Tuberculosis,Upper airway obstruction,Ventricular septal defect,Vitamin B12 deficiency,Chemical burns,Pneumothorax (spontaneous),Pulmonary hypertension,Anemia, hemolytic,Cyanide poisoning,Plague,Radiation sickness,Ricin poisoning,Tetanus,Whooping cough,Glycogen Storage Disease Type II,Severe allergic reaction (anaphylactic shock)"
+      "conditions": "Generalized anxiety disorder,Allergic reaction,Asthma (teen and adult),Chronic obstructive pulmonary disease (COPD),Heart rhythm disorder,Panic attack,Atrial flutter,Drug allergy,Severe acute respiratory syndrome (SARS),Anemia,Fibromyalgia,Anaphylactic shock,Anemia,Chronic disease,Anemia (iron deficiency),Aortic regurgitation,Aortic stenosis,Asbestosis,Atrial fibrillation,Benzodiazepine abuse,Bronchial adenoma,Chemical pneumonia,Cystic fibrosis,Drug overdose,Emphysema,Epiglottitis,Exercise or physical activity,Gastrointestinal bleeding,Goiter,Hernia,Interstitial lung disease,Low blood pressure (hypotension),Mitral valve prolapse,Myasthenia gravis,Narcotic abuse,Obesity,Pleural effusion,Pre-leukemia (myelodysplastic syndrome),Pulmonary embolism,Pulmonary fibrosis,Radon exposure,Sarcoidosis,Scleroderma,Sickle cell disease,Supraventricular tachycardia,Swallowed object,Thyroid cancer,Thyroid nodules,Thyroid storm,Tuberculosis,Upper airway obstruction,Ventricular septal defect,Vitamin B12 deficiency,Chemical burns,Pneumothorax (spontaneous),Pulmonary hypertension,Anemia,Hemolytic,Cyanide poisoning,Plague,Radiation sickness,Ricin poisoning,Tetanus,Whooping cough,Glycogen Storage Disease Type II,Severe allergic reaction (anaphylactic shock)"
     },
     "Slow_heart_rate_(pulse)": {
       "warning": "If you are experiencing a slow heart rate (pulse) that is associated with lightheadedness, dizziness or fainting please seek emergency medical attention.",
@@ -1884,7 +1884,7 @@
     },
     "Pain_or_discomfort": {
       "warning": "",
-      "conditions": "Constipation (adult),Food poisoning,Gas pains,Gastroenteritis,Irritable bowel syndrome,Muscle strain,Panic attack,Urinary tract infection (UTI),Endometriosis,Intestinal ischemia,Kidney stones,Anemia,Appendicitis,Ascaris worms,Bladder stones,Celiac disease,Cervicitis,Colon cancer,Colon polyps,Crohn's disease,Cystic fibrosis,Dermatomyositis,Diabetic ketoacidosis,Diverticulitis,Diverticulosis,Drug allergy,Drug overdose,Dysmenorrhea (menstrual cramps),Ectopic pregnancy,Gastrointestinal bleeding,Giardiasis,Hydronephrosis,Inflammatory bowel disease,Interstitial cystitis,Intestinal Ileus,Intestinal obstruction,Iron poisoning,Kidney infection (pyelonephritis),Lactose intolerance,Lupus (systemic lupus erythematosus),Miscarriage,Narcotic abuse,Ovarian cancer,Polycystic kidney disease,Porphyria,Premature labor,Proctitis,Thalassemia,Ulcerative colitis,Uterine fibroids,Allergic reaction,Aortic aneurysm (abdomen),Chagas disease,Henoch-schonlein purpura,Lead poisoning,Mesenteric lymphadenitis,Pseudohypoparathyroidism,Radiation sickness,Ricin poisoning,Small intestine cancer,Toxic shock syndrome,Typhoid fever,Pregnancy, round ligament pain,Tick bite,Shingles (herpes zoster),Abdominal migraine"
+      "conditions": "Constipation (adult),Food poisoning,Gas pains,Gastroenteritis,Irritable bowel syndrome,Muscle strain,Panic attack,Urinary tract infection (UTI),Endometriosis,Intestinal ischemia,Kidney stones,Anemia,Appendicitis,Ascaris worms,Bladder stones,Celiac disease,Cervicitis,Colon cancer,Colon polyps,Crohn's disease,Cystic fibrosis,Dermatomyositis,Diabetic ketoacidosis,Diverticulitis,Diverticulosis,Drug allergy,Drug overdose,Dysmenorrhea (menstrual cramps),Ectopic pregnancy,Gastrointestinal bleeding,Giardiasis,Hydronephrosis,Inflammatory bowel disease,Interstitial cystitis,Intestinal Ileus,Intestinal obstruction,Iron poisoning,Kidney infection (pyelonephritis),Lactose intolerance,Lupus (systemic lupus erythematosus),Miscarriage,Narcotic abuse,Ovarian cancer,Polycystic kidney disease,Porphyria,Premature labor,Proctitis,Thalassemia,Ulcerative colitis,Uterine fibroids,Allergic reaction,Aortic aneurysm (abdomen),Chagas disease,Henoch-schonlein purpura,Lead poisoning,Mesenteric lymphadenitis,Pseudohypoparathyroidism,Radiation sickness,Ricin poisoning,Small intestine cancer,Toxic shock syndrome,Typhoid fever,Pregnancy, Round ligament pain,Tick bite,Shingles (herpes zoster),Abdominal migraine"
     },
     "Painful_bowel_movements": {
       "warning": "",
@@ -2228,7 +2228,11 @@
     },
     "Pressure_or_fullness": {
       "warning": "",
-      "conditions": "Urinary tract infection (UTI),Bladder stones,Chronic pelvic pain,Interstitial cystitis,Sudden_urge_to_urinate"
+      "conditions": "Urinary tract infection (UTI),Bladder stones,Chronic pelvic pain,Interstitial cystitis"
+    },
+    "Sudden_urge_to_urinate": {
+      "warning": "",
+      "conditions": "Overactive bladder syndrome"
     },
     "Swelling": {
       "warning": "",
@@ -3268,7 +3272,11 @@
     },
     "Red_or_black_spots_in_fingernails": {
       "warning": "If you have red or black spots on fingernails and a persistent fever please seek prompt medical attention.",
-      "conditions": "Fingernail injury,Subungual hematoma (bleeding under nail),Endocarditis,Shaking_hands_or_tremor"
+      "conditions": "Fingernail injury,Subungual hematoma (bleeding under nail),Endocarditis"
+    },
+    "Shaking_hands_or_tremor": {
+      "warning": "",
+      "conditions": "Low blood sugar (hypoglycemia)"
     },
     "Stiffness_or_decreased_movement": {
       "warning": "",
@@ -3284,7 +3292,15 @@
     },
     "Unable_to_grip_(hands)": {
       "warning": "",
-      "conditions": "Carpal tunnel syndrome,Brachial plexus nerve injury,Multiple sclerosis,Usually_short_fourth_fingers"
+      "conditions": "Carpal tunnel syndrome,Brachial plexus nerve injury,Multiple sclerosis"
+    },
+    "Usually_short_fourth_fingers": {
+      "warning": "",
+      "conditions": "Pseudohypoparathyroidism"
+    },
+    "Upward_curving_(spooning)_of_nails": {
+      "warning": "",
+      "conditions": "Anemia (iron deficiency)"
     },
     "Visible_deformity": {
       "warning": "If you have a new visible deformity in your fingers please seek prompt medical attention.",

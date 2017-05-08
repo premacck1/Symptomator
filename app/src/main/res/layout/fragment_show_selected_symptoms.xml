@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:clickable="true"
     android:background="@color/colorSecondary"
-    tools:context="com.prembros.symptomator.ShowSelectedSymptomssFragment">
+    tools:context="com.prembros.symptomator.ShowSelectedSymptomsFragment">
 
     <ListView
         android:visibility="invisible"

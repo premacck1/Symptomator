@@ -65,7 +65,7 @@
         <item>Genitals</item>
         <item>Buttock</item>
         <item>Hip</item>
-        <item>Inguinal</item>
+        <item>Groin</item>
     </string-array>
     <string-array name="arm">
         <item>Select body part from arm</item>
@@ -373,4 +373,5 @@
         As always, if you think you have a medical emergency you should call your doctor or the emergency services immediately.
     </string>
     <string name="show_selected_conditions">Show selected conditions</string>
+    <string name="possible_conditions">Possible conditions</string>
 </resources>

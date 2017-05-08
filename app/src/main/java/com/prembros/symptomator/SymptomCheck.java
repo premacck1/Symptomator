@@ -37,7 +37,7 @@ import io.codetail.animation.SupportAnimator;
 import static io.codetail.animation.ViewAnimationUtils.createCircularReveal;
 
 public class SymptomCheck extends AppCompatActivity implements CompleteSymptomList.OnFragmentInteractionListener,
-        ShowSelectedSymptomssFragment.OnFragmentInteractionListener {
+        ShowSelectedSymptomsFragment.OnFragmentInteractionListener {
 
     private ActionBar actionBar;
     private MyRecyclerViewAdapter recyclerViewAdapter;
@@ -439,9 +439,10 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
     }
 
     @Override
-    public void onShowConditionsFragmentInteraction(String item) {
+    public void onShowSelectedSymptomsFragmentInteraction(String item) {
         switch (item) {
             case "show":
+
                 break;
             case "close":
                 removeFragmentIfAttached("selectedSymptoms");
@@ -508,8 +509,7 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
         protected void onPostExecute(Void aVoid) {
             if (showSelectedSymptoms) {
                 animationForward(SymptomCheck.this.findViewById(R.id.fab_show_revealView), touchCoordinate[0], touchCoordinate[1], 600);
-
-                ShowSelectedSymptomssFragment conditionsFragment = new ShowSelectedSymptomssFragment();
+                ShowSelectedSymptomsFragment conditionsFragment = new ShowSelectedSymptomsFragment();
                 Bundle args = new Bundle();
                 args.putStringArrayList("selectedSymptoms", selectedSymptoms);
                 conditionsFragment.setArguments(args);
