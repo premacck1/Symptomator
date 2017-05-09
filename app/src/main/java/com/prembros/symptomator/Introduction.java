@@ -113,7 +113,6 @@ public class Introduction extends AppIntro2 {
         db.insertInSymptomListTable("Easily distracted", "Head", "All");
         db.insertInSymptomListTable("Emotional detachment", "Head", "All");
         db.insertInSymptomListTable("Fainting", "Head", "All");
-        db.insertInSymptomListTable("Fatigue", "Head", "All");
         db.insertInSymptomListTable("Fear of air", "Head", "All");
         db.insertInSymptomListTable("Fear of gaining weight", "Head", "All");
         db.insertInSymptomListTable("Fear of water", "Head", "All");
@@ -134,7 +133,6 @@ public class Introduction extends AppIntro2 {
         db.insertInSymptomListTable("Headache", "Head", "All");
         db.insertInSymptomListTable("Headache (worst ever)", "Head", "All");
         db.insertInSymptomListTable("Hearing voices", "Head", "All");
-        db.insertInSymptomListTable("Impaired color vision", "Head", "All");
         db.insertInSymptomListTable("Impaired judgement", "Head", "All");
         db.insertInSymptomListTable("Impaired social skills", "Head", "All");
         db.insertInSymptomListTable("Impulsive behavior", "Head", "All");
@@ -162,7 +160,6 @@ public class Introduction extends AppIntro2 {
         db.insertInSymptomListTable("Seizures (uncontrollable jerking of limbs)", "Head", "All");
         db.insertInSymptomListTable("Sense of impending doom", "Head", "All");
         db.insertInSymptomListTable("Skin irritation", "Head", "All");
-        db.insertInSymptomListTable("Sleep walking", "Head", "All");
         db.insertInSymptomListTable("Slow thinking", "Head", "All");
         db.insertInSymptomListTable("Spinning sensation", "Head", "All");
         db.insertInSymptomListTable("Swelling", "Head", "All");
@@ -191,7 +188,6 @@ public class Introduction extends AppIntro2 {
         db.insertInSymptomListTable("Double vision (with one eye covered)", "Eyes", "All");
         db.insertInSymptomListTable("Double vision (without one eye covered)", "Eyes", "All");
         db.insertInSymptomListTable("Drainage or pus", "Eyes", "All");
-        db.insertInSymptomListTable("Drooping eyelid", "Eyes", "All");
         db.insertInSymptomListTable("Dry eyes", "Eyes", "All");
         db.insertInSymptomListTable("Enlarged (dilated pupils)", "Eyes", "All");
         db.insertInSymptomListTable("Eye crusting with sleep", "Eyes", "All");
@@ -230,7 +226,6 @@ public class Introduction extends AppIntro2 {
         db.insertInSymptomListTable("Sensation of something in eye", "Eyes", "All");
         db.insertInSymptomListTable("Sensitive to light", "Eyes", "All");
         db.insertInSymptomListTable("Shadow over part of vision", "Eyes", "All");
-        db.insertInSymptomListTable("Slow eye movements", "Eyes", "All");
         db.insertInSymptomListTable("Small (constricted) pupils", "Eyes", "All");
         db.insertInSymptomListTable("Sore or burning eyes", "Eyes", "All");
         db.insertInSymptomListTable("Squinting eyes", "Eyes", "All");

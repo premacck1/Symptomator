@@ -140,10 +140,6 @@
       "warning": "If you experienced fainting (loss of consciousness) please seek prompt medical attention.",
       "conditions": "Fainting (vasovagal syncope),Heart rhythm disorder,Medication reaction or side-effect,Atrial flutter,Heat exhaustion,Low blood pressure (hypotension),Anemia,Aortic regurgitation,Aortic stenosis,Atrial fibrillation,Attention deficit hyperactivity disorder (ADHD),Dehydration (Adult),Drug overdose,Ectopic pregnancy,Hyperventilation,Low blood sugar (hypoglycemia),Lyme disease,Pulmonary embolism,Pulmonary hypertension,Supraventricular tachycardia,Ventricular septal defect,Brain aneurysm"
     },
-    "Fatigue": {
-      "warning": "",
-      "conditions": "no conditions"
-    },
     "Fear_of_air": {
       "warning": "",
       "conditions": "Rabies"
@@ -215,10 +211,6 @@
     "Hearing_voices": {
       "warning": "",
       "conditions": "Schizophrenia,Epilepsy (temporal lobe)"
-    },
-    "Impaired_color_vision": {
-      "warning": "",
-      "conditions": "no conditions"
     },
     "Impaired_judgement": {
       "warning": "",
@@ -331,10 +323,6 @@
     "Skin_irritation": {
       "warning": "",
       "conditions": "Head lice"
-    },
-    "Sleep_walking": {
-      "warning": "",
-      "conditions": "no conditions"
     },
     "Slow_thinking": {
       "warning": "",
@@ -449,10 +437,6 @@
     "Drainage_or_pus": {
       "warning": "",
       "conditions": "Pink eye (conjunctivitis),Abscess"
-    },
-    "Drooping_eyelid": {
-      "warning": "",
-      "conditions": "no conditions"
     },
     "Dry_eyes": {
       "warning": "",
@@ -609,10 +593,6 @@
     "Shadow_over_part_of_vision": {
       "warning": "If you are experiencing a shadow over part of your vision please seek emergency medical attention.",
       "conditions": "Retinal detachment"
-    },
-    "Slow_eye_movements": {
-      "warning": "",
-      "conditions": "no conditions"
     },
     "Small_(constricted)_pupils": {
       "warning": "",
