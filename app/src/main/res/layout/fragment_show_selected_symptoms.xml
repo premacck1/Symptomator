@@ -1,4 +1,4 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,13 +7,34 @@
     android:background="@color/colorSecondary"
     tools:context="com.prembros.symptomator.ShowSelectedSymptomsFragment">
 
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:textSize="16sp"
+        android:textColor="@color/white_text_icons"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:text="@string/show_selected_symptoms_header"/>
+
+    <TextView
+        android:id="@+id/header_underline"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/header"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:background="@color/colorSecondaryText"/>
+
     <ListView
         android:visibility="invisible"
         android:id="@+id/list_selected_symptoms"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:layout_gravity="center|center_vertical"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
         android:scrollbars="none"/>
 
     <LinearLayout
@@ -22,6 +43,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
         android:gravity="center_horizontal">
 
         <ImageButton
@@ -52,4 +74,4 @@
 
     </LinearLayout>
 
-</FrameLayout>
+</RelativeLayout>

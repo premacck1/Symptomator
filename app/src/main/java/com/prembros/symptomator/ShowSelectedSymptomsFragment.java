@@ -5,9 +5,11 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.AppCompatTextView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
 import android.widget.ListView;
@@ -40,17 +42,21 @@ public class ShowSelectedSymptomsFragment extends Fragment implements View.OnCli
         final ImageButton close = (ImageButton) rootView.findViewById(R.id.button_close_selected_symptoms);
         final ImageButton next = (ImageButton) rootView.findViewById(R.id.button_show_selected_symptoms);
 
-        boolean isListEmpty = false;
+        boolean isListEmpty;
         if (selectedSymptoms != null && selectedSymptoms.isEmpty()) {
             isListEmpty = true;
             selectedSymptoms.add("You have not selected any symptoms\nSelect a symptom to continue");
+            next.setEnabled(false);
+        } else {
+            isListEmpty = false;
+            next.setEnabled(true);
         }
         if (isListEmpty) {
             new Handler().postDelayed(new Runnable() {
                 @Override
                 public void run() {
                     if (mListener != null) {
-                        mListener.onShowSelectedSymptomsFragmentInteraction("close");
+                        mListener.onShowSelectedSymptomsFragmentInteraction("close", null);
                     }
                 }
             }, 2000);
@@ -61,6 +67,15 @@ public class ShowSelectedSymptomsFragment extends Fragment implements View.OnCli
 
         close.setOnClickListener(this);
         next.setOnClickListener(this);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
+                AppCompatTextView textView = (AppCompatTextView) view;
+                ArrayList<String> item = new ArrayList<>();
+                item.add(textView.getText().toString());
+                mListener.onShowSelectedSymptomsFragmentInteraction("show", item);
+            }
+        });
 
         return rootView;
     }
@@ -69,10 +84,10 @@ public class ShowSelectedSymptomsFragment extends Fragment implements View.OnCli
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.button_show_selected_symptoms:
-                mListener.onShowSelectedSymptomsFragmentInteraction("show");
+                mListener.onShowSelectedSymptomsFragmentInteraction("show", selectedSymptoms);
                 break;
             case R.id.button_close_selected_symptoms:
-                mListener.onShowSelectedSymptomsFragmentInteraction("close");
+                mListener.onShowSelectedSymptomsFragmentInteraction("close", null);
                 break;
             default:
                 break;
@@ -99,6 +114,6 @@ public class ShowSelectedSymptomsFragment extends Fragment implements View.OnCli
     }
 
     interface OnFragmentInteractionListener {
-        void onShowSelectedSymptomsFragmentInteraction(String item);
+        void onShowSelectedSymptomsFragmentInteraction(String item, @Nullable ArrayList<String> selectedSymptoms);
     }
 }

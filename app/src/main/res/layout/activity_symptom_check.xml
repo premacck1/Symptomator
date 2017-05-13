@@ -73,6 +73,18 @@
 
         <FrameLayout
             android:visibility="invisible"
+            android:id="@+id/fab_show_conditions_revealView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </io.codetail.widget.RevealFrameLayout>
+
+    <io.codetail.widget.RevealFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:visibility="invisible"
             android:id="@+id/fab_revealView"
             android:layout_width="match_parent"
             android:layout_height="match_parent">

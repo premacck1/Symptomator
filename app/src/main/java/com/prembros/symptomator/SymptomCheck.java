@@ -9,6 +9,7 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.StrictMode;
+import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.ActionBar;
@@ -43,6 +44,7 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
     private MyRecyclerViewAdapter recyclerViewAdapter;
     private List<String> symptomList;
     private RecyclerView recyclerView;
+    private String selectedBodyPart;
     private FragmentManager fragmentManager;
     private FrameLayout revealView;
     private SupportAnimator animator;
@@ -83,7 +85,7 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
         Intent intent = getIntent();
         final String selectedSex = intent.getExtras().getString("selectedSex");
 //        String selectedBodyArea = intent.getExtras().getString("selectedBodyArea");
-        final String selectedBodyPart = intent.getExtras().getString("selectedBodyPart");
+        selectedBodyPart = intent.getExtras().getString("selectedBodyPart");
         String headerText = selectedSex + ", " + selectedBodyPart;
         actionBar.setSubtitle(headerText);
 
@@ -408,9 +410,7 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
                     new Handler().postDelayed(new Runnable() {
                         @Override
                         public void run() {
-                            fragmentManager.beginTransaction()
-                                    .remove(fragmentManager.findFragmentByTag(tag))
-                                    .commit();
+                            removeFragment(tag);
                         }
                     }, 800);
                     somethingIsActive = false;
@@ -420,11 +420,19 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
                     new Handler().postDelayed(new Runnable() {
                         @Override
                         public void run() {
-                            fragmentManager.beginTransaction()
-                                    .remove(fragmentManager.findFragmentByTag(tag))
-                                    .commit();
+                            removeFragment(tag);
                         }
-                    }, 800);
+                    }, 600);
+                    somethingIsActive = false;
+                    break;
+                case "possibleConditions":
+                    animationReversed(this.findViewById(R.id.fab_show_conditions_revealView), touchCoordinate);
+                    new Handler().postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            removeFragment(tag);
+                        }
+                    }, 600);
                     somethingIsActive = false;
                     break;
                 default:
@@ -433,16 +441,36 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
         }
     }
 
+    void removeFragment(String tag) {
+        fragmentManager.beginTransaction()
+                .remove(fragmentManager.findFragmentByTag(tag))
+                .commit();
+    }
+
     @Override
     public void onFragmentInteraction(String item) {
 
     }
 
     @Override
-    public void onShowSelectedSymptomsFragmentInteraction(String item) {
+    public void onShowSelectedSymptomsFragmentInteraction(String item, @Nullable ArrayList<String> selectedSymptoms) {
         switch (item) {
             case "show":
+                if (selectedSymptoms != null) {
+                    Bundle args = new Bundle();
+                    args.putString("bodyPart", selectedBodyPart);
+                    args.putStringArrayList("selectedSymptoms", selectedSymptoms);
 
+                    PossibleConditions possibleConditions = new PossibleConditions();
+                    possibleConditions.setArguments(args);
+
+                    animationForward(this.findViewById(R.id.fab_show_conditions_revealView), touchCoordinate[0], touchCoordinate[1], 600);
+                    fragmentManager.beginTransaction()
+                            .add(R.id.fab_show_conditions_revealView, possibleConditions, "possibleConditions")
+                            .commit();
+
+                    somethingIsActive = true;
+                }
                 break;
             case "close":
                 removeFragmentIfAttached("selectedSymptoms");
@@ -509,12 +537,12 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
         protected void onPostExecute(Void aVoid) {
             if (showSelectedSymptoms) {
                 animationForward(SymptomCheck.this.findViewById(R.id.fab_show_revealView), touchCoordinate[0], touchCoordinate[1], 600);
-                ShowSelectedSymptomsFragment conditionsFragment = new ShowSelectedSymptomsFragment();
+                ShowSelectedSymptomsFragment selectedSymptomsFragment = new ShowSelectedSymptomsFragment();
                 Bundle args = new Bundle();
                 args.putStringArrayList("selectedSymptoms", selectedSymptoms);
-                conditionsFragment.setArguments(args);
+                selectedSymptomsFragment.setArguments(args);
                 fragmentManager.beginTransaction()
-                        .add(R.id.fab_show_revealView, conditionsFragment, "selectedSymptoms")
+                        .add(R.id.fab_show_revealView, selectedSymptomsFragment, "selectedSymptoms")
                         .commit();
                 somethingIsActive = true;
             }
@@ -527,6 +555,7 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
         if (somethingIsActive) {
             removeFragmentIfAttached("completeSymptomList");
             removeFragmentIfAttached("about");
+            removeFragmentIfAttached("possibleConditions");
             removeFragmentIfAttached("selectedSymptoms");
         }
         else

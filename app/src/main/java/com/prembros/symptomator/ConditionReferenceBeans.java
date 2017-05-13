@@ -10,8 +10,8 @@ import android.os.Parcelable;
 
 class ConditionReferenceBeans implements Parcelable {
 
-    private String bodyArea = null;
     private String bodyPart = null;
+    private String symptom = null;
     private String warning = null;
     private String conditions = null;
 
@@ -20,8 +20,8 @@ class ConditionReferenceBeans implements Parcelable {
     }
 
     private ConditionReferenceBeans(Parcel parcel) {
-        bodyArea = parcel.readString();
         bodyPart = parcel.readString();
+        symptom = parcel.readString();
         warning = parcel.readString();
         conditions = parcel.readString();
     }
@@ -38,12 +38,12 @@ class ConditionReferenceBeans implements Parcelable {
         }
     };
 
-    void setBodyArea(String bodyArea) {
-        this.bodyArea = bodyArea;
-    }
+//    void setBodyPart(String bodyPart) {
+//        this.bodyPart = bodyPart;
+//    }
 
-    void setBodyPart(String bodyPart) {
-        this.bodyPart = bodyPart;
+    void setSymptom(String symptom) {
+        this.symptom = symptom;
     }
 
     void setWarning(String warning) {
@@ -54,12 +54,12 @@ class ConditionReferenceBeans implements Parcelable {
         this.conditions = conditions;
     }
 
-    String getBodyArea() {
-        return bodyArea;
-    }
+//    String getBodyPart() {
+//        return bodyPart;
+//    }
 
-    String getBodyPart() {
-        return bodyPart;
+    String getSymptom() {
+        return symptom;
     }
 
     String getWarning() {
@@ -77,8 +77,8 @@ class ConditionReferenceBeans implements Parcelable {
 
     @Override
     public void writeToParcel(Parcel parcel, int i) {
-        parcel.writeString(bodyArea);
         parcel.writeString(bodyPart);
+        parcel.writeString(symptom);
         parcel.writeString(warning);
         parcel.writeString(conditions);
     }

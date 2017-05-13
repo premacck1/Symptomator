@@ -374,4 +374,5 @@
     </string>
     <string name="show_selected_conditions">Show selected conditions</string>
     <string name="possible_conditions">Possible conditions</string>
+    <string name="show_selected_symptoms_header">Select a symptom to view its possible conditions\nOr click the button below to view the possible conditions for all the selected symptoms.</string>
 </resources>
