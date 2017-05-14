@@ -24,7 +24,7 @@
         android:layout_height="1dp"
         android:layout_below="@+id/header"
         android:layout_marginTop="@dimen/activity_horizontal_margin"
-        android:background="@color/colorSecondaryText"/>
+        android:background="@color/colorDivider"/>
 
     <ListView
         android:visibility="invisible"

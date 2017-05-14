@@ -20,6 +20,7 @@
         android:layout_height="match_parent"
         android:scrollbars="none"
         android:divider="@android:color/transparent"
+        android:dividerHeight="5dp"
         android:listSelector="@android:color/transparent"/>
 
 </FrameLayout>
