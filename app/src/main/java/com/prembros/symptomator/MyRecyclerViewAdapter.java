@@ -1,6 +1,7 @@
 package com.prembros.symptomator;
 
 import android.content.Context;
+import android.database.Cursor;
 import android.graphics.Color;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -24,6 +25,8 @@ class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAdapter.V
     private Context context;
     private boolean isViewChecked;
     private int lastPosition = -1;
+    private DatabaseHolder db;
+    private boolean alreadychecked = false;
 
     MyRecyclerViewAdapter(boolean isViewChecked, Context context, List<String> items,
                           @Nullable CompleteSymptomList.OnFragmentInteractionListener listener2) {
@@ -32,6 +35,7 @@ class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAdapter.V
         if (listener2 != null)
             mListener2 = listener2;
         this.context = context;
+        db = new DatabaseHolder(context);
     }
 
     @Override
@@ -53,15 +57,22 @@ class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAdapter.V
         holder.mItem = mValues.get(position);
         if (isViewChecked) {
             holder.mIdCheckedTextView.setText(valueForPosition);
-//            if (selectedSymptomList != null) {
-//                if (selectedSymptomList.contains(valueForPosition)) {
-//                    holder.mIdCheckedTextView.setChecked(true);
-//                } else {
-//                    holder.mIdCheckedTextView.setChecked(false);
-//                }
-//            }
+            boolean isSelected;
+            db.open();
+
+            Cursor cursor = db.isStringAvailableInTable(holder.mIdCheckedTextView.getText().toString());
+            cursor.moveToFirst();
+            isSelected = cursor.isLast();
+
+            cursor.close();
+            db.close();
+
+            if (isSelected) {
+                holder.mIdCheckedTextView.setChecked(true);
+            } else holder.mIdCheckedTextView.setChecked(false);
+
             holder.mIdCheckedTextView.setChecked(mCheckedItems.get(position));
-            holder.mIdCheckedTextView.setSelected(mCheckedItems.get(position));
+//            holder.mIdCheckedTextView.setSelected(mCheckedItems.get(position));
             if (holder.mIdCheckedTextView.isChecked()) {
                 holder.mIdCheckedTextView.setTextColor(Color.parseColor("#FFFFFF"));
             } else holder.mIdCheckedTextView.setTextColor(Color.parseColor("#000000"));

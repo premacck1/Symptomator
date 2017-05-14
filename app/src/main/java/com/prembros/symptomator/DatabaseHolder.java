@@ -197,6 +197,18 @@ class DatabaseHolder {
         return cursor;
     }
 
+    Cursor isStringAvailableInTable(String item) {
+        Cursor cursor = null;
+        try {
+            cursor = db.query(true, selectedSymptoms_tableName, new String[]{"Symptom"}, "Symptom='" + item + "'", null, null, null, null, null);
+        } catch (SQLiteException e) {
+            if (e.getMessage().contains("no such table")) {
+                Toast.makeText(context, "ERROR: Table doesn't exist", Toast.LENGTH_SHORT).show();
+            }
+        }
+        return cursor;
+    }
+
     /*OLDER METHODS*/
 //    public long insertPatientData(String aadhar, String name, String contact, String email,
 //                                  String gender, String age, String disease, String doctorID,

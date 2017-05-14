@@ -155,9 +155,6 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
             public void onClick(View view) {
                 if (clearFlag) {
                     new ShowSelectedSymptoms().execute("delete");
-//                    toast = Toast.makeText(SymptomCheck.this, "Selection cleared!", Toast.LENGTH_SHORT);
-//                    toast.setGravity(Gravity.CENTER, 0, 0);
-//                    toast.show();
                     uncheckAllViews(recyclerView, symptomList);
                     return;
                 }
@@ -548,6 +545,12 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
             }
             super.onPostExecute(aVoid);
         }
+    }
+
+    @Override
+    protected void onDestroy() {
+        new ShowSelectedSymptoms().execute("delete");
+        super.onDestroy();
     }
 
     @Override
