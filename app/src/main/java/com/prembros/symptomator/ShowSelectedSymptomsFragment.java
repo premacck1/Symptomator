@@ -4,6 +4,7 @@ import android.content.Context;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.Nullable;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.AppCompatTextView;
 import android.view.LayoutInflater;
@@ -11,7 +12,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.ImageButton;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -39,8 +39,8 @@ public class ShowSelectedSymptomsFragment extends Fragment implements View.OnCli
         View rootView = inflater.inflate(R.layout.fragment_show_selected_symptoms, container, false);
         listView = (ListView) rootView.findViewById(R.id.list_selected_symptoms);
         listView.setVisibility(View.VISIBLE);
-        final ImageButton close = (ImageButton) rootView.findViewById(R.id.button_close_selected_symptoms);
-        final ImageButton next = (ImageButton) rootView.findViewById(R.id.button_show_selected_symptoms);
+//        final ImageButton close = (ImageButton) rootView.findViewById(R.id.button_close_selected_symptoms);
+        final FloatingActionButton next = (FloatingActionButton) rootView.findViewById(R.id.button_show_selected_symptoms);
 
         boolean isListEmpty;
         if (selectedSymptoms != null && selectedSymptoms.isEmpty()) {
@@ -65,7 +65,7 @@ public class ShowSelectedSymptomsFragment extends Fragment implements View.OnCli
                 new ArrayAdapter<>(getContext(), R.layout.list_item, selectedSymptoms)
         );
 
-        close.setOnClickListener(this);
+//        close.setOnClickListener(this);
         next.setOnClickListener(this);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -86,9 +86,9 @@ public class ShowSelectedSymptomsFragment extends Fragment implements View.OnCli
             case R.id.button_show_selected_symptoms:
                 mListener.onShowSelectedSymptomsFragmentInteraction("show", selectedSymptoms);
                 break;
-            case R.id.button_close_selected_symptoms:
-                mListener.onShowSelectedSymptomsFragmentInteraction("close", null);
-                break;
+//            case R.id.button_close_selected_symptoms:
+//                mListener.onShowSelectedSymptomsFragmentInteraction("close", null);
+//                break;
             default:
                 break;
         }
@@ -101,7 +101,7 @@ public class ShowSelectedSymptomsFragment extends Fragment implements View.OnCli
             mListener = (OnFragmentInteractionListener) context;
         } else {
             throw new RuntimeException(context.toString()
-                    + " must implement OnFragmentInteractionListener");
+                    + " must implement OnPossibleConditionDetailsInteractionListener");
         }
     }
 

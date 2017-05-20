@@ -218,7 +218,7 @@ public class MainActivity extends AppCompatActivity implements
             return;
         }
         final AlertDialog.Builder dialog = new AlertDialog.Builder(context);
-        dialog.setIcon(R.drawable.ic_call)
+        dialog.setIcon(R.drawable.ic_call_medical_services)
                 .setTitle("Emergency number")
                 .setMessage("*__ " + country + " __*\n\nWe're going to call \"" + number + "\" for you\nClick OKAY to confirm.")
                 .setPositiveButton("okay", new DialogInterface.OnClickListener() {

@@ -39,7 +39,7 @@ import java.util.List;
 public class FirstAidFragment extends Fragment implements RecyclerView.OnItemTouchListener {
 
     private OnFirstAidListFragmentInteractionListener mListener;
-    private MyRecyclerViewAdapter myFirstAidRecyclerViewAdapter;
+    private RecyclerViewAdapter myFirstAidRecyclerViewAdapter;
     private SearchView searchView;
 //    private boolean hidden = true;
 //    SupportAnimator animator;
@@ -81,7 +81,7 @@ public class FirstAidFragment extends Fragment implements RecyclerView.OnItemTou
 //        firstAidList.add("Find more tips online");
         // Set the adapter
         context = list.getContext();
-        myFirstAidRecyclerViewAdapter = new MyRecyclerViewAdapter(false, getContext(), firstAidList, null);
+        myFirstAidRecyclerViewAdapter = new RecyclerViewAdapter(false, getContext(), firstAidList, null);
         list.setLayoutManager(new LinearLayoutManager(context));
         list.setAdapter(myFirstAidRecyclerViewAdapter);
 
@@ -266,7 +266,7 @@ public class FirstAidFragment extends Fragment implements RecyclerView.OnItemTou
 //                }
 
                 list.setLayoutManager(new LinearLayoutManager(context));
-                myFirstAidRecyclerViewAdapter = new MyRecyclerViewAdapter(false, getContext(), filteredList, null);
+                myFirstAidRecyclerViewAdapter = new RecyclerViewAdapter(false, getContext(), filteredList, null);
                 list.setAdapter(myFirstAidRecyclerViewAdapter);
                 myFirstAidRecyclerViewAdapter.notifyDataSetChanged();
                 return true;

@@ -7,18 +7,18 @@ import android.os.Parcelable;
  * Created by Prem $ on 4/13/2017.
  */
 
-class FirstAidBeans implements Parcelable {
+class PageBeans implements Parcelable {
 
     private String field = "";
     private String topic = "";
     private String heading = "";
     private String content = "";
 
-    FirstAidBeans(){
+    PageBeans(){
         //Empty constructor
     }
 
-    private FirstAidBeans(Parcel parcel){
+    private PageBeans(Parcel parcel){
         field = parcel.readString();
         topic = parcel.readString();
         heading = parcel.readString();
@@ -70,15 +70,15 @@ class FirstAidBeans implements Parcelable {
         parcel.writeString(content);
     }
 
-    public static final Creator<FirstAidBeans> CREATOR = new Creator<FirstAidBeans>() {
+    public static final Creator<PageBeans> CREATOR = new Creator<PageBeans>() {
         @Override
-        public FirstAidBeans createFromParcel(Parcel parcel) {
-            return new FirstAidBeans(parcel);
+        public PageBeans createFromParcel(Parcel parcel) {
+            return new PageBeans(parcel);
         }
 
         @Override
-        public FirstAidBeans[] newArray(int size) {
-            return new FirstAidBeans[size];
+        public PageBeans[] newArray(int size) {
+            return new PageBeans[size];
         }
     };
 }

@@ -61,7 +61,7 @@ public class SymptomFragment extends Fragment {
                     case 0:
                         if (selectBodyPart.getVisibility() == View.VISIBLE) {
                             selectBodyPart.startAnimation(AnimationUtils.loadAnimation(getContext(), R.anim.sink_up));
-                            selectBodyPart.setVisibility(View.INVISIBLE);
+                            selectBodyPart.setVisibility(View.GONE);
                         }
                         break;
                     case 1:

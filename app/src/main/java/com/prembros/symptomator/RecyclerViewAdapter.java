@@ -16,7 +16,7 @@ import android.widget.TextView;
 import com.simplecityapps.recyclerview_fastscroll.views.FastScrollRecyclerView;
 import java.util.List;
 
-class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAdapter.ViewHolder>
+class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>
         implements FastScrollRecyclerView.SectionedAdapter {
 
     private SparseBooleanArray mCheckedItems = new SparseBooleanArray();
@@ -26,10 +26,9 @@ class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAdapter.V
     private boolean isViewChecked;
     private int lastPosition = -1;
     private DatabaseHolder db;
-    private boolean alreadychecked = false;
 
-    MyRecyclerViewAdapter(boolean isViewChecked, Context context, List<String> items,
-                          @Nullable CompleteSymptomList.OnFragmentInteractionListener listener2) {
+    RecyclerViewAdapter(boolean isViewChecked, Context context, List<String> items,
+                        @Nullable CompleteSymptomList.OnFragmentInteractionListener listener2) {
         this.isViewChecked = isViewChecked;
         mValues = items;
         if (listener2 != null)

@@ -50,7 +50,7 @@ public class MapsActivity extends AppCompatActivity implements GoogleApiClient.O
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {
             actionBar.setDisplayHomeAsUpEnabled(true);
-            actionBar.setHomeAsUpIndicator(R.drawable.ic_chevron_left);
+            actionBar.setHomeAsUpIndicator(R.drawable.ic_back);
 //            actionBar.setTitle(R.string.symptom);
         }
 

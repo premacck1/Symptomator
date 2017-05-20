@@ -27,7 +27,7 @@ import java.util.List;
 public class CompleteSymptomList extends Fragment {
 
     private OnFragmentInteractionListener mListener;
-    private MyRecyclerViewAdapter recyclerViewAdapter;
+    private RecyclerViewAdapter recyclerViewAdapter;
     List<String> completeSymptomList;
     DatabaseHolder db;
 
@@ -70,7 +70,7 @@ public class CompleteSymptomList extends Fragment {
             }
         }).start();
 
-        recyclerViewAdapter = new MyRecyclerViewAdapter(false, getContext(), completeSymptomList, mListener);
+        recyclerViewAdapter = new RecyclerViewAdapter(false, getContext(), completeSymptomList, mListener);
         list.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL, false));
         list.setAdapter(recyclerViewAdapter);
 
@@ -141,7 +141,7 @@ public class CompleteSymptomList extends Fragment {
                     filteredList.add("Still could not find it?\nClick here to search online");
 
                 list.setLayoutManager(new LinearLayoutManager(getContext()));
-                recyclerViewAdapter = new MyRecyclerViewAdapter(false, getContext(), filteredList, mListener);
+                recyclerViewAdapter = new RecyclerViewAdapter(false, getContext(), filteredList, mListener);
                 list.setAdapter(recyclerViewAdapter);
                 recyclerViewAdapter.notifyDataSetChanged();
             }
@@ -164,7 +164,7 @@ public class CompleteSymptomList extends Fragment {
             mListener = (OnFragmentInteractionListener) context;
         } else {
             throw new RuntimeException(context.toString()
-                    + " must implement OnFragmentInteractionListener");
+                    + " must implement OnPossibleConditionDetailsInteractionListener");
         }
     }
 

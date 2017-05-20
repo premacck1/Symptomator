@@ -50,10 +50,34 @@
             android:longClickable="true"
             app:backgroundTint="@color/colorFabNormal"
             app:rippleColor="@color/colorRipple"
-            android:src="@drawable/ic_format_list_bulleted"
+            android:src="@drawable/ic_next"
             tools:ignore="VectorDrawableCompat" />
 
     </LinearLayout>
+
+    <io.codetail.widget.RevealFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:visibility="invisible"
+            android:id="@+id/fab_revealView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="28sp"
+                android:textColor="@color/white_text_icons"
+                android:text="@string/selection_cleared"/>
+
+        </FrameLayout>
+
+    </io.codetail.widget.RevealFrameLayout>
 
     <io.codetail.widget.RevealFrameLayout
         android:layout_width="match_parent"
@@ -85,21 +109,9 @@
 
         <FrameLayout
             android:visibility="invisible"
-            android:id="@+id/fab_revealView"
+            android:id="@+id/fab_condition_details_revealView"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="@dimen/activity_horizontal_margin"
-                android:gravity="center"
-                android:layout_gravity="center"
-                android:textSize="28sp"
-                android:textColor="@color/white_text_icons"
-                android:text="@string/selection_cleared"/>
-
-        </FrameLayout>
+            android:layout_height="match_parent"/>
 
     </io.codetail.widget.RevealFrameLayout>
 

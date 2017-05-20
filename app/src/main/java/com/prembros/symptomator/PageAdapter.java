@@ -15,24 +15,24 @@ import android.widget.ListAdapter;
 
 import java.util.ArrayList;
 
-class FirstAidDetailsAdapter extends BaseAdapter implements ListAdapter {
+class PageAdapter extends BaseAdapter implements ListAdapter {
 
     private Context context;
-    private ArrayList<FirstAidBeans> firstAidBeansArrayList;
+    private ArrayList<PageBeans> pageBeansArrayList;
 
-    FirstAidDetailsAdapter(Context context, ArrayList<FirstAidBeans> firstAidBeansArrayList){
+    PageAdapter(Context context, ArrayList<PageBeans> pageBeansArrayList){
         this.context = context;
-        this.firstAidBeansArrayList = firstAidBeansArrayList;
+        this.pageBeansArrayList = pageBeansArrayList;
     }
 
     @Override
     public int getCount() {
-        return firstAidBeansArrayList.size();
+        return pageBeansArrayList.size();
     }
 
     @Override
     public Object getItem(int position) {
-        return firstAidBeansArrayList.get(position);
+        return pageBeansArrayList.get(position);
     }
 
     @Override
@@ -48,16 +48,16 @@ class FirstAidDetailsAdapter extends BaseAdapter implements ListAdapter {
 
         if (view == null){
             LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            view = inflater.inflate(R.layout.first_aid_check_list_item, null);
+            view = inflater.inflate(R.layout.page_list_item, null);
         }
 
         headingTextView = (AppCompatTextView) view.findViewById(R.id.heading);
         if (headingTextView != null) {
-            headingTextView.setText(firstAidBeansArrayList.get(position).getHeading());
+            headingTextView.setText(pageBeansArrayList.get(position).getHeading());
         }
         contentTextView = (AppCompatTextView) view.findViewById(R.id.content);
         if (contentTextView != null){
-            contentTextView.setText(firstAidBeansArrayList.get(position).getContent());
+            contentTextView.setText(pageBeansArrayList.get(position).getContent());
         }
         return view;
     }

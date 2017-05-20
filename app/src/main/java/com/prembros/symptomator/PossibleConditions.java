@@ -1,24 +1,26 @@
 package com.prembros.symptomator;
 
+import android.content.Context;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.AppCompatTextView;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.ProgressBar;
+
+import com.balysv.materialripple.MaterialRippleLayout;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -28,6 +30,8 @@ public class PossibleConditions extends Fragment {
     private String[] previousHeading = new String[2];
     private ArrayList<String> selectedSymptoms;
     private View rootView;
+    private RecyclerView recyclerView;
+    private OnPossibleConditionsFragmentInteractionsListener mListener;
 
     @Nullable
     @Override
@@ -45,6 +49,7 @@ public class PossibleConditions extends Fragment {
                 }
             }
         }
+        recyclerView = (RecyclerView) rootView.findViewById(R.id.recyclerview);
 
         actionBar = ((AppCompatActivity)getActivity()).getSupportActionBar();
         if (actionBar != null) {
@@ -54,31 +59,18 @@ public class PossibleConditions extends Fragment {
             actionBar.setSubtitle(subtitle);
         }
 
-        try {
-            if (selectedSymptoms.size() == 1) {
-                new ParseInBackground().execute(readJSONFromFile(), bodyPart, selectedSymptoms.get(0));
-            } else new ParseInBackground().execute(readJSONFromFile(), bodyPart, null);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        if (selectedSymptoms.size() == 1) {
+            new ParseInBackground().execute(JSONReader.read(getContext(), "ConditionsReference"), bodyPart, selectedSymptoms.get(0));
+        } else new ParseInBackground().execute(JSONReader.read(getContext(), "ConditionsReference"), bodyPart, null);
+
+        recyclerView.addOnItemTouchListener(new RecyclerViewOnItemClickListener(getContext(), new RecyclerViewOnItemClickListener.OnItemClickListener() {
+            @Override
+            public void onItemClick(View view, int position) {
+                mListener.OnPossibleConditionsInteractionListener(
+                        ((AppCompatTextView)((MaterialRippleLayout)((LinearLayout) view).getChildAt(0)).getChildAt(0)).getText().toString());
+            }
+        }));
         return rootView;
-    }
-
-    /**============= Read from JSON file in Internal Memory ===============*/
-    public String readJSONFromFile() throws IOException {
-        BufferedReader bufferedReader = new BufferedReader(
-                new InputStreamReader(
-                        getActivity().getAssets().open("ConditionsReference.txt")
-                )
-        );
-        String read;
-        StringBuilder builder = new StringBuilder("");
-
-        while((read = bufferedReader.readLine()) != null){
-            builder.append(read);
-        }
-        bufferedReader.close();
-        return builder.toString();
     }
 
     private class ParseInBackground extends AsyncTask<String, Void, ArrayList<ConditionReferenceBeans>> {
@@ -103,8 +95,8 @@ public class PossibleConditions extends Fragment {
                     e.printStackTrace();
                 }
                 if (strings[2] != null)
-                    return new ConditionsReferenceJSONParser().parse(jsonObject, strings[1], strings[2]);
-                else return new ConditionsReferenceJSONParser().parseAll(jsonObject, strings[1],
+                    return new JSONParser().parseSingleConditionList(jsonObject, strings[1], strings[2]);
+                else return new JSONParser().parseAllConditionsList(jsonObject, strings[1],
                         selectedSymptoms.toArray(new String[selectedSymptoms.size()]));
             }
             else {
@@ -116,7 +108,6 @@ public class PossibleConditions extends Fragment {
         @Override
         protected void onPostExecute(ArrayList<ConditionReferenceBeans> conditionReferenceBeanses) {
             progressBar.setVisibility(View.GONE);
-            RecyclerView recyclerView = (RecyclerView) rootView.findViewById(R.id.recyclerview);
             if (conditionReferenceBeanses != null) {
                 List<String> conditions = new ArrayList<>();
                 for (int i = 0; i < conditionReferenceBeanses.size(); i++) {
@@ -127,13 +118,24 @@ public class PossibleConditions extends Fragment {
                         }
                     }
                 }
-                recyclerView.setAdapter(new MyRecyclerViewAdapter(false, getContext(), conditions, null));
+                recyclerView.setAdapter(new RecyclerViewAdapter(false, getContext(), conditions, null));
             }
             else {
                 List<String> item = new ArrayList<>();
                 item.add("Conditions List returned NULL!");
-                recyclerView.setAdapter(new MyRecyclerViewAdapter(false, getContext(), item, null));
+                recyclerView.setAdapter(new RecyclerViewAdapter(false, getContext(), item, null));
             }
+        }
+    }
+
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+        if (context instanceof OnPossibleConditionsFragmentInteractionsListener) {
+            mListener = (OnPossibleConditionsFragmentInteractionsListener) context;
+        } else {
+            throw new RuntimeException(context.toString()
+                    + " must implement OnPossibleConditionDetailsInteractionListener");
         }
     }
 
@@ -142,5 +144,9 @@ public class PossibleConditions extends Fragment {
         actionBar.setTitle(previousHeading[0]);
         actionBar.setSubtitle(previousHeading[1]);
         super.onDestroy();
+    }
+
+    interface OnPossibleConditionsFragmentInteractionsListener {
+        void OnPossibleConditionsInteractionListener(String item);
     }
 }

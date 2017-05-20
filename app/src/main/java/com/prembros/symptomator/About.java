@@ -43,7 +43,7 @@ public class About extends Fragment {
         if (actionBar != null) {
             isHomeAsUpShown = (actionBar.getDisplayOptions() & ActionBar.DISPLAY_HOME_AS_UP) != 0;
             actionBar.setDisplayHomeAsUpEnabled(true);
-            actionBar.setHomeAsUpIndicator(R.drawable.ic_chevron_left);
+            actionBar.setHomeAsUpIndicator(R.drawable.ic_back);
             previousTitle = actionBar.getTitle().toString();
             previousSubTitle = actionBar.getSubtitle().toString();
             actionBar.setTitle(R.string.about);

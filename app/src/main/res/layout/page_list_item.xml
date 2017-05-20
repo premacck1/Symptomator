@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:layout_marginTop="@dimen/activity_horizontal_margin"
-    android:background="@drawable/checked_button_disabled_light"
+    android:background="@drawable/page_para_bg"
     android:paddingBottom="@dimen/activity_horizontal_margin">
 
     <android.support.v7.widget.AppCompatTextView

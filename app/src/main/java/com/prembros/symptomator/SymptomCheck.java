@@ -38,17 +38,16 @@ import io.codetail.animation.SupportAnimator;
 import static io.codetail.animation.ViewAnimationUtils.createCircularReveal;
 
 public class SymptomCheck extends AppCompatActivity implements CompleteSymptomList.OnFragmentInteractionListener,
-        ShowSelectedSymptomsFragment.OnFragmentInteractionListener {
+        ShowSelectedSymptomsFragment.OnFragmentInteractionListener, PossibleConditions.OnPossibleConditionsFragmentInteractionsListener {
 
     private ActionBar actionBar;
-    private MyRecyclerViewAdapter recyclerViewAdapter;
+    private RecyclerViewAdapter recyclerViewAdapter;
     private List<String> symptomList;
     private RecyclerView recyclerView;
     private String selectedBodyPart;
     private FragmentManager fragmentManager;
     private FrameLayout revealView;
     private SupportAnimator animator;
-    boolean somethingIsActive = false;
     private int[] touchCoordinate = new int[2];
     private DatabaseHolder db;
     private ArrayList<String> selectedSymptoms;
@@ -78,7 +77,7 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
         actionBar = getSupportActionBar();
         if (actionBar != null) {
             actionBar.setDisplayHomeAsUpEnabled(true);
-            actionBar.setHomeAsUpIndicator(R.drawable.ic_chevron_left);
+            actionBar.setHomeAsUpIndicator(R.drawable.ic_back);
             actionBar.setTitle(R.string.symptom);
         }
 
@@ -116,7 +115,7 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
         }
         ).start();
 
-        recyclerViewAdapter = new MyRecyclerViewAdapter(true, this, symptomList, null);
+        recyclerViewAdapter = new RecyclerViewAdapter(true, this, symptomList, null);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(recyclerViewAdapter);
 
@@ -198,7 +197,7 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
         revealView.setBackgroundResource(R.color.colorSecondary);
 //        final CheckedTextView[] checkedTextView = new CheckedTextView[1];
 //        for (int i = 0; i < recyclerView.getChildCount(); i++) {
-////            MyRecyclerViewAdapter.mCheckedItems.put(i, false);
+////            RecyclerViewAdapter.mCheckedItems.put(i, false);
 //            checkedTextView[0] = (CheckedTextView) ((MaterialRippleLayout)((RelativeLayout) recyclerView.getChildAt(0)).getChildAt(0)).getChildAt(0);
 //            checkedTextView[0].setChecked(false);
 //        }
@@ -207,7 +206,7 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                recyclerView.setAdapter(new MyRecyclerViewAdapter(true, SymptomCheck.this, items, null));
+                recyclerView.setAdapter(new RecyclerViewAdapter(true, SymptomCheck.this, items, null));
                 animationReversed(revealView, touchCoordinate);
             }
         }, 800);
@@ -223,7 +222,6 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
                     .setCustomAnimations(R.anim.fragment_anim_in, R.anim.fragment_anim_out)
                     .add(R.id.symptom_check_fragment_container, new CompleteSymptomList(), "completeSymptomList")
                     .commit();
-            somethingIsActive = true;
         } else {
             final String viewText = checkedTextView.getText().toString();
 
@@ -321,7 +319,7 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
                 }
 
                 recyclerView.setLayoutManager(new LinearLayoutManager(SymptomCheck.this));
-                recyclerViewAdapter = new MyRecyclerViewAdapter(true, SymptomCheck.this, filteredList, null);
+                recyclerViewAdapter = new RecyclerViewAdapter(true, SymptomCheck.this, filteredList, null);
                 recyclerView.setAdapter(recyclerViewAdapter);
                 recyclerViewAdapter.notifyDataSetChanged();
                 return true;
@@ -339,7 +337,6 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
             case R.id.action_about:
                 animationForward(revealView, touchCoordinate[0], touchCoordinate[1], 600);
                 fragmentManager.beginTransaction().add(R.id.menu_fragment_container, new About(), "about").commit();
-                somethingIsActive = true;
             default:
                 return false;
         }
@@ -390,60 +387,6 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
         }
     }
 
-    void removeFragmentIfAttached(final String tag){
-        if (fragmentManager.findFragmentByTag(tag) != null){
-            switch (tag){
-                case "completeSymptomList":
-                    actionBar.show();
-                    fragmentManager.beginTransaction()
-                            .setCustomAnimations(R.anim.fragment_anim_in, R.anim.fragment_anim_out)
-                            .remove(fragmentManager.findFragmentByTag(tag))
-                            .commit();
-                    recyclerView.setVisibility(View.VISIBLE);
-                    somethingIsActive = false;
-                    break;
-                case "about":
-                    animationReversed(this.findViewById(R.id.menu_fragment_container), touchCoordinate);
-                    new Handler().postDelayed(new Runnable() {
-                        @Override
-                        public void run() {
-                            removeFragment(tag);
-                        }
-                    }, 800);
-                    somethingIsActive = false;
-                    break;
-                case "selectedSymptoms":
-                    animationReversed(this.findViewById(R.id.fab_show_revealView), touchCoordinate);
-                    new Handler().postDelayed(new Runnable() {
-                        @Override
-                        public void run() {
-                            removeFragment(tag);
-                        }
-                    }, 600);
-                    somethingIsActive = false;
-                    break;
-                case "possibleConditions":
-                    animationReversed(this.findViewById(R.id.fab_show_conditions_revealView), touchCoordinate);
-                    new Handler().postDelayed(new Runnable() {
-                        @Override
-                        public void run() {
-                            removeFragment(tag);
-                        }
-                    }, 600);
-                    somethingIsActive = false;
-                    break;
-                default:
-                    break;
-            }
-        }
-    }
-
-    void removeFragment(String tag) {
-        fragmentManager.beginTransaction()
-                .remove(fragmentManager.findFragmentByTag(tag))
-                .commit();
-    }
-
     @Override
     public void onFragmentInteraction(String item) {
 
@@ -463,10 +406,10 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
 
                     animationForward(this.findViewById(R.id.fab_show_conditions_revealView), touchCoordinate[0], touchCoordinate[1], 600);
                     fragmentManager.beginTransaction()
+//                            .setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out)
                             .add(R.id.fab_show_conditions_revealView, possibleConditions, "possibleConditions")
                             .commit();
 
-                    somethingIsActive = true;
                 }
                 break;
             case "close":
@@ -475,6 +418,18 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
             default:
                 break;
         }
+    }
+
+    @Override
+    public void OnPossibleConditionsInteractionListener(String item) {
+        animationForward(this.findViewById(R.id.fab_condition_details_revealView), touchCoordinate[0], touchCoordinate[1], 600);
+        fragmentManager.beginTransaction()
+                .add(
+                        R.id.fab_condition_details_revealView,
+                        PossibleConditionDetails.newInstance(item),
+                        "conditionDetails"
+                )
+                .commit();
     }
 
     /*ASYNCTASK FOR SHOWING OR DELETING SELECTED SYMPTOMS*/
@@ -541,7 +496,6 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
                 fragmentManager.beginTransaction()
                         .add(R.id.fab_show_revealView, selectedSymptomsFragment, "selectedSymptoms")
                         .commit();
-                somethingIsActive = true;
             }
             super.onPostExecute(aVoid);
         }
@@ -553,15 +507,74 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
         super.onDestroy();
     }
 
+    void removeFragmentIfAttached(final String tag){
+        switch (tag){
+            case "completeSymptomList":
+                actionBar.show();
+                fragmentManager.beginTransaction()
+                        .setCustomAnimations(R.anim.fragment_anim_in, R.anim.fragment_anim_out)
+                        .remove(fragmentManager.findFragmentByTag(tag))
+                        .commit();
+                recyclerView.setVisibility(View.VISIBLE);
+                break;
+            case "about":
+                animationReversed(this.findViewById(R.id.menu_fragment_container), touchCoordinate);
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        removeFragment(tag);
+                    }
+                }, 800);
+                break;
+            case "selectedSymptoms":
+                animationReversed(this.findViewById(R.id.fab_show_revealView), touchCoordinate);
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        removeFragment(tag);
+                    }
+                }, 600);
+                break;
+            case "possibleConditions":
+                animationReversed(this.findViewById(R.id.fab_show_conditions_revealView), touchCoordinate);
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        removeFragment(tag);
+                    }
+                }, 600);
+                break;
+            case "conditionDetails":
+                animationReversed(this.findViewById(R.id.fab_condition_details_revealView), touchCoordinate);
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        removeFragment(tag);
+                    }
+                }, 600);
+                break;
+            default:
+                break;
+        }
+    }
+
+    void removeFragment(String tag) {
+        fragmentManager.beginTransaction()
+                .remove(fragmentManager.findFragmentByTag(tag))
+                .commit();
+    }
+
+    boolean isFragmentActive(String tag) {
+        return fragmentManager.findFragmentByTag(tag) != null && fragmentManager.findFragmentByTag(tag).isAdded();
+    }
+
     @Override
     public void onBackPressed() {
-        if (somethingIsActive) {
-            removeFragmentIfAttached("completeSymptomList");
-            removeFragmentIfAttached("about");
-            removeFragmentIfAttached("possibleConditions");
-            removeFragmentIfAttached("selectedSymptoms");
-        }
-        else
-            super.onBackPressed();
+        if (isFragmentActive("completeSymptomList")) removeFragmentIfAttached("completeSymptomList");
+        else if (isFragmentActive("about")) removeFragmentIfAttached("about");
+        else if (isFragmentActive("conditionDetails")) removeFragmentIfAttached("conditionDetails");
+        else if (isFragmentActive("possibleConditions")) removeFragmentIfAttached("possibleConditions");
+        else if (isFragmentActive("selectedSymptoms")) removeFragmentIfAttached("selectedSymptoms");
+        else super.onBackPressed();
     }
 }
