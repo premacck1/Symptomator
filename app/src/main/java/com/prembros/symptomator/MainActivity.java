@@ -34,7 +34,7 @@ import static io.codetail.animation.ViewAnimationUtils.createCircularReveal;
 
 public class MainActivity extends AppCompatActivity implements
         SymptomFragment.OnSymptomFragmentInteractionListener,
-        FirstAidFragment.OnFirstAidListFragmentInteractionListener, ServicesFragment.OnServicesInteractionListener {
+        FirstAidFragment.OnFirstAidListFragmentInteractionListener {
 
     private FragmentManager fragmentManager;
     private BottomNavigationView navigation;
@@ -321,10 +321,6 @@ public class MainActivity extends AppCompatActivity implements
                 }
             }
         }
-    }
-
-    @Override
-    public void onServicesInteraction(Uri uri) {
     }
 
     @Override
