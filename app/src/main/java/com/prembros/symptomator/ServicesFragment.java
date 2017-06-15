@@ -1,8 +1,6 @@
 package com.prembros.symptomator;
 
-import android.content.Context;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.ActionBar;
@@ -21,7 +19,7 @@ public class ServicesFragment extends Fragment implements View.OnClickListener {
 //    private String mParam1;
 //    private String mParam2;
 
-    private OnServicesInteractionListener mListener;
+//    private OnServicesInteractionListener mListener;
 
     public ServicesFragment() {
         // Required empty public constructor
@@ -36,14 +34,14 @@ public class ServicesFragment extends Fragment implements View.OnClickListener {
 //        return fragment;
 //    }
 
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+//    @Override
+//    public void onCreate(Bundle savedInstanceState) {
+//        super.onCreate(savedInstanceState);
 //        if (getArguments() != null) {
 //            mParam1 = getArguments().getString(ARG_PARAM1);
 //            mParam2 = getArguments().getString(ARG_PARAM2);
 //        }
-    }
+//    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -66,23 +64,6 @@ public class ServicesFragment extends Fragment implements View.OnClickListener {
     }
 
     @Override
-    public void onAttach(Context context) {
-        super.onAttach(context);
-        if (context instanceof OnServicesInteractionListener) {
-            mListener = (OnServicesInteractionListener) context;
-        } else {
-            throw new RuntimeException(context.toString()
-                    + " must implement OnServicesInteractionListener");
-        }
-    }
-
-    @Override
-    public void onDetach() {
-        super.onDetach();
-        mListener = null;
-    }
-
-    @Override
     public void onClick(View view) {
 
         switch (view.getId()){
@@ -98,7 +79,24 @@ public class ServicesFragment extends Fragment implements View.OnClickListener {
         }
     }
 
-    interface OnServicesInteractionListener {
-        void onServicesInteraction(Uri uri);
-    }
+//    @Override
+//    public void onAttach(Context context) {
+//        super.onAttach(context);
+//        if (context instanceof OnServicesInteractionListener) {
+//            mListener = (OnServicesInteractionListener) context;
+//        } else {
+//            throw new RuntimeException(context.toString()
+//                    + " must implement OnServicesInteractionListener");
+//        }
+//    }
+
+//    @Override
+//    public void onDetach() {
+//        super.onDetach();
+//        mListener = null;
+//    }
+
+//    interface OnServicesInteractionListener {
+//        void onServicesInteraction(Uri uri);
+//    }
 }
