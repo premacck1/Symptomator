@@ -11,7 +11,7 @@
         app:mrl_rippleColor="@color/colorPrimaryDark"
         app:mrl_rippleOverlay="true"
         app:mrl_rippleHover="true"
-        app:mrl_rippleDelayClick="true"
+        app:mrl_rippleDelayClick="false"
         app:mrl_rippleRoundedCorners="2dp"
         app:mrl_rippleAlpha="0.2">
 

@@ -10,7 +10,7 @@
     app:fastScrollAutoHide="false"
     app:fastScrollPopupBgColor="@color/colorSecondary"
     app:fastScrollPopupTextColor="@color/colorSecondaryText"
-    app:fastScrollThumbColor="@color/colorPrimaryLight"
+    app:fastScrollThumbColor="@color/colorSecondary"
     app:fastScrollTrackColor="@color/transparent"
     app:layoutManager="LinearLayoutManager"
     tools:context="com.prembros.symptomator.FirstAidFragment"

@@ -1,7 +1,6 @@
 package com.prembros.symptomator;
 
 import android.content.Context;
-import android.database.Cursor;
 import android.graphics.Color;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -13,7 +12,9 @@ import android.view.ViewGroup;
 import android.view.animation.AnimationUtils;
 import android.widget.CheckedTextView;
 import android.widget.TextView;
+
 import com.simplecityapps.recyclerview_fastscroll.views.FastScrollRecyclerView;
+
 import java.util.List;
 
 class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>
@@ -25,7 +26,6 @@ class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewH
     private Context context;
     private boolean isViewChecked;
     private int lastPosition = -1;
-    private DatabaseHolder db;
 
     RecyclerViewAdapter(boolean isViewChecked, Context context, List<String> items,
                         @Nullable CompleteSymptomList.OnFragmentInteractionListener listener2) {
@@ -34,7 +34,6 @@ class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewH
         if (listener2 != null)
             mListener2 = listener2;
         this.context = context;
-        db = new DatabaseHolder(context);
     }
 
     @Override
@@ -57,18 +56,18 @@ class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewH
         if (isViewChecked) {
             holder.mIdCheckedTextView.setText(valueForPosition);
             boolean isSelected;
-            db.open();
+//            db.open();
+//
+//            Cursor cursor = db.isStringAvailableInTable(holder.mIdCheckedTextView.getText().toString());
+//            cursor.moveToFirst();
+//            isSelected = cursor.isLast();
+//
+//            cursor.close();
+//            db.close();
 
-            Cursor cursor = db.isStringAvailableInTable(holder.mIdCheckedTextView.getText().toString());
-            cursor.moveToFirst();
-            isSelected = cursor.isLast();
-
-            cursor.close();
-            db.close();
-
-            if (isSelected) {
-                holder.mIdCheckedTextView.setChecked(true);
-            } else holder.mIdCheckedTextView.setChecked(false);
+//            if (isSelected) {
+//                holder.mIdCheckedTextView.setChecked(true);
+//            } else holder.mIdCheckedTextView.setChecked(false);
 
             holder.mIdCheckedTextView.setChecked(mCheckedItems.get(position));
 //            holder.mIdCheckedTextView.setSelected(mCheckedItems.get(position));

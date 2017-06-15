@@ -42,7 +42,7 @@ public class Introduction extends AppIntro2 {
         new HttpAsyncTask().execute();
 
         addSlide(AppIntroFragment.newInstance("Hey there!", "Welcome to Symptomator!\nCheck for possible diseases by choosing symptoms.",
-                R.drawable.ic_app_logo, rgb(26,188,156)));
+                R.drawable.ic_app_logo_png, rgb(26,188,156)));
 
         addSlide(AppIntroFragment.newInstance("First Aid Info", "Because you never know, it may come in handy at any time.",
                 R.drawable.ic_first_aid_intro, rgb(161,136,127)));

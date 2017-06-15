@@ -63,6 +63,7 @@ public class CompleteSymptomList extends Fragment {
                     }
                 }
                 completeSymptomList.add("Still could not find it?\nClick here to search online");
+                completeSymptomList.add(" ");
                 if (cursor != null) {
                     cursor.close();
                 }
@@ -137,6 +138,7 @@ public class CompleteSymptomList extends Fragment {
                     if (text.contains(charSequence))
                         filteredList.add(completeSymptomList.get(x));
                 }
+//                filteredList.add(" ");
                 if (filteredList.size() != completeSymptomList.size())
                     filteredList.add("Still could not find it?\nClick here to search online");
 

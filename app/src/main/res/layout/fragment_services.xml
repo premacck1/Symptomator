@@ -1,0 +1,144 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/services_revealView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSecondary"
+    android:layout_marginBottom="?attr/actionBarSize"
+    android:gravity="end">
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:id="@+id/ripple_layout_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/line_text_view_1"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            app:mrl_rippleOverlay="true"
+            app:mrl_rippleHover="true"
+            app:mrl_rippleDelayClick="false"
+            app:mrl_rippleColor="@color/white_text_icons">
+
+            <TextView
+                android:id="@+id/find_doctors_nearby"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/activity_horizontal_margin"
+                android:paddingBottom="@dimen/activity_horizontal_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="32dp"
+                android:textColor="@color/white_text_icons"
+                android:text="@string/find_doctors_nearby"
+                android:gravity="center"
+                android:drawableStart="@drawable/ic_doctor"
+                android:onClick="onButtonClick"/>
+
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+        <TextView
+            android:id="@+id/line_text_view_1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/ripple_layout_2"
+            android:background="@color/colorDividerLight"/>
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:id="@+id/ripple_layout_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/line_text_view_2"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            app:mrl_rippleOverlay="true"
+            app:mrl_rippleHover="true"
+            app:mrl_rippleDelayClick="false"
+            app:mrl_rippleColor="@color/white_text_icons">
+
+            <TextView
+                android:id="@+id/find_hospitals_nearby"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/activity_horizontal_margin"
+                android:paddingBottom="@dimen/activity_horizontal_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="32dp"
+                android:textColor="@color/white_text_icons"
+                android:text="@string/find_nearby_hospitals"
+                android:gravity="center"
+                android:drawableStart="@drawable/ic_hospital"
+                android:onClick="onButtonClick"/>
+
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+        <TextView
+            android:id="@+id/line_text_view_2"
+            android:layout_width="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_height="1dp"
+            android:background="@color/colorDividerLight"/>
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:id="@+id/ripple_layout_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line_text_view_2"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            app:mrl_rippleOverlay="true"
+            app:mrl_rippleHover="true"
+            app:mrl_rippleDelayClick="false"
+            app:mrl_rippleColor="@color/white_text_icons">
+
+            <TextView
+                android:id="@+id/hospital_nearest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/activity_horizontal_margin"
+                android:paddingBottom="@dimen/activity_horizontal_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="32dp"
+                android:textColor="@color/white_text_icons"
+                android:text="@string/get_to_the_nearest_hospital"
+                android:gravity="center"
+                android:drawableStart="@drawable/ic_nearby"
+                android:onClick="onButtonClick"/>
+
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+        <TextView
+            android:id="@+id/line_text_view_3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/ripple_layout_3"
+            android:background="@color/colorDividerLight"/>
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:id="@+id/ripple_layout_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line_text_view_3"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            app:mrl_rippleOverlay="true"
+            app:mrl_rippleHover="true"
+            app:mrl_rippleDelayClick="false"
+            app:mrl_rippleColor="@color/white_text_icons">
+
+            <TextView
+                android:id="@+id/call_108"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/activity_horizontal_margin"
+                android:paddingBottom="@dimen/activity_horizontal_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="32dp"
+                android:textColor="@color/white_text_icons"
+                android:text="@string/call_108"
+                android:gravity="center"
+                android:drawableStart="@drawable/ic_call_medical_services"
+                android:onClick="onButtonClick"/>
+
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+</RelativeLayout>
+

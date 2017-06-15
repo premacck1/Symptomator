@@ -6,7 +6,6 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
-import android.graphics.Rect;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
@@ -16,7 +15,7 @@ import android.support.annotation.Nullable;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentManager;
-import android.support.v7.app.ActionBar;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.telephony.TelephonyManager;
@@ -26,31 +25,24 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.animation.AccelerateDecelerateInterpolator;
 import android.view.animation.AnimationUtils;
-import android.widget.LinearLayout;
 
 import java.util.Locale;
 
 import io.codetail.animation.SupportAnimator;
-import io.codetail.widget.RevealFrameLayout;
 
 import static io.codetail.animation.ViewAnimationUtils.createCircularReveal;
 
 public class MainActivity extends AppCompatActivity implements
         SymptomFragment.OnSymptomFragmentInteractionListener,
-        FirstAidFragment.OnFirstAidListFragmentInteractionListener {
+        FirstAidFragment.OnFirstAidListFragmentInteractionListener, ServicesFragment.OnServicesInteractionListener {
 
     private FragmentManager fragmentManager;
     private BottomNavigationView navigation;
-    private LinearLayout revealView;
-    private boolean hidden = true;
+//    private LinearLayout revealView;
+//    private boolean hidden = true;
     boolean somethingIsActive = false;
     private SupportAnimator animator;
-    private RevealFrameLayout revealViewContainer;
-    private Rect rect = null;
-    private ActionBar actionBar;
-    private String[] previousTitles = new String[2];
     private int[] touchCoordinate = new int[2];
-//    private GoogleApiClient googleApiClient;
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -61,34 +53,38 @@ public class MainActivity extends AppCompatActivity implements
             switch (item.getItemId()) {
                 case R.id.navigation_by_symptom:
                     if (fragmentManager.findFragmentByTag("symptomFragment") == null) {
-                        fragmentManager.beginTransaction().setCustomAnimations(
-                                R.anim.fragment_anim_in, android.R.anim.fade_out,
-                                android.R.anim.fade_in, android.R.anim.fade_out)
+                        fragmentManager.beginTransaction()
+                                .setCustomAnimations(R.anim.fragment_anim_in, android.R.anim.fade_out,
+                                        android.R.anim.fade_in, android.R.anim.fade_out)
                                 .replace(R.id.main_fragment_container, new SymptomFragment(), "symptomFragment")
                                 .commit();
+                        navigation.setItemBackgroundResource(R.color.colorDividerLight);
+                        navigation.setItemTextColor(ContextCompat.getColorStateList(navigation.getContext(), R.color.colorSecondaryText));
+                        navigation.setItemIconTintList(ContextCompat.getColorStateList(navigation.getContext(), R.color.colorSecondaryText));
                     }
                     return true;
                 case R.id.navigation_by_first_aid:
                     if (fragmentManager.findFragmentByTag("firstAidFragment") == null) {
-                        fragmentManager.beginTransaction().setCustomAnimations(
-                                R.anim.fragment_anim_in, android.R.anim.fade_out,
-                                android.R.anim.fade_in, android.R.anim.fade_out)
+                        fragmentManager.beginTransaction()
+                                .setCustomAnimations(R.anim.fragment_anim_in, android.R.anim.fade_out,
+                                        android.R.anim.fade_in, android.R.anim.fade_out)
                                 .replace(R.id.main_fragment_container, new FirstAidFragment(), "firstAidFragment")
                                 .commit();
+                        navigation.setItemBackgroundResource(R.color.colorDividerLight);
+                        navigation.setItemTextColor(ContextCompat.getColorStateList(navigation.getContext(), R.color.colorSecondaryText));
+                        navigation.setItemIconTintList(ContextCompat.getColorStateList(navigation.getContext(), R.color.colorSecondaryText));
                     }
                     return true;
                 case R.id.navigation_by_services:
-                    if (hidden) {
-                        if (actionBar != null) {
-                            previousTitles[0] = actionBar.getTitle().toString();
-                            previousTitles[1] = actionBar.getSubtitle().toString();
-                            actionBar.setTitle(R.string.services);
-                            actionBar.setSubtitle(R.string.services_subtitle);
-                        }
-                        animationForward(revealView, touchCoordinate, 600);
-                        hidden = false;
-                    } else {
-                        animationReversed(revealView);
+                    if (fragmentManager.findFragmentByTag("servicesFragment") == null) {
+                        fragmentManager.beginTransaction()
+                                .setCustomAnimations(R.anim.fragment_anim_in, android.R.anim.fade_out,
+                                        android.R.anim.fade_in, android.R.anim.fade_out)
+                                .replace(R.id.main_fragment_container, new ServicesFragment(), "servicesFragment")
+                                .commit();
+                        navigation.setItemBackgroundResource(R.color.colorSecondary);
+                        navigation.setItemTextColor(ContextCompat.getColorStateList(navigation.getContext(), R.color.white_text_icons));
+                        navigation.setItemIconTintList(ContextCompat.getColorStateList(navigation.getContext(), R.color.white_text_icons));
                     }
                     return true;
                 default:
@@ -112,10 +108,8 @@ public class MainActivity extends AppCompatActivity implements
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        actionBar = getSupportActionBar();
 
-        revealViewContainer = (RevealFrameLayout) this.findViewById(R.id.reveal_view_container);
-        revealView = (LinearLayout) this.findViewById(R.id.services_revealView);
+//        revealView = (LinearLayout) this.findViewById(R.id.services_revealView);
         fragmentManager = getSupportFragmentManager();
         fragmentManager.beginTransaction().setCustomAnimations(
                 R.anim.fragment_anim_in, android.R.anim.fade_out,
@@ -138,23 +132,12 @@ public class MainActivity extends AppCompatActivity implements
     }
 
     public void onButtonClick(View view){
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                animationReversed(revealView);
-            }
-        }, 250);
-        switch (view.getId()){
-            case R.id.call_108:
-                callEmergencyServices(MainActivity.this);
-                break;
-            case R.id.find_hospitals_nearby:
-                startActivity(new Intent(this, MapsActivity.class));
-                break;
-            default:
-//                Toast.makeText(this, "This feature is coming soon!", Toast.LENGTH_SHORT).show();
-                break;
-        }
+//        new Handler().postDelayed(new Runnable() {
+//            @Override
+//            public void run() {
+//                animationReversed(revealView);
+//            }
+//        }, 250);
     }
 
     public static void callEmergencyServices(final Context context){
@@ -175,17 +158,17 @@ public class MainActivity extends AppCompatActivity implements
     public boolean dispatchTouchEvent(MotionEvent ev) {
         touchCoordinate[0] = (int) ev.getX();
         touchCoordinate[1] = (int) ev.getY();
-        if (rect != null) {
-            int height = findViewById(R.id.call_108).getHeight();
-            height = height + (height / 2);
-            revealViewContainer.getHitRect(rect);
-            rect.bottom += height;
-            rect.top += height;
-            if (!hidden && !rect.contains((int) ev.getX(), (int) ev.getY())) {
-                animationReversed(revealView);
-                return true;
-            }
-        }
+//        if (rect != null) {
+//            int height = findViewById(R.id.call_108).getHeight();
+//            height = height + (height / 2);
+//            revealViewContainer.getHitRect(rect);
+//            rect.bottom += height;
+//            rect.top += height;
+//            if (!hidden && !rect.contains((int) ev.getX(), (int) ev.getY())) {
+//                animationReversed(revealView);
+//                return true;
+//            }
+//        }
         return super.dispatchTouchEvent(ev);
     }
 
@@ -247,15 +230,9 @@ public class MainActivity extends AppCompatActivity implements
 
         animator.start();
         mRevealView.setVisibility(View.VISIBLE);
-        rect = new Rect(revealViewContainer.getLeft(), revealViewContainer.getTop(),
-                revealViewContainer.getRight(), revealViewContainer.getBottom());
     }
 
     public void animationReversed(@Nullable final View mRevealView){
-        if (actionBar != null) {
-            actionBar.setTitle(previousTitles[0]);
-            actionBar.setSubtitle(previousTitles[1]);
-        }
         if (animator != null && !animator.isRunning()){
             animator = animator.reverse();
             animator.addListener(new SupportAnimator.AnimatorListener() {
@@ -269,7 +246,7 @@ public class MainActivity extends AppCompatActivity implements
                     if (mRevealView != null) {
                         mRevealView.setVisibility(View.INVISIBLE);
                     }
-                    hidden = true;
+//                    hidden = true;
                 }
 
                 @Override
@@ -347,6 +324,10 @@ public class MainActivity extends AppCompatActivity implements
     }
 
     @Override
+    public void onServicesInteraction(Uri uri) {
+    }
+
+    @Override
     protected void onStop() {
 //        if( googleApiClient != null && googleApiClient.isConnected() ) {
 //            mAdapter.setGoogleApiClient( null );
@@ -373,8 +354,8 @@ public class MainActivity extends AppCompatActivity implements
 
     @Override
     public void onBackPressed() {
-        if (!hidden) animationReversed(revealView);
-        else if (somethingIsActive){
+//        if (!hidden) animationReversed(revealView);
+        if (somethingIsActive){
             removeFragmentIfAttached("about");
             somethingIsActive = false;
         }

@@ -11,6 +11,8 @@ import android.support.v7.widget.AppCompatTextView;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
@@ -32,6 +34,12 @@ public class PossibleConditions extends Fragment {
     private View rootView;
     private RecyclerView recyclerView;
     private OnPossibleConditionsFragmentInteractionsListener mListener;
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setHasOptionsMenu(true);
+    }
 
     @Nullable
     @Override
@@ -117,15 +125,23 @@ public class PossibleConditions extends Fragment {
                             conditions.add(individualCondition);
                         }
                     }
+                    conditions.add(" ");
                 }
                 recyclerView.setAdapter(new RecyclerViewAdapter(false, getContext(), conditions, null));
             }
             else {
                 List<String> item = new ArrayList<>();
-                item.add("Conditions List returned NULL!");
+                item.add("We're working on these conditions.");
                 recyclerView.setAdapter(new RecyclerViewAdapter(false, getContext(), item, null));
             }
         }
+    }
+
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        menu.clear();
+        inflater.inflate(R.menu.menu_symptom_fragment, menu);
+        super.onCreateOptionsMenu(menu, inflater);
     }
 
     @Override

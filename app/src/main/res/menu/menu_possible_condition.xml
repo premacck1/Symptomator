@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress XmlUnusedNamespaceDeclaration -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_text_size"
+        android:icon="@drawable/ic_text_size"
+        android:title="@string/change_text_size"
+        app:showAsAction="always"/>
+
+</menu>

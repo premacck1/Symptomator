@@ -45,10 +45,17 @@ class PageAdapter extends BaseAdapter implements ListAdapter {
     public View getView(int position, View view, ViewGroup viewGroup) {
         AppCompatTextView headingTextView;
         AppCompatTextView contentTextView;
+        String heading = pageBeansArrayList.get(position).getHeading();
 
         if (view == null){
-            LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            view = inflater.inflate(R.layout.page_list_item, null);
+            if (heading.equals("EMERGENCY")) {
+                LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+                view = inflater.inflate(R.layout.page_list_item_emergency, null);
+            }
+            else {
+                LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+                view = inflater.inflate(R.layout.page_list_item, null);
+            }
         }
 
         headingTextView = (AppCompatTextView) view.findViewById(R.id.heading);

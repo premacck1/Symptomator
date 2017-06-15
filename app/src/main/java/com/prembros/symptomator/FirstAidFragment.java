@@ -39,7 +39,7 @@ import java.util.List;
 public class FirstAidFragment extends Fragment implements RecyclerView.OnItemTouchListener {
 
     private OnFirstAidListFragmentInteractionListener mListener;
-    private RecyclerViewAdapter myFirstAidRecyclerViewAdapter;
+    private RecyclerViewAdapter recyclerViewAdapter;
     private SearchView searchView;
 //    private boolean hidden = true;
 //    SupportAnimator animator;
@@ -78,17 +78,17 @@ public class FirstAidFragment extends Fragment implements RecyclerView.OnItemTou
         list = (RecyclerView) view.findViewById(R.id.recyclerview);
         // Set the list
         firstAidList = Arrays.asList(getResources().getStringArray(R.array.first_aid));
-//        firstAidList.add("Find more tips online");
+//        firstAidList.add(" ");
         // Set the adapter
         context = list.getContext();
-        myFirstAidRecyclerViewAdapter = new RecyclerViewAdapter(false, getContext(), firstAidList, null);
+        recyclerViewAdapter = new RecyclerViewAdapter(false, getContext(), firstAidList, null);
         list.setLayoutManager(new LinearLayoutManager(context));
-        list.setAdapter(myFirstAidRecyclerViewAdapter);
+        list.setAdapter(recyclerViewAdapter);
 
         list.addOnItemTouchListener(new RecyclerViewOnItemClickListener(getContext(), new RecyclerViewOnItemClickListener.OnItemClickListener() {
             @Override
             public void onItemClick(View view, int position) {
-                int itemCount = myFirstAidRecyclerViewAdapter.getItemCount();
+                int itemCount = recyclerViewAdapter.getItemCount();
                 if (position != itemCount - 1) {
                     AppCompatTextView textView = ((MaterialRippleLayout)((LinearLayout) list.findViewHolderForAdapterPosition(position).itemView).getChildAt(0)).getChildView();
                     mListener.onListFragmentInteraction(true, textView.getText().toString());
@@ -266,9 +266,9 @@ public class FirstAidFragment extends Fragment implements RecyclerView.OnItemTou
 //                }
 
                 list.setLayoutManager(new LinearLayoutManager(context));
-                myFirstAidRecyclerViewAdapter = new RecyclerViewAdapter(false, getContext(), filteredList, null);
-                list.setAdapter(myFirstAidRecyclerViewAdapter);
-                myFirstAidRecyclerViewAdapter.notifyDataSetChanged();
+                recyclerViewAdapter = new RecyclerViewAdapter(false, getContext(), filteredList, null);
+                list.setAdapter(recyclerViewAdapter);
+                recyclerViewAdapter.notifyDataSetChanged();
                 return true;
             }
         });

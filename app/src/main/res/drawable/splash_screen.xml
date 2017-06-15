@@ -6,9 +6,7 @@
     </item>
 
     <item
-        android:top="240dp" android:bottom="240dp"
-        android:left="100dp" android:right="100dp"
         android:gravity="center|clip_horizontal|clip_vertical"
-        android:drawable="@drawable/ic_app_logo"/>
+        android:drawable="@drawable/bg_bitmap"/>
 
 </layer-list>

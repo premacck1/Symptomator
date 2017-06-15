@@ -375,4 +375,7 @@
     <string name="show_selected_conditions">Show selected conditions</string>
     <string name="possible_conditions">Possible conditions</string>
     <string name="show_selected_symptoms_header">Select a symptom to view its possible conditions\nOr click the button below to view the possible conditions for all the selected symptoms.</string>
+    <string name="change_text_size">Change text size</string>
+    <string name="show_hospitals">Show hospitals</string>
+    <string name="always_improving">Always improving</string>
 </resources>

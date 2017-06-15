@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -16,7 +18,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 
 public class PossibleConditionDetails extends Fragment {
-    private static final String ARG_PARAM1 = "selectedCondition";
+    private static final String SELECTED_CONDITION = "selectedCondition";
     private String mParam1;
     private View rootView;
     private ListView listView;
@@ -27,10 +29,10 @@ public class PossibleConditionDetails extends Fragment {
         // Required empty public constructor
     }
 
-    public static PossibleConditionDetails newInstance(String param1) {
+    public static PossibleConditionDetails newInstance(String selectedCondition) {
         PossibleConditionDetails fragment = new PossibleConditionDetails();
         Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
+        args.putString(SELECTED_CONDITION, selectedCondition);
         fragment.setArguments(args);
         return fragment;
     }
@@ -38,8 +40,9 @@ public class PossibleConditionDetails extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setHasOptionsMenu(true);
         if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
+            mParam1 = getArguments().getString(SELECTED_CONDITION);
         }
     }
 
@@ -89,6 +92,12 @@ public class PossibleConditionDetails extends Fragment {
                 Log.d("ERROR in firstAidCheck:", "Class - FirstAidCheck, method - parseInBackground, JSONString was null");
                 result = null;
             }
+            if (result != null && result.isEmpty()) {
+                PageBeans pageBeans = new PageBeans();
+                pageBeans.setHeading("Coming soon");
+                pageBeans.setContent("We're working on this page. It will most probably be provided in the next update very, very soon!");
+                result.add(0, pageBeans);
+            }
             return result;
         }
 
@@ -108,6 +117,13 @@ public class PossibleConditionDetails extends Fragment {
             }
             listView.setAdapter(adapter);
         }
+    }
+
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        menu.clear();
+        inflater.inflate(R.menu.menu_possible_condition, menu);
+        super.onCreateOptionsMenu(menu, inflater);
     }
 
     @Override

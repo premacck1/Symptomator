@@ -6,7 +6,7 @@
     },
     "Anxiety": {
       "warning": "",
-      "conditions": "Generalized anxiety disorder,Depression (Adult)Excessive caffeine use,Panic attack,Mitral valve prolapse,Agoraphobia,Cocaine abuse,Depression (Postpartum),Epilepsy (complex partial seizures),Epilepsy (simple partial seizures),Epilepsy (temporal lobe),Hyperthyroidism,Hyperventilation,Insulin reaction (hypoglycemia),Low blood sugar (hypoglycemia),Social anxiety disorder,Thyroid storm,Hypopituitarism,Mad cow disease,Fibromyalgia"
+      "conditions": "Generalized anxiety disorder,Depression (Adult),Excessive caffeine use,Panic attack,Mitral valve prolapse,Agoraphobia,Cocaine abuse,Depression (Postpartum),Epilepsy (complex partial seizures),Epilepsy (simple partial seizures),Epilepsy (temporal lobe),Hyperthyroidism,Hyperventilation,Insulin reaction (hypoglycemia),Low blood sugar (hypoglycemia),Social anxiety disorder,Thyroid storm,Hypopituitarism,Mad cow disease,Fibromyalgia"
     },
     "Apathy": {
       "warning": "",

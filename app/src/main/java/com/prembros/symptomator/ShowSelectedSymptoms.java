@@ -8,6 +8,8 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.AppCompatTextView;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -16,19 +18,20 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-public class ShowSelectedSymptomsFragment extends Fragment implements View.OnClickListener {
+public class ShowSelectedSymptoms extends Fragment implements View.OnClickListener {
 
     private OnFragmentInteractionListener mListener;
     private ArrayList<String> selectedSymptoms = null;
     private ListView listView;
 
-    public ShowSelectedSymptomsFragment() {
+    public ShowSelectedSymptoms() {
         // Required empty public constructor
     }
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setHasOptionsMenu(true);
         Bundle args = this.getArguments();
         selectedSymptoms = args.getStringArrayList("selectedSymptoms");
     }
@@ -92,6 +95,13 @@ public class ShowSelectedSymptomsFragment extends Fragment implements View.OnCli
             default:
                 break;
         }
+    }
+
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        menu.clear();
+        inflater.inflate(R.menu.menu_symptom_fragment, menu);
+        super.onCreateOptionsMenu(menu, inflater);
     }
 
     @Override

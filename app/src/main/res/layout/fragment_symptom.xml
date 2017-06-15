@@ -23,30 +23,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginBottom="20dp"
             android:text="@string/symptom_header" />
-<!--
-        <com.balysv.materialripple.MaterialRippleLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            app:mrl_rippleColor="@color/colorDisabled"
-            app:mrl_rippleOverlay="true"
-            app:mrl_rippleHover="true"
-            app:mrl_rippleDelayClick="false"
-            app:mrl_rippleRoundedCorners="2dp">
 
-            <Spinner
-                android:id="@+id/selected_age"
-                android:gravity="center_horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/button_theme"
-                android:hint="@string/your_age"
-                android:padding="@dimen/activity_horizontal_margin"
-                android:textAlignment="center"
-                android:entries="@array/ages"/>
-
-        </com.balysv.materialripple.MaterialRippleLayout>
--->
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
