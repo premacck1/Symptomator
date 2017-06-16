@@ -11,18 +11,80 @@
         android:id="@+id/map"
         tools:context=".MapsActivity"/>
 
-<!--
-    <Button
-        android:id="@+id/show_hospitals"
+    <io.codetail.widget.RevealFrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_margin="@dimen/activity_horizontal_margin"
-        android:padding="@dimen/activity_horizontal_margin"
-        app:backgroundTint="@color/colorSecondaryTranslucent"
-        android:textColor="@color/white_text_icons"
-        android:text="@string/show_hospitals"
-        tools:ignore="MissingPrefix" />
--->
+        android:layout_marginTop="60dp"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:id="@+id/marker_details_container"
+            android:visibility="invisible"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:background="@drawable/map_marker_details">
+
+            <TextView
+                android:id="@+id/marker_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/white_text_icons"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorDividerLight"/>
+
+            <TextView
+                android:id="@+id/marker_snippet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white_text_icons"
+                android:padding="@dimen/activity_horizontal_margin" />
+
+        </LinearLayout>
+
+    </io.codetail.widget.RevealFrameLayout>
+
+    <RelativeLayout
+        android:alpha="0.6"
+        android:visibility="invisible"
+        android:id="@+id/progress_bar_container"
+        android:background="@drawable/map_marker_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ProgressBar
+            android:alpha="1"
+            android:id="@+id/myProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:indeterminateTint="@color/colorPrimary"
+            android:indeterminate="true"
+            tools:targetApi="lollipop" />
+
+        <TextView
+            android:alpha="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/myProgressText"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white_text_icons"
+            android:textSize="20sp"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:layout_toEndOf="@+id/myProgress"/>
+
+    </RelativeLayout>
 
 </RelativeLayout>

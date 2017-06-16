@@ -88,7 +88,7 @@
             app:mrl_rippleColor="@color/white_text_icons">
 
             <TextView
-                android:id="@+id/hospital_nearest"
+                android:id="@+id/find_nearest_hospital"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingTop="@dimen/activity_horizontal_margin"

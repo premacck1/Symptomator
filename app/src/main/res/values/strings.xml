@@ -381,4 +381,7 @@
     <string name="jump_to_your_location">Jump to your location</string>
     <string name="show_nearby_hospitals">Show nearby hospitals</string>
     <string name="emergency_number">Emergency number</string>
+    <string name="pick_a_place">Pick a place</string>
+    <string name="getting_directions_to_nearest_hospital">Getting directions to nearest hospital</string>
+    <string name="finding_nearby_hospitals">Finding nearby hospitals</string>
 </resources>

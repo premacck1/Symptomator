@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class ServicesFragment extends Fragment implements View.OnClickListener {
 //    private static final String ARG_PARAM1 = "param1";
@@ -56,23 +57,31 @@ public class ServicesFragment extends Fragment implements View.OnClickListener {
 
         TextView call_108 = (TextView) rootView.findViewById(R.id.call_108);
         TextView nearby_hospitals = (TextView) rootView.findViewById(R.id.find_hospitals_nearby);
+        TextView nearest_hospital = (TextView) rootView.findViewById(R.id.find_nearest_hospital);
         call_108.setOnClickListener(this);
         nearby_hospitals.setOnClickListener(this);
+        nearest_hospital.setOnClickListener(this);
         return rootView;
     }
 
     @Override
     public void onClick(View view) {
-
         switch (view.getId()){
             case R.id.call_108:
                 new CallEmergencyServices(getContext());
                 break;
             case R.id.find_hospitals_nearby:
-                startActivity(new Intent(getContext(), MapsActivity.class));
+                Intent intent = new Intent(getContext(), MapsActivity.class);
+                intent.putExtra("showNearest", false);
+                startActivity(intent);
+                break;
+            case R.id.find_nearest_hospital:
+                Intent intent1 = new Intent(getContext(), MapsActivity.class);
+                intent1.putExtra("showNearest", true);
+                startActivity(intent1);
                 break;
             default:
-//                Toast.makeText(this, "This feature is coming soon!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), "This feature is coming soon!", Toast.LENGTH_SHORT).show();
                 break;
         }
     }

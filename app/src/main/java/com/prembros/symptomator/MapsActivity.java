@@ -1,7 +1,9 @@
 package com.prembros.symptomator;
 
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
@@ -13,6 +15,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.animation.AnimationUtils;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.common.ConnectionResult;
@@ -21,6 +28,7 @@ import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.LocationListener;
 import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationServices;
+import com.google.android.gms.location.places.Places;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -35,20 +43,51 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         GoogleApiClient.OnConnectionFailedListener,
         LocationListener {
 
-    public static final int MY_PERMISSIONS_REQUEST_LOCATION = 99;
+//    private static final String KEY_CAMERA_POSITION = "camera_position";
+//    private static final String KEY_LOCATION = "location";
+//    public static final int MY_PERMISSIONS_REQUEST_LOCATION = 99;
+//    CameraPosition mCameraPosition;
+
     private GoogleMap mMap;
-    double latitude;
-    double longitude;
-    GoogleApiClient mGoogleApiClient;
-    Location mLastLocation;
-    Marker mCurrLocationMarker;
-    LocationRequest mLocationRequest;
+    private double latitude;
+    private double longitude;
+    private boolean showNearest;
+    private RelativeLayout progressBarContainer;
+    private GoogleApiClient mGoogleApiClient;
+//    private Location mLastLocation;
+    private Marker mCurrLocationMarker;
+
+//    @Override
+//    protected void onSaveInstanceState(Bundle outState) {
+//        if (mMap != null) {
+//            outState.putParcelable(KEY_CAMERA_POSITION, mMap.getCameraPosition());
+//            outState.putParcelable(KEY_LOCATION, mLastLocation);
+//            super.onSaveInstanceState(outState);
+//        }
+//    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
+//        if (savedInstanceState != null) {
+//            mCameraPosition = savedInstanceState.getParcelable(KEY_CAMERA_POSITION);
+//            mLastLocation = savedInstanceState.getParcelable(KEY_LOCATION);
+//        }
         if (checkGooglePlayServices()) {
+
+            showNearest = getIntent().getExtras().getBoolean("showNearest");
+
+            progressBarContainer = (RelativeLayout) MapsActivity.this.findViewById(R.id.progress_bar_container);
+            if (showNearest) {
+                progressBarContainer.startAnimation(AnimationUtils.loadAnimation(this, android.R.anim.fade_in));
+                ((TextView) MapsActivity.this.findViewById(R.id.myProgressText)).setText(R.string.getting_directions_to_nearest_hospital);
+                progressBarContainer.setVisibility(View.VISIBLE);
+            } else {
+                progressBarContainer.startAnimation(AnimationUtils.loadAnimation(this, android.R.anim.fade_in));
+                ((TextView) MapsActivity.this.findViewById(R.id.myProgressText)).setText(R.string.finding_nearby_hospitals);
+                progressBarContainer.setVisibility(View.VISIBLE);
+            }
 
             if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
                 checkLocationPermission();
@@ -79,34 +118,42 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
 
         //Initialize Google Play Services
         if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            if (ContextCompat.checkSelfPermission(this,
-                    android.Manifest.permission.ACCESS_FINE_LOCATION)
-                    == PackageManager.PERMISSION_GRANTED) {
-                buildGoogleApiClient();
+            if (checkLocationPermission()) {
+                if (mGoogleApiClient == null) {
+                    buildGoogleApiClient();
+                }
                 mMap.setMyLocationEnabled(true);
             }
-        } else {
-            buildGoogleApiClient();
-            mMap.setMyLocationEnabled(true);
-        }
+        } else this.finish();
 
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                markNearbyHospitals();
-            }
-        }, 2000);
-    }
+//        mMap.setInfoWindowAdapter(new GoogleMap.InfoWindowAdapter() {
+//            @Override
+//            public View getInfoWindow(Marker marker) {
+//                return null;
+//            }
+//
+//            @Override
+//            public View getInfoContents(Marker marker) {
+//                // Inflate the layouts for the info window, title and snippet.
+//                @SuppressLint("InflateParams")
+//                View infoWindow = getLayoutInflater().inflate(R.layout.marker_info, null);
+//
+//                TextView title = ((TextView) infoWindow.findViewById(R.id.title));
+//                title.setText(marker.getTitle());
+//
+//                TextView snippet = ((TextView) infoWindow.findViewById(R.id.snippet));
+//                snippet.setText(marker.getSnippet());
+//
+//                return infoWindow;
+//            }
+//        });
 
-    void markNearbyHospitals() {
-        mMap.clear();
-        String url = getUrl(latitude, longitude, "hospital");
-        Object[] DataTransfer = new Object[2];
-        DataTransfer[0] = mMap;
-        DataTransfer[1] = url;
-        GetNearbyPlacesData getNearbyPlacesData = new GetNearbyPlacesData();
-        getNearbyPlacesData.execute(DataTransfer);
-//        Toast.makeText(MapsActivity.this, "Nearby Hospitals", Toast.LENGTH_LONG).show();
+//        new Handler().postDelayed(new Runnable() {
+//            @Override
+//            public void run() {
+//                markNearbyHospitals();
+//            }
+//        }, 2000);
     }
 
     private boolean checkGooglePlayServices() {
@@ -124,9 +171,12 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
 
     protected synchronized void buildGoogleApiClient() {
         mGoogleApiClient = new GoogleApiClient.Builder(this)
+                .enableAutoManage(this /* FragmentActivity */, this /* OnConnectionFailedListener */)
                 .addConnectionCallbacks(this)
                 .addOnConnectionFailedListener(this)
                 .addApi(LocationServices.API)
+                .addApi(Places.GEO_DATA_API)
+                .addApi(Places.PLACE_DETECTION_API)
                 .build();
         mGoogleApiClient.connect();
     }
@@ -142,18 +192,6 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
 //                .build();
 //        mGoogleApiClient.connect();
 //    }
-
-    private String getUrl(double latitude, double longitude, String nearbyPlace) {
-        int PROXIMITY_RADIUS = 10000;
-        StringBuilder googlePlacesUrl = new StringBuilder("https://maps.googleapis.com/maps/api/place/nearbysearch/json?");
-        googlePlacesUrl.append("location=").append(latitude).append(",").append(longitude);
-        googlePlacesUrl.append("&radius=").append(PROXIMITY_RADIUS);
-        googlePlacesUrl.append("&type=").append(nearbyPlace);
-        googlePlacesUrl.append("&sensor=true");
-        googlePlacesUrl.append("&key=" + "AIzaSyC8JIhbRFb1uVOqawgaHP8Dr9goMIVey7k");
-        Log.d("getUrl", googlePlacesUrl.toString());
-        return (googlePlacesUrl.toString());
-    }
 
     @Override
     protected void onStart() {
@@ -171,39 +209,17 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         super.onStop();
     }
 
-//    private void displayPlacePicker() {
-//        if(mGoogleApiClient == null || !mGoogleApiClient.isConnected())
-//            return;
-//
-//        PlacePicker.IntentBuilder builder = new PlacePicker.IntentBuilder();
-//
-//        try {
-//            startActivityForResult(builder.build(this), PLACE_PICKER_REQUEST);
-//        } catch (GooglePlayServicesRepairableException e) {
-//            Log.d("PlacesAPI Demo", "GooglePlayServicesRepairableException thrown");
-//        } catch (GooglePlayServicesNotAvailableException e) {
-//            Log.d("PlacesAPI Demo", "GooglePlayServicesNotAvailableException thrown");
-//        }
-//    }
-
-//    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-//        if(requestCode == PLACE_PICKER_REQUEST && resultCode == RESULT_OK) {
-//            displayPlace(PlacePicker.getPlace(this, data));
-//        }
-//    }
-
     @Override
     public void onConnected(Bundle bundle) {
-        mLocationRequest = new LocationRequest();
+        LocationRequest mLocationRequest = new LocationRequest();
         mLocationRequest.setInterval(1000);
         mLocationRequest.setFastestInterval(1000);
         mLocationRequest.setPriority(LocationRequest.PRIORITY_BALANCED_POWER_ACCURACY);
-        if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION)
-                == PackageManager.PERMISSION_GRANTED) {
+        if (checkLocationPermission()) {
             if (mGoogleApiClient.isConnected()) {
                 LocationServices.FusedLocationApi.requestLocationUpdates(mGoogleApiClient, mLocationRequest, this);
             }
-        }
+        } else this.finish();
     }
 
     @Override
@@ -218,26 +234,63 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
 
     @Override
     public void onLocationChanged(Location location) {
-        mLastLocation = location;
+//        mLastLocation = location;
         if (mCurrLocationMarker != null) {
             mCurrLocationMarker.remove();
         }
 
         focusCurrentLocation(location);
-
-//        Toast.makeText(MapsActivity.this,"Your Current Location", Toast.LENGTH_LONG).show();
-
-//        Log.d("onLocationChanged", String.format("latitude:%.3f longitude:%.3f",latitude,longitude));
+        markNearbyHospitals();
 
         //stop location updates
         if (mGoogleApiClient != null) {
             LocationServices.FusedLocationApi.removeLocationUpdates(mGoogleApiClient, this);
-//            Log.d("onLocationChanged", "Removing Location Updates");
         }
-//        Log.d("onLocationChanged", "Exit");
+    }
+
+    void markNearbyHospitals() {
+        mMap.clear();
+        String url = getUrl(latitude, longitude, "hospital");
+        Object[] DataTransfer = new Object[2];
+        DataTransfer[0] = mMap;
+        DataTransfer[1] = url;
+        final GetNearbyPlacesData getNearbyPlacesData = new GetNearbyPlacesData(latitude, longitude, showNearest);
+        getNearbyPlacesData.execute(DataTransfer);
+        if (progressBarContainer.getVisibility() == View.VISIBLE) {
+            progressBarContainer.startAnimation(AnimationUtils.loadAnimation(this, android.R.anim.fade_out));
+            progressBarContainer.setVisibility(View.INVISIBLE);
+        }
+
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                if (showNearest) {
+                    String[] nearestMarker = getNearbyPlacesData.getNearestMarker();
+                    if (nearestMarker != null) {
+                        startActivity(new Intent(Intent.ACTION_VIEW,
+                                Uri.parse("http://maps.google.com/maps?daddr=" + nearestMarker[0] + "," + nearestMarker[1])));
+                        MapsActivity.this.finish();
+                    }
+                }
+            }
+        }, 2000);
+//        Toast.makeText(MapsActivity.this, "Nearby Hospitals", Toast.LENGTH_LONG).show();
+    }
+
+    private String getUrl(double latitude, double longitude, String nearbyPlace) {
+        int PROXIMITY_RADIUS = 20000;
+        StringBuilder googlePlacesUrl = new StringBuilder("https://maps.googleapis.com/maps/api/place/nearbysearch/json?");
+        googlePlacesUrl.append("location=").append(latitude).append(",").append(longitude);
+        googlePlacesUrl.append("&radius=").append(PROXIMITY_RADIUS);
+        googlePlacesUrl.append("&type=").append(nearbyPlace);
+        googlePlacesUrl.append("&sensor=true");
+        googlePlacesUrl.append("&key=" + "AIzaSyC8JIhbRFb1uVOqawgaHP8Dr9goMIVey7k");
+        Log.d("getUrl", googlePlacesUrl.toString());
+        return (googlePlacesUrl.toString());
     }
 
     void focusCurrentLocation(Location location){
+        final LinearLayout container = (LinearLayout) MapsActivity.this.findViewById(R.id.marker_details_container);
         //Place current location marker
         latitude = location.getLatitude();
         longitude = location.getLongitude();
@@ -251,7 +304,112 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         //move map camera
         mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng));
         mMap.animateCamera(CameraUpdateFactory.zoomTo(13));
+        mMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
+
+            Marker mMarker;
+
+            @Override
+            public boolean onMarkerClick(Marker marker) {
+                mMarker = marker;
+                marker.setIcon(BitmapDescriptorFactory.fromResource(R.drawable.purple_marker));
+                container.startAnimation(AnimationUtils.loadAnimation(MapsActivity.this, R.anim.float_down));
+                container.setVisibility(View.VISIBLE);
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        mMarker.hideInfoWindow();
+                    }
+                }, 5);
+                container.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+//                        marker.hideInfoWindow();
+                        toggleMarkerDetails(container, mMarker);
+                        mMarker = null;
+                    }
+                });
+
+                TextView title = (TextView) MapsActivity.this.findViewById(R.id.marker_title);
+                TextView snippet = (TextView) MapsActivity.this.findViewById(R.id.marker_snippet);
+                title.setText(marker.getTitle());
+                snippet.setText(marker.getSnippet());
+                return false;
+            }
+        });
+//        if (mCameraPosition != null) {
+//            mMap.moveCamera(CameraUpdateFactory.newCameraPosition(mCameraPosition));
+//        } else if (mLastLocation != null) {
+//            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(
+//                    new LatLng(mLastLocation.getLatitude(),
+//                            mLastLocation.getLongitude()), 13));
+//        } else {
+//        }
     }
+
+    void toggleMarkerDetails(View container, final Marker marker) {
+        if (container != null && marker != null) {
+            if (container.getVisibility() == View.VISIBLE) {
+                marker.setIcon(BitmapDescriptorFactory.defaultMarker());
+                container.startAnimation(AnimationUtils.loadAnimation(MapsActivity.this, R.anim.sink_up));
+                container.setVisibility(View.INVISIBLE);
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        marker.hideInfoWindow();
+                    }
+                }, 5);
+            } else {
+                marker.setIcon(BitmapDescriptorFactory.fromResource(R.drawable.purple_marker));
+                container.startAnimation(AnimationUtils.loadAnimation(MapsActivity.this, R.anim.float_down));
+                container.setVisibility(View.VISIBLE);
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        marker.hideInfoWindow();
+                    }
+                }, 5);
+            }
+        }
+    }
+
+//    private void displayPlacePicker() {
+//        if(mGoogleApiClient == null || !mGoogleApiClient.isConnected())
+//            return;
+//
+//        PlacePicker.IntentBuilder builder = new PlacePicker.IntentBuilder();
+//
+//        try {
+//            startActivityForResult(builder.build(this), 10);
+//        } catch (GooglePlayServicesRepairableException e) {
+//            Log.d("PlacesAPI Demo", "GooglePlayServicesRepairableException thrown");
+//        } catch (GooglePlayServicesNotAvailableException e) {
+//            Log.d("PlacesAPI Demo", "GooglePlayServicesNotAvailableException thrown");
+//        }
+//    }
+//
+//    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+//        if(requestCode == 10 && resultCode == RESULT_OK) {
+//            displayPlace(PlacePicker.getPlace(this, data));
+//        }
+//    }
+//
+//    private void displayPlace(Place place) {
+//        if(place == null)
+//            return;
+//
+//        String content = "";
+//        if(!TextUtils.isEmpty(place.getName())) {
+//            content += "Name: " + place.getName() + "\n";
+//        }
+//        if(!TextUtils.isEmpty(place.getAddress())) {
+//            content += "Address: " + place.getAddress() + "\n";
+//        }
+//        if(!TextUtils.isEmpty(place.getPhoneNumber())) {
+//            content += "Phone: " + place.getPhoneNumber();
+//        }
+//
+//        Toast.makeText(this, content, Toast.LENGTH_SHORT).show();
+//    }
 
     public boolean checkLocationPermission(){
         if (ContextCompat.checkSelfPermission(this,
@@ -269,14 +427,14 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
                 //Prompt the user once explanation has been shown
                 ActivityCompat.requestPermissions(this,
                         new String[]{android.Manifest.permission.ACCESS_FINE_LOCATION},
-                        MY_PERMISSIONS_REQUEST_LOCATION);
+                        99);
 
 
             } else {
                 // No explanation needed, we can request the permission.
                 ActivityCompat.requestPermissions(this,
                         new String[]{android.Manifest.permission.ACCESS_FINE_LOCATION},
-                        MY_PERMISSIONS_REQUEST_LOCATION);
+                        99);
             }
             return false;
         } else {
@@ -287,7 +445,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String permissions[], @NonNull int[] grantResults) {
         switch (requestCode) {
-            case MY_PERMISSIONS_REQUEST_LOCATION: {
+            case 99: {
                 // If request is cancelled, the result arrays are empty.
                 if (grantResults.length > 0
                         && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
