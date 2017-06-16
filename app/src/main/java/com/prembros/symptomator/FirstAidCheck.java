@@ -54,7 +54,7 @@ public class FirstAidCheck extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
             case R.id.action_call_108:
-                MainActivity.callEmergencyServices(this);
+                new CallEmergencyServices(this);
                 return true;
             default:
                 return false;

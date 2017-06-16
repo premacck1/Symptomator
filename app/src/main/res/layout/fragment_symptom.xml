@@ -126,7 +126,7 @@
             app:mrl_rippleRoundedCorners="2dp">
 
             <Spinner
-                android:visibility="gone"
+                android:visibility="invisible"
                 android:id="@+id/selected_body_part"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -136,19 +136,19 @@
                 android:gravity="center_horizontal" />
 
         </com.balysv.materialripple.MaterialRippleLayout>
-<!--
 
-        <android.support.v7.widget.AppCompatButton
-            android:id="@+id/submit_button"
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/call_108"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="@dimen/activity_horizontal_margin"
-            android:theme="@style/AppTheme.Button"
-            android:textColor="@color/white_text_icons"
-            android:layout_margin="8dp"
-            android:text="@string/submit"/>
--->
-
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            app:fabSize="normal"
+            app:backgroundTint="@color/colorSecondary"
+            android:src="@drawable/ic_call_medical_services"
+            app:srcCompat="@drawable/ic_call_medical_services"
+            tools:ignore="VectorDrawableCompat" />
+        
     </LinearLayout>
 
 </ScrollView>

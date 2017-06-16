@@ -1,14 +1,11 @@
 <resources>
     <!--
 
-    To do this, you can either add your release key credentials to your existing
-    key, or create a new key.
+    To get one, follow this link, follow the directions and press "Create" at the end:
 
-    Note that this file specifies the API key for the release build target.
-    If you have previously set up a key for the debug target with the debug signing certificate,
-    you will also need to set up a key for your release certificate.
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=0A:78:CF:71:7E:B3:7D:C2:16:B2:EC:B1:3A:68:9E:4B:B5:39:57:A1%3Bcom.prembros.symptomator
 
-    Follow the directions here:
+    You can also add your credentials to an existing key, using these values:
 
     https://developers.google.com/maps/documentation/android/signup
 
@@ -16,6 +13,12 @@
     string in this file.
     -->
     <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
-        YOUR_KEY_HERE
+        AIzaSyC8JIhbRFb1uVOqawgaHP8Dr9goMIVey7k
     </string>
+    <string name="google_places_key" templateMergeStrategy="preserve" translatable="false">
+        AIzaSyD8GHXtKntCRgbrTjN4YtT94epzA-cJpWY
+    </string>
+    <!--<string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
+        AIzaSyCwmLEnjoalKDciZxizLlWTFLmg0vd7Csc
+    </string>-->
 </resources>

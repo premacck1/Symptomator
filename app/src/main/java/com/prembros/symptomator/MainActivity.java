@@ -1,32 +1,21 @@
 package com.prembros.symptomator;
 
-import android.Manifest;
-import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.database.Cursor;
-import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.StrictMode;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.design.widget.BottomNavigationView;
-import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.content.ContextCompat;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.telephony.TelephonyManager;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.animation.AccelerateDecelerateInterpolator;
 import android.view.animation.AnimationUtils;
-
-import java.util.Locale;
 
 import io.codetail.animation.SupportAnimator;
 
@@ -119,39 +108,6 @@ public class MainActivity extends AppCompatActivity implements
 
         navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
-
-//        googleApiClient = new GoogleApiClient
-//                .Builder(this)
-//                .enableAutoManage(this, 0, this)
-//                .addApi(Places.GEO_DATA_API)
-//                .addApi(Places.PLACE_DETECTION_API)
-//                .addConnectionCallbacks(this)
-//                .addOnConnectionFailedListener(this)
-//                .addApi(LocationServices.API)
-//                .build();
-    }
-
-    public void onButtonClick(View view){
-//        new Handler().postDelayed(new Runnable() {
-//            @Override
-//            public void run() {
-//                animationReversed(revealView);
-//            }
-//        }, 250);
-    }
-
-    public static void callEmergencyServices(final Context context){
-        DatabaseHolder db = new DatabaseHolder(context);
-        db.open();
-        Cursor cursor = db.returnEmergencyNumber(getUserCountry(context));
-        cursor.moveToFirst();
-        call(
-                cursor.getString(cursor.getColumnIndex("Country")),                         //Country name
-                Integer.parseInt(cursor.getString(cursor.getColumnIndex("Number"))),        //Emergency number
-                context
-        );
-        cursor.close();
-        db.close();
     }
 
     @Override
@@ -170,53 +126,6 @@ public class MainActivity extends AppCompatActivity implements
 //            }
 //        }
         return super.dispatchTouchEvent(ev);
-    }
-
-    static String getUserCountry(Context context) {
-        try {
-            final TelephonyManager tm = (TelephonyManager) context.getSystemService(Context.TELEPHONY_SERVICE);
-            final String simCountry = tm.getSimCountryIso();
-            if (simCountry != null && simCountry.length() == 2) { // SIM country code is available
-                return simCountry.toLowerCase(Locale.US);
-            }
-            else if (tm.getPhoneType() != TelephonyManager.PHONE_TYPE_CDMA) { // device is not 3G (would be unreliable)
-                String networkCountry = tm.getNetworkCountryIso();
-                if (networkCountry != null && networkCountry.length() == 2) { // network country code is available
-                    return networkCountry.toLowerCase(Locale.US);
-                }
-            }
-        }
-        catch (Exception e) {
-            e.printStackTrace();
-        }
-        return null;
-    }
-
-    static void call(String country, int number, final Context context){
-        final Intent callIntent = new Intent(Intent.ACTION_CALL);
-        callIntent.setData(Uri.parse("tel:" + number));
-
-        if (ActivityCompat.checkSelfPermission(context,
-                Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
-            return;
-        }
-        final AlertDialog.Builder dialog = new AlertDialog.Builder(context);
-        dialog.setIcon(R.drawable.ic_call_medical_services)
-                .setTitle("Emergency number")
-                .setMessage("*__ " + country + " __*\n\nWe're going to call \"" + number + "\" for you\nClick OKAY to confirm.")
-                .setPositiveButton("okay", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        context.startActivity(callIntent);
-                    }
-                })
-                .setNegativeButton("cancel", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        dialogInterface.dismiss();
-                    }
-                })
-                .show();
     }
 
     public void animationForward(View mRevealView, int[] center, int duration){
@@ -322,6 +231,7 @@ public class MainActivity extends AppCompatActivity implements
             }
         }
     }
+                                                                                        //    AIzaSyCwmLEnjoalKDciZxizLlWTFLmg0vd7Csc
 
     @Override
     protected void onStop() {

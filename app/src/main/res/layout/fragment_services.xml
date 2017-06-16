@@ -30,8 +30,7 @@
                 android:textColor="@color/white_text_icons"
                 android:text="@string/find_doctors_nearby"
                 android:gravity="center"
-                android:drawableStart="@drawable/ic_doctor"
-                android:onClick="onButtonClick"/>
+                android:drawableStart="@drawable/ic_doctor" />
 
         </com.balysv.materialripple.MaterialRippleLayout>
 
@@ -65,8 +64,7 @@
                 android:textColor="@color/white_text_icons"
                 android:text="@string/find_nearby_hospitals"
                 android:gravity="center"
-                android:drawableStart="@drawable/ic_hospital"
-                android:onClick="onButtonClick"/>
+                android:drawableStart="@drawable/ic_hospital" />
 
         </com.balysv.materialripple.MaterialRippleLayout>
 
@@ -100,8 +98,7 @@
                 android:textColor="@color/white_text_icons"
                 android:text="@string/get_to_the_nearest_hospital"
                 android:gravity="center"
-                android:drawableStart="@drawable/ic_nearby"
-                android:onClick="onButtonClick"/>
+                android:drawableStart="@drawable/ic_nearby" />
 
         </com.balysv.materialripple.MaterialRippleLayout>
 
@@ -135,8 +132,7 @@
                 android:textColor="@color/white_text_icons"
                 android:text="@string/call_108"
                 android:gravity="center"
-                android:drawableStart="@drawable/ic_call_medical_services"
-                android:onClick="onButtonClick"/>
+                android:drawableStart="@drawable/ic_call_medical_services" />
 
         </com.balysv.materialripple.MaterialRippleLayout>
 

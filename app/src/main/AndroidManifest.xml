@@ -84,17 +84,13 @@
         -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="@string/google_places_key" />
+            android:value="@string/google_maps_key" />
         <!--
                 <meta-data
                 android:name="com.google.android.geo.API_KEY"
                 android:value="@string/google_maps_key" />
         -->
-        <!--
-                <meta-data
-                android:name="com.google.android.geo.API_KEY"
-                android:value="AIzaSyCwmLEnjoalKDciZxizLlWTFLmg0vd7Csc"/>
-        -->
+
         <activity android:name=".FirstAidCheck">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"

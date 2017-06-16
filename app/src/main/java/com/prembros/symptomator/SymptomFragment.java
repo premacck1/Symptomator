@@ -4,6 +4,7 @@ import android.content.Context;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
@@ -22,6 +23,7 @@ public class SymptomFragment extends Fragment {
     private String selectedSex = null;
     private Spinner selectBodyArea;
     private Spinner selectBodyPart;
+    Context context;
     private CheckedTextView[] allCheckedTextViews;
 
     private OnSymptomFragmentInteractionListener mListener;
@@ -35,6 +37,8 @@ public class SymptomFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_symptom, container, false);
+        
+        context = getContext();
 
 //        SET ACTION BAR
         ActionBar actionBar = ((AppCompatActivity)getActivity()).getSupportActionBar();
@@ -47,6 +51,7 @@ public class SymptomFragment extends Fragment {
         selectBodyPart = (Spinner) rootView.findViewById(R.id.selected_body_part);
         CheckedTextView male = (CheckedTextView) rootView.findViewById(R.id.radio_male);
         CheckedTextView female = (CheckedTextView) rootView.findViewById(R.id.radio_female);
+        FloatingActionButton call108 = (FloatingActionButton) rootView.findViewById(R.id.call_108);
         allCheckedTextViews = new CheckedTextView[] {male, female};
 //        submitButton.setSupportBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#E64A19")));
 
@@ -60,84 +65,84 @@ public class SymptomFragment extends Fragment {
                 switch (position){
                     case 0:
                         if (selectBodyPart.getVisibility() == View.VISIBLE) {
-                            selectBodyPart.startAnimation(AnimationUtils.loadAnimation(getContext(), R.anim.sink_up));
+                            selectBodyPart.startAnimation(AnimationUtils.loadAnimation(context, R.anim.sink_up));
                             selectBodyPart.setVisibility(View.GONE);
                         }
                         break;
                     case 1:
                         bodyPartList = getResources().getStringArray(R.array.head_area);
                         bodyPartListAdapter = new ArrayAdapter<>(
-                                getContext(), R.layout.spinner_item, bodyPartList
+                                context, R.layout.spinner_item, bodyPartList
                         );
                         bodyPartListAdapter.setDropDownViewResource(R.layout.spinner_item);
                         bodyPartListAdapter.notifyDataSetChanged();
                         selectBodyPart.setAdapter(bodyPartListAdapter);
-                        selectBodyPart.startAnimation(AnimationUtils.loadAnimation(getContext(), R.anim.float_down));
+                        selectBodyPart.startAnimation(AnimationUtils.loadAnimation(context, R.anim.float_down));
                         selectBodyPart.setVisibility(View.VISIBLE);
                         break;
                     case 2:
                         bodyPartList = getResources().getStringArray(R.array.chest_area);
                         bodyPartListAdapter = new ArrayAdapter<>(
-                                getContext(), R.layout.spinner_item, bodyPartList
+                                context, R.layout.spinner_item, bodyPartList
                         );
                         bodyPartListAdapter.setDropDownViewResource(R.layout.spinner_item);
                         bodyPartListAdapter.notifyDataSetChanged();
                         selectBodyPart.setAdapter(bodyPartListAdapter);
-                        selectBodyPart.startAnimation(AnimationUtils.loadAnimation(getContext(), R.anim.float_down));
+                        selectBodyPart.startAnimation(AnimationUtils.loadAnimation(context, R.anim.float_down));
                         selectBodyPart.setVisibility(View.VISIBLE);
                         break;
                     case 3:
                         bodyPartList = getResources().getStringArray(R.array.abdomen);
                         bodyPartListAdapter = new ArrayAdapter<>(
-                                getContext(), R.layout.spinner_item, bodyPartList
+                                context, R.layout.spinner_item, bodyPartList
                         );
                         bodyPartListAdapter.setDropDownViewResource(R.layout.spinner_item);
                         bodyPartListAdapter.notifyDataSetChanged();
                         selectBodyPart.setAdapter(bodyPartListAdapter);
-                        selectBodyPart.startAnimation(AnimationUtils.loadAnimation(getContext(), R.anim.float_down));
+                        selectBodyPart.startAnimation(AnimationUtils.loadAnimation(context, R.anim.float_down));
                         selectBodyPart.setVisibility(View.VISIBLE);
                         break;
                     case 4:
                         bodyPartList = getResources().getStringArray(R.array.back_area);
                         bodyPartListAdapter = new ArrayAdapter<>(
-                                getContext(), R.layout.spinner_item, bodyPartList
+                                context, R.layout.spinner_item, bodyPartList
                         );
                         bodyPartListAdapter.setDropDownViewResource(R.layout.spinner_item);
                         bodyPartListAdapter.notifyDataSetChanged();
                         selectBodyPart.setAdapter(bodyPartListAdapter);
-                        selectBodyPart.startAnimation(AnimationUtils.loadAnimation(getContext(), R.anim.float_down));
+                        selectBodyPart.startAnimation(AnimationUtils.loadAnimation(context, R.anim.float_down));
                         selectBodyPart.setVisibility(View.VISIBLE);
                         break;
                     case 5:
                         bodyPartList = getResources().getStringArray(R.array.pelvic);
                         bodyPartListAdapter = new ArrayAdapter<>(
-                                getContext(), R.layout.spinner_item, bodyPartList
+                                context, R.layout.spinner_item, bodyPartList
                         );
                         bodyPartListAdapter.setDropDownViewResource(R.layout.spinner_item);
                         bodyPartListAdapter.notifyDataSetChanged();
                         selectBodyPart.setAdapter(bodyPartListAdapter);
-                        selectBodyPart.startAnimation(AnimationUtils.loadAnimation(getContext(), R.anim.float_down));
+                        selectBodyPart.startAnimation(AnimationUtils.loadAnimation(context, R.anim.float_down));
                         selectBodyPart.setVisibility(View.VISIBLE);
                         break;
                     case 6:
                         bodyPartList = getResources().getStringArray(R.array.arm);
                         bodyPartListAdapter = new ArrayAdapter<>(
-                                getContext(), R.layout.spinner_item, bodyPartList
+                                context, R.layout.spinner_item, bodyPartList
                         );
                         bodyPartListAdapter.setDropDownViewResource(R.layout.spinner_item);
                         bodyPartListAdapter.notifyDataSetChanged();
                         selectBodyPart.setAdapter(bodyPartListAdapter);
-                        selectBodyPart.startAnimation(AnimationUtils.loadAnimation(getContext(), R.anim.float_down));
+                        selectBodyPart.startAnimation(AnimationUtils.loadAnimation(context, R.anim.float_down));
                         selectBodyPart.setVisibility(View.VISIBLE);
                         break;
                     case 7:
                         bodyPartList = getResources().getStringArray(R.array.legs);
                         bodyPartListAdapter = new ArrayAdapter<>(
-                                getContext(), R.layout.spinner_item, bodyPartList);
+                                context, R.layout.spinner_item, bodyPartList);
                         bodyPartListAdapter.setDropDownViewResource(R.layout.spinner_item);
                         bodyPartListAdapter.notifyDataSetChanged();
                         selectBodyPart.setAdapter(bodyPartListAdapter);
-                        selectBodyPart.startAnimation(AnimationUtils.loadAnimation(getContext(), R.anim.float_down));
+                        selectBodyPart.startAnimation(AnimationUtils.loadAnimation(context, R.anim.float_down));
                         selectBodyPart.setVisibility(View.VISIBLE);
                         break;
                     default:
@@ -180,6 +185,13 @@ public class SymptomFragment extends Fragment {
             }
         });
 
+        call108.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                new CallEmergencyServices(context);
+            }
+        });
+
         return rootView;
     }
 
@@ -196,7 +208,7 @@ public class SymptomFragment extends Fragment {
             }, 200);
         }
         if (selectedSex == null){
-            Toast.makeText(getContext(), "Select gender to proceed.", Toast.LENGTH_SHORT).show();
+            Toast.makeText(context, "Select gender to proceed.", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -211,17 +223,17 @@ public class SymptomFragment extends Fragment {
                 temp.setChecked(true);
                 temp.setTextColor(Color.parseColor("#FFFFFF"));
                 selectedSex = temp.getText().toString();
-                temp.startAnimation(AnimationUtils.loadAnimation(getContext(), R.anim.anim_selected));
+                temp.startAnimation(AnimationUtils.loadAnimation(context, R.anim.anim_selected));
                 startActivityIfFormComplete();
             } else {
-                temp.startAnimation(AnimationUtils.loadAnimation(getContext(), R.anim.anim_deselected));
+                temp.startAnimation(AnimationUtils.loadAnimation(context, R.anim.anim_deselected));
             }
         }
     }
 
     public void resetViews(){
         selectBodyArea.setSelection(0);
-//        selectBodyPart.startAnimation(AnimationUtils.loadAnimation(getContext(), android.R.anim.fade_out));
+//        selectBodyPart.startAnimation(AnimationUtils.loadAnimation(context, android.R.anim.fade_out));
 //        for (CheckedTextView item : allCheckedTextViews) {
 //            item.setChecked(false);
 //            item.setTextColor(Color.parseColor("#000000"));

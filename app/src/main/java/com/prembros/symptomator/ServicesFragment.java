@@ -10,8 +10,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import static com.prembros.symptomator.MainActivity.callEmergencyServices;
-
 public class ServicesFragment extends Fragment implements View.OnClickListener {
 //    private static final String ARG_PARAM1 = "param1";
 //    private static final String ARG_PARAM2 = "param2";
@@ -68,7 +66,7 @@ public class ServicesFragment extends Fragment implements View.OnClickListener {
 
         switch (view.getId()){
             case R.id.call_108:
-                callEmergencyServices(getContext());
+                new CallEmergencyServices(getContext());
                 break;
             case R.id.find_hospitals_nearby:
                 startActivity(new Intent(getContext(), MapsActivity.class));

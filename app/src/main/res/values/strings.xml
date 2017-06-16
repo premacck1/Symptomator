@@ -352,12 +352,12 @@
     <string name="title_activity_maps">Map</string>
     <string name="permission_denied">I won\'t be able to assist you if you dont\'t let me.</string>
     <string name="google_play_services_not_available_error">Sorry, but we couldn\'t find Google Play Services on your device, make sure you have the latest one from play store and try again.</string>
-    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
-        AIzaSyD8GHXtKntCRgbrTjN4YtT94epzA-cJpWY
-    </string>
-    <string name="google_places_key" templateMergeStrategy="preserve" translatable="false">
+<!--    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
         AIzaSyCwmLEnjoalKDciZxizLlWTFLmg0vd7Csc
     </string>
+    <string name="google_places_key" templateMergeStrategy="preserve" translatable="false">
+        AIzaSyD8GHXtKntCRgbrTjN4YtT94epzA-cJpWY
+    </string>-->
     <string name="find">Find</string>
     <string name="powered_by_google">Powered by google</string>
     <string name="selected_symptoms">Selected Symptoms</string>
@@ -378,4 +378,7 @@
     <string name="change_text_size">Change text size</string>
     <string name="show_hospitals">Show hospitals</string>
     <string name="always_improving">Always improving</string>
+    <string name="jump_to_your_location">Jump to your location</string>
+    <string name="show_nearby_hospitals">Show nearby hospitals</string>
+    <string name="emergency_number">Emergency number</string>
 </resources>
