@@ -1,7 +1,7 @@
 ﻿<resources>
     <string name="app_name">Symptomator</string>
     <string name="symptom">Symptoms</string>
-    <string name="hospital">Hospital</string>
+    <string name="hospital">Hospital details</string>
     <string name="common_diseases">Common Diseases</string>
     <string name="icon_author">Icons made by Roundicons (http://www.flaticon.com/authors/roundicons) from Flaticon (www.flaticon.com)</string>
     <string name="ambulance">Ambulance</string>
@@ -311,7 +311,7 @@
     <string name="request_a_private_ambulance">Request a private ambulance</string>
     <string name="check_ambulance_availability">Check ambulance availability</string>
     <string name="call_108">Call Emergency services</string>
-    <string name="doctor">Doctor</string>
+    <string name="doctor">Doctor details</string>
     <string name="doctor_services">Doctor services</string>
     <string name="find_doctors_by_specialisation">Find doctors by specialisation</string>
     <string name="request_urgent_doctor">Request urgent doctor</string>
@@ -384,4 +384,14 @@
     <string name="pick_a_place">Pick a place</string>
     <string name="getting_directions_to_nearest_hospital">Getting directions to nearest hospital</string>
     <string name="finding_nearby_hospitals">Finding nearby hospitals</string>
+    <string name="call_this_place">Call this place</string>
+    <string name="place_details">Place details</string>
+    <string name="show_nearby_doctors">Show nearby doctors</string>
+    <string name="name">Name</string>
+    <string name="address">Address</string>
+    <string name="website">Website</string>
+    <string name="url">URL</string>
+    <string name="photo">Photo</string>
+    <string name="phone_number_not_available">Phone number not available</string>
+    <string name="rating">Rating</string>
 </resources>

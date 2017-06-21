@@ -106,6 +106,16 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.prembros.symptomator.MainActivity" />
         </activity>
+
+        <activity
+            android:name=".PlaceDetailsActivity"
+            android:label="@string/place_details" >
+            <intent-filter>
+                <action android:name=".PlaceDetails" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
     </application>
 
 </manifest>

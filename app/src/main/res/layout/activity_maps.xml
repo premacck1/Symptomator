@@ -2,6 +2,21 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.google.android.gms.maps.SupportMapFragment" />
+
+</RelativeLayout>
+<!--
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <fragment
@@ -11,50 +26,62 @@
         android:id="@+id/map"
         tools:context=".MapsActivity"/>
 
-    <io.codetail.widget.RevealFrameLayout
+    <RelativeLayout
+        android:visibility="invisible"
+        android:id="@+id/marker_details_container"
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
         android:layout_marginTop="60dp"
-        android:layout_alignParentTop="true">
+        android:background="@drawable/map_marker_details">
 
-        <LinearLayout
-            android:id="@+id/marker_details_container"
-            android:visibility="invisible"
-            android:orientation="vertical"
+        <TextView
+            android:id="@+id/marker_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:gravity="center"
+            android:layout_above="@+id/line"
+            android:textColor="@color/white_text_icons"
+            android:layout_toStartOf="@+id/call_place"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true"
             android:layout_marginStart="@dimen/activity_horizontal_margin"
             android:layout_marginEnd="@dimen/activity_horizontal_margin"
-            android:background="@drawable/map_marker_details">
+            android:layout_toStartOf="@+id/call_place"
+            android:background="@color/colorDividerLight"/>
 
-            <TextView
-                android:id="@+id/marker_title"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:textColor="@color/white_text_icons"
-                android:padding="@dimen/activity_horizontal_margin"
-                android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/marker_snippet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line"
+            android:layout_toStartOf="@+id/call_place"
+            android:textColor="@color/white_text_icons"
+            android:padding="@dimen/activity_horizontal_margin" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="@color/colorDividerLight"/>
+        <ImageView
+            android:id="@+id/call_place"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_call"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            tools:ignore="VectorDrawableCompat"
+            android:contentDescription="@string/call_this_place"/>
 
-            <TextView
-                android:id="@+id/marker_snippet"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="@color/white_text_icons"
-                android:padding="@dimen/activity_horizontal_margin" />
-
-        </LinearLayout>
-
-    </io.codetail.widget.RevealFrameLayout>
+    </RelativeLayout>
 
     <RelativeLayout
-        android:alpha="0.6"
+        android:alpha="0.8"
         android:visibility="invisible"
         android:id="@+id/progress_bar_container"
         android:background="@drawable/map_marker_details"
@@ -69,9 +96,7 @@
             android:layout_height="80dp"
             android:layout_centerVertical="true"
             android:layout_marginStart="@dimen/activity_horizontal_margin"
-            android:indeterminateTint="@color/colorPrimary"
-            android:indeterminate="true"
-            tools:targetApi="lollipop" />
+            android:indeterminate="true" />
 
         <TextView
             android:alpha="1"
@@ -88,3 +113,4 @@
     </RelativeLayout>
 
 </RelativeLayout>
+-->

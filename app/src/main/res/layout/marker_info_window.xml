@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/place_options"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="@dimen/activity_horizontal_margin"
+    android:background="@drawable/map_marker_details">
+
+        <TextView
+            android:id="@+id/marker_place_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/separator"
+            android:padding="10dp"
+            android:textColor="@color/white_text_icons"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/separator"
+            android:layout_width="1dp"
+            android:layout_height="56dp"
+            android:layout_margin="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/show_place_details"
+            android:background="@color/white_text_icons"/>
+
+        <ImageButton
+            android:id="@+id/show_place_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:layout_alignParentEnd="true"
+            android:padding="@dimen/activity_horizontal_margin"
+            app:srcCompat="@drawable/ic_details"
+            android:contentDescription="@string/place_details" />
+
+</RelativeLayout>

@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity implements
                                         android.R.anim.fade_in, android.R.anim.fade_out)
                                 .replace(R.id.main_fragment_container, new ServicesFragment(), "servicesFragment")
                                 .commit();
-                        navigation.setItemBackgroundResource(R.color.colorSecondary);
+                        navigation.setItemBackgroundResource(R.color.colorSecondaryDark);
                         navigation.setItemTextColor(ContextCompat.getColorStateList(navigation.getContext(), R.color.white_text_icons));
                         navigation.setItemIconTintList(ContextCompat.getColorStateList(navigation.getContext(), R.color.white_text_icons));
                     }
