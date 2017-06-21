@@ -21897,5 +21897,1273 @@
       "heading": "What About Work or School?",
       "content": "To help reduce the spread of campylobacteriosis, try to avoid school or work or any public places until your stool is firm.\\n\\nIf you still have diarrhea, stay home and try to stay hydrated if possible. A relapse is possible, but not likely."
     }
+  ],
+  "Amebiasis": [
+    {
+      "heading": "Amebiasis",
+      "content": "Amebic dysentery, intestinal amebiasis, amoebiasis, entamebiasis"
+    },
+    {
+      "heading": "Symptoms",
+      "content": "\\t\\t•\\tDiarrhea \\n\\t\\t•\\tFrequent urge to have bowel movement \\n\\t\\t•\\tBloody or red colored stools"
+    },
+    {
+      "heading": "Overview",
+      "content": "Amebiasis is an intestinal infection caused by a one-celled parasite called Entamaeba histolytica. It is most common in tropical countries that have poor sanitation. Most people have no symptoms, but nearly 10%-20% of people who get this infection have diarrhea, cramps, gas, fever, and fatigue. Most people in the U.S. get amebiasis from contaminated food or water when traveling. But it also can spread from person to person from improper hand washing or contact with the mouth or rectal area of someone who has the infection."
+    },
+    {
+      "heading": "What to Expect",
+      "content": "Most people with amebiasis don't have symptoms. Those who do have symptoms usually get them about two to four weeks after exposure to the parasite. In rare cases, the parasite can spread to the liver or other organs and cause more severe symptoms or even death. Amebiasis is treated with antibiotics and usually clears up in about two weeks."
+    },
+    {
+      "heading": "Risk Factors",
+      "content": "You may be at higher risk for amebiasis if you have traveled to a tropical country that has poor sanitary conditions, live in an institution that has poor sanitary conditions, have anal sex, have cancer, are pregnant, or are an alcoholic."
+    },
+    {
+      "heading": "How Common",
+      "content": "About 50 million people worldwide are diagnosed with amebiasis every year. Amebiasis is uncommon in the U.S."
+    },
+    {
+      "heading": "Prevention",
+      "content": "You can help prevent getting or spreading amebiasis by:\\n\\t\\t•\\tCarefully washing your hands after going to the bathroom \\n\\t\\t•\\tAvoiding raw produce and unpurified drinking water when traveling to tropical countries \\n\\t\\t•\\tUsing condoms or dental dams during oral or anal sex"
+    },
+    {
+      "heading": "Treatment",
+      "content": "Amebiasis is usually treated with antibiotics. If you are diagnosed with amebiasis, you should be treated even if you don't have any symptoms. Depending on your condition, you may need to take one antibiotic or two different kinds. You should have your stool checked after treatment to make sure the infection is gone."
+    },
+    {
+      "heading": "Self Care",
+      "content": "Drinking fluids that contain electrolytes can help keep you hydrated if you have vomiting or diarrhea."
+    },
+    {
+      "heading": "When to See Your Doctor",
+      "content": "See your doctor if you have diarrhea that doesn't go away or diarrhea that contains blood or mucus."
+    },
+    {
+      "heading": "Questions to Ask Your Doctor",
+      "content": "\\t\\t•\\tHow contagious is amebiasis? \\n\\t\\t•\\tWill the medication cause any side effects? \\n\\t\\t•\\tWhen should I notify you if my symptoms change? \\n\\t\\t•\\tCould this be something more serious than amebiasis?"
+    }
+  ],
+  "Antibiotic-associated_diarrhea": [
+    {
+      "heading": "Antibiotic-Associated Diarrhea",
+      "content": "Acute diarrhea, AAD, Clostridium difficile, C. difficile"
+    },
+    {
+      "heading": "Symptoms",
+      "content": "\\t\\t•\\tDiarrhea \\n\\t\\t•\\tBloody or red colored stools \\n\\t\\t•\\tNausea or vomiting \\n\\t\\t•\\tChange in stools \\n\\t\\t•\\tPain or discomfort \\n\\t\\t•\\tFever \\n\\t\\t•\\tChange in bowel habits"
+    },
+    {
+      "heading": "Overview",
+      "content": "Antibiotic-associated diarrhea (AAD) is frequent, watery bowel movements that happen after taking antibiotics. In addition to killing the bacteria that are causing an infection, antibiotics can also kill friendly bacteria in your digestive tract. Those friendly bacteria normally keep the harmful bacteria in your intestines in check, so there's a balance. Taking an antibiotic can upset that balance and let the harmful bacteria take over. This can cause mild or severe watery diarrhea, up to 15 or 20 times a day. You may also have other symptoms such as abdominal cramping. In some cases, all you need is to get extra fluids. The doctor may also stop your antibiotics. But if it is severe, you need urgent medical care. This may include intravenous (IV) fluids and a new antibiotic. Most severe cases are caused by a bacterium called Clostridium difficile."
+    },
+    {
+      "heading": "EMERGENCY",
+      "content": "Seek emergency medical care if you have severe symptoms such as diarrhea more than 10 times a day; bowel movements that are bloody, black, or contain mucus; severe abdominal pain; nausea, fever, or severe dehydration."
+    },
+    {
+      "heading": "What to Expect",
+      "content": "Symptoms may begin 5 to 10 days after taking antibiotics. Less often, symptoms begin several weeks later. For mild diarrhea, drink extra fluids and call the doctor. You may need no further treatment or the doctor may stop your antibiotics. If diarrhea is severe, the doctor may prescribe a new antibiotic to treat the diarrhea. You may need intravenous (IV) antibiotics in the hospital. In rare cases, you may need surgery to remove an infected colon. If not treated, AAD can be fatal. Even with treatment, diarrhea may come back and need repeated treatment."
+    },
+    {
+      "heading": "Made Worse By",
+      "content": "Lack of fluids, age, illness, poor immune system, use of opiates, use of diarrhea medications"
+    },
+    {
+      "heading": "Treatment",
+      "content": "Treatment may involve:\\n\\t\\t•\\tTaking extra fluids \\n\\t\\t•\\tStopping any antibiotics that are causing the diarrhea \\n\\t\\t•\\tTaking a new antibiotic to get rid of infection \\n\\t\\t•\\tTaking probiotic supplements, but only if prescribed by the doctor"
+    },
+    {
+      "heading": "Self Care",
+      "content": "To prevent dehydration, drink plenty of fluids, including watered-down fruit juices and broths. You are getting enough fluids if your urine is light yellow or colorless. Combine fluids with salted crackers, if possible. Wash hands often for 15 to 30 seconds to prevent the spread of infection. Keep in mind that many anti-bacterial hand gels do not kill c. diff, even those that hospitals use."
+    },
+    {
+      "heading": "When to See Your Doctor",
+      "content": "Call the doctor if you have watery diarrhea more than six times a day or signs of dehydration such as dry mouth or dark-colored urine."
+    },
+    {
+      "heading": "Questions to Ask Your Doctor",
+      "content": "\\t\\t•\\tWhen should I call you about diarrhea? \\n\\t\\t•\\tWill probiotics help? \\n\\t\\t•\\tHow long should I take my new medication? \\n\\t\\t•\\tWhat are the best ways to avoid spread of infection? \\n\\t\\t•\\tHow can I keep this from coming back?"
+    },
+    {
+      "heading": "Diagnosed By",
+      "content": "Your doctor will ask questions about your medical history and take a stool sample. The doctor may order other tests or exams."
+    },
+    {
+      "heading": "How Common",
+      "content": "C. difficile infection causes 3 million cases of diarrhea in the U.S. each year."
+    },
+    {
+      "heading": "Risk Factors",
+      "content": "Recent hospitalization, living in a nursing home, taking antibiotics, over age 65, severe or multiple illnesses, recent surgery, poor immune system, past infection with Clostridium difficile, use of antacids"
+    }
+  ],
+  "Salmonella": [
+    {
+      "heading": "Symptoms",
+      "content": "\\t\\t•\\tDiarrhea \\n\\t\\t•\\tJoint aches \\n\\t\\t•\\tFever \\n\\t\\t•\\tNausea or vomiting \\n\\t\\t•\\tPain or discomfort \\n\\t\\t•\\tDry mouth \\n\\t\\t•\\tIncreased thirst \\n\\t\\t•\\tStomach cramps"
+    },
+    {
+      "heading": "Overview",
+      "content": "Salmonella are a type of bacteria -- usually spread through contaminated food -- that can infect the body and cause diarrhea, cramps, and fever. Salmonella bacteria are a common cause of food poisoning. High heat kills salmonella, but the bacteria may be in undercooked meat, eggs or poultry or unwashed fruit or vegetables. Pet birds and reptiles such as snakes and turtles can spread it, too. People who are infected may spread it to others directly or through food. Salmonella may cause small outbreaks within a family or larger ones in hospitals or restaurants. Usually, the infection is not serious and goes away on its own.  Untreated salmonella infection is rarely life threatening."
+    },
+    {
+      "heading": "What to Expect",
+      "content": "People with salmonellosis -- infection with salmonella -- develop symptoms within three days. Usually, they last for five to seven days. A person may still spread the bacteria to others even after the symptoms are gone. Most people don't need treatment. If the diarrhea is severe, IV fluids can prevent dehydration. Some people -- such as infants, older people, and people with HIV or other conditions that weaken the immune system -- have a higher risk of complications. A small number of people infected with salmonella go on to develop Reiter's syndrome, which causes chronic joint pain, eye irritation, and pain during urination."
+    },
+    {
+      "heading": "Risk Factors",
+      "content": "Being a child, being older; having a disease that weakens the immune system such as HIV; having birds or reptiles as pets; eating undercooked meat, poultry, or eggs; eating unwashed fruit or vegetables; drinking unpasteurized milk; not washing hands before eating or preparing food"
+    },
+    {
+      "heading": "How Common",
+      "content": "Salmonella infects about 1.4 million people each year in the U.S."
+    },
+    {
+      "heading": "Prevention",
+      "content": "Salmonella bacteria live inside the intestinal tract of many animals. When feces from an infected animal -- or person -- contaminates food, the bacteria may spread. Always cook meats, eggs, and poultry thoroughly. Scrub fruits and vegetables before eating. Never eat raw eggs in foods such as cookie dough or salad dressing. Wash counters, tables, and utensils after preparing raw food that may carry salmonella. Anyone who keeps birds or reptiles as pets must wash hands immediately after touching them. People can still carry the bacteria even if they no longer have symptoms. Anyone who has been diagnosed with salmonella infection should not prepare food for others until doctors are sure the bacteria are gone."
+    },
+    {
+      "heading": "Treatment",
+      "content": "Usually, people with salmonella infections don't need treatment. However, some need:\\n\\t\\t•\\tIV fluids \\n\\t\\t•\\tAntibiotics"
+    },
+    {
+      "heading": "Self Care",
+      "content": "Anyone with salmonella infection symptoms should see a doctor. Make sure to drink plenty of fluids to prevent dehydration. Children may need a special rehydration solution. Protect others in the family by washing your hands regularly. Don't touch anyone else's food or drinks."
+    },
+    {
+      "heading": "When to See Your Doctor",
+      "content": "If you have ongoing diarrhea or cramping, see a doctor. Anyone with severe cramping or bloody diarrhea should see a doctor right away or seek emergency medical care."
+    },
+    {
+      "heading": "Questions to Ask Your Doctor",
+      "content": "\\t\\t•\\tWhat tests do I need? \\n\\t\\t•\\tDo I need any treatment? \\n\\t\\t•\\tWill any medications help with the diarrhea?"
+    },
+    {
+      "heading": "Diagnosed By",
+      "content": "Your doctor will ask questions, examine you, and order a stool test."
+    },
+    {
+      "heading": "Made Worse By",
+      "content": "Being a child, being older, being pregnant, having a disease that weakens the immune system"
+    }
+  ],
+  "Shigellosis": [
+    {
+      "heading": "Shigellosis",
+      "content": "Shigella gastroenteritis"
+    },
+    {
+      "heading": "Symptoms",
+      "content": "\\t\\t•\\tDiarrhea \\n\\t\\t•\\tBloody or red colored stools \\n\\t\\t•\\tFever \\n\\t\\t•\\tNausea or vomiting \\n\\t\\t•\\tPain or discomfort \\n\\t\\t•\\tDry mouth \\n\\t\\t•\\tIncreased thirst \\n\\t\\t•\\tStomach cramps"
+    },
+    {
+      "heading": "Overview",
+      "content": "Shigellosis is irritation of the stomach and intestines caused by Shigella bacteria. The main symptom is bloody diarrhea. Other symptoms include abdominal cramps and fever. In very severe cases, the person may have seizures, stiff neck, headache, and extreme fatigue. Shigella bacteria are found in the stool of an infected person. In the U.S., it's most common in kids under age 5. The illness spreads though direct contact -- such as failing to wash your hands after changing a diaper -- or by eating or drinking contaminated food or beverages. In the U.S., most outbreaks occur in schools, nursing homes, or daycare centers. Most people with mild symptoms get better in 5 to 7 days by drinking plenty of fluids and resting. Your doctor may prescribe antibiotics if you have more severe symptoms."
+    },
+    {
+      "heading": "What to Expect",
+      "content": "Symptoms usually start suddenly about 1 to 7 days after infection. Nausea, vomiting, fever, and diarrhea may last 2 to 7 days, but it may take several months before bowel habits return to normal. Drinking clear fluids helps prevent dehydration. If nausea and vomiting make it hard to drink fluids, call the doctor. Antibiotics can shorten the illness in people with more severe symptoms. Get immediate medical help for severe symptoms such as confusion, tiredness, stiff neck, and headache. In rare cases, some people develop a type of reactive arthritis after the infection has passed. Some people have no symptoms at all, but can still spread the bacteria."
+    },
+    {
+      "heading": "Risk Factors",
+      "content": "Exposure to someone with shigellosis, eating food that was handled by someone with the illness, contaminated water or food"
+    },
+    {
+      "heading": "How Common",
+      "content": "An estimated 450,000 cases of shigellosis occur every year in the U.S."
+    },
+    {
+      "heading": "Prevention",
+      "content": "Shigellosis can be very contagious. These steps can help prevent the illness from spreading:\\n\\t\\t•\\tCarefully wash your hands every time you come in contact with someone with the illness. \\n\\t\\t•\\tDispose of diapers properly and disinfect changing areas. \\n\\t\\t•\\tHelp small children wash their hands thoroughly after using the bathroom. \\n\\nIf you have shigellosis, avoid contact with others as much as possible until your symptoms go away. Wash your hands often, especially after using the bathroom. Do not fix food for other people while you are sick. \\n\\t\\t•\\tKeep children home from school if they are ill with diarrhea, nausea, or vomiting."
+    },
+    {
+      "heading": "Treatment",
+      "content": "Treatment for shigellosis may include:\\n\\t\\t•\\tDrinking clear fluids; to replace the electrolytes lost from vomiting and diarrhea, try an electrolyte drink. Or add a pinch of salt to a glass of water. Severely dehydrated kids and adults may need IV fluids. \\n\\t\\t•\\tTaking antibiotics for severe infections \\n\\t\\t•\\tDon't take anti-diarrheal medications, because they may make the illness last longer."
+    },
+    {
+      "heading": "Self Care",
+      "content": "Self-care for shigellosis includes:\\n\\t\\t•\\tDrinking clear fluids, such as electrolyte drinks, broths, teas, and water \\n\\t\\t•\\tAvoiding solid foods until nausea and vomiting stop \\n\\t\\t•\\tResting"
+    },
+    {
+      "heading": "When to See Your Doctor",
+      "content": "If you have blood in your stool, can't keep fluids down, your symptoms get worse, or symptoms don't get better after a day or two, call your doctor. Get immediate medical attention if the sick person has seizures, confusion, a stiff neck with a headache, and extreme tiredness."
+    },
+    {
+      "heading": "Questions to Ask Your Doctor",
+      "content": "\\t\\t•\\tCould shigellosis be causing my symptoms? \\n\\t\\t•\\tHow contagious is the condition? \\n\\t\\t•\\tHow do I avoid spreading it? Do I need to stay home from work or school? \\n\\t\\t•\\tHow much and what type of fluids should I take? \\n\\t\\t•\\tShould I notify you if symptoms change? \\n\\t\\t•\\tCould this be something more serious?"
+    },
+    {
+      "heading": "Diagnosed By",
+      "content": "Your doctor can diagnose shigellosis by taking your medical history, doing a physical exam, and asking for blood and stool testing."
+    },
+    {
+      "heading": "Made Worse By",
+      "content": "Dehydration, anti-diarrheal medications, spicy or irritating foods"
+    }
+  ],
+  "Cholera": [
+    {
+      "heading": "Cholera",
+      "content": "V. cholerae, Vibrio"
+    },
+    {
+      "heading": "Symptoms",
+      "content": "\\t\\t•\\tDiarrhea \\n\\t\\t•\\tDry mouth \\n\\t\\t•\\tIncreased thirst \\n\\t\\t•\\tWeakness (generalized) \\n\\t\\t•\\tDecreased urination \\n\\t\\t•\\tFever \\n\\t\\t•\\tNausea or vomiting"
+    },
+    {
+      "heading": "Overview",
+      "content": "Cholera is a bacterial infection that can cause diarrhea, nausea, and vomiting. Although most people who have cholera have mild or no symptoms, about 5% of people have severe dehydration that can cause death very quickly. Cholera is spread in water or food that is contaminated with the bacterium Vibrio cholerae. It is rare in most industrialized countries, but it still occurs in parts of Africa, Asia, India, Mexico, and Central and South America. People can also get cholera from eating raw shellfish that are contaminated with the bacteria."
+    },
+    {
+      "heading": "EMERGENCY",
+      "content": "Seek emergency care if you have severe diarrhea or any symptoms of dehydration."
+    },
+    {
+      "heading": "What to Expect",
+      "content": "The symptoms of cholera can range from very mild to very severe. In severe cases, dehydration can occur quickly and can cause death if not treated promptly. Cholera is treated with oral or IV fluids. Treatment may also include antibiotics. When treated quickly, most people with cholera survive."
+    },
+    {
+      "heading": "Treatment",
+      "content": "Cholera is treated with oral or IV fluids. The World Health Organization has developed a salt solution specifically to treat cholera. Some people also need antibiotics."
+    },
+    {
+      "heading": "Self Care",
+      "content": "Severe symptoms of cholera need treatment by a doctor."
+    },
+    {
+      "heading": "When to See Your Doctor",
+      "content": "See your doctor if you have any symptoms of cholera."
+    },
+    {
+      "heading": "Questions to Ask Your Doctor",
+      "content": "\\t\\t•\\tCould cholera be causing my symptoms? \\n\\t\\t•\\tWhat tests do I need? \\n\\t\\t•\\tWhat treatments do I need? \\n\\t\\t•\\tWhen will I feel better? \\n\\t\\t•\\tIs my condition contagious?"
+    },
+    {
+      "heading": "Diagnosed By",
+      "content": "Your doctor will examine you and ask questions about your medical history. Your doctor may also order blood tests or a stool sample."
+    },
+    {
+      "heading": "How Common",
+      "content": "About 3 million to 5 million people around the world have cholera every year."
+    },
+    {
+      "heading": "Risk Factors",
+      "content": "Living in an area with poor sanitary conditions, having low levels of stomach acid, having type O blood, living with someone who has cholera, eating shellfish that is raw or undercooked"
+    }
+  ],
+  "Kidney_stones": [
+    {
+      "heading": "Kidney Stones",
+      "content": "Nephrolithiasis"
+    },
+    {
+      "heading": "Symptoms",
+      "content": "\\t\\t•\\tPain or discomfort \\n\\t\\t•\\tCloudy urine with strong odor \\n\\t\\t•\\tFrequent urge to urinate \\n\\t\\t•\\tBlood or red colored urine \\n\\t\\t•\\tFever \\n\\t\\t•\\tNausea or vomiting"
+    },
+    {
+      "heading": "Overview",
+      "content": "A kidney stone forms when excess waste in the urine crystallizes into a hard mass. If the stone lodges in a ureter, a tube from the kidneys to the bladder, it acts like a dam, holding back urine and causing the kidney to swell. This creates extreme pain. Some tiny stones pass easily if you drink a lot of fluid. But larger stones may need to be broken into pieces with shock wave lithotripsy so they can pass or be removed via cystoscopy. Fever or nausea with a kidney stone is an emergency."
+    },
+    {
+      "heading": "EMERGENCY",
+      "content": "If you have severe pain, with a fever and chills or nausea and vomiting, see your doctor immediately or go to a hospital emergency room."
+    },
+    {
+      "heading": "What to Expect",
+      "content": "Often, a tiny kidney stone is flushed out of the body in urine and you feel no symptoms. But if it's too large to pass easily, you'll feel sudden, sharp cramping pain in the lower back and may have blood in the urine. Sometimes you can take care of kidney stones at home by drinking plenty of fluid and taking pain medication as needed. It may take hours or days for the stone to pass. But you should get medical help immediately if you have severe pain, or fever or chills, which could signal an infection. When you go to an emergency room, you may get intravenous fluids and medication for pain, nausea, and inflammation. If size or location makes it difficult for the stone to pass, you may get extracorporeal shock wave lithotripsy to break it into smaller pieces, so it can move through the urinary tract easier. This is an outpatient procedure and recovery takes only a few days. Other procedures or surgery to remove stones can be used. Having one kidney stone increases your risk of having more stones or developing kidney disease. You may receive medication to prevent stones from forming again."
+    },
+    {
+      "heading": "Made Worse By",
+      "content": "Dehydration can make kidney stones worse."
+    },
+    {
+      "heading": "Treatment",
+      "content": "Treatment for kidney stones may include: \\n\\t\\t•\\tDrinking plenty of water \\n\\t\\t•\\tPain medication \\n\\t\\t•\\tAntibiotics \\n\\t\\t•\\tIntravenous fluids \\n\\t\\t•\\tMedication for nausea or inflammation \\n\\t\\t•\\tAntibiotics for infection \\n\\t\\t•\\tExtracorporeal shock wave lithotripsy \\n\\t\\t•\\tUsing a uretoroscope to remove the stone \\n\\t\\t•\\tSurgery \\n\\t\\t•\\tStents, which are sometimes temporarily placed in the ureter to help drain fluid around the kidney stone \\n\\t\\t•\\tLifestyle changes to prevent recurrence \\n\\t\\t•\\tMedication to prevent recurrence"
+    },
+    {
+      "heading": "Self Care",
+      "content": "These home-care strategies may help when you have a kidney stone:\\n\\t\\t•\\tDrink 2 to 3 quarts of water a day. \\n\\t\\t•\\tTake ibuprofen for pain. \\n\\nThese lifestyle strategies may help prevent future kidney stones:\\n\\t\\t•\\tDrink 12 glasses or water daily (or more if you live in a hot climate). \\n\\t\\t•\\tReduce salty foods in your diet, including sandwich meats, canned soups, packaged meals, and some sports drinks. \\n\\t\\t•\\tTalk to your doctor or a registered dietitian about other diet changes, depending on the cause of your kidney stones."
+    },
+    {
+      "heading": "When to See Your Doctor",
+      "content": "If you have any symptoms of kidney stones, see a doctor."
+    },
+    {
+      "heading": "Questions to Ask Your Doctor",
+      "content": "\\t\\t•\\tHow soon do you think the stone will pass? \\n\\t\\t•\\tShould I strain my urine to try to catch the stones? \\n\\t\\t•\\tShould I make changes to my diet? \\n\\t\\t•\\tCould a medication I am taking make me prone to kidney stones?"
+    },
+    {
+      "heading": "Diagnosed By",
+      "content": "The doctor will take a medical history and do a physical exam, as well as urine and blood tests. The doctor also may do an ultrasound, CT scan, and X-rays, including intravenous pyelogram (X-ray taken after dye is injected into the body)."
+    },
+    {
+      "heading": "How Common",
+      "content": "Each year in the U.S., there are almost 3 million visits to the doctor, and more than half a million emergency room visits for kidney stone problems."
+    },
+    {
+      "heading": "Risk Factors",
+      "content": "You are at increased risk for kidney stones if you have a family history of kidney stones, have had a kidney stone already; don't drink enough water; eat foods with too much salt or sugar; or have had certain infections or surgeries or take certain medications. Kidney stones are more common in Asian and Caucasian men."
+    }
+  ],
+  "Bladder_stones": [
+    {
+      "heading": "Bladder Stones",
+      "content": "Bladder gravel, vesicolithiasis"
+    },
+    {
+      "heading": "Symptoms",
+      "content": "\\t\\t•\\tPain or discomfort \\n\\t\\t•\\tFrequent urge to urinate \\n\\t\\t•\\tPressure or fullness \\n\\t\\t•\\tFrequent urination \\n\\t\\t•\\tPain with urination"
+    },
+    {
+      "heading": "Overview",
+      "content": "Bladder stones are small stones that form in the bladder. Some form from kidney stones that traveled to the bladder. Conditions such as an enlarged prostate, nerve damage, and urinary tract infections can block the flow of urine, making it more concentrated. Bladder stones form from the minerals that build up in urine. Bladder stones don't always have symptoms, but if they irritate the bladder they cause pain and blood in the urine."
+    },
+    {
+      "heading": "What to Expect",
+      "content": "Small bladder stones often cause no symptoms and may not need treatment. You can drink more water daily to help the stones pass. Larger stones or stones that irritate the bladder wall can cause bleeding or stop urine from flowing. In the most common treatment, a doctor will break apart stones using a laser and flush the pieces out of the bladder. When stones are too large or too hard to break up, the doctor will remove the stone through open surgery."
+    },
+    {
+      "heading": "How Common",
+      "content": "Bladder stones are much less common than kidney stones and mostly affect men. They are more common if bladder obstruction is present. Spinal cord injury patients commonly have bladder stones."
+    },
+    {
+      "heading": "Treatment",
+      "content": "Treatment for bladder stones includes:\\n\\t\\t•\\tDrinking plenty of fluids \\n\\t\\t•\\tBreaking up and removing the stones from the bladder \\n\\t\\t•\\tSurgery, if needed, for larger stones \\n\\t\\t•\\tTreating the underlying cause"
+    },
+    {
+      "heading": "Self Care",
+      "content": "If you have just started to experience bladder irritation, drink more fluid to flush your bladder. If your symptoms do not get better, see your doctor."
+    },
+    {
+      "heading": "When to See Your Doctor",
+      "content": "If you have pain with urination, along with pink or cloudy urine, see your doctor as soon as possible."
+    },
+    {
+      "heading": "Questions to Ask Your Doctor",
+      "content": "\\t\\t•\\tIs there anything I'm doing that puts me at risk for bladder stones? \\n\\t\\t•\\tDo I need any treatment? \\n\\t\\t•\\tWhat should I do if I see blood in my urine? \\n\\t\\t•\\tWhen should I expect the symptoms to go away? \\n\\t\\t•\\tWhat else should I be doing to prevent bladder stones?"
+    },
+    {
+      "heading": "Diagnosed By",
+      "content": "Your doctor can diagnose bladder stones by taking a medical history, doing a physical exam, testing the urine, and doing other tests. Other tests may include X-rays, bladder ultrasound, and CT scan."
+    },
+    {
+      "heading": "Risk Factors",
+      "content": "Risk factors for bladder stones include having an enlarged prostate, kidney stones, nerve damage, frequent urinary tract infections, and bladder catheters."
+    }
+  ],
+  "Cervicitis": [
+    {
+      "heading": "Cervicitis",
+      "content": "Inflammation of the cervix"
+    },
+    {
+      "heading": "Symptoms",
+      "content": "\\t\\t•\\tPain or discomfort \\n\\t\\t•\\tItching or burning \\n\\t\\t•\\tVaginal bleeding between periods \\n\\t\\t•\\tVaginal odor \\n\\t\\t•\\tVaginal discharge \\n\\t\\t•\\tPain with urination \\n\\t\\t•\\tDrainage or pus \\n\\t\\t•\\tPain with sexual intercourse (female)"
+    },
+    {
+      "heading": "Overview",
+      "content": "Cervicitis is an inflammation of the cervix, the lower end of the uterus that extends into the vagina. Many things can cause cervicitis, including sexually transmitted diseases (STDs), bacteria, fungi, or parasites. Even irritation or injury of the uterus by intercourse, tampons, or intrauterine devices can cause cervicitis. Typically, you will feel pain in the upper pelvic region and have bloody, thick, or yellow vaginal discharge."
+    },
+    {
+      "heading": "What to Expect",
+      "content": "Many women don't have any symptoms with cervicitis and don't know they have it. However, if not treated, cervicitis can lead to pelvic inflammatory disease and other problems. Treating the underlying cause will allow the cervix to heal quickly. Your doctor will prescribe medication to treat STDs. Vaginal creams can clear up bacterial imbalances or yeast infections. Trauma or irritation from an improperly placed IUD may take a bit longer to heal."
+    },
+    {
+      "heading": "How Common",
+      "content": "There are many millions of cases of cervicitis in the U.S. every year."
+    },
+    {
+      "heading": "Treatment",
+      "content": "Antibiotics or antiviral medications may treat any underlying STDs or infections. Evaluating and treating a woman's sex partner can usually prevent reinfection."
+    },
+    {
+      "heading": "Self Care",
+      "content": "You can treat cervicitis caused by a yeast infection with over-the-counter vaginal creams or suppositories."
+    },
+    {
+      "heading": "Made Worse By",
+      "content": "Intercourse, spermicidal creams or sponges, yeast infections"
+    },
+    {
+      "heading": "When to See Your Doctor",
+      "content": "If vaginal symptoms last more than a few days, you should see your doctor."
+    },
+    {
+      "heading": "Questions to Ask Your Doctor",
+      "content": "\\t\\t•\\tIs there anything I might be doing to cause cervicitis? \\n\\t\\t•\\tDo I need to have further tests or treatment? \\n\\t\\t•\\tWhat can I do to prevent this in the future?"
+    },
+    {
+      "heading": "Diagnosed By",
+      "content": "Cervicitis is diagnosed by a medical history and physical exam along with a pelvic exam, Pap test, and lab tests to check for bacteria and trichomoniasis. In some cases, your doctor may want to do a culposcopy to closely examine your cervix, vagina, and vulva."
+    },
+    {
+      "heading": "Risk Factors",
+      "content": "Having an IUD or a sexually transmitted disease, including human papilloma virus."
+    }
+  ],
+  "Interstitial_cystitis": [
+    {
+      "heading": "Interstitial Cystitis",
+      "content": "Painful bladder syndrome (PBS), bladder pain syndrome (BPS)"
+    },
+    {
+      "heading": "Symptoms",
+      "content": "\\t\\t•\\tPain or discomfort \\n\\t\\t•\\tFrequent urge to urinate \\n\\t\\t•\\tPressure or fullness \\n\\t\\t•\\tFrequent urination \\n\\t\\t•\\tPain with urination \\n\\t\\t•\\tPain with sexual intercourse (female)"
+    },
+    {
+      "heading": "Overview",
+      "content": "Interstitial cystitis is a condition that causes pain in the bladder and pelvic area. It can also cause pain during sex and the need to urinate often or urgently. Doctors don't know what causes interstitial cystitis. It is often misdiagnosed as a urinary tract infection. Although there is no cure for interstitial cystitis, there are several treatments."
+    },
+    {
+      "heading": "What to Expect",
+      "content": "Interstitial cystitis is usually diagnosed after ruling out other conditions, such as bladder infections, sexually transmitted infections, and bladder cancer. There is no cure for interstitial cystitis, but there are several treatments, including medications, electrical stimulation, and, if necessary, surgery. The effectiveness of these treatments varies from person to person."
+    },
+    {
+      "heading": "How Common",
+      "content": "Approximately one in 300 people in the U.S. have interstitial cystitis."
+    },
+    {
+      "heading": "Treatment",
+      "content": "Treatment for interstitial cystitis may include:\\n\\t\\t•\\tA drug called Elmiron to help coat and protect the bladder wall \\n\\t\\t•\\tAntidepressants or antihistamines to help with pain and urinary frequency \\n\\t\\t•\\tBladder wash (bladder instillation) \\n\\t\\t•\\tPhysical therapy and biofeedback to help relieve spasms \\n\\t\\t•\\tBladder training \\n\\t\\t•\\tTranscutaneous electrical nerve stimulation (TENS) \\n\\t\\t•\\tSurgery"
+    },
+    {
+      "heading": "Self Care",
+      "content": "Eating a special diet may help relieve symptoms of interstitial cystitis. The diet involves avoiding foods that may irritate the bladder, including aged cheeses, chocolate, coffee, cranberry juice, cured meats, spices, acidic foods, tomatoes, and artificial sweeteners. Stretching may also help relieve symptoms."
+    },
+    {
+      "heading": "Made Worse By",
+      "content": "Some people with interstitial cystitis believe that certain foods make their symptoms worse. These foods include aged cheeses, chocolate, coffee, cranberry juice, cured meats, spices, acidic foods, tomatoes, and artificial sweeteners. Smoking may also increase symptoms."
+    },
+    {
+      "heading": "When to See Your Doctor",
+      "content": "See your doctor if you have any symptoms of interstitial cystitis, blood in the urine, or if you have frequent urinary tract infections that don't get better with antibiotics."
+    },
+    {
+      "heading": "Questions to Ask Your Doctor",
+      "content": "\\t\\t•\\tAm I doing anything to increase my chances for interstitial cystitis? \\n\\t\\t•\\tDo I need to take antispasmodic medications? \\n\\t\\t•\\tWhat other treatments should I try? \\n\\t\\t•\\tWhen should I expect the symptoms to go away? \\n\\t\\t•\\tWhat else can I do to help control symptoms?"
+    },
+    {
+      "heading": "Diagnosed By",
+      "content": "To diagnose interstitial cystitis, your doctor will have to rule out other causes. You may need to have the following tests:\\n\\t\\t•\\tBladder biopsy \\n\\t\\t•\\tUrine culture or urine analysis \\n\\t\\t•\\tEndoscopy of the bladder"
+    }
+  ],
+  "Miscarriage": [
+    {
+      "heading": "Miscarriage",
+      "content": "Spontaneous abortion"
+    },
+    {
+      "heading": "Symptoms",
+      "content": "\\t\\t•\\tPain or discomfort \\n\\t\\t•\\tVaginal bleeding \\n\\t\\t•\\tMissed or late menstrual period"
+    },
+    {
+      "heading": "Overview",
+      "content": "A miscarriage happens when a pregnancy is lost before the 20th week, usually within the first three months. If you're having a miscarriage, you're most likely to have light or heavy bleeding. You may need no treatment or your doctor may do a procedure to complete the miscarriage and prevent hemorrhaging and infection. You may never know what caused your miscarriage, but it often happens because the fetus isn't developing as it should. Your risk of miscarriage is higher if you are over 35 years old or have had two previous miscarriages. Miscarriage is fairly common, but it can be a very difficult emotional experience. Most women who have a miscarriage go on to have a healthy pregnancy."
+    },
+    {
+      "heading": "EMERGENCY",
+      "content": "Go to a hospital emergency room immediately if you are pregnant or think you may be pregnant and have heavy vaginal bleeding (more than one pad every hour), are passing tissue, have a history of ectopic pregnancy, are dizzy or pass out, have a fever over 100.4 degrees Fahrenheit, or are vomiting. If you have passed tissue, put it in a container to take to the hospital."
+    },
+    {
+      "heading": "What to Expect",
+      "content": "If you are pregnant and have any symptoms of a miscarriage such as bleeding that gets heavier, cramps, abdominal pain or low back ache, or a gush of fluid from your vagina, your obstetrician may tell you to come to the office or go to a hospital emergency room to check for miscarriage. If your pregnancy looks healthy, you may need bed rest for several days until the bleeding stops. If you've had a miscarriage but there is still some tissue in the uterus from the fetus or placenta, the doctor may remove it. Or the doctor may give you medication to help you pass the tissue at home. If the miscarriage is complete, you probably won't need treatment. You may have cramping or spotting for a few days after a miscarriage, but heavy bleeding, fever, or pain could signal an infection. Physical recovery could take a few days or weeks, depending on how long you were pregnant. It may take longer to recover emotionally."
+    },
+    {
+      "heading": "Made Worse By",
+      "content": "Activity, aspirin use"
+    },
+    {
+      "heading": "Treatment",
+      "content": "Treatment for a miscarriage may include:\\n\\t\\t•\\tD&C (dilation and curettage) procedure -- the uterus is dilated and remaining fetal or placental tissue is gently removed \\n\\t\\t•\\tOral medication to help pass the tissue"
+    },
+    {
+      "heading": "Self Care",
+      "content": "These self-care strategies may help after a miscarriage:\\n\\t\\t•\\tAvoid sex or putting anything into your vagina for two weeks to avoid infection. \\n\\t\\t•\\tCall your doctor if you have any signs of infection, such as severe bleeding, pain, or fever. \\n\\t\\t•\\tAvoid heavy work or strenuous exercise for a week. \\n\\t\\t•\\tMake sure you are emotionally ready before getting pregnant again. You can get pregnant within two weeks of a miscarriage. \\n\\t\\t•\\tDiscuss the timing of your next pregnancy with your obstetrician. \\n\\t\\t•\\tMany women find it difficult to cope with the loss of a pregnancy. If you feel that you need more emotional support, consider seeing a counselor."
+    },
+    {
+      "heading": "When to See Your Doctor",
+      "content": "If you are pregnant or think you are pregnant, call your doctor if you have vaginal bleeding, abdominal pain or cramps, low back pain, dizziness, nausea, or pain or burning with urination."
+    },
+    {
+      "heading": "Questions to Ask Your Doctor",
+      "content": "\\t\\t•\\tCould a miscarriage be causing my symptoms? \\n\\t\\t•\\tIf I've had a miscarriage, do I need treatment? \\n\\t\\t•\\tIs this due to any underlying structural problem with my tubes or uterus? \\n\\t\\t•\\tWill I have problems getting pregnant in the future?"
+    },
+    {
+      "heading": "Diagnosed By",
+      "content": "Your doctor will take a medical history and do a pelvic exam and ultrasound."
+    },
+    {
+      "heading": "How Common",
+      "content": "In the U.S., about 600,000 women a year have miscarriages."
+    },
+    {
+      "heading": "Risk Factors",
+      "content": "Two or more previous miscarriages; being older than 35 years old; having a chronic disease such as diabetes that is not controlled; smoking, drinking alcohol, or using illegal drugs; having abnormalities of the cervix, uterus, or hormones; autoimmune diseases such as lupus; certain medications; being malnourished; exposure to high levels of radiation or toxins; having severe kidney, thyroid, or congenital heart disease"
+    }
+  ],
+  "Premature_labor": [
+    {
+      "heading": "Premature Labor",
+      "content": "Early labor, preterm labor"
+    },
+    {
+      "heading": "Symptoms",
+      "content": "\\t\\t•\\tPain or discomfort \\n\\t\\t•\\tVaginal bleeding \\n\\t\\t•\\tVaginal discharge"
+    },
+    {
+      "heading": "Overview",
+      "content": "Premature labor occurs when a women starts labor before 37 weeks of pregnancy. It can happen for reasons such as stress, infection, or multiple births. But premature labor also can happen for no apparent reason. Women who have premature labor may have contractions, cramping, bleeding or leaking fluid from the vagina, or back pain. Babies born earlier than 37 weeks have a higher risk of health problems, so doctors often use medications to try to stop labor. The earlier the baby is born, the more health risks he or she faces."
+    },
+    {
+      "heading": "EMERGENCY",
+      "content": "Seek medical care right away if you have any symptoms of premature labor."
+    },
+    {
+      "heading": "What to Expect",
+      "content": "Premature labor can happen to any woman who is pregnant. It can happen any time before the 37th week of pregnancy. Many women have some contractions during the last part of pregnancy. But if you have steady contractions that last more than an hour, it might be premature labor. In some cases, doctors can use medications to try to stop the labor. But sometimes, it's not possible and the baby is born early."
+    },
+    {
+      "heading": "Treatment",
+      "content": "Your doctor may give you medication to try to delay or stop the labor. If it isn't possible to delay your baby's birth, your doctor may give you a corticosteroid to help your baby's lungs mature."
+    },
+    {
+      "heading": "Self Care",
+      "content": "If your labor stops, you may have to limit your activities for the rest of your pregnancy."
+    },
+    {
+      "heading": "When to See Your Doctor",
+      "content": "See your doctor right away if you have any symptoms of premature labor."
+    },
+    {
+      "heading": "Questions to Ask Your Doctor",
+      "content": "\\t\\t•\\tHow far along in the pregnancy am I? \\n\\t\\t•\\tIs the baby developed enough to be born? \\n\\t\\t•\\tCan my labor be delayed or stopped?"
+    },
+    {
+      "heading": "Diagnosed By",
+      "content": "To diagnose premature labor, your doctor will take a medical history and do a pelvic exam. Your doctor may also order other tests, such as fetal monitoring and an ultrasound."
+    },
+    {
+      "heading": "How Common",
+      "content": "About one of every eight babies born in the U.S. is premature."
+    },
+    {
+      "heading": "Risk Factors",
+      "content": "You may be at greater risk for premature labor if you:\\n\\t\\t•\\tAre pregnant with more than 1 baby \\n\\t\\t•\\tHad premature labor with a previous pregnancy \\n\\t\\t•\\tHave had little or no prenatal care \\n\\t\\t•\\tAre underweight \\n\\t\\t•\\tHave an infection \\n\\t\\t•\\tHave had bleeding during your pregnancy \\n\\t\\t•\\tAre obese \\n\\t\\t•\\tUse illegal drugs \\n\\t\\t•\\tHave a problem with your uterus \\n\\t\\t•\\tSmoke \\n\\t\\t•\\tDrink alcohol \\n\\t\\t•\\tHave diabetes \\n\\t\\t•\\tWere exposed to the medication DES"
+    }
+  ],
+  "Round_ligament_pain": [
+    {
+      "heading": "Pregnancy Ligament Pain",
+      "content": "Round ligament pain, pelvic pain, abdominal pain, stomach pain"
+    },
+    {
+      "heading": "Symptoms",
+      "content": "\\t\\t•\\tPain or discomfort"
+    },
+    {
+      "heading": "Overview",
+      "content": "During pregnancy, as ligaments that connect the uterus to the pelvis expand to make room for the growing baby, the stretching can cause a pulling or stabbing sensation for some women. It can be very painful, especially when standing, walking, or changing positions in bed. The pelvic pain can be so severe that women mistake it for something serious. But rest and other self-care are usually all you need to feel better."
+    },
+    {
+      "heading": "What to Expect",
+      "content": "With rest, stretching, and other self-care, the pain usually subsides within an hour or so. But it may recur throughout the rest of the pregnancy. If pain is severe or if you have other symptoms, too, your doctor may do tests to rule out more serious problems."
+    },
+    {
+      "heading": "How Common",
+      "content": "Stretched ligaments cause severe pain in 10% to 30% of all pregnancies."
+    },
+    {
+      "heading": "Treatment",
+      "content": "If self-care doesn't help, your doctor may suggest special exercises, safe movements, pain medication, or a maternity belt."
+    },
+    {
+      "heading": "Self Care",
+      "content": "To minimize round ligament pain:\\n\\t\\t•\\tRest \\n\\t\\t•\\tAvoid sudden movements \\n\\t\\t•\\tGently stretch; flex the hip on the affected side or move your knees toward your chest \\n\\t\\t•\\tUse a heating pad or take a warm bath \\n\\t\\t•\\tMassage the area \\n\\t\\t•\\tLie on the opposite side"
+    },
+    {
+      "heading": "Made Worse By",
+      "content": "Sudden movements, exercise, changing positions, prolonged standing, sneezing, fetal movement, Braxton Hicks contractions"
+    },
+    {
+      "heading": "When to See Your Doctor",
+      "content": "Call your doctor if your pain is severe or doesn't get better within an hour. The doctor may want to rule out other problems, such as cervical insufficiency (when the cervix opens too early), or appendicitis. Call 911 or go to the emergency room if pain is very severe and worsens over time and you have other symptoms such as fever, diarrhea, nausea, vomiting, painful urination, or vaginal bleeding. You may have a more serious medical condition."
+    },
+    {
+      "heading": "Questions to Ask Your Doctor",
+      "content": "\\t\\t•\\tWill the pain get worse as pregnancy proceeds? \\n\\t\\t•\\tWhat can I do to lessen the pain? \\n\\t\\t•\\tHow can I be sure this isn't something serious?"
+    },
+    {
+      "heading": "Diagnosed By",
+      "content": "Your doctor can usually diagnose pregnancy ligament pain based on your symptoms.  You may need blood or urine tests or an ultrasound to rule out other problems."
+    }
+  ],
+  "Broken_(fractured)_shoulder_blade": [
+    {
+      "heading": "Broken Shoulder Blade",
+      "content": "Fractured shoulder blade, broken scapula"
+    },
+    {
+      "heading": "Symptoms",
+      "content": "\\t\\t•\\tBroken bone (single fracture) \\n\\t\\t•\\tSwelling \\n\\t\\t•\\tVisible deformity \\n\\t\\t•\\tPain or discomfort \\n\\t\\t•\\tBruising or discoloration \\n\\t\\t•\\tTenderness to touch"
+    },
+    {
+      "heading": "Overview",
+      "content": "The shoulder blade, or scapula, rarely breaks. When it does, it is usually the result of a major traumatic injury, such as a car accident. Fractured shoulder blades need to be immobilized. With time, they usually heal on their own. Severe breaks may require surgery."
+    },
+    {
+      "heading": "EMERGENCY",
+      "content": "Seek immediate medical assistance if you have been in an accident and are injured or if you have severe shoulder pain accompanied by shortness of breath, decreased feeling in the affected arm, or abdominal pain. Also seek emergency care if your shoulder is misshapen or you can't move your shoulder or arm."
+    },
+    {
+      "heading": "What to Expect",
+      "content": "Most fractures of the shoulder blade heal without complications within two months. Serious fractures may require surgery. Fractures in children usually heal faster and better than in adults because children's bones are less brittle and still growing. Severe fractures in adults may lead to loss of range of motion, loss of strength, chronic pain, and early arthritis."
+    },
+    {
+      "heading": "Made Worse By",
+      "content": "Moving an injured shoulder"
+    },
+    {
+      "heading": "Treatment",
+      "content": "Most shoulder blade fractures are treated with pain medications and ice to reduce swelling. The shoulder is usually immobilized in a sling for up to a month until the pain goes away. Your doctor may recommend range of motion exercises while your shoulder heals. These can ensure that you regain full movement. Full recovery may take 6 months to a year. Certain injuries to the shoulder blade may be severe enough to require surgery. Surgeons may use plates and screws to hold the broken bones together."
+    },
+    {
+      "heading": "Self Care",
+      "content": "Because shoulder blade fractures are often associated with severe, potentially life-threatening injuries, they should be evaluated in a hospital emergency department. On the way to the hospital, keep the arm immobile by putting it in a sling. Apply ice for 20 minutes at a time to the area to reduce swelling and pain."
+    },
+    {
+      "heading": "When to See Your Doctor",
+      "content": "Call your doctor if you have shoulder pain that does not go away on its own in a few days."
+    },
+    {
+      "heading": "Questions to Ask Your Doctor",
+      "content": "\\t\\t•\\tHow serious is the fracture in my shoulder blade? \\n\\t\\t•\\tWill it heal on its own? \\n\\t\\t•\\tWill it require surgery? \\n\\t\\t•\\tWhile it heals, what can I do to ease the symptoms? \\n\\t\\t•\\tWhen will I be able to move my shoulder again? \\n\\t\\t•\\tShould I make an appointment with a physical therapist? \\n\\t\\t•\\tWill my shoulder heal completely? \\n\\t\\t•\\tWhat can I do to prevent further injury to my shoulder?"
+    },
+    {
+      "heading": "Diagnosed By",
+      "content": "Your doctor will diagnose a broken shoulder blade by doing a physical exam and looking at images from X-rays or CT scans. Because shoulder blade fractures are usually associated with traumatic injury, your doctor will examine you carefully to look for other injuries."
+    },
+    {
+      "heading": "How Common",
+      "content": "Shoulder blade fractures are rare. They account for less than 1% of all bone fractures."
+    },
+    {
+      "heading": "Risk Factors",
+      "content": "Engaging in contact sports, being at risk of accidental injuries"
+    }
+  ],
+  "Scoliosis": [
+    {
+      "heading": "Scoliosis",
+      "content": "Spinal curvature, kyphoscoliosis"
+    },
+    {
+      "heading": "Symptoms",
+      "content": "\\t\\t•\\tCurved spine \\n\\t\\t•\\tShortness of breath \\n\\t\\t•\\tPain or discomfort"
+    },
+    {
+      "heading": "Overview",
+      "content": "Scoliosis occurs when the spine curves sideways more than it should. It most often happens around puberty and affects more girls than boys. Doctors don't know what causes most cases of scoliosis. In some cases, children are born with scoliosis, or a disease such as spina bifida or cerebral palsy causes it. Scoliosis can make one shoulder or hip look higher than the other. It can also cause backache or fatigue. Most cases are mild, and many times no treatment is needed. Some children may need a brace or, in severe cases, surgery."
+    },
+    {
+      "heading": "What to Expect",
+      "content": "Most cases of scoliosis start in childhood, but sometimes it can happen in adults. Children may first have symptoms at around age 3. The curving of the spine usually gets worse during growth spurts. Mild cases of scoliosis might not need any treatment except being checked about every six months. More severe cases are often treated with a brace to help prevent the curve from getting worse. In some cases, scoliosis is treated with surgery."
+    },
+    {
+      "heading": "How Common",
+      "content": "About 2% of people in the U.S. have scoliosis."
+    },
+    {
+      "heading": "Treatment",
+      "content": "Treatment for scoliosis may include:\\n\\t\\t•\\tA back brace \\n\\t\\t•\\tSurgery"
+    },
+    {
+      "heading": "Made Worse By",
+      "content": "Growth spurts, chronic wheelchair use"
+    },
+    {
+      "heading": "When to See Your Doctor",
+      "content": "See your doctor if you or your child has any symptoms of scoliosis, or if anyone in your family has scoliosis."
+    },
+    {
+      "heading": "Questions to Ask Your Doctor",
+      "content": "\\t\\t•\\tCould scoliosis be causing my child's symptoms? \\n\\t\\t•\\tDoes my child need any tests? \\n\\t\\t•\\tDoes my child need a brace? \\n\\t\\t•\\tHow often should my child be examined?"
+    },
+    {
+      "heading": "Diagnosed By",
+      "content": "Your child's doctor will do an exam and ask questions about your child's medical history. The doctor may also order X-rays, a CT scan, a bone scan, or an MRI."
+    },
+    {
+      "heading": "Risk Factors",
+      "content": "Being female, having a family member with scoliosis"
+    }
+  ],
+  "Broken_(fractured)_low_back_vertebra": [
+    {
+      "heading": "Broken (Fractured) Low Back Vertebra",
+      "content": "Vertebral compression fracture, lumbar fracture"
+    },
+    {
+      "heading": "Symptoms",
+      "content": "\\t\\t•\\tDifficulty walking \\n\\t\\t•\\tStiffness or decreased movement \\n\\t\\t•\\tTenderness to touch \\n\\t\\t•\\tPain or discomfort \\n\\t\\t•\\tVisible deformity \\n\\t\\t•\\tBroken bone (single fracture)"
+    },
+    {
+      "heading": "Overview",
+      "content": "A broken low back occurs when one of the vertebrae in the spine is broken. It is most often caused by a severe injury to the spine, such as a car accident, sports injury, or fall. But it also can happen if you have a disease such as osteoporosis or cancer. The lower spine is a common spot for fractures. A broken back can cause pain in the lower back, upper back, neck, or hip. It also can cause weakness or numbness and tingling."
+    },
+    {
+      "heading": "EMERGENCY",
+      "content": "Seek medical care immediately if you have back pain with a fever, severe numbness or weakness, or if you can't control your urination or bowel movements."
+    },
+    {
+      "heading": "What to Expect",
+      "content": "Most people with a broken back have pain in their back. The amount of pain can vary from person to person. Although it is a serious injury, a broken back often can be treated without surgery. In severe cases, you may need surgery to prevent further problems. Some people have chronic back pain after a broken back, even with surgery."
+    },
+    {
+      "heading": "Made Worse By",
+      "content": "Activity"
+    },
+    {
+      "heading": "Treatment",
+      "content": "Treatment for a broken back may include:\\n\\t\\t•\\tA back brace \\n\\t\\t•\\tPain medications \\n\\t\\t•\\tPhysical therapy \\n\\t\\t•\\tSurgery"
+    },
+    {
+      "heading": "Self Care",
+      "content": "You can help ease the symptoms of a broken back at home by:\\n\\t\\t•\\tGetting rest \\n\\t\\t•\\tTaking over-the-counter pain relievers \\n\\t\\t•\\tApplying ice wrapped in a thin towel to the injured area for 15-20 minutes a few times a day for the first week \\n\\t\\t•\\tStretching and exercising as directed by your doctor"
+    },
+    {
+      "heading": "When to See Your Doctor",
+      "content": "See your doctor if you have back pain that doesn't feel better at rest or if you have osteoporosis or cancer and have back pain."
+    },
+    {
+      "heading": "Questions to Ask Your Doctor",
+      "content": "\\t\\t•\\tHow severe is my injury? \\n\\t\\t•\\tAre there any activities I should avoid? \\n\\t\\t•\\tWhat exercises can I do to ease my symptoms? \\n\\t\\t•\\tWhat alternative treatments might help me? \\n\\t\\t•\\tDo you think my symptoms will get better or worse over time?"
+    },
+    {
+      "heading": "Diagnosed By",
+      "content": "To diagnose a broken back, your doctor will take a medical history and do a medical exam. Your doctor may also order X-rays, a CT or MRI scan, and neurological tests."
+    },
+    {
+      "heading": "How Common",
+      "content": "Each year, about 150,000 people in North America break a bone in their back. The most common of these is in the mid to lower back."
+    },
+    {
+      "heading": "Risk Factors",
+      "content": "Osteoporosis, cancer"
+    }
+  ],
+  "Vertebral_compression_fracture_(lumbar)": [
+    {
+      "heading": "Vertebral Compression Fracture (Lumbar)",
+      "content": "Lumbar fracture"
+    },
+    {
+      "heading": "Symptoms",
+      "content": "\\t\\t•\\tPain or discomfort \\n\\t\\t•\\tJoint pain"
+    },
+    {
+      "heading": "Overview",
+      "content": "A vertebral compression fracture occurs when one of the vertebrae in the spine is broken. It is most often caused by a severe injury to the spine, such as a car accident, sports injury, or fall. But it can also happen if you have a disease such as osteoporosis or cancer. The lower spine is a common spot for compression fractures. A vertebral compression fracture can cause pain in the lower back, upper back, neck, or hip. It can also cause weakness or numbness and tingling."
+    },
+    {
+      "heading": "What to Expect",
+      "content": "Most people with a vertebral compression fracture have pain in their back. The amount of pain can vary from person to person. Although it is a serious injury, a vertebral compression fracture can often be treated without surgery. In severe cases, you may need surgery to prevent further problems. Some people have chronic back pain after a vertebral compression fracture even with surgery."
+    },
+    {
+      "heading": "How Common",
+      "content": "Most spinal compression fractures are seen in elderly people who have osteoporosis."
+    },
+    {
+      "heading": "Risk Factors",
+      "content": "Having osteoporosis or cancer"
+    },
+    {
+      "heading": "Treatment",
+      "content": "Treatment for vertebral compression fracture may include:\\n\\t\\t•\\tA back brace \\n\\t\\t•\\tPain medications \\n\\t\\t•\\tPhysical therapy \\n\\t\\t•\\tSurgery to relieve pressure on nerves or back surgery."
+    },
+    {
+      "heading": "Self Care",
+      "content": "You can help ease the symptoms of vertebral compression fracture at home by:\\n\\t\\t•\\tGetting rest \\n\\t\\t•\\tTaking over-the-counter pain relievers \\n\\t\\t•\\tApplying ice to the injured area for 15 to 20 minutes a few times a day for the first week\\n\\t\\t•\\tStretching and exercising as directed by your doctor"
+    },
+    {
+      "heading": "When to See Your Doctor",
+      "content": "See your doctor if you have back pain that doesn’t feel better at rest or if you have osteoporosis or cancer and have back pain. Seek medical care right away if you have back pain with a fever, severe numbness or weakness, or if you can't control your urination or bowel movements."
+    },
+    {
+      "heading": "Questions to Ask Your Doctor",
+      "content": "\\t\\t•\\tHow severe is my injury? \\n\\t\\t•\\tAre there any activities I should avoid? \\n\\t\\t•\\tWhat exercises can I do to ease my symptoms? \\n\\t\\t•\\tWhat alternative therapies might help me? \\n\\t\\t•\\tDo you think my symptoms will get better or worse over time?"
+    },
+    {
+      "heading": "Diagnosed By",
+      "content": "To diagnose vertebral compression fracture, your doctor will take a medical history and do a medical exam. Your doctor may also order X-rays, a CT or MRI scan, and neurological tests."
+    },
+    {
+      "heading": "Made Worse By",
+      "content": "Activity usually makes symptoms worse."
+    }
+  ],
+  "Broken_(fractured)_upper_back_vertebra": [
+    {
+      "heading": "Broken (Fractured) Upper Back Vertebra",
+      "content": "Vertebral fractures, thoracic fractures"
+    },
+    {
+      "heading": "Symptoms",
+      "content": "\\t\\t•\\tBroken bone (single fracture) \\n\\t\\t•\\tSwelling \\n\\t\\t•\\tBruising or discoloration \\n\\t\\t•\\tTenderness to touch \\n\\t\\t•\\tPain or discomfort \\n\\t\\t•\\tStiffness or decreased movement \\n\\t\\t•\\tVisible deformity"
+    },
+    {
+      "heading": "Overview",
+      "content": "Upper back fractures, also called thoracic spine fractures, can occur from a high-impact injury or from weakened bones. Automobile accidents, falls, gunshot wounds, and sports accidents can all cause spinal fractures. These types of injuries often also damage the spinal cord. Certain conditions that weaken bones, including osteoporosis, long-term use of steroid medications, and tumors can cause compression fractures. These occur when the vertebra become so weak that they eventually collapse. Spinal fractures may cause moderate to severe back pain, numbness and tingling, and loss of bowel or bladder control. Osteoporosis can affect several vertebrae at a time, causing a curve in the back called a dowager's hump. Treatment may include rest, pain medication, braces or casts, medication to strengthen bones, physical therapy, and surgery."
+    },
+    {
+      "heading": "EMERGENCY",
+      "content": "Get immediate medical help if you have back pain and high fever or loss of bladder or bowel control."
+    },
+    {
+      "heading": "What to Expect",
+      "content": "If you have a spinal fracture from an auto accident or fall, you may have other injuries, as well. Your doctor will do a physical exam and treat the most severe injuries first. Spinal fractures caused by osteoporosis may have no symptoms at first and are sometimes discovered when X-rays are done for other reasons. Treatment depends on your symptoms and the type of spinal fracture you have. Rest at home, hospitalization, pain medications, braces or casts, medications to strengthen bones, physical therapy, and surgery all treat spinal fractures. Recovery can take months and even longer if you have surgery or have a spinal cord injury."
+    },
+    {
+      "heading": "Made Worse By",
+      "content": "Movement, not getting treatment"
+    },
+    {
+      "heading": "Treatment",
+      "content": "Treatment for a fractured spine may include:\\n\\t\\t•\\tRest \\n\\t\\t•\\tPain medication \\n\\t\\t•\\tMuscle relaxants \\n\\t\\t•\\tPhysical therapy \\n\\t\\t•\\tBracing and casts \\n\\t\\t•\\tCalcium supplements and medications to help build bone \\n\\t\\t•\\tSurgery to stabilize the fracture \\n\\t\\t•\\tKyphoplasty or vertebroplasty, where a type of cement is injected into a collapsed vertebra"
+    },
+    {
+      "heading": "Self Care",
+      "content": "Self-care should be done with your doctor's supervision and may include:\\n\\t\\t•\\tRest \\n\\t\\t•\\tPain medication \\n\\t\\t•\\tApplying ice or heat \\n\\t\\t•\\tStretches and strengthening exercises"
+    },
+    {
+      "heading": "When to See Your Doctor",
+      "content": "See your doctor if you have any ongoing back pain, especially if you are an older adult. Also see your doctor if you have injured your back."
+    },
+    {
+      "heading": "Questions to Ask Your Doctor",
+      "content": "\\t\\t•\\tCould a spinal fracture be causing my symptoms? \\n\\t\\t•\\tIs my spinal cord injured? \\n\\t\\t•\\tWhat are my treatment options? \\n\\t\\t•\\tWhat are the pros and cons of each type of treatment? \\n\\t\\t•\\tWhat is the outlook for my recovery?"
+    },
+    {
+      "heading": "Diagnosed By",
+      "content": "Your doctor can diagnose a spinal fracture by taking your medical history, doing a physical exam, testing to see if you can move and feel your legs and arms, and testing your reflexes. You may also have X-rays, an MRI, CT scans, and other tests."
+    },
+    {
+      "heading": "How Common",
+      "content": "About 1.5 million new compression fractures occur in the U.S. every year."
+    },
+    {
+      "heading": "Risk Factors",
+      "content": "Being an older woman, taking long-term steroid medication, smoking, low-calcium diet, car accidents, sports that put you at risk for back injury such as rock climbing"
+    }
+  ],
+  "Thoracic_(upper_back)_strain": [
+    {
+      "heading": "Symptoms",
+      "content": "\\t\\t•\\tPain or discomfort \\n\\t\\t•\\tTenderness to touch \\n\\t\\t•\\tStiffness or decreased movement \\n\\t\\t•\\tMuscle cramps or spasms (painful)"
+    },
+    {
+      "heading": "Overview",
+      "content": "Thoracic strain occurs when the muscles around the upper vertebrae in your back get stretched or torn. This can happen from aging, poor posture, or from an injury. It causes pain or stiffness in the upper back. In many cases, it can occur with shoulder or neck pain."
+    },
+    {
+      "heading": "What to Expect",
+      "content": "In most cases, thoracic strain gets better in a few weeks with a short period of rest and anti-inflammatory medications. Massage therapy, physical therapy, manual manipulation, and acupuncture can also help."
+    },
+    {
+      "heading": "How Common",
+      "content": "Most people get mild upper back strain at some point in their lives."
+    },
+    {
+      "heading": "Treatment",
+      "content": "Treatment for thoracic strain may include:\\n\\t\\t•\\tResting for a few days \\n\\t\\t•\\tAnti-inflammatory medications \\n\\t\\t•\\tMassage therapy \\n\\t\\t•\\tPhysical therapy \\n\\t\\t•\\tAcupuncture \\n\\t\\t•\\tTrigger point injections \\n\\t\\t•\\tElectrical muscle stimulation"
+    },
+    {
+      "heading": "Self Care",
+      "content": "You can ease the symptoms of thoracic strain at home with these self-care tips:\\n\\t\\t•\\tRest for a few days \\n\\t\\t•\\tAnti-inflammatory medications \\n\\t\\t•\\tHot or cold packs \\n\\t\\t•\\tStretching and strengthening exercises"
+    },
+    {
+      "heading": "Made Worse By",
+      "content": "Poor posture, muscle tension"
+    },
+    {
+      "heading": "When to See Your Doctor",
+      "content": "See your doctor if you have any symptoms of thoracic strain."
+    },
+    {
+      "heading": "Questions to Ask Your Doctor",
+      "content": "\\t\\t•\\tCould thoracic strain or another condition be causing my symptoms? \\n\\t\\t•\\tAre there any treatments that might help? \\n\\t\\t•\\tIs there any medication that could help my symptoms? \\n\\t\\t•\\tWhen will I feel better?"
+    },
+    {
+      "heading": "Diagnosed By",
+      "content": "To diagnose thoracic strain, your doctor will take a medical history and do a physical exam. Your doctor may also order X-rays, a CT scan, or an MRI."
+    },
+    {
+      "heading": "Risk Factors",
+      "content": "Poor posture, computer work, not being in shape, stress, making repetitive motions"
+    }
+  ],
+  "Ankylosing_spondylitis": [
+    {
+      "heading": "Ankylosing Spondylitis",
+      "content": "Rheumatoid spondylitis, spondylitis, spondyloarthropathy, seronegative bundle arthropathy"
+    },
+    {
+      "heading": "Symptoms",
+      "content": "\\t\\t•\\tPain or discomfort \\n\\t\\t•\\tMorning joint stiffness \\n\\t\\t•\\tStiffness or decreased movement"
+    },
+    {
+      "heading": "Overview",
+      "content": "Ankylosing spondylitis is a long-lasting spinal condition in which the joints between the bones of the spine become inflamed. Over time, this causes the bones to fuse together, making your spine less flexible. Ankylosing spondylitis has no known cause but does run in families. It is much more common in men and usually starts between ages 20 and 40. People who have ankylosing spondylitis usually have pain and stiffness in the lower back that is worse at night and gets better with exercise. Complications can include eye inflammation, trouble breathing, heart problems, and spinal fractures. Treatment can relieve pain and stiffness and help prevent significant damage to your spine."
+    },
+    {
+      "heading": "What to Expect",
+      "content": "The symptoms of ankylosing spondylitis usually develop slowly. You may first notice pain in your lower back, especially when you have been inactive or in the morning after you wake up. The pain may come and go and usually gets better with exercise or other activity. Over time, the pain may get worse, and you may find it harder to move your lower spine. In some cases, it can cause a curve in the spine, which can make it hard to breathe deeply. Ankylosing spondylitis is usually treated with medication, but some people need to have surgery."
+    },
+    {
+      "heading": "How Common",
+      "content": "About 300,000 people in the U.S. have ankylosing spondylitis."
+    },
+    {
+      "heading": "Risk Factors",
+      "content": "Being male, family history of ankylosing spondylitis"
+    },
+    {
+      "heading": "Treatment",
+      "content": "Treatment for ankylosing spondylitis may include:\\n\\t\\t•\\tNonsteroidal anti-inflammatory drugs \\n\\t\\t•\\tCorticosteroids \\n\\t\\t•\\tTumor necrosis factor (TNF) blockers, to reduce inflammation and pain \\n\\t\\t•\\tPhysical therapy \\n\\t\\t•\\tSurgery"
+    },
+    {
+      "heading": "Self Care",
+      "content": "You can help ease the symptoms of ankylosing spondylitis by quitting smoking, getting exercise, and sleeping on a firm mattress without a pillow."
+    },
+    {
+      "heading": "When to See Your Doctor",
+      "content": "See your doctor if you have any symptoms of ankylosing spondylitis, including lower back pain, stiffness, eye inflammation, and fatigue; or if you develop any new symptoms."
+    },
+    {
+      "heading": "Questions to Ask Your Doctor",
+      "content": "\\t\\t•\\tCould ankylosing spondylitis or another condition be causing my symptoms? \\n\\t\\t•\\tAre there medications I can take? \\n\\t\\t•\\tWhat side effects can I expect? \\n\\t\\t•\\tCan I do any exercises to help ease my symptoms? \\n\\t\\t•\\tDo you think I will need surgery? \\n\\t\\t•\\tWhat is my prognosis?"
+    },
+    {
+      "heading": "Diagnosed By",
+      "content": "Your doctor will take a medical history and do a physical exam. Your doctor may also order blood tests, X-rays, a CT scan, or an MRI."
+    }
+  ],
+  "Spinal_tumor": [
+    {
+      "heading": "Spinal Tumor",
+      "content": "Spinal cord tumor or malignancy, central nervous system tumor"
+    },
+    {
+      "heading": "Symptoms",
+      "content": "\\t\\t•\\tPain or discomfort \\n\\t\\t•\\tStool leaking (incontinence) \\n\\t\\t•\\tNumbness or tingling \\n\\t\\t•\\tAbnormal gait (walking) \\n\\t\\t•\\tWeakness \\n\\t\\t•\\tUrine leaking (incontinence) \\n\\t\\t•\\tUnable to move leg"
+    },
+    {
+      "heading": "Overview",
+      "content": "Spinal tumors are cell growths surrounding the spinal cord. They can be benign (noncancerous) or malignant (cancerous) and can affect the spinal cord and vertebrae. Unlike tumors in other areas of the body, even benign tumors in the spinal area can be serious and life threatening. Spinal tumors can cause back pain, weakness and numbness in the legs and arms, and more serious issues such as paralysis and changes in bladder and bowel control. Treatment depends on the type of tumor. If cancerous, treatment depends on where the cancer started, and how far along it is. Recent research in treating cancer has resulted in more treatment options than ever before."
+    },
+    {
+      "heading": "What to Expect",
+      "content": "How quickly symptoms develop and progress depends on the type of tumor and its location in relation to the spinal cord. Cancerous, or malignant tumors, tend to grow more quickly than benign tumors. While treatment can provide relief of symptoms, damage to the nerves may be permanent, causing permanent disability. Loss of bladder and bowel control is common with advanced tumors. Paralysis is a late sign and is usually permanent if the spinal cord has been damaged. Treatment depends on the type of tumor and where it's located. The goal is to completely remove the tumor, but that's not always possible. Even if the tumor can't be removed, there are a number of options that may minimize the damage it does. After treatment stops, tumors can return. Therefore, long-term follow-up care is important."
+    },
+    {
+      "heading": "How Common",
+      "content": "The chance of developing a malignant spinal or brain tumor in a person's lifetime is less than 1%."
+    },
+    {
+      "heading": "Risk Factors",
+      "content": "A history of cancer elsewhere in the body, such as breast or lung cancer, family history of brain or spinal cord tumor, exposure to radiation, certain immune system disorders"
+    },
+    {
+      "heading": "Treatment",
+      "content": "Treatment will depend on the kind of tumor and where it's located. Treatment options include:\\n\\t\\t•\\tSurgery \\n\\t\\t•\\tRadiation therapy \\n\\t\\t•\\tChemotherapy \\n\\t\\t•\\tTargeted therapy \\n\\t\\t•\\tDrugs to relieve inflammation and take pressure off of the nerves"
+    },
+    {
+      "heading": "When to See Your Doctor",
+      "content": "Call your doctor if you have persistent back pain or weakness or numbness in your legs that's not related to activity, or if you have changes in your ability to control your bowel or bladder. If symptoms get worse during treatment, or you suddenly develop new symptoms, go to an emergency room. Get immediate care of you have progressive muscle weakness, numbness, or significant changes in bowel or bladder function."
+    },
+    {
+      "heading": "Questions to Ask Your Doctor",
+      "content": "\\t\\t•\\tDid this tumor start in my spine or did it come from somewhere else in my body?\\n\\t\\t•\\tHow advanced is the tumor? \\n\\t\\t•\\tWhat are the treatment options? \\n\\t\\t•\\tAre there any specific things I should not be doing? \\n\\t\\t•\\tCould this be something other than a spinal tumor?"
+    },
+    {
+      "heading": "Diagnosed By",
+      "content": "Your doctor will do a physical and neurological exam. Possible tests may include an MRI, X-rays, a CT scan, or a myelogram. The doctor may also do a biopsy to confirm the diagnosis and to help determine the proper approach to treatment."
+    }
+  ],
+  "Lumbar_(low_back)_strain": [
+    {
+      "heading": "Lumbar Strain and Lumbar Sprain",
+      "content": "Low back strain, low back sprain, weightlifter's back, Lumbago"
+    },
+    {
+      "heading": "Symptoms",
+      "content": "\\t\\t•\\tMuscle cramps or spasms (painful) \\n\\t\\t•\\tStiffness or decreased movement \\n\\t\\t•\\tPain or discomfort \\n\\t\\t•\\tTenderness to touch"
+    },
+    {
+      "heading": "Overview",
+      "content": "Lumbar strains and sprains are the most common causes of lower back pain. People may get them from picking up something heavy, industrial work, or sports that require lifting, pushing, or twisting. Lumbar strains develop when the muscles stretch too far or tear. Lumbar sprains are rips in the ligaments, the tough bands of tissue that connect the bones. Practically, the distinction between strains and sprains doesn't matter very much. The treatment including medications that help with pain while the muscles or ligaments heal is the same for either condition. Most people recover within a few weeks."
+    },
+    {
+      "heading": "What to Expect",
+      "content": "You may get a lumbar strain or sprain from a sudden injury or from chronic overuse. The pain can be severe and debilitating. After the injury, resting for up to three days may help. After that, you need to move around or the pain and stiffness may get worse. Treatment with painkillers, ice, and stretching helps with the symptoms while your body heals. If you haven't recovered within two weeks, your doctor may do tests to make sure that you don't have another injury. Untreated strains and sprains can develop into chronic pain."
+    },
+    {
+      "heading": "How Common",
+      "content": "Nearly 60% to 80% of people will have lower back pain at some point. Lumbar strains and sprains are the most common cause."
+    },
+    {
+      "heading": "Treatment",
+      "content": "Treatment for lumbar strains and sprains includes:\\n\\t\\t•\\tBed rest for a short time, no more than 3 days \\n\\t\\t•\\tNSAIDs, such as ibuprofen, ketoprofen, and naproxen, for pain and swelling \\n\\t\\t•\\tIce packs \\n\\t\\t•\\tUltrasound \\n\\t\\t•\\tPhysical therapy, heat, and stretching exercises once you're feeling better \\n\\t\\t•\\tOther medications, such as muscle relaxants"
+    },
+    {
+      "heading": "Self Care",
+      "content": "Even if your back still hurts, don't rest in bed for more than a few days. Use NSAID painkillers such as ibuprofen, ketoprofen, and naproxen and ice packs to relieve pain. If you don't feel better within two weeks, see a doctor. Once you're better, prevent further injuries by using a back brace, exercising regularly, keeping a healthy weight, squatting instead of bending over when lifting heavy objects, and reducing stress with techniques such as breathing exercises and meditation."
+    },
+    {
+      "heading": "Made Worse By",
+      "content": "Not allowing your back to heal, stress, and smoking may make lumbar strain worse."
+    },
+    {
+      "heading": "When to See Your Doctor",
+      "content": "If you have back pain that lasts more than a few weeks, see your doctor. If you have severe back pain, numbness, loss of bowel or bladder control, difficulty moving your legs, pain on only one side, or blood in the urine, call your doctor right away."
+    },
+    {
+      "heading": "Questions to Ask Your Doctor",
+      "content": "\\t\\t•\\tWhat medications will help? \\n\\t\\t•\\tWhat activities should I avoid? \\n\\t\\t•\\tWhat exercises or stretches will ease my symptoms? \\n\\t\\t•\\tHow can I prevent this from happening again?"
+    },
+    {
+      "heading": "Diagnosed By",
+      "content": "Your doctor will ask questions and examine you. You may need tests such as X-rays, CT scans, MRIs, and others."
+    },
+    {
+      "heading": "Risk Factors",
+      "content": "Heavy lifting, sports such as football, gymnastics, weightlifting, basketball, and golf, being overweight or obese, smoking, poor posture, stress, being out of shape"
+    }
+  ],
+  "Cauda_equina_syndrome": [
+    {
+      "heading": "Symptoms",
+      "content": "\\t\\t•\\tPain or discomfort \\n\\t\\t•\\tStool leaking (incontinence) \\n\\t\\t•\\tNumbness or tingling \\n\\t\\t•\\tWeakness\\n\\t\\t•\\tUrine leaking (incontinence)"
+    },
+    {
+      "heading": "Overview",
+      "content": "The cauda equina is a nerve bundle at the lower end of the spinal cord, around the tailbone. The name cauda equina means \"horse's tail\" because that's what the nerves look like. Cauda equina syndrome is a rare, painful medical emergency that occurs when an injury, fractured or narrowed spine, herniated disc, tumor, or infection compress the nerves. Trapped nerves cause severe, gnawing pain, numbness, and tingling in the lower back, buttocks, and thighs. Surgery to relieve the pressure can help prevent bowel and bladder incontinence, paralysis, and permanent nerve damage."
+    },
+    {
+      "heading": "What to Expect",
+      "content": "Cauda equina syndrome causes sharp, burning, gnawing pain in the lower back, buttocks, and back of the thigh, loss of bowel and bladder control, sudden erectile dysfunction, numbness in the groin, leg muscle weakness, imbalance, and numbness and tingling in legs or feet."
+    },
+    {
+      "heading": "How Common",
+      "content": "Cauda equina syndrome is a rare condition; 1%-15% of cases are caused by a herniated disc."
+    },
+    {
+      "heading": "Risk Factors",
+      "content": "Men in their 30s and 40s are more likely to get cauda equina syndrome caused by a herniated disc."
+    },
+    {
+      "heading": "Treatment",
+      "content": "Treatment for cauda equina syndrome includes:\\n\\t\\t•\\tEmergency spinal surgery \\n\\t\\t•\\tAntibiotics for infection if needed \\n\\t\\t•\\tRadiation therapy and chemotherapy if needed for spinal tumors \\n\\t\\t•\\tPain medication"
+    },
+    {
+      "heading": "Made Worse By",
+      "content": "Moving, bending"
+    },
+    {
+      "heading": "When to See Your Doctor",
+      "content": "Call your doctor if you are concerned about back pain. If you have severe back pain, tingling, and numbness with other symptoms of cauda equina syndrome get immediate medical help."
+    },
+    {
+      "heading": "Questions to Ask Your Doctor",
+      "content": "\\t\\t•\\tHow do you think this may have started? \\n\\t\\t•\\tDo I need medications for pain or inflammation? \\n\\t\\t•\\tWhat if the pain gets worse even with medications? \\n\\t\\t•\\tWhen should I expect the symptoms to go away? \\n\\t\\t•\\tDo I need surgery?"
+    },
+    {
+      "heading": "Diagnosed By",
+      "content": "You doctor can diagnose cauda equina syndrome by taking a medical history and doing a physical exam. Other tests may include a neurological exam, X-rays, CT scan, or MRI."
+    }
+  ],
+  "Lumbar_(low_back)_herniated_disk": [
+    {
+      "heading": "Lumbar (Low-Back) Herniated Disc",
+      "content": "Lumbar radiculopathy, herniated intervertebral disc, prolapsed intervertebral disc, slipped disc, ruptured disc, herniated nucleus pulposus, lumbar disc protrusion or bulge"
+    },
+    {
+      "heading": "Symptoms",
+      "content": "\\t\\t•\\tPain or discomfort \\n\\t\\t•\\tStiffness or decreased movement \\n\\t\\t•\\tJoint pain \\n\\t\\t•\\tWeakness \\n\\t\\t•\\tNumbness or tingling"
+    },
+    {
+      "heading": "Overview",
+      "content": "A lumbar herniated disc occurs when one of the discs in your lower spine moves out of place. This causes pressure on the nerves and can cause low back pain or weakness, numbness, or tingling in the low back. It can also cause pain in your foot, hip, or leg. Sometimes, people can have a herniated disc and not know it. Aging is the most common cause of herniated discs, but they can also happen from lifting heavy items or falling."
+    },
+    {
+      "heading": "What to Expect",
+      "content": "The symptoms of a herniated disc can vary widely from person to person. Some people may have no pain, while others can have severe pain. The pain can start slowly. Sometimes it may feel worse at night, after you sit or stand, or if you cough, laugh, or sneeze. You may also have more pain when walking or bending backward. The pain is usually only on one side. Most people with a herniated disc get better in a few weeks with rest, anti-inflammatory medications, and physical therapy. Some people need steroid injections or surgery."
+    },
+    {
+      "heading": "How Common",
+      "content": "Lumbar disc herniation is one of the most common causes of low back pain, which affects about 4 out of 5 people at some point in their lives."
+    },
+    {
+      "heading": "Risk Factors",
+      "content": "Being overweight, working at a physically demanding job, being over 35"
+    },
+    {
+      "heading": "Treatment",
+      "content": "Treatment for a lumbar herniated disc may include:\\n\\t\\t•\\tA short period of rest \\n\\t\\t•\\tAnti-inflammatory medications \\n\\t\\t•\\tPain medications \\n\\t\\t•\\tMuscle relaxers \\n\\t\\t•\\tPhysical therapy \\n\\t\\t•\\tSteroid injections \\n\\t\\t•\\tSurgery"
+    },
+    {
+      "heading": "Self Care",
+      "content": "You can ease the symptoms of a herniated disc with these self-care tips:\\n\\t\\t•\\tUse over-the-counter pain relievers as necessary \\n\\t\\t•\\tUse cold packs for about 20 minutes several times a day for the first few days, then use hot packs \\n\\t\\t•\\tDon't get too much bed rest \\n\\t\\t•\\tDo exercises recommended by your doctor or therapist"
+    },
+    {
+      "heading": "When to See Your Doctor",
+      "content": "See your doctor if you have any symptoms of a herniated disk, such as back pain, weakness, tingling, loss of movement, or numbness."
+    },
+    {
+      "heading": "Questions to Ask Your Doctor",
+      "content": "\\t\\t•\\tCould a lumbar herniated disc or another condition be causing my symptoms? \\n\\t\\t•\\tCan I take any medications for my symptoms? \\n\\t\\t•\\tWhat side effects can I expect? \\n\\t\\t•\\tHow long should I rest my back? \\n\\t\\t•\\tWhat exercises will help ease my symptoms? \\n\\t\\t•\\tDo I need physical therapy? Do I need surgery? \\n\\t\\t•\\tWhen will my back feel better?"
+    },
+    {
+      "heading": "Diagnosed By",
+      "content": "To diagnose a herniated disc, your doctor will take a medical history and do a physical exam. Your doctor may also order spinal X-rays, a CT or MRI scan, or a myelogram."
+    },
+    {
+      "heading": "Made Worse By",
+      "content": "Smoking, repetitive strenuous activity, improper lifting, being overweight"
+    }
+  ],
+  "Lumbar_spinal_stenosis": [
+    {
+      "heading": "Symptoms",
+      "content": "\\t\\t•\\tPain or discomfort \\n\\t\\t•\\tStiffness or decreased movement \\n\\t\\t•\\tJoint pain \\n\\t\\t•\\tWeakness \\n\\t\\t•\\tNumbness or tingling \\n\\t\\t•\\tAbnormal gait (walking)"
+    },
+    {
+      "heading": "Overview",
+      "content": "Lumbar spinal stenosis occurs when the spinal canal in your lower back becomes narrowed. This creates pressure on your spine and can cause pain, weakness, or numbness in your lower back, buttocks, legs, and feet. It is a common condition as people age, and it is most often caused by arthritis in the spine."
+    },
+    {
+      "heading": "What to Expect",
+      "content": "Lumbar spinal stenosis usually starts gradually. It may get worse over a long period of time as the spinal canal becomes more narrow. It most often happens in people who are over 60. You may notice that your symptoms feel better when you sit down or lean forward and get worse when you stand or walk. Some people with severe lumbar spinal stenosis have trouble walking more than a block or two. Spinal stenosis is usually treated with medication, corticosteroid injections, and physical therapy. In severe cases, you may need surgery."
+    },
+    {
+      "heading": "How Common",
+      "content": "About 5 in 1000 people over age 50 in the U.S. have spinal stenosis."
+    },
+    {
+      "heading": "Risk Factors",
+      "content": "You may be at risk for lumbar spinal stenosis if you:\\n\\t\\t•\\tAre over age 50 \\n\\t\\t•\\tWere born with a birth defect that causes your spinal canal to be smaller than normal"
+    },
+    {
+      "heading": "Treatment",
+      "content": "Treatment for lumbar spinal stenosis may include:\\n\\t\\t•\\tNonsteroidal anti-inflammatory medications, such as ibuprofen (Advil, Motrin) or naproxen (Aleve) \\n\\t\\t•\\tPrescription pain relievers \\n\\t\\t•\\tCorticosteroid injections \\n\\t\\t•\\tPhysical therapy \\n\\t\\t•\\tSurgery"
+    },
+    {
+      "heading": "When to See Your Doctor",
+      "content": "See your doctor if you have any numbness, weakness, or pain in your lower back or legs."
+    },
+    {
+      "heading": "Questions to Ask Your Doctor",
+      "content": "\\t\\t•\\tCould lumbar spinal stenosis or another condition be causing my symptoms? \\n\\t\\t•\\tAre there medications I can take? What side effects can I expect? \\n\\t\\t•\\tAre there any activities I should avoid? \\n\\t\\t•\\tWhat exercises can I do to ease my symptoms? \\n\\t\\t•\\tWhat alternative therapies might help me? \\n\\t\\t•\\tWill my spinal stenosis get better or worse over the years? \\n\\t\\t•\\tDo you think I will need surgery?"
+    },
+    {
+      "heading": "Diagnosed By",
+      "content": "To diagnose lumbar spinal stenosis, your doctor will take a medical history and do a physical exam. You may also need X-rays, a CT scan, an MRI, or nerve conduction studies."
+    },
+    {
+      "heading": "Made Worse By",
+      "content": "Walking, standing up straight, and being overweight may make symptoms worse."
+    }
+  ],
+  "Ovarian_cysts": [
+    {
+      "heading": "Symptoms",
+      "content": "\\t\\t•\\tPain or discomfort \\n\\t\\t•\\tIrregular menstrual periods \\n\\t\\t•\\tBloating or fullness \\n\\t\\t•\\tVaginal bleeding between periods"
+    },
+    {
+      "heading": "Overview",
+      "content": "Ovarian cysts are small liquid-filled pockets that form in or on the ovaries. Follicular cysts are the most common type. In the ovary, eggs form and grow in a sac called a follicle. When a follicle doesn't open to release the egg it grows larger and becomes a cyst. Another type of cyst forms when a follicle closes off after releasing the egg. Both of these cysts usually go away on their own without symptoms. Other ovarian cysts form from different types of tissue. Ovarian cysts are very common and usually occur during a woman's childbearing years. The majority is not cancerous. While most ovarian cysts have no symptoms, some can grow large and cause pain and cramping."
+    },
+    {
+      "heading": "What to Expect",
+      "content": "Most ovarian cysts have no symptoms and go away on their own. They may be detected during a pelvic exam and usually need no treatment. If they become large, break open, or twist around they can cause sudden, sharp pelvic pain, pain with bowel movements, pain with intercourse or exercise, nausea, and vomiting. Surgery can remove large or painful cysts."
+    },
+    {
+      "heading": "How Common",
+      "content": "All women have follicular cysts at some point in their life."
+    },
+    {
+      "heading": "Treatment",
+      "content": "Treatment for ovarian cysts can include:\\n\\t\\t•\\tPain medication \\n\\t\\t•\\tHormonal therapy, such as birth control pills \\n\\t\\t•\\tSurgery"
+    },
+    {
+      "heading": "Self Care",
+      "content": "Self-care for painful cysts includes OTC pain relievers, limiting movement, and using hot packs on the lower abdomen."
+    },
+    {
+      "heading": "Made Worse By",
+      "content": "Intercourse, exercise"
+    },
+    {
+      "heading": "When to See Your Doctor",
+      "content": "If you notice symptoms of ovarian cysts, call your doctor."
+    },
+    {
+      "heading": "Questions to Ask Your Doctor",
+      "content": "\\t\\t•\\tHow can I treat the pain? \\n\\t\\t•\\tHow long do you think symptoms will last? \\n\\t\\t•\\tIs there anything I can do to prevent this in the future? \\n\\t\\t•\\tDo I need surgery?"
+    },
+    {
+      "heading": "Diagnosed By",
+      "content": "Your doctor can diagnose ovarian cysts by taking your medical history and doing a physical and pelvic exam. Other tests may include blood tests, ultrasound, CT, or MRI scans."
+    },
+    {
+      "heading": "Risk Factors",
+      "content": "Women with polycystic ovaries, or who use fertility drugs, are at higher risk."
+    }
+  ],
+  "Pelvic_inflammatory_disease_(PID)": [
+    {
+      "heading": "Symptoms",
+      "content": "\\t\\t•\\tPain or discomfort \\n\\t\\t•\\tFever \\n\\t\\t•\\tFrequent urge to urinate \\n\\t\\t•\\tPain with sexual intercourse (female) \\n\\t\\t•\\tVaginal discharge \\n\\t\\t•\\tFrequent urination \\n\\t\\t•\\tIrregular menstrual periods"
+    },
+    {
+      "heading": "Overview",
+      "content": "Pelvic inflammatory disease is an infection in a woman's uterus, ovaries, or fallopian tubes. PID most often is caused by a sexually transmitted disease such as gonorrhea or Chlamydia, but it can have other causes. It can cause abnormal discharge, abdominal pain, pain with sex, nausea, pain with urination, abnormal periods, and fever. PID can be treated with antibiotics. But if it isn't treated promptly, it can cause serious problems, including not being able to get pregnant, chronic pelvic pain, and ectopic pregnancy."
+    },
+    {
+      "heading": "What to Expect",
+      "content": "PID can be difficult to diagnose because early symptoms may be mild. But if not treated promptly, it can cause serious infection and scarring inside the uterus, fallopian tubes, or ovaries. This can lead to long-term problems, including infertility and chronic pelvic pain. Once diagnosed, PID is treated with antibiotics. Your sex partner also needs to be treated. In severe cases, you may need to be treated in the hospital."
+    },
+    {
+      "heading": "How Common",
+      "content": "Between 750,000 and 1 million women in the U.S. get pelvic inflammatory disease every year."
+    },
+    {
+      "heading": "Treatment",
+      "content": "PID is usually treated with antibiotics. Your sex partner also will need treatment. In some cases, you may need treatment in the hospital or need surgery."
+    },
+    {
+      "heading": "Self Care",
+      "content": "Resting in bed, taking over-the-counter pain relievers, and using a heating pad on your stomach may help ease symptoms."
+    },
+    {
+      "heading": "Made Worse By",
+      "content": "Having sex, using tampons, and douching may make the symptoms of PID worse."
+    },
+    {
+      "heading": "When to See Your Doctor",
+      "content": "See a doctor if you have any symptoms of PID, even if they seem mild.\\n\\nIf you have any signs of ectopic pregnancy, seek medical care right away. These include:\\n\\t\\t•\\tSudden weakness \\n\\t\\t•\\tShoulder or abdominal pain \\n\\t\\t•\\tUnusual bleeding from the vagina"
+    },
+    {
+      "heading": "Questions to Ask Your Doctor",
+      "content": "\\t\\t•\\tWhat might have caused this condition? \\n\\t\\t•\\tHow long should I take antibiotics? \\n\\t\\t•\\tWhat symptoms should I watch for? \\n\\t\\t•\\tWhen will my symptoms get better? \\n\\t\\t•\\tWill this affect my ability to become pregnant?"
+    },
+    {
+      "heading": "Diagnosed By",
+      "content": "To diagnose PID, your doctor will take a medical history and do a pelvic exam. You may also need blood tests, an ultrasound, an endometrial biopsy, or laparoscopy."
+    },
+    {
+      "heading": "Risk Factors",
+      "content": "Risk factors for PID include having many sex partners, not using condoms, having a history of PID, douching, using an intrauterine device (IUD), and having a sexually transmitted disease."
+    }
   ]
 }

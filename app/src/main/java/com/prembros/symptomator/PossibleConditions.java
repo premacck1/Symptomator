@@ -125,7 +125,6 @@ public class PossibleConditions extends Fragment {
                             conditions.add(individualCondition);
                         }
                     }
-                    conditions.add(" ");
                 }
                 recyclerView.setAdapter(new RecyclerViewAdapter(false, getContext(), conditions, null));
             }
