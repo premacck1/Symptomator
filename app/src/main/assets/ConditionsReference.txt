@@ -2270,7 +2270,7 @@
     },
     "Discharge_from_penis": {
       "warning": "",
-      "conditions": "Chlamydia (male),Gonorrhea (male)"
+      "conditions": "Gonorrhea (male)"
     },
     "Drainage_or_pus": {
       "warning": "",
@@ -2306,11 +2306,11 @@
     },
     "Pain_during_erection": {
       "warning": "",
-      "conditions": "Erectile dysfunctio"
+      "conditions": "Erectile dysfunction"
     },
     "Pain_or_discomfort": {
       "warning": "",
-      "conditions": "Urinary tract infection (UTI),Bartholin cyst,Candidiasis,Chlamydia (female),Dysfunctional uterine bleeding (female),Foreign object in the vagina (female),Genital herpes (female),Gonorrhea (female),Urethritis (female),Vaginal dryness (female),Vulvodynia (female) ,Vaginal yeast infection (female),Urinary tract infection (UTI),Chlamydia (male),Epididymitis (male),Erectile dysfunction (male),Genital herpes (male),Orchitis (male),Syphilis (male),Testicular torsion (male),Urethritis (male),Shingles (herpes zoster)"
+      "conditions": "Urinary tract infection (UTI),Bartholin cyst,Candidiasis,Chlamydia (female),Dysfunctional uterine bleeding (female),Foreign object in the vagina (female),Genital herpes (female),Gonorrhea (female),Urethritis (female),Vaginal dryness (female),Vulvodynia (female) ,Vaginal yeast infection (female),Urinary tract infection (UTI),Epididymitis (male),Erectile dysfunction (male),Genital herpes (male),Orchitis (male),Syphilis (male),Testicular torsion (male),Urethritis (male),Shingles (herpes zoster)"
     },
     "Sudden_urge_to_urinate": {
       "warning": "",
@@ -2326,7 +2326,7 @@
     },
     "Unable_to_obtain_or_maintain_erection": {
       "warning": "",
-      "conditions": "Erectile dysfunctio"
+      "conditions": "Erectile dysfunction"
     },
     "Visible_bugs_or_parasites": {
       "warning": "",
@@ -2394,7 +2394,7 @@
     },
     "Testicular_pain": {
       "warning": "",
-      "conditions": "Chlamydia (male),Mumps"
+      "conditions": "Mumps"
     }
   },
   "Buttock": {
