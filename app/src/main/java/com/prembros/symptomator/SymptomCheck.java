@@ -8,7 +8,6 @@ import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
-import android.os.StrictMode;
 import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.FragmentManager;
@@ -27,7 +26,6 @@ import android.view.animation.AccelerateDecelerateInterpolator;
 import android.view.animation.AnimationUtils;
 import android.widget.CheckedTextView;
 import android.widget.FrameLayout;
-import android.widget.SeekBar;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -37,7 +35,7 @@ import io.codetail.animation.SupportAnimator;
 
 import static io.codetail.animation.ViewAnimationUtils.createCircularReveal;
 
-public class SymptomCheck extends AppCompatActivity implements CompleteConditionList.OnFragmentInteractionListener,
+public class SymptomCheck extends AppCompatActivity implements CompleteConditionList.OnCompleteConditionsInteractionListener,
         ShowSelectedSymptoms.OnFragmentInteractionListener, PossibleConditions.OnPossibleConditionsFragmentInteractionsListener {
 
     private ActionBar actionBar;
@@ -48,6 +46,8 @@ public class SymptomCheck extends AppCompatActivity implements CompleteCondition
     private FragmentManager fragmentManager;
     private FrameLayout revealView;
     private SupportAnimator animator;
+    private FloatingActionButton fabShowSelectedSymptoms;
+    private FloatingActionButton fabClearSymptomSelection;
     private final int[] touchCoordinate = new int[2];
     private DatabaseHolder db;
     private ArrayList<String> selectedSymptoms;
@@ -63,20 +63,13 @@ public class SymptomCheck extends AppCompatActivity implements CompleteCondition
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
-        StrictMode.setThreadPolicy(new StrictMode.ThreadPolicy.Builder().detectAll().penaltyLog().build());
-        StrictMode.setVmPolicy(new StrictMode.VmPolicy.Builder().detectLeakedSqlLiteObjects().detectLeakedClosableObjects().penaltyLog().build());
+//        StrictMode.setThreadPolicy(new StrictMode.ThreadPolicy.Builder().detectAll().penaltyLog().build());
+//        StrictMode.setVmPolicy(new StrictMode.VmPolicy.Builder().detectLeakedSqlLiteObjects().detectLeakedClosableObjects().penaltyLog().build());
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_symptom_check);
 
         revealView = (FrameLayout) this.findViewById(R.id.menu_fragment_container);
-
-//        revealView.setOnTouchListener(this);
-//        this.findViewById(R.id.fab_revealView).setOnTouchListener(this);
-//        this.findViewById(R.id.fab_show_revealView).setOnTouchListener(this);
-//        this.findViewById(R.id.fab_show_conditions_revealView).setOnTouchListener(this);
-//        this.findViewById(R.id.fab_condition_details_revealView).setOnTouchListener(this);
-//        this.findViewById(R.id.menu_fragment_container).setOnTouchListener(this);
 
         recyclerView = (RecyclerView) this.findViewById(R.id.recyclerview);
         db = new DatabaseHolder(this);
@@ -114,7 +107,7 @@ public class SymptomCheck extends AppCompatActivity implements CompleteCondition
                         }
                     }
                 }
-                symptomList.add("Could not find what you were looking for?\nLook in the whole Symptom directory");
+                symptomList.add("Could not find what you were looking for?\nClick here to browse all the conditions");
 //                symptomList.add(" ");
                 if (cursor != null) {
                     cursor.close();
@@ -124,12 +117,12 @@ public class SymptomCheck extends AppCompatActivity implements CompleteCondition
         }
         ).start();
 
-        recyclerViewAdapter = new RecyclerViewAdapter(true, this, symptomList, null);
+        recyclerViewAdapter = new RecyclerViewAdapter(true, this, symptomList);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(recyclerViewAdapter);
 
-        final FloatingActionButton fabShowSelectedSymptoms = (FloatingActionButton) this.findViewById(R.id.fab_1_show_selected_symptoms);
-        final FloatingActionButton fabClearSymptomSelection = (FloatingActionButton) this.findViewById(R.id.fab_2_delete_all_symptoms);
+        fabShowSelectedSymptoms = (FloatingActionButton) this.findViewById(R.id.fab_1_show_selected_symptoms);
+        fabClearSymptomSelection = (FloatingActionButton) this.findViewById(R.id.fab_2_delete_all_symptoms);
 
 //        fabShowSelectedSymptoms.setOnTouchListener(this);
 //        fabClearSymptomSelection.setOnTouchListener(this);
@@ -202,6 +195,7 @@ public class SymptomCheck extends AppCompatActivity implements CompleteCondition
     private void uncheckAllViews(final RecyclerView recyclerView, final List<String> items) {
         final View revealView = this.findViewById(R.id.fab_revealView);
         revealView.setBackgroundResource(R.color.colorSecondary);
+        animationForward(revealView, touchCoordinate[0], touchCoordinate[1]);
 //        final CheckedTextView[] checkedTextView = new CheckedTextView[1];
 //        for (int i = 0; i < recyclerView.getChildCount(); i++) {
 ////            RecyclerViewAdapter.mCheckedItems.put(i, false);
@@ -209,11 +203,10 @@ public class SymptomCheck extends AppCompatActivity implements CompleteCondition
 //            checkedTextView[0].setChecked(false);
 //        }
 //        adapter.notifyDataSetChanged();
-        animationForward(revealView, touchCoordinate[0], touchCoordinate[1]);
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                recyclerView.setAdapter(new RecyclerViewAdapter(true, SymptomCheck.this, items, null));
+                recyclerView.setAdapter(new RecyclerViewAdapter(true, SymptomCheck.this, items));
             }
         }, 400);
         new Handler().postDelayed(new Runnable() {
@@ -238,8 +231,8 @@ public class SymptomCheck extends AppCompatActivity implements CompleteCondition
         } else {
             final String viewText = checkedTextView.getText().toString();
 
-//                        checkedArray[pos] = !checkedArray[pos];
-//                        notifyItemChanged(pos);
+            if (fabClearSymptomSelection.getVisibility() == View.INVISIBLE)
+                hideOrShow(fabClearSymptomSelection, fabShowSelectedSymptoms, true);
 
             if (checkedTextView.isChecked()) {
                 checkedTextView.setChecked(false);
@@ -333,7 +326,7 @@ public class SymptomCheck extends AppCompatActivity implements CompleteCondition
                 }
 
                 recyclerView.setLayoutManager(new LinearLayoutManager(SymptomCheck.this));
-                recyclerViewAdapter = new RecyclerViewAdapter(true, SymptomCheck.this, filteredList, null);
+                recyclerViewAdapter = new RecyclerViewAdapter(true, SymptomCheck.this, filteredList);
                 recyclerView.setAdapter(recyclerViewAdapter);
                 recyclerViewAdapter.notifyDataSetChanged();
                 return true;
@@ -350,7 +343,12 @@ public class SymptomCheck extends AppCompatActivity implements CompleteCondition
                 return true;
             case R.id.action_about:
                 animationForward(revealView, touchCoordinate[0], touchCoordinate[1]);
-                fragmentManager.beginTransaction().add(R.id.menu_fragment_container, new About(), "about").commit();
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        fragmentManager.beginTransaction().add(R.id.menu_fragment_container, new About(), "about").commit();
+                    }
+                }, 600);
                 return true;
             case R.id.action_text_size:
                 return false;
@@ -405,11 +403,6 @@ public class SymptomCheck extends AppCompatActivity implements CompleteCondition
     }
 
     @Override
-    public void onFragmentInteraction(String item) {
-
-    }
-
-    @Override
     public void onShowSelectedSymptomsFragmentInteraction(String item, @Nullable ArrayList<String> selectedSymptoms) {
         switch (item) {
             case "show":
@@ -439,10 +432,13 @@ public class SymptomCheck extends AppCompatActivity implements CompleteCondition
 
     @Override
     public void OnPossibleConditionsInteractionListener(final String item) {
-        animationForward(this.findViewById(R.id.fab_condition_details_revealView), touchCoordinate[0], touchCoordinate[1]);
+        final View revealView = this.findViewById(R.id.fab_condition_details_revealView);
+        revealView.setBackgroundResource(R.color.colorSecondary);
+        animationForward(revealView, touchCoordinate[0], touchCoordinate[1]);
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
+                revealView.setBackgroundResource(R.color.colorDisabledLight);
                 fragmentManager.beginTransaction()
                         .add(
                                 R.id.fab_condition_details_revealView,
@@ -451,7 +447,12 @@ public class SymptomCheck extends AppCompatActivity implements CompleteCondition
                         )
                         .commit();
             }
-        }, 600);
+        }, 500);
+    }
+
+    @Override
+    public void onCompleteConditionsInteraction(String item) {
+        OnPossibleConditionsInteractionListener(item);
     }
 
     /*ASYNCTASK FOR SHOWING OR DELETING SELECTED SYMPTOMS*/
@@ -540,7 +541,8 @@ public class SymptomCheck extends AppCompatActivity implements CompleteCondition
                 recyclerView.setVisibility(View.VISIBLE);
                 break;
             case "about":
-                animationReversed(this.findViewById(R.id.menu_fragment_container), touchCoordinate);
+                View revealView = this.findViewById(R.id.menu_fragment_container);
+                revealView.startAnimation(AnimationUtils.loadAnimation(this, android.R.anim.fade_out));
                 new Handler().postDelayed(new Runnable() {
                     @Override
                     public void run() {
@@ -594,15 +596,15 @@ public class SymptomCheck extends AppCompatActivity implements CompleteCondition
 
     @Override
     public void onBackPressed() {
-        if (this.findViewById(R.id.seekbar) != null) {
-            SeekBar seekBar = (SeekBar) this.findViewById(R.id.seekbar);
-            if (seekBar.getVisibility() == View.VISIBLE) {
-                seekBar.startAnimation(AnimationUtils.loadAnimation(this, R.anim.sink_up));
-            }
-        }
-        if (isFragmentActive("completeSymptomList")) removeFragmentIfAttached("completeSymptomList");
+//        if (this.findViewById(R.id.seekbar) != null) {
+//            SeekBar seekBar = (SeekBar) this.findViewById(R.id.seekbar);
+//            if (seekBar.getVisibility() == View.VISIBLE) {
+//                seekBar.startAnimation(AnimationUtils.loadAnimation(this, R.anim.sink_up));
+//            }
+//        }
+        if (isFragmentActive("conditionDetails")) removeFragmentIfAttached("conditionDetails");
+        else if (isFragmentActive("completeSymptomList")) removeFragmentIfAttached("completeSymptomList");
         else if (isFragmentActive("about")) removeFragmentIfAttached("about");
-        else if (isFragmentActive("conditionDetails")) removeFragmentIfAttached("conditionDetails");
         else if (isFragmentActive("possibleConditions")) removeFragmentIfAttached("possibleConditions");
         else if (isFragmentActive("selectedSymptoms")) removeFragmentIfAttached("selectedSymptoms");
         else super.onBackPressed();

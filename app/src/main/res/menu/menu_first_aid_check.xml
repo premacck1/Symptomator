@@ -6,7 +6,12 @@
         android:id="@+id/action_call_108"
         android:title="@string/call_108"
         android:icon="@drawable/ic_call_emergency_services"
-        android:orderInCategory="1"
         app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_text_size"
+        android:icon="@drawable/ic_text_size"
+        android:title="@string/change_text_size"
+        app:showAsAction="ifRoom"/>
 
 </menu>

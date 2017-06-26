@@ -2,7 +2,7 @@
     <string name="app_name">Symptomator</string>
     <string name="symptom">Symptoms</string>
     <string name="hospital">Hospital details</string>
-    <string name="common_diseases">Common Diseases</string>
+    <!--<string name="common_diseases">Common Diseases</string>-->
     <!--<string name="icon_author">Icons made by Roundicons (http://www.flaticon.com/authors/roundicons) from Flaticon (www.flaticon.com)</string>-->
     <!--<string name="ambulance">Ambulance</string>-->
     <string name="about">About</string>
@@ -330,6 +330,7 @@
     <!--ABOUT PAGE STRINGS-->
     <!--<string name="about_header">About</string>-->
     <string name="developers">Developers</string>
+    <string name="facebook_handles">Facebook handles\n(click on name to open profile)</string>
     <string name="developer_prem_suman">Prem Suman\t\t(@PremSuman8)</string>
     <string name="developer_prem_ankur">Prem Ankur\t\t(@Prem.Ankur.14)</string>
     <string name="developer_vikash">Vikash Kumar\t\t(@VikashRuhelaCSE)</string>
@@ -421,4 +422,9 @@
     <string name="find_nearby_doctors">Find nearby doctors</string>
     <string name="permission_granted">Permission Granted, Now you can use all the features!</string>
     <string name="info">Info</string>
+    <string name="browse_all_conditions">Browse all conditions</string>
+    <!--<string name="loading_selected_condition">Loading selected condition…</string>-->
+    <string name="not_connected">Not Connected!</string>
+    <string name="not_connected_message">This app could not get Internet connectivity. Please make sure you are connected to the Internet.</string>
+    <string name="okay">Okay</string>
 </resources>

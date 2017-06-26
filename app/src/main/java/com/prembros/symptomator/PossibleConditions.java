@@ -126,12 +126,12 @@ public class PossibleConditions extends Fragment {
                         }
                     }
                 }
-                recyclerView.setAdapter(new RecyclerViewAdapter(false, getContext(), conditions, null));
+                recyclerView.setAdapter(new RecyclerViewAdapter(false, getContext(), conditions));
             }
             else {
                 List<String> item = new ArrayList<>();
                 item.add("We're working on these conditions.");
-                recyclerView.setAdapter(new RecyclerViewAdapter(false, getContext(), item, null));
+                recyclerView.setAdapter(new RecyclerViewAdapter(false, getContext(), item));
             }
         }
     }

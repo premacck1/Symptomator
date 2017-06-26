@@ -45,10 +45,10 @@ public class Introduction extends AppIntro2 {
                 R.drawable.ic_app_logo_png, rgb(26,188,156)));
 
         addSlide(AppIntroFragment.newInstance("First Aid Info", "Because you never know, it may come in handy at any time.",
-                R.drawable.ic_first_aid_intro, rgb(161,136,127)));
+                R.drawable.ic_first_aid_intro, rgb(52,73,94)));
 
-        addSlide(AppIntroFragment.newInstance("Ambulance Services", "To facilitate you with ambulance whenever and wherever you need them.",
-                R.drawable.ic_ambulance_intro, rgb(52,73,94)));
+//        addSlide(AppIntroFragment.newInstance("Ambulance Services", "To facilitate you with ambulance whenever and wherever you need them.",
+//                R.drawable.ic_ambulance_intro, rgb(52,73,94)));
 
         addSlide(AppIntroFragment.newInstance("Doctor Services", "So you never have to get in long lines to see one.",
                 R.drawable.ic_doctor_intro, rgb(39,174,96)));
@@ -89,6 +89,7 @@ public class Introduction extends AppIntro2 {
         loadMainActivity();
     }
 
+    @SuppressWarnings("BooleanMethodIsAlwaysInverted")
     private boolean checkPermission() {
         int fineLocationResult = ContextCompat.checkSelfPermission(getApplicationContext(), ACCESS_FINE_LOCATION);
         int coarseLocationResult = ContextCompat.checkSelfPermission(getApplicationContext(), ACCESS_COARSE_LOCATION);

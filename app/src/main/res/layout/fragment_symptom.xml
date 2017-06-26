@@ -143,7 +143,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="20sp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="40dp"
             android:textStyle="bold"
             android:text="@string/or_call_emergency_services" />
 

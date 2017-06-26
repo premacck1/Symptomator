@@ -12,7 +12,7 @@
 
     <item
         android:id="@+id/action_about"
-        android:icon="@drawable/ic_about"
+        android:icon="@drawable/ic_info"
         android:title="@string/about"
         app:showAsAction="ifRoom"/>
 

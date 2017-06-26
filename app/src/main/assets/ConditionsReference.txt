@@ -536,7 +536,7 @@
     },
     "Numbness_or_tingling": {
       "warning": "",
-      "conditions": "Burn (heat or fire),Chemical burnsBurn (heat or fire),Chemical burns"
+      "conditions": "Burn (heat or fire),Chemical burns"
     },
     "Pain_or_discomfort": {
       "warning": "",
@@ -718,7 +718,7 @@
     },
     "Numbness_or_tingling": {
       "warning": "",
-      "conditions": "Burn (heat or fire),Chemical burnsBurn (heat or fire),Chemical burns"
+      "conditions": "Burn (heat or fire),Chemical burns,Burn (heat or fire),Chemical burns"
     },
     "Pain_or_discomfort": {
       "warning": "",
@@ -874,7 +874,7 @@
     },
     "Numbness_or_tingling": {
       "warning": "",
-      "conditions": "Burn (heat or fire),Chemical burnsBurn (heat or fire),Chemical burns"
+      "conditions": "Burn (heat or fire),Chemical burns,Burn (heat or fire),Chemical burns"
     },
     "Pain_or_discomfort": {
       "warning": "",
@@ -1246,7 +1246,7 @@
     },
     "Numbness_or_tingling": {
       "warning": "",
-      "conditions": "Burn (heat or fire),Chemical burnsBurn (heat or fire),Chemical burns"
+      "conditions": "Burn (heat or fire),Chemical burns,Burn (heat or fire),Chemical burns"
     },
     "Pain_or_discomfort": {
       "warning": "If you are experiencing pain in your jaw please seek prompt medical attention.",
@@ -1340,7 +1340,7 @@
     },
     "Numbness_or_tingling": {
       "warning": "",
-      "conditions": "Burn (heat or fire),Chemical burnsBurn (heat or fire),Chemical burns"
+      "conditions": "Burn (heat or fire),Chemical burns,Burn (heat or fire),Chemical burns"
     },
     "Pain_or_discomfort": {
       "warning": "If you are experiencing pain in your neck please seek emergency medical attention.",

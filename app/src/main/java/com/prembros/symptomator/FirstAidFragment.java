@@ -81,7 +81,7 @@ public class FirstAidFragment extends Fragment implements RecyclerView.OnItemTou
 //        firstAidList.add(" ");
         // Set the adapter
         context = list.getContext();
-        recyclerViewAdapter = new RecyclerViewAdapter(false, getContext(), firstAidList, null);
+        recyclerViewAdapter = new RecyclerViewAdapter(false, getContext(), firstAidList);
         list.setLayoutManager(new LinearLayoutManager(context));
         list.setAdapter(recyclerViewAdapter);
 
@@ -266,7 +266,7 @@ public class FirstAidFragment extends Fragment implements RecyclerView.OnItemTou
 //                }
 
                 list.setLayoutManager(new LinearLayoutManager(context));
-                recyclerViewAdapter = new RecyclerViewAdapter(false, getContext(), filteredList, null);
+                recyclerViewAdapter = new RecyclerViewAdapter(false, getContext(), filteredList);
                 list.setAdapter(recyclerViewAdapter);
                 recyclerViewAdapter.notifyDataSetChanged();
                 return true;

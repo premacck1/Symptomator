@@ -2,8 +2,12 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:visibility="invisible"
+    android:id="@+id/about_container"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".MainActivity">
+    android:background="@color/colorDisabledLight"
+    tools:context=".MainActivity"
+    tools:ignore="Overdraw">
 
     <LinearLayout
         android:orientation="vertical"
@@ -238,7 +242,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
                 android:textStyle="bold"
-                android:drawableEnd="@drawable/ic_navigate"
+                android:drawableEnd="@drawable/ic_marker_doctor_grey"
                 android:padding="@dimen/activity_horizontal_margin"
                 android:text="@string/get_to_the_nearest_doctor"
                 android:textColor="@color/colorSecondaryText" />
@@ -271,7 +275,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
                 android:textStyle="bold"
-                android:drawableEnd="@drawable/ic_navigate"
+                android:drawableEnd="@drawable/ic_marker_hospital_grey"
                 android:padding="@dimen/activity_horizontal_margin"
                 android:text="@string/get_to_the_nearest_hospital"
                 android:textColor="@color/colorSecondaryText" />
@@ -309,6 +313,15 @@
                 android:textSize="20sp"
                 android:textStyle="bold"
                 android:text="@string/developers"
+                android:textColor="@color/colorSecondaryText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/activity_horizontal_margin"
+                android:paddingStart="@dimen/activity_horizontal_margin"
+                android:paddingEnd="0dp"
+                android:text="@string/facebook_handles"
                 android:textColor="@color/colorSecondaryText" />
 
             <TextView

@@ -1,12 +1,15 @@
 package com.prembros.symptomator;
 
 import android.os.Bundle;
+import android.os.Handler;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.animation.AnimationUtils;
 import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
@@ -16,15 +19,23 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
-public class FirstAidCheck extends AppCompatActivity {
+public class FirstAidCheck extends AppCompatActivity implements View.OnClickListener {
 
     private final String [] JSONString = new String[2];
+    private int textSize = 14;
+    private ListView listView;
+    private ArrayList<PageBeans> pageBeansArrayList;
+    private FloatingActionButton increaseTextSize;
+    private FloatingActionButton decreaseTextSize;
 //    ArrayList<PageBeans> firstAidTopic;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_first_aid_check);
+
+        increaseTextSize = (FloatingActionButton) this.findViewById(R.id.increase_text_size);
+        decreaseTextSize = (FloatingActionButton) this.findViewById(R.id.decrease_text_size);
 
         String topic = getIntent().getExtras().getString("topic");
         if (topic != null){
@@ -53,11 +64,50 @@ public class FirstAidCheck extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
+            case R.id.action_text_size:
+                increaseTextSize.setVisibility(View.VISIBLE);
+                increaseTextSize.startAnimation(AnimationUtils.loadAnimation(this, R.anim.float_up));
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        decreaseTextSize.setVisibility(View.VISIBLE);
+                        decreaseTextSize.startAnimation(AnimationUtils.loadAnimation(FirstAidCheck.this, R.anim.float_up));
+                    }
+                }, 200);
+                increaseTextSize.setOnClickListener(this);
+                decreaseTextSize.setOnClickListener(this);
+                return true;
             case R.id.action_call_108:
                 new CallEmergencyServices(this);
                 return true;
             default:
                 return false;
+        }
+    }
+
+    private void alterTextSize(boolean increase) {
+        if (increase) textSize += 2;
+        else textSize -= 2;
+
+        new Handler().post(new Runnable() {
+            @Override
+            public void run() {
+                listView.setAdapter(new PageAdapter(FirstAidCheck.this, pageBeansArrayList, textSize));
+            }
+        });
+    }
+
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.increase_text_size:
+                alterTextSize(true);
+                break;
+            case R.id.decrease_text_size:
+                alterTextSize(false);
+                break;
+            default:
+                break;
         }
     }
 
@@ -84,7 +134,7 @@ public class FirstAidCheck extends AppCompatActivity {
                 }
                 result = new JSONParser().parseFirstAidJSON(jsonObject, strings[0]);
             } else {
-            Log.d("ERROR in firstAidCheck:", "Class - FirstAidCheck, method - parseInBackground, JSONString was null");
+            Log.e("ERROR in firstAidCheck:", "Class - FirstAidCheck, method - parseInBackground, JSONString was null");
             result = null;
         }
             return result;
@@ -93,8 +143,9 @@ public class FirstAidCheck extends AppCompatActivity {
         @Override
         protected void onPostExecute(ArrayList<PageBeans> pageBeansArrayList) {
             if (pageBeansArrayList != null) {
-                ListView listView = (ListView) FirstAidCheck.this.findViewById(R.id.first_aid_check_list_view);
-                PageAdapter adapter = new PageAdapter(FirstAidCheck.this, pageBeansArrayList);
+                FirstAidCheck.this.pageBeansArrayList = pageBeansArrayList;
+                listView = (ListView) FirstAidCheck.this.findViewById(R.id.first_aid_check_list_view);
+                PageAdapter adapter = new PageAdapter(FirstAidCheck.this, pageBeansArrayList, textSize);
                 listView.setAdapter(adapter);
                 progressBar.setVisibility(View.GONE);
                 super.onPostExecute(pageBeansArrayList);
@@ -103,5 +154,21 @@ public class FirstAidCheck extends AppCompatActivity {
                 FirstAidCheck.this.finish();
             }
         }
+    }
+
+    @Override
+    public void onBackPressed() {
+        if (increaseTextSize.getVisibility() == View.VISIBLE) {
+            increaseTextSize.setVisibility(View.INVISIBLE);
+            increaseTextSize.startAnimation(AnimationUtils.loadAnimation(this, R.anim.sink_down));
+            new Handler().postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    decreaseTextSize.setVisibility(View.INVISIBLE);
+                    decreaseTextSize.startAnimation(AnimationUtils.loadAnimation(FirstAidCheck.this, R.anim.sink_down));
+                }
+            }, 200);
+        }
+        else super.onBackPressed();
     }
 }

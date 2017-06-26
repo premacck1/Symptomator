@@ -154,17 +154,17 @@ class DatabaseHolder {
         return cursor;
     }
 
-    Cursor returnAllSymptoms(){
-        Cursor cursor = null;
-        try {
-            cursor = db.query(true, symptomList_tableName, new String[]{"Symptom"}, null, null, null, null, "Symptom ASC", null);
-        } catch (SQLiteException e){
-            if (e.getMessage().contains("no such table")){
-                Toast.makeText(context, "ERROR: Table doesn't exist", Toast.LENGTH_SHORT).show();
-            }
-        }
-        return cursor;
-    }
+//    Cursor returnAllSymptoms(){
+//        Cursor cursor = null;
+//        try {
+//            cursor = db.query(true, symptomList_tableName, new String[]{"Symptom"}, null, null, null, null, "Symptom ASC", null);
+//        } catch (SQLiteException e){
+//            if (e.getMessage().contains("no such table")){
+//                Toast.makeText(context, "ERROR: Table doesn't exist", Toast.LENGTH_SHORT).show();
+//            }
+//        }
+//        return cursor;
+//    }
 
     Cursor returnEmergencyNumber(String countryCode){
         Cursor cursor = null;

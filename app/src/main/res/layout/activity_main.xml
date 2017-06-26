@@ -30,9 +30,23 @@
         android:layout_height="match_parent">
 
         <FrameLayout
+            android:visibility="invisible"
             android:id="@+id/menu_fragment_container"
+            android:background="@color/colorDisabledLight"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
+
+    </io.codetail.widget.RevealFrameLayout>
+
+    <io.codetail.widget.RevealFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:visibility="invisible"
+            android:id="@+id/fab_condition_details_revealView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
 
     </io.codetail.widget.RevealFrameLayout>
 

@@ -1,6 +1,7 @@
 package com.prembros.symptomator;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -8,6 +9,8 @@ import android.location.Criteria;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Build;
@@ -90,27 +93,46 @@ public class MapsActivity extends AppCompatActivity implements LocationListener,
             if(googleAPI.isUserResolvableError(status)) {
                 googleAPI.getErrorDialog(this, status, 10000).show();
             }
-        }else {                                                                 // Google Play Services are available
-            SupportMapFragment fragment = ( SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
-            fragment.getMapAsync(this);
-            
-            locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
-            Criteria criteria = new Criteria();
-            String provider = locationManager.getBestProvider(criteria, true);
-            
-            Location location = null;
-            if (checkLocationPermission()) {
-                location = locationManager.getLastKnownLocation(provider);
-            }
-            if(location!=null) {
-                onLocationChanged(location);
-            }
-            locationManager.requestLocationUpdates(provider, 20000, 0, this);
+        } else {                                                                 // Google Play Services are available
+            if (isConnected()) {
+                SupportMapFragment fragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
+                fragment.getMapAsync(this);
 
-            isHospital = getIntent().getStringExtra("showWhat").equals("hospital");
+                locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
+                Criteria criteria = new Criteria();
+                String provider = locationManager.getBestProvider(criteria, true);
 
-            showNearbyPlaces();
+                Location location = null;
+                if (checkLocationPermission()) {
+                    location = locationManager.getLastKnownLocation(provider);
+                }
+                if (location != null) {
+                    onLocationChanged(location);
+                }
+                locationManager.requestLocationUpdates(provider, 20000, 0, this);
+
+                isHospital = getIntent().getStringExtra("showWhat").equals("hospital");
+
+                showNearbyPlaces();
+            } else {
+                AlertDialog.Builder dialog = new AlertDialog.Builder(this);
+                dialog.setTitle(getString(R.string.not_connected))
+                        .setMessage(getString(R.string.not_connected_message))
+                        .setPositiveButton(getString(R.string.okay), new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                MapsActivity.this.finish();
+                            }
+                        })
+                        .show();
+            }
         }
+    }
+
+    private boolean isConnected() {
+        ConnectivityManager conman = (ConnectivityManager) getSystemService(Activity.CONNECTIVITY_SERVICE);
+        NetworkInfo networkInfo = conman.getActiveNetworkInfo();
+        return networkInfo != null && networkInfo.isConnectedOrConnecting();
     }
 
     private void showNearbyPlaces() {

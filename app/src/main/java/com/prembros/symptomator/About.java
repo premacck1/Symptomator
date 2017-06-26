@@ -12,6 +12,8 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.AnimationUtils;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -20,10 +22,10 @@ import android.widget.Toast;
 */
 public class About extends Fragment {
 
-    private View rootView;
     private String previousTitle;
     private String previousSubTitle;
     private ActionBar actionBar;
+    private ScrollView scrollView;
     private boolean isHomeAsUpShown = false;
 
     @Override
@@ -36,8 +38,13 @@ public class About extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        rootView = inflater.inflate(R.layout.about, container, false);
-//        rootView.startAnimation(AnimationUtils.loadAnimation(getContext(), R.anim.fragment_anim_in));
+        View rootView = inflater.inflate(R.layout.about, container, false);
+
+        scrollView = (ScrollView) rootView.findViewById(R.id.about_container);
+        scrollView.startAnimation(
+                AnimationUtils.loadAnimation(getContext(), android.R.anim.fade_in)
+        );
+        scrollView.setVisibility(View.VISIBLE);
 //        SET ACTION BAR
         actionBar = ((AppCompatActivity)getActivity()).getSupportActionBar();
         if (actionBar != null) {
@@ -92,6 +99,7 @@ public class About extends Fragment {
         }
         actionBar.setTitle(previousTitle);
         actionBar.setSubtitle(previousSubTitle);
+        scrollView.setVisibility(View.INVISIBLE);
         super.onDestroy();
     }
 }

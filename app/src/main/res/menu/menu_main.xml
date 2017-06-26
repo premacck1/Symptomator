@@ -3,14 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/action_common_diseases"
-        android:icon="@drawable/ic_cells"
-        android:title="@string/common_diseases"
+        android:id="@+id/action_all_conditions"
+        android:icon="@drawable/ic_hospital_logo"
+        android:title="@string/browse_all_conditions"
         app:showAsAction="ifRoom" />
 
     <item
         android:id="@+id/action_about"
-        android:icon="@drawable/ic_about"
+        android:icon="@drawable/ic_info"
         android:title="@string/about"
         app:showAsAction="ifRoom"/>
 

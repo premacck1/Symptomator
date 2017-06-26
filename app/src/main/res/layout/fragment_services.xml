@@ -3,7 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginBottom="?attr/actionBarSize">
+    android:background="@color/colorSecondary"
+    android:layout_marginBottom="?attr/actionBarSize"
+    tools:ignore="Overdraw">
 
     <LinearLayout
         android:id="@+id/services_revealView"
@@ -36,7 +38,7 @@
                 android:text="@string/find_doctors_nearby"
                 android:textSize="18sp"
                 android:gravity="center"
-                android:drawableStart="@drawable/ic_doctor" />
+                android:drawableStart="@drawable/ic_marker_doctor" />
 
         </com.balysv.materialripple.MaterialRippleLayout>
 
@@ -69,7 +71,7 @@
                 android:text="@string/nearest_doctor"
                 android:textSize="18sp"
                 android:gravity="center"
-                android:drawableStart="@drawable/ic_nearby" />
+                android:drawableStart="@drawable/ic_doctor" />
 
         </com.balysv.materialripple.MaterialRippleLayout>
 
@@ -102,7 +104,7 @@
                 android:text="@string/find_hospitals_nearby"
                 android:textSize="18sp"
                 android:gravity="center"
-                android:drawableStart="@drawable/ic_hospital" />
+                android:drawableStart="@drawable/ic_marker_hospital" />
 
         </com.balysv.materialripple.MaterialRippleLayout>
 
@@ -135,7 +137,7 @@
                 android:text="@string/nearest_hospital"
                 android:textSize="18sp"
                 android:gravity="center"
-                android:drawableStart="@drawable/ic_nearby" />
+                android:drawableStart="@drawable/ic_hospital" />
 
         </com.balysv.materialripple.MaterialRippleLayout>
 

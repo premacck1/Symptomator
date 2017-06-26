@@ -1,6 +1,8 @@
 package com.prembros.symptomator;
 
 import android.os.Bundle;
+import android.os.Handler;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AlertDialog;
 import android.util.Log;
@@ -10,7 +12,9 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.AnimationUtils;
 import android.widget.AdapterView;
+import android.widget.FrameLayout;
 import android.widget.ListView;
 import android.widget.ProgressBar;
 
@@ -19,15 +23,17 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
-public class PossibleConditionDetails extends Fragment {
+public class PossibleConditionDetails extends Fragment implements View.OnClickListener {
+
     private static final String SELECTED_CONDITION = "selectedCondition";
-    private String mParam1;
+    private String selectedCondition;
     private View rootView;
     private ListView listView;
-//    private SharedPreferences prefs;
-//    private AppCompatTextView heading;
-//    private AppCompatTextView content;
-//    private SeekBar seekBar;
+    private FrameLayout viewRoot;
+    private int textSize = 14;
+    private ArrayList<PageBeans> pageBeansArrayList;
+    private FloatingActionButton increaseTextSize;
+    private FloatingActionButton decreaseTextSize;
 
 //    private OnPossibleConditionDetailsInteractionListener mListener;
 
@@ -48,7 +54,7 @@ public class PossibleConditionDetails extends Fragment {
         super.onCreate(savedInstanceState);
         setHasOptionsMenu(true);
         if (getArguments() != null) {
-            mParam1 = getArguments().getString(SELECTED_CONDITION);
+            selectedCondition = getArguments().getString(SELECTED_CONDITION);
         }
     }
 
@@ -56,15 +62,13 @@ public class PossibleConditionDetails extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         rootView = inflater.inflate(R.layout.fragment_possible_condition_details, container, false);
+        viewRoot = (FrameLayout) rootView.findViewById(R.id.condition_details_container);
+
         listView = (ListView) rootView.findViewById(R.id.selected_condition_list_view);
-//        seekBar = (SeekBar) rootView.findViewById(R.id.seekbar);
+        increaseTextSize = (FloatingActionButton) rootView.findViewById(R.id.increase_text_size);
+        decreaseTextSize = (FloatingActionButton) rootView.findViewById(R.id.decrease_text_size);
 
-//        prefs = getActivity().getPreferences(MODE_PRIVATE);
-
-//        float fs = prefs.getFloat("fontsize", 12);
-//        seekBar.setProgress((int)fs);
-
-        new ParseInBackground().execute(JSONReader.read(getContext(), "conditions.txt"), mParam1);
+        new ParseInBackground().execute(JSONReader.read(getContext(), "conditions.txt"), selectedCondition);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -97,6 +101,26 @@ public class PossibleConditionDetails extends Fragment {
 //});
 
         return rootView;
+    }
+
+    @Override
+    public void onDestroy() {
+        viewRoot.startAnimation(AnimationUtils.loadAnimation(getContext(), android.R.anim.fade_out));
+        viewRoot.setVisibility(View.INVISIBLE);
+        super.onDestroy();
+//        if (increaseTextSize.getVisibility() == View.VISIBLE) {
+//            increaseTextSize.setVisibility(View.INVISIBLE);
+//            increaseTextSize.startAnimation(AnimationUtils.loadAnimation(getContext(), R.anim.sink_down));
+//            new Handler().postDelayed(new Runnable() {
+//                @Override
+//                public void run() {
+//                    decreaseTextSize.setVisibility(View.INVISIBLE);
+//                    decreaseTextSize.startAnimation(AnimationUtils.loadAnimation(getContext(), R.anim.sink_down));
+//                }
+//            }, 200);
+//        }
+//        else {
+//        }
     }
 
     private class ParseInBackground extends android.os.AsyncTask<String, Void, ArrayList<PageBeans>>{
@@ -136,20 +160,23 @@ public class PossibleConditionDetails extends Fragment {
 
         @Override
         protected void onPostExecute(ArrayList<PageBeans> pageBeansArrayList) {
+            PossibleConditionDetails.this.pageBeansArrayList = pageBeansArrayList;
             progressBar.setVisibility(View.GONE);
             PageAdapter adapter;
             if (pageBeansArrayList != null) {
-                adapter = new PageAdapter(getContext(), pageBeansArrayList);
+                adapter = new PageAdapter(getContext(), pageBeansArrayList, textSize);
                 super.onPostExecute(pageBeansArrayList);
             } else {
                 pageBeansArrayList = new ArrayList<>();
                 PageBeans beans = new PageBeans();
                 beans.setHeading("Coming soon...");
                 beans.setContent("Info for this condition coming soon!\nBut Feel free to click here to directly search online for the condition");
-                adapter = new PageAdapter(getContext(), pageBeansArrayList);
+                adapter = new PageAdapter(getContext(), pageBeansArrayList, textSize);
             }
             listView.setAdapter(adapter);
 
+            viewRoot.startAnimation(AnimationUtils.loadAnimation(getContext(), android.R.anim.fade_in));
+            viewRoot.setVisibility(View.VISIBLE);
 
 //            heading = (AppCompatTextView) rootView.findViewById(R.id.heading);
 //            content = (AppCompatTextView) rootView.findViewById(R.id.content);
@@ -170,8 +197,17 @@ public class PossibleConditionDetails extends Fragment {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.action_text_size:
-//                seekBar.startAnimation(AnimationUtils.loadAnimation(getContext(), R.anim.float_down));
-//                seekBar.setVisibility(View.VISIBLE);
+                increaseTextSize.setVisibility(View.VISIBLE);
+                increaseTextSize.startAnimation(AnimationUtils.loadAnimation(getContext(), R.anim.float_up));
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        decreaseTextSize.setVisibility(View.VISIBLE);
+                        decreaseTextSize.startAnimation(AnimationUtils.loadAnimation(getContext(), R.anim.float_up));
+                    }
+                }, 200);
+                increaseTextSize.setOnClickListener(this);
+                decreaseTextSize.setOnClickListener(this);
                 return false;
             case R.id.action_info:
                 AlertDialog.Builder dialog = new AlertDialog.Builder(getContext());
@@ -184,11 +220,37 @@ public class PossibleConditionDetails extends Fragment {
         }
     }
 
-//    @Override
-//    public void onDetach() {
-//        super.onDetach();
+    private void alterTextSize(boolean increase) {
+        if (increase) textSize += 2;
+        else textSize -= 2;
+
+        new Handler().post(new Runnable() {
+            @Override
+            public void run() {
+                listView.setAdapter(new PageAdapter(getContext(), pageBeansArrayList, textSize));
+            }
+        });
+    }
+
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.increase_text_size:
+                alterTextSize(true);
+                break;
+            case R.id.decrease_text_size:
+                alterTextSize(false);
+                break;
+            default:
+                break;
+        }
+    }
+
+    @Override
+    public void onDetach() {
+        super.onDetach();
 //        mListener = null;
-//    }
+    }
 
 
 //    public void onButtonPressed(Uri uri) {
