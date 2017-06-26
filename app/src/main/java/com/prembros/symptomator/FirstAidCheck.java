@@ -18,7 +18,7 @@ import java.util.ArrayList;
 
 public class FirstAidCheck extends AppCompatActivity {
 
-    private String [] JSONString = new String[2];
+    private final String [] JSONString = new String[2];
 //    ArrayList<PageBeans> firstAidTopic;
 
     @Override
@@ -39,7 +39,7 @@ public class FirstAidCheck extends AppCompatActivity {
             actionBar.setSubtitle(topic.replace("_", " "));
         }
 
-        String string = JSONReader.read(this, "FirstAidJSON");
+        String string = JSONReader.read(this, "FirstAidJSON.txt");
         JSONString[1] = string;
         new ParseInBackground().execute(JSONString);
     }
@@ -82,7 +82,7 @@ public class FirstAidCheck extends AppCompatActivity {
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
-                result = new JSONParser().parseFirstAidJSON(jsonObject, "First_aid", strings[0]);
+                result = new JSONParser().parseFirstAidJSON(jsonObject, strings[0]);
             } else {
             Log.d("ERROR in firstAidCheck:", "Class - FirstAidCheck, method - parseInBackground, JSONString was null");
             result = null;

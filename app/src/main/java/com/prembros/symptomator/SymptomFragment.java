@@ -23,7 +23,7 @@ public class SymptomFragment extends Fragment {
     private String selectedSex = null;
     private Spinner selectBodyArea;
     private Spinner selectBodyPart;
-    Context context;
+    private Context context;
     private CheckedTextView[] allCheckedTextViews;
 
     private OnSymptomFragmentInteractionListener mListener;
@@ -195,7 +195,7 @@ public class SymptomFragment extends Fragment {
         return rootView;
     }
 
-    void startActivityIfFormComplete(){
+    private void startActivityIfFormComplete(){
         if (selectedSex != null && selectBodyArea.getSelectedItemPosition() > 0 && selectBodyPart.getSelectedItemPosition() > 0) {
             new Handler().postDelayed(new Runnable() {
                 @Override
@@ -212,7 +212,7 @@ public class SymptomFragment extends Fragment {
         }
     }
 
-    public void clickAction(View v) {
+    private void clickAction(View v) {
         CheckedTextView temp = (CheckedTextView) v;
         if(temp !=null) {
             if (!temp.isChecked()) {
@@ -231,7 +231,7 @@ public class SymptomFragment extends Fragment {
         }
     }
 
-    public void resetViews(){
+    private void resetViews(){
         selectBodyArea.setSelection(0);
 //        selectBodyPart.startAnimation(AnimationUtils.loadAnimation(context, android.R.anim.fade_out));
 //        for (CheckedTextView item : allCheckedTextViews) {

@@ -20,7 +20,7 @@ import android.widget.Toast;
 */
 public class About extends Fragment {
 
-    public View rootView;
+    private View rootView;
     private String previousTitle;
     private String previousSubTitle;
     private ActionBar actionBar;

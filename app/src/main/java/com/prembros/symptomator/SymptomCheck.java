@@ -27,9 +27,9 @@ import android.view.animation.AccelerateDecelerateInterpolator;
 import android.view.animation.AnimationUtils;
 import android.widget.CheckedTextView;
 import android.widget.FrameLayout;
+import android.widget.SeekBar;
 import android.widget.Toast;
 
-import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -37,7 +37,7 @@ import io.codetail.animation.SupportAnimator;
 
 import static io.codetail.animation.ViewAnimationUtils.createCircularReveal;
 
-public class SymptomCheck extends AppCompatActivity implements CompleteSymptomList.OnFragmentInteractionListener,
+public class SymptomCheck extends AppCompatActivity implements CompleteConditionList.OnFragmentInteractionListener,
         ShowSelectedSymptoms.OnFragmentInteractionListener, PossibleConditions.OnPossibleConditionsFragmentInteractionsListener {
 
     private ActionBar actionBar;
@@ -48,7 +48,7 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
     private FragmentManager fragmentManager;
     private FrameLayout revealView;
     private SupportAnimator animator;
-    private int[] touchCoordinate = new int[2];
+    private final int[] touchCoordinate = new int[2];
     private DatabaseHolder db;
     private ArrayList<String> selectedSymptoms;
     private boolean clearFlag = false;
@@ -136,11 +136,6 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
 
         recyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
             @Override
-            public void onScrollStateChanged(RecyclerView recyclerView, int newState) {
-                super.onScrollStateChanged(recyclerView, newState);
-            }
-
-            @Override
             public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
                 super.onScrolled(recyclerView, dx, dy);
                 if (dy > 5) {
@@ -170,7 +165,7 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
                     return;
                 }
                 clearFlag = true;
-                makeToast(view, "Click again to confirm.");
+                makeToast(view, "Click again to clear selected symptoms.");
 
                 new Handler().postDelayed(new Runnable() {
                     @Override
@@ -198,13 +193,13 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
         });
     }
 
-    public void makeToast(View view, String text) {
+    private void makeToast(View view, String text) {
         Toast toast = Toast.makeText(this, text, Toast.LENGTH_SHORT);
         toast.setGravity(Gravity.LEFT, view.getLeft(), view.getTop() + view.getHeight() * 3);
         toast.show();
     }
 
-    public void uncheckAllViews(final RecyclerView recyclerView, final List<String> items) {
+    private void uncheckAllViews(final RecyclerView recyclerView, final List<String> items) {
         final View revealView = this.findViewById(R.id.fab_revealView);
         revealView.setBackgroundResource(R.color.colorSecondary);
 //        final CheckedTextView[] checkedTextView = new CheckedTextView[1];
@@ -214,7 +209,7 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
 //            checkedTextView[0].setChecked(false);
 //        }
 //        adapter.notifyDataSetChanged();
-        animationForward(revealView, touchCoordinate[0], touchCoordinate[1], 600);
+        animationForward(revealView, touchCoordinate[0], touchCoordinate[1]);
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -238,7 +233,7 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
             recyclerView.setVisibility(View.INVISIBLE);
             fragmentManager.beginTransaction()
                     .setCustomAnimations(R.anim.fragment_anim_in, R.anim.fragment_anim_out)
-                    .add(R.id.symptom_check_fragment_container, new CompleteSymptomList(), "completeSymptomList")
+                    .add(R.id.symptom_check_fragment_container, new CompleteConditionList(), "completeSymptomList")
                     .commit();
         } else {
             final String viewText = checkedTextView.getText().toString();
@@ -273,7 +268,7 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
                             db.insertInSelectedSymptomsTable(viewText);
                             db.close();
                             new ShowSelectedSymptoms().execute("addSelectedSymptoms");
-                        } catch (SQLException | IllegalStateException e) {
+                        } catch (IllegalStateException e) {
                             Log.d("SQLException ERROR!", e.getMessage());
                         }
                     }
@@ -283,7 +278,7 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
         }
     }
 
-    void hideOrShow(final FloatingActionButton fab1, final FloatingActionButton fab2, boolean shown) {
+    private void hideOrShow(final FloatingActionButton fab1, final FloatingActionButton fab2, boolean shown) {
         if (fab2.getVisibility() == View.INVISIBLE && shown) {
             fab2.startAnimation(AnimationUtils.loadAnimation(SymptomCheck.this, R.anim.float_up));
             fab2.setVisibility(View.VISIBLE);
@@ -354,7 +349,7 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
                 onBackPressed();
                 return true;
             case R.id.action_about:
-                animationForward(revealView, touchCoordinate[0], touchCoordinate[1], 600);
+                animationForward(revealView, touchCoordinate[0], touchCoordinate[1]);
                 fragmentManager.beginTransaction().add(R.id.menu_fragment_container, new About(), "about").commit();
                 return true;
             case R.id.action_text_size:
@@ -364,17 +359,17 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
         }
     }
 
-    public void animationForward(View mRevealView, int centerX, int centerY, int duration){
+    private void animationForward(View mRevealView, int centerX, int centerY){
         int startRadius = 0;
         int endRadius = (int) (Math.hypot(mRevealView.getWidth() * 2, mRevealView.getHeight() * 2));
         animator = createCircularReveal(mRevealView, centerX, centerY, startRadius, endRadius);
         animator.setInterpolator(new AccelerateDecelerateInterpolator());
-        animator.setDuration(duration);
+        animator.setDuration(600);
         animator.start();
         mRevealView.setVisibility(View.VISIBLE);
     }
 
-    public void animationReversed(final View mRevealView, int[] centerCoords){
+    private void animationReversed(final View mRevealView, int[] centerCoords){
         int startRadius = 0;
         int endRadius = (int) (Math.hypot(mRevealView.getWidth() * 2, mRevealView.getHeight() * 2));
         animator = createCircularReveal(mRevealView, centerCoords[0], centerCoords[1], startRadius, endRadius);
@@ -426,7 +421,7 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
                     PossibleConditions possibleConditions = new PossibleConditions();
                     possibleConditions.setArguments(args);
 
-                    animationForward(this.findViewById(R.id.fab_show_conditions_revealView), touchCoordinate[0], touchCoordinate[1], 600);
+                    animationForward(this.findViewById(R.id.fab_show_conditions_revealView), touchCoordinate[0], touchCoordinate[1]);
                     fragmentManager.beginTransaction()
 //                            .setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out)
                             .add(R.id.fab_show_conditions_revealView, possibleConditions, "possibleConditions")
@@ -444,7 +439,7 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
 
     @Override
     public void OnPossibleConditionsInteractionListener(final String item) {
-        animationForward(this.findViewById(R.id.fab_condition_details_revealView), touchCoordinate[0], touchCoordinate[1], 600);
+        animationForward(this.findViewById(R.id.fab_condition_details_revealView), touchCoordinate[0], touchCoordinate[1]);
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -515,7 +510,7 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
         @Override
         protected void onPostExecute(Void aVoid) {
             if (showSelectedSymptoms) {
-                animationForward(SymptomCheck.this.findViewById(R.id.fab_show_revealView), touchCoordinate[0], touchCoordinate[1], 600);
+                animationForward(SymptomCheck.this.findViewById(R.id.fab_show_revealView), touchCoordinate[0], touchCoordinate[1]);
                 com.prembros.symptomator.ShowSelectedSymptoms selectedSymptomsFragment = new com.prembros.symptomator.ShowSelectedSymptoms();
                 Bundle args = new Bundle();
                 args.putStringArrayList("selectedSymptoms", selectedSymptoms);
@@ -534,7 +529,7 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
         super.onDestroy();
     }
 
-    void removeFragmentIfAttached(final String tag){
+    private void removeFragmentIfAttached(final String tag){
         switch (tag) {
             case "completeSymptomList":
                 actionBar.show();
@@ -585,7 +580,7 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
         }
     }
 
-    void removeFragment(String tag) {
+    private void removeFragment(String tag) {
         if (fragmentManager.findFragmentByTag(tag) != null) {
             fragmentManager.beginTransaction()
                     .remove(fragmentManager.findFragmentByTag(tag))
@@ -593,12 +588,18 @@ public class SymptomCheck extends AppCompatActivity implements CompleteSymptomLi
         }
     }
 
-    boolean isFragmentActive(String tag) {
+    private boolean isFragmentActive(String tag) {
         return fragmentManager.findFragmentByTag(tag) != null && fragmentManager.findFragmentByTag(tag).isAdded();
     }
 
     @Override
     public void onBackPressed() {
+        if (this.findViewById(R.id.seekbar) != null) {
+            SeekBar seekBar = (SeekBar) this.findViewById(R.id.seekbar);
+            if (seekBar.getVisibility() == View.VISIBLE) {
+                seekBar.startAnimation(AnimationUtils.loadAnimation(this, R.anim.sink_up));
+            }
+        }
         if (isFragmentActive("completeSymptomList")) removeFragmentIfAttached("completeSymptomList");
         else if (isFragmentActive("about")) removeFragmentIfAttached("about");
         else if (isFragmentActive("conditionDetails")) removeFragmentIfAttached("conditionDetails");

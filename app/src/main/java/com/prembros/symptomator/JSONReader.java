@@ -17,7 +17,7 @@ class JSONReader {
         try {
             bufferedReader = new BufferedReader(
                     new InputStreamReader(
-                            context.getAssets().open(fileName + ".txt")
+                            context.getAssets().open(fileName)
                     )
             );
         } catch (IOException e) {

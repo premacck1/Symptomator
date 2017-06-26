@@ -2,10 +2,12 @@ package com.prembros.symptomator;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.AlertDialog;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -22,6 +24,10 @@ public class PossibleConditionDetails extends Fragment {
     private String mParam1;
     private View rootView;
     private ListView listView;
+//    private SharedPreferences prefs;
+//    private AppCompatTextView heading;
+//    private AppCompatTextView content;
+//    private SeekBar seekBar;
 
 //    private OnPossibleConditionDetailsInteractionListener mListener;
 
@@ -51,8 +57,14 @@ public class PossibleConditionDetails extends Fragment {
                              Bundle savedInstanceState) {
         rootView = inflater.inflate(R.layout.fragment_possible_condition_details, container, false);
         listView = (ListView) rootView.findViewById(R.id.selected_condition_list_view);
+//        seekBar = (SeekBar) rootView.findViewById(R.id.seekbar);
 
-        new ParseInBackground().execute(JSONReader.read(getContext(), "conditions"), mParam1);
+//        prefs = getActivity().getPreferences(MODE_PRIVATE);
+
+//        float fs = prefs.getFloat("fontsize", 12);
+//        seekBar.setProgress((int)fs);
+
+        new ParseInBackground().execute(JSONReader.read(getContext(), "conditions.txt"), mParam1);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -62,6 +74,27 @@ public class PossibleConditionDetails extends Fragment {
                 }
             }
         });
+
+//        seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+//            @Override
+//            public void onStopTrackingTouch(SeekBar seekBar) {
+//                prefs = getActivity().getPreferences(MODE_PRIVATE);
+//                SharedPreferences.Editor ed = prefs.edit();
+//                ed.putFloat("fontSize", heading.getTextSize());
+//                ed.apply();
+//            }
+//
+//            @Override
+//            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+//                content.setTextSize(TypedValue.COMPLEX_UNIT_PX, progress);
+//                heading.setTextSize(TypedValue.COMPLEX_UNIT_PX, progress + 4);
+//            }
+//
+//            @Override
+//            public void onStartTrackingTouch(SeekBar seekBar) {
+//
+//            }
+//});
 
         return rootView;
     }
@@ -116,6 +149,13 @@ public class PossibleConditionDetails extends Fragment {
                 adapter = new PageAdapter(getContext(), pageBeansArrayList);
             }
             listView.setAdapter(adapter);
+
+
+//            heading = (AppCompatTextView) rootView.findViewById(R.id.heading);
+//            content = (AppCompatTextView) rootView.findViewById(R.id.content);
+
+//            content.setTextSize(TypedValue.COMPLEX_UNIT_PX, seekBar.getProgress());
+//            heading.setTextSize(TypedValue.COMPLEX_UNIT_PX, seekBar.getProgress() + 4);
         }
     }
 
@@ -127,10 +167,29 @@ public class PossibleConditionDetails extends Fragment {
     }
 
     @Override
-    public void onDetach() {
-        super.onDetach();
-//        mListener = null;
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.action_text_size:
+//                seekBar.startAnimation(AnimationUtils.loadAnimation(getContext(), R.anim.float_down));
+//                seekBar.setVisibility(View.VISIBLE);
+                return false;
+            case R.id.action_info:
+                AlertDialog.Builder dialog = new AlertDialog.Builder(getContext());
+                dialog.setTitle(R.string.info)
+                        .setMessage(R.string.disclaimer_conditions)
+                        .show();
+                return false;
+            default:
+                return false;
+        }
     }
+
+//    @Override
+//    public void onDetach() {
+//        super.onDetach();
+//        mListener = null;
+//    }
+
 
 //    public void onButtonPressed(Uri uri) {
 //        if (mListener != null) {

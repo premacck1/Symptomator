@@ -220,23 +220,28 @@ public class PlaceDetailsActivity extends AppCompatActivity implements View.OnCl
 		nameTextView.setText(name);
 		String phoneText;
 		if (!phone.contains("NA")) {
-			phoneText = phone + "\n(make a call)";
+			phoneText = "Call " + phone;
 			phoneTextView.setText(phoneText);
 		}
 		else if (!localPhone.contains("NA")){
-			phoneText = localPhone + "\n(make a call)";
+			phoneText = "Call " + localPhone;
 			phoneTextView.setText(phoneText);
 		} else phoneTextView.setText(R.string.phone_number_not_available);
 
+		String[] addr = address.split(",");
+		address = addr[0];
+		for (int i = 1; i<addr.length; i++) {
+			address =  address + "\n" + addr[i];
+		}
 		addressTextView.setText(address);
-		String location = "Get directions to here\n(" + lat + ", " + lng + ")";
+		String location = "Get directions to this place";
 		locationTextView.setText(location);
 
 		if (!rating.contains("NA"))
 			ratingBar.setRating(Float.parseFloat(rating));
 		else ratingBar.setRating(0);
 
-		String ratingText = rating + " stars";
+		String ratingText = rating;
 		ratingTextView.setText(ratingText);
 
 		wesiteTextView.setText(website);

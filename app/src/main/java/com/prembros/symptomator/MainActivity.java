@@ -1,6 +1,7 @@
 package com.prembros.symptomator;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.StrictMode;
@@ -16,6 +17,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.animation.AccelerateDecelerateInterpolator;
 import android.view.animation.AnimationUtils;
+import android.widget.Toast;
 
 import io.codetail.animation.SupportAnimator;
 
@@ -29,11 +31,11 @@ public class MainActivity extends AppCompatActivity implements
     private BottomNavigationView navigation;
 //    private LinearLayout revealView;
 //    private boolean hidden = true;
-    boolean somethingIsActive = false;
+private boolean somethingIsActive = false;
     private SupportAnimator animator;
-    private int[] touchCoordinate = new int[2];
+    private final int[] touchCoordinate = new int[2];
 
-    private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
+    private final BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
 
         @SuppressWarnings("ConstantConditions")
@@ -43,8 +45,7 @@ public class MainActivity extends AppCompatActivity implements
                 case R.id.navigation_by_symptom:
                     if (fragmentManager.findFragmentByTag("symptomFragment") == null) {
                         fragmentManager.beginTransaction()
-                                .setCustomAnimations(R.anim.fragment_anim_in, android.R.anim.fade_out,
-                                        android.R.anim.fade_in, android.R.anim.fade_out)
+                                .setCustomAnimations(R.anim.float_up, R.anim.sink_up)
                                 .replace(R.id.main_fragment_container, new SymptomFragment(), "symptomFragment")
                                 .commit();
                         navigation.setItemBackgroundResource(R.color.colorDividerLight);
@@ -55,8 +56,7 @@ public class MainActivity extends AppCompatActivity implements
                 case R.id.navigation_by_first_aid:
                     if (fragmentManager.findFragmentByTag("firstAidFragment") == null) {
                         fragmentManager.beginTransaction()
-                                .setCustomAnimations(R.anim.fragment_anim_in, android.R.anim.fade_out,
-                                        android.R.anim.fade_in, android.R.anim.fade_out)
+                                .setCustomAnimations(R.anim.float_up, R.anim.sink_up)
                                 .replace(R.id.main_fragment_container, new FirstAidFragment(), "firstAidFragment")
                                 .commit();
                         navigation.setItemBackgroundResource(R.color.colorDividerLight);
@@ -67,8 +67,7 @@ public class MainActivity extends AppCompatActivity implements
                 case R.id.navigation_by_services:
                     if (fragmentManager.findFragmentByTag("servicesFragment") == null) {
                         fragmentManager.beginTransaction()
-                                .setCustomAnimations(R.anim.fragment_anim_in, android.R.anim.fade_out,
-                                        android.R.anim.fade_in, android.R.anim.fade_out)
+                                .setCustomAnimations(R.anim.float_up, R.anim.sink_up)
                                 .replace(R.id.main_fragment_container, new ServicesFragment(), "servicesFragment")
                                 .commit();
                         navigation.setItemBackgroundResource(R.color.colorSecondaryDark);
@@ -82,12 +81,12 @@ public class MainActivity extends AppCompatActivity implements
         }
     };
 
-    @Override
-    protected void onStart() {
-        super.onStart();
+//    @Override
+//    protected void onStart() {
+//        super.onStart();
 //        if( googleApiClient != null )
 //            googleApiClient.connect();
-    }
+//    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -100,9 +99,8 @@ public class MainActivity extends AppCompatActivity implements
 
 //        revealView = (LinearLayout) this.findViewById(R.id.services_revealView);
         fragmentManager = getSupportFragmentManager();
-        fragmentManager.beginTransaction().setCustomAnimations(
-                R.anim.fragment_anim_in, android.R.anim.fade_out,
-                android.R.anim.fade_in, android.R.anim.fade_out)
+        fragmentManager.beginTransaction()
+                .setCustomAnimations(R.anim.float_up, R.anim.sink_up)
                 .add(R.id.main_fragment_container, new SymptomFragment(), "symptomFragment")
                 .commit();
 
@@ -128,20 +126,20 @@ public class MainActivity extends AppCompatActivity implements
         return super.dispatchTouchEvent(ev);
     }
 
-    public void animationForward(View mRevealView, int[] center, int duration){
+    private void animationForward(View mRevealView, int[] center){
         int centerX = center[0];
         int centerY = center[1];
         int startRadius = 0;
         int endRadius = (int) (Math.hypot(mRevealView.getWidth() * 2, mRevealView.getHeight() * 2));
         animator = createCircularReveal(mRevealView, centerX, centerY, startRadius, endRadius);
         animator.setInterpolator(new AccelerateDecelerateInterpolator());
-        animator.setDuration(duration);
+        animator.setDuration(800);
 
         animator.start();
         mRevealView.setVisibility(View.VISIBLE);
     }
 
-    public void animationReversed(@Nullable final View mRevealView){
+    private void animationReversed(@Nullable final View mRevealView){
         if (animator != null && !animator.isRunning()){
             animator = animator.reverse();
             animator.addListener(new SupportAnimator.AnimatorListener() {
@@ -187,7 +185,7 @@ public class MainActivity extends AppCompatActivity implements
                 onBackPressed();
                 return true;
             case R.id.action_about:
-                animationForward(this.findViewById(R.id.menu_fragment_container), touchCoordinate, 800);
+                animationForward(this.findViewById(R.id.menu_fragment_container), touchCoordinate);
                 navigation.setVisibility(View.GONE);
                 fragmentManager.beginTransaction().add(R.id.menu_fragment_container, new About(), "about").commit();
                 somethingIsActive = true;
@@ -231,19 +229,48 @@ public class MainActivity extends AppCompatActivity implements
             }
         }
     }
-                                                                                        //    AIzaSyCwmLEnjoalKDciZxizLlWTFLmg0vd7Csc
 
-    @Override
-    protected void onStop() {
+    /*LINKS FOR ABOUT PAGE*/
+    public void goToPremSuman(@SuppressWarnings("UnusedParameters") View view) {
+        goToURL("https://facebook.com/premsuman8");
+    }
+
+    public void goToPremAnkur(@SuppressWarnings("UnusedParameters") View view) {
+        goToURL("https://facebook.com/prem.ankur.14");
+    }
+
+    public void goToVikash(@SuppressWarnings("UnusedParameters") View view) {
+        goToURL("https://facebook.com/vikashruhelacse");
+    }
+
+    public void goToPrateek(@SuppressWarnings("UnusedParameters") View view) {
+        goToURL("https://facebook.com/prateek.sen.118");
+    }
+
+    public void goToPremBros(@SuppressWarnings("UnusedParameters") View view) {
+        goToURL("https://facebook.com/https://play.google.com/store/apps/developer?id=Prem+Bros");
+    }
+
+    private void goToURL(String URL) {
+        try {
+            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(URL)));
+        } catch (android.content.ActivityNotFoundException e){
+            e.printStackTrace();
+            Toast.makeText(this, "No app found for this action!", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+//    @Override
+//    protected void onStop() {
 //        if( googleApiClient != null && googleApiClient.isConnected() ) {
 //            mAdapter.setGoogleApiClient( null );
 //            googleApiClient.disconnect();
 //        }
-        super.onStop();
-    }
+//        super.onStop();
+//    }
 
-    void removeFragmentIfAttached(final String tag){
-        if (fragmentManager.findFragmentByTag(tag) != null) {
+    private void removeFragmentIfAttached(){
+        if (fragmentManager.findFragmentByTag("about") != null) {
             animationReversed(this.findViewById(R.id.menu_fragment_container));
             new Handler().postDelayed(new Runnable() {
                 @Override
@@ -251,7 +278,7 @@ public class MainActivity extends AppCompatActivity implements
                     navigation.startAnimation(AnimationUtils.loadAnimation(MainActivity.this, R.anim.float_up));
                     navigation.setVisibility(View.VISIBLE);
                     fragmentManager.beginTransaction()
-                            .remove(fragmentManager.findFragmentByTag(tag))
+                            .remove(fragmentManager.findFragmentByTag("about"))
                             .commit();
                 }
             }, 200);
@@ -262,8 +289,17 @@ public class MainActivity extends AppCompatActivity implements
     public void onBackPressed() {
 //        if (!hidden) animationReversed(revealView);
         if (somethingIsActive){
-            removeFragmentIfAttached("about");
+            removeFragmentIfAttached();
             somethingIsActive = false;
+        }
+        else if (fragmentManager.findFragmentByTag("symptomFragment") == null) {
+            fragmentManager.beginTransaction()
+                    .setCustomAnimations(R.anim.float_up, R.anim.sink_up)
+                    .replace(R.id.main_fragment_container, new SymptomFragment(), "symptomFragment")
+                    .commit();
+            navigation.setItemBackgroundResource(R.color.colorDividerLight);
+            navigation.setItemTextColor(ContextCompat.getColorStateList(navigation.getContext(), R.color.colorSecondaryText));
+            navigation.setItemIconTintList(ContextCompat.getColorStateList(navigation.getContext(), R.color.colorSecondaryText));
         }
         else
             super.onBackPressed();

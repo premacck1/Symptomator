@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:paddingTop="@dimen/activity_horizontal_margin"
-    tools:context="com.prembros.symptomator.CompleteSymptomList">
+    tools:context="com.prembros.symptomator.CompleteConditionList">
 
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"

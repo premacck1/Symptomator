@@ -24,14 +24,14 @@ import java.net.URLEncoder;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CompleteSymptomList extends Fragment {
+public class CompleteConditionList extends Fragment {
 
     private OnFragmentInteractionListener mListener;
     private RecyclerViewAdapter recyclerViewAdapter;
-    List<String> completeSymptomList;
-    DatabaseHolder db;
+    private List<String> completeSymptomList;
+    private DatabaseHolder db;
 
-    public CompleteSymptomList() {
+    public CompleteConditionList() {
         // Required empty public constructor
     }
 

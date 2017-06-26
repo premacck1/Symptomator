@@ -60,7 +60,7 @@ class DatabaseHolder {
 //    private static final String create_table_patient = "create table if not exists Patient (aadharNumber bigint not null primary key, Name text not null, contact bigint not null, email text not null, gender text not null, age int not null, disease text not null, doctorID text not null, nextAppointment blob not null, hospitalID text not null, address blob not null, FOREIGN KEY (doctorID) REFERENCES Doctor(id), FOREIGN KEY (hospitalID) REFERENCES Hospital(id));";
 
     private static DatabaseHelper dbHelper;
-    private Context context;
+    private final Context context;
     private SQLiteDatabase db;
 
 
@@ -71,9 +71,8 @@ class DatabaseHolder {
         }
     }
 
-    DatabaseHolder open() {
+    void open() {
         db  = dbHelper.getWritableDatabase();
-        return this;
     }
 
     void close() {
@@ -83,32 +82,32 @@ class DatabaseHolder {
     /*
     *INSERTION / REMOVAL METHODS
      */
-    long insertInSymptomListTable(String symptom, String bodyPart, String sex){
+    void insertInSymptomListTable(String symptom, String bodyPart, String sex){
         ContentValues content = new ContentValues();
         content.put("Symptom", symptom);
         content.put("BodyPart", bodyPart);
         content.put("Sex", sex);
-        return db.insertOrThrow(symptomList_tableName, null, content);
+        db.insertOrThrow(symptomList_tableName, null, content);
     }
 
-    long insertInEmergencyNumbersTable(String country, String code, String number){
+    void insertInEmergencyNumbersTable(String country, String code, String number){
         ContentValues content = new ContentValues();
         content.put("Country", country);
         content.put("Code", code);
         content.put("Number", number);
-        return db.insertOrThrow(emergencyNumbers_tableName, null, content);
+        db.insertOrThrow(emergencyNumbers_tableName, null, content);
     }
 
-    long insertInSelectedSymptomsTable(String symptom) throws java.sql.SQLException {
+    void insertInSelectedSymptomsTable(String symptom) {
         removeFromSelectedSymptomsTable(symptom);
 
         ContentValues content = new ContentValues();
         content.put("Symptom", symptom);
-        return db.insertOrThrow(selectedSymptoms_tableName, null, content);
+        db.insertOrThrow(selectedSymptoms_tableName, null, content);
     }
 
-    long removeFromSelectedSymptomsTable(String symptom){
-        return db.delete(selectedSymptoms_tableName, "Symptom='" + symptom + "'", null);
+    void removeFromSelectedSymptomsTable(String symptom){
+        db.delete(selectedSymptoms_tableName, "Symptom='" + symptom + "'", null);
     }
 
     void resetSelectedSymptomsTable(){
@@ -197,17 +196,19 @@ class DatabaseHolder {
         return cursor;
     }
 
-    Cursor isStringAvailableInTable(String item) {
-        Cursor cursor = null;
-        try {
-            cursor = db.query(true, selectedSymptoms_tableName, new String[]{"Symptom"}, "Symptom='" + item + "'", null, null, null, null, null);
-        } catch (SQLiteException e) {
-            if (e.getMessage().contains("no such table")) {
-                Toast.makeText(context, "ERROR: Table doesn't exist", Toast.LENGTH_SHORT).show();
-            }
-        }
-        return cursor;
-    }
+// --Commented out by Inspection START (6/26/2017 1:16 AM):
+//    Cursor isStringAvailableInTable(String item) {
+//        Cursor cursor = null;
+//        try {
+//            cursor = db.query(true, selectedSymptoms_tableName, new String[]{"Symptom"}, "Symptom='" + item + "'", null, null, null, null, null);
+//        } catch (SQLiteException e) {
+//            if (e.getMessage().contains("no such table")) {
+//                Toast.makeText(context, "ERROR: Table doesn't exist", Toast.LENGTH_SHORT).show();
+//            }
+//        }
+//        return cursor;
+//    }
+// --Commented out by Inspection STOP (6/26/2017 1:16 AM)
 
     /*OLDER METHODS*/
 //    public long insertPatientData(String aadhar, String name, String contact, String email,

@@ -59,10 +59,12 @@ public class ServicesFragment extends Fragment implements View.OnClickListener {
         TextView nearby_hospitals = (TextView) rootView.findViewById(R.id.find_hospitals_nearby);
         TextView nearest_hospital = (TextView) rootView.findViewById(R.id.find_nearest_hospital);
         TextView nearby_doctors = (TextView) rootView.findViewById(R.id.find_doctors_nearby);
+        TextView nearest_doctor = (TextView) rootView.findViewById(R.id.find_nearest_doctor);
         call_108.setOnClickListener(this);
         nearby_hospitals.setOnClickListener(this);
         nearest_hospital.setOnClickListener(this);
         nearby_doctors.setOnClickListener(this);
+        nearest_doctor.setOnClickListener(this);
         return rootView;
     }
 
@@ -89,6 +91,12 @@ public class ServicesFragment extends Fragment implements View.OnClickListener {
                 intent2.putExtra("showWhat", "doctor");
                 intent2.putExtra("showNearest", false);
                 startActivity(intent2);
+                break;
+            case R.id.find_nearest_doctor:
+                Intent intent3 = new Intent(getContext(), MapsActivity.class);
+                intent3.putExtra("showWhat", "doctor");
+                intent3.putExtra("showNearest", true);
+                startActivity(intent3);
                 break;
             default:
                 Toast.makeText(getContext(), "This feature is coming soon!", Toast.LENGTH_SHORT).show();

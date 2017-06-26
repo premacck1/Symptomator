@@ -73,7 +73,7 @@ public class Introduction extends AppIntro2 {
 //        askForPermissions(new String[]{android.Manifest.permission.WRITE_EXTERNAL_STORAGE, android.Manifest.permission.READ_EXTERNAL_STORAGE}, 5);
     }
 
-    public void loadMainActivity(){
+    private void loadMainActivity(){
         startActivity(new Intent(this, MainActivity.class));
         this.finish();
     }
@@ -121,16 +121,16 @@ public class Introduction extends AppIntro2 {
 
                     if (fineLocationAccepted && coarseLocationAccepted && internetAccepted && callsAccepted)
                         Snackbar.make(getWindow().getDecorView(),
-                                "Permission Granted, Now you can use all the features!",
+                                R.string.permission_granted,
                                 Snackbar.LENGTH_LONG).show();
                     else {
                         Snackbar.make(getWindow().getDecorView(),
-                                "Permission Denied!",
+                                R.string.permission_denied,
                                 Snackbar.LENGTH_LONG).show();
 
                         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
                             if (shouldShowRequestPermissionRationale(ACCESS_FINE_LOCATION)) {
-                                showMessageOKCancel("You need to allow access to both the permissions",
+                                showMessageOKCancel(
                                         new DialogInterface.OnClickListener() {
                                             @Override
                                             public void onClick(DialogInterface dialog, int which) {
@@ -154,16 +154,16 @@ public class Introduction extends AppIntro2 {
     }
 
 
-    private void showMessageOKCancel(String message, DialogInterface.OnClickListener okListener) {
+    private void showMessageOKCancel(DialogInterface.OnClickListener okListener) {
         new AlertDialog.Builder(this)
-                .setMessage(message)
+                .setMessage("You need to allow access to both the permissions")
                 .setPositiveButton("OK", okListener)
                 .setNegativeButton("Cancel", null)
                 .create()
                 .show();
     }
 
-    void loadTables(){
+    private void loadTables(){
         db.open();
         insertSymptomListData();
         insertFemaleData();
@@ -173,7 +173,7 @@ public class Introduction extends AppIntro2 {
         db.close();
     }
 
-    void insertSymptomListData(){
+    private void insertSymptomListData(){
         db.insertInSymptomListTable("Agitation", "Head", "All");
         db.insertInSymptomListTable("Anxiety", "Head", "All");
         db.insertInSymptomListTable("Apathy", "Head", "All");
@@ -755,7 +755,7 @@ public class Introduction extends AppIntro2 {
         db.insertInSymptomListTable("Warm to touch", "Genitals", "All");
     }
 
-    void insertFemaleData(){
+    private void insertFemaleData(){
         db.insertInSymptomListTable("Heavy menstrual bleeding", "Pelvis", "Female");
         db.insertInSymptomListTable("Irregular menstrual periods", "Pelvis", "Female");
         db.insertInSymptomListTable("Missed/late menstrual period", "Pelvis", "Female");
@@ -773,7 +773,7 @@ public class Introduction extends AppIntro2 {
         db.insertInSymptomListTable("Vaginal odor", "Genitals", "Female");
     }
 
-    void insertMaleData(){
+    private void insertMaleData(){
         db.insertInSymptomListTable("Curved or bent penis during erection", "Genitals", "Male");
         db.insertInSymptomListTable("Discharge from penis", "Genitals", "Male");
         db.insertInSymptomListTable("Erectile dysfunction", "Genitals", "Male");
@@ -786,7 +786,7 @@ public class Introduction extends AppIntro2 {
         db.insertInSymptomListTable("Unable to obtain or maintain erection", "Genitals", "Male");
     }
 
-    void insertRemainingData(){
+    private void insertRemainingData(){
         db.insertInSymptomListTable("Black (tar) colored stools", "Buttock", "All");
         db.insertInSymptomListTable("Bleeding", "Buttock", "All");
         db.insertInSymptomListTable("Blood in toilet", "Buttock", "All");
@@ -1200,7 +1200,7 @@ public class Introduction extends AppIntro2 {
         db.insertInSymptomListTable("Weakness", "Sole", "All");
     }
 
-    void insertEmergencyNumbers(){
+    private void insertEmergencyNumbers(){
         db.insertInEmergencyNumbersTable("Afghanistan","AF","102");
         db.insertInEmergencyNumbersTable("Aland","AX","112");
         db.insertInEmergencyNumbersTable("Albania","AL","127");
@@ -1441,9 +1441,9 @@ public class Introduction extends AppIntro2 {
 //        ProgressBar progressBar;
 //        Context context;
 
-        @Override
-        protected void onPreExecute() {
-            super.onPreExecute();
+//        @Override
+//        protected void onPreExecute() {
+//            super.onPreExecute();
 //            context = getApplicationContext();
 
 //            RelativeLayout layout = new RelativeLayout(context);
@@ -1458,7 +1458,7 @@ public class Introduction extends AppIntro2 {
 //            layout.addView(progressBar, params);
 
 //            setContentView(layout);
-        }
+//        }
 
         @Override
         protected Void doInBackground(Void... voids) {

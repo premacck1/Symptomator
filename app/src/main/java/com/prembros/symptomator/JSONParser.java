@@ -13,7 +13,7 @@ import java.util.ArrayList;
 class JSONParser extends ArrayList<PageBeans> {
 
     /***Parsing First aid page*/
-    ArrayList<PageBeans> parseFirstAidJSON(JSONObject jsonObject, String field, String topic){
+    ArrayList<PageBeans> parseFirstAidJSON(JSONObject jsonObject, String topic){
 
 //        String t = topic.substring(0, 4) + "the personf NOW if";
         JSONArray jFieldArray;
@@ -21,8 +21,7 @@ class JSONParser extends ArrayList<PageBeans> {
 
         if (jsonObject != null) {
             try {
-                if (field != null) {
-                    jFieldArray = jsonObject.getJSONArray(field);
+                    jFieldArray = jsonObject.getJSONArray("First_aid");
                     JSONObject jTopicObject = jFieldArray.getJSONObject(0);
                     if (topic != null) {
                         String t = topic.replace(" ", "_");
@@ -31,10 +30,6 @@ class JSONParser extends ArrayList<PageBeans> {
 //                        Log.d("ERROR!: ", "Topic is null in parseSingleConditionList");
                         return null;
                     }
-                } else {
-//                    Log.d("ERROR!: ", "Field is null in parseSingleConditionList");
-                    return null;
-                }
             } catch (JSONException e) {
                 e.printStackTrace();
             }

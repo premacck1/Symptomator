@@ -1,22 +1,27 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/services_revealView"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorSecondary"
-    android:layout_marginBottom="?attr/actionBarSize"
-    android:gravity="end">
+    android:layout_marginBottom="?attr/actionBarSize">
+
+    <LinearLayout
+        android:id="@+id/services_revealView"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        tools:ignore="UselessParent">
 
         <com.balysv.materialripple.MaterialRippleLayout
-            android:id="@+id/ripple_layout_1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/line_text_view_1"
             android:layout_marginStart="@dimen/activity_horizontal_margin"
             android:layout_marginEnd="@dimen/activity_horizontal_margin"
             app:mrl_rippleOverlay="true"
             app:mrl_rippleHover="true"
-            app:mrl_rippleDelayClick="false"
+            app:mrl_rippleDelayClick="true"
             app:mrl_rippleColor="@color/white_text_icons">
 
             <TextView
@@ -29,28 +34,60 @@
                 android:paddingRight="32dp"
                 android:textColor="@color/white_text_icons"
                 android:text="@string/find_doctors_nearby"
+                android:textSize="18sp"
                 android:gravity="center"
                 android:drawableStart="@drawable/ic_doctor" />
 
         </com.balysv.materialripple.MaterialRippleLayout>
 
         <TextView
-            android:id="@+id/line_text_view_1"
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:layout_above="@+id/ripple_layout_2"
-            android:background="@color/colorDividerLight"/>
+            android:background="@color/colorDividerLight"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"/>
 
         <com.balysv.materialripple.MaterialRippleLayout
-            android:id="@+id/ripple_layout_2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/line_text_view_2"
             android:layout_marginStart="@dimen/activity_horizontal_margin"
             android:layout_marginEnd="@dimen/activity_horizontal_margin"
             app:mrl_rippleOverlay="true"
             app:mrl_rippleHover="true"
-            app:mrl_rippleDelayClick="false"
+            app:mrl_rippleDelayClick="true"
+            app:mrl_rippleColor="@color/white_text_icons">
+
+            <TextView
+                android:id="@+id/find_nearest_doctor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/activity_horizontal_margin"
+                android:paddingBottom="@dimen/activity_horizontal_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="32dp"
+                android:textColor="@color/white_text_icons"
+                android:text="@string/nearest_doctor"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:drawableStart="@drawable/ic_nearby" />
+
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorDividerLight"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"/>
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            app:mrl_rippleOverlay="true"
+            app:mrl_rippleHover="true"
+            app:mrl_rippleDelayClick="true"
             app:mrl_rippleColor="@color/white_text_icons">
 
             <TextView
@@ -62,29 +99,28 @@
                 android:paddingLeft="@dimen/activity_horizontal_margin"
                 android:paddingRight="32dp"
                 android:textColor="@color/white_text_icons"
-                android:text="@string/find_nearby_hospitals"
+                android:text="@string/find_hospitals_nearby"
+                android:textSize="18sp"
                 android:gravity="center"
                 android:drawableStart="@drawable/ic_hospital" />
 
         </com.balysv.materialripple.MaterialRippleLayout>
 
         <TextView
-            android:id="@+id/line_text_view_2"
             android:layout_width="match_parent"
-            android:layout_centerInParent="true"
             android:layout_height="1dp"
-            android:background="@color/colorDividerLight"/>
+            android:background="@color/colorDividerLight"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"/>
 
         <com.balysv.materialripple.MaterialRippleLayout
-            android:id="@+id/ripple_layout_3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/line_text_view_2"
             android:layout_marginStart="@dimen/activity_horizontal_margin"
             android:layout_marginEnd="@dimen/activity_horizontal_margin"
             app:mrl_rippleOverlay="true"
             app:mrl_rippleHover="true"
-            app:mrl_rippleDelayClick="false"
+            app:mrl_rippleDelayClick="true"
             app:mrl_rippleColor="@color/white_text_icons">
 
             <TextView
@@ -96,29 +132,28 @@
                 android:paddingLeft="@dimen/activity_horizontal_margin"
                 android:paddingRight="32dp"
                 android:textColor="@color/white_text_icons"
-                android:text="@string/get_to_the_nearest_hospital"
+                android:text="@string/nearest_hospital"
+                android:textSize="18sp"
                 android:gravity="center"
                 android:drawableStart="@drawable/ic_nearby" />
 
         </com.balysv.materialripple.MaterialRippleLayout>
 
         <TextView
-            android:id="@+id/line_text_view_3"
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:layout_below="@+id/ripple_layout_3"
-            android:background="@color/colorDividerLight"/>
+            android:background="@color/colorDividerLight"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"/>
 
         <com.balysv.materialripple.MaterialRippleLayout
-            android:id="@+id/ripple_layout_4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/line_text_view_3"
             android:layout_marginStart="@dimen/activity_horizontal_margin"
             android:layout_marginEnd="@dimen/activity_horizontal_margin"
             app:mrl_rippleOverlay="true"
             app:mrl_rippleHover="true"
-            app:mrl_rippleDelayClick="false"
+            app:mrl_rippleDelayClick="true"
             app:mrl_rippleColor="@color/white_text_icons">
 
             <TextView
@@ -131,10 +166,12 @@
                 android:paddingRight="32dp"
                 android:textColor="@color/white_text_icons"
                 android:text="@string/call_108"
+                android:textSize="18sp"
                 android:gravity="center"
-                android:drawableStart="@drawable/ic_call_medical_services" />
+                android:drawableStart="@drawable/ic_call_emergency_services" />
 
         </com.balysv.materialripple.MaterialRippleLayout>
 
-</RelativeLayout>
+    </LinearLayout>
 
+</RelativeLayout>

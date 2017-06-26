@@ -20,15 +20,15 @@ import java.util.List;
 class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>
         implements FastScrollRecyclerView.SectionedAdapter {
 
-    private SparseBooleanArray mCheckedItems = new SparseBooleanArray();
-    private List<String> mValues;
-    private CompleteSymptomList.OnFragmentInteractionListener mListener2;
-    private Context context;
-    private boolean isViewChecked;
+    private final SparseBooleanArray mCheckedItems = new SparseBooleanArray();
+    private final List<String> mValues;
+    private CompleteConditionList.OnFragmentInteractionListener mListener2;
+    private final Context context;
+    private final boolean isViewChecked;
     private int lastPosition = -1;
 
     RecyclerViewAdapter(boolean isViewChecked, Context context, List<String> items,
-                        @Nullable CompleteSymptomList.OnFragmentInteractionListener listener2) {
+                        @Nullable CompleteConditionList.OnFragmentInteractionListener listener2) {
         this.isViewChecked = isViewChecked;
         mValues = items;
         if (listener2 != null)
@@ -55,7 +55,7 @@ class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewH
         holder.mItem = mValues.get(position);
         if (isViewChecked) {
             holder.mIdCheckedTextView.setText(valueForPosition);
-            boolean isSelected;
+//            boolean isSelected;
 //            db.open();
 //
 //            Cursor cursor = db.isStringAvailableInTable(holder.mIdCheckedTextView.getText().toString());
@@ -100,7 +100,7 @@ class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewH
     }
 
     class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
-        final View mView;
+//        final View mView;
         TextView mIdTextView;
         CheckedTextView mIdCheckedTextView;
         String mItem;
@@ -109,7 +109,6 @@ class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewH
             super(view);
             mIdTextView = null;
             mIdCheckedTextView = null;
-            mView = view;
             if (isViewChecked) {
                 mIdCheckedTextView = (CheckedTextView) view.findViewById(R.id.list_item_checked_textview);
                 mIdCheckedTextView.setOnClickListener(this);

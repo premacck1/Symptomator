@@ -15,10 +15,10 @@ import android.widget.ListAdapter;
 
 import java.util.ArrayList;
 
-class PageAdapter extends BaseAdapter implements ListAdapter {
+class PageAdapter extends BaseAdapter implements ListAdapter, View.OnClickListener {
 
-    private Context context;
-    private ArrayList<PageBeans> pageBeansArrayList;
+    private final Context context;
+    private final ArrayList<PageBeans> pageBeansArrayList;
 
     PageAdapter(Context context, ArrayList<PageBeans> pageBeansArrayList){
         this.context = context;
@@ -48,13 +48,13 @@ class PageAdapter extends BaseAdapter implements ListAdapter {
         String heading = pageBeansArrayList.get(position).getHeading();
 
         if (view == null){
-            if (heading.equals("EMERGENCY")) {
-                LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-                view = inflater.inflate(R.layout.page_list_item_emergency, null);
-            }
-            else {
+            if (!heading.equals("EMERGENCY")) {
                 LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
                 view = inflater.inflate(R.layout.page_list_item, null);
+            } else {
+                LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+                view = inflater.inflate(R.layout.page_list_item_emergency, null);
+                view.findViewById(R.id.call_108).setOnClickListener(this);
             }
         }
 
@@ -67,5 +67,12 @@ class PageAdapter extends BaseAdapter implements ListAdapter {
             contentTextView.setText(pageBeansArrayList.get(position).getContent());
         }
         return view;
+    }
+
+    @Override
+    public void onClick(View view) {
+        if (view.getId() == R.id.call_108) {
+            new CallEmergencyServices(context);
+        }
     }
 }

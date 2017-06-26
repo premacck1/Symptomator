@@ -6,8 +6,9 @@ android {
     defaultConfig {
         applicationId "com.prembros.symptomator"
         minSdkVersion 19
+        //noinspection OldTargetApi
         targetSdkVersion 25
-        versionCode 12
+        versionCode 14
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
@@ -36,10 +37,10 @@ dependencies {
     compile 'com.balysv:material-ripple:1.0.2'
     compile 'com.simplecityapps:recyclerview-fastscroll:1.0.14'
     compile 'com.github.paolorotolo:appintro:4.1.0'
-    compile 'com.google.android.gms:play-services-location:10.2.4'
-    compile 'com.google.android.gms:play-services-maps:10.2.4'
-    compile 'com.google.android.gms:play-services-places:10.2.4'
-    compile 'com.google.android.gms:play-services-nearby:10.2.4'
+    compile 'com.google.android.gms:play-services-location:11.0.1'
+    compile 'com.google.android.gms:play-services-maps:11.0.1'
+    compile 'com.google.android.gms:play-services-places:11.0.1'
+    compile 'com.google.android.gms:play-services-nearby:11.0.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     testCompile 'junit:junit:4.12'
 }

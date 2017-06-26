@@ -1,6 +1,7 @@
 package com.prembros.symptomator;
 
 import android.annotation.SuppressLint;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Criteria;
@@ -14,9 +15,12 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -47,19 +51,37 @@ import java.util.List;
 
 public class MapsActivity extends AppCompatActivity implements LocationListener, OnMapReadyCallback {
 
-    GoogleMap mMap;
+    private GoogleMap mMap;
+    private LocationManager locationManager;
 
     private double mLatitude=0;
     private double mLongitude=0;
     private boolean showNearest;
-    protected static boolean isHospital;
+    static boolean isHospital;
 
-    HashMap<String, String> mMarkerPlaceLink = new HashMap<>();
+    private final HashMap<String, String> mMarkerPlaceLink = new HashMap<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
+
+        showNearest = getIntent().getExtras().getBoolean("showNearest");
+
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.setDisplayHomeAsUpEnabled(true);
+            actionBar.setHomeAsUpIndicator(R.drawable.ic_back);
+            if (isHospital) {
+                if (showNearest) {
+                    actionBar.setTitle(R.string.nearest_hospital);
+                } else actionBar.setTitle(R.string.nearby_hospitals);
+            } else {
+                if (showNearest) {
+                    actionBar.setTitle(R.string.nearest_doctor);
+                } else actionBar.setTitle(R.string.narby_doctors);
+            }
+        }
 
         GoogleApiAvailability googleAPI = GoogleApiAvailability.getInstance();
         int status = googleAPI.isGooglePlayServicesAvailable(this);
@@ -69,12 +91,10 @@ public class MapsActivity extends AppCompatActivity implements LocationListener,
                 googleAPI.getErrorDialog(this, status, 10000).show();
             }
         }else {                                                                 // Google Play Services are available
-            showNearest = getIntent().getExtras().getBoolean("showNearest");
-
             SupportMapFragment fragment = ( SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
             fragment.getMapAsync(this);
             
-            LocationManager locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
+            locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
             Criteria criteria = new Criteria();
             String provider = locationManager.getBestProvider(criteria, true);
             
@@ -88,23 +108,28 @@ public class MapsActivity extends AppCompatActivity implements LocationListener,
             locationManager.requestLocationUpdates(provider, 20000, 0, this);
 
             isHospital = getIntent().getStringExtra("showWhat").equals("hospital");
-            if (isHospital) {
-                String sb = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?" + "location=" + mLatitude + "," + mLongitude +
-                        "&radius=5000" +
-                        "&types=hospital" +
-                        "&sensor=true" +
-                        "&key=AIzaSyC8JIhbRFb1uVOqawgaHP8Dr9goMIVey7k";
-                
-                new PlacesTask().execute(sb);
-            } else {
-                String sb = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?" + "location=" + mLatitude + "," + mLongitude +
-                        "&radius=5000" +
-                        "&types=doctor" +
-                        "&sensor=true" +
-                        "&key=AIzaSyC8JIhbRFb1uVOqawgaHP8Dr9goMIVey7k";
 
-                new PlacesTask().execute(sb);
-            }
+            showNearbyPlaces();
+        }
+    }
+
+    private void showNearbyPlaces() {
+        if (isHospital) {
+            String sb = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?" + "location=" + mLatitude + "," + mLongitude +
+                    "&radius=10000" +
+                    "&types=hospital" +
+                    "&sensor=true" +
+                    "&key=AIzaSyC8JIhbRFb1uVOqawgaHP8Dr9goMIVey7k";
+
+            new PlacesTask().execute(sb);
+        } else {
+            String sb = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?" + "location=" + mLatitude + "," + mLongitude +
+                    "&radius=10000" +
+                    "&types=doctor" +
+                    "&sensor=true" +
+                    "&key=AIzaSyC8JIhbRFb1uVOqawgaHP8Dr9goMIVey7k";
+
+            new PlacesTask().execute(sb);
         }
     }
 
@@ -123,6 +148,8 @@ public class MapsActivity extends AppCompatActivity implements LocationListener,
                 mMap.setMyLocationEnabled(true);
             }
         } else this.finish();
+
+        showNearbyPlaces();
 
         mMap.setOnInfoWindowClickListener(new GoogleMap.OnInfoWindowClickListener() {
 
@@ -186,44 +213,67 @@ public class MapsActivity extends AppCompatActivity implements LocationListener,
             mMap.clear();
             HashMap<Double, HashMap<String, String>> placeDistance = new HashMap<>();
 
-            for(int i=0;i<list.size();i++) {
-                MarkerOptions markerOptions = new MarkerOptions();
-                HashMap<String, String> hmPlace = list.get(i);
-
-                double lat = Double.parseDouble(hmPlace.get("lat"));
-                double lng = Double.parseDouble(hmPlace.get("lng"));
-
-                if (showNearest) {
-                    placeDistance.put(distanceFrom(mLatitude, mLongitude, lat, lng), hmPlace);
+            if (list != null) {
+                if (list.size() == 0) {
+                    AlertDialog.Builder dialog = new AlertDialog.Builder(MapsActivity.this);
+                    dialog.setTitle(R.string.sorry)
+                            .setMessage("But we couldn't find any suitable places nearby you.")
+                            .setCancelable(false)
+                            .setPositiveButton("okay", new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialogInterface, int i) {
+                                    MapsActivity.this.finish();
+                                }
+                            })
+                            .show();
                 } else {
-                    LatLng latLng = new LatLng(lat, lng);
+                    for (int i = 0; i < list.size(); i++) {
+                        MarkerOptions markerOptions = new MarkerOptions();
+                        HashMap<String, String> hmPlace = list.get(i);
 
-                    String name = hmPlace.get("place_name");
-//                String vicinity = hmPlace.get("vicinity");
+                        double lat = Double.parseDouble(hmPlace.get("lat"));
+                        double lng = Double.parseDouble(hmPlace.get("lng"));
 
-                    markerOptions.position(latLng);
-                    markerOptions.title(name);
-                    if (isHospital) {
-                        markerOptions.icon(BitmapDescriptorFactory.fromResource(R.drawable.marker_hospital));
-                    } else
-                        markerOptions.icon(BitmapDescriptorFactory.fromResource(R.drawable.marker_doctor));
-                    Marker m = mMap.addMarker(markerOptions);
-                    mMarkerPlaceLink.put(m.getId(), hmPlace.get("reference"));
+                        if (showNearest) {
+                            placeDistance.put(distanceFromCurrentLocation(mLatitude, mLongitude, lat, lng), hmPlace);
+                        } else {
+                            LatLng latLng = new LatLng(lat, lng);
+
+                            String name = hmPlace.get("place_name");
+//                            String vicinity = hmPlace.get("vicinity");
+
+                            markerOptions.position(latLng);
+                            markerOptions.title(name);
+                            if (isHospital) {
+                                markerOptions.icon(BitmapDescriptorFactory.fromResource(R.drawable.marker_hospital));
+                            } else
+                                markerOptions.icon(BitmapDescriptorFactory.fromResource(R.drawable.marker_doctor));
+
+                            Marker m = mMap.addMarker(markerOptions);
+                            mMarkerPlaceLink.put(m.getId(), hmPlace.get("reference"));
+
+                            mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng));
+                            mMap.animateCamera(CameraUpdateFactory.zoomTo(13));
+                        }
+                    }
+
+
+                    if (showNearest) {
+                        List<Double> distances = new ArrayList<>(placeDistance.keySet());
+                        Collections.sort(distances);
+                        double shortestDistance = distances.get(0);
+                        HashMap<String, String> nearestHastMap = placeDistance.get(shortestDistance);
+                        startActivity(new Intent(Intent.ACTION_VIEW,
+                                Uri.parse("http://maps.google.com/maps?daddr=" + nearestHastMap.get("lat") + "," + nearestHastMap.get("lng"))));
+
+                        MapsActivity.this.finish();
+                    }
                 }
-            }
-            if (showNearest) {
-                List<Double> distances = new ArrayList<>(placeDistance.keySet());
-                Collections.sort(distances);
-                double shortestDistance = distances.get(0);
-                HashMap<String, String> nearestHastMap = placeDistance.get(shortestDistance);
-                startActivity(new Intent(Intent.ACTION_VIEW,
-                        Uri.parse("http://maps.google.com/maps?daddr=" + nearestHastMap.get("lat") + "," + nearestHastMap.get("lng"))));
-                MapsActivity.this.finish();
             }
         }
     }
 
-    private Double distanceFrom(double lat1, double lng1, double lat2, double lng2) {
+    private Double distanceFromCurrentLocation(double lat1, double lng1, double lat2, double lng2) {
         double earthRadius = 3958.75;
         double dLat = Math.toRadians(lat2-lat1);
         double dLng = Math.toRadians(lng2-lng1);
@@ -267,7 +317,7 @@ public class MapsActivity extends AppCompatActivity implements LocationListener,
             br.close();
 
         }catch(Exception e) {
-            Log.d("Exception ", " while downloading url" + e.toString());
+            Log.e("Exception ", " while downloading url" + e.toString());
         }finally {
             if (iStream != null) {
                 iStream.close();
@@ -288,6 +338,14 @@ public class MapsActivity extends AppCompatActivity implements LocationListener,
     }
 
     @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == R.id.action_mark_nearby) {
+            showNearbyPlaces();
+            return true;
+        } else return false;
+    }
+
+    @Override
     public void onLocationChanged(Location location) {
         mLatitude = location.getLatitude();
         mLongitude = location.getLongitude();
@@ -296,11 +354,12 @@ public class MapsActivity extends AppCompatActivity implements LocationListener,
         if (mMap != null) {
             mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng));
             mMap.animateCamera(CameraUpdateFactory.zoomTo(13));
+            showNearbyPlaces();
         }
-
+        locationManager.removeUpdates(this);
     }
 
-    public boolean checkLocationPermission() {
+    private boolean checkLocationPermission() {
         if (ContextCompat.checkSelfPermission(this,
                 android.Manifest.permission.ACCESS_FINE_LOCATION)
                 != PackageManager.PERMISSION_GRANTED) {
@@ -365,7 +424,7 @@ public class MapsActivity extends AppCompatActivity implements LocationListener,
 
     private class MapInfoWindowAdapter implements GoogleMap.InfoWindowAdapter {
 
-        private View rootView;
+        private final View rootView;
 
         @SuppressLint("InflateParams")
         MapInfoWindowAdapter() {
@@ -387,6 +446,12 @@ public class MapsActivity extends AppCompatActivity implements LocationListener,
             TextView placeName = (TextView) view.findViewById(R.id.marker_place_name);
             placeName.setText(marker.getTitle());
         }
+    }
+
+    @Override
+    protected void onDestroy() {
+        mMap = null;
+        super.onDestroy();
     }
 
     @Override

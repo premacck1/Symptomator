@@ -1,18 +1,14 @@
 package com.prembros.symptomator;
 
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
-import android.graphics.Color;
-import android.graphics.Typeface;
 import android.net.Uri;
+import android.os.Handler;
 import android.support.v4.app.ActivityCompat;
-import android.support.v7.app.AlertDialog;
 import android.telephony.TelephonyManager;
-import android.view.Gravity;
-import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.Locale;
 
@@ -65,36 +61,42 @@ class CallEmergencyServices {
                 android.Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
             return;
         }
+        Toast.makeText(context, "Calling emergency services in " + country + ", \"" + number + "\"", Toast.LENGTH_SHORT).show();
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                context.startActivity(callIntent);
+            }
+        }, 500);
 
-        TextView title = new TextView(context);
-        title.setText("Emergency number");
-        title.setPadding(50, 50, 50, 50);
-        title.setGravity(Gravity.CENTER);
-        title.setTextSize(25);
-        title.setTextColor(Color.rgb(33, 33, 33));
-        title.setTypeface(Typeface.DEFAULT_BOLD);
-
-        final AlertDialog.Builder dialog = new AlertDialog.Builder(context);
-        dialog.setIcon(R.drawable.ic_call_medical_services)
-                .setCustomTitle(title)
-                .setMessage("*__ " + country + " __*\n\nWe're going to call \"" + number + "\" for you.\nClick OKAY to confirm.")
-                .setPositiveButton("okay", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        context.startActivity(callIntent);
-                    }
-                })
-                .setNegativeButton("cancel", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        dialogInterface.dismiss();
-                    }
-                });
-        AlertDialog alertDialog = dialog.show();
-        TextView messageText = (TextView)alertDialog.findViewById(android.R.id.message);
-        if (messageText != null) {
-            messageText.setGravity(Gravity.CENTER);
-            messageText.setTextColor(Color.rgb(117, 117, 117));
-        }
+//        TextView title = new TextView(context);
+//        title.setText("Emergency number");
+//        title.setPadding(50, 50, 50, 50);
+//        title.setGravity(Gravity.CENTER);
+//        title.setTextSize(25);
+//        title.setTextColor(Color.rgb(33, 33, 33));
+//        title.setTypeface(Typeface.DEFAULT_BOLD);
+//
+//        final AlertDialog.Builder dialog = new AlertDialog.Builder(context);
+//        dialog.setIcon(R.drawable.ic_call_emergency_services)
+//                .setCustomTitle(title)
+//                .setMessage("*__ " + country + " __*\n\nWe're going to call \"" + number + "\" for you.\nClick OKAY to confirm.")
+//                .setPositiveButton("okay", new DialogInterface.OnClickListener() {
+//                    @Override
+//                    public void onClick(DialogInterface dialogInterface, int i) {
+//                    }
+//                })
+//                .setNegativeButton("cancel", new DialogInterface.OnClickListener() {
+//                    @Override
+//                    public void onClick(DialogInterface dialogInterface, int i) {
+//                        dialogInterface.dismiss();
+//                    }
+//                });
+//        AlertDialog alertDialog = dialog.show();
+//        TextView messageText = (TextView)alertDialog.findViewById(android.R.id.message);
+//        if (messageText != null) {
+//            messageText.setGravity(Gravity.CENTER);
+//            messageText.setTextColor(Color.rgb(117, 117, 117));
+//        }
     }
 }

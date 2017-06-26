@@ -8,6 +8,18 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="AppTheme.colorDisabled" parent="AppTheme">
+        <item name="android:windowBackground">@color/colorDisabled</item>
+    </style>
+
+    <style name="AppTheme.colorPrimaryLighter" parent="AppTheme">
+        <item name="android:windowBackground">@color/colorPrimaryLighter</item>
+    </style>
+
+    <style name="AppTheme.colorSecondary" parent="AppTheme">
+        <item name="android:windowBackground">@color/colorSecondary</item>
+    </style>
+
     <style name="AppTheme.Button" parent="Widget.AppCompat.Button.Colored">
         <item name="colorButtonNormal">@color/colorPrimaryDark</item>
         <item name="android:textColor">@android:color/white</item>

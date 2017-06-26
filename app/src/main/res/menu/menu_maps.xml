@@ -9,7 +9,7 @@
         app:showAsAction="always" />
 -->
 
-    <item android:id="@+id/action_mark_nearby_hospitals"
+    <item android:id="@+id/action_mark_nearby"
         android:title="@string/show_nearby_hospitals"
         android:icon="@drawable/ic_hospital_logo"
         app:showAsAction="ifRoom" />

@@ -5,7 +5,7 @@
     <item
         android:id="@+id/action_call_108"
         android:title="@string/call_108"
-        android:icon="@drawable/ic_call_medical_services"
+        android:icon="@drawable/ic_call_emergency_services"
         android:orderInCategory="1"
         app:showAsAction="always"/>
 

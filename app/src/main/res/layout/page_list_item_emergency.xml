@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -7,17 +8,36 @@
     android:background="@drawable/page_para_bg_emergency"
     android:paddingBottom="@dimen/activity_horizontal_margin">
 
-    <android.support.v7.widget.AppCompatTextView
-        android:id="@+id/heading"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="start"
-        android:paddingTop="10dp"
-        android:paddingBottom="5dp"
-        android:textColor="@color/white_text_icons"
-        android:layout_marginLeft="@dimen/activity_horizontal_margin"
-        android:layout_marginRight="@dimen/activity_horizontal_margin"
-        android:textSize="18sp"/>
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/white_text_icons"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/call_108"
+            android:layout_centerVertical="true"
+            android:textSize="18sp"/>
+
+        <ImageButton
+            android:id="@+id/call_108"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/transparent"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/ic_call_emergency_services"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="@string/call_emergency_services" />
+
+    </RelativeLayout>
 
     <TextView
         android:layout_width="match_parent"

@@ -9,7 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 
 public class SplashScreen extends AppCompatActivity {
 
-    boolean startedBefore = false;
+    private boolean startedBefore = false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

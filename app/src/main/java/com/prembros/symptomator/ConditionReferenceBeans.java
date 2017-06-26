@@ -58,13 +58,17 @@ class ConditionReferenceBeans implements Parcelable {
 //        return bodyPart;
 //    }
 
-    String getSymptom() {
-        return symptom;
-    }
+// --Commented out by Inspection START (6/26/2017 1:16 AM):
+//    String getSymptom() {
+//        return symptom;
+//    }
+// --Commented out by Inspection STOP (6/26/2017 1:16 AM)
 
-    String getWarning() {
-        return warning;
-    }
+// --Commented out by Inspection START (6/26/2017 1:16 AM):
+//    String getWarning() {
+//        return warning;
+//    }
+// --Commented out by Inspection STOP (6/26/2017 1:16 AM)
 
     String getConditions() {
         return conditions;

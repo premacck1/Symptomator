@@ -2,7 +2,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorDisabled"
     tools:context="com.prembros.symptomator.FirstAidCheck">
 
     <ProgressBar
@@ -21,5 +20,14 @@
         android:divider="@android:color/transparent"
         android:dividerHeight="5dp"
         android:listSelector="@android:color/transparent"/>
+
+    <SeekBar
+        android:visibility="invisible"
+        android:id="@+id/seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+        android:padding="@dimen/activity_vertical_margin"
+        android:background="@drawable/button_white_default"/>
 
 </FrameLayout>

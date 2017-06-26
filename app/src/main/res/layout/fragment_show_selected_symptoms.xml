@@ -4,7 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:clickable="true"
-    android:background="@color/colorSecondary"
     tools:context="com.prembros.symptomator.ShowSelectedSymptoms">
 
     <TextView
@@ -14,6 +13,8 @@
         android:layout_alignParentTop="true"
         android:gravity="center_horizontal"
         android:textSize="16sp"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
         android:textColor="@color/white_text_icons"
         android:layout_marginTop="@dimen/activity_horizontal_margin"
         android:text="@string/show_selected_symptoms_header"/>
@@ -24,14 +25,18 @@
         android:layout_height="1dp"
         android:layout_below="@+id/header"
         android:layout_marginTop="@dimen/activity_horizontal_margin"
-        android:background="@color/colorDivider"/>
+        android:background="@color/white_text_icons"/>
 
     <ListView
         android:visibility="invisible"
         android:id="@+id/list_selected_symptoms"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center|center_vertical"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_gravity="center_vertical"
+        android:textAlignment="center"
+        android:divider="@color/colorDividerLight"
+        android:dividerHeight="1dp"
         android:layout_below="@+id/header_underline"
         android:layout_above="@+id/fab_menu"
         android:layout_centerVertical="true"

@@ -29,7 +29,7 @@ import java.util.List;
 public class PossibleConditions extends Fragment {
 
     private ActionBar actionBar;
-    private String[] previousHeading = new String[2];
+    private final String[] previousHeading = new String[2];
     private ArrayList<String> selectedSymptoms;
     private View rootView;
     private RecyclerView recyclerView;
@@ -68,8 +68,8 @@ public class PossibleConditions extends Fragment {
         }
 
         if (selectedSymptoms.size() == 1) {
-            new ParseInBackground().execute(JSONReader.read(getContext(), "ConditionsReference"), bodyPart, selectedSymptoms.get(0));
-        } else new ParseInBackground().execute(JSONReader.read(getContext(), "ConditionsReference"), bodyPart, null);
+            new ParseInBackground().execute(JSONReader.read(getContext(), "ConditionsReference.txt"), bodyPart, selectedSymptoms.get(0));
+        } else new ParseInBackground().execute(JSONReader.read(getContext(), "ConditionsReference.txt"), bodyPart, null);
 
         recyclerView.addOnItemTouchListener(new RecyclerViewOnItemClickListener(getContext(), new RecyclerViewOnItemClickListener.OnItemClickListener() {
             @Override
@@ -119,7 +119,7 @@ public class PossibleConditions extends Fragment {
             if (conditionReferenceBeanses != null) {
                 List<String> conditions = new ArrayList<>();
                 for (int i = 0; i < conditionReferenceBeanses.size(); i++) {
-                    String[] individualConditions = conditionReferenceBeanses.get(0).getConditions().split(",");
+                    String[] individualConditions = conditionReferenceBeanses.get(i).getConditions().split(",");
                     for (String individualCondition : individualConditions) {
                         if (!conditions.contains(individualCondition)) {
                             conditions.add(individualCondition);
