@@ -61,6 +61,8 @@ public class PossibleConditions extends Fragment {
 
         actionBar = ((AppCompatActivity)getActivity()).getSupportActionBar();
         if (actionBar != null) {
+            actionBar.setDisplayHomeAsUpEnabled(true);
+            actionBar.setHomeAsUpIndicator(R.drawable.ic_back);
             if (actionBar.getTitle() != null) previousHeading[0] = actionBar.getTitle().toString();
             if (actionBar.getSubtitle() != null) previousHeading[1] = actionBar.getSubtitle().toString();
             actionBar.setTitle(R.string.possible_conditions);

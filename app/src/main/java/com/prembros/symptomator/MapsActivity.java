@@ -82,7 +82,7 @@ public class MapsActivity extends AppCompatActivity implements LocationListener,
             } else {
                 if (showNearest) {
                     actionBar.setTitle(R.string.nearest_doctor);
-                } else actionBar.setTitle(R.string.narby_doctors);
+                } else actionBar.setTitle(R.string.nearby_doctors);
             }
         }
 

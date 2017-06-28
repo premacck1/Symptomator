@@ -188,7 +188,7 @@ public class SymptomFragment extends Fragment {
         call108.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                new CallEmergencyServices(context);
+                new CallEmergencyServices(getContext());
             }
         });
 

@@ -9,7 +9,9 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.design.widget.TextInputEditText;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AlertDialog;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.AppCompatTextView;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -56,6 +58,16 @@ public class CompleteConditionList extends Fragment {
         // Inflate the layout for this fragment
         rootView = inflater.inflate(R.layout.fragment_complete_symptom_list, container, false);
         list = (RecyclerView) rootView.findViewById(R.id.recyclerview);
+
+        ActionBar actionBar = ((AppCompatActivity)getActivity()).getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.setDisplayHomeAsUpEnabled(true);
+            actionBar.setHomeAsUpIndicator(R.drawable.ic_back);
+//            previousTitle = actionBar.getTitle().toString();
+//            previousSubTitle = actionBar.getSubtitle().toString();
+            actionBar.setTitle(R.string.about);
+            actionBar.setSubtitle(R.string.prembros);
+        }
 
         new LoadConditions().execute("conditions.txt");
 

@@ -302,7 +302,6 @@
 
     <!--<string name="hello_blank_fragment">Hello blank fragment</string>-->
     <!--<string name="list_of_hospitals">List of hospitals</string>-->
-    <string name="find_hospitals_nearby">Nearby hospitals</string>
     <!--<string name="hospital_services">Hospital services</string>-->
     <!--<string name="find_hospitals_by_state">Find hospitals by state</string>-->
     <!--<string name="find_hospitals_by_specialisation">Find hospitals by specialisation</string>-->
@@ -315,7 +314,6 @@
     <!--<string name="doctor_services">Doctor services</string>-->
     <!--<string name="find_doctors_by_specialisation">Find doctors by specialisation</string>-->
     <!--<string name="request_urgent_doctor">Request urgent doctor</string>-->
-    <string name="find_doctors_nearby">Nearby doctors</string>
     <string name="first_aid_info">First aid info</string>
     <string name="search">Search…</string>
     <string name="services">Services</string>
@@ -411,9 +409,10 @@
     <string name="phone_number_not_available">Phone number not available</string>
     <string name="rating">Rating</string>
     <string name="nearby_hospitals">Nearby hospitals</string>
-    <string name="narby_doctors">Nearby Doctors</string>
+    <string name="nearby_doctors">Nearby Doctors</string>
     <string name="nearest_hospital">Nearest Hospital</string>
     <string name="call_emergency_services">Call Emergency services</string>
+    <string name="emergency_number">Emergency number</string>
     <string name="or_call_emergency_services">OR CALL EMERGENCY SERVICES</string>
     <string name="get_to_the_nearest_doctor">Get to the nearest doctor</string>
     <string name="nearest_doctor">Nearest Doctor</string>

@@ -5,8 +5,11 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.net.Uri;
+import android.os.Bundle;
 import android.os.Handler;
+import android.support.annotation.Nullable;
 import android.support.v4.app.ActivityCompat;
+import android.support.v7.app.AppCompatActivity;
 import android.telephony.TelephonyManager;
 import android.widget.Toast;
 
@@ -17,9 +20,24 @@ import java.util.Locale;
  * Created by Prem $ on 6/16/2017.
  */
 
-class CallEmergencyServices {
+public class CallEmergencyServices extends AppCompatActivity {
 
-    CallEmergencyServices(Context context) {
+    @SuppressWarnings("unused")
+    public CallEmergencyServices() {
+        doCalling(this);
+    }
+
+    @Override
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        doCalling(this);
+    }
+
+    public CallEmergencyServices(Context context) {
+        doCalling(context);
+    }
+
+    void doCalling(Context context) {
         DatabaseHolder db = new DatabaseHolder(context);
         db.open();
         Cursor cursor = db.returnEmergencyNumber(getUserCountry(context));

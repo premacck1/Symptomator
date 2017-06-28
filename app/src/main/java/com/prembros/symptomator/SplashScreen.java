@@ -1,11 +1,17 @@
 package com.prembros.symptomator;
 
+import android.annotation.TargetApi;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.ShortcutInfo;
+import android.content.pm.ShortcutManager;
+import android.graphics.drawable.Icon;
 import android.os.Bundle;
 import android.os.Handler;
 import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
+
+import java.util.Arrays;
 
 public class SplashScreen extends AppCompatActivity {
 
@@ -13,6 +19,8 @@ public class SplashScreen extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        createShortcuts();
 
         final Thread t = new Thread(new Runnable() {
             @Override
@@ -64,5 +72,81 @@ public class SplashScreen extends AppCompatActivity {
                 }
             }
         }, 0);
+    }
+
+    @TargetApi(25)
+    private void createShortcuts() {
+        ShortcutManager shortcutManager = getSystemService(ShortcutManager.class);
+
+        Intent call108 = new Intent(this, CallEmergencyServices.class);
+        call108.setAction(Intent.ACTION_VIEW);
+
+        ShortcutInfo call108Shortcut = new ShortcutInfo.Builder(this, "call_108")
+                .setIntent(call108)
+                .setShortLabel(getString(R.string.emergency_number))
+                .setLongLabel(getString(R.string.call_emergency_services))
+                .setIcon(Icon.createWithResource(this, R.drawable.ic_shortcut_call_emergency_services))
+                .setRank(5)
+                .build();
+
+        Intent nearerstHospitalIntent = new Intent(this, MapsActivity.class);
+        nearerstHospitalIntent.putExtra("showWhat", "hospital");
+        nearerstHospitalIntent.putExtra("showNearest", true);
+        nearerstHospitalIntent.setAction(Intent.ACTION_VIEW);
+
+        ShortcutInfo nearestHospitalShortcut = new ShortcutInfo.Builder(this, "nearest_hospital")
+                .setIntent(nearerstHospitalIntent)
+                .setShortLabel(getString(R.string.nearest_hospital))
+                .setLongLabel(getString(R.string.get_to_the_nearest_hospital))
+                .setIcon(Icon.createWithResource(this, R.drawable.ic_shortcut_nearest_hospital))
+                .setRank(2)
+                .build();
+
+        Intent nearestDoctorIntent = new Intent(this, MapsActivity.class);
+        nearestDoctorIntent.putExtra("showWhat", "doctor");
+        nearestDoctorIntent.putExtra("showNearest", true);
+        nearestDoctorIntent.setAction(Intent.ACTION_VIEW);
+
+        ShortcutInfo nearestDoctorShortcut = new ShortcutInfo.Builder(this, "nearest_doctor")
+                .setIntent(nearestDoctorIntent)
+                .setShortLabel(getString(R.string.nearest_doctor))
+                .setLongLabel(getString(R.string.get_to_the_nearest_doctor))
+                .setIcon(Icon.createWithResource(this, R.drawable.ic_shortcut_nearest_doctor))
+                .setRank(1)
+                .build();
+
+//        Intent nearbyHospitalsIntent = new Intent(this, MapsActivity.class);
+//        nearbyHospitalsIntent.putExtra("showWhat", "hospital");
+//        nearbyHospitalsIntent.putExtra("showNearest", false);
+//        nearbyHospitalsIntent.setAction(Intent.ACTION_VIEW);
+//
+//        ShortcutInfo nearbyHospitalsShortcut = new ShortcutInfo.Builder(this, "find_nearby_hospitals")
+//                .setIntent(nearbyHospitalsIntent)
+//                .setShortLabel(getString(R.string.nearby_hospitals))
+//                .setLongLabel(getString(R.string.find_nearby_hospitals))
+//                .setIcon(Icon.createWithResource(this, R.drawable.ic_shortcut_nearby_hospitals))
+//                .setRank(4)
+//                .build();
+//
+//        Intent nearbyDoctorsIntent = new Intent(this, MapsActivity.class);
+//        nearbyDoctorsIntent.putExtra("showWhat", "doctor");
+//        nearbyDoctorsIntent.putExtra("showNearest", false);
+//        nearbyDoctorsIntent.setAction(Intent.ACTION_VIEW);
+//
+//        ShortcutInfo nearbyDoctorsShortcut = new ShortcutInfo.Builder(this, "find_nearby_doctors")
+//                .setIntent(nearbyDoctorsIntent)
+//                .setShortLabel(getString(R.string.nearby_doctors))
+//                .setLongLabel(getString(R.string.find_nearby_doctors))
+//                .setIcon(Icon.createWithResource(this, R.drawable.ic_shortcut_nearby_doctors))
+//                .setRank(3)
+//                .build();
+
+        shortcutManager.setDynamicShortcuts(Arrays.asList(
+                call108Shortcut,
+                nearestHospitalShortcut,
+                nearestDoctorShortcut
+//                nearbyHospitalsShortcut,
+//                nearbyDoctorsShortcut,
+        ));
     }
 }

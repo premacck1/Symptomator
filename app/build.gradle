@@ -8,7 +8,7 @@ android {
         minSdkVersion 19
         //noinspection OldTargetApi
         targetSdkVersion 25
-        versionCode 14
+        versionCode 15
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
@@ -42,5 +42,6 @@ dependencies {
     compile 'com.google.android.gms:play-services-places:11.0.1'
     compile 'com.google.android.gms:play-services-nearby:11.0.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
+//    compile 'com.google.android.gms:play-services-ads:11.0.1'
     testCompile 'junit:junit:4.12'
 }

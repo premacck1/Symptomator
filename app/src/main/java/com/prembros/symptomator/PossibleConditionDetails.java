@@ -4,7 +4,9 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AlertDialog;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -63,6 +65,16 @@ public class PossibleConditionDetails extends Fragment implements View.OnClickLi
                              Bundle savedInstanceState) {
         rootView = inflater.inflate(R.layout.fragment_possible_condition_details, container, false);
         viewRoot = (FrameLayout) rootView.findViewById(R.id.condition_details_container);
+
+        ActionBar actionBar = ((AppCompatActivity)getActivity()).getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.setDisplayHomeAsUpEnabled(true);
+            actionBar.setHomeAsUpIndicator(R.drawable.ic_back);
+//            previousTitle = actionBar.getTitle().toString();
+//            previousSubTitle = actionBar.getSubtitle().toString();
+            actionBar.setTitle(R.string.about);
+            actionBar.setSubtitle(R.string.prembros);
+        }
 
         listView = (ListView) rootView.findViewById(R.id.selected_condition_list_view);
         increaseTextSize = (FloatingActionButton) rootView.findViewById(R.id.increase_text_size);

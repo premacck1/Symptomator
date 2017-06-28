@@ -35,7 +35,7 @@
                 android:paddingLeft="@dimen/activity_horizontal_margin"
                 android:paddingRight="32dp"
                 android:textColor="@color/white_text_icons"
-                android:text="@string/find_doctors_nearby"
+                android:text="@string/nearby_doctors"
                 android:textSize="18sp"
                 android:gravity="center"
                 android:drawableStart="@drawable/ic_marker_doctor" />
@@ -101,7 +101,7 @@
                 android:paddingLeft="@dimen/activity_horizontal_margin"
                 android:paddingRight="32dp"
                 android:textColor="@color/white_text_icons"
-                android:text="@string/find_hospitals_nearby"
+                android:text="@string/nearby_hospitals"
                 android:textSize="18sp"
                 android:gravity="center"
                 android:drawableStart="@drawable/ic_marker_hospital" />
