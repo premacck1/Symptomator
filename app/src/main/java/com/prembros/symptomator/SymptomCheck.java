@@ -541,14 +541,10 @@ public class SymptomCheck extends AppCompatActivity implements CompleteCondition
                 recyclerView.setVisibility(View.VISIBLE);
                 break;
             case "about":
-                View revealView = this.findViewById(R.id.menu_fragment_container);
+                final View revealView = this.findViewById(R.id.menu_fragment_container);
                 revealView.startAnimation(AnimationUtils.loadAnimation(this, android.R.anim.fade_out));
-                new Handler().postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        removeFragment(tag);
-                    }
-                }, 800);
+                removeFragment(tag);
+                revealView.setVisibility(View.INVISIBLE);
                 break;
             case "selectedSymptoms":
                 animationReversed(this.findViewById(R.id.fab_show_revealView), touchCoordinate);

@@ -163,10 +163,10 @@ public class FirstAidFragment extends Fragment implements RecyclerView.OnItemTou
             public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
                 super.onScrolled(recyclerView, dx, dy);
                 if (scrolling) {
-                    if (dy > 25) {
+                    if (dy > 5) {
 //                    SCROLLING UP
                         mListener.onListFragmentInteraction(false, "up");
-                    } else if (dy < -25){
+                    } else if (dy < - 5){
 //                    SCROLLING DOWN
                         mListener.onListFragmentInteraction(false, "down");
                     }
